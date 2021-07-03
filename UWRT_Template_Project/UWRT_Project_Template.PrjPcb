@@ -106,7 +106,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LYGPBQYO
+DocumentUniqueId=EGIBIPKN
 
 [Document5]
 DocumentPath=Sch_Notes_Template.SchDoc
@@ -125,22 +125,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MBNAFXFX
 
-[Document6]
-DocumentPath=..\Library\UWRT.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KEJEOXFP
+[Parameter1]
+Name=Board Version
+Value=vX
+
+[Parameter2]
+Name=Schematic Name
+Value=Template Schematic
+
+[Parameter3]
+Name=Schematic Author(s)
+Value=Sample Author
+
+[Parameter4]
+Name=Electrical Team Lead
+Value=Sample Lead
+
+[Parameter5]
+Name=Date of Submission
+Value=XX/XX/XXXX
 
 [Configuration1]
 Name=Sources
@@ -261,7 +264,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP LaserJet M402n (49FD41)
+TargetPrinter=HP88DFCD (HP ENVY 4500 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
