@@ -1,0 +1,29 @@
+Added Component: Designator=U1(QFN-56 RP2040)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=1V1_MCU Pin=U1-23
+Added Pin To Net: NetName=1V1_MCU Pin=U1-45
+Added Pin To Net: NetName=1V1_MCU Pin=U1-50
+Added Net: Name=1V1_MCU
+Added Pin To Net: NetName=3V3_MCU Pin=U1-1
+Added Pin To Net: NetName=3V3_MCU Pin=U1-10
+Added Pin To Net: NetName=3V3_MCU Pin=U1-22
+Added Pin To Net: NetName=3V3_MCU Pin=U1-33
+Added Pin To Net: NetName=3V3_MCU Pin=U1-42
+Added Pin To Net: NetName=3V3_MCU Pin=U1-43
+Added Pin To Net: NetName=3V3_MCU Pin=U1-44
+Added Pin To Net: NetName=3V3_MCU Pin=U1-48
+Added Pin To Net: NetName=3V3_MCU Pin=U1-49
+Added Net: Name=3V3_MCU
+Added Pin To Net: NetName=GND Pin=U1-19
+Added Pin To Net: NetName=GND Pin=U1-57
+Added Net: Name=GND
+Added Pin To Net: NetName=NetU1_26 Pin=U1-26
+Added Net: Name=NetU1_26
+Added Pin To Net: NetName=USB_N Pin=U1-46
+Added Net: Name=USB_N
+Added Pin To Net: NetName=USB_P Pin=U1-47
+Added Net: Name=USB_P
+Added Class: Name=RP2040_Evaluation_Design
+Added Differential Pair: Name=USB
+Added Room: Name=RP2040_Evaluation_Design
