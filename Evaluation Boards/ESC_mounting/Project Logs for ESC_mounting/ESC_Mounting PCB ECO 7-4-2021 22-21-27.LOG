@@ -1,0 +1,44 @@
+Added Component: Designator=J1(XT60_PW_AMASS_M)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60PW-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60PW-M%20/AMASS/view-part/3075559/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(HEADER_2PIN_2.54MM)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/026013115_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "A121480-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "571-5-146280-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=M1(BASIC_ESC)
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "30A Max"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Blue Robotics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "BESC30-R3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PWM Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "7-26V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=GND Pin=M1-1
+Added Pin To Net: NetName=GND Pin=M1-2
+Added Net: Name=GND
+Added Pin To Net: NetName=PWM Pin=J2-2
+Added Pin To Net: NetName=PWM Pin=M1-3
+Added Net: Name=PWM
+Added Pin To Net: NetName=VCC Pin=J1-2
+Added Pin To Net: NetName=VCC Pin=M1-4
+Added Net: Name=VCC
+Added Class: Name=ESC_Mounting
+Added Room: Name=ESC_Mounting

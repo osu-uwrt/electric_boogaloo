@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=J3-4
+Removed Pin From Net: NetName=NetJ3_3 Pin=M1-7
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=NetJ3_3 Pin=M1-6
+Added Pin To Net: NetName=NetJ3_4 Pin=J3-4
+Added Pin To Net: NetName=NetJ3_4 Pin=M1-7
+Added Net: Name=NetJ3_4
+Added Room: Name=ESC_Mounting
