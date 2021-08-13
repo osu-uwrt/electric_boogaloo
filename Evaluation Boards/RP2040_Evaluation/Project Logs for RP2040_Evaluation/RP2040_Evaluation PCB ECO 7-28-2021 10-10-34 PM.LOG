@@ -1,0 +1,30 @@
+Change component parameters: Designator = "U2" ("U2"); Footprint = "SOIC-8 W25QxJV"; UniqueID = "\WTNMBURD" ("\WTNMBURD")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "128M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "W25Q128JVSIQ-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_MCU Pin=R11-1
+Added Pin To Net: NetName=QSPI_SS Pin=R11-2
+Added Pin To Net: NetName=BTN1 Pin=S1-2
+Added Pin To Net: NetName=3V3_MCU Pin=S1-4
+Added Pin To Net: NetName=BTN2 Pin=S2-2
+Added Pin To Net: NetName=3V3_MCU Pin=S2-4
+Added Pin To Net: NetName=RUN Pin=S3-2
+Added Pin To Net: NetName=GND Pin=S3-3
+Change Net Name : Old Net Name=NetR2_2 New Net Name=USB_PIN_P
+Change Net Name : Old Net Name=NetR3_2 New Net Name=USB_PIN_N
+Added Differential Pair: Name=USB_PIN
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R11 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=USB 2.0 Member=USB_PIN

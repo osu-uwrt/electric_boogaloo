@@ -1,0 +1,62 @@
+Added Component: Designator=R12(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BTN1 Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R12-2
+Added Pin To Net: NetName=BTN2 Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R13-2
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C3 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C4 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C5 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C6 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C7 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C8 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C9 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C10 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C11 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C12 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C13 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C14 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C15 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C16 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C17 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C18 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C19 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C20 10uF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C21 100nF Ceramic 6.3V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C22 1uF Ceramic 16V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C23 27pF Ceramic 50V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component C24 27pF Ceramic 50V
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R1 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R2 27 Ohm 5% 1/8W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R3 27 Ohm 5% 1/8W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R4 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R5 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component R11 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component R12 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component R13 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component U1 RP2040
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component U2 W25Q128JVSIQ
+Added Member To Class: ClassName=RP2040_Evaluation_Design Member=Component Y1 CRYSTAL 12.0000MHZ 18PF SMD
+Added Room: Name=RP2040_Evaluation_Design

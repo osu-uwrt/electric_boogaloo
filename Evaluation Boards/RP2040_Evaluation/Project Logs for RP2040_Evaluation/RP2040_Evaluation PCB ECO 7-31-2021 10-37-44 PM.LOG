@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=3V3_MCU Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-2
+Removed Pin From Net: NetName=ETH_RESET Pin=J2-3
+Removed Pin From Net: NetName=ETH_CS Pin=J2-5
+Removed Pin From Net: NetName=ETH_CLK Pin=J2-6
+Removed Pin From Net: NetName=ETH_MISO Pin=J2-7
+Removed Pin From Net: NetName=ETH_MOSI Pin=J2-8
+Removed Member From Class: ClassName=RP2040_Evaluation_Connectors Member=J2
+Added Component: Designator=M1(W5500IO-P)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Product Webpage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://maker.wiznet.io/2019/04/02/w5500io-p/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_MCU Pin=M1-1
+Added Pin To Net: NetName=GND Pin=M1-2
+Added Pin To Net: NetName=ETH_RESET Pin=M1-3
+Added Pin To Net: NetName=ETH_CS Pin=M1-5
+Added Pin To Net: NetName=ETH_CLK Pin=M1-6
+Added Pin To Net: NetName=ETH_MISO Pin=M1-7
+Added Pin To Net: NetName=ETH_MOSI Pin=M1-8
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component M1 W5x00 Breakout Board
+Added Room: Name=RP2040_Evaluation_Design
