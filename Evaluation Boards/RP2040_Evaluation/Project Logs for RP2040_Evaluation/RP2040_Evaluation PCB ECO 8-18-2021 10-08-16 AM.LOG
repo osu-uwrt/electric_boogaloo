@@ -1,0 +1,16 @@
+Change Component Footprint: Designator=D6 Old Footprint=SOT-353 New Footprint=SOT 23-6L
+Change Component Comment : Designator=D6 Old Comment=TVS DIODE 5VWM 25VC SOT353 New Comment=TVS DIODE 5VWM 25VC SOT23-6
+Change component parameters: Designator = "D6" ("D6"); Footprint = "SOT-353"; UniqueID = "\ZXDLCDAL" ("\ZXDLCDAL")
+Change component parameters (AddParameter): Name = "Breakdown Voltage (Min)"; Value = "6V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Clamping Voltage (Max)"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reverse Standoff Voltage (Typ)"; Value = "5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RCLAMP0504SCT-ND"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component D1 IN-S63AT5G
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component D3 IN-S63AT5G
+Added Member To Class: ClassName=RP2040_Evaluation_Connectors Member=Component D5 IN-S63AT5G
+Added Room: Name=RP2040_Evaluation_Connectors
+Added Room: Name=RP2040_Evaluation_Design
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
