@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc
-Date     : 8/18/2021
-Time     : 11:50:24 AM
+Date     : 8/19/2021
+Time     : 12:46:56 AM
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
 Rule Violations :0
@@ -29,17 +29,18 @@ Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not
    Violation between SMD Entry Constraint: Between Pad C24-1(2060mil,1620mil) on Top Layer And Track (2057.686mil,1592.686mil)(2057.686mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad C24-2(2130mil,1620mil) on Top Layer And Track (2132.314mil,1592.686mil)(2132.314mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-1(201.5mil,651.772mil) on Top Layer And Track (201.5mil,651.772mil)(253.272mil,651.772mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad J3-5(201.5mil,549.409mil) on Top Layer And Track (201.5mil,549.409mil)(283.573mil,549.409mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-5(201.5mil,549.409mil) on Top Layer And Track (201.5mil,549.409mil)(262.073mil,549.409mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-6(196.579mil,722.638mil) on Top Layer And Track (154.112mil,727.388mil)(191.828mil,727.388mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (154.112mil,467.612mil)(185.647mil,467.612mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (205.437mil,487.402mil)(205.437mil,545.472mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-8(96.185mil,450.984mil) on Top Layer And Track (101.289mil,456.089mil)(142.589mil,456.089mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad J3-9(96.185mil,750.197mil) on Top Layer And Track (107.47mil,738.912mil)(142.589mil,738.912mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U1-26(1890.512mil,1150.748mil) on Top Layer And Track (1879.201mil,1196mil)(1890.512mil,1184.689mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad U1-28(1859.016mil,1150.748mil) on Top Layer And Track (1750.39mil,1180.213mil)(1858.953mil,1180.213mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad U1-56(2063.74mil,885mil) on Top Layer And Track (2063.74mil,855.452mil)(2068.192mil,851mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad Y1-1(2139.488mil,1360mil) on Top Layer And Track (2138.316mil,1313.316mil)(2138.316mil,1358.828mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad Y1-4(2045mil,1360mil) on Top Layer And Track (2048.512mil,1311.488mil)(2048.512mil,1356.488mil) on Top Layer Track Entry to PAD from not centre of Side
-Rule Violations :14
+Rule Violations :15
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
@@ -77,6 +78,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 16
+Violations Detected : 17
 Waived Violations : 0
 Time Elapsed        : 00:00:02
