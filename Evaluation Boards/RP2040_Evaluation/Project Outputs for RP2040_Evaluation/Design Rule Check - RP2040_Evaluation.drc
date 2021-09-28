@@ -1,0 +1,86 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc
+Date     : 8/23/2021
+Time     : 5:08:26 PM
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 6mil) Between Area Fill (20mil,1400mil) (440mil,1510mil) on Bottom Layer And Text "Design By Robert Pafford" (181.012mil,1252.04mil) on Bottom Layer 
+Rule Violations :1
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
+   Violation between SMD Entry Constraint: Between Pad C23-1(2125mil,1275mil) on Top Layer And Track (2127.314mil,1277.314mil)(2127.314mil,1302.314mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad C24-1(2060mil,1620mil) on Top Layer And Track (2057.686mil,1592.686mil)(2057.686mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad C24-2(2130mil,1620mil) on Top Layer And Track (2132.314mil,1592.686mil)(2132.314mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-1(201.5mil,651.772mil) on Top Layer And Track (201.5mil,651.772mil)(253.272mil,651.772mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-5(201.5mil,549.409mil) on Top Layer And Track (201.5mil,549.409mil)(262.073mil,549.409mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-6(196.579mil,722.638mil) on Top Layer And Track (154.112mil,727.388mil)(191.828mil,727.388mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (154.112mil,467.612mil)(185.647mil,467.612mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (205.437mil,487.402mil)(205.437mil,545.472mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-8(96.185mil,450.984mil) on Top Layer And Track (101.289mil,456.089mil)(142.589mil,456.089mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad J3-9(96.185mil,750.197mil) on Top Layer And Track (107.47mil,738.912mil)(142.589mil,738.912mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U1-28(1859.016mil,1150.748mil) on Top Layer And Track (1750.39mil,1180.213mil)(1858.953mil,1180.213mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U1-56(2063.74mil,885mil) on Top Layer And Track (2063.74mil,855.452mil)(2068.192mil,851mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad Y1-1(2139.488mil,1360mil) on Top Layer And Track (2138.316mil,1313.316mil)(2138.316mil,1358.828mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad Y1-4(2045mil,1360mil) on Top Layer And Track (2048.512mil,1311.488mil)(2048.512mil,1356.488mil) on Top Layer Track Entry to PAD from not centre of Side
+Rule Violations :14
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
+   Violation between Acute Angle Constraint: (71.218 < 87.500) Between Track (1942.442mil,818mil)(1950.358mil,818mil) on Top Layer And Track (1950mil,795mil)(1950mil,818mil) on Top Layer (Angle = 71.218)
+   Violation between Acute Angle Constraint: (70.351 < 87.500) Between Track (2144.488mil,915.512mil)(2155mil,905mil) on Top Layer And Via (2155mil,905mil) from Top Layer to Bottom Layer (Angle = 70.351)
+   Violation between Acute Angle Constraint: (78.750 < 87.500) Polygon Region (2 hole(s)) Top Layer (Angle = 78.750)
+   Violation between Acute Angle Constraint: (75.851 < 87.500) Polygon Region (4 hole(s)) Top Layer (Angle = 75.851)
+   Violation between Acute Angle Constraint: (52.848 < 87.500) Between Pad R1-1(2396.5mil,405mil) on Top Layer And Region (0 hole(s)) Top Layer (Angle = 52.848)
+Rule Violations :5
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=245mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=20mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 20
+Waived Violations : 0
+Time Elapsed        : 00:00:02

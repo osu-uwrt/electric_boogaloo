@@ -1,0 +1,420 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">8/23/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:08:26 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc" class="file"><acronym title="C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc">C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">20</td></tr>
+</table>
+</td>
+</table><a name="IDTU2DMETEUTTGJQAXBU5V2ETWAIQIXWPD0H0AHIJMWVCZDPADC2B"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK4EFEHZU4TZKUFBIPFKYLON1PSBAQULBUNYWNPGQMXYRLXYJZPN">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDESHL3SVYB4MTHGDGIJBU2UNI22FXXAG3FGNYMGC0Y41VUZMNSBP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSTR2XTEVAVMVQ3D2EX50CBZBDUADM52FDZPOCJZXM3FHA3PBBFN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSXGHIDSTBCYAJH33LAEXANOFOFWH00SZE1RWQ2KD1HSIKTRD1QYJ">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1OJZHR4EHRC4KTYNLA23GQWIOVWGMDGBY0KAGBXZOPRPUIFUNFE">Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=8mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO4N201XPV4ZKMKN5WVZFGHKP52GPKVJBPHZKNHZ0Z2D2ASHKVM">SMD To Corner (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZNBYJILL3EEAMXIX4DRRIMKOMERS0BJIKOVBD0MCPD2P2LRYY5YE">SMD To Plane Constraint (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1D2BIKWPVG3SNCZFCNCUZIKQJK4DVLOONGXHMNQIWXAQHAW0BRP">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3JRJLWIY3IPHONGFEDYDLK1O1IXXWQ3WFH0JU5DPYWAJ1MC3FFEM">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3KT22ETERH1EFYTAHYI52XIBPOD2IE2IQXNCQKDU3TMJ2SFOZGFC">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY0BNOW1EVAVZCQI410HJ3IYW0NEFSTKV5JMJF5PFIHDKUNHCFBG">Acute Angle Constraint (Minimum=87.500) (All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYZGYAJ5ACAMGDQBEADG3T5J4HLVAL53DBL3DDWDZNJSSUUNIU5DM">Hole Size Constraint (Min=8mil) (Max=245mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGYHEW1F32EWJEORIQEIM5Q5UYDPNB1SSJYNTO2P532LNAHBUCYWC">Hole To Hole Clearance (Gap=20mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRJLBRSISHIHTDAZCXXJZZALGICD5TF10CP1LZVEL2OAHFG3XQUXH">Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2FRIAQL0KQLXLZG2YVC0K2DO1LYXEHYG1AS4LJHTXOMPGW5WXXID">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRWDC51NA5VJZKCTF4HAE0TKGWEAC5RXOWO2DLTEUIUMS34SVOBYE">Silk to Silk (Clearance=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG4LH5CKUF5MADBQBQ5UWKERU0HJIXY4LHC0CPTJ1B4TR5VVY3DOF">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOD04AQKKTWOBCSRPXHGHZX3FJDZAB1E5NGO2RMZCDSFOH3SCVZD">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZ3FHQP2NCFJ3OMOV1H3LYCOJLDJ1GQM5JPVJIDDSUFLDO3XHZRZP">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">20</td>
+</tr>
+</table><br><a name="IDK4EFEHZU4TZKUFBIPFKYLON1PSBAQULBUNYWNPGQMXYRLXYJZPN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=6mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1178.512mil|Location2.X=1183.512mil|Location1.Y=2655.461mil|Location2.Y=2660.461mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1178.512mil|Location2.X=1183.512mil|Location1.Y=2655.461mil|Location2.Y=2660.461mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Area Fill (20mil,1400mil) (440mil,1510mil) on Bottom Layer And Text "Design By Robert Pafford" (181.012mil,1252.04mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1D2BIKWPVG3SNCZFCNCUZIKQJK4DVLOONGXHMNQIWXAQHAW0BRP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.814mil|Location2.X=3141.299mil|Location1.Y=2284.5mil|Location2.Y=2323.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.814mil|Location2.X=3141.299mil|Location1.Y=2284.5mil|Location2.Y=2323.985mil|Absolute=True">SMD Entry Constraint: Between Pad C23-1(2125mil,1275mil) on Top Layer And Track (2127.314mil,1277.314mil)(2127.314mil,1302.314mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3047.186mil|Location2.X=3071.672mil|Location1.Y=2589.5mil|Location2.Y=2628.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3047.186mil|Location2.X=3071.672mil|Location1.Y=2589.5mil|Location2.Y=2628.985mil|Absolute=True">SMD Entry Constraint: Between Pad C24-1(2060mil,1620mil) on Top Layer And Track (2057.686mil,1592.686mil)(2057.686mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3121.814mil|Location2.X=3146.299mil|Location1.Y=2589.5mil|Location2.Y=2628.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3121.814mil|Location2.X=3146.299mil|Location1.Y=2589.5mil|Location2.Y=2628.985mil|Absolute=True">SMD Entry Constraint: Between Pad C24-2(2130mil,1620mil) on Top Layer And Track (2132.314mil,1592.686mil)(2132.314mil,1617.686mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1224.789mil|Location2.X=1249.274mil|Location1.Y=1641.272mil|Location2.Y=1680.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1224.789mil|Location2.X=1249.274mil|Location1.Y=1641.272mil|Location2.Y=1680.757mil|Absolute=True">SMD Entry Constraint: Between Pad J3-1(201.5mil,651.772mil) on Top Layer And Track (201.5mil,651.772mil)(253.272mil,651.772mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1224.789mil|Location2.X=1249.274mil|Location1.Y=1538.909mil|Location2.Y=1578.395mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1224.789mil|Location2.X=1249.274mil|Location1.Y=1538.909mil|Location2.Y=1578.395mil|Absolute=True">SMD Entry Constraint: Between Pad J3-5(201.5mil,549.409mil) on Top Layer And Track (201.5mil,549.409mil)(262.073mil,549.409mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1154.274mil|Location2.X=1178.759mil|Location1.Y=1716.888mil|Location2.Y=1756.373mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1154.274mil|Location2.X=1178.759mil|Location1.Y=1716.888mil|Location2.Y=1756.373mil|Absolute=True">SMD Entry Constraint: Between Pad J3-6(196.579mil,722.638mil) on Top Layer And Track (154.112mil,727.388mil)(191.828mil,727.388mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1154.274mil|Location2.X=1178.759mil|Location1.Y=1457.112mil|Location2.Y=1496.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1154.274mil|Location2.X=1178.759mil|Location1.Y=1457.112mil|Location2.Y=1496.597mil|Absolute=True">SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (154.112mil,467.612mil)(185.647mil,467.612mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.937mil|Location2.X=1219.422mil|Location1.Y=1509.69mil|Location2.Y=1549.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1194.937mil|Location2.X=1219.422mil|Location1.Y=1509.69mil|Location2.Y=1549.176mil|Absolute=True">SMD Entry Constraint: Between Pad J3-7(196.579mil,478.543mil) on Top Layer And Track (205.437mil,487.402mil)(205.437mil,545.472mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.465mil|Location2.X=1145.95mil|Location1.Y=1445.589mil|Location2.Y=1485.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.465mil|Location2.X=1145.95mil|Location1.Y=1445.589mil|Location2.Y=1485.074mil|Absolute=True">SMD Entry Constraint: Between Pad J3-8(96.185mil,450.984mil) on Top Layer And Track (101.289mil,456.089mil)(142.589mil,456.089mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.465mil|Location2.X=1145.95mil|Location1.Y=1728.411mil|Location2.Y=1767.897mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.465mil|Location2.X=1145.95mil|Location1.Y=1728.411mil|Location2.Y=1767.897mil|Absolute=True">SMD Entry Constraint: Between Pad J3-9(96.185mil,750.197mil) on Top Layer And Track (107.47mil,738.912mil)(142.589mil,738.912mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2844.254mil|Location2.X=2868.74mil|Location1.Y=2169.713mil|Location2.Y=2209.198mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2844.254mil|Location2.X=2868.74mil|Location1.Y=2169.713mil|Location2.Y=2209.198mil|Absolute=True">SMD Entry Constraint: Between Pad U1-28(1859.016mil,1150.748mil) on Top Layer And Track (1750.39mil,1180.213mil)(1858.953mil,1180.213mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3056.239mil|Location2.X=3080.724mil|Location1.Y=1841.953mil|Location2.Y=1881.438mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3056.239mil|Location2.X=3080.724mil|Location1.Y=1841.953mil|Location2.Y=1881.438mil|Absolute=True">SMD Entry Constraint: Between Pad U1-56(2063.74mil,885mil) on Top Layer And Track (2063.74mil,855.452mil)(2068.192mil,851mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3127.816mil|Location2.X=3152.302mil|Location1.Y=2310.13mil|Location2.Y=2349.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3127.816mil|Location2.X=3152.302mil|Location1.Y=2310.13mil|Location2.Y=2349.615mil|Absolute=True">SMD Entry Constraint: Between Pad Y1-1(2139.488mil,1360mil) on Top Layer And Track (2138.316mil,1313.316mil)(2138.316mil,1358.828mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3038.012mil|Location2.X=3062.497mil|Location1.Y=2310.13mil|Location2.Y=2349.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3038.012mil|Location2.X=3062.497mil|Location1.Y=2310.13mil|Location2.Y=2349.615mil|Absolute=True">SMD Entry Constraint: Between Pad Y1-4(2045mil,1360mil) on Top Layer And Track (2048.512mil,1311.488mil)(2048.512mil,1356.488mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDY0BNOW1EVAVZCQI410HJ3IYW0NEFSTKV5JMJF5PFIHDKUNHCFBG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Acute Angle Constraint (Minimum=87.500) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.422mil|Location2.X=2959.922mil|Location1.Y=1808.422mil|Location2.Y=1827.922mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.422mil|Location2.X=2959.922mil|Location1.Y=1808.422mil|Location2.Y=1827.922mil|Absolute=True">Acute Angle Constraint: (71.218 &lt; 87.500) Between Track (1942.442mil,818mil)(1950.358mil,818mil) on Top Layer And Track (1950mil,795mil)(1950mil,818mil) on Top Layer (Angle = 71.218)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3139.217mil|Location2.X=3158.717mil|Location1.Y=1903.419mil|Location2.Y=1922.919mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3139.217mil|Location2.X=3158.717mil|Location1.Y=1903.419mil|Location2.Y=1922.919mil|Absolute=True">Acute Angle Constraint: (70.351 &lt; 87.500) Between Track (2144.488mil,915.512mil)(2155mil,905mil) on Top Layer And Via (2155mil,905mil) from Top Layer to Bottom Layer (Angle = 70.351)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3344.5mil|Location2.X=3364mil|Location1.Y=1959.083mil|Location2.Y=1978.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3344.5mil|Location2.X=3364mil|Location1.Y=1959.083mil|Location2.Y=1978.583mil|Absolute=True">Acute Angle Constraint: (78.750 &lt; 87.500) Polygon Region (2 hole(s)) Top Layer (Angle = 78.750)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.5mil|Location2.X=2669mil|Location1.Y=2119.083mil|Location2.Y=2138.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.5mil|Location2.X=2669mil|Location1.Y=2119.083mil|Location2.Y=2138.583mil|Absolute=True">Acute Angle Constraint: (75.851 &lt; 87.500) Polygon Region (4 hole(s)) Top Layer (Angle = 75.851)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3371mil|Location2.X=3390.5mil|Location1.Y=1394.567mil|Location2.Y=1414.067mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3371mil|Location2.X=3390.5mil|Location1.Y=1394.567mil|Location2.Y=1414.067mil|Absolute=True">Acute Angle Constraint: (52.848 &lt; 87.500) Between Pad R1-1(2396.5mil,405mil) on Top Layer And Region (0 hole(s)) Top Layer (Angle = 52.848)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
