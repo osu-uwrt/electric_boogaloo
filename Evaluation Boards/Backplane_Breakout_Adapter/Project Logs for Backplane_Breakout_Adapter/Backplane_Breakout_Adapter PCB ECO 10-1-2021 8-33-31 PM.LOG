@@ -1,0 +1,10 @@
+Added Component: Designator=J2(HEADER_MIRRORED_2x10PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Z8747-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3(HEADER_MIRRORED_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Class: Name=Backplane_Breakout_Adapter_Connectors
+Added Room: Name=Backplane_Breakout_Adapter_Connectors
