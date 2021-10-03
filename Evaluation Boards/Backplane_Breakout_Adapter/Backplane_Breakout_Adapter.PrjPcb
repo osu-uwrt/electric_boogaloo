@@ -481,7 +481,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PAJOURBG
 
 [Document27]
 DocumentPath=..\..\Library\Transistors.SchLib
@@ -498,7 +498,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IXWHMTRM
 
 [Document28]
 DocumentPath=..\..\Library\UWRT.PcbLib
@@ -682,7 +682,29 @@ OutputName1=Composite Drawing
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=OutputConfigurationParameter1
+Configuration1_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name2=OutputConfigurationParameter2
+Configuration1_Item2=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Multilayer Composite Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name3=OutputConfigurationParameter3
+Configuration1_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name4=OutputConfigurationParameter4
+Configuration1_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name5=OutputConfigurationParameter5
+Configuration1_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name6=OutputConfigurationParameter6
+Configuration1_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name7=OutputConfigurationParameter7
+Configuration1_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name8=OutputConfigurationParameter8
+Configuration1_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=KeepOutLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name9=OutputConfigurationParameter9
+Configuration1_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name10=OutputConfigurationParameter10
+Configuration1_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
+Configuration1_Name11=OutputConfigurationParameter11
+Configuration1_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
 OutputType2=PCB 3D Print
 OutputName2=PCB 3D Print
 OutputDocumentPath2=
@@ -1476,6 +1498,36 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=Connectors.SchLib
+ComponentDesignItemID0=BACKBOARD_EDGE_CONN
+ComponentSymbolReference0=BACKBOARD_EDGE_CONN
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=Connectors.SchLib
+ComponentDesignItemID1=HEADER_2x10PIN_2.54MM_RP2040_GPIO
+ComponentSymbolReference1=HEADER_2x10PIN_2.54MM_RP2040_GPIO
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=Connectors.SchLib
+ComponentDesignItemID2=HEADER_4PIN_2.54MM
+ComponentSymbolReference2=HEADER_4PIN_2.54MM
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=Resistors.SchLib
+ComponentDesignItemID3=RESISTOR_10K_0603
+ComponentSymbolReference3=RESISTOR_10K_0603
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=Transistors.SchLib
+ComponentDesignItemID4=AO3404A
+ComponentSymbolReference4=AO3404A
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1489,6 +1541,86 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Amp Rating
+ParameterUpdate0=1
+ParameterName1=Comment
+ParameterUpdate1=1
+ParameterName2=Component Kind
+ParameterUpdate2=1
+ParameterName3=ComponentLink1Description
+ParameterUpdate3=1
+ParameterName4=ComponentLink1URL
+ParameterUpdate4=1
+ParameterName5=Created By
+ParameterUpdate5=1
+ParameterName6=Description
+ParameterUpdate6=1
+ParameterName7=Digikey Part Numer
+ParameterUpdate7=1
+ParameterName8=FET Type
+ParameterUpdate8=1
+ParameterName9=Library Reference
+ParameterUpdate9=1
+ParameterName10=Made By
+ParameterUpdate10=1
+ParameterName11=Manufacturer _Part_Number
+ParameterUpdate11=1
+ParameterName12=Package
+ParameterUpdate12=1
+ParameterName13=Power Dissipation
+ParameterUpdate13=1
+ParameterName14=Rds (on)
+ParameterUpdate14=1
+ParameterName15=SourceLibrary
+ParameterUpdate15=1
+ParameterName16=Supplier
+ParameterUpdate16=1
+ParameterName17=Supplier 1
+ParameterUpdate17=1
+ParameterName18=Supplier Part Number 1
+ParameterUpdate18=1
+ParameterName19=Tolerance
+ParameterUpdate19=1
+ParameterName20=Value  (Ohms)
+ParameterUpdate20=1
+ParameterName21=Vdss
+ParameterUpdate21=1
+ParameterName22=Vendor
+ParameterUpdate22=1
+ParameterName23=Verified By
+ParameterUpdate23=1
+ParameterName24=Vgs (Max)
+ParameterUpdate24=1
+ParameterName25=Vgs (th)
+ParameterUpdate25=1
+ParameterName26=Wattage
+ParameterUpdate26=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=BACKPLANE_EDGE_CONN
+ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=HEADER_2x10PIN_2.54MM
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=HEADER_2X28PIN_2.54MM
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=HEADER_4PIN_2.54MM
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=HEADER_MIRRORED_2x10PIN_2.54MM
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=HEADER_MIRRORED_4PIN_2.54MM
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=RESISTOR_0603
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=SOT-23_3L_ONS
+ModelUpdate7=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
