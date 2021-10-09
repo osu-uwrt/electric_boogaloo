@@ -430,7 +430,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EIRMGIMM
 
 [Document24]
 DocumentPath=..\..\Library\Switches.PcbLib
@@ -550,6 +550,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MBNAFXFX
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Backplane_Breakout_Adapter\Design Rule Check - Backplane_Breakout_Adapter.html
+DItemRevisionGUID=
 
 [Parameter1]
 Name=BoardRevision
