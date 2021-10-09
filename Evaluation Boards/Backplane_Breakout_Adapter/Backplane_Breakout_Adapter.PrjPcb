@@ -76,7 +76,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document3]
-DocumentPath=Backplane_Breakout_Adapter_Notes.SchDoc
+DocumentPath=Backplane_Breakout_Adapter_Pico.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -90,7 +90,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=MBNAFXFX
+DocumentUniqueId=WBRZIFXL
 
 [Document4]
 DocumentPath=..\..\Library\Capacitors.PcbLib
@@ -345,7 +345,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QMSOJPGM
 
 [Document19]
 DocumentPath=..\..\Library\Integrated Circuits.SchLib
@@ -362,7 +362,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QFAULSOO
 
 [Document20]
 DocumentPath=..\..\Library\Modules.PcbLib
@@ -379,7 +379,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=TTXINXXG
 
 [Document21]
 DocumentPath=..\..\Library\Modules.SchLib
@@ -396,7 +396,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JTOMNKLG
 
 [Document22]
 DocumentPath=..\..\Library\Resistors.PcbLib
@@ -430,7 +430,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EIRMGIMM
 
 [Document24]
 DocumentPath=..\..\Library\Switches.PcbLib
@@ -533,6 +533,27 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document30]
+DocumentPath=Backplane_Breakout_Adapter_Notes.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MBNAFXFX
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Backplane_Breakout_Adapter\Design Rule Check - Backplane_Breakout_Adapter.html
+DItemRevisionGUID=
 
 [Parameter1]
 Name=BoardRevision
@@ -669,7 +690,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP LaserJet Professional P1102w
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
