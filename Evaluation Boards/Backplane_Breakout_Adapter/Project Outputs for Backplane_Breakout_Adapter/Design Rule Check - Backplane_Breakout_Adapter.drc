@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\Evaluation Boards\Backplane_Breakout_Adapter\Backplane_Breakout_Adapter.PcbDoc
-Date     : 10/9/2021
-Time     : 11:42:36 PM
+Date     : 10/12/2021
+Time     : 8:47:23 PM
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
 Rule Violations :0
@@ -10,8 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad J1-56(650mil,150mil) on Top Layer And Pad J1-1(650mil,150mil) on Bottom Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -50,19 +49,19 @@ Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not
    Violation between SMD Entry Constraint: Between Pad M1-29(2818.023mil,1233.265mil) on Top Layer And Track (2820mil,1135mil)(2820mil,1179.209mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-3(3718.023mil,1996.257mil) on Top Layer And Track (3715mil,2042.447mil)(3718.023mil,2045.469mil) on Top Layer Not Allowed Angle on side for track
    Violation between SMD Entry Constraint: Between Pad M1-30(2918.023mil,1233.265mil) on Top Layer And Track (2920mil,1235.242mil)(2920mil,1385mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad M1-32(3118.023mil,1233.265mil) on Top Layer And Track (3118.023mil,1233.265mil)(3127.865mil,1272.635mil) on Top Layer Not Allowed Angle on side for track
-   Violation between SMD Entry Constraint: Between Pad M1-32(3118.023mil,1233.265mil) on Top Layer And Track (3120mil,1280.5mil)(3127.865mil,1272.635mil) on Top Layer Not Allowed Angle on side for track
-   Violation between SMD Entry Constraint: Between Pad M1-33(3218.023mil,1233.265mil) on Top Layer And Track (3220mil,1265.135mil)(3220mil,1385mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad M1-31(3018.023mil,1233.265mil) on Top Layer And Track (2955.143mil,1318.616mil)(3018.023mil,1255.737mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad M1-32(3118.023mil,1233.265mil) on Top Layer And Track (3104.717mil,1246.57mil)(3118.023mil,1233.265mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad M1-33(3218.023mil,1233.265mil) on Top Layer And Track (3218.023mil,1233.265mil)(3218.023mil,1385mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-36(3518.023mil,1233.265mil) on Top Layer And Track (3518.023mil,1138.023mil)(3518.023mil,1233.265mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-36(3518.023mil,1233.265mil) on Top Layer And Track (3518.023mil,1233.265mil)(3518.023mil,1351.977mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-38(3718.023mil,1233.265mil) on Top Layer And Track (3718.023mil,1136.977mil)(3718.023mil,1233.265mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-38(3718.023mil,1233.265mil) on Top Layer And Track (3718.652mil,1233.894mil)(3718.652mil,1520mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-39(3818.023mil,1233.265mil) on Top Layer And Track (3818.023mil,1128.023mil)(3818.023mil,1233.265mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-4(3618.023mil,1996.257mil) on Top Layer And Track (3618.652mil,1800mil)(3618.652mil,2006.099mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad M1-4(3618.023mil,1996.257mil) on Top Layer And Track (3618.652mil,2006.099mil)(3618.652mil,2111.49mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad M1-4(3618.023mil,1996.257mil) on Top Layer And Track (3618.652mil,2006.099mil)(3618.652mil,2096.348mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-40(3918.023mil,1233.265mil) on Top Layer And Track (3918.023mil,1148.023mil)(3918.023mil,1233.265mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-6(3418.023mil,1996.257mil) on Top Layer And Track (3418.023mil,1996.257mil)(3418.023mil,2198.477mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad M1-7(3318.023mil,1996.257mil) on Top Layer And Track (3318.023mil,1648.023mil)(3318.023mil,1996.257mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad M1-7(3318.023mil,1996.257mil) on Top Layer And Track (3318.023mil,1650.161mil)(3318.023mil,1996.257mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad M1-9(3118.023mil,1996.257mil) on Top Layer And Track (3118.023mil,1891.977mil)(3118.023mil,1996.257mil) on Top Layer Track Entry to PAD from not centre of Side
 Rule Violations :38
 
@@ -73,24 +72,32 @@ Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
-   Violation between Acute Angle Constraint: (40.501 < 87.500) Between Polygon Region (0 hole(s)) Top Layer And Via (750mil,315mil) from Top Layer to Bottom Layer (Angle = 40.501)
-   Violation between Acute Angle Constraint: (40.501 < 87.500) Between Polygon Region (0 hole(s)) Top Layer And Via (750mil,315mil) from Top Layer to Bottom Layer (Angle = 40.501)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.476)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (106 hole(s)) Bottom Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (183 hole(s)) Top Layer (Angle = 82.500)
-   Violation between Acute Angle Constraint: (60.000 < 87.500) Between Polygon Region (183 hole(s)) Top Layer And Region (0 hole(s)) Top Layer (Angle = 60.000)
-   Violation between Acute Angle Constraint: (68.572 < 87.500) Between Polygon Region (183 hole(s)) Top Layer And Track (1350mil,600mil)(1350mil,715mil) on Top Layer (Angle = 68.572)
-Rule Violations :17
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (104 hole(s)) Bottom Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (5 hole(s)) Top Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (5 hole(s)) Top Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (5 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (5 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (62 hole(s)) Top Layer (Angle = 82.500)
+   Violation between Acute Angle Constraint: (82.476 < 87.500) Polygon Region (9 hole(s)) Bottom Layer (Angle = 82.476)
+   Violation between Acute Angle Constraint: (82.500 < 87.500) Polygon Region (9 hole(s)) Bottom Layer (Angle = 82.500)
+Rule Violations :25
 
 Processing Rule : Hole Size Constraint (Min=8mil) (Max=245mil) (All)
 Rule Violations :0
@@ -117,6 +124,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 56
+Violations Detected : 63
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
