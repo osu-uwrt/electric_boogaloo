@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\Evaluation Boards\RP2040_Evaluation\RP2040_Evaluation.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing JLCPCB|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Width|RuleName=Width JLCPCB 1oz|Scope=Board|Minimum=3.50
+RuleKind=Clearance|RuleName=Clearance JLCPCB|Scope=Board|Minimum=6.00
