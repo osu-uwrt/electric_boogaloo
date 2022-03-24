@@ -1,0 +1,12 @@
+Added Component: Designator=J(XT60_PW_AMASS_M)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60PW-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60PW-M%20/AMASS/view-part/3075559/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=ESC Member=Component J5 4 POS R/A
+Added Member To Class: ClassName=ESC Member=Component J XT60PW-M
+Added Member To Class: ClassName=ESC Member=Component M3 APD 80F3[X]
+Added Room: Name=ESC
