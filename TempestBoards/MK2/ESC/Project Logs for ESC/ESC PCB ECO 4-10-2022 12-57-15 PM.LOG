@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetJ6_9 Pin=SB1-2
+Removed Pin From Net: NetName=NetJ6_8 Pin=SB2-2
+Removed Pin From Net: NetName=NetJ6_7 Pin=SB3-2
+Removed Pin From Net: NetName=NetJ6_6 Pin=SB4-2
+Change Component Description : Designator=M1 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M2 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M3 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M4 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=F1 Old Description=LittelFuse New Description=LittelFuse  | 12A | 12V | SMD | Fast Blow | 1206
+Added Pin To Net: NetName=NetJ6_6 Pin=SB1-2
+Added Pin To Net: NetName=NetJ6_7 Pin=SB2-2
+Added Pin To Net: NetName=NetJ6_8 Pin=SB3-2
+Added Pin To Net: NetName=NetJ6_9 Pin=SB4-2
+Added Room: Name=ESC
