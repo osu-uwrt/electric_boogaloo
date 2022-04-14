@@ -1,0 +1,17 @@
+Added Pin To Net: NetName=CAM_PWM Pin=U301-6
+Added Pin To Net: NetName=CLAW1 Pin=U301-7
+Added Pin To Net: NetName=CLAW2 Pin=U301-8
+Added Pin To Net: NetName=MARKER1 Pin=U301-9
+Added Pin To Net: NetName=MARKER2 Pin=U301-11
+Added Pin To Net: NetName=TORP_ARM Pin=U301-12
+Added Pin To Net: NetName=TORP_SEL1 Pin=U301-13
+Added Pin To Net: NetName=TORP_SEL2 Pin=U301-14
+Added Pin To Net: NetName=TORP_COIL1 Pin=U301-15
+Added Pin To Net: NetName=TORP_COIL2 Pin=U301-16
+Added Pin To Net: NetName=TORP_COIL3 Pin=U301-17
+Change Net Name : Old Net Name=Actuator_LED1 New Net Name=Fault_LED
+Change Net Name : Old Net Name=Actuator_LED2 New Net Name=Aux_LED
+Added Pin To Net: NetName=Claw_Current Pin=U301-41
+Added Net: Name=Claw_Current
+Added Pin To Net: NetName=Torp_Charge Pin=U301-40
+Added Net: Name=Torp_Charge
