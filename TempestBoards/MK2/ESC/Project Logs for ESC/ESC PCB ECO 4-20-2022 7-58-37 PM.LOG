@@ -1,0 +1,7 @@
+Change Component Description : Designator=M1 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M2 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M3 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M4 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=F1 Old Description=LittelFuse New Description=LittelFuse  | 12A | 12V | SMD | Fast Blow | 1206
+Added Pin To Net: NetName=PWM_GND Pin=J8-1
+Added Room: Name=ESC
