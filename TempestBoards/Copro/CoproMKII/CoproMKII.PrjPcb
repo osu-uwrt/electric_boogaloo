@@ -73,7 +73,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KLTQBHTI
+DocumentUniqueId=PLHEXAVA
 
 [Document3]
 DocumentPath=..\..\..\Library\Capacitors.PcbLib
@@ -568,6 +568,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WZHRNPKW
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for CoproMKII\Design Rule Check - CoproMKII.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=BoardRevision
 Value=1.0
@@ -703,7 +707,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP LaserJet Professional P1102w
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
