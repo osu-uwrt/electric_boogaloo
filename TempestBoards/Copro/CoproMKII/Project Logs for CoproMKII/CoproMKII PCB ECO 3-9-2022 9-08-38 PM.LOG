@@ -1,0 +1,420 @@
+Removed Pin From Net: NetName=Actuator_USB_VCC Pin=D301-5
+Added Component: Designator=R104(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R105(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R106(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R107(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R108(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R109(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R110(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R111(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R112(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R113(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R114(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R115(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R116(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R117(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R118(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R119(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=U103(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U104(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U105(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U106(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U107(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U108(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U109(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U110(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=D206-5
+Added Pin To Net: NetName=5V Pin=D301-5
+Added Pin To Net: NetName=5V Pin=R104-1
+Added Pin To Net: NetName=PWM1 Pin=R104-2
+Added Pin To Net: NetName=5V Pin=R106-1
+Added Pin To Net: NetName=PWM2 Pin=R106-2
+Added Pin To Net: NetName=5V Pin=R108-1
+Added Pin To Net: NetName=PWM3 Pin=R108-2
+Added Pin To Net: NetName=5V Pin=R110-1
+Added Pin To Net: NetName=PWM4 Pin=R110-2
+Added Pin To Net: NetName=5V Pin=R112-1
+Added Pin To Net: NetName=PWM5 Pin=R112-2
+Added Pin To Net: NetName=5V Pin=R114-1
+Added Pin To Net: NetName=PWM6 Pin=R114-2
+Added Pin To Net: NetName=5V Pin=R116-1
+Added Pin To Net: NetName=PWM7 Pin=R116-2
+Added Pin To Net: NetName=5V Pin=R118-1
+Added Pin To Net: NetName=PWM8 Pin=R118-2
+Added Pin To Net: NetName=PWM1 Pin=U103-3
+Added Pin To Net: NetName=PWM2 Pin=U104-3
+Added Pin To Net: NetName=PWM3 Pin=U105-3
+Added Pin To Net: NetName=PWM4 Pin=U106-3
+Added Pin To Net: NetName=PWM5 Pin=U107-3
+Added Pin To Net: NetName=PWM6 Pin=U108-3
+Added Pin To Net: NetName=PWM7 Pin=U109-3
+Added Pin To Net: NetName=PWM8 Pin=U110-3
+Added Pin To Net: NetName=3V3 Pin=R105-1
+Added Pin To Net: NetName=3V3 Pin=R107-1
+Added Pin To Net: NetName=3V3 Pin=R109-1
+Added Pin To Net: NetName=3V3 Pin=R111-1
+Added Pin To Net: NetName=3V3 Pin=R113-1
+Added Pin To Net: NetName=3V3 Pin=R115-1
+Added Pin To Net: NetName=3V3 Pin=R117-1
+Added Pin To Net: NetName=3V3 Pin=R119-1
+Added Pin To Net: NetName=3V3 Pin=U103-1
+Added Pin To Net: NetName=3V3 Pin=U104-1
+Added Pin To Net: NetName=3V3 Pin=U105-1
+Added Pin To Net: NetName=3V3 Pin=U106-1
+Added Pin To Net: NetName=3V3 Pin=U107-1
+Added Pin To Net: NetName=3V3 Pin=U108-1
+Added Pin To Net: NetName=3V3 Pin=U109-1
+Added Pin To Net: NetName=3V3 Pin=U110-1
+Added Net: Name=3V3
+Added Pin To Net: NetName=PWM_3V3_1 Pin=R105-2
+Added Pin To Net: NetName=PWM_3V3_1 Pin=U103-2
+Added Pin To Net: NetName=PWM_3V3_1 Pin=U201-35
+Added Net: Name=PWM_3V3_1
+Added Pin To Net: NetName=PWM_3V3_2 Pin=R107-2
+Added Pin To Net: NetName=PWM_3V3_2 Pin=U104-2
+Added Pin To Net: NetName=PWM_3V3_2 Pin=U201-36
+Added Net: Name=PWM_3V3_2
+Added Pin To Net: NetName=PWM_3V3_3 Pin=R109-2
+Added Pin To Net: NetName=PWM_3V3_3 Pin=U105-2
+Added Pin To Net: NetName=PWM_3V3_3 Pin=U201-32
+Added Net: Name=PWM_3V3_3
+Added Pin To Net: NetName=PWM_3V3_4 Pin=R111-2
+Added Pin To Net: NetName=PWM_3V3_4 Pin=U106-2
+Added Pin To Net: NetName=PWM_3V3_4 Pin=U201-31
+Added Net: Name=PWM_3V3_4
+Added Pin To Net: NetName=PWM_3V3_5 Pin=R113-2
+Added Pin To Net: NetName=PWM_3V3_5 Pin=U107-2
+Added Pin To Net: NetName=PWM_3V3_5 Pin=U201-29
+Added Net: Name=PWM_3V3_5
+Added Pin To Net: NetName=PWM_3V3_6 Pin=R115-2
+Added Pin To Net: NetName=PWM_3V3_6 Pin=U108-2
+Added Pin To Net: NetName=PWM_3V3_6 Pin=U201-27
+Added Net: Name=PWM_3V3_6
+Added Pin To Net: NetName=PWM_3V3_7 Pin=R117-2
+Added Pin To Net: NetName=PWM_3V3_7 Pin=U109-2
+Added Pin To Net: NetName=PWM_3V3_7 Pin=U201-17
+Added Net: Name=PWM_3V3_7
+Added Pin To Net: NetName=PWM_3V3_8 Pin=R119-2
+Added Pin To Net: NetName=PWM_3V3_8 Pin=U110-2
+Added Pin To Net: NetName=PWM_3V3_8 Pin=U201-30
+Added Net: Name=PWM_3V3_8
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R104 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R105 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R106 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R107 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R108 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R109 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R110 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R111 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R112 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R113 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R114 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R115 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R116 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R117 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R118 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component R119 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U103 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U104 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U105 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U106 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U107 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U108 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U109 AO3404A
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U110 AO3404A

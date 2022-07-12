@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Backplane_Breakout_Adapter.PcbDoc   10/12/2021  9:20:09 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Backplane_Breakout_Adapter-RoundHoles.TXT
+ASCII SlotHoles File : Backplane_Breakout_Adapter-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             173       PTH        39.01inch (990.87mm)
+T2      15mil (0.381mm)                                           Round             4         PTH        3.73inch (94.82mm)
+T3      20mil (0.508mm)                                           Round             12        PTH        9.96inch (252.86mm)
+T4      30mil (0.762mm)                                           Round             4         PTH        1.00inch (25.40mm)
+T5      39mil (1.001mm)                                           Round             20        PTH        4.47inch (113.61mm)
+T6      40mil (1.021mm)                                           Round             76        PTH        13.61inch (345.70mm)
+T7      50mil (1.27mm)                                            Slot              9         PTH        10.20inch (259.08mm)
+T8      120mil (3.048mm)                                          Round             4         PTH        10.97inch (278.64mm)
+T9      118mil (3mm)            +10mil (0.25mm)                   Round             2         NPTH       0.63inch (16.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              304
+
+Total Processing Time (hh:mm:ss) : 00:00:00

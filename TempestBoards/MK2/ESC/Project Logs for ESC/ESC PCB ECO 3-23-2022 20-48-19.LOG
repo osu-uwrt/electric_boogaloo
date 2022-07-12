@@ -1,0 +1,188 @@
+Added Component: Designator=D?(LED_0603)
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1830-1062-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J?(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(68611014122)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.com/em/datasheet/68611014122.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "17mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "68611014122"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-25 to +85degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Number"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published Date"; Value = "March 2021"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Horizontal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "125VAC"; VariantName = "[No Variations]"
+Added Component: Designator=M?(APD 80F3[X])
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "General Info"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://powerdrives.net/80f3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Data Sheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://docs.powerdrives.net/products/f-series-esc/overview"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Advanced Power Drives"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "80A Continuous"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "15-35V"; VariantName = "[No Variations]"
+Added Component: Designator=M?(APD 80F3[X])
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "General Info"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://powerdrives.net/80f3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Data Sheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://docs.powerdrives.net/products/f-series-esc/overview"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Advanced Power Drives"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "80A Continuous"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "15-35V"; VariantName = "[No Variations]"
+Added Component: Designator=M?(APD 80F3[X])
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "General Info"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://powerdrives.net/80f3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Data Sheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://docs.powerdrives.net/products/f-series-esc/overview"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Advanced Power Drives"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "80A Continuous"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "15-35V"; VariantName = "[No Variations]"
+Added Component: Designator=M?(APD 80F3[X])
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "General Info"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://powerdrives.net/80f3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Data Sheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://docs.powerdrives.net/products/f-series-esc/overview"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Advanced Power Drives"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "80A Continuous"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "15-35V"; VariantName = "[No Variations]"
+Added Component: Designator=SB?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=M?-2
+Added Pin To Net: NetName=GND Pin=M?-2
+Added Pin To Net: NetName=GND Pin=M?-2
+Added Pin To Net: NetName=GND Pin=M?-2
+Added Net: Name=GND
+Added Pin To Net: NetName=NetD?_1 Pin=D?-1
+Added Pin To Net: NetName=NetD?_1 Pin=J?-1
+Added Pin To Net: NetName=NetD?_1 Pin=J?-1
+Added Pin To Net: NetName=NetD?_1 Pin=J?-2
+Added Pin To Net: NetName=NetD?_1 Pin=J?-2
+Added Pin To Net: NetName=NetD?_1 Pin=M?-1
+Added Pin To Net: NetName=NetD?_1 Pin=M?-1
+Added Pin To Net: NetName=NetD?_1 Pin=M?-1
+Added Pin To Net: NetName=NetD?_1 Pin=M?-1
+Added Net: Name=NetD?_1
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ?_1 Pin=M?-10
+Added Pin To Net: NetName=NetJ?_1 Pin=M?-10
+Added Pin To Net: NetName=NetJ?_1 Pin=M?-10
+Added Pin To Net: NetName=NetJ?_1 Pin=M?-10
+Added Net: Name=NetJ?_1
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_2 Pin=M?-4
+Added Net: Name=NetJ?_2
+Added Pin To Net: NetName=NetJ?_3 Pin=J?-3
+Added Pin To Net: NetName=NetJ?_3 Pin=M?-9
+Added Pin To Net: NetName=NetJ?_3 Pin=SB?-1
+Added Net: Name=NetJ?_3
+Added Pin To Net: NetName=NetJ?_4 Pin=J?-4
+Added Pin To Net: NetName=NetJ?_4 Pin=M?-3
+Added Net: Name=NetJ?_4
+Added Pin To Net: NetName=NetJ?_5 Pin=J?-5
+Added Pin To Net: NetName=NetJ?_5 Pin=M?-9
+Added Pin To Net: NetName=NetJ?_5 Pin=SB?-1
+Added Net: Name=NetJ?_5
+Added Pin To Net: NetName=NetJ?_6 Pin=J?-6
+Added Pin To Net: NetName=NetJ?_6 Pin=M?-5
+Added Net: Name=NetJ?_6
+Added Pin To Net: NetName=NetJ?_7 Pin=J?-7
+Added Pin To Net: NetName=NetJ?_7 Pin=M?-3
+Added Net: Name=NetJ?_7
+Added Pin To Net: NetName=NetJ?_8 Pin=J?-8
+Added Pin To Net: NetName=NetJ?_8 Pin=M?-4
+Added Net: Name=NetJ?_8
+Added Pin To Net: NetName=NetJ?_9 Pin=J?-9
+Added Pin To Net: NetName=NetJ?_9 Pin=J?-9
+Added Pin To Net: NetName=NetJ?_9 Pin=SB?-2
+Added Net: Name=NetJ?_9
+Added Pin To Net: NetName=NetJ?_10 Pin=J?-10
+Added Pin To Net: NetName=NetJ?_10 Pin=J?-10
+Added Pin To Net: NetName=NetJ?_10 Pin=M?-8
+Added Pin To Net: NetName=NetJ?_10 Pin=M?-8
+Added Pin To Net: NetName=NetJ?_10 Pin=M?-8
+Added Pin To Net: NetName=NetJ?_10 Pin=M?-8
+Added Net: Name=NetJ?_10
+Added Pin To Net: NetName=NetJ?_11 Pin=J?-11
+Added Pin To Net: NetName=NetJ?_11 Pin=M?-4
+Added Net: Name=NetJ?_11
+Added Pin To Net: NetName=NetJ?_12 Pin=J?-12
+Added Pin To Net: NetName=NetJ?_12 Pin=M?-5
+Added Net: Name=NetJ?_12
+Added Member To Class: ClassName=ESC Member=Component D? IN-S63AT5G
+Added Member To Class: ClassName=ESC Member=Component J? CONN HEADER VERT 4POS 2.54MM
+Added Member To Class: ClassName=ESC Member=Component J? 4 POS R/A
+Added Member To Class: ClassName=ESC Member=Component J? 12 POS R/A
+Added Member To Class: ClassName=ESC Member=Component J? MKIICopro_ESC
+Added Member To Class: ClassName=ESC Member=Component J? CONN HEADER VERT 4POS 2.54MM
+Added Member To Class: ClassName=ESC Member=Component J? CONN HEADER VERT 4POS 2.54MM
+Added Member To Class: ClassName=ESC Member=Component J? 4 POS R/A
+Added Member To Class: ClassName=ESC Member=Component J? MKIICopro_ESC
+Added Member To Class: ClassName=ESC Member=Component M? APD 80F3[X]
+Added Member To Class: ClassName=ESC Member=Component M? APD 80F3[X]
+Added Member To Class: ClassName=ESC Member=Component M? APD 80F3[X]
+Added Member To Class: ClassName=ESC Member=Component M? APD 80F3[X]
+Added Member To Class: ClassName=ESC Member=Component SB? 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=ESC Member=Component SB? 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=ESC Member=Component SB? 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=ESC Member=Component SB? 0 Ohm Jumper No Fit

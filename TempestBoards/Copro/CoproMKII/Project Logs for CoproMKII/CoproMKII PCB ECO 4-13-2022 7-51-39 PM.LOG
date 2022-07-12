@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=R208-1
+Removed Member From Class: ClassName=CoproMKII_Coprocessor Member=D203
+Removed Member From Class: ClassName=CoproMKII_Coprocessor Member=R208
+Added Pin To Net: NetName=Copro_LED_Fault Pin=D202-1

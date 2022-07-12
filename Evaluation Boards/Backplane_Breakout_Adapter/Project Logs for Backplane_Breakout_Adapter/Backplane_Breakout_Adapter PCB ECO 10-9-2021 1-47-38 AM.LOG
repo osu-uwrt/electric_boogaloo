@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=FAULT_LED Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=R21-1
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=FAULT_LED Pin=R21-2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R21-1
+Added Net: Name=NetD1_1
+Added Room: Name=Backplane_Breakout_Adapter_Connectors
+Added Room: Name=Backplane_Breakout_Adapter_Pico

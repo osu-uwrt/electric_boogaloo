@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetJ6_6 Pin=J8-6
+Removed Pin From Net: NetName=NetJ6_7 Pin=J8-7
+Removed Pin From Net: NetName=NetJ6_8 Pin=J8-8
+Removed Pin From Net: NetName=NetJ6_9 Pin=J8-9
+Removed Pin From Net: NetName=NetJ6_6 Pin=SB1-2
+Removed Pin From Net: NetName=NetJ6_7 Pin=SB2-2
+Removed Pin From Net: NetName=NetJ6_8 Pin=SB3-2
+Removed Pin From Net: NetName=NetJ6_9 Pin=SB4-2
+Added Pin To Net: NetName=NetJ6_9 Pin=J8-6
+Added Pin To Net: NetName=NetJ6_8 Pin=J8-7
+Added Pin To Net: NetName=NetJ6_7 Pin=J8-8
+Added Pin To Net: NetName=NetJ6_6 Pin=J8-9
+Added Pin To Net: NetName=NetJ6_9 Pin=SB1-2
+Added Pin To Net: NetName=NetJ6_8 Pin=SB2-2
+Added Pin To Net: NetName=NetJ6_7 Pin=SB3-2
+Added Pin To Net: NetName=NetJ6_6 Pin=SB4-2
+Added Room: Name=ESC

@@ -1,0 +1,810 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4/24/2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:24:04 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc" class="file"><acronym title="C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc">C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">142</td></tr>
+</table>
+</td>
+</table><a name="ID3YG30AD0OQUXPYQCMTH0QLIMUCZEYG4WULUHBMOVEPJSYSQJ3ZR"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEOY0EXYU1UBVJK30CDKQV2VIHPWMOHV0NXLAXBOQTXQR5QC12YEJ">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDK0MEB4AVCHYUMXQ3KSO0HBYA5FXKE1IBTLEUYELONHNNW2SDNTGB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYZAUWFNNPNOCOEX3KGYGE0Z0BDTOWESTQFLESTHYBA2VJV2FVV3G">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">21</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI2VSF3FKHYKGOR10ZDR1GJWW3K3JYJQ0L4MT1UM21FFOBBOCANGN">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA1WBG3GIAK3VH2KMTO1NSO3M3PQDSSRR1CKU02OYAJX13J1BPGPE">Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=8mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB5HA5RLB2303E2N0ZSWVYDG1WGCXNMKC4G0P1VB1BIZRRS2LHIVH">SMD To Corner (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2Y20JEN3RRVBIVBTD1IWJWFXGJO1NPFE2KQ5HRGLK2IPPGVGNECO">SMD To Plane Constraint (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQXGCDI0DYXQWJGYLIWDJWSGCTDIVS00W4QJJYCOWZPATGXB5JC2N">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</a></td>
+<td class="column2">72</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPYKH40B4X3H4PHK1P2FDWPI1PKWQAENMY4RBWPEQDVMS23QLZTUE">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGZJUGQOMBBM2XIONSDCREWHVOSMRR0TRJ5RPDORBL0FDFQDJS2F">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFCIHNRWT51LIFGNWJQITGRHIBHFQBFE0ESYO4QDGPDPDJPE0S4">Acute Angle Constraint (Minimum=87.500) (All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJOUHQA1W0GUAJOZEALYVEUHMCCT23NETUKDNOPH4OGI1IREBE5QP">Hole Size Constraint (Min=8mil) (Max=245mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIQGZK1I3ADLRJPYU22GGMOQADEKF0GNWTJFKV0PPH3N0ASP1OSGF">Hole To Hole Clearance (Gap=20mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVDD4RV2PCBB0EHAUHP3LH0SA0PCZ4XSDRSEGWRLTO3PC33JBYKHM">Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIR5A1VBF2GRYKX5Y0RXGHLE1VEMIKT422QEHEYMEELG0WVRTKZ4G">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJDQTBG5RR1JPEMBJFBTX0KKSRBUPSWSL2EMTYJKVJG3RH5F2TG1H">Silk to Silk (Clearance=1mil) (All),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX0SU2212S4X3OMOPGPDTATXE0CKNBUDPIVATV2E0DWNTBMESJBLK">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQUJGFKFJJLHEHTCHAKJTS1UX0F2GBM0BRGEWXYNO2JUS145GPXL">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">21</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID05ZRPBDJ2NFLFFBQ0FFVUFADRM0UIO0OX4YAY5IZ0TNKRSDASX1K">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">142</td>
+</tr>
+</table><br><a name="IDEOY0EXYU1UBVJK30CDKQV2VIHPWMOHV0NXLAXBOQTXQR5QC12YEJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=6mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1264.408mil|Location2.X=1268.741mil|Location1.Y=4153.148mil|Location2.Y=4157.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1264.408mil|Location2.X=1268.741mil|Location1.Y=4153.148mil|Location2.Y=4157.481mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Pad J101-7(266.575mil,3155.315mil) on Top Layer And Track (266.575mil,3155.315mil)(365.315mil,3155.315mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDK0MEB4AVCHYUMXQ3KSO0HBYA5FXKE1IBTLEUYELONHNNW2SDNTGB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1260.648mil|Location2.X=1311.73mil|Location1.Y=4129.774mil|Location2.Y=4180.856mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1260.648mil|Location2.X=1311.73mil|Location1.Y=4129.774mil|Location2.Y=4180.856mil|Absolute=True">Short-Circuit Constraint: Between Pad J101-7(266.575mil,3155.315mil) on Top Layer And Track (266.575mil,3155.315mil)(365.315mil,3155.315mil) on Top Layer Location : [X = 1286.189mil][Y = 4155.315mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYZAUWFNNPNOCOEX3KGYGE0Z0BDTOWESTQFLESTHYBA2VJV2FVV3G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557.299mil|Location2.X=3919mil|Location1.Y=2869.189mil|Location2.Y=2929mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557.299mil|Location2.X=3919mil|Location1.Y=2869.189mil|Location2.Y=2929mil|Absolute=True">Un-Routed Net Constraint: Net 3V3_MCU Between Pad U302-8(2594.764mil,1885mil) on Top Layer And Pad C302-2(2900mil,1905mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3465mil|Location2.X=3689mil|Location1.Y=2586mil|Location2.Y=2635mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3465mil|Location2.X=3689mil|Location1.Y=2586mil|Location2.Y=2635mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2480mil,1620mil) from Top Layer to Bottom Layer And Pad C315-1(2670mil,1610mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1364.822mil|Location1.Y=4375.178mil|Location2.Y=4533.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1364.822mil|Location1.Y=4375.178mil|Location2.Y=4533.331mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J101-MP1(172.087mil,3493.898mil) on Top Layer [Unplated] And Via (349.822mil,3390.178mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1485mil|Location1.Y=3816.669mil|Location2.Y=4022.205mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1485mil|Location1.Y=3816.669mil|Location2.Y=4022.205mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J101-MP2(172.087mil,2856.102mil) on Top Layer [Unplated] And Via (470mil,3007.205mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.906mil|Location2.X=1232.268mil|Location1.Y=2205mil|Location2.Y=2363.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.906mil|Location2.X=1232.268mil|Location1.Y=2205mil|Location2.Y=2363.961mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J102-MP1(177.087mil,1324.528mil) on Top Layer [Unplated] And Via (195mil,1220mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.906mil|Location2.X=1232.268mil|Location1.Y=1726.039mil|Location2.Y=2235mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.906mil|Location2.X=1232.268mil|Location1.Y=1726.039mil|Location2.Y=2235mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J102-MP2(177.087mil,765.472mil) on Top Layer [Unplated] And Via (195mil,1220mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.071mil|Location2.X=2958.685mil|Location1.Y=1006.236mil|Location2.Y=1073.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.071mil|Location2.X=2958.685mil|Location1.Y=1006.236mil|Location2.Y=1073.291mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J103-MP1(1883.819mil,39.764mil) on Top Layer And Pad J103-1(1942.874mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.071mil|Location2.X=2903.567mil|Location1.Y=1006.236mil|Location2.Y=1183.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.071mil|Location2.X=2903.567mil|Location1.Y=1006.236mil|Location2.Y=1183.527mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J103-MP1(1883.819mil,39.764mil) on Top Layer And Pad J103-MP2(1883.819mil,150mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.252mil|Location2.X=3454.748mil|Location1.Y=1006.236mil|Location2.Y=1183.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.252mil|Location2.X=3454.748mil|Location1.Y=1006.236mil|Location2.Y=1183.527mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J103-MP4(2435mil,39.764mil) on Top Layer And Pad J103-MP3(2435mil,150mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.252mil|Location2.X=3555mil|Location1.Y=1116.473mil|Location2.Y=1525mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.252mil|Location2.X=3555mil|Location1.Y=1116.473mil|Location2.Y=1525mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J103-MP3(2435mil,150mil) on Top Layer And Via (2540mil,510mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4762.221mil|Location2.X=4840.102mil|Location1.Y=3897.614mil|Location2.Y=4128.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4762.221mil|Location2.X=4840.102mil|Location1.Y=3897.614mil|Location2.Y=4128.055mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J203-5(3799.685mil,3116.181mil) on Top Layer And Pad J203-6(3804.606mil,2942.953mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4762.221mil|Location2.X=4840.102mil|Location1.Y=4104.307mil|Location2.Y=4232.386mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4762.221mil|Location2.X=4840.102mil|Location1.Y=4104.307mil|Location2.Y=4232.386mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J203-5(3799.685mil,3116.181mil) on Top Layer And Pad J203-7(3804.606mil,3187.047mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.11mil|Location2.X=4944.433mil|Location1.Y=3873.992mil|Location2.Y=3988.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.11mil|Location2.X=4944.433mil|Location1.Y=3873.992mil|Location2.Y=3988.291mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J203-6(3804.606mil,2942.953mil) on Top Layer And Pad J203-9(3905mil,2915.394mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.11mil|Location2.X=4944.433mil|Location1.Y=4141.709mil|Location2.Y=4256.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.11mil|Location2.X=4944.433mil|Location1.Y=4141.709mil|Location2.Y=4256.008mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J203-7(3804.606mil,3187.047mil) on Top Layer And Pad J203-8(3905mil,3214.606mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4675mil|Location2.X=4889.685mil|Location1.Y=1906.783mil|Location2.Y=2115mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4675mil|Location2.X=4889.685mil|Location1.Y=1906.783mil|Location2.Y=2115mil|Absolute=True">Un-Routed Net Constraint: Net Actuator_USB_P Between Track (3676.217mil,1006.783mil)(3775mil,1006.783mil) on Top Layer And Pad J301-3(3789.685mil,1015mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.11mil|Location2.X=4934.433mil|Location1.Y=1823.993mil|Location2.Y=1938.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.11mil|Location2.X=4934.433mil|Location1.Y=1823.993mil|Location2.Y=1938.291mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J301-6(3794.606mil,892.953mil) on Top Layer And Pad J301-9(3895mil,865.394mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4689.095mil|Location2.X=4894.606mil|Location1.Y=1965.591mil|Location2.Y=1992.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4689.095mil|Location2.X=4894.606mil|Location1.Y=1965.591mil|Location2.Y=1992.953mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (3705.591mil,1065.591mil)(3789.095mil,1065.591mil) on Top Layer And Pad J301-6(3794.606mil,892.953mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.11mil|Location2.X=4934.433mil|Location1.Y=2091.709mil|Location2.Y=2206.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.11mil|Location2.X=4934.433mil|Location1.Y=2091.709mil|Location2.Y=2206.008mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J301-7(3794.606mil,1137.047mil) on Top Layer And Pad J301-8(3895mil,1164.606mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4689.095mil|Location2.X=4894.606mil|Location1.Y=1965.591mil|Location2.Y=2237.047mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4689.095mil|Location2.X=4894.606mil|Location1.Y=1965.591mil|Location2.Y=2237.047mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (3705.591mil,1065.591mil)(3789.095mil,1065.591mil) on Top Layer And Pad J301-7(3794.606mil,1137.047mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1860mil|Location2.X=2060mil|Location1.Y=2212mil|Location2.Y=2435mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1860mil|Location2.X=2060mil|Location1.Y=2212mil|Location2.Y=2435mil|Absolute=True">Un-Routed Net Constraint: Net 5V Between Pad R106-1(960mil,1312mil) on Top Layer And Track (960mil,1335mil)(960mil,1515mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3277.772mil|Location2.X=3425mil|Location1.Y=2605mil|Location2.Y=2750.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3277.772mil|Location2.X=3425mil|Location1.Y=2605mil|Location2.Y=2750.811mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U302-4(2315.236mil,1735mil) on Top Layer And Via (2410mil,1620mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQXGCDI0DYXQWJGYLIWDJWSGCTDIVS00W4QJJYCOWZPATGXB5JC2N"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.5mil|Location2.X=2673.985mil|Location1.Y=2286.5mil|Location2.Y=2325.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.5mil|Location2.X=2673.985mil|Location1.Y=2286.5mil|Location2.Y=2325.985mil|Absolute=True">SMD Entry Constraint: Between Pad C101-1(1680mil,1295mil) on Top Layer And Track (1570mil,1297mil)(1678mil,1297mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.5mil|Location2.X=2638.985mil|Location1.Y=1612.5mil|Location2.Y=1651.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.5mil|Location2.X=2638.985mil|Location1.Y=1612.5mil|Location2.Y=1651.985mil|Absolute=True">SMD Entry Constraint: Between Pad C102-1(1645mil,620mil) on Top Layer And Track (1555mil,623mil)(1637mil,623mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1758.691mil|Location2.X=1783.176mil|Location1.Y=4434.5mil|Location2.Y=4473.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1758.691mil|Location2.X=1783.176mil|Location1.Y=4434.5mil|Location2.Y=4473.985mil|Absolute=True">SMD Entry Constraint: Between Pad C205-1(770mil,3430mil) on Top Layer And Track (769.191mil,3430.809mil)(769.191mil,3479.191mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1489.5mil|Location2.X=1513.985mil|Location1.Y=3996.705mil|Location2.Y=4036.19mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1489.5mil|Location2.X=1513.985mil|Location1.Y=3996.705mil|Location2.Y=4036.19mil|Absolute=True">SMD Entry Constraint: Between Pad C207-1(520mil,3010mil) on Top Layer And Track (470mil,3007.205mil)(517.205mil,3007.205mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2399.5mil|Location2.X=2423.985mil|Location1.Y=4179.5mil|Location2.Y=4218.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2399.5mil|Location2.X=2423.985mil|Location1.Y=4179.5mil|Location2.Y=4218.985mil|Absolute=True">SMD Entry Constraint: Between Pad C208-2(1430mil,3185mil) on Top Layer And Track (1370mil,3190mil)(1425mil,3190mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2066.744mil|Location2.X=2091.229mil|Location1.Y=4529.5mil|Location2.Y=4568.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2066.744mil|Location2.X=2091.229mil|Location1.Y=4529.5mil|Location2.Y=4568.985mil|Absolute=True">SMD Entry Constraint: Between Pad C212-2(1075mil,3555mil) on Top Layer And Track (1077.244mil,3465mil)(1077.244mil,3552.756mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1869.5mil|Location2.X=1893.985mil|Location1.Y=3699.5mil|Location2.Y=3738.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1869.5mil|Location2.X=1893.985mil|Location1.Y=3699.5mil|Location2.Y=3738.985mil|Absolute=True">SMD Entry Constraint: Between Pad C223-1(885mil,2690mil) on Top Layer And Track (880mil,2690mil)(880mil,2725mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1950.5mil|Location2.X=1974.985mil|Location1.Y=3659.5mil|Location2.Y=3698.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1950.5mil|Location2.X=1974.985mil|Location1.Y=3659.5mil|Location2.Y=3698.985mil|Absolute=True">SMD Entry Constraint: Between Pad C223-2(955mil,2690mil) on Top Layer And Track (961mil,2654mil)(961mil,2679mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1874.5mil|Location2.X=1898.985mil|Location1.Y=3296.36mil|Location2.Y=3335.845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1874.5mil|Location2.X=1898.985mil|Location1.Y=3296.36mil|Location2.Y=3335.845mil|Absolute=True">SMD Entry Constraint: Between Pad C224-2(885.68mil,2326.86mil) on Top Layer And Track (885mil,2265mil)(885mil,2326.18mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4069.5mil|Location2.X=4093.985mil|Location1.Y=2404.736mil|Location2.Y=2444.222mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4069.5mil|Location2.X=4093.985mil|Location1.Y=2404.736mil|Location2.Y=2444.222mil|Absolute=True">SMD Entry Constraint: Between Pad C307-2(3100mil,1415mil) on Top Layer And Track (2896.496mil,1415.236mil)(3099.764mil,1415.236mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3729.44mil|Location2.X=3753.925mil|Location1.Y=2579.5mil|Location2.Y=2618.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3729.44mil|Location2.X=3753.925mil|Location1.Y=2579.5mil|Location2.Y=2618.985mil|Absolute=True">SMD Entry Constraint: Between Pad C315-2(2740mil,1610mil) on Top Layer And Track (2739.94mil,1524.705mil)(2739.94mil,1609.94mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3574.5mil|Location2.X=3598.985mil|Location1.Y=1834.5mil|Location2.Y=1873.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3574.5mil|Location2.X=3598.985mil|Location1.Y=1834.5mil|Location2.Y=1873.985mil|Absolute=True">SMD Entry Constraint: Between Pad C317-1(2585mil,865mil) on Top Layer And Track (2575mil,835mil)(2585mil,845mil) on Top Layer Not Allowed Angle on side for track</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4616.665mil|Location2.X=4641.151mil|Location1.Y=1719.5mil|Location2.Y=1758.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4616.665mil|Location2.X=4641.151mil|Location1.Y=1719.5mil|Location2.Y=1758.985mil|Absolute=True">SMD Entry Constraint: Between Pad C321-1(3625mil,750mil) on Top Layer And Track (3627.165mil,645mil)(3627.165mil,747.835mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4114.5mil|Location2.X=4138.985mil|Location1.Y=4134.056mil|Location2.Y=4173.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4114.5mil|Location2.X=4138.985mil|Location1.Y=4134.056mil|Location2.Y=4173.542mil|Absolute=True">SMD Entry Constraint: Between Pad D206-2(3124.795mil,3125.856mil) on Top Layer And Track (3125mil,3123.15mil)(3125mil,3175mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.382mil|Location2.X=1323.867mil|Location1.Y=4343.083mil|Location2.Y=4382.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.382mil|Location2.X=1323.867mil|Location1.Y=4343.083mil|Location2.Y=4382.568mil|Absolute=True">SMD Entry Constraint: Between Pad J101-2(266.575mil,3352.165mil) on Top Layer And Track (267.992mil,3353.583mil)(348.583mil,3353.583mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.382mil|Location2.X=1323.867mil|Location1.Y=4303.24mil|Location2.Y=4342.725mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.382mil|Location2.X=1323.867mil|Location1.Y=4303.24mil|Location2.Y=4342.725mil|Absolute=True">SMD Entry Constraint: Between Pad J101-3(266.575mil,3312.795mil) on Top Layer And Track (267.52mil,3313.74mil)(927.244mil,3313.74mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3364.5mil|Location2.X=3388.985mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3364.5mil|Location2.X=3388.985mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True">SMD Entry Constraint: Between Pad J103-12(2375.945mil,150mil) on Top Layer And Track (2375mil,140.938mil)(2375mil,760mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2973.122mil|Location2.X=2997.607mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2973.122mil|Location2.X=2997.607mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True">SMD Entry Constraint: Between Pad J103-2(1982.244mil,150mil) on Top Layer And Track (1983.622mil,151.378mil)(1983.622mil,253.622mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3010.307mil|Location2.X=3034.792mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3010.307mil|Location2.X=3034.792mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True">SMD Entry Constraint: Between Pad J103-3(2021.614mil,39.764mil) on Top Layer And Track (2020.807mil,40.571mil)(2020.807mil,229.193mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3049.992mil|Location2.X=3074.477mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3049.992mil|Location2.X=3074.477mil|Location1.Y=1169.027mil|Location2.Y=1208.513mil|Absolute=True">SMD Entry Constraint: Between Pad J103-4(2060.984mil,150mil) on Top Layer And Track (2060.492mil,150.492mil)(2060.492mil,264.508mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3089.677mil|Location2.X=3114.162mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3089.677mil|Location2.X=3114.162mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True">SMD Entry Constraint: Between Pad J103-5(2100.354mil,39.764mil) on Top Layer And Track (2100.177mil,39.941mil)(2100.177mil,234.823mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3249.5mil|Location2.X=3273.985mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3249.5mil|Location2.X=3273.985mil|Location1.Y=1058.791mil|Location2.Y=1098.277mil|Absolute=True">SMD Entry Constraint: Between Pad J103-9(2257.835mil,39.764mil) on Top Layer And Track (2260mil,32.584mil)(2260mil,915mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4755.396mil|Location2.X=4779.881mil|Location1.Y=4003.319mil|Location2.Y=4042.804mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4755.396mil|Location2.X=4779.881mil|Location1.Y=4003.319mil|Location2.Y=4042.804mil|Absolute=True">SMD Entry Constraint: Between Pad J203-1(3799.685mil,3013.819mil) on Top Layer And Track (3310mil,3013.819mil)(3799.685mil,3013.819mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4755.396mil|Location2.X=4779.881mil|Location1.Y=4105.681mil|Location2.Y=4145.166mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4755.396mil|Location2.X=4779.881mil|Location1.Y=4105.681mil|Location2.Y=4145.166mil|Absolute=True">SMD Entry Constraint: Between Pad J203-5(3799.685mil,3116.181mil) on Top Layer And Track (3706.181mil,3116.181mil)(3799.685mil,3116.181mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4745.396mil|Location2.X=4769.881mil|Location1.Y=1953.319mil|Location2.Y=1992.804mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4745.396mil|Location2.X=4769.881mil|Location1.Y=1953.319mil|Location2.Y=1992.804mil|Absolute=True">SMD Entry Constraint: Between Pad J301-1(3789.685mil,963.819mil) on Top Layer And Track (3511.181mil,963.819mil)(3789.685mil,963.819mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4745.396mil|Location2.X=4769.881mil|Location1.Y=2055.091mil|Location2.Y=2094.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4745.396mil|Location2.X=4769.881mil|Location1.Y=2055.091mil|Location2.Y=2094.576mil|Absolute=True">SMD Entry Constraint: Between Pad J301-5(3789.685mil,1066.181mil) on Top Layer And Track (3705.591mil,1065.591mil)(3789.095mil,1065.591mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1512.858mil|Location2.X=1537.343mil|Location1.Y=3814.5mil|Location2.Y=3853.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1512.858mil|Location2.X=1537.343mil|Location1.Y=3814.5mil|Location2.Y=3853.985mil|Absolute=True">SMD Entry Constraint: Between Pad R101-2(495mil,2826.378mil) on Top Layer And Track (496.378mil,2825mil)(580mil,2825mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2308.87mil|Location2.X=2333.355mil|Location1.Y=2947mil|Location2.Y=2986.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2308.87mil|Location2.X=2333.355mil|Location1.Y=2947mil|Location2.Y=2986.485mil|Absolute=True">SMD Entry Constraint: Between Pad R103-1(1318mil,1935mil) on Top Layer And Track (1319.37mil,1936.37mil)(1319.37mil,1990.442mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2377.217mil|Location2.X=2401.702mil|Location1.Y=2947mil|Location2.Y=2986.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2377.217mil|Location2.X=2401.702mil|Location1.Y=2947mil|Location2.Y=2986.485mil|Absolute=True">SMD Entry Constraint: Between Pad R103-2(1385mil,1935mil) on Top Layer And Track (1387.717mil,1937.717mil)(1387.717mil,2003.11mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1607mil|Location2.X=1631.485mil|Location1.Y=2239.5mil|Location2.Y=2278.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1607mil|Location2.X=1631.485mil|Location1.Y=2239.5mil|Location2.Y=2278.985mil|Absolute=True">SMD Entry Constraint: Between Pad R104-2(640mil,1248mil) on Top Layer And Track (515mil,1250mil)(625mil,1250mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1542mil|Location2.X=1566.485mil|Location1.Y=2377mil|Location2.Y=2416.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1542mil|Location2.X=1566.485mil|Location1.Y=2377mil|Location2.Y=2416.485mil|Absolute=True">SMD Entry Constraint: Between Pad R105-1(555mil,1410mil) on Top Layer And Track (552.5mil,1332mil)(552.5mil,1407.5mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1549.5mil|Location2.X=1573.985mil|Location1.Y=2422mil|Location2.Y=2461.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1549.5mil|Location2.X=1573.985mil|Location1.Y=2422mil|Location2.Y=2461.485mil|Absolute=True">SMD Entry Constraint: Between Pad R105-1(555mil,1410mil) on Top Layer And Track (560mil,1415mil)(560mil,1470mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1474.5mil|Location2.X=1498.985mil|Location1.Y=2422mil|Location2.Y=2461.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1474.5mil|Location2.X=1498.985mil|Location1.Y=2422mil|Location2.Y=2461.485mil|Absolute=True">SMD Entry Constraint: Between Pad R105-2(488mil,1410mil) on Top Layer And Track (485mil,1413mil)(485mil,1445mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1927mil|Location2.X=1951.485mil|Location1.Y=2232.5mil|Location2.Y=2271.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1927mil|Location2.X=1951.485mil|Location1.Y=2232.5mil|Location2.Y=2271.985mil|Absolute=True">SMD Entry Constraint: Between Pad R106-2(960mil,1245mil) on Top Layer And Track (837.5mil,1243mil)(958mil,1243mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1954.5mil|Location2.X=1978.985mil|Location1.Y=2214.5mil|Location2.Y=2253.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1954.5mil|Location2.X=1978.985mil|Location1.Y=2214.5mil|Location2.Y=2253.985mil|Absolute=True">SMD Entry Constraint: Between Pad R106-2(960mil,1245mil) on Top Layer And Track (965mil,1190mil)(965mil,1240mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1794.5mil|Location2.X=1818.985mil|Location1.Y=2417mil|Location2.Y=2456.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1794.5mil|Location2.X=1818.985mil|Location1.Y=2417mil|Location2.Y=2456.485mil|Absolute=True">SMD Entry Constraint: Between Pad R107-2(808mil,1405mil) on Top Layer And Track (805mil,1408mil)(805mil,1455mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2167mil|Location2.X=2191.485mil|Location1.Y=2367mil|Location2.Y=2406.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2167mil|Location2.X=2191.485mil|Location1.Y=2367mil|Location2.Y=2406.485mil|Absolute=True">SMD Entry Constraint: Between Pad R109-1(1180mil,1400mil) on Top Layer And Track (1177.5mil,1317mil)(1177.5mil,1397.5mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2172.388mil|Location2.X=2196.874mil|Location1.Y=2412mil|Location2.Y=2451.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2172.388mil|Location2.X=2196.874mil|Location1.Y=2412mil|Location2.Y=2451.485mil|Absolute=True">SMD Entry Constraint: Between Pad R109-1(1180mil,1400mil) on Top Layer And Track (1182.888mil,1402.888mil)(1182.888mil,1452.82mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2104.5mil|Location2.X=2128.985mil|Location1.Y=2367mil|Location2.Y=2406.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2104.5mil|Location2.X=2128.985mil|Location1.Y=2367mil|Location2.Y=2406.485mil|Absolute=True">SMD Entry Constraint: Between Pad R109-2(1113mil,1400mil) on Top Layer And Track (1115mil,1365mil)(1115mil,1398mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2104.5mil|Location2.X=2128.985mil|Location1.Y=2412mil|Location2.Y=2451.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2104.5mil|Location2.X=2128.985mil|Location1.Y=2412mil|Location2.Y=2451.485mil|Absolute=True">SMD Entry Constraint: Between Pad R109-2(1113mil,1400mil) on Top Layer And Track (1115mil,1402mil)(1115mil,1450mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472mil|Location2.X=2496.485mil|Location1.Y=2362mil|Location2.Y=2401.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472mil|Location2.X=2496.485mil|Location1.Y=2362mil|Location2.Y=2401.485mil|Absolute=True">SMD Entry Constraint: Between Pad R111-1(1480mil,1395mil) on Top Layer And Track (1482.5mil,1311mil)(1482.5mil,1392.5mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2404.5mil|Location2.X=2428.985mil|Location1.Y=2362mil|Location2.Y=2401.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2404.5mil|Location2.X=2428.985mil|Location1.Y=2362mil|Location2.Y=2401.485mil|Absolute=True">SMD Entry Constraint: Between Pad R111-2(1413mil,1395mil) on Top Layer And Track (1415mil,1360mil)(1415mil,1393mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2392mil|Location2.X=2416.485mil|Location1.Y=1537mil|Location2.Y=1576.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2392mil|Location2.X=2416.485mil|Location1.Y=1537mil|Location2.Y=1576.485mil|Absolute=True">SMD Entry Constraint: Between Pad R113-1(1400mil,525mil) on Top Layer And Track (1402.5mil,527.5mil)(1402.5mil,609mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2092mil|Location2.X=2116.485mil|Location1.Y=1527mil|Location2.Y=1566.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2092mil|Location2.X=2116.485mil|Location1.Y=1527mil|Location2.Y=1566.485mil|Absolute=True">SMD Entry Constraint: Between Pad R115-1(1100mil,515mil) on Top Layer And Track (1102.5mil,519.5mil)(1102.5mil,604mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2154.5mil|Location2.X=2178.985mil|Location1.Y=1482mil|Location2.Y=1521.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2154.5mil|Location2.X=2178.985mil|Location1.Y=1482mil|Location2.Y=1521.485mil|Absolute=True">SMD Entry Constraint: Between Pad R115-2(1167mil,515mil) on Top Layer And Track (1165mil,467.527mil)(1165mil,513mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1914.5mil|Location2.X=1938.985mil|Location1.Y=1699.5mil|Location2.Y=1738.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1914.5mil|Location2.X=1938.985mil|Location1.Y=1699.5mil|Location2.Y=1738.985mil|Absolute=True">SMD Entry Constraint: Between Pad R116-2(930mil,690mil) on Top Layer And Track (925mil,695mil)(925mil,915mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1462mil|Location2.X=1486.485mil|Location1.Y=1537mil|Location2.Y=1576.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1462mil|Location2.X=1486.485mil|Location1.Y=1537mil|Location2.Y=1576.485mil|Absolute=True">SMD Entry Constraint: Between Pad R119-1(470mil,525mil) on Top Layer And Track (472.5mil,529.5mil)(472.5mil,608mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2041.681mil|Location2.X=2066.166mil|Location1.Y=3541.5mil|Location2.Y=3580.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2041.681mil|Location2.X=2066.166mil|Location1.Y=3541.5mil|Location2.Y=3580.985mil|Absolute=True">SMD Entry Constraint: Between Pad R204-1(1050mil,2532mil) on Top Layer And Track (1052.181mil,2534.181mil)(1052.181mil,3094.189mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2019.5mil|Location2.X=2043.985mil|Location1.Y=3434.5mil|Location2.Y=3473.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2019.5mil|Location2.X=2043.985mil|Location1.Y=3434.5mil|Location2.Y=3473.985mil|Absolute=True">SMD Entry Constraint: Between Pad R204-2(1050mil,2465mil) on Top Layer And Track (1004.564mil,2419.564mil)(1031.5mil,2446.5mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3745.248mil|Location2.X=3769.733mil|Location1.Y=1739.5mil|Location2.Y=1778.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3745.248mil|Location2.X=3769.733mil|Location1.Y=1739.5mil|Location2.Y=1778.985mil|Absolute=True">SMD Entry Constraint: Between Pad R303-1(2755mil,730mil) on Top Layer And Track (2755.748mil,730.748mil)(2755.748mil,1180mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4929.5mil|Location2.X=4953.985mil|Location1.Y=3587mil|Location2.Y=3626.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4929.5mil|Location2.X=4953.985mil|Location1.Y=3587mil|Location2.Y=3626.485mil|Absolute=True">SMD Entry Constraint: Between Pad R306-1(3942mil,2575mil) on Top Layer And Track (3940mil,2577mil)(3940mil,2675mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3184.5mil|Location2.X=3208.985mil|Location1.Y=2692mil|Location2.Y=2731.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3184.5mil|Location2.X=3208.985mil|Location1.Y=2692mil|Location2.Y=2731.485mil|Absolute=True">SMD Entry Constraint: Between Pad R307-1(2193.5mil,1725mil) on Top Layer And Track (2195mil,1685mil)(2195mil,1730mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3184.5mil|Location2.X=3208.985mil|Location1.Y=2737mil|Location2.Y=2776.485mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3184.5mil|Location2.X=3208.985mil|Location1.Y=2737mil|Location2.Y=2776.485mil|Absolute=True">SMD Entry Constraint: Between Pad R307-1(2193.5mil,1725mil) on Top Layer And Track (2195mil,1730mil)(2195mil,1810mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2353.22mil|Location2.X=2377.705mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2353.22mil|Location2.X=2377.705mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True">SMD Entry Constraint: Between Pad U102-5(1368.661mil,2003.74mil) on Top Layer And Track (1333.11mil,2004.183mil)(1368.219mil,2004.183mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2377.217mil|Location2.X=2401.702mil|Location1.Y=2982.393mil|Location2.Y=3021.878mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2377.217mil|Location2.X=2401.702mil|Location1.Y=2982.393mil|Location2.Y=3021.878mil|Absolute=True">SMD Entry Constraint: Between Pad U102-6(1388.347mil,2003.74mil) on Top Layer And Track (1387.717mil,1937.717mil)(1387.717mil,2003.11mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2402.473mil|Location2.X=2426.958mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2402.473mil|Location2.X=2426.958mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True">SMD Entry Constraint: Between Pad U102-7(1408.032mil,2003.74mil) on Top Layer And Track (1408.474mil,2004.183mil)(1427.274mil,2004.183mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2412.275mil|Location2.X=2436.76mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2412.275mil|Location2.X=2436.76mil|Location1.Y=2993.683mil|Location2.Y=3033.168mil|Absolute=True">SMD Entry Constraint: Between Pad U102-8(1427.717mil,2003.74mil) on Top Layer And Track (1408.474mil,2004.183mil)(1427.274mil,2004.183mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2422.158mil|Location2.X=2446.643mil|Location1.Y=2994.312mil|Location2.Y=3033.798mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2422.158mil|Location2.X=2446.643mil|Location1.Y=2994.312mil|Location2.Y=3033.798mil|Absolute=True">SMD Entry Constraint: Between Pad U102-8(1427.717mil,2003.74mil) on Top Layer And Track (1427.717mil,2004.812mil)(1459.812mil,2004.812mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.5mil|Location2.X=2469.985mil|Location1.Y=2219.5mil|Location2.Y=2258.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.5mil|Location2.X=2469.985mil|Location1.Y=2219.5mil|Location2.Y=2258.985mil|Absolute=True">SMD Entry Constraint: Between Pad U106-3(1445mil,1229mil) on Top Layer And Track (1446mil,1230mil)(1570mil,1230mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1764.5mil|Location2.X=1788.985mil|Location1.Y=1569.5mil|Location2.Y=1608.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1764.5mil|Location2.X=1788.985mil|Location1.Y=1569.5mil|Location2.Y=1608.985mil|Absolute=True">SMD Entry Constraint: Between Pad U109-1(775mil,605mil) on Top Layer And Track (773mil,578mil)(775mil,580mil) on Top Layer Not Allowed Angle on side for track</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1813mil|Location2.X=1837.485mil|Location1.Y=1679.5mil|Location2.Y=1718.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1813mil|Location2.X=1837.485mil|Location1.Y=1679.5mil|Location2.Y=1718.985mil|Absolute=True">SMD Entry Constraint: Between Pad U109-3(812.5mil,687mil) on Top Layer And Track (815.5mil,690mil)(930mil,690mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2025.933mil|Location2.X=2050.418mil|Location1.Y=4049.989mil|Location2.Y=4089.474mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2025.933mil|Location2.X=2050.418mil|Location1.Y=4049.989mil|Location2.Y=4089.474mil|Absolute=True">SMD Entry Constraint: Between Pad U201-20(1036.496mil,3094.252mil) on Top Layer And Track (1036.433mil,2811.433mil)(1036.433mil,3094.189mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2041.681mil|Location2.X=2066.166mil|Location1.Y=4049.989mil|Location2.Y=4089.474mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2041.681mil|Location2.X=2066.166mil|Location1.Y=4049.989mil|Location2.Y=4089.474mil|Absolute=True">SMD Entry Constraint: Between Pad U201-21(1052.244mil,3094.252mil) on Top Layer And Track (1052.181mil,2534.181mil)(1052.181mil,3094.189mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-134228.228mil|Location2.X=-134203.743mil|Location1.Y=109804.72mil|Location2.Y=109844.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-134228.228mil|Location2.X=-134203.743mil|Location1.Y=109804.72mil|Location2.Y=109844.206mil|Absolute=True">SMD Entry Constraint: Between Pad U201-44(1146.732mil,3360mil) on Top Layer And Track (1146.732mil,3339.43mil)(1156.401mil,3329.762mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2120.547mil|Location2.X=2145.033mil|Location1.Y=4331.485mil|Location2.Y=4370.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2120.547mil|Location2.X=2145.033mil|Location1.Y=4331.485mil|Location2.Y=4370.971mil|Absolute=True">SMD Entry Constraint: Between Pad U201-45(1130.984mil,3360mil) on Top Layer And Track (1131.047mil,3326.047mil)(1131.047mil,3346.283mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1891.746mil|Location2.X=1916.232mil|Location1.Y=4654.5mil|Location2.Y=4693.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1891.746mil|Location2.X=1916.232mil|Location1.Y=4654.5mil|Location2.Y=4693.985mil|Absolute=True">SMD Entry Constraint: Between Pad U202-5(934.764mil,3660mil) on Top Layer And Track (890mil,3665mil)(934.764mil,3665mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1956.781mil|Location2.X=1981.267mil|Location1.Y=4704.5mil|Location2.Y=4743.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1956.781mil|Location2.X=1981.267mil|Location1.Y=4704.5mil|Location2.Y=4743.985mil|Absolute=True">SMD Entry Constraint: Between Pad U202-6(934.764mil,3710mil) on Top Layer And Track (934.764mil,3715mil)(988.5mil,3715mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1866.184mil|Location2.X=1890.669mil|Location1.Y=3618.87mil|Location2.Y=3658.355mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1866.184mil|Location2.X=1890.669mil|Location1.Y=3618.87mil|Location2.Y=3658.355mil|Absolute=True">SMD Entry Constraint: Between Pad Y201-1(875mil,2590mil) on Top Layer And Track (876.684mil,2591.684mil)(876.684mil,2636.684mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1958.988mil|Location2.X=1983.474mil|Location1.Y=3366.902mil|Location2.Y=3406.387mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1958.988mil|Location2.X=1983.474mil|Location1.Y=3366.902mil|Location2.Y=3406.387mil|Absolute=True">SMD Entry Constraint: Between Pad Y201-3(969.488mil,2416.772mil) on Top Layer And Track (955.68mil,2363.593mil)(969.488mil,2377.402mil) on Top Layer Not Allowed Angle on side for track</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1986.547mil|Location2.X=2011.033mil|Location1.Y=3409.064mil|Location2.Y=3448.549mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1986.547mil|Location2.X=2011.033mil|Location1.Y=3409.064mil|Location2.Y=3448.549mil|Absolute=True">SMD Entry Constraint: Between Pad Y201-3(969.488mil,2416.772mil) on Top Layer And Track (972.28mil,2419.564mil)(1004.564mil,2419.564mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.5mil|Location2.X=3683.985mil|Location1.Y=1555.13mil|Location2.Y=1594.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.5mil|Location2.X=3683.985mil|Location1.Y=1555.13mil|Location2.Y=1594.615mil|Absolute=True">SMD Entry Constraint: Between Pad Y301-3(2669.488mil,605mil) on Top Layer And Track (2670mil,555mil)(2670mil,604.488mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3686.547mil|Location2.X=3711.032mil|Location1.Y=1584.5mil|Location2.Y=1623.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3686.547mil|Location2.X=3711.032mil|Location1.Y=1584.5mil|Location2.Y=1623.985mil|Absolute=True">SMD Entry Constraint: Between Pad Y301-3(2669.488mil,605mil) on Top Layer And Track (2679.488mil,595mil)(2740mil,595mil) on Top Layer Track Entry to PAD from not centre of Side</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFCIHNRWT51LIFGNWJQITGRHIBHFQBFE0ESYO4QDGPDPDJPE0S4"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Acute Angle Constraint (Minimum=87.500) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.5mil|Location2.X=2014mil|Location1.Y=4513.732mil|Location2.Y=4533.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.5mil|Location2.X=2014mil|Location1.Y=4513.732mil|Location2.Y=4533.232mil|Absolute=True">Acute Angle Constraint: (48.900 &lt; 87.500) Between Pad C210-2(985mil,3525mil) on Top Layer And Track (1000mil,3525mil)(1005mil,3520mil) on Top Layer (Angle = 48.900)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1772.975mil|Location2.X=1792.475mil|Location1.Y=1492mil|Location2.Y=1511.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1772.975mil|Location2.X=1792.475mil|Location1.Y=1492mil|Location2.Y=1511.5mil|Absolute=True">Acute Angle Constraint: (73.198 &lt; 87.500) Between Pad R117-1(773mil,520mil) on Top Layer And Track (775mil,465mil)(775mil,495.5mil) on Top Layer (Angle = 73.198)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1763.732mil|Location2.X=1783.232mil|Location1.Y=1574.061mil|Location2.Y=1593.561mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1763.732mil|Location2.X=1783.232mil|Location1.Y=1574.061mil|Location2.Y=1593.561mil|Absolute=True">Acute Angle Constraint: (83.554 &lt; 87.500) Between Pad U109-1(775mil,605mil) on Top Layer And Track (773mil,578mil)(775mil,580mil) on Top Layer (Angle = 83.554)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2152.59mil|Location2.X=2172.09mil|Location1.Y=4328.34mil|Location2.Y=4347.84mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2152.59mil|Location2.X=2172.09mil|Location1.Y=4328.34mil|Location2.Y=4347.84mil|Absolute=True">Acute Angle Constraint: (45.683 &lt; 87.500) Between Track (1146.732mil,3339.43mil)(1156.401mil,3329.762mil) on Top Layer And Track (1156.401mil,3329.762mil)(1162.48mil,3329.762mil) on Top Layer (Angle = 45.683)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1951.79mil|Location2.X=1971.29mil|Location1.Y=2326.5mil|Location2.Y=2346mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1951.79mil|Location2.X=1971.29mil|Location1.Y=2326.5mil|Location2.Y=2346mil|Absolute=True">Acute Angle Constraint: (53.685 &lt; 87.500) Between Pad R106-1(960mil,1312mil) on Top Layer And Track (960mil,1335mil)(960mil,1515mil) on Top Layer (Angle = 53.685)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.384mil|Location2.X=1976.884mil|Location1.Y=2326.616mil|Location2.Y=2346.116mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.384mil|Location2.X=1976.884mil|Location1.Y=2326.616mil|Location2.Y=2346.116mil|Absolute=True">Acute Angle Constraint: (56.590 &lt; 87.500) Between Pad R106-1(960mil,1312mil) on Top Layer And Track (960mil,1335mil)(960mil,1515mil) on Top Layer (Angle = 56.590)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3573.732mil|Location2.X=3593.232mil|Location1.Y=1839.5mil|Location2.Y=1859mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3573.732mil|Location2.X=3593.232mil|Location1.Y=1839.5mil|Location2.Y=1859mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 87.500) Between Pad C317-1(2585mil,865mil) on Top Layer And Track (2575mil,835mil)(2585mil,845mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1956.778mil|Location2.X=1976.278mil|Location1.Y=3371.902mil|Location2.Y=3391.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1956.778mil|Location2.X=1976.278mil|Location1.Y=3371.902mil|Location2.Y=3391.402mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 87.500) Between Pad Y201-3(969.488mil,2416.772mil) on Top Layer And Track (955.68mil,2363.593mil)(969.488mil,2377.402mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3655.268mil|Location2.X=3674.768mil|Location1.Y=1839.5mil|Location2.Y=1859mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3655.268mil|Location2.X=3674.768mil|Location1.Y=1839.5mil|Location2.Y=1859mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 87.500) Between Pad C317-2(2655mil,865mil) on Top Layer And Track (2655mil,845mil)(2669.488mil,830.512mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1876.71mil|Location2.X=1896.21mil|Location1.Y=3371.902mil|Location2.Y=3391.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1876.71mil|Location2.X=1896.21mil|Location1.Y=3371.902mil|Location2.Y=3391.402mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 87.500) Between Pad Y201-2(875mil,2416.772mil) on Top Layer And Track (875mil,2377.402mil)(885.68mil,2366.722mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2411.578mil|Location2.X=2431.078mil|Location1.Y=2412mil|Location2.Y=2431.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2411.578mil|Location2.X=2431.078mil|Location1.Y=2412mil|Location2.Y=2431.5mil|Absolute=True">Acute Angle Constraint: (87.294 &lt; 87.500) Between Pad R111-2(1413mil,1395mil) on Top Layer And Track (1413mil,1395mil)(1413mil,1443mil) on Top Layer (Angle = 87.294)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDIR5A1VBF2GRYKX5Y0RXGHLE1VEMIKT422QEHEYMEELG0WVRTKZ4G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.342mil|Location2.X=2977.342mil|Location1.Y=1177.027mil|Location2.Y=1182.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.342mil|Location2.X=2977.342mil|Location1.Y=1177.027mil|Location2.Y=1182.027mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad J103-2(1982.244mil,150mil) on Top Layer And Text "'.ProjectTitle'" (1485mil,129.994mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2862.377mil|Location2.X=2867.377mil|Location1.Y=1167.481mil|Location2.Y=1172.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2862.377mil|Location2.X=2867.377mil|Location1.Y=1167.481mil|Location2.Y=1172.481mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad J103-MP2(1883.819mil,150mil) on Top Layer And Text "'.ProjectTitle'" (1485mil,129.994mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.996mil|Location2.X=4764.996mil|Location1.Y=2155.012mil|Location2.Y=2160.012mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4759.996mil|Location2.X=4764.996mil|Location1.Y=2155.012mil|Location2.Y=2160.012mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad J301-7(3794.606mil,1137.047mil) on Top Layer And Text "D301" (3737.504mil,1236.653mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJDQTBG5RR1JPEMBJFBTX0KKSRBUPSWSL2EMTYJKVJG3RH5F2TG1H"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=1mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2844.05mil|Location2.X=2845.717mil|Location1.Y=1159.168mil|Location2.Y=1160.834mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2844.05mil|Location2.X=2845.717mil|Location1.Y=1159.168mil|Location2.Y=1160.834mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "'.ProjectTitle'" (1485mil,129.994mil) on Top Overlay And Track (1786.378mil,145.944mil)(1853.69mil,162.117mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2557.497mil|Location2.X=2559.164mil|Location1.Y=4349.167mil|Location2.Y=4350.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2557.497mil|Location2.X=2559.164mil|Location1.Y=4349.167mil|Location2.Y=4350.833mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "C220" (1537.504mil,3345.818mil) on Top Overlay And Track (1520mil,3350mil)(1580mil,3350mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3921.033mil|Location2.X=3926.61mil|Location1.Y=2542.798mil|Location2.Y=2548.283mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3921.033mil|Location2.X=3926.61mil|Location1.Y=2542.798mil|Location2.Y=2548.283mil|Absolute=True">Silk To Silk Clearance Constraint: (0.104mil &lt; 1mil) Between Text "C316" (2896.264mil,1547.504mil) on Top Overlay And Track (2920mil,1485mil)(2920mil,1545mil) on Top Overlay Silk Text to Silk Clearance [0.104mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3932.919mil|Location2.X=3934.585mil|Location1.Y=2544.167mil|Location2.Y=2545.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3932.919mil|Location2.X=3934.585mil|Location1.Y=2544.167mil|Location2.Y=2545.833mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "C316" (2896.264mil,1547.504mil) on Top Overlay And Track (2920mil,1545mil)(2935mil,1545mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4748.497mil|Location2.X=4750.164mil|Location1.Y=2235.82mil|Location2.Y=2237.486mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4748.497mil|Location2.X=4750.164mil|Location1.Y=2235.82mil|Location2.Y=2237.486mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "D301" (3737.504mil,1236.653mil) on Top Overlay And Text "J301" (3741mil,1238mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2033.875mil|Location2.X=2036.125mil|Location1.Y=2270.139mil|Location2.Y=2272.389mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2033.875mil|Location2.X=2036.125mil|Location1.Y=2270.139mil|Location2.Y=2272.389mil|Absolute=True">Silk To Silk Clearance Constraint: (0.008mil &lt; 1mil) Between Text "R106" (1032.496mil,1216.264mil) on Top Overlay And Text "U105" (1062.496mil,1271.264mil) on Top Overlay Silk Text to Silk Clearance [0.008mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.167mil|Location2.X=2615.833mil|Location1.Y=1642.513mil|Location2.Y=1644.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.167mil|Location2.X=2615.833mil|Location1.Y=1642.513mil|Location2.Y=1644.18mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "R112" (1597.504mil,726.653mil) on Top Overlay And Track (1615mil,630mil)(1615mil,645mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.167mil|Location2.X=2615.833mil|Location1.Y=1644.167mil|Location2.Y=1645.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.167mil|Location2.X=2615.833mil|Location1.Y=1644.167mil|Location2.Y=1645.833mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 1mil) Between Text "R112" (1597.504mil,726.653mil) on Top Overlay And Track (1615mil,645mil)(1675mil,645mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2064.123mil|Location2.X=2066.373mil|Location1.Y=1482.214mil|Location2.Y=1484.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2064.123mil|Location2.X=2066.373mil|Location1.Y=1482.214mil|Location2.Y=1484.464mil|Absolute=True">Silk To Silk Clearance Constraint: (0.504mil &lt; 1mil) Between Text "R115" (1062.496mil,458.347mil) on Top Overlay And Track (1068.5mil,480mil)(1068.5mil,550mil) on Top Overlay Silk Text to Silk Clearance [0.504mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1434.123mil|Location2.X=1436.373mil|Location1.Y=1498.883mil|Location2.Y=1501.133mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1434.123mil|Location2.X=1436.373mil|Location1.Y=1498.883mil|Location2.Y=1501.133mil|Absolute=True">Silk To Silk Clearance Constraint: (0.504mil &lt; 1mil) Between Text "R119" (432.496mil,483.347mil) on Top Overlay And Track (438.5mil,490mil)(438.5mil,560mil) on Top Overlay Silk Text to Silk Clearance [0.504mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1434.123mil|Location2.X=1436.373mil|Location1.Y=1558.875mil|Location2.Y=1561.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1434.123mil|Location2.X=1436.373mil|Location1.Y=1558.875mil|Location2.Y=1561.125mil|Absolute=True">Silk To Silk Clearance Constraint: (0.504mil &lt; 1mil) Between Text "R119" (432.496mil,483.347mil) on Top Overlay And Track (438.5mil,560mil)(453.5mil,560mil) on Top Overlay Silk Text to Silk Clearance [0.504mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDX0SU2212S4X3OMOPGPDTATXE0CKNBUDPIVATV2E0DWNTBMESJBLK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.075mil|Location2.X=1280.486mil|Location1.Y=4147.815mil|Location2.Y=4178.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.075mil|Location2.X=1280.486mil|Location1.Y=4147.815mil|Location2.Y=4178.424mil|Absolute=True">Net Antennae: Track (266.575mil,3155.315mil)(365.315mil,3155.315mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQUJGFKFJJLHEHTCHAKJTS1UX0F2GBM0BRGEWXYNO2JUS145GPXL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.041mil|Location2.X=2948.707mil|Location1.Y=984.916mil|Location2.Y=996.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.041mil|Location2.X=2948.707mil|Location1.Y=984.916mil|Location2.Y=996.583mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 16mil) Between Arc (1942.874mil,-8.465mil) on Top Overlay And Board Edge </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2922.438mil|Location2.X=2939.688mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2922.438mil|Location2.X=2939.688mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-1(1942.874mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3316.139mil|Location2.X=3333.389mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3316.139mil|Location2.X=3333.389mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-11(2336.575mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3001.178mil|Location2.X=3018.428mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3001.178mil|Location2.X=3018.428mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-3(2021.614mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3079.918mil|Location2.X=3097.168mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3079.918mil|Location2.X=3097.168mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-5(2100.354mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3158.659mil|Location2.X=3175.909mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3158.659mil|Location2.X=3175.909mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-7(2179.095mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3237.399mil|Location2.X=3254.649mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3237.399mil|Location2.X=3254.649mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-9(2257.835mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2859.446mil|Location2.X=2876.696mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2859.446mil|Location2.X=2876.696mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-MP1(1883.819mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3410.627mil|Location2.X=3427.877mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3410.627mil|Location2.X=3427.877mil|Location1.Y=996.493mil|Location2.Y=1013.743mil|Absolute=True">Board Outline Clearance(Outline Edge): (10.237mil &lt; 16mil) Between Board Edge And Pad J103-MP4(2435mil,39.764mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.666mil|Location2.X=1004.333mil|Location1.Y=4592.663mil|Location2.Y=4604.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.666mil|Location2.X=1004.333mil|Location1.Y=4592.663mil|Location2.Y=4604.329mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 16mil) Between Board Edge And Text "J101" (2mil,3586mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.375mil|Location2.X=1009.625mil|Location1.Y=2402.375mil|Location2.Y=2419.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.375mil|Location2.X=1009.625mil|Location1.Y=2402.375mil|Location2.Y=2419.625mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.001mil &lt; 16mil) Between Board Edge And Text "J102" (7mil,1416mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=2373.974mil|Location2.Y=2391.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=2373.974mil|Location2.Y=2391.224mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.811mil &lt; 16mil) Between Board Edge And Track (10.748mil,1382.599mil)(57.008mil,1382.599mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=1698.777mil|Location2.Y=1716.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=1698.777mil|Location2.Y=1716.027mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.811mil &lt; 16mil) Between Board Edge And Track (10.748mil,707.402mil)(10.748mil,1382.599mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=1698.776mil|Location2.Y=1716.026mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.78mil|Location2.X=1012.03mil|Location1.Y=1698.776mil|Location2.Y=1716.026mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.811mil &lt; 16mil) Between Board Edge And Track (10.748mil,707.402mil)(57.008mil,707.402mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=3894.375mil|Location2.Y=3911.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=3894.375mil|Location2.Y=3911.625mil|Absolute=True">Board Outline Clearance(Outline Edge): (15.001mil &lt; 16mil) Between Board Edge And Track (3957mil,2903mil)(3982mil,2903mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=4218.375mil|Location2.Y=4235.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=4218.375mil|Location2.Y=4235.625mil|Absolute=True">Board Outline Clearance(Outline Edge): (15.001mil &lt; 16mil) Between Board Edge And Track (3958mil,3227mil)(3982mil,3227mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=3894.375mil|Location2.Y=3911.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=3894.375mil|Location2.Y=3911.625mil|Absolute=True">Board Outline Clearance(Outline Edge): (15.001mil &lt; 16mil) Between Board Edge And Track (3982mil,2903mil)(3982mil,2927mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=4194.375mil|Location2.Y=4211.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4983.875mil|Location2.X=5001.125mil|Location1.Y=4194.375mil|Location2.Y=4211.625mil|Absolute=True">Board Outline Clearance(Outline Edge): (15.001mil &lt; 16mil) Between Board Edge And Track (3982mil,3203mil)(3982mil,3227mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=3789.406mil|Location2.Y=3806.656mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=3789.406mil|Location2.Y=3806.656mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.812mil &lt; 16mil) Between Board Edge And Track (5.748mil,2798.031mil)(52.008mil,2798.031mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=3789.407mil|Location2.Y=3806.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=3789.407mil|Location2.Y=3806.657mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.812mil &lt; 16mil) Between Board Edge And Track (5.748mil,2798.032mil)(5.748mil,3551.968mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=4543.343mil|Location2.Y=4560.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\spmn\Documents\GitHub\electric_boogaloo\TempestBoards\Copro\CoproMKII\CoproMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=992.28mil|Location2.X=1009.53mil|Location1.Y=4543.343mil|Location2.Y=4560.593mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.812mil &lt; 16mil) Between Board Edge And Track (5.748mil,3551.968mil)(52.008mil,3551.968mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

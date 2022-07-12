@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=NetD1_1 Pin=D1-1
+Removed Pin From Net: NetName=NetD1_1 Pin=J3-1
+Removed Pin From Net: NetName=NetD1_1 Pin=J5-1
+Removed Pin From Net: NetName=NetJ2_3 Pin=M1-12
+Removed Pin From Net: NetName=NetJ2_2 Pin=M1-13
+Removed Pin From Net: NetName=NetJ4_3 Pin=M2-12
+Removed Pin From Net: NetName=NetJ4_2 Pin=M2-13
+Removed Pin From Net: NetName=NetJ7_3 Pin=M3-12
+Removed Pin From Net: NetName=NetJ7_2 Pin=M3-13
+Removed Pin From Net: NetName=NetJ9_3 Pin=M4-12
+Removed Pin From Net: NetName=NetJ9_2 Pin=M4-13
+Change Component Description : Designator=M1 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M2 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M3 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M4 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Added Component: Designator=F1(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "12A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0501012.WR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Littelfuse Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESISTOR_0805)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "4.7K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_1 Pin=F1-2
+Added Pin To Net: NetName=NetJ2_2 Pin=M1-12
+Added Pin To Net: NetName=NetJ2_3 Pin=M1-13
+Added Pin To Net: NetName=NetJ4_2 Pin=M2-12
+Added Pin To Net: NetName=NetJ4_3 Pin=M2-13
+Added Pin To Net: NetName=NetJ7_2 Pin=M3-12
+Added Pin To Net: NetName=NetJ7_3 Pin=M3-13
+Added Pin To Net: NetName=NetJ9_2 Pin=M4-12
+Added Pin To Net: NetName=NetJ9_3 Pin=M4-13
+Added Pin To Net: NetName=NetD1_1 Pin=R1-1
+Change Net Name : Old Net Name=NetD1_1 New Net Name=NetF1_2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R1-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=J3-1
+Added Pin To Net: NetName=NetF1_1 Pin=J5-1
+Added Net: Name=NetF1_1
+Added Member To Class: ClassName=ESC Member=Component F1 0501012.WR
+Added Member To Class: ClassName=ESC Member=Component R1 4.7k Ohm 5% 1/8W
+Added Room: Name=ESC

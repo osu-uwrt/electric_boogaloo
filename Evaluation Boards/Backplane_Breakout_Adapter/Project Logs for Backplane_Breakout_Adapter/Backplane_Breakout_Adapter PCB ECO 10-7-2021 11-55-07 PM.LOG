@@ -1,0 +1,246 @@
+Removed Pin From Net: NetName=PWM_3V3_9 Pin=J2-10
+Removed Pin From Net: NetName=PWM_3V3_3 Pin=J2-11
+Removed Pin From Net: NetName=SWITCH_1 Pin=J2-12
+Removed Pin From Net: NetName=SPARE8 Pin=J2-17
+Removed Pin From Net: NetName=PWM_3V3_1 Pin=J2-18
+Change Component Comment : Designator=J4 Old Comment=Backplane Connector New Comment=Backplane Breakout Pins
+Added Component: Designator=C1(CAPACITOR_0603)
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-7847-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MQ8NNNC/3886777"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1119-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value (uF)"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAPACITOR_0603)
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-7847-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MQ8NNNC/3886777"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1119-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value (uF)"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED_0603)
+Add component (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4978-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Component: Designator=M1(RPI-PICO-MOD)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Footprint Source"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://github.com/amgsus/RPi-Pico-Altium"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Raspberry Pi Foundation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part No"; Value = "SC0915"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Link"; Value = "https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13684020"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part No"; Value = "2648-SC0915CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=M2(W5500IO-P)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Product Webpage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://maker.wiznet.io/2019/04/02/w5500io-p/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "541-RCS060362R0FKEACT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "62"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/4W"; VariantName = "[No Variations]"
+Added Component: Designator=S1(TactileSwitch)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "EG2494-ND"; VariantName = "[No Variations]"
+Added Component: Designator=U10(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=U11(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "4.7 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "P-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TSM500P02CX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-236-3, SC-59, SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.56W (Tc)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "50mOhm @ 3A, 4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "TSM500P02CXRFGCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "20 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Taiwan Semiconductor Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "±10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "800mV @ 250µA"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=PWM_3V3_3 Pin=J2-10
+Added Pin To Net: NetName=SPARE8 Pin=J2-11
+Added Pin To Net: NetName=PWM_3V3_1 Pin=J2-12
+Added Pin To Net: NetName=PWM_3V3_9 Pin=J2-17
+Added Pin To Net: NetName=SWITCH_1 Pin=J2-18
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Pin To Net: NetName=SENSOR_SDA Pin=M1-1
+Added Pin To Net: NetName=SENSOR_SCL Pin=M1-2
+Added Pin To Net: NetName=GND Pin=M1-3
+Added Pin To Net: NetName=KILL_SWITCH Pin=M1-4
+Added Pin To Net: NetName=SWITCH_1 Pin=M1-5
+Added Pin To Net: NetName=12V_ON/OFF Pin=M1-7
+Added Pin To Net: NetName=GND Pin=M1-8
+Added Pin To Net: NetName=PWM_3V3_1 Pin=M1-10
+Added Pin To Net: NetName=PWM_3V3_2 Pin=M1-11
+Added Pin To Net: NetName=GND Pin=M1-13
+Added Pin To Net: NetName=GND Pin=M1-18
+Added Pin To Net: NetName=PWM_3V3_7 Pin=M1-19
+Added Pin To Net: NetName=5V_ON/OFF Pin=M1-20
+Added Pin To Net: NetName=PWM_3V3_6 Pin=M1-21
+Added Pin To Net: NetName=MOBO_ON/OFF Pin=M1-22
+Added Pin To Net: NetName=GND Pin=M1-23
+Added Pin To Net: NetName=PWM_3V3_5 Pin=M1-24
+Added Pin To Net: NetName=PWM_3V3_8 Pin=M1-25
+Added Pin To Net: NetName=PWM_3V3_4 Pin=M1-26
+Added Pin To Net: NetName=PWM_3V3_3 Pin=M1-27
+Added Pin To Net: NetName=GND Pin=M1-28
+Added Pin To Net: NetName=SPARE8 Pin=M1-29
+Added Pin To Net: NetName=BOARD_SDA Pin=M1-31
+Added Pin To Net: NetName=BOARD_SCL Pin=M1-32
+Added Pin To Net: NetName=GND Pin=M1-33
+Added Pin To Net: NetName=PWM_3V3_9 Pin=M1-34
+Added Pin To Net: NetName=GND Pin=M1-38
+Added Pin To Net: NetName=GND Pin=M1-42
+Added Pin To Net: NetName=GND Pin=M2-2
+Added Pin To Net: NetName=5V Pin=R19-1
+Added Pin To Net: NetName=PWM_10 Pin=R19-2
+Added Pin To Net: NetName=3V3 Pin=R20-2
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=S1-3
+Added Pin To Net: NetName=GND Pin=S1-4
+Added Pin To Net: NetName=3V3 Pin=U10-1
+Added Pin To Net: NetName=PWM_10 Pin=U10-3
+Added Pin To Net: NetName=5V Pin=U11-2
+Added Pin To Net: NetName=3V3_MCU Pin=C3-1
+Added Pin To Net: NetName=3V3_MCU Pin=C4-1
+Added Pin To Net: NetName=3V3_MCU Pin=J5-1
+Added Pin To Net: NetName=3V3_MCU Pin=M1-36
+Added Pin To Net: NetName=3V3_MCU Pin=M2-1
+Added Net: Name=3V3_MCU
+Added Pin To Net: NetName=ETH_CLK Pin=M1-14
+Added Pin To Net: NetName=ETH_CLK Pin=M2-6
+Added Net: Name=ETH_CLK
+Added Pin To Net: NetName=ETH_CS Pin=M1-17
+Added Pin To Net: NetName=ETH_CS Pin=M2-5
+Added Net: Name=ETH_CS
+Added Pin To Net: NetName=ETH_MISO Pin=M1-16
+Added Pin To Net: NetName=ETH_MISO Pin=M2-7
+Added Net: Name=ETH_MISO
+Added Pin To Net: NetName=ETH_MOSI Pin=M1-15
+Added Pin To Net: NetName=ETH_MOSI Pin=M2-8
+Added Net: Name=ETH_MOSI
+Added Pin To Net: NetName=ETH_RST Pin=M1-12
+Added Pin To Net: NetName=ETH_RST Pin=M2-3
+Added Net: Name=ETH_RST
+Added Pin To Net: NetName=FAULT_LED Pin=D1-1
+Added Pin To Net: NetName=FAULT_LED Pin=M1-6
+Added Net: Name=FAULT_LED
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R?-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=PWM_3V3_10 Pin=M1-9
+Added Pin To Net: NetName=PWM_3V3_10 Pin=R20-1
+Added Pin To Net: NetName=PWM_3V3_10 Pin=U10-2
+Added Net: Name=PWM_3V3_10
+Added Pin To Net: NetName=RUN Pin=M1-30
+Added Pin To Net: NetName=RUN Pin=S1-1
+Added Pin To Net: NetName=RUN Pin=S1-2
+Added Net: Name=RUN
+Added Pin To Net: NetName=SWCLK Pin=J5-2
+Added Pin To Net: NetName=SWCLK Pin=M1-41
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=J5-3
+Added Pin To Net: NetName=SWDIO Pin=M1-43
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=VBUS Pin=M1-40
+Added Pin To Net: NetName=VBUS Pin=U11-1
+Added Net: Name=VBUS
+Added Pin To Net: NetName=VSYS Pin=C1-1
+Added Pin To Net: NetName=VSYS Pin=C2-1
+Added Pin To Net: NetName=VSYS Pin=M1-39
+Added Pin To Net: NetName=VSYS Pin=U11-3
+Added Net: Name=VSYS
+Added Class: Name=Backplane_Breakout_Adapter_Pico
+Added Member To Class: ClassName=Backplane_Breakout_Adapter_Connectors Member=Component R19 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=Backplane_Breakout_Adapter_Connectors Member=Component R20 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=Backplane_Breakout_Adapter_Connectors Member=Component U10 AO3404A
+Change Room Name: Old Name=RP2040_Evaluation_Design New Name=Backplane_Breakout_Adapter_Pico
+Change Room Scope: Old Scope=InComponentClass('RP2040_Evaluation_Design') New Scope=InComponentClass('Backplane_Breakout_Adapter_Pico')
+Added Room: Name=Backplane_Breakout_Adapter_Connectors

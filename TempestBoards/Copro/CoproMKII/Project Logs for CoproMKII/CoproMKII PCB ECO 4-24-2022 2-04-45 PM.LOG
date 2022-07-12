@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=5V Pin=D206-5
+Removed Pin From Net: NetName=5V Pin=D301-5
+Removed Pin From Net: NetName=PWR_KILL Pin=J101-7
+Added Pin To Net: NetName=Copro_USB_VCC Pin=D206-5
+Added Pin To Net: NetName=Actuator_USB_VCC Pin=D301-5
+Change Net Name : Old Net Name=PWR_CYCLE New Net Name=STAR_BATT_DIS
+Added Pin To Net: NetName=PORT_BATT_DIS Pin=J101-7
+Added Net: Name=PORT_BATT_DIS
+Added Room: Name=CoproMKII_Actuator
+Added Room: Name=CoproMKII_Connectors
+Added Room: Name=CoproMKII_Coprocessor

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=1V1_MCU Pin=C210-2
+Removed Pin From Net: NetName=1V1_MCU Pin=C211-2
+Removed Pin From Net: NetName=1V1_MCU Pin=C219-2
+Removed Pin From Net: NetName=1V1_MCU Pin=U201-23
+Removed Pin From Net: NetName=1V1_MCU Pin=U201-45
+Removed Pin From Net: NetName=1V1_MCU Pin=U201-50
+Change Net Name : Old Net Name=1V1_MCU New Net Name=1V1_MCU_Actuator
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=C210-2
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=C211-2
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=C219-2
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=U201-23
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=U201-45
+Added Pin To Net: NetName=1V1_MCU_Copro Pin=U201-50
+Added Net: Name=1V1_MCU_Copro
+Added Rule: Name=Schematic Supply Nets_2
+Change Rule Scope 1 : Old Scope=InNet('1V1_MCU') New Scope=InNet('1V1_MCU_Actuator')
