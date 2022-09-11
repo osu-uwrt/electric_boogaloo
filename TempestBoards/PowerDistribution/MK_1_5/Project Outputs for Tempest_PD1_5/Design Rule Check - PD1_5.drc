@@ -1,0 +1,263 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Jacob\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK1.5\PD1_5.PcbDoc
+Date     : 2/15/2022
+Time     : 1:46:50 AM
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P044')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('V+'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-1(650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-10(1550mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-11(1650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-12(1750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-13(1850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-14(1950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-15(2050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-16(2150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-17(2250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-18(2350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-19(2450mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-2(750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-20(2550mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-21(2650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-22(2750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-23(2850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-24(2950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-25(3050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-26(3150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-27(3250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-28(3350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-29(3350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-3(850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-30(3250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-31(3150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-32(3050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-33(2950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-34(2850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-35(2750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-36(2650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-37(2550mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-38(2450mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-39(2350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-4(950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-40(2250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-41(2150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-42(2050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-43(1950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-44(1850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-46(1650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-47(1550mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-48(1450mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-49(1350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-5(1050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-50(1250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-51(1150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-52(1050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-53(950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-54(850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-55(750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-56(650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-6(1150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-7(1250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-8(1350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-9(1450mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
+Rule Violations :56
+
+Processing Rule : Clearance Constraint (Gap=6mil) (InNet('GND')),(InNet('V+'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('Motor_Power'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L02_P046')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('PORT_BATT'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('STBD_BATT'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net NetBP1_29 Between Pad BP1-31(3150mil,130mil) on Top Layer And Pad BP1-29(3350mil,130mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_30 Between Track (3050mil,130mil)(3050mil,222.5mil) on Top Layer And Pad BP1-30(3250mil,130mil) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=100mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
+   Violation between SMD Entry Constraint: Between Pad BP1-11(1650mil,130mil) on Bottom Layer And Track (1657.5mil,252.5mil)(1710mil,305mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad BP1-44(1850mil,130mil) on Top Layer And Track (1752.5mil,220mil)(1847.5mil,220mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (1657.5mil,215mil)(1742.5mil,215mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (1752.5mil,220mil)(1847.5mil,220mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad BP1-46(1650mil,130mil) on Top Layer And Track (1657.5mil,215mil)(1742.5mil,215mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad C1-1(2560mil,2590.394mil) on Top Layer And Track (2495mil,2645mil)(2545mil,2595mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad C1-1(2560mil,2590.394mil) on Top Layer And Track (2545mil,2595mil)(2943.74mil,2595mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad C6-1(3435.394mil,1400mil) on Top Layer And Track (3427.953mil,1209.567mil)(3427.953mil,1399.567mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad Q?-5(3470mil,510mil) on Top Layer And Track (3389.528mil,618.311mil)(3470mil,537.839mil) on Top Layer Not Allowed Angle in corner for track
+   Violation between SMD Entry Constraint: Between Pad Q1-5(1192.284mil,1475mil) on Top Layer And Track (1187.44mil,1437.44mil)(1187.44mil,1470.157mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad Q2-4(1085mil,2075mil) on Top Layer And Track (1090mil,2070mil)(1120mil,2070mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad Q5-4(1255mil,3225mil) on Top Layer And Track (1258.087mil,3228.087mil)(1258.087mil,3273.087mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R2-1(2180mil,738.5mil) on Top Layer And Track (2060mil,746.5mil)(2172mil,746.5mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R2-1(2180mil,738.5mil) on Top Layer And Track (2199mil,755mil)(2455mil,755mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R8-1(3195mil,1048.5mil) on Bottom Layer And Track (3195mil,1048.5mil)(3262.5mil,1116mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R8-2(3195mil,981.5mil) on Bottom Layer And Track (3176.5mil,931.5mil)(3176.5mil,965.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R99-2(3205mil,406.5mil) on Top Layer And Track (3032.5mil,405mil)(3205mil,405mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB?-1(3026.5mil,840mil) on Top Layer And Track (2675mil,1191.5mil)(3026.5mil,840mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB0-2(2303.5mil,860mil) on Bottom Layer And Track (2310mil,800mil)(2310mil,846mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB0-2(2303.5mil,860mil) on Bottom Layer And Track (2310mil,871.5mil)(2310mil,945mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB2-2(2303.5mil,945mil) on Bottom Layer And Track (2310mil,871.5mil)(2310mil,945mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB2-2(2303.5mil,945mil) on Bottom Layer And Track (2310mil,945mil)(2310mil,970mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB3-1(2185mil,1056.5mil) on Bottom Layer And Track (2071.653mil,1050mil)(2174mil,1050mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB3-1(2185mil,1056.5mil) on Bottom Layer And Track (2202.5mil,1061.5mil)(2295mil,1061.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U2-1(1075mil,1312.402mil) on Top Layer And Track (717.244mil,1315mil)(1075mil,1315mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-1(2071.653mil,1300mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1400mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-7(2071.653mil,1000mil) on Bottom Layer And Track (2076.653mil,995mil)(2255mil,995mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-9(1878.347mil,1050mil) on Bottom Layer And Track (1886.158mil,1042.189mil)(1937.811mil,1042.189mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U7-1(3487.5mil,1034mil) on Bottom Layer And Track (3488.75mil,971.25mil)(3488.75mil,1057.75mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U99-1(2957.5mil,409mil) on Top Layer And Track (2680mil,415mil)(2951.5mil,415mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U99-2(3032.5mil,409mil) on Top Layer And Track (3032.5mil,405mil)(3205mil,405mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U99-3(2995mil,491mil) on Top Layer And Track (2858mil,512mil)(2988mil,512mil) on Top Layer Track Entry to PAD from not centre of Side
+Rule Violations :32
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=245mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=20mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J?-1(432.402mil,562.323mil) on Multi-Layer And Track (396.969mil,456.024mil)(396.969mil,833.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J?-2(432.402mil,727.677mil) on Multi-Layer And Track (396.969mil,456.024mil)(396.969mil,833.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-1(3422.598mil,2332.677mil) on Multi-Layer And Track (3458.032mil,2061.024mil)(3458.032mil,2438.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-2(3422.598mil,2167.323mil) on Multi-Layer And Track (3458.032mil,2061.024mil)(3458.032mil,2438.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad Xavier-1(3602.598mil,867.677mil) on Multi-Layer And Track (3638.032mil,596.024mil)(3638.032mil,973.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad Xavier-2(3602.598mil,702.323mil) on Multi-Layer And Track (3638.032mil,596.024mil)(3638.032mil,973.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+Rule Violations :6
+
+Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-1(650mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-10(1550mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-11(1650mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-12(1750mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-13(1850mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-14(1950mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-15(2050mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-16(2150mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-17(2250mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-18(2350mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-19(2450mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-2(750mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-20(2550mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-21(2650mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-22(2750mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-23(2850mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-24(2950mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-25(3050mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-26(3150mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-27(3250mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-28(3350mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-29(3350mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-3(850mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-30(3250mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-31(3150mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-32(3050mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-33(2950mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-34(2850mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-35(2750mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-36(2650mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-37(2550mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-38(2450mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-39(2350mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-4(950mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-40(2250mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-41(2150mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-42(2050mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-43(1950mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-44(1850mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-45(1750mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-46(1650mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-47(1550mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-48(1450mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-49(1350mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-5(1050mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-50(1250mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-51(1150mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-52(1050mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-53(950mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-54(850mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-55(750mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-56(650mil,130mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-6(1150mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-7(1250mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-8(1350mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-9(1450mil,130mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,456.024mil)(-106.969mil,833.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,456.024mil)(396.969mil,456.024mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,833.976mil)(396.969mil,833.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,2296.299mil)(740mil,2296.299mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,445mil)(-120mil,475mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,445mil)(-90mil,445mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,815mil)(-120mil,845mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,845mil)(-90mil,845mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,900mil)(-120mil,2296.299mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,900mil)(740mil,900mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,2277.323mil)(-130mil,2307.323mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,2307.323mil)(-100mil,2307.323mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,888.976mil)(-100mil,888.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,888.976mil)(-130mil,918.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3638.032mil,596.024mil)(4141.968mil,596.024mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3638.032mil,973.976mil)(4141.968mil,973.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4125mil,585mil)(4155mil,585mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4125mil,985mil)(4155mil,985mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4141.968mil,596.024mil)(4141.968mil,973.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4155mil,585mil)(4155mil,615mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4155mil,955mil)(4155mil,985mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,2436.578mil)(690mil,2436.578mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,2436.578mil)(-94.843mil,3641.3mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,3641.3mil)(690mil,3641.3mil) on Top Overlay 
+Rule Violations :80
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 176
+Waived Violations : 0
+Time Elapsed        : 00:00:02

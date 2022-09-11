@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=V+ Pin=Q4-1
+Removed Pin From Net: NetName=V+ Pin=Q4-2
+Removed Pin From Net: NetName=V+ Pin=Q4-3
+Removed Pin From Net: NetName=NetQ3_4 Pin=Q4-4
+Removed Pin From Net: NetName=Motor_Power Pin=Q4-5
+Removed Pin From Net: NetName=+12 Pin=Q8-1
+Removed Pin From Net: NetName=+12 Pin=Q8-2
+Removed Pin From Net: NetName=+12 Pin=Q8-3
+Removed Pin From Net: NetName=XavierCONN Pin=Q8-5
+Removed Member From Class: ClassName=PD1_5 Member=Q4
+Removed Member From Class: ClassName=PD1_5 Member=Q8
+Change Component Designator: OldDesignator=Q7 NewDesignator=Q?
+Added Component: Designator=U7(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "4.7 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "P-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TSM500P02CX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-236-3, SC-59, SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.56W (Tc)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "50mOhm @ 3A, 4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "TSM500P02CXRFGCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "20 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Taiwan Semiconductor Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "±10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "800mV @ 250µA"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=XavierCONN Pin=U7-2
+Added Pin To Net: NetName=+12 Pin=U7-3
+Change Net Name : Old Net Name=NetQ7_1 New Net Name=NetQ?_1
+Change Net Name : Old Net Name=NetQ7_4 New Net Name=NetQ?_4
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=R9-1
+Added Pin To Net: NetName=NetR8_2 Pin=U7-1
+Added Net: Name=NetR8_2
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=PD1_5 Member=Component U7 MOSFET P-CHANNEL 20V 4.7A SOT23

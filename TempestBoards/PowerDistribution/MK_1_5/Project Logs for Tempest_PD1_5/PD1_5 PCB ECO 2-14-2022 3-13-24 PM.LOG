@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=R? NewDesignator=R49
+Change Component Designator: OldDesignator=R? NewDesignator=R50
+Added Pin To Net: NetName=3V3 Pin=R49-1
+Added Pin To Net: NetName=3V3 Pin=R50-1
+Added Member To Class: ClassName=PD1_5 _S2 Member=Component R49 4.7k Ohm 5% 1/8W
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit
