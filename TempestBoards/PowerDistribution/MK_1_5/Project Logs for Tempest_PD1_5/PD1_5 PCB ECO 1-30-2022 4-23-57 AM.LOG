@@ -1,0 +1,43 @@
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD103JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=R?-1
+Added Pin To Net: NetName=Killswitch Pin=R?-2
+Added Net: Name=Killswitch
+Added Pin To Net: NetName=Motor_Power Pin=Q?-5
+Added Net: Name=Motor_Power
+Added Member To Class: ClassName=PD1_5 Member=Component C? .1uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? .1uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? 100uF
+Added Member To Class: ClassName=PD1_5 Member=Component C? 22uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? 22uF 50V
+Added Member To Class: ClassName=PD1_5 _S2 Member=Component J? Backplane Connector
+Added Member To Class: ClassName=PD1_5 Member=Component PS? I6A4W020A033V-001-R
+Added Member To Class: ClassName=PD1_5 Member=Component Q? MOSFET P-CH 30V 45A LFPAK56
+Added Member To Class: ClassName=PD1_5 Member=Component Q? MOSFET P-CH 30V 45A LFPAK56
+Added Member To Class: ClassName=PD1_5 Member=Component R? TC33X-2-203E
+Added Member To Class: ClassName=PD1_5 Member=Component R? TC33X-2-203E
+Added Member To Class: ClassName=PD1_5 Member=Component R? 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=PD1_5 Member=Component U? LM1117IMPX-3.3/NOPB
+Added Member To Class: ClassName=PD1_5 Member=Component U? LTC4412ES6TRPBF

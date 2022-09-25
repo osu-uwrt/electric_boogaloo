@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=XavierCONN Pin=U7-2
+Removed Pin From Net: NetName=+12 Pin=U7-3
+Change Component Designator: OldDesignator=Q? NewDesignator=Q7
+Added Component: Designator=Q8(TRANS_PSMN5R5-60YS,115)
+Added Pin To Net: NetName=+12 Pin=Q8-1
+Added Pin To Net: NetName=+12 Pin=Q8-2
+Added Pin To Net: NetName=+12 Pin=Q8-3
+Added Pin To Net: NetName=XavierCONN Pin=Q8-5
+Change Net Name : Old Net Name=NetQ?_1 New Net Name=NetQ7_1
+Change Net Name : Old Net Name=NetQ?_4 New Net Name=NetQ7_4
+Added Pin To Net: NetName=NetQ8_4 Pin=Q8-4
+Added Pin To Net: NetName=NetQ8_4 Pin=R8-2
+Added Pin To Net: NetName=NetQ8_4 Pin=R9-1
+Added Net: Name=NetQ8_4
+Added Member To Class: ClassName=PD1_5 Member=Component Q8 MOSFET P-CH 30V 45A LFPAK56
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit

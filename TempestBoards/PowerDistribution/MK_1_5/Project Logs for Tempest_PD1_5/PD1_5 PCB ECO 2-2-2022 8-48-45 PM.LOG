@@ -1,0 +1,17 @@
+Added Pin To Net: NetName=GND Pin=BATTCONN-1
+Added Pin To Net: NetName=GND Pin=BATTCONN-2
+Added Pin To Net: NetName=GND Pin=BATTCONN-3
+Added Pin To Net: NetName=GND Pin=BATTCONN-4
+Added Pin To Net: NetName=GND Pin=BATTCONN-5
+Added Pin To Net: NetName=GND Pin=BATTCONN-6
+Added Pin To Net: NetName=GND Pin=BATTCONN-7
+Added Pin To Net: NetName=GND Pin=BATTCONN-8
+Added Pin To Net: NetName=STBD_BATT Pin=BATTCONN-9
+Added Pin To Net: NetName=STBD_BATT Pin=BATTCONN-10
+Added Pin To Net: NetName=STBD_BATT Pin=BATTCONN-11
+Added Pin To Net: NetName=STBD_BATT Pin=BATTCONN-12
+Added Pin To Net: NetName=PORT_BATT Pin=BATTCONN-13
+Added Pin To Net: NetName=PORT_BATT Pin=BATTCONN-14
+Added Pin To Net: NetName=PORT_BATT Pin=BATTCONN-15
+Added Pin To Net: NetName=PORT_BATT Pin=BATTCONN-16
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit

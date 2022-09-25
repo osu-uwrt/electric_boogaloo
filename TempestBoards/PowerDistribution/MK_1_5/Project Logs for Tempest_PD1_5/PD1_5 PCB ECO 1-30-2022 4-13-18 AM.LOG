@@ -1,0 +1,36 @@
+Change component parameters: Designator = "U?" ("U?"); Footprint = "TSOT-23_S6"; UniqueID = "\QDAFGMSL" ("\QDAFGMSL")
+Change component parameters (AddParameter): Name = "Arrow_Europe-Purchase-URL"; Value = "https://snapeda.com/shop?store=Arrow+Europe&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LTC4412ES6%23TRPBF/Analog%20Devices/view-part/4343773/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser-Purchase-URL"; Value = "https://snapeda.com/shop?store=Mouser&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "LTC4412ES6#TRPBF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT-23-6 Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LTC4412ES6%23TRPBF/Analog%20Devices/view-part/4343773/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U?" ("U?"); Footprint = "TSOT-23_S6"; UniqueID = "\WSSGLGWX" ("\WSSGLGWX")
+Change component parameters (AddParameter): Name = "Arrow_Europe-Purchase-URL"; Value = "https://snapeda.com/shop?store=Arrow+Europe&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LTC4412ES6%23TRPBF/Analog%20Devices/view-part/4343773/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser-Purchase-URL"; Value = "https://snapeda.com/shop?store=Mouser&id=4343773"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "LTC4412ES6#TRPBF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT-23-6 Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LTC4412ES6%23TRPBF/Analog%20Devices/view-part/4343773/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=PD1_5 Member=Component C? .1uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? 22uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? 22uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? .1uF 50V
+Added Member To Class: ClassName=PD1_5 Member=Component C? 100uF
+Added Member To Class: ClassName=PD1_5 _S2 Member=Component J? Backplane Connector
+Added Member To Class: ClassName=PD1_5 Member=Component PS? I6A4W020A033V-001-R
+Added Member To Class: ClassName=PD1_5 Member=Component Q? MOSFET P-CH 30V 45A LFPAK56
+Added Member To Class: ClassName=PD1_5 Member=Component Q? MOSFET P-CH 30V 45A LFPAK56
+Added Member To Class: ClassName=PD1_5 Member=Component R? TC33X-2-203E
+Added Member To Class: ClassName=PD1_5 Member=Component U? LM1117IMPX-3.3/NOPB
+Added Member To Class: ClassName=PD1_5 Member=Component U? LTC4412ES6TRPBF

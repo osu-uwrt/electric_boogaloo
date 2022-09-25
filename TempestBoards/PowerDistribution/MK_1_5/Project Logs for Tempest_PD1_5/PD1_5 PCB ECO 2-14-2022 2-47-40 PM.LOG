@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=GND Pin=BATTCONN-A
+Added Component: Designator=J?(CONN_MOLEX_MINIFIT JR_4 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/026013115_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM13112-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Killswitch Pin=J?-1
+Added Pin To Net: NetName=3V3 Pin=J?-2
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=AUX_SWITCH Pin=BP1-38
+Added Pin To Net: NetName=AUX_SWITCH Pin=J?-3
+Added Net: Name=AUX_SWITCH
+Added Member To Class: ClassName=PD1_5 _S2 Member=Component J? 4 POS R/A
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit

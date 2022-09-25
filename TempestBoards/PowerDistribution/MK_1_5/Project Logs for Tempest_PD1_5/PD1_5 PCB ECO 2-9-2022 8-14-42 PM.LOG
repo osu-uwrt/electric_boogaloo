@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=Q? NewDesignator=Q6
+Added Pin To Net: NetName=V+ Pin=Q6-1
+Added Pin To Net: NetName=V+ Pin=Q6-2
+Added Pin To Net: NetName=V+ Pin=Q6-3
+Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit
