@@ -1,0 +1,22 @@
+Change Net Name : Old Net Name=NetJ6_10 New Net Name=Telemetry
+Added Pin To Net: NetName=NetC2_1 Pin=M1-6
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC2_2 Pin=M1-7
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC3_1 Pin=M2-6
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC3_2 Pin=M2-7
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC4_1 Pin=M3-6
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC4_2 Pin=M3-7
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC5_1 Pin=M4-6
+Added Net: Name=NetC5_1
+Added Pin To Net: NetName=NetC5_2 Pin=M4-7
+Added Net: Name=NetC5_2
+Add Class Member: Failed to add class member : Component C2 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C3 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C4 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C5 Dummy Cap (NO FOOTPRINT)
+Added Member To Class: ClassName=ESC Member=Component M3 APD 80F3[X]

@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=F1-1
+Removed Pin From Net: NetName=VCC Pin=F1-2
+Removed Pin From Net: NetName=NetJ3_1 Pin=J3-1
+Removed Pin From Net: NetName=GND Pin=J3-2
+Removed Pin From Net: NetName=NetJ3_1 Pin=J5-1
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=PWM_GND Pin=J6-1
+Removed Pin From Net: NetName=PWM_GND Pin=J8-1
+Removed Pin From Net: NetName=VCC Pin=M1-1
+Removed Pin From Net: NetName=VCC Pin=M2-1
+Removed Pin From Net: NetName=VCC Pin=M3-1
+Removed Member From Class: ClassName=ESC Member=F1
+Removed Member From Class: ClassName=ESC Member=J3
+Removed Member From Class: ClassName=ESC Member=J5
+Added Component: Designator=*(Redcube M4 Term 85A)
+Change Net Name : Old Net Name=NetJ3_1 New Net Name=NetQ1_1
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-1
+Added Pin To Net: NetName=NetJ6_1 Pin=J8-1
+Added Net: Name=NetJ6_1
+Added Member To Class: ClassName=ESC Member=Component * Redcube M4 Term 85A
