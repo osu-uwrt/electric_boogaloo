@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=V+ Pin=SB4-1
+Removed Pin From Net: NetName=V+ Pin=SB5-2
+Removed Pin From Net: NetName=V+ Pin=U50-3
+Added Pin To Net: NetName=NetSB4_1 Pin=SB4-1
+Added Pin To Net: NetName=NetSB4_1 Pin=SB5-2
+Added Pin To Net: NetName=NetSB4_1 Pin=U50-3
+Added Net: Name=NetSB4_1
+Added Member To Class: ClassName=M1_75S Member=Component R4 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=M1_75S Member=Component R5 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=M1_75S2 Member=Component SB10 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=M1_75S2 Member=Component SB11 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=M1_75S Member=Component SB12 0 Ohm Jumper No Fit
