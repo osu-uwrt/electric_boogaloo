@@ -124,7 +124,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KBCGNCQN
 
 [Document6]
 DocumentPath=..\..\..\Library\Connectors.SchLib
@@ -141,7 +141,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BDYVBFSS
 
 [Document7]
 DocumentPath=..\..\..\Library\Converter.PcbLib
@@ -450,23 +450,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\..\..\Library\TMR6-2410.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document26]
 DocumentPath=..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -483,7 +466,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document26]
 DocumentPath=..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -500,7 +483,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document27]
 DocumentPath=..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -517,7 +500,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document28]
 DocumentPath=..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -534,7 +517,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document30]
+[Document29]
 DocumentPath=CoproMKII_Coprocessor.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -551,7 +534,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SYWDUOII
 
-[Document31]
+[Document30]
 DocumentPath=CoproMKII_Actuator.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -567,6 +550,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WZHRNPKW
+
+[Document31]
+DocumentPath=CoproMKII_Ethernet.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=THUPYYQH
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for CoproMKII\Design Rule Check - CoproMKII.html
