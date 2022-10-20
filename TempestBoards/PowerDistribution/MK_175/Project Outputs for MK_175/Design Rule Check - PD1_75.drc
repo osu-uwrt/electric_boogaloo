@@ -1,25 +1,24 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\epica\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK_175\PD1_75.PcbDoc
-Date     : 9/28/2022
-Time     : 8:53:40 PM
+Date     : 10/12/2022
+Time     : 9:39:07 PM
 
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('V+'))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('PORT_BATT'))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=6mil) (InNet('GND')),(InNet('V+'))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P044')),(All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('STBD_BATT'))
-Rule Violations :0
+Processing Rule : Clearance Constraint (Gap=20mil) (InNetClass('HighPower')),(InNetClass('HighPower'))
+   Violation between Clearance Constraint: (17.391mil < 20mil) Between Area Fill (765mil,2205mil) (1125.748mil,2460mil) on Top Layer And Track (1108.5mil,2157.5mil)(1145mil,2194mil) on Top Layer 
+   Violation between Clearance Constraint: (15.252mil < 20mil) Between Area Fill (765mil,2205mil) (1125.748mil,2460mil) on Top Layer And Track (1145mil,2194mil)(1145mil,2409.748mil) on Top Layer 
+   Violation between Clearance Constraint: (15.252mil < 20mil) Between Area Fill (765mil,2205mil) (1125.748mil,2460mil) on Top Layer And Track (1145mil,2409.748mil)(1175.252mil,2440mil) on Top Layer 
+   Violation between Clearance Constraint: (17.402mil < 20mil) Between Pad U1-1(1055mil,2077.402mil) on Top Layer And Pad U1-2(1055mil,2040mil) on Top Layer 
+   Violation between Clearance Constraint: (17.402mil < 20mil) Between Pad U2-1(1070mil,1352.402mil) on Top Layer And Pad U2-2(1070mil,1315mil) on Top Layer 
+   Violation between Clearance Constraint: (18.189mil < 20mil) Between Pad U50-6(2069.313mil,1050mil) on Bottom Layer And Track (2071.653mil,1100mil)(2071.653mil,1150mil) on Bottom Layer 
+   Violation between Clearance Constraint: (15.252mil < 20mil) Between Region (0 hole(s)) Top Layer And Track (1145mil,2194mil)(1145mil,2409.748mil) on Top Layer 
+   Violation between Clearance Constraint: (15.252mil < 20mil) Between Region (0 hole(s)) Top Layer And Track (1145mil,2409.748mil)(1175.252mil,2440mil) on Top Layer 
+   Violation between Clearance Constraint: (11mil < 20mil) Between Track (1970.637mil,340.637mil)(2205mil,575mil) on Bottom Layer And Track (2160mil,630mil)(2300mil,630mil) on Bottom Layer 
+   Violation between Clearance Constraint: (11mil < 20mil) Between Track (2160mil,630mil)(2300mil,630mil) on Bottom Layer And Track (2205mil,575mil)(2475mil,575mil) on Bottom Layer 
+   Violation between Clearance Constraint: (11mil < 20mil) Between Track (2205mil,575mil)(2475mil,575mil) on Bottom Layer And Track (2300mil,630mil)(2355mil,685mil) on Bottom Layer 
+   Violation between Clearance Constraint: (16.033mil < 20mil) Between Track (2943.74mil,2595mil)(3206.063mil,2332.677mil) on Top Layer And Via (2975mil,2435mil) from Top Layer to Bottom Layer 
+Rule Violations :12
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
-   Violation between Clearance Constraint: (Collision < 6mil) Between Area Fill (1225mil,785mil) (2360mil,2845mil) on Top Layer And Pad C2-2(2390.149mil,989.569mil) on Top Layer 
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-1(650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-10(1550mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-11(1650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
@@ -76,88 +75,30 @@ Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-7(1250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-8(1350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-9(1450mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
-   Violation between Clearance Constraint: (6.652mil < 12.992mil) Between Pad PS2-1(2590.648mil,1384.943mil) on Multi-Layer And Track (2190mil,1440mil)(2774.142mil,1440mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 12.992mil) Between Pad PS2-6(3689.073mil,1684.156mil) on Multi-Layer And Track (3633.228mil,1853.228mil)(3850mil,1636.457mil) on Top Layer 
-   Violation between Clearance Constraint: (11.506mil < 12.992mil) Between Pad PS2-7(3689.073mil,1534.549mil) on Multi-Layer And Track (3632.589mil,1607.976mil)(3645.256mil,1595.309mil) on Top Layer 
-   Violation between Clearance Constraint: (8.838mil < 12.992mil) Between Pad PS2-7(3689.073mil,1534.549mil) on Multi-Layer And Track (3645.256mil,1591.988mil)(3645.256mil,1595.309mil) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad Q5-4(1255mil,3225mil) on Top Layer And Track (1255mil,3225mil)(1258.087mil,3228.087mil) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad Q5-4(1255mil,3225mil) on Top Layer And Track (1258.087mil,3228.087mil)(1258.087mil,3273.087mil) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad Q6-4(1257.284mil,3540mil) on Top Layer And Track (1257.284mil,3540mil)(1312.294mil,3540mil) on Top Layer 
-   Violation between Clearance Constraint: (4mil < 5mil) Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2207.5mil,1153.5mil)(2212.5mil,1158.5mil) on Bottom Layer 
-   Violation between Clearance Constraint: (4mil < 5mil) Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2212.5mil,1158.5mil)(2295mil,1158.5mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Track (2295mil,1007.5mil)(2310mil,992.5mil) on Bottom Layer 
-   Violation between Clearance Constraint: (2.5mil < 5mil) Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Track (2310mil,945mil)(2310mil,970mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Track (2310mil,970mil)(2310mil,992.5mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad SB6-2(2075mil,1465mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad SB7-1(2073.5mil,1383.423mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U50-1(2069.545mil,1300mil) on Bottom Layer And Track (2071.653mil,1300mil)(2073.5mil,1301.847mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U50-1(2069.545mil,1300mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U50-9(1876.238mil,1050mil) on Bottom Layer And Track (1878.347mil,1050mil)(1886.158mil,1042.189mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U50-9(1876.238mil,1050mil) on Bottom Layer And Track (1886.158mil,1042.189mil)(1937.811mil,1042.189mil) on Bottom Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U99-1(2957.5mil,363.106mil) on Top Layer And Track (2745mil,340mil)(3095mil,340mil) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 5mil) Between Pad U99-2(3032.5mil,363.106mil) on Top Layer And Track (2745mil,340mil)(3095mil,340mil) on Top Layer 
-Rule Violations :77
-
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L02_P046')),(All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('Motor_Power'))
-Rule Violations :0
+Rule Violations :56
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-   Violation between Short-Circuit Constraint: Between Area Fill (1225mil,785mil) (2360mil,2845mil) on Top Layer And Pad C2-2(2390.149mil,989.569mil) on Top Layer Location : [X = 3357.358mil][Y = 1989.569mil]
-   Violation between Short-Circuit Constraint: Between Pad PS2-6(3689.073mil,1684.156mil) on Multi-Layer And Track (3633.228mil,1853.228mil)(3850mil,1636.457mil) on Top Layer Location : [X = 4717.315mil][Y = 2712.398mil]
-   Violation between Short-Circuit Constraint: Between Pad Q5-4(1255mil,3225mil) on Top Layer And Track (1255mil,3225mil)(1258.087mil,3228.087mil) on Top Layer Location : [X = 2256.543mil][Y = 4226.543mil]
-   Violation between Short-Circuit Constraint: Between Pad Q5-4(1255mil,3225mil) on Top Layer And Track (1258.087mil,3228.087mil)(1258.087mil,3273.087mil) on Top Layer Location : [X = 2258.087mil][Y = 4228.39mil]
-   Violation between Short-Circuit Constraint: Between Pad Q6-4(1257.284mil,3540mil) on Top Layer And Track (1257.284mil,3540mil)(1312.294mil,3540mil) on Top Layer Location : [X = 2263.559mil][Y = 4540mil]
-   Violation between Short-Circuit Constraint: Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Track (2295mil,1007.5mil)(2310mil,992.5mil) on Bottom Layer Location : [X = 3310.789mil][Y = 1994.595mil]
-   Violation between Short-Circuit Constraint: Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Track (2310mil,970mil)(2310mil,992.5mil) on Bottom Layer Location : [X = 3310.789mil][Y = 1986.539mil]
-   Violation between Short-Circuit Constraint: Between Pad SB6-2(2075mil,1465mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer Location : [X = 3073.5mil][Y = 2455.789mil]
-   Violation between Short-Circuit Constraint: Between Pad SB7-1(2073.5mil,1383.423mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer Location : [X = 3073.5mil][Y = 2383.423mil]
-   Violation between Short-Circuit Constraint: Between Pad U50-1(2069.545mil,1300mil) on Bottom Layer And Track (2071.653mil,1300mil)(2073.5mil,1301.847mil) on Bottom Layer Location : [X = 3072.577mil][Y = 2300.923mil]
-   Violation between Short-Circuit Constraint: Between Pad U50-1(2069.545mil,1300mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer Location : [X = 3073.5mil][Y = 2304.818mil]
-   Violation between Short-Circuit Constraint: Between Pad U50-9(1876.238mil,1050mil) on Bottom Layer And Track (1878.347mil,1050mil)(1886.158mil,1042.189mil) on Bottom Layer Location : [X = 2882.252mil][Y = 2046.105mil]
-   Violation between Short-Circuit Constraint: Between Pad U50-9(1876.238mil,1050mil) on Bottom Layer And Track (1886.158mil,1042.189mil)(1937.811mil,1042.189mil) on Bottom Layer Location : [X = 2897.888mil][Y = 2042.199mil]
-   Violation between Short-Circuit Constraint: Between Pad U99-1(2957.5mil,363.106mil) on Top Layer And Track (2745mil,340mil)(3095mil,340mil) on Top Layer Location : [X = 3957.5mil][Y = 1342.835mil]
-   Violation between Short-Circuit Constraint: Between Pad U99-2(3032.5mil,363.106mil) on Top Layer And Track (2745mil,340mil)(3095mil,340mil) on Top Layer Location : [X = 4032.5mil][Y = 1342.835mil]
-Rule Violations :15
+Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net NetBP1_29 Between Pad BP1-31(3150mil,130mil) on Top Layer And Pad BP1-29(3350mil,130mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetBP1_30 Between Track (2977.5mil,295mil)(3050mil,222.5mil) on Top Layer And Pad BP1-30(3250mil,130mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net V+ Between Track (2327.5mil,1063.5mil)(2330mil,1063.5mil) on Bottom Layer And Pad C2-1(2390.149mil,1190.356mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C2-2(2390.149mil,989.569mil) on Top Layer And Via (2480mil,1055mil) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetC4_2 Between Pad C4-2(3214.606mil,1915mil) on Top Layer And Pad C6-2(3234.606mil,1400mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetC4_2 Between Pad C4-2(3214.606mil,1915mil) on Top Layer And Pad POT2-3(3545.866mil,1734.37mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetC4_2 Between Pad POT2-3(3545.866mil,1734.37mil) on Top Layer And Pad PS2-4(3689.073mil,1983.368mil) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net NetPOT2_1 Between Track (3632.589mil,1607.976mil)(3645.256mil,1595.309mil) on Top Layer And Pad PS2-6(3689.073mil,1684.156mil) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net +5 Between Track (3574.606mil,1453.425mil)(3654.213mil,1453.425mil) on Bottom Layer And Pad PS2-7(3689.073mil,1534.549mil) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net +5 Between Track (3574.606mil,1453.425mil)(3654.213mil,1453.425mil) on Bottom Layer And Pad PS2-8(3689.073mil,1384.943mil) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net NetQ5_4 Between Pad Q5-4(1255mil,3225mil) on Top Layer And Pad Q6-4(1257.284mil,3540mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetQ5_4 Between Pad Q5-4(1255mil,3225mil) on Top Layer And Pad R3-2(2410mil,826.5mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetQ5_4 Between Pad R3-2(2410mil,826.5mil) on Top Layer And Pad R1-1(2554.5mil,638.5mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetR1_2 Between Pad R1-2(2487.5mil,638.5mil) on Top Layer And Pad U3-3(2668.991mil,771.009mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad R2-2(2808.715mil,756.312mil) on Top Layer And Pad R2-1(2856.091mil,803.688mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad U3-1(2637.525mil,855.508mil) on Top Layer And Pad R2-2(2808.715mil,756.312mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net V+ Between Pad SB5-2(2330mil,996.5mil) on Bottom Layer And Pad R3-1(2410mil,893.5mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetSB0_2 Between Track (1845.458mil,1033.542mil)(1850.145mil,1038.228mil) on Bottom Layer And Pad SB0-2(2241.5mil,822.98mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetSB10_2 Between Track (1680mil,1376.5mil)(1680mil,1402.51mil) on Bottom Layer And Pad SB10-2(1680mil,1435.578mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetSB2_1 Between Track (2015mil,945mil)(2236.5mil,945mil) on Bottom Layer And Pad SB3-2(2241.5mil,908.99mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net V+ Between Track (2327.5mil,1063.5mil)(2330mil,1063.5mil) on Bottom Layer And Pad SB5-2(2330mil,996.5mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetSB6_2 Between Pad SB7-1(2073.5mil,1383.423mil) on Bottom Layer And Pad SB6-2(2075mil,1465mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetSB6_2 Between Pad U50-1(2069.545mil,1300mil) on Bottom Layer And Pad SB7-1(2073.5mil,1383.423mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (1740mil,570mil) from Top Layer to Bottom Layer And Pad U3-1(2637.525mil,855.508mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net Killswitch Between Track (2375mil,535mil)(2550mil,360mil) on Top Layer And Pad U3-2(2584.492mil,802.475mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net Xavier_OnOff Between Pad U6-1(2884mil,604.035mil) on Top Layer And Track (2817.5mil,672.5mil)(2884mil,672.5mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetR4_2 Between Pad U6-3(2966mil,566.535mil) on Top Layer And Track (2966mil,635mil)(3015mil,635mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net PLTA_OnOff Between Pad U99-1(2957.5mil,363.106mil) on Top Layer And Track (2951.5mil,415mil)(2957.5mil,409mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetQ?_4 Between Pad U99-2(3032.5mil,363.106mil) on Top Layer And Track (3032.5mil,405mil)(3205mil,405mil) on Top Layer 
-Rule Violations :29
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-47(1550mil,130mil) on Top Layer And Pad BP1-10(1550mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-9(1450mil,130mil) on Bottom Layer And Pad BP1-10(1550mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-4(950mil,130mil) on Bottom Layer And Pad BP1-5(1050mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-53(950mil,130mil) on Top Layer And Pad BP1-4(950mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-48(1450mil,130mil) on Top Layer And Pad BP1-9(1450mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-49(1350mil,130mil) on Top Layer And Pad BP1-8(1350mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-52(1050mil,130mil) on Top Layer And Pad BP1-5(1050mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-52(1050mil,130mil) on Top Layer And Pad BP1-51(1150mil,130mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-51(1150mil,130mil) on Top Layer And Pad BP1-6(1150mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-6(1150mil,130mil) on Bottom Layer And Pad BP1-8(1350mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetBP1_4*12 Between Pad BP1-8(1350mil,130mil) on Bottom Layer And Pad BP1-9(1450mil,130mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net V+ Between Track (1145mil,2409.748mil)(1175.252mil,2440mil) on Top Layer And Pad U11-3(1179.252mil,2390mil) on Top Layer 
+Rule Violations :12
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=5mil) (Max=100mil) (Preferred=8mil) (All)
+Processing Rule : Width Constraint (Min=3.5mil) (Max=100mil) (Preferred=8mil) (All)
 Rule Violations :0
 
 Processing Rule : SMD To Corner (Distance=0mil) (All)
@@ -167,42 +108,37 @@ Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
 Rule Violations :0
 
 Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
-   Violation between SMD Entry Constraint: Between Pad BP1-11(1650mil,130mil) on Bottom Layer And Track (1657.5mil,252.5mil)(1710mil,305mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad BP1-44(1850mil,130mil) on Top Layer And Track (1752.5mil,220mil)(1847.5mil,220mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (1657.5mil,215mil)(1742.5mil,215mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (1752.5mil,220mil)(1847.5mil,220mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad BP1-46(1650mil,130mil) on Top Layer And Track (1657.5mil,215mil)(1742.5mil,215mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad C1-1(2560mil,2590.394mil) on Top Layer And Track (2495mil,2645mil)(2545mil,2595mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad C1-1(2560mil,2590.394mil) on Top Layer And Track (2545mil,2595mil)(2943.74mil,2595mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad C6-1(3435.394mil,1400mil) on Top Layer And Track (3427.953mil,1209.567mil)(3427.953mil,1399.567mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q?-5(3470mil,510mil) on Top Layer And Track (3389.528mil,618.311mil)(3470mil,537.839mil) on Top Layer Not Allowed Angle in corner for track
-   Violation between SMD Entry Constraint: Between Pad Q1-1(1192.284mil,1430mil) on Top Layer And Track (1208.544mil,1427.44mil)(1241.261mil,1427.44mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q1-2(1192.284mil,1480mil) on Top Layer And Track (1208.544mil,1477.44mil)(1241.261mil,1477.44mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q1-3(1192.284mil,1530mil) on Top Layer And Track (1213.544mil,1527.44mil)(1246.261mil,1527.44mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q2-1(1192.284mil,2110mil) on Top Layer And Track (1187.56mil,2104.83mil)(1255.277mil,2104.83mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q2-2(1192.284mil,2160mil) on Top Layer And Track (1182.56mil,2154.83mil)(1250.277mil,2154.83mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q2-3(1192.284mil,2210mil) on Top Layer And Track (1182.56mil,2204.83mil)(1250.277mil,2204.83mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad Q2-4(1192.284mil,2260mil) on Top Layer And Track (1160mil,2255mil)(1185mil,2255mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad R5-1(3195mil,1048.5mil) on Bottom Layer And Track (3195mil,1048.5mil)(3262.5mil,1116mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad BP1-2(750mil,130mil) on Bottom Layer And Track (695mil,262.5mil)(742.5mil,215mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R2-1(2533.688mil,591.312mil) on Top Layer And Track (2533.688mil,588.812mil)(2585mil,537.5mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R29-1(1168.5mil,1200mil) on Top Layer And Track (1155.186mil,1213.314mil)(1155.186mil,1229.814mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R29-2(1101.5mil,1200mil) on Top Layer And Track (1077.5mil,1195mil)(1082.5mil,1200mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R50-1(2108.971mil,463.971mil) on Top Layer And Track (2040mil,393.201mil)(2098.971mil,452.172mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad R50-2(2161.029mil,516.029mil) on Top Layer And Track (2176.029mil,496.029mil)(2195.795mil,476.264mil) on Top Layer Track Entry to PAD from not centre of Side
    Violation between SMD Entry Constraint: Between Pad R5-2(3195mil,981.5mil) on Bottom Layer And Track (3176.5mil,931.5mil)(3176.5mil,965.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad R99-2(3205mil,406.5mil) on Top Layer And Track (3032.5mil,405mil)(3205mil,405mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB1-1(1758.5mil,1013.99mil) on Bottom Layer And Track (1758.5mil,1015mil)(1778.5mil,1015mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB1-1(1758.5mil,1013.99mil) on Bottom Layer And Track (1778.5mil,1015mil)(1797.042mil,1033.542mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB11-1(1688.5mil,1353.068mil) on Bottom Layer And Track (1680mil,1376.5mil)(1690mil,1366.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB11-1(1688.5mil,1353.068mil) on Bottom Layer And Track (1690mil,1250mil)(1690mil,1366.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB13-1(3026.866mil,840mil) on Top Layer And Track (2675mil,1191.5mil)(3026.5mil,840mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2161.5mil,1182.5mil)(2181.5mil,1202.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2180mil,1181mil)(2181.5mil,1182.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2181.5mil,1182.5mil)(2181.5mil,1202.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad SB6-1(2008mil,1465mil) on Bottom Layer And Track (2006.5mil,1481.5mil)(2026.5mil,1501.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U2-1(1075mil,1312.402mil) on Top Layer And Track (1055.902mil,1322.5mil)(1063.5mil,1314.902mil) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U50-4(2069.545mil,1150mil) on Bottom Layer And Track (2071.653mil,1100mil)(2071.653mil,1150mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U50-5(2069.545mil,1100mil) on Bottom Layer And Track (2071.653mil,1100mil)(2071.653mil,1150mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U50-7(2069.545mil,1000mil) on Bottom Layer And Track (2076.653mil,995mil)(2255mil,995mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U50-8(1876.238mil,1000mil) on Bottom Layer And Track (1878.347mil,921.654mil)(1878.347mil,1000mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U50-9(1876.238mil,1050mil) on Bottom Layer And Track (1845.458mil,1033.542mil)(1850.145mil,1038.228mil) on Bottom Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad U7-2(3412.5mil,1014.876mil) on Bottom Layer And Track (3415mil,921.927mil)(3415mil,1000mil) on Bottom Layer Track Entry to PAD from not centre of Side
-Rule Violations :35
+   Violation between SMD Entry Constraint: Between Pad SB0-1(2307mil,854mil) on Bottom Layer And Track (2308.5mil,855.5mil)(2308.5mil,940mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB0-1(2307mil,854mil) on Bottom Layer And Track (2310mil,800mil)(2310mil,846mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB10-1(1680mil,1473.5mil) on Bottom Layer And Track (1460.928mil,1688.582mil)(1678.005mil,1471.505mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB3-1(2308.5mil,940mil) on Bottom Layer And Track (2310mil,940mil)(2310mil,991mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB3-2(2241.5mil,940mil) on Bottom Layer And Track (2015mil,945mil)(2236.5mil,945mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB4-1(2196.5mil,1300mil) on Bottom Layer And Track (2104.311mil,1207.811mil)(2178mil,1281.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB6-2(2075mil,1465mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad SB9-1(1505mil,1188.5mil) on Bottom Layer And Track (1506.01mil,1191.5mil)(1592.5mil,1191.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U12-4(1200mil,1835mil) on Top Layer And Track (1163.5mil,1881.5mil)(1200mil,1845mil) on Top Layer Not Allowed Angle on side for track
+   Violation between SMD Entry Constraint: Between Pad U1-5(1145mil,2040mil) on Top Layer And Track (1091.25mil,2078.75mil)(1124mil,2046mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U2-2(1070mil,1315mil) on Top Layer And Track (1042mil,1311mil)(1066mil,1311mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U2-5(1160mil,1315mil) on Top Layer And Track (1179mil,1315mil)(1200mil,1294mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U3-1(2424mil,822.5mil) on Top Layer And Track (2424mil,822.5mil)(2465mil,781.5mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U3-2(2424mil,747.5mil) on Top Layer And Track (2229mil,746.5mil)(2410mil,746.5mil) on Top Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-1(2069.313mil,1300mil) on Bottom Layer And Track (2073.5mil,1301.847mil)(2073.5mil,1465mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-13(1876.006mil,1250mil) on Bottom Layer And Track (1835.648mil,1265mil)(1850.648mil,1250mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-3(2069.313mil,1200mil) on Bottom Layer And Track (2104.311mil,1207.811mil)(2178mil,1281.5mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-4(2069.313mil,1150mil) on Bottom Layer And Track (2071.653mil,1100mil)(2071.653mil,1150mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-5(2069.313mil,1100mil) on Bottom Layer And Track (2071.653mil,1100mil)(2071.653mil,1150mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-7(2069.313mil,1000mil) on Bottom Layer And Track (2076.653mil,995mil)(2255mil,995mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U50-8(1876.006mil,1000mil) on Bottom Layer And Track (1878.347mil,946.654mil)(1878.347mil,1000mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U7-3(3535mil,1284.5mil) on Bottom Layer And Track (3372.727mil,1305mil)(3547.5mil,1305mil) on Bottom Layer Track Entry to PAD from not centre of Side
+   Violation between SMD Entry Constraint: Between Pad U7-3(3535mil,1284.5mil) on Bottom Layer And Track (3560mil,1317.5mil)(3560mil,2200mil) on Bottom Layer Track Entry to PAD from not centre of Side
+Rule Violations :30
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
@@ -211,23 +147,24 @@ Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad SB6-1(2008mil,1465mil) on Bottom Layer And Track (2006.5mil,1481.5mil)(2026.5mil,1501.5mil) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (41.158 < 87.500) Between Area Fill (3340mil,1135mil) (3735mil,1500mil) on Top Layer And Pad PS2-7(3689.073mil,1534.549mil) on Multi-Layer (Angle = 41.158)
-   Violation between Acute Angle Constraint: (41.366 < 87.500) Between Area Fill (3340mil,1135mil) (3735mil,1500mil) on Top Layer And Pad PS2-7(3689.073mil,1534.549mil) on Multi-Layer (Angle = 41.366)
-   Violation between Acute Angle Constraint: (59.221 < 87.500) Between Pad PS2-8(3689.073mil,1384.943mil) on Multi-Layer And Track (3545.611mil,1303.819mil)(3654.213mil,1303.819mil) on Bottom Layer (Angle = 59.221)
-   Violation between Acute Angle Constraint: (81.964 < 87.500) Between Pad PS2-8(3689.073mil,1384.943mil) on Multi-Layer And Track (3574.606mil,1453.425mil)(3654.213mil,1453.425mil) on Bottom Layer (Angle = 81.964)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad SB0-1(2308.5mil,822.98mil) on Bottom Layer And Track (2310mil,800mil)(2477.5mil,632.5mil) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (80.740 < 87.500) Between Pad SB0-1(2308.5mil,822.98mil) on Bottom Layer And Track (2311.5mil,847.5mil)(2311.5mil,870mil) on Bottom Layer (Angle = 80.740)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad SB6-1(2008mil,1465mil) on Bottom Layer And Track (2008mil,1487.5mil)(2023mil,1502.5mil) on Bottom Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Track (1950mil,360mil)(2305mil,360mil) on Top Layer And Track (2040mil,393.201mil)(2098.971mil,452.172mil) on Top Layer (Angle = 45.000)
    Violation between Acute Angle Constraint: (45.000 < 87.500) Between Track (1956.029mil,579.23mil)(2025mil,648.201mil) on Top Layer And Track (855mil,650mil)(2025mil,650mil) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (84.017 < 87.500) Between Polygon Region (12 hole(s)) Bottom Layer And Track (2212.5mil,1158.5mil)(2295mil,1158.5mil) on Bottom Layer (Angle = 84.017)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad R50-2(2126.029mil,391.029mil) on Top Layer And Track (2139.949mil,404.949mil)(2184.949mil,404.949mil) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad SB1-1(1758.5mil,1013.99mil) on Bottom Layer And Track (1778.5mil,1015mil)(1797.042mil,1033.542mil) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (14.483 < 87.500) Between Track (1797.042mil,1033.542mil)(1845.458mil,1033.542mil) on Bottom Layer And Track (1845.458mil,1033.542mil)(1850.145mil,1038.228mil) on Bottom Layer (Angle = 14.483)
-   Violation between Acute Angle Constraint: (45.317 < 87.500) Between Pad SB9-1(1570mil,1191.5mil) on Bottom Layer And Track (1592.5mil,1191.5mil)(1634mil,1150mil) on Bottom Layer (Angle = 45.317)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad SB4-1(2196.733mil,1205mil) on Bottom Layer And Track (2181.5mil,1182.5mil)(2181.5mil,1202.5mil) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (82.821 < 87.500) Between Track (1185.305mil,1398.72mil)(1222.17mil,1398.72mil) on Top Layer And Track (1222.17mil,1398.72mil)(1232.421mil,1408.972mil) on Top Layer (Angle = 82.821)
-   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Track (1208.544mil,1427.44mil)(1241.261mil,1427.44mil) on Top Layer And Track (1222.17mil,1398.72mil)(1232.421mil,1408.972mil) on Top Layer (Angle = 45.000)
-Rule Violations :16
+   Violation between Acute Angle Constraint: (85.174 < 87.500) Between Polygon Region (36 hole(s)) Bottom Layer And Track (1876.006mil,1200mil)(1923.894mil,1200mil) on Bottom Layer (Angle = 85.174)
+   Violation between Acute Angle Constraint: (85.174 < 87.500) Between Polygon Region (36 hole(s)) Bottom Layer And Track (1876.006mil,1200mil)(1923.894mil,1200mil) on Bottom Layer (Angle = 85.174)
+   Violation between Acute Angle Constraint: (79.636 < 87.500) Between Polygon Region (36 hole(s)) Bottom Layer And Track (1938.423mil,1383.423mil)(2006.5mil,1383.423mil) on Bottom Layer (Angle = 79.636)
+   Violation between Acute Angle Constraint: (85.174 < 87.500) Between Polygon Region (36 hole(s)) Bottom Layer And Track (1998.431mil,1150mil)(2069.313mil,1150mil) on Bottom Layer (Angle = 85.174)
+   Violation between Acute Angle Constraint: (60.513 < 87.500) Between Track (1032.598mil,1301.598mil)(1042mil,1311mil) on Top Layer And Track (972.706mil,1301.598mil)(1032.598mil,1301.598mil) on Top Layer (Angle = 60.513)
+   Violation between Acute Angle Constraint: (83.463 < 87.500) Between Track (1032.598mil,1301.598mil)(1042mil,1311mil) on Top Layer And Track (972.706mil,1301.598mil)(1032.598mil,1301.598mil) on Top Layer (Angle = 83.463)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Track (2165.75mil,683.25mil)(2229mil,746.5mil) on Top Layer And Track (2177.5mil,671.5mil)(2238.5mil,671.5mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad U3-1(2424mil,822.5mil) on Top Layer And Track (2424mil,822.5mil)(2465mil,781.5mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad U1-5(1145mil,2040mil) on Top Layer And Track (1096.5mil,2016.5mil)(1120mil,2040mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (56.387 < 87.500) Between Pad U1-5(1145mil,2040mil) on Top Layer And Track (1096.5mil,2016.5mil)(1120mil,2040mil) on Top Layer (Angle = 56.387)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad U12-4(1200mil,1835mil) on Top Layer And Track (1163.5mil,1881.5mil)(1200mil,1845mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (44.999 < 87.500) Between Pad R29-2(1101.5mil,1200mil) on Top Layer And Track (1077.5mil,1195mil)(1082.5mil,1200mil) on Top Layer (Angle = 44.999)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Between Pad R30-1(951.5mil,1195mil) on Top Layer And Track (971.5mil,1195mil)(983.5mil,1183mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 87.500) Polygon Region (2 hole(s)) Top Layer (Angle = 45.000)
+Rule Violations :17
 
 Processing Rule : Hole Size Constraint (Min=8mil) (Max=245mil) (All)
 Rule Violations :0
@@ -239,39 +176,19 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad C2-2(2390.149mil,989.569mil) on Top Layer And Text "R3" (2377mil,953mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J?-1(432.402mil,562.323mil) on Multi-Layer And Track (396.969mil,456.024mil)(396.969mil,833.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J?-2(432.402mil,727.677mil) on Multi-Layer And Track (396.969mil,456.024mil)(396.969mil,833.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-1(3422.598mil,2332.677mil) on Multi-Layer And Track (3458.032mil,2061.024mil)(3458.032mil,2438.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-2(3422.598mil,2167.323mil) on Multi-Layer And Track (2490.254mil,2136.912mil)(3789.467mil,2136.912mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-2(3422.598mil,2167.323mil) on Multi-Layer And Track (3458.032mil,2061.024mil)(3458.032mil,2438.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad J3-4(3206.063mil,2167.323mil) on Multi-Layer And Track (2490.254mil,2136.912mil)(3789.467mil,2136.912mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SB11-1(1688.5mil,1353.068mil) on Bottom Layer And Text "SB10" (1620.504mil,1376.078mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SB11-2(1621.5mil,1353.068mil) on Bottom Layer And Text "SB10" (1620.504mil,1376.078mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SB11-2(1621.5mil,1353.068mil) on Bottom Layer And Text "SB9" (1603mil,1318mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SB2-1(1713.5mil,1100mil) on Bottom Layer And Text "SB1" (1749.989mil,1078.995mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad Xavier-1(3602.598mil,867.677mil) on Multi-Layer And Track (3638.032mil,596.024mil)(3638.032mil,973.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad Xavier-2(3602.598mil,702.323mil) on Multi-Layer And Track (3638.032mil,596.024mil)(3638.032mil,973.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-Rule Violations :13
-
-Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB0" (2110.013mil,872.975mil) on Bottom Overlay And Text "SB3" (2179.995mil,948.977mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB1" (1749.989mil,1078.995mil) on Bottom Overlay And Track (1745mil,1065mil)(1745mil,1135mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB10" (1620.504mil,1376.078mil) on Bottom Overlay And Track (1720mil,1318.068mil)(1720mil,1388.068mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB11" (1562mil,1407.566mil) on Bottom Overlay And Text "SB9" (1603mil,1318mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB9" (1603mil,1318mil) on Bottom Overlay And Track (1590mil,1318.068mil)(1590mil,1388.068mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 1mil) Between Text "SB9" (1603mil,1318mil) on Bottom Overlay And Track (1590mil,1318.068mil)(1605mil,1318.068mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]
 Rule Violations :6
 
+Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
+Rule Violations :0
+
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
-   Violation between Net Antennae: Track (1680mil,1376.5mil)(1680mil,1402.51mil) on Bottom Layer 
-   Violation between Net Antennae: Track (2015mil,945mil)(2236.5mil,945mil) on Bottom Layer 
-   Violation between Net Antennae: Track (2817.5mil,672.5mil)(2884mil,672.5mil) on Top Layer 
-   Violation between Net Antennae: Track (2951.5mil,415mil)(2957.5mil,409mil) on Top Layer 
-   Violation between Net Antennae: Track (2966mil,635mil)(3015mil,635mil) on Top Layer 
-   Violation between Net Antennae: Track (3032.5mil,405mil)(3205mil,405mil) on Top Layer 
-   Violation between Net Antennae: Via (3110mil,1400mil) from Top Layer to Bottom Layer 
-Rule Violations :7
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-1(650mil,130mil) on Bottom Layer 
@@ -333,17 +250,17 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,456.024mil)(-106.969mil,833.976mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,456.024mil)(396.969mil,456.024mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-106.969mil,833.976mil)(396.969mil,833.976mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,2296.299mil)(740mil,2296.299mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,445mil)(-120mil,475mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,445mil)(-90mil,445mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,815mil)(-120mil,845mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,845mil)(-90mil,845mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,900mil)(-120mil,2296.299mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-120mil,900mil)(740mil,900mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,2277.323mil)(-130mil,2307.323mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,2307.323mil)(-100mil,2307.323mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,888.976mil)(-100mil,888.976mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-130mil,888.976mil)(-130mil,918.976mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-127.402mil,2352.716mil)(732.598mil,2352.716mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-127.402mil,956.417mil)(-127.402mil,2352.716mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-127.402mil,956.417mil)(732.598mil,956.417mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-137.402mil,2333.74mil)(-137.402mil,2363.74mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-137.402mil,2363.74mil)(-107.402mil,2363.74mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-137.402mil,945.393mil)(-107.402mil,945.393mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-137.402mil,945.393mil)(-137.402mil,975.393mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3638.032mil,596.024mil)(4141.968mil,596.024mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3638.032mil,973.976mil)(4141.968mil,973.976mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4125mil,585mil)(4155mil,585mil) on Top Overlay 
@@ -351,66 +268,62 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4141.968mil,596.024mil)(4141.968mil,973.976mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4155mil,585mil)(4155mil,615mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4155mil,955mil)(4155mil,985mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,2436.578mil)(690mil,2436.578mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,2436.578mil)(-94.843mil,3641.3mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-94.843mil,3641.3mil)(690mil,3641.3mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-87.244mil,2467.285mil)(697.598mil,2467.285mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-87.244mil,2467.285mil)(-87.244mil,3672.007mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-87.244mil,3672.007mil)(697.598mil,3672.007mil) on Top Overlay 
 Rule Violations :80
 
 Processing Rule : Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2'))
-   Violation between Room Definition: Between Component BATTCONN-BatteryConnector (150mil,1850mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
-   Violation between Room Definition: Between Component ESCCONN-39301140 (452.402mil,2542.876mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
+   Violation between Room Definition: Between Component BATTCONN-BatteryConnector (142.598mil,1906.417mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
+   Violation between Room Definition: Between Component ESCCONN-39301140 (460mil,2573.583mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
    Violation between Room Definition: Between Component J?-4 POS R/A (145mil,645mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
    Violation between Room Definition: Between Component J3-4 POS R/A (3710mil,2250mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
    Violation between Room Definition: Between Component Xavier-4 POS R/A (3890mil,785mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
    Violation between Room Definition: Between Edge Component BP1-Backplane Connector (650mil,130mil) on Top Layer And Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) 
    Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component R49-4.7k Ohm 5% 1/8W (1930mil,553.201mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component R50-4.7k Ohm 5% 1/8W (2100mil,365mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB0-0 Ohm Jumper No Fit (2275mil,822.98mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component R50-4.7k Ohm 5% 1/8W (2135mil,490mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB0-0 Ohm Jumper No Fit (2273.5mil,854mil) on Bottom Layer 
    Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB1-0 Ohm Jumper No Fit (1725mil,1013.99mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB10-0 Ohm Jumper No Fit (1680mil,1440mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB11-0 Ohm Jumper No Fit (1770mil,1395mil) on Bottom Layer 
    Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB2-0 Ohm Jumper No Fit (1680mil,1100mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB3-0 Ohm Jumper No Fit (2275mil,908.99mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB4-0 Ohm Jumper No Fit (2230.233mil,1205mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB5-0 Ohm Jumper No Fit (2330mil,1030mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB3-0 Ohm Jumper No Fit (2275mil,940mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB4-0 Ohm Jumper No Fit (2230mil,1300mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB5-0 Ohm Jumper No Fit (2230mil,1386.01mil) on Bottom Layer 
    Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB6-0 Ohm Jumper No Fit (2041.5mil,1465mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB7 (2040mil,1383.423mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB8-0 Ohm Jumper No Fit (1400mil,1190mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB9-0 Ohm Jumper No Fit (1570mil,1225mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SOIC Component U50-MCP3428-E/SL (1972.892mil,1150mil) on Bottom Layer 
-Rule Violations :19
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB7-0 Ohm Jumper No Fit (2040mil,1383.423mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB8-0 Ohm Jumper No Fit (1560mil,1320mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SMT Small Component SB9-0 Ohm Jumper No Fit (1505mil,1155mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S2 (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S2')) And SOIC Component U50-MCP3428-E/SL (1972.659mil,1150mil) on Bottom Layer 
+Rule Violations :21
 
 Processing Rule : Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S'))
-   Violation between Room Definition: Between Component Q?-MOSFET P-CH 30V 45A LFPAK56 (3470mil,510mil) on Top Layer And Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SIP Component PS1-I6A4W020A033V-001-R (3125mil,3080mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SIP Component PS2-I6A4W020A033V-001-R (3139.86mil,1686.124mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT SIP Component Q1-MOSFET P-CH 30V 45A LFPAK56 (1085mil,1505mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT SIP Component Q2-MOSFET P-CH 30V 45A LFPAK56 (1085mil,2185mil) on Top Layer 
    Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT SIP Component Q5-MOSFET P-CH 30V 45A LFPAK56 (1147.716mil,3150mil) on Top Layer 
    Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT SIP Component Q6-MOSFET P-CH 30V 45A LFPAK56 (1150mil,3465mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C1-100uF (2560mil,2490mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C2-100uF (2390.149mil,1089.963mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C3-.1uF 50V (3340mil,2565mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C4-.1uF 50V (3315mil,1915mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C5-22uF 50V (3340mil,2860mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component C6-22uF 50V (3335mil,1400mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component POT1-TC33X-2-203E (3455mil,3230mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component POT2-TC33X-2-203E (3475mil,1695mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R1-10k Ohm 5% 1/10W (2521mil,638.5mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R2-10k Ohm 5% 1/10W (2832.403mil,780mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R3-10k Ohm 5% 1/10W (2410mil,860mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R99-10k Ohm 5% 1/10W (3205mil,440mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component SB13-0 Ohm Jumper No Fit (3060.366mil,840mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U3-AO3404A (2640mil,800mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U6-PMV13XNEAR (2925mil,566.535mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U7-MOSFET P-CHANNEL 20V 4.7A SOT23 (3450mil,1055.876mil) on Bottom Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U99-PMV13XNEAR (2995mil,404.106mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U1-LTC4412ES6TRPBF (1115mil,1970mil) on Top Layer 
-   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U2-LTC4412ES6TRPBF (1120mil,1275mil) on Top Layer 
-Rule Violations :26
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R1-10k Ohm 5% 1/10W (2626.5mil,785mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R2-10k Ohm 5% 1/10W (2510mil,615mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R27-27 Ohm 5% 1/8W (1075mil,2155mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R28-27 Ohm 5% 1/8W (1130mil,1926.51mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R29-27 Ohm 5% 1/8W (1135mil,1200mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R30-27 Ohm 5% 1/8W (985mil,1195mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R3-10k Ohm 5% 1/10W (2370mil,910mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R4-10k Ohm 5% 1/10W (3140mil,835mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component R5-10k Ohm 5% 1/10W (3195mil,1015mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U3-AO3404A (2465mil,785mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U6-PMV13XNEAR (2925mil,635mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SMT Small Component U7-MOSFET P-Ch 10.8A TO-252AA (3535mil,1175mil) on Bottom Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U11-SIR167DP-T1-GE3 (1070mil,2365mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U12-SIR167DP-T1-GE3 (1090.748mil,1760mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U13-SIR167DP-T1-GE3 (1090mil,1510mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U14-SIR167DP-T1-GE3 (1086.262mil,1025.48mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U1-LTC4412ES6TRPBF (1100mil,2040mil) on Top Layer 
+   Violation between Room Definition: Between Room M1_75S (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('M1_75S')) And SOIC Component U2-LTC4412ES6TRPBF (1115mil,1315mil) on Top Layer 
+Rule Violations :20
 
 Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 323
+Violations Detected : 254
 Waived Violations : 0
 Time Elapsed        : 00:00:01
