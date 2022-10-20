@@ -1,0 +1,46 @@
+Added Component: Designator=C107(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-15351-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=C108(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-15351-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=U111(LGA10R50P2X3_200X200X80)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "511-ILPS22QSTR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_MCU Pin=C107-1
+Added Pin To Net: NetName=GND Pin=C107-2
+Added Pin To Net: NetName=3V3_MCU Pin=C108-1
+Added Pin To Net: NetName=GND Pin=C108-2
+Added Pin To Net: NetName=3V3_MCU Pin=U111-1
+Added Pin To Net: NetName=SCL Pin=U111-2
+Added Pin To Net: NetName=GND Pin=U111-3
+Added Pin To Net: NetName=SDA Pin=U111-4
+Added Pin To Net: NetName=GND Pin=U111-5
+Added Pin To Net: NetName=3V3_MCU Pin=U111-6
+Added Pin To Net: NetName=GND Pin=U111-7
+Added Pin To Net: NetName=GND Pin=U111-8
+Added Pin To Net: NetName=GND Pin=U111-9
+Added Pin To Net: NetName=3V3_MCU Pin=U111-10
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component C107 100nF Ceramic 6.3V
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component C108 100nF Ceramic 6.3V
+Added Member To Class: ClassName=CoproMKII_Connectors Member=Component U111 ILPS22QSTR
+Added Room: Name=CoproMKII_Actuator
+Added Room: Name=CoproMKII_Connectors
+Added Room: Name=CoproMKII_Coprocessor
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4

@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=SB6 NewDesignator=SB10
+Change Component Designator: OldDesignator=SB7 NewDesignator=SB11
+Change Component Designator: OldDesignator=SB10 NewDesignator=SB6
+Change Component Designator: OldDesignator=SB11 NewDesignator=SB7
+Change Net Name : Old Net Name=NetSB6_2 New Net Name=NetSB10_2
+Change Net Name : Old Net Name=NetSB10_2 New Net Name=NetSB6_2
+Added Member To Class: ClassName=M1_75S Member=Component R2 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=M1_75S Member=Component R? 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=M1_75S Member=Component R? 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=M1_75S Member=Component SB? 0 Ohm Jumper No Fit
