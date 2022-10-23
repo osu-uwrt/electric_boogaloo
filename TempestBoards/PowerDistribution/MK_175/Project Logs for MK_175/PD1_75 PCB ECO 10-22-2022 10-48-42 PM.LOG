@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=3V3 Pin=SB12-2
+Added Pin To Net: NetName=NetSB12_1 Pin=SB12-1
+Added Pin To Net: NetName=NetSB12_1 Pin=U50-6
+Added Net: Name=NetSB12_1
+Added Member To Class: ClassName=M1_75S2 Member=Component SB12 0 Ohm Jumper No Fit
