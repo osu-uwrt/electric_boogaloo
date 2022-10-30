@@ -1,23 +1,27 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TempestBoards\MK2\ESC\ESC.PcbDoc
-Date     : 10/5/2022
-Time     : 8:04:17 PM
+Date     : 10/26/2022
+Time     : 7:15:00 PM
 
 WARNING: Zero hole size multi-layer pad(s) detected
    Pad M4-4(150.853mm,91.059mm) on Multi-Layer on Net NetJ1_11
    Pad M4-5(157.353mm,91.059mm) on Multi-Layer on Net NetJ1_12
+   Pad M4-1(143.853mm,46.659mm) on Multi-Layer on Net NetF4_2
    Pad M4-3(144.353mm,91.059mm) on Multi-Layer on Net NetJ1_10
    Pad M4-2(157.853mm,46.659mm) on Multi-Layer on Net GND
    Pad M3-4(112.141mm,91.059mm) on Multi-Layer on Net NetJ1_8
    Pad M3-5(118.641mm,91.059mm) on Multi-Layer on Net NetJ1_9
+   Pad M3-1(105.141mm,46.659mm) on Multi-Layer on Net NetF3_2
    Pad M3-3(105.641mm,91.059mm) on Multi-Layer on Net NetJ1_7
    Pad M3-2(119.141mm,46.659mm) on Multi-Layer on Net GND
    Pad M2-4(73.406mm,91.059mm) on Multi-Layer on Net NetJ1_5
    Pad M2-5(79.906mm,91.059mm) on Multi-Layer on Net NetJ1_6
+   Pad M2-1(66.406mm,46.659mm) on Multi-Layer on Net NetF2_2
    Pad M2-3(66.906mm,91.059mm) on Multi-Layer on Net NetJ1_4
    Pad M2-2(80.406mm,46.659mm) on Multi-Layer on Net GND
    Pad M1-4(34.671mm,91.059mm) on Multi-Layer on Net NetJ1_2
    Pad M1-5(41.171mm,91.059mm) on Multi-Layer on Net NetJ1_3
+   Pad M1-1(27.671mm,46.659mm) on Multi-Layer on Net NetF1_2
    Pad M1-3(28.171mm,91.059mm) on Multi-Layer on Net NetJ1_1
    Pad M1-2(41.671mm,46.659mm) on Multi-Layer on Net GND
 
@@ -78,34 +82,36 @@ WARNING: Multilayer Pads with 0 size Hole found
    Pad M1-2(41.671mm,46.659mm) on Multi-Layer
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+   Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-1(27.671mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-2(41.671mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-3(28.171mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-4(34.671mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-5(41.171mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-6(23.571mm,51.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M1-7(23.571mm,55.059mm) on Multi-Layer 
+   Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-1(66.406mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-2(80.406mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-3(66.906mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-4(73.406mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-5(79.906mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-6(62.306mm,51.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M2-7(62.306mm,55.059mm) on Multi-Layer 
+   Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-1(105.141mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-2(119.141mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-3(105.641mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-4(112.141mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-5(118.641mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-6(101.041mm,51.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M3-7(101.041mm,55.059mm) on Multi-Layer 
+   Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-1(143.853mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-2(157.853mm,46.659mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-3(144.353mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-4(150.853mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.3mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-5(157.353mm,91.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-6(139.753mm,51.059mm) on Multi-Layer 
    Violation between Clearance Constraint: (0.2mm < 0.33mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad M4-7(139.753mm,55.059mm) on Multi-Layer 
-   Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (111.958mm,110.553mm)(113.038mm,111.633mm) on Bottom Layer 
-   Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (111.958mm,110.553mm)(113.038mm,111.633mm) on Middle 2 Layer 
-   Violation between Clearance Constraint: (0.259mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (113.038mm,111.633mm)(181.483mm,111.633mm) on Bottom Layer 
-   Violation between Clearance Constraint: (0.259mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (113.038mm,111.633mm)(181.483mm,111.633mm) on Middle 2 Layer 
+   Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (111.958mm,110.553mm)(117.991mm,116.586mm) on Bottom Layer 
+   Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (111.958mm,110.553mm)(117.991mm,116.586mm) on Middle 2 Layer 
    Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (94.036mm,110.553mm)(111.958mm,110.553mm) on Bottom Layer 
    Violation between Clearance Constraint: (0.254mm < 0.33mm) Between Pad Free-1(110.617mm,113.792mm) on Multi-Layer And Track (94.036mm,110.553mm)(111.958mm,110.553mm) on Middle 2 Layer 
    Violation between Clearance Constraint: (0.259mm < 0.33mm) Between Pad Free-1(95.377mm,113.792mm) on Multi-Layer And Track (41.379mm,111.633mm)(92.956mm,111.633mm) on Bottom Layer 
@@ -117,15 +123,11 @@ Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
    Violation between Clearance Constraint: (0.328mm < 0.33mm) Between Pad J1-12(180.544mm,83.734mm) on Multi-Layer And Track (183.261mm,82.169mm)(183.261mm,85.217mm) on Bottom Layer 
    Violation between Clearance Constraint: (0.328mm < 0.33mm) Between Pad J1-12(180.544mm,83.734mm) on Multi-Layer And Track (183.261mm,82.169mm)(183.261mm,85.217mm) on Middle 2 Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad Q1-5(196.088mm,34.29mm) on Top Layer And Region (0 hole(s)) Top Layer 
-   Violation between Clearance Constraint: (0.183mm < 0.254mm) Between Track (126.873mm,113.03mm)(163.703mm,113.03mm) on Middle 1 Layer And Via (143.383mm,111.633mm) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (0.183mm < 0.254mm) Between Track (126.873mm,113.03mm)(163.703mm,113.03mm) on Top Layer And Via (143.383mm,111.633mm) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (0.056mm < 0.254mm) Between Track (127.254mm,110.363mm)(162.941mm,110.363mm) on Middle 1 Layer And Via (143.383mm,111.633mm) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (0.056mm < 0.254mm) Between Track (127.254mm,110.363mm)(162.941mm,110.363mm) on Top Layer And Via (143.383mm,111.633mm) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (0.133mm < 0.254mm) Between Track (160.528mm,99.187mm)(175.981mm,83.734mm) on Middle 1 Layer And Via (167.005mm,90.805mm) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (0.133mm < 0.254mm) Between Track (160.528mm,99.187mm)(175.981mm,83.734mm) on Middle 1 Layer And Via (167.005mm,94.615mm) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (0.133mm < 0.254mm) Between Track (160.528mm,99.187mm)(175.981mm,83.734mm) on Top Layer And Via (167.005mm,90.805mm) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (0.133mm < 0.254mm) Between Track (160.528mm,99.187mm)(175.981mm,83.734mm) on Top Layer And Via (167.005mm,94.615mm) from Top Layer to Bottom Layer 
-Rule Violations :47
+Rule Violations :45
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
    Violation between Short-Circuit Constraint: Between Pad Q1-5(196.088mm,34.29mm) on Top Layer And Region (0 hole(s)) Top Layer Location : [X = 196.088mm][Y = 34.29mm]
@@ -133,6 +135,10 @@ Rule Violations :1
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net NetD2_2 Between Pad Q1-5(196.088mm,34.29mm) on Top Layer And Pad D2-2(200.279mm,39.481mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad F1-1(15.875mm,54.089mm) on Top Layer And Pad F2-1(54.61mm,54.082mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad F2-1(54.61mm,54.082mm) on Top Layer And Pad F3-1(93.345mm,54.082mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad F3-1(93.345mm,54.082mm) on Top Layer And Pad F4-1(131.445mm,54.089mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad F4-1(131.445mm,54.089mm) on Top Layer And Via (202.819mm,35.56mm) from Top Layer to Bottom Layer 
    Violation between Un-Routed Net Constraint: Unplated Pad J10-1(130.566mm,22.108mm) on Multi-Layer 
    Violation between Un-Routed Net Constraint: Unplated Pad J10-1(130.566mm,22.108mm) on Multi-Layer 
    Violation between Un-Routed Net Constraint: Unplated Pad J10-1(130.566mm,22.108mm) on Multi-Layer 
@@ -230,7 +236,7 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Unplated Pad J13-1(188.966mm,30.978mm) on Multi-Layer 
    Violation between Un-Routed Net Constraint: Unplated Pad J13-1(188.966mm,30.978mm) on Multi-Layer 
    Violation between Un-Routed Net Constraint: Net NetJ6_5 Between Pad SB4-1(19.423mm,30.569mm) on Top Layer And Track (39.248mm,25.316mm)(39.248mm,26.765mm) on Top Layer 
-Rule Violations :98
+Rule Violations :102
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -273,13 +279,19 @@ Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=0.152mm) (All)
-Rule Violations :0
+   Violation between Minimum Annular Ring: (0.1mm < 0.152mm) Via (153.289mm,115.243mm) from Top Layer to Bottom Layer (Annular Ring=0.1mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.1mm < 0.152mm) Via (153.289mm,116.586mm) from Top Layer to Bottom Layer (Annular Ring=0.1mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.1mm < 0.152mm) Via (153.289mm,117.983mm) from Top Layer to Bottom Layer (Annular Ring=0.1mm) On (Top Layer)
+Rule Violations :3
 
 Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
 Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=0.203mm) (Max=6.223mm) (All)
-Rule Violations :0
+   Violation between Hole Size Constraint: (0.2mm < 0.203mm) Via (153.289mm,115.243mm) from Top Layer to Bottom Layer Actual Hole Size = 0.2mm
+   Violation between Hole Size Constraint: (0.2mm < 0.203mm) Via (153.289mm,116.586mm) from Top Layer to Bottom Layer Actual Hole Size = 0.2mm
+   Violation between Hole Size Constraint: (0.2mm < 0.203mm) Via (153.289mm,117.983mm) from Top Layer to Bottom Layer Actual Hole Size = 0.2mm
+Rule Violations :3
 
 Processing Rule : Hole To Hole Clearance (Gap=0.508mm) (All),(All)
 Rule Violations :0
@@ -399,6 +411,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 264
+Violations Detected : 272
 Waived Violations : 0
 Time Elapsed        : 00:00:02
