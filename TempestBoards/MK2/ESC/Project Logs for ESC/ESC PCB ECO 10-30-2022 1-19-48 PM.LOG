@@ -1,0 +1,27 @@
+Added Component: Designator=F5(2-SMD Fuse)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "1kA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/eaton-electronics-division/1245HC60-RTR/13913536"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "60A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1245HC60-RTR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Eaton"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2-SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "80V"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-1
+Add Pin To Net: Unknown Pin: Pin C4-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Added Pin To Net: NetName=NetD2_2 Pin=F5-1
+Added Pin To Net: NetName=VCC Pin=F5-2
+Add Class Member: Failed to add class member : Component C2 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C3 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C4 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C5 Dummy Cap (NO FOOTPRINT)
+Added Member To Class: ClassName=ESC Member=Component F5 1245HC60-RTR
+Added Room: Name=ESC
