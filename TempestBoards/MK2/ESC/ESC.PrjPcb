@@ -79,6 +79,10 @@ DocumentUniqueId=FAJBMQJC
 DocumentPath=Project Outputs for ESC\Design Rule Check - ESC.html
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=Project Outputs for ESC\Net Status - ESC.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=BoardRevision
 Value=1.0
@@ -1244,41 +1248,44 @@ ModelType0=PCBLIB
 ModelName0=0501Series_LTF
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=68611014122
+ModelName1=2-SMD Fuse
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=APD 80F3[X]
+ModelName2=68611014122
 ModelUpdate2=1
 ModelType3=PCBLIB
-ModelName3=CAPACITOR_0603
+ModelName3=APD 80F3[X]
 ModelUpdate3=1
 ModelType4=PCBLIB
-ModelName4=CONN_MOLEX_MINIFIT JR_12 POS_R/A
+ModelName4=CAPACITOR_0603
 ModelUpdate4=1
 ModelType5=PCBLIB
-ModelName5=HEADER_4PIN_2.54MM
+ModelName5=CONN_MOLEX_MINIFIT JR_12 POS_R/A
 ModelUpdate5=1
 ModelType6=PCBLIB
-ModelName6=HEADER_MIRRORED_4PIN_2.54MM
+ModelName6=HEADER_4PIN_2.54MM
 ModelUpdate6=1
 ModelType7=PCBLIB
-ModelName7=LED_0603
+ModelName7=HEADER_MIRRORED_4PIN_2.54MM
 ModelUpdate7=1
 ModelType8=PCBLIB
-ModelName8=Redcube M4 Term 85A
+ModelName8=LED_0603
 ModelUpdate8=1
 ModelType9=PCBLIB
-ModelName9=RESISTOR_0603
+ModelName9=Redcube M4 Term 85A
 ModelUpdate9=1
 ModelType10=PCBLIB
-ModelName10=RESISTOR_0805
+ModelName10=RESISTOR_0603
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=SOD-123
+ModelName11=RESISTOR_0805
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=TRANS_PSMN5R5-60YS,115
+ModelName12=SOD-123
 ModelUpdate12=1
+ModelType13=PCBLIB
+ModelName13=TRANS_PSMN5R5-60YS,115
+ModelUpdate13=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
