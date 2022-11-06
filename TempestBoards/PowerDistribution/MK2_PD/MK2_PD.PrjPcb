@@ -533,6 +533,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
+[Document30]
+DocumentPath=PD_MK2_Signals.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KLTQBHTI
+
 [Parameter1]
 Name=BoardRevision
 Value=1.0
