@@ -1,0 +1,248 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\coalm\Documents\electric_boogaloo\TempestBoards\PowerDistribution\MK_1_8\PD1_8.PcbDoc
+Date     : 11/11/2022
+Time     : 6:10:51 PM
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P044')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('V+'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (InNet('GND')),(InNet('V+'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('Motor_Power'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L02_P046')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('PORT_BATT'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('GND_L01_P045')),(InNet('STBD_BATT'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=200mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=245mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=20mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-1(650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:20:21 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-10(1550mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:30 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-11(1650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:50 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-12(1750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:25:06 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-13(1850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:25:20 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-14(1950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:26:16 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-15(2050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:26:46 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-16(2150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:00 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-17(2250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:13 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-18(2350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:29 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-19(2450mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:49 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-2(750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:02 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-20(2550mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:20 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-21(2650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:45 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-22(2750mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:58 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-23(2850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:12 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-24(2950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:30 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-25(3050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:45 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-26(3150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:59 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-27(3250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:30:13 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-28(3350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:30:25 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-29(3350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:30:23 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-3(850mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:35 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-30(3250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:30:11 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-31(3150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:58 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-32(3050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:43 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-33(2950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:28 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-34(2850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:29:10 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-35(2750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:56 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-36(2650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:43 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-37(2550mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:28:18 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-38(2450mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:51 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-39(2350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:30 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-4(950mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:47 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-40(2250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:14 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-41(2150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:27:01 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-42(2050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:26:48 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-43(1950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:26:17 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-44(1850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:25:22 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-45(1750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:25:08 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-46(1650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:52 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-47(1550mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:32 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-48(1450mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:20 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-49(1350mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:06 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-5(1050mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:22:00 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-50(1250mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:23:53 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-51(1150mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:23:38 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-52(1050mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:22:01 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-53(950mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:49 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-54(850mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:37 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-55(750mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:21:04 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-56(650mil,130mil) on Top Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:20:23 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-6(1150mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:23:36 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-7(1250mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:23:51 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-8(1350mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:04 PMPart of card-edge connector
+   Waived Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-9(1450mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer Waived by Cole Tucker at 11/11/2022 3:24:17 PMPart of card-edge connector
+Waived Violations :56
+
+Waived Violations Of Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-1(3450mil,810mil) on Multi-Layer And Track (3485.433mil,538.346mil)(3485.433mil,916.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:16:35 PMPart of MOLEX footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-2(3450mil,644.646mil) on Multi-Layer And Track (3485.433mil,538.346mil)(3485.433mil,916.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:17:02 PMPart of MOLEX footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad COMPUTER-1(3445mil,1425.354mil) on Multi-Layer And Track (3480.433mil,1153.701mil)(3480.433mil,1531.654mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:17:27 PMPart of MOLEX footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad COMPUTER-2(3445mil,1260mil) on Multi-Layer And Track (3480.433mil,1153.701mil)(3480.433mil,1531.654mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:17:20 PMPart of MOLEX footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-1(552.402mil,1122.323mil) on Multi-Layer And Track (516.968mil,1016.024mil)(516.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:17:45 PMPart of MOLEX footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-2(552.402mil,1287.677mil) on Multi-Layer And Track (516.968mil,1016.024mil)(516.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 3:17:39 PMPart of MOLEX footprint
+Waived Violations :6
+
+Waived Violations Of Rule : Net Antennae (Tolerance=0mil) (All)
+   Waived Violation between Net Antennae: Via (2500mil,3820mil) from Top Layer to Bottom Layer Waived by Cole Tucker at 11/11/2022 4:46:31 PMProbe ground via
+   Waived Violation between Net Antennae: Via (2650mil,3820mil) from Top Layer to Bottom Layer Waived by Cole Tucker at 11/11/2022 4:46:49 PMProbe ground via
+   Waived Violation between Net Antennae: Via (2800.19mil,3820mil) from Top Layer to Bottom Layer Waived by Cole Tucker at 11/11/2022 4:46:54 PMProbe ground via
+   Waived Violation between Net Antennae: Via (2950mil,3820mil) from Top Layer to Bottom Layer Waived by Cole Tucker at 11/11/2022 4:47:02 PMProbe ground via
+Waived Violations :4
+
+Waived Violations Of Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-1(650mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:20:20 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-10(1550mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:24:29 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-11(1650mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:24:45 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-12(1750mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:25:04 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-13(1850mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:25:18 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-14(1950mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:26:14 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-15(2050mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:26:44 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-16(2150mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:26:58 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-17(2250mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:27:11 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-18(2350mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:27:27 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-19(2450mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:27:48 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-2(750mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:20:58 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-20(2550mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:28:16 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-21(2650mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:28:42 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-22(2750mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:28:54 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-23(2850mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:29:07 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-24(2950mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:29:26 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-25(3050mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:29:42 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-26(3150mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:29:55 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-27(3250mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:30:10 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-28(3350mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:30:21 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-29(3350mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:30:20 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-3(850mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:21:32 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-30(3250mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:30:08 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-31(3150mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:29:54 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-32(3050mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:29:40 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-33(2950mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:29:25 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-34(2850mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:29:05 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-35(2750mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:28:52 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-36(2650mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:28:40 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-37(2550mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:28:14 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-38(2450mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:27:46 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-39(2350mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:27:25 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-4(950mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:21:45 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-40(2250mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:27:09 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-41(2150mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:26:57 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-42(2050mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:26:42 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-43(1950mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:26:11 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-44(1850mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:25:16 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-45(1750mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:25:02 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-46(1650mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:24:46 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-47(1550mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:24:27 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-48(1450mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:24:13 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-49(1350mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:24:01 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-5(1050mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:21:56 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-50(1250mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:23:48 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-51(1150mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:23:32 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-52(1050mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:21:58 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-53(950mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:21:44 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-54(850mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:21:29 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-55(750mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:20:39 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-56(650mil,130mil) on Top Layer Waived by Cole Tucker at 11/11/2022 3:20:18 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-6(1150mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:23:35 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-7(1250mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:23:49 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-8(1350mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:24:02 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (5mil < 16mil) Between Board Edge And Pad BP1-9(1450mil,130mil) on Bottom Layer Waived by Cole Tucker at 11/11/2022 3:24:15 PMPart of card-edge connector
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1005mil)(0mil,1035mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:31:37 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1005mil)(30mil,1005mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:31:06 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1375mil)(0mil,1405mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:31:46 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1405mil)(30mil,1405mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:31:58 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1016.024mil)(13.031mil,1393.976mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:42:40 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1016.024mil)(516.968mil,1016.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:42:38 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1393.976mil)(516.968mil,1393.976mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:42:50 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3480.433mil,1153.701mil)(3984.37mil,1153.701mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:43:50 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3480.433mil,1531.654mil)(3984.37mil,1531.654mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:43:25 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3485.433mil,538.346mil)(3989.37mil,538.346mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:44:41 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3485.433mil,916.299mil)(3989.37mil,916.299mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:43:10 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3967.402mil,1142.677mil)(3997.402mil,1142.677mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:48 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3967.402mil,1542.677mil)(3997.402mil,1542.677mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:33:10 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3972.402mil,527.323mil)(4002.402mil,527.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:12 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3972.402mil,927.323mil)(4002.402mil,927.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:33 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3984.37mil,1153.701mil)(3984.37mil,1531.654mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:43:18 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3989.37mil,538.346mil)(3989.37mil,916.299mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:43:02 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3997.402mil,1142.677mil)(3997.402mil,1172.677mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:54 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3997.402mil,1512.677mil)(3997.402mil,1542.677mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:33:04 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4002.402mil,527.323mil)(4002.402mil,557.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:17 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4002.402mil,897.323mil)(4002.402mil,927.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 3:32:26 PMPlacing Molex connectors on edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,1931.024mil)(125.315mil,1931.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 5:18:16 PMPlace Anderson off board edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,1931.024mil)(-855mil,2586.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 5:18:39 PMPlace Anderson off board edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,2586.024mil)(125.315mil,2586.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 5:18:46 PMPlace Anderson off board edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,2876.024mil)(125.315mil,2876.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 4:45:34 PMPlace Anderson off board edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,2876.024mil)(-855mil,3531.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 4:46:00 PMPlace Anderson off board edge
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-855mil,3531.024mil)(125.315mil,3531.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 4:46:07 PMPlace Anderson off board edge
+Waived Violations :83
+
+
+Violations Detected : 0
+Waived Violations : 149
+Time Elapsed        : 00:00:01
