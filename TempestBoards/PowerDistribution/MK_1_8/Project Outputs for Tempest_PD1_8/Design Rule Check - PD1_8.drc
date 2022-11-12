@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\coalm\Documents\electric_boogaloo\TempestBoards\PowerDistribution\MK_1_8\PD1_8.PcbDoc
 Date     : 11/11/2022
-Time     : 9:50:55 PM
+Time     : 10:39:21 PM
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
    Violation between Clearance Constraint: (2mil < 5mil) Between Pad BP1-1(650mil,130mil) on Bottom Layer And Track (557mil,0mil)(3443mil,0mil) on Keep-Out Layer 
@@ -224,4 +224,4 @@ Waived Violations :21
 
 Violations Detected : 118
 Waived Violations : 31
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
