@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\coalm\Documents\electric_boogaloo\TempestBoards\PowerDistribution\MK_1_8\PD1_8.PcbDoc
 Date     : 11/12/2022
-Time     : 12:28:35 AM
+Time     : 3:09:02 PM
 
 Processing Rule : Clearance Constraint (Gap=10mil) (InNet('GND')),(InNet('V+'))
 Rule Violations :0
@@ -105,7 +105,9 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
-Rule Violations :0
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad NET-1(3422.598mil,692.677mil) on Multi-Layer And Track (3458.032mil,421.024mil)(3458.032mil,798.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad NET-2(3422.598mil,527.323mil) on Multi-Layer And Track (3458.032mil,421.024mil)(3458.032mil,798.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+Rule Violations :2
 
 Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
 Rule Violations :0
@@ -176,25 +178,18 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-285mil,1931.024mil)(-285mil,2586.024mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-285mil,1931.024mil)(695.315mil,1931.024mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (-285mil,2586.024mil)(695.315mil,2586.024mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3480.433mil,1153.701mil)(3984.37mil,1153.701mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3480.433mil,1531.654mil)(3984.37mil,1531.654mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3967.402mil,1142.677mil)(3997.402mil,1142.677mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3967.402mil,1542.677mil)(3997.402mil,1542.677mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (12.63mil < 16mil) Between Board Edge And Track (3984.37mil,1153.701mil)(3984.37mil,1531.654mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3997.402mil,1142.677mil)(3997.402mil,1172.677mil) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3997.402mil,1512.677mil)(3997.402mil,1542.677mil) on Top Overlay 
-Rule Violations :69
+Rule Violations :62
 
 Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 Waived Violations Of Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-1(3450mil,810mil) on Multi-Layer And Track (3485.433mil,538.346mil)(3485.433mil,916.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:25:19 PMMolex standard footprint
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-2(3450mil,644.646mil) on Multi-Layer And Track (3485.433mil,538.346mil)(3485.433mil,916.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:25:54 PMMolex standard footprint
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad COMPUTER-1(3445mil,1425.354mil) on Multi-Layer And Track (3480.433mil,1153.701mil)(3480.433mil,1531.654mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 11:37:57 PMMolex standard footprint
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad COMPUTER-2(3445mil,1260mil) on Multi-Layer And Track (3480.433mil,1153.701mil)(3480.433mil,1531.654mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 11:37:54 PMMolex standard footprint
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-1(552.402mil,1122.323mil) on Multi-Layer And Track (516.968mil,1016.024mil)(516.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:28:22 PMMolex standard footprint
-   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-2(552.402mil,1287.677mil) on Multi-Layer And Track (516.968mil,1016.024mil)(516.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:28:20 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-1(3420mil,1105mil) on Multi-Layer And Track (3455.433mil,833.346mil)(3455.433mil,1211.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:25:19 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad AUX-2(3420mil,939.646mil) on Multi-Layer And Track (3455.433mil,833.346mil)(3455.433mil,1211.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:25:54 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad CPU-1(3421.535mil,1515mil) on Multi-Layer And Track (3456.968mil,1243.346mil)(3456.968mil,1621.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 11:37:57 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad CPU-2(3421.535mil,1349.646mil) on Multi-Layer And Track (3456.968mil,1243.346mil)(3456.968mil,1621.299mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 11:37:54 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-1(582.402mil,1122.323mil) on Multi-Layer And Track (546.968mil,1016.024mil)(546.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:28:22 PMMolex standard footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad SWITCHES-2(582.402mil,1287.677mil) on Multi-Layer And Track (546.968mil,1016.024mil)(546.968mil,1393.976mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by Cole Tucker at 11/11/2022 9:28:20 PMMolex standard footprint
 Waived Violations :6
 
 Waived Violations Of Rule : Net Antennae (Tolerance=0mil) (All)
@@ -204,24 +199,7 @@ Waived Violations Of Rule : Net Antennae (Tolerance=0mil) (All)
    Waived Violation between Net Antennae: Via (2950mil,3820mil) from Top Layer to Bottom Layer Waived by Cole Tucker at 11/11/2022 4:47:02 PMProbe ground via
 Waived Violations :4
 
-Waived Violations Of Rule : Board Clearance Constraint (Gap=0mil) (All)
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1005mil)(0mil,1035mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:22 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1005mil)(30mil,1005mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:24 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1375mil)(0mil,1405mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:36 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (0mil,1405mil)(30mil,1405mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:34 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1016.024mil)(13.031mil,1393.976mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:49 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1016.024mil)(516.968mil,1016.024mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:14 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (10.032mil < 16mil) Between Board Edge And Track (13.031mil,1393.976mil)(516.968mil,1393.976mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:29:47 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3485.433mil,538.346mil)(3989.37mil,538.346mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:28 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3485.433mil,916.299mil)(3989.37mil,916.299mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:56 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3972.402mil,527.323mil)(4002.402mil,527.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:36 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (3972.402mil,927.323mil)(4002.402mil,927.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:46 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (7.63mil < 16mil) Between Board Edge And Track (3989.37mil,538.346mil)(3989.37mil,916.299mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:23 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4002.402mil,527.323mil)(4002.402mil,557.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:34 PMMolex standard footprint
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 16mil) Between Board Edge And Track (4002.402mil,897.323mil)(4002.402mil,927.323mil) on Top Overlay Waived by Cole Tucker at 11/11/2022 9:26:16 PMMolex standard footprint
-Waived Violations :14
 
-
-Violations Detected : 125
-Waived Violations : 24
+Violations Detected : 120
+Waived Violations : 10
 Time Elapsed        : 00:00:01
