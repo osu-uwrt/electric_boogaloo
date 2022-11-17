@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TempestBoards\MK2\ESC\ESC.PcbDoc
-Date     : 11/13/2022
-Time     : 1:10:17 PM
+Date     : 11/16/2022
+Time     : 8:05:11 PM
 
 WARNING: Zero hole size multi-layer pad(s) detected
    Pad M4-3(144.353mm,91.159mm) on Multi-Layer on Net NetJ1_10
@@ -68,12 +68,8 @@ Rule Violations :0
 Processing Rule : SMD To Plane Constraint (Distance=0mm) (All)
 Rule Violations :0
 
-Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
-   Violation between SMD Entry Constraint: Between Pad D2-1(200.914mm,36.211mm) on Top Layer And Track (200.914mm,33.528mm)(200.914mm,36.211mm) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad J6-3(37.251mm,25.313mm) on Top Layer And Track (37.185mm,23.93mm)(37.185mm,25.217mm) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad J8-8(23.455mm,25.313mm) on Top Layer And Track (23.487mm,25.313mm)(23.487mm,28.867mm) on Top Layer Track Entry to PAD from not centre of Side
-   Violation between SMD Entry Constraint: Between Pad R2-2(200.899mm,31.623mm) on Top Layer And Track (200.914mm,31.701mm)(200.914mm,33.528mm) on Top Layer Track Entry to PAD from not centre of Side
-Rule Violations :4
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
@@ -106,9 +102,7 @@ Processing Rule : Silk to Silk (Clearance=0.025mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Via (156.153mm,94.359mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (156.153mm,96.559mm) from Top Layer to Bottom Layer 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.046mm < 0.406mm) Between Board Edge And Track (12.38mm,18.688mm)(12.38mm,19.863mm) on Top Overlay 
@@ -123,6 +117,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 18
+Violations Detected : 12
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:04
