@@ -1,6 +1,4 @@
-Record=TopLevelDocument|FileName=ActuatorMKII_Microcontroller.SchDoc|SheetNumber=4
-Record=SheetSymbol|SourceDocument=ActuatorMKII_Microcontroller.SchDoc|Designator=U_RP2040_with_CAN|SchDesignator=U_RP2040_with_CAN|FileName=RP2040_with_CAN.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040_with_CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=RP2040_with_CAN.SchDot|Designator=U_RP2040_RP2CAN|SchDesignator=U_RP2040_RP2CAN|FileName=RP2040.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Microcontroller.SchDoc|FileName=ActuatorMKII_Circuits.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Microcontroller.SchDoc|FileName=ActuatorMKII_Connectors.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Microcontroller.SchDoc|FileName=ActuatorMKII_Torpedoes.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=ActuatorMKII_Circuits.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Circuits.SchDoc|FileName=ActuatorMKII_Connectors.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Circuits.SchDoc|FileName=ActuatorMKII_Microcontroller.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Circuits.SchDoc|FileName=ActuatorMKII_Torpedoes.SchDoc|SheetNumber=2
