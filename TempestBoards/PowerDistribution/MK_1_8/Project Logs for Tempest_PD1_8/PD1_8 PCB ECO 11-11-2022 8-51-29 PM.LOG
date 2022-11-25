@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=XavierCONN Pin=Q5-2
+Change Component Footprint: Designator=Q5 Old Footprint=SOT-23-3 New Footprint=MOSFET_7DP-T1-GE3_VIS
+Change Component Footprint: Designator=Q1 Old Footprint=TRANS_PSMN5R5-60YS,115 New Footprint=MOSFET_7DP-T1-GE3_VIS
+Change Component Footprint: Designator=Q2 Old Footprint=TRANS_PSMN5R5-60YS,115 New Footprint=MOSFET_7DP-T1-GE3_VIS
+Change Component Footprint: Designator=Q3 Old Footprint=TRANS_PSMN5R5-60YS,115 New Footprint=MOSFET_7DP-T1-GE3_VIS
+Change Component Footprint: Designator=Q4 Old Footprint=TRANS_PSMN5R5-60YS,115 New Footprint=MOSFET_7DP-T1-GE3_VIS
+Change Component Comment : Designator=Q5 Old Comment=20V 4.7A SOT23 New Comment=SIR167DP-T1-GE3
+Change Component Comment : Designator=Q1 Old Comment=MOSFET P-CH 30V 45A LFPAK56 New Comment=SIR167DP-T1-GE3
+Change Component Comment : Designator=Q2 Old Comment=MOSFET P-CH 30V 45A LFPAK56 New Comment=SIR167DP-T1-GE3
+Change Component Comment : Designator=Q3 Old Comment=MOSFET P-CH 30V 45A LFPAK56 New Comment=SIR167DP-T1-GE3
+Change Component Comment : Designator=Q4 Old Comment=MOSFET P-CH 30V 45A LFPAK56 New Comment=SIR167DP-T1-GE3
+Change component parameters: Designator = "Q1" ("Q1"); Footprint = "TRANS_PSMN5R5-60YS,115"; UniqueID = "\ULIBMPZP" ("\ULIBMPZP")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q2" ("Q2"); Footprint = "TRANS_PSMN5R5-60YS,115"; UniqueID = "\PXDEMTVM" ("\PXDEMTVM")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q3" ("Q3"); Footprint = "TRANS_PSMN5R5-60YS,115"; UniqueID = "\DPUSITZD" ("\DPUSITZD")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q4" ("Q4"); Footprint = "TRANS_PSMN5R5-60YS,115"; UniqueID = "\KHRFQHYU" ("\KHRFQHYU")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q5" ("Q5"); Footprint = "SOT-23-3"; UniqueID = "\BIPQHLMZ" ("\BIPQHLMZ")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PORT_BATT Pin=Q1-6
+Added Pin To Net: NetName=PORT_BATT Pin=Q1-7
+Added Pin To Net: NetName=PORT_BATT Pin=Q1-8
+Added Pin To Net: NetName=STBD_BATT Pin=Q2-6
+Added Pin To Net: NetName=STBD_BATT Pin=Q2-7
+Added Pin To Net: NetName=STBD_BATT Pin=Q2-8
+Added Pin To Net: NetName=Motor_Power Pin=Q3-6
+Added Pin To Net: NetName=Motor_Power Pin=Q3-7
+Added Pin To Net: NetName=Motor_Power Pin=Q4-6
+Added Pin To Net: NetName=Motor_Power Pin=Q4-7
+Added Pin To Net: NetName=Motor_Power Pin=Q4-8
+Added Pin To Net: NetName=+12 Pin=Q5-1
+Added Pin To Net: NetName=+12 Pin=Q5-2
+Added Pin To Net: NetName=XavierCONN Pin=Q5-5
+Added Pin To Net: NetName=XavierCONN Pin=Q5-6
+Added Pin To Net: NetName=XavierCONN Pin=Q5-7
+Added Pin To Net: NetName=XavierCONN Pin=Q5-8
+Added Pin To Net: NetName=NetQ5_4 Pin=Q5-4
+Added Pin To Net: NetName=NetQ5_4 Pin=Q6-3
+Added Pin To Net: NetName=NetQ5_4 Pin=R4-2
+Added Net: Name=NetQ5_4
+Added Room: Name=PD1_8

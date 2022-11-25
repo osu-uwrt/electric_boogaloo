@@ -1,0 +1,19 @@
+Added Component: Designator=Q5(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=Q5-1
+Added Pin To Net: NetName=+12 Pin=Q5-2
+Added Pin To Net: NetName=+12 Pin=Q5-3
+Added Pin To Net: NetName=XavierCONN Pin=Q5-5
+Added Pin To Net: NetName=XavierCONN Pin=Q5-6
+Added Pin To Net: NetName=XavierCONN Pin=Q5-7
+Added Pin To Net: NetName=XavierCONN Pin=Q5-8
+Added Pin To Net: NetName=NetQ5_4 Pin=Q5-4
+Added Pin To Net: NetName=NetQ5_4 Pin=Q6-3
+Added Pin To Net: NetName=NetQ5_4 Pin=R4-2
+Added Net: Name=NetQ5_4
+Added Member To Class: ClassName=PD1_8 Member=Component Q5 SIR167DP-T1-GE3
+Added Room: Name=PD1_8
