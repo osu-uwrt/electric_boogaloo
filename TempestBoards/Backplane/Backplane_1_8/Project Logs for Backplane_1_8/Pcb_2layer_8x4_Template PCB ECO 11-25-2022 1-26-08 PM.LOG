@@ -1,0 +1,19 @@
+Add Component: Footprint Not Found TSOT-23_S6
+Add Pin To Net: Unknown Pin: Pin U4-1
+Add Pin To Net: Unknown Pin: Pin U4-2
+Add Pin To Net: Unknown Pin: Pin U4-3
+Add Pin To Net: Unknown Pin: Pin U4-5
+Add Pin To Net: Unknown Pin: Pin U4-6
+Added Pin To Net: NetName=LED_B Pin=R32-2
+Added Pin To Net: NetName=LED_B Pin=U1R-39
+Added Net: Name=LED_B
+Added Pin To Net: NetName=LED_G Pin=R33-2
+Added Pin To Net: NetName=LED_G Pin=U1R-40
+Added Net: Name=LED_G
+Added Pin To Net: NetName=LED_R Pin=R34-2
+Added Pin To Net: NetName=LED_R Pin=U1R-41
+Added Net: Name=LED_R
+Add Class Member: Failed to add class member : Component U4 LTC4412ES6TRPBF
+Added Room: Name=Ethernet
+Added Room: Name=Sch_Sheet_Template
+Added Room: Name=U_RP2040
