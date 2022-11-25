@@ -543,7 +543,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -552,6 +552,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YTFWTTUL
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Backplane_1_8\Design Rule Check - Pcb_2layer_8x4_Template.html
+DItemRevisionGUID=
 
 [Parameter1]
 Name=BoardRevision
@@ -1510,22 +1514,30 @@ MatchStrictly2=1
 PhysicalNamingFormat=$Component_$RoomName
 GlobalIndexSortOrder=3
 GlobalIndexSortLocation=0
-UniqueIDPath0=\VEBWACLF
-DocumentName0=RP2040.SchDot
+UniqueIDPath0=\FYGMJKVU
+DocumentName0=Ethernet.SchDoc
 IsEnabled0=1
 SelectionScope0=All
-Order0=1
+Order0=3
 IndexEnabled0=0
 IndexStartValue0=1
 Suffix0=
-UniqueIDPath1=
-DocumentName1=Sch_Sheet_Template.SchDoc
+UniqueIDPath1=\VEBWACLF
+DocumentName1=RP2040.SchDot
 IsEnabled1=1
 SelectionScope1=All
-Order1=2
+Order1=1
 IndexEnabled1=0
 IndexStartValue1=1
 Suffix1=
+UniqueIDPath2=
+DocumentName2=Sch_Sheet_Template.SchDoc
+IsEnabled2=1
+SelectionScope2=All
+Order2=2
+IndexEnabled2=0
+IndexStartValue2=1
+Suffix2=
 
 [PrjClassGen]
 CompClassManualEnabled=0
