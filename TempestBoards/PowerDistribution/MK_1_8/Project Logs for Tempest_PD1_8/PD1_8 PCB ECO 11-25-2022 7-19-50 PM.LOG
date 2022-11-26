@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Accoustic_OnOff Pin=BP1-17
+Change Net Name : Old Net Name=Accoustic_OnOff New Net Name=GND
+Added Pin To Net: NetName=Accoustic_OnOff Pin=BP1-17
+Added Pin To Net: NetName=Accoustic_OnOff Pin=Q7-1
+Added Pin To Net: NetName=Accoustic_OnOff Pin=R22-2
+Added Net: Name=Accoustic_OnOff

@@ -44,7 +44,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Sch_Sheet_Template.SchDoc
+DocumentPath=main_sheet.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -61,7 +61,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document2]
-DocumentPath=Pcb_2layer_8x4_Template.PcbDoc
+DocumentPath=backplane_1_8.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -75,7 +75,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BNBWFUDO
+DocumentUniqueId=CMEPUAHA
 
 [Document3]
 DocumentPath=..\..\..\Library\Capacitors.PcbLib
@@ -553,7 +553,168 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YTFWTTUL
 
+[Document31]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for Backplane_1_8\NC Drill\backplane_1_8.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Free Documents\NC Drill\backplane_1_8.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Free Documents\Gerber\backplane_1_8.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Backplane_1_8\DRC\backplane_1_8.html
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Free Documents\DRC\backplane_1_8.html
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Backplane_1_8\NC Drill\backplane_1_8.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Free Documents\NC Drill\backplane_1_8.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.REP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8.REP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Free Documents\Gerber\backplane_1_8.REP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Backplane_1_8\Gerber\backplane_1_8.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Free Documents\Gerber\backplane_1_8.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Backplane_1_8\NC Drill\backplane_1_8.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Free Documents\NC Drill\backplane_1_8.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Mechanical_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for Backplane_1_8\GerberX2\backplane_1_8_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Backplane_1_8\BOM\Bill of Materials-Backplane_1_8.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for Free Documents\BOM\Bill of Materials-Backplane_1_8.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument37]
 DocumentPath=Project Outputs for Backplane_1_8\Design Rule Check - Pcb_2layer_8x4_Template.html
 DItemRevisionGUID=
 
@@ -1553,6 +1714,120 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=Capacitors.SchLib
+ComponentDesignItemID0=CAPACITOR_0.1uF_0603
+ComponentSymbolReference0=CAPACITOR_0.1uF_0603
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=Capacitors.SchLib
+ComponentDesignItemID1=CAPACITOR_100uF_0603
+ComponentSymbolReference1=CAPACITOR_100uF_0603
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=Capacitors.SchLib
+ComponentDesignItemID2=CAPACITOR_10uF_0603
+ComponentSymbolReference2=CAPACITOR_10uF_0603
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=Capacitors.SchLib
+ComponentDesignItemID3=CAPACITOR_1uF_0603
+ComponentSymbolReference3=CAPACITOR_1uF_0603
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=Connectors.SchLib
+ComponentDesignItemID4=BACKPLANE_EDGE_SOCKET
+ComponentSymbolReference4=BACKPLANE_EDGE_SOCKET
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=Connectors.SchLib
+ComponentDesignItemID5=CONN_MICROUSB
+ComponentSymbolReference5=CONN_MICROUSB
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=Connectors.SchLib
+ComponentDesignItemID6=CONN_MOLEX_MINIFIT JR_4POS_R/A
+ComponentSymbolReference6=CONN_MOLEX_MINIFIT JR_4POS_R/A
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=Connectors.SchLib
+ComponentDesignItemID7=RB1-125BAG1A
+ComponentSymbolReference7=RB1-125BAG1A
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=Converter.SchLib
+ComponentDesignItemID8=LM1117IMPX-3.3/NOPB
+ComponentSymbolReference8=LM1117IMPX-3.3/NOPB
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=Crystals.SchLib
+ComponentDesignItemID9=CRYSTAL_25MHz_SMD_1
+ComponentSymbolReference9=CRYSTAL_25MHz_SMD_1
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=Diodes.SchLib
+ComponentDesignItemID10=LED_RGB_4SMD
+ComponentSymbolReference10=LED_RGB_4SMD
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=Integrated Circuits.SchLib
+ComponentDesignItemID11=LTC4412ES6TRPBF
+ComponentSymbolReference11=LTC4412ES6TRPBF
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=Integrated Circuits.SchLib
+ComponentDesignItemID12=W5200
+ComponentSymbolReference12=W5200
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=Resistors.SchLib
+ComponentDesignItemID13=RESISTOR_10K_0603
+ComponentSymbolReference13=RESISTOR_10K_0603
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=Resistors.SchLib
+ComponentDesignItemID14=RESISTOR_1M_0603_1
+ComponentSymbolReference14=RESISTOR_1M_0603_1
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=Resistors.SchLib
+ComponentDesignItemID15=RESISTOR_2.1K_0603_1
+ComponentSymbolReference15=RESISTOR_2.1K_0603_1
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Library Name And Type
+ComponentLibraryIdentifier16=Resistors.SchLib
+ComponentDesignItemID16=RESISTOR_28.7K / 1%_0603_1
+ComponentSymbolReference16=RESISTOR_28.7K / 1%_0603_1
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Library Name And Type
+ComponentLibraryIdentifier17=Transistors.SchLib
+ComponentDesignItemID17=TSM500P02CX
+ComponentSymbolReference17=TSM500P02CX
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Library Name Only
+ComponentLibraryIdentifier18=Altium Content Vault
+ComponentDesignItemID18=CMP-2000-06403-1
+ComponentSymbolReference18=IND-FB-2
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1566,6 +1841,195 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Amp Out
+ParameterUpdate0=1
+ParameterName1=Amp Rating
+ParameterUpdate1=1
+ParameterName2=Arrow_Electronics-Purchase-URL
+ParameterUpdate2=1
+ParameterName3=Arrow_Europe-Purchase-URL
+ParameterUpdate3=1
+ParameterName4=Availability
+ParameterUpdate4=1
+ParameterName5=Blue Forward Current
+ParameterUpdate5=1
+ParameterName6=Blue Forward Voltage
+ParameterUpdate6=1
+ParameterName7=Check_prices
+ParameterUpdate7=1
+ParameterName8=Color
+ParameterUpdate8=1
+ParameterName9=Comment
+ParameterUpdate9=1
+ParameterName10=Component Kind
+ParameterUpdate10=1
+ParameterName11=ComponentLink1Description
+ParameterUpdate11=1
+ParameterName12=ComponentLink1URL
+ParameterUpdate12=1
+ParameterName13=Configuration
+ParameterUpdate13=1
+ParameterName14=Created By
+ParameterUpdate14=1
+ParameterName15=Current Per Pin
+ParameterUpdate15=1
+ParameterName16=Datasheet URL
+ParameterUpdate16=1
+ParameterName17=Datasheet Version
+ParameterUpdate17=1
+ParameterName18=DC Current Max
+ParameterUpdate18=1
+ParameterName19=DC Resistance Max
+ParameterUpdate19=1
+ParameterName20=Description
+ParameterUpdate20=1
+ParameterName21=Digikey Part Numer
+ParameterUpdate21=1
+ParameterName22=DigiKey-Purchase-URL
+ParameterUpdate22=1
+ParameterName23=ESR
+ParameterUpdate23=1
+ParameterName24=FET Type
+ParameterUpdate24=1
+ParameterName25=Frequency
+ParameterUpdate25=1
+ParameterName26=Green Forward Current
+ParameterUpdate26=1
+ParameterName27=Green Forward Voltage
+ParameterUpdate27=1
+ParameterName28=Library Reference
+ParameterUpdate28=1
+ParameterName29=Load Capacitance
+ParameterUpdate29=1
+ParameterName30=Made By
+ParameterUpdate30=1
+ParameterName31=Manufacturer
+ParameterUpdate31=1
+ParameterName32=Manufacturer URL
+ParameterUpdate32=1
+ParameterName33=Manufacturer_Part_Number
+ParameterUpdate33=1
+ParameterName34=MF
+ParameterUpdate34=1
+ParameterName35=Mounting Technology
+ParameterUpdate35=1
+ParameterName36=Mouser-Purchase-URL
+ParameterUpdate36=1
+ParameterName37=MP
+ParameterUpdate37=1
+ParameterName38=Number of Positions
+ParameterUpdate38=1
+ParameterName39=Package
+ParameterUpdate39=1
+ParameterName40=Package Description
+ParameterUpdate40=1
+ParameterName41=Package Reference
+ParameterUpdate41=1
+ParameterName42=Packing
+ParameterUpdate42=1
+ParameterName43=PartNumber
+ParameterUpdate43=1
+ParameterName44=Pitch
+ParameterUpdate44=1
+ParameterName45=Power Dissipation
+ParameterUpdate45=1
+ParameterName46=Price
+ParameterUpdate46=1
+ParameterName47=Rds (on)
+ParameterUpdate47=1
+ParameterName48=Red Forward Current
+ParameterUpdate48=1
+ParameterName49=Red Forward Voltage
+ParameterUpdate49=1
+ParameterName50=Series
+ParameterUpdate50=1
+ParameterName51=SnapEDA_Link
+ParameterUpdate51=1
+ParameterName52=Supplier
+ParameterUpdate52=1
+ParameterName53=Supplier 1
+ParameterUpdate53=1
+ParameterName54=Supplier Part Number 1
+ParameterUpdate54=1
+ParameterName55=Temperature Max
+ParameterUpdate55=1
+ParameterName56=Temperature Min
+ParameterUpdate56=1
+ParameterName57=Texas_Instruments-Purchase-URL
+ParameterUpdate57=1
+ParameterName58=Tolerance
+ParameterUpdate58=1
+ParameterName59=Value
+ParameterUpdate59=1
+ParameterName60=Value  (Ohms)
+ParameterUpdate60=1
+ParameterName61=Value (uF)
+ParameterUpdate61=1
+ParameterName62=Vdss
+ParameterUpdate62=1
+ParameterName63=Vendor
+ParameterUpdate63=1
+ParameterName64=Verified By
+ParameterUpdate64=1
+ParameterName65=Vgs (Max)
+ParameterUpdate65=1
+ParameterName66=Vgs (th)
+ParameterUpdate66=1
+ParameterName67=Vin (Max)
+ParameterUpdate67=1
+ParameterName68=Voltage
+ParameterUpdate68=1
+ParameterName69=Vout (Min/Fixed)
+ParameterUpdate69=1
+ParameterName70=Wattage
+ParameterUpdate70=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=4-SMD No Lead Crystal
+ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=CAPACITOR_0603
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=CONN_MINIUSB
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=CONN_MOLEX_MINIFIT JR_4 POS_R/A
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=CTC-1608_L
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=CTC-1608_M
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=CTC-1608_N
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=LED_0606_4SMD
+ModelUpdate7=1
+ModelType8=PCBLIB
+ModelName8=QFN-48
+ModelUpdate8=1
+ModelType9=PCBLIB
+ModelName9=RESISTOR_0603
+ModelUpdate9=1
+ModelType10=PCBLIB
+ModelName10=SOCKET_BACKPLANE_EDGE_CONN
+ModelUpdate10=1
+ModelType11=PCBLIB
+ModelName11=SOT-223-4
+ModelUpdate11=1
+ModelType12=PCBLIB
+ModelName12=SOT-23-3
+ModelUpdate12=1
+ModelType13=PCBLIB
+ModelName13=TSOT-23_S6
+ModelUpdate13=1
+ModelType14=PCBLIB
+ModelName14=WIZNET_RB1-125BAG1A
+ModelUpdate14=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
