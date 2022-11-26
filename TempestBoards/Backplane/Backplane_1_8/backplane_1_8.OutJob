@@ -114,13 +114,13 @@ Configuration5_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=T
 [PublishSettings]
 OutputFilePath2=
 ReleaseManaged2=1
-OutputBasePath2=
+OutputBasePath2=Project Outputs for Backplane_1_8
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=
+OutputFileName2=Job1.PDF
 OutputFileNameMulti2=
 UseOutputNameForMulti2=1
 OutputFileNameSpecial2=
@@ -154,7 +154,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=
+OutputBasePath4=Project Outputs for Backplane_1_8
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
