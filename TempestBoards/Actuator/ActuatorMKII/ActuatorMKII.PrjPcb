@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=2
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -590,20 +590,20 @@ Path=D:\Documents\Academic\OSU\UWRT\Electric Boogaloo\electric_boogaloo\TempestB
 IncludeSubFolders=0
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=ActuatorMKII
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.0
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
