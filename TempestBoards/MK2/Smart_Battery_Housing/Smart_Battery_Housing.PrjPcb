@@ -519,24 +519,35 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Smart_Battery_Housing\Design Rule Check - SBH.html
+DItemRevisionGUID=
+
 [Parameter1]
-Name=TeamLead
-Value=Robert Pafford
-
-[Parameter2]
-Name=ProjectTitle
-Value=Smart Battery Housing
-
-[Parameter3]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter4]
 Name=BoardRevision
 Value=1.0
 
+[Parameter2]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
+[Parameter3]
+Name=ProjectTitle
+Value=Smart Battery Housing
+
+[Parameter4]
+Name=TeamLead
+Value=Robert Pafford
+
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
+
+[DeviceSheet2]
+DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
