@@ -1,0 +1,37 @@
+Added Pin To Net: NetName=GND_RP2040 Pin=J3-1
+Added Pin To Net: NetName=SENS_SDA Pin=J3-2
+Added Pin To Net: NetName=SENS_SCL Pin=J3-3
+Added Pin To Net: NetName=+5 Pin=J3-4
+Added Pin To Net: NetName=AUX_SW Pin=CARD1-38
+Added Pin To Net: NetName=AUX_SW Pin=CARD2-38
+Added Net: Name=AUX_SW
+Added Pin To Net: NetName=KILL_SW Pin=CARD1-37
+Added Pin To Net: NetName=KILL_SW Pin=CARD2-37
+Added Net: Name=KILL_SW
+Added Pin To Net: NetName=PWM_1 Pin=CARD1-20
+Added Pin To Net: NetName=PWM_1 Pin=CARD2-20
+Added Net: Name=PWM_1
+Added Pin To Net: NetName=PWM_2 Pin=CARD1-21
+Added Pin To Net: NetName=PWM_2 Pin=CARD2-21
+Added Net: Name=PWM_2
+Added Pin To Net: NetName=PWM_3 Pin=CARD1-22
+Added Pin To Net: NetName=PWM_3 Pin=CARD2-22
+Added Net: Name=PWM_3
+Added Pin To Net: NetName=PWM_4 Pin=CARD1-23
+Added Pin To Net: NetName=PWM_4 Pin=CARD2-23
+Added Net: Name=PWM_4
+Added Pin To Net: NetName=PWM_5 Pin=CARD1-24
+Added Pin To Net: NetName=PWM_5 Pin=CARD2-24
+Added Net: Name=PWM_5
+Added Pin To Net: NetName=PWM_6 Pin=CARD1-25
+Added Pin To Net: NetName=PWM_6 Pin=CARD2-25
+Added Net: Name=PWM_6
+Added Pin To Net: NetName=PWM_7 Pin=CARD1-26
+Added Pin To Net: NetName=PWM_7 Pin=CARD2-26
+Added Net: Name=PWM_7
+Added Pin To Net: NetName=PWM_8 Pin=CARD1-27
+Added Pin To Net: NetName=PWM_8 Pin=CARD2-27
+Added Net: Name=PWM_8
+Added Room: Name=Ethernet
+Added Room: Name=Sch_Sheet_Template
+Added Room: Name=U_RP2040
