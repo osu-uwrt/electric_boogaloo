@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -13,7 +13,7 @@ TemplateLocationPath=
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
 AllowPortNetNames=0
-AllowSheetEntryNetNames=1
+AllowSheetEntryNetNames=0
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
 DefaultConfiguration=Sources
@@ -59,6 +59,23 @@ GenerateClassCluster=0
 DocumentUniqueId=GKEWDAJG
 
 [Document2]
+DocumentPath=ActuatorMKII_ParentSheet.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KLTQBHTI
+
+[Document3]
 DocumentPath=ActuatorMKII_Circuits.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -75,7 +92,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
-[Document3]
+[Document4]
 DocumentPath=ActuatorMKII_Torpedoes.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -92,7 +109,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JJAKJABD
 
-[Document4]
+[Document5]
 DocumentPath=ActuatorMKII_Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -109,7 +126,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JGDWLBUB
 
-[Document5]
+[Document6]
 DocumentPath=..\..\..\Library\Capacitors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -126,7 +143,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BDHHMKOC
 
-[Document6]
+[Document7]
 DocumentPath=..\..\..\Library\Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -143,7 +160,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CKIHNNPC
 
-[Document7]
+[Document8]
 DocumentPath=..\..\..\Library\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -160,7 +177,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KBCGNCQN
 
-[Document8]
+[Document9]
 DocumentPath=..\..\..\Library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -177,7 +194,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HVIEDDBW
 
-[Document9]
+[Document10]
 DocumentPath=..\..\..\Library\Converter.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -194,7 +211,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IKCEOXKU
 
-[Document10]
+[Document11]
 DocumentPath=..\..\..\Library\Converter.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -211,7 +228,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CGVFHUKL
 
-[Document11]
+[Document12]
 DocumentPath=..\..\..\Library\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -228,7 +245,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DEEFGXOY
 
-[Document12]
+[Document13]
 DocumentPath=..\..\..\Library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -245,7 +262,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QFKZPSHO
 
-[Document13]
+[Document14]
 DocumentPath=..\..\..\Library\Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -262,7 +279,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BCTDTEGH
 
-[Document14]
+[Document15]
 DocumentPath=..\..\..\Library\Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -279,7 +296,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GYPHXBHF
 
-[Document15]
+[Document16]
 DocumentPath=..\..\..\Library\Fuses.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -296,7 +313,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DDWEHPVC
 
-[Document16]
+[Document17]
 DocumentPath=..\..\..\Library\Fuses.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -313,7 +330,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YBHKTQMG
 
-[Document17]
+[Document18]
 DocumentPath=..\..\..\Library\Inductors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -330,7 +347,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BOXOROXM
 
-[Document18]
+[Document19]
 DocumentPath=..\..\..\Library\Inductors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -347,7 +364,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VOBGLKVX
 
-[Document19]
+[Document20]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -364,7 +381,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QMSOJPGM
 
-[Document20]
+[Document21]
 DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -381,7 +398,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HEXZZHGT
 
-[Document21]
+[Document22]
 DocumentPath=..\..\..\Library\Modules.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -398,7 +415,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TTXINXXG
 
-[Document22]
+[Document23]
 DocumentPath=..\..\..\Library\Modules.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -415,7 +432,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XWIMDEVP
 
-[Document23]
+[Document24]
 DocumentPath=..\..\..\Library\Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -432,7 +449,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LBXKYAFM
 
-[Document24]
+[Document25]
 DocumentPath=..\..\..\Library\Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -449,7 +466,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UFYUIZAG
 
-[Document25]
+[Document26]
 DocumentPath=..\..\..\Library\Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -466,7 +483,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BDEQTMKH
 
-[Document26]
+[Document27]
 DocumentPath=..\..\..\Library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -483,7 +500,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EYBWOXCM
 
-[Document27]
+[Document28]
 DocumentPath=..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -500,7 +517,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PAJOURBG
 
-[Document28]
+[Document29]
 DocumentPath=..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -517,7 +534,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PKAMGUDE
 
-[Document29]
+[Document30]
 DocumentPath=..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -534,7 +551,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OVDLTRNU
 
-[Document30]
+[Document31]
 DocumentPath=..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -551,14 +568,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CGHMTZAN
 
-[Document31]
+[Document32]
 DocumentPath=ActuatorMKII_Microcontroller.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -568,21 +585,39 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJLRUEPR
 
+[DeviceSheetFolder1]
+Path=D:\Documents\Academic\OSU\UWRT\Electric Boogaloo\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\
+IncludeSubFolders=0
+
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=ActuatorMKII
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.0
+
+[DeviceSheet1]
+DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
+
+[DeviceSheet2]
+DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
 
 [Configuration1]
 Name=Sources

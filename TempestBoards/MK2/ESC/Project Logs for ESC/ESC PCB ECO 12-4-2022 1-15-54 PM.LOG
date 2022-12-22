@@ -1,0 +1,67 @@
+Change Physical Footprint: Designator=C1 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0603
+Change Physical Footprint: Designator=C1_RP2CAN Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0603
+Change Physical Footprint: Designator=C1_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C2_RP2CAN Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0603
+Change Physical Footprint: Designator=C2_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C3_RP2CAN Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C3_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C4_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C5_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C6_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C7_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C8_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C9_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C10_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C11_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C12_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C13_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=C14_RP2040 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0402
+Change Physical Footprint: Designator=D1 Old Footprint=LED_0603 New Footprint=LED_0603
+Change Physical Footprint: Designator=D1_RP2CAN Old Footprint=LED_0606_4SMD New Footprint=LED_0606_4SMD
+Change Physical Footprint: Designator=D2 Old Footprint=SOD-123 New Footprint=SOD-123
+Change Physical Footprint: Designator=F1 Old Footprint=0501Series_LTF New Footprint=0501Series_LTF
+Change Physical Footprint: Designator=F2 Old Footprint=0501Series_LTF New Footprint=0501Series_LTF
+Change Physical Footprint: Designator=F3 Old Footprint=0501Series_LTF New Footprint=0501Series_LTF
+Change Physical Footprint: Designator=F4 Old Footprint=0501Series_LTF New Footprint=0501Series_LTF
+Change Physical Footprint: Designator=F5 Old Footprint=2-SMD Fuse New Footprint=2-SMD Fuse
+Change Physical Footprint: Designator=J1 Old Footprint=CONN_MOLEX_MINIFIT JR_12 POS_R/A New Footprint=CONN_MOLEX_MINIFIT JR_12 POS_R/A
+Change Physical Footprint: Designator=J1_RP2040 Old Footprint=TC2030-MCP New Footprint=TC2030-MCP
+Change Physical Footprint: Designator=J2 Old Footprint=HEADER_4PIN_2.54MM New Footprint=HEADER_4PIN_2.54MM
+Change Physical Footprint: Designator=J4 Old Footprint=HEADER_4PIN_2.54MM New Footprint=HEADER_4PIN_2.54MM
+Change Physical Footprint: Designator=J7 Old Footprint=HEADER_4PIN_2.54MM New Footprint=HEADER_4PIN_2.54MM
+Change Physical Footprint: Designator=J9 Old Footprint=HEADER_4PIN_2.54MM New Footprint=HEADER_4PIN_2.54MM
+Change Physical Footprint: Designator=J10 Old Footprint=Redcube M4 Term 85A New Footprint=Redcube M4 Term 85A
+Change Physical Footprint: Designator=J11 Old Footprint=Redcube M4 Term 85A New Footprint=Redcube M4 Term 85A
+Change Physical Footprint: Designator=J12 Old Footprint=Redcube M4 Term 85A New Footprint=Redcube M4 Term 85A
+Change Physical Footprint: Designator=J13 Old Footprint=Redcube M4 Term 85A New Footprint=Redcube M4 Term 85A
+Change Physical Footprint: Designator=J? Old Footprint=CONN_MOLEX_MINIFIT JR_6 POS_R/A New Footprint=CONN_MOLEX_MINIFIT JR_6 POS_R/A
+Change Physical Footprint: Designator=M1 Old Footprint=APD 80F3[X] New Footprint=APD 80F3[X]
+Change Physical Footprint: Designator=M2 Old Footprint=APD 80F3[X] New Footprint=APD 80F3[X]
+Change Physical Footprint: Designator=M3 Old Footprint=APD 80F3[X] New Footprint=APD 80F3[X]
+Change Physical Footprint: Designator=M4 Old Footprint=APD 80F3[X] New Footprint=APD 80F3[X]
+Change Physical Footprint: Designator=Q1 Old Footprint=TRANS_PSMN5R5-60YS,115 New Footprint=TRANS_PSMN5R5-60YS,115
+Change Physical Footprint: Designator=R1 Old Footprint=RESISTOR_0805 New Footprint=RESISTOR_0805
+Change Physical Footprint: Designator=R1_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R1_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R2 Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0603
+Change Physical Footprint: Designator=R2_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R2_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R3_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R3_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R4_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R4_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R5_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R5_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R6_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R6_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R7_RP2CAN Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=R7_RP2040 Old Footprint=RESISTOR_0402 New Footprint=RESISTOR_0402
+Change Physical Footprint: Designator=SB? Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0603
+Change Physical Footprint: Designator=SB? Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0603
+Change Physical Footprint: Designator=SW1_RP2CAN Old Footprint=CAS-220TA New Footprint=CAS-220TA
+Change Physical Footprint: Designator=SW1_RP2040 Old Footprint=SMD_434123025826 New Footprint=SMD_434123025826
+Change Physical Footprint: Designator=SW2_RP2040 Old Footprint=SMD_434123025826 New Footprint=SMD_434123025826
+Change Physical Footprint: Designator=U1_RP2CAN Old Footprint=SOIC-8 New Footprint=SOIC-8
+Change Physical Footprint: Designator=U1_RP2040 Old Footprint=QFN-56 RP2040 New Footprint=QFN-56 RP2040
+Change Physical Footprint: Designator=U2_RP2040 Old Footprint=SOIC-8 W25QxJV New Footprint=SOIC-8 W25QxJV
+Change Physical Footprint: Designator=Y1_RP2040 Old Footprint=4-SMD, NO LEAD CRYSTAL 3.2x2.5mm New Footprint=4-SMD, NO LEAD CRYSTAL 3.2x2.5mm
