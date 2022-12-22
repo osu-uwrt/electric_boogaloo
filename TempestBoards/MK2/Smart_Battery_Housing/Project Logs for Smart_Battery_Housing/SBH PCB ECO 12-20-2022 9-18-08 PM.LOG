@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetR6R_1 Pin=SW1R-A1
+Removed Pin From Net: NetName=NetR7R_1 Pin=SW2R-A2
+Added Member To Class: ClassName=U_RP2040_C Member=Component C6R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C8R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C10R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C12R 100nF Ceramic 6.3V
+Added Room: Name=SBH_Microcontroller
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
