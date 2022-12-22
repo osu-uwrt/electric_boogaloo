@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=BRD_SCL Pin=R28-2
+Removed Pin From Net: NetName=BRD_SDA Pin=R29-2
+Removed Pin From Net: NetName=SENS_SCL Pin=R30-2
+Removed Pin From Net: NetName=SENS_SDA Pin=R31-2
+Removed Pin From Net: NetName=SENS_SDA Pin=U1R-8
+Removed Pin From Net: NetName=SENS_SCL Pin=U1R-9
+Removed Pin From Net: NetName=BRD_SDA Pin=U1R-11
+Removed Pin From Net: NetName=BRD_SCL Pin=U1R-12
+Add Component: Footprint Not Found TSOT-23_S6
+Added Pin To Net: NetName=SENS_SCL Pin=R28-2
+Added Pin To Net: NetName=SENS_SDA Pin=R29-2
+Added Pin To Net: NetName=BRD_SCL Pin=R30-2
+Added Pin To Net: NetName=BRD_SDA Pin=R31-2
+Added Pin To Net: NetName=BRD_SDA Pin=U1R-8
+Added Pin To Net: NetName=BRD_SCL Pin=U1R-9
+Added Pin To Net: NetName=SENS_SDA Pin=U1R-11
+Added Pin To Net: NetName=SENS_SCL Pin=U1R-12
+Add Pin To Net: Unknown Pin: Pin U4-1
+Add Pin To Net: Unknown Pin: Pin U4-2
+Add Pin To Net: Unknown Pin: Pin U4-3
+Add Pin To Net: Unknown Pin: Pin U4-5
+Add Pin To Net: Unknown Pin: Pin U4-6
+Add Class Member: Failed to add class member : Component U4 LTC4412ES6TRPBF

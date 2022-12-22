@@ -1,0 +1,61 @@
+Change Component Designator: OldDesignator=C1_RP2040 NewDesignator=C1R
+Change Component Designator: OldDesignator=C2_RP2040 NewDesignator=C2R
+Change Component Designator: OldDesignator=C3_RP2040 NewDesignator=C3R
+Change Component Designator: OldDesignator=C4_RP2040 NewDesignator=C4R
+Change Component Designator: OldDesignator=C5_RP2040 NewDesignator=C5R
+Change Component Designator: OldDesignator=C6_RP2040 NewDesignator=C6R
+Change Component Designator: OldDesignator=C7_RP2040 NewDesignator=C7R
+Change Component Designator: OldDesignator=C8_RP2040 NewDesignator=C8R
+Change Component Designator: OldDesignator=C9_RP2040 NewDesignator=C9R
+Change Component Designator: OldDesignator=C10_RP2040 NewDesignator=C10R
+Change Component Designator: OldDesignator=C11_RP2040 NewDesignator=C11R
+Change Component Designator: OldDesignator=C12_RP2040 NewDesignator=C12R
+Change Component Designator: OldDesignator=C13_RP2040 NewDesignator=C13R
+Change Component Designator: OldDesignator=C14_RP2040 NewDesignator=C14R
+Change Component Designator: OldDesignator=J1_RP2040 NewDesignator=J1R
+Change Component Designator: OldDesignator=R1_RP2040 NewDesignator=R1R
+Change Component Designator: OldDesignator=R2_RP2040 NewDesignator=R2R
+Change Component Designator: OldDesignator=R3_RP2040 NewDesignator=R3R
+Change Component Designator: OldDesignator=R4_RP2040 NewDesignator=R4R
+Change Component Designator: OldDesignator=R5_RP2040 NewDesignator=R5R
+Change Component Designator: OldDesignator=R6_RP2040 NewDesignator=R6R
+Change Component Designator: OldDesignator=R7_RP2040 NewDesignator=R7R
+Change Component Designator: OldDesignator=SW1_RP2040 NewDesignator=SW1R
+Change Component Designator: OldDesignator=SW2_RP2040 NewDesignator=SW2R
+Change Component Designator: OldDesignator=U1_RP2040 NewDesignator=U1R
+Change Component Designator: OldDesignator=U2_RP2040 NewDesignator=U2R
+Change Component Designator: OldDesignator=Y1_RP2040 NewDesignator=Y1R
+Change Net Name : Old Net Name=NetC2_RP2040_1 New Net Name=NetC2R_1
+Change Net Name : Old Net Name=NetR6_RP2040_1 New Net Name=NetR6R_1
+Change Net Name : Old Net Name=NetR7_RP2040_1 New Net Name=NetR7R_1
+Change Net Name : Old Net Name=NetU1_RP2040_2 New Net Name=NetU1R_2
+Change Net Name : Old Net Name=NetU1_RP2040_3 New Net Name=NetU1R_3
+Change Net Name : Old Net Name=NetU1_RP2040_4 New Net Name=NetU1R_4
+Change Net Name : Old Net Name=NetU1_RP2040_5 New Net Name=NetU1R_5
+Change Net Name : Old Net Name=NetU1_RP2040_6 New Net Name=NetU1R_6
+Change Net Name : Old Net Name=NetU1_RP2040_7 New Net Name=NetU1R_7
+Change Net Name : Old Net Name=NetU1_RP2040_8 New Net Name=NetU1R_8
+Change Net Name : Old Net Name=NetU1_RP2040_9 New Net Name=NetU1R_9
+Change Net Name : Old Net Name=NetU1_RP2040_11 New Net Name=NetU1R_11
+Change Net Name : Old Net Name=NetU1_RP2040_12 New Net Name=NetU1R_12
+Change Net Name : Old Net Name=NetU1_RP2040_13 New Net Name=NetU1R_13
+Change Net Name : Old Net Name=NetU1_RP2040_14 New Net Name=NetU1R_14
+Change Net Name : Old Net Name=NetU1_RP2040_15 New Net Name=NetU1R_15
+Change Net Name : Old Net Name=NetU1_RP2040_16 New Net Name=NetU1R_16
+Change Net Name : Old Net Name=NetU1_RP2040_17 New Net Name=NetU1R_17
+Change Net Name : Old Net Name=NetU1_RP2040_18 New Net Name=NetU1R_18
+Change Net Name : Old Net Name=NetU1_RP2040_28 New Net Name=NetU1R_28
+Change Net Name : Old Net Name=NetU1_RP2040_29 New Net Name=NetU1R_29
+Change Net Name : Old Net Name=NetU1_RP2040_30 New Net Name=NetU1R_30
+Change Net Name : Old Net Name=NetU1_RP2040_31 New Net Name=NetU1R_31
+Change Net Name : Old Net Name=NetU1_RP2040_32 New Net Name=NetU1R_32
+Change Net Name : Old Net Name=NetU1_RP2040_34 New Net Name=NetU1R_34
+Change Net Name : Old Net Name=NetU1_RP2040_35 New Net Name=NetU1R_35
+Change Net Name : Old Net Name=NetU1_RP2040_36 New Net Name=NetU1R_36
+Change Net Name : Old Net Name=NetU1_RP2040_37 New Net Name=NetU1R_37
+Change Net Name : Old Net Name=NetU1_RP2040_38 New Net Name=NetU1R_38
+Change Net Name : Old Net Name=NetU1_RP2040_39 New Net Name=NetU1R_39
+Change Net Name : Old Net Name=NetU1_RP2040_40 New Net Name=NetU1R_40
+Change Net Name : Old Net Name=NetU1_RP2040_41 New Net Name=NetU1R_41
+Added Room: Name=Sch_Sheet_Template
+Added Room: Name=U_RP2040
