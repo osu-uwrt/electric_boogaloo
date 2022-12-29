@@ -1,0 +1,69 @@
+Removed Pin From Net: NetName=ACT+ Pin=CLAW_CONN-1
+Removed Pin From Net: NetName=ACT- Pin=CLAW_CONN-2
+Removed Pin From Net: NetName=ACT_PWM_5V Pin=CLAW_CONN-3
+Removed Pin From Net: NetName=ACT_CHECK_5V Pin=CLAW_CONN-4
+Removed Pin From Net: NetName=+12V Pin=DROPPER_CONN-1
+Removed Pin From Net: NetName=+12V Pin=DROPPER_CONN-2
+Removed Pin From Net: NetName=DROPPER_1 Pin=DROPPER_CONN-3
+Removed Pin From Net: NetName=DROPPER_2 Pin=DROPPER_CONN-4
+Removed Pin From Net: NetName=TORPEDO_1 Pin=TORP_CONN-1
+Removed Pin From Net: NetName=GND Pin=TORP_CONN-2
+Removed Pin From Net: NetName=TORPEDO_2 Pin=TORP_CONN-3
+Removed Pin From Net: NetName=COIL_1 Pin=TORP_CONN-4
+Removed Pin From Net: NetName=COIL_2 Pin=TORP_CONN-5
+Removed Pin From Net: NetName=COIL_3 Pin=TORP_CONN-6
+Removed Member From Class: ClassName=U_ActuatorMKII_Connectors Member=CLAW_CONN
+Removed Member From Class: ClassName=U_ActuatorMKII_Connectors Member=DROPPER_CONN
+Removed Member From Class: ClassName=U_ActuatorMKII_Connectors Member=TORP_CONN
+Change Component Footprint: Designator=LED_CONN Old Footprint=0022057038 New Footprint=CONN_JST_XH254_3POS_VERT
+Change Component Comment : Designator=POWER_CONN Old Comment=6 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Comment : Designator=LED_CONN Old Comment=CONN HEADER R/A 3POS 2.54MM New Comment=XH2.54 VERT
+Change component parameters: Designator = "LED_CONN" ("LED_CONN"); Footprint = "0022057038"; UniqueID = "\KCVQDIRQ" ("\KCVQDIRQ")
+Change component parameters (AddParameter): Name = "Color"; Value = "White"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Purchase Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.amazon.com/460PCS-XH2-54-Connector-Terminal-Connectors/dp/B09DBGVX5C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "4A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NOTE"; Value = "Do not use JST 2.5mm parts with this footprint. JST does not make 2.54mm pitch pins, rather only clones make this connector!"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "XH 2.54"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=LID_CONN(CONN_MOLEX_MINIFIT JR_14 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/ps/PS-5556-001.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM21356-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TORPEDO_1 Pin=LID_CONN-1
+Added Pin To Net: NetName=TORPEDO_2 Pin=LID_CONN-3
+Added Pin To Net: NetName=+12V Pin=LID_CONN-4
+Added Pin To Net: NetName=+12V Pin=LID_CONN-5
+Added Pin To Net: NetName=ACT_PWM_5V Pin=LID_CONN-6
+Added Pin To Net: NetName=ACT_CHECK_5V Pin=LID_CONN-7
+Added Pin To Net: NetName=COIL_1 Pin=LID_CONN-8
+Added Pin To Net: NetName=COIL_2 Pin=LID_CONN-9
+Added Pin To Net: NetName=COIL_3 Pin=LID_CONN-10
+Added Pin To Net: NetName=DROPPER_1 Pin=LID_CONN-11
+Added Pin To Net: NetName=DROPPER_2 Pin=LID_CONN-12
+Added Pin To Net: NetName=ACT+ Pin=LID_CONN-13
+Added Pin To Net: NetName=ACT- Pin=LID_CONN-14
+Change Net Name : Old Net Name=GND New Net Name=GND_RP2CAN
+Change Class Name : Old Net Name=U_ActuatorMKII_Connectors New Net Name=ActuatorMKII_Connectors
+Added Member To Class: ClassName=ActuatorMKII_Connectors Member=Component LID_CONN Mini-Fit Jr R/A
+Added Room: Name=ActuatorMKII_Connectors
+Added Room: Name=U_ActuatorMKII_Circuits
+Added Room: Name=U_ActuatorMKII_Microcontroller
+Added Room: Name=U_ActuatorMKII_Torpedoes
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
