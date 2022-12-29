@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=5V Pin=J15-1
+Removed Pin From Net: NetName=SCL Pin=J15-2
+Removed Pin From Net: NetName=SDA Pin=J15-3
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J15-4
+Added Component: Designator=J15(CONN_JST_BM04B-GHS-TBT(LF)(SN)(N))
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "GH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "455-1580-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=J15-1
+Added Pin To Net: NetName=SCL Pin=J15-2
+Added Pin To Net: NetName=SDA Pin=J15-3
+Added Pin To Net: NetName=GND_RP2CAN Pin=J15-4
+Added Pin To Net: NetName=GND_RP2CAN Pin=J15-S1
+Added Pin To Net: NetName=GND_RP2CAN Pin=J15-S2
