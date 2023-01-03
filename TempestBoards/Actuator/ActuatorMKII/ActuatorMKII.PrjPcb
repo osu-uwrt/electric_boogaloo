@@ -107,7 +107,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JGDWLBUB
+DocumentUniqueId=KLTQBHTI
 
 [Document5]
 DocumentPath=..\..\..\Library\Capacitors.PcbLib
@@ -567,6 +567,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJLRUEPR
+
+[GeneratedDocument1]
+DocumentPath=
+DItemRevisionGUID=
 
 [DeviceSheetFolder1]
 Path=D:\Documents\Academic\OSU\UWRT\Electric Boogaloo\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\
