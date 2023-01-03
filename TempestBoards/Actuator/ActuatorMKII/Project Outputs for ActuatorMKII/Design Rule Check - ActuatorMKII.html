@@ -1,0 +1,451 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/3/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:13:03 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc" class="file"><acronym title="C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc">C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">34</td></tr>
+</table>
+</td>
+</table><a name="IDUHNTOHKS2Y0QNGTR0DPTPI22CEE52V1L2III3PPRCMVQWYWKYVGH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXZJIFJGNIRIJGKWNDEZEZ1YUWFUTANKTQNNFOUDBZND1EOCHDUDM">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDM3CIYUCQLENVHDKBIP0O1LVV1MN43HPHSFRN3MJL50UHMTN5KUBM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWG05CKURFFAUM2UE0GHTOI41EZ1UEDWNKJGC4BB3RGYFF554LRD">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDN53KIQ3TYY3BNTMS1P0CIKKG5OP25XQ55TCLYH2U33KJDWAINAE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPZE4E3QFQDM0G1IVZVMDUQ3BZKALRMACTLQLLEOHMUFEAJZTVEHI">Width Constraint (Min=3.5mil) (Max=500mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRX4SWFHDM2KXN2NWU4T3RTDPANYZOYVBJF0ELQOS4VOOCJF010KE">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVABRAAPNOQIRJCRCCYKTK5NHZB5FWDQTOILV2KFLX5ERWQXDRN2F">Hole Size Constraint (Min=12mil) (Max=200mil) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3IGQUBPURLAQMB5H1FM4PY4XWGM2GQNRZH3Y50BJWM5U2BZUYFSO">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID11UVBN1AYHLCOE4A2H5V1MS5SLV2TSA3AGNJFCH0EJSREZMONGKB">Minimum Solder Mask Sliver (Gap=3mil) (All),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5KWTERVJI5RSMBIUX0VK2JMXHM5MZAU1WSMDIGE3DKFQVPTLAMQP">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</a></td>
+<td class="column2">13</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCEGHRL4QMQ0JD5FZY40EEID24BOP011BAAMRGWNGDPEFABLUB4VG">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDG15JFHGE5JRLPX0VT422GIG1VCQWHMBTSKYJR5PGURZYLXJ3HWAE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSJSHWUOMS2GCHAZYKPJLPWPQJFKEQMWAO5FOQSFF3J4NS54QMLAE">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">34</td>
+</tr>
+</table><br><a name="IDXZJIFJGNIRIJGKWNDEZEZ1YUWFUTANKTQNNFOUDBZND1EOCHDUDM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2083.561mil|Location2.X=2094.811mil|Location1.Y=5471.513mil|Location2.Y=5482.763mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2083.561mil|Location2.X=2094.811mil|Location1.Y=5471.513mil|Location2.Y=5482.763mil|Absolute=True">Clearance Constraint: (7.868mil &lt; 10mil) Between Pad POWER_CONN-2(1044.646mil,4432.598mil) on Multi-Layer And Track (1082.598mil,4560mil)(1210mil,4432.598mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWG05CKURFFAUM2UE0GHTOI41EZ1UEDWNKJGC4BB3RGYFF554LRD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6006.307mil|Location2.X=6130.386mil|Location1.Y=1151.898mil|Location2.Y=1225.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6006.307mil|Location2.X=6130.386mil|Location1.Y=1151.898mil|Location2.Y=1225.78mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad J2-5(5016.181mil,190.315mil) on Top Layer And Pad J2-7(5087.047mil,185.394mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVABRAAPNOQIRJCRCCYKTK5NHZB5FWDQTOILV2KFLX5ERWQXDRN2F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=12mil) (Max=200mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5400.847mil|Location2.X=5410.097mil|Location1.Y=3844.347mil|Location2.Y=3853.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5400.847mil|Location2.X=5410.097mil|Location1.Y=3844.347mil|Location2.Y=3853.597mil|Absolute=True">Hole Size Constraint: (8mil &lt; 12mil) Pad U1-V(4405.472mil,2848.972mil) on Multi-Layer Actual Hole Size = 8mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5400.847mil|Location2.X=5410.097mil|Location1.Y=3903.403mil|Location2.Y=3912.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5400.847mil|Location2.X=5410.097mil|Location1.Y=3903.403mil|Location2.Y=3912.653mil|Absolute=True">Hole Size Constraint: (8mil &lt; 12mil) Pad U1-V(4405.472mil,2908.028mil) on Multi-Layer Actual Hole Size = 8mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5459.903mil|Location2.X=5469.153mil|Location1.Y=3844.347mil|Location2.Y=3853.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5459.903mil|Location2.X=5469.153mil|Location1.Y=3844.347mil|Location2.Y=3853.597mil|Absolute=True">Hole Size Constraint: (8mil &lt; 12mil) Pad U1-V(4464.528mil,2848.972mil) on Multi-Layer Actual Hole Size = 8mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5459.903mil|Location2.X=5469.153mil|Location1.Y=3903.403mil|Location2.Y=3912.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5459.903mil|Location2.X=5469.153mil|Location1.Y=3903.403mil|Location2.Y=3912.653mil|Absolute=True">Hole Size Constraint: (8mil &lt; 12mil) Pad U1-V(4464.528mil,2908.028mil) on Multi-Layer Actual Hole Size = 8mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID11UVBN1AYHLCOE4A2H5V1MS5SLV2TSA3AGNJFCH0EJSREZMONGKB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=3mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3843.465mil|Location2.Y=3847.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3843.465mil|Location2.Y=3847.715mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-1(1600.433mil,2858.386mil) on Top Layer And Pad U20-2(1600.433mil,2832.795mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3817.875mil|Location2.Y=3822.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3817.875mil|Location2.Y=3822.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-2(1600.433mil,2832.795mil) on Top Layer And Pad U20-3(1600.433mil,2807.205mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3792.284mil|Location2.Y=3796.534mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2615.04mil|Location2.X=2619.29mil|Location1.Y=3792.284mil|Location2.Y=3796.534mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-3(1600.433mil,2807.205mil) on Top Layer And Pad U20-4(1600.433mil,2781.614mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3792.284mil|Location2.Y=3796.534mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3792.284mil|Location2.Y=3796.534mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-5(1779.567mil,2781.614mil) on Top Layer And Pad U20-6(1779.567mil,2807.205mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3817.875mil|Location2.Y=3822.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3817.875mil|Location2.Y=3822.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-6(1779.567mil,2807.205mil) on Top Layer And Pad U20-7(1779.567mil,2832.795mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3843.465mil|Location2.Y=3847.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2794.174mil|Location2.X=2798.424mil|Location1.Y=3843.465mil|Location2.Y=3847.715mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.906mil &lt; 3mil) Between Pad U20-7(1779.567mil,2832.795mil) on Top Layer And Pad U20-8(1779.567mil,2858.386mil) on Top Layer [Top Solder] Mask Sliver [1.906mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID5KWTERVJI5RSMBIUX0VK2JMXHM5MZAU1WSMDIGE3DKFQVPTLAMQP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=6mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1729.5mil|Location2.X=1734.5mil|Location1.Y=4507.5mil|Location2.Y=4512.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1729.5mil|Location2.X=1734.5mil|Location1.Y=4507.5mil|Location2.Y=4512.5mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad 1-1(784.5mil,3440mil) on Top Layer And Track (732mil,3510mil)(762mil,3510mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1744.5mil|Location2.X=1749.5mil|Location1.Y=4492.5mil|Location2.Y=4497.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1744.5mil|Location2.X=1749.5mil|Location1.Y=4492.5mil|Location2.Y=4497.5mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad 1-1(784.5mil,3440mil) on Top Layer And Track (747mil,3495mil)(747mil,3525mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5307.495mil|Location2.X=5312.495mil|Location1.Y=2680.689mil|Location2.Y=2685.689mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5307.495mil|Location2.X=5312.495mil|Location1.Y=2680.689mil|Location2.Y=2685.689mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad C13R-2(4307.874mil,1695mil) on Bottom Layer And Text "C7R" (4280.005mil,1640.013mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3944.939mil|Location2.Y=3949.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3944.939mil|Location2.Y=3949.939mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-1(6437.598mil,2996.063mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3779.585mil|Location2.Y=3784.585mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3779.585mil|Location2.Y=3784.585mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-2(6437.598mil,2830.709mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3614.231mil|Location2.Y=3619.231mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3614.231mil|Location2.Y=3619.231mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-3(6437.598mil,2665.354mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3448.877mil|Location2.Y=3453.877mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3448.877mil|Location2.Y=3453.877mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-4(6437.598mil,2500mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3283.522mil|Location2.Y=3288.522mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3283.522mil|Location2.Y=3288.522mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-5(6437.598mil,2334.646mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3118.168mil|Location2.Y=3123.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=3118.168mil|Location2.Y=3123.168mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-6(6437.598mil,2169.291mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=2952.813mil|Location2.Y=2957.813mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7470.532mil|Location2.X=7475.532mil|Location1.Y=2952.813mil|Location2.Y=2957.813mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad LID_CONN-7(6437.598mil,2003.937mil) on Multi-Layer And Track (6473.032mil,1897.638mil)(6473.032mil,3102.362mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1830.283mil|Location2.X=1835.283mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1830.283mil|Location2.X=1835.283mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad POWER_CONN-1(879.291mil,4432.598mil) on Multi-Layer And Track (750mil,4468.032mil)(1316.299mil,4468.032mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1995.637mil|Location2.X=2000.637mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1995.637mil|Location2.X=2000.637mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad POWER_CONN-2(1044.646mil,4432.598mil) on Multi-Layer And Track (750mil,4468.032mil)(1316.299mil,4468.032mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2160.992mil|Location2.X=2165.992mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2160.992mil|Location2.X=2165.992mil|Location1.Y=5465.532mil|Location2.Y=5470.532mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 6mil) Between Pad POWER_CONN-3(1210mil,4432.598mil) on Multi-Layer And Track (750mil,4468.032mil)(1316.299mil,4468.032mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDCEGHRL4QMQ0JD5FZY40EEID24BOP011BAAMRGWNGDPEFABLUB4VG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=3mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.757mil|Location2.X=5307.757mil|Location1.Y=2657.246mil|Location2.Y=2660.246mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.757mil|Location2.X=5307.757mil|Location1.Y=2657.246mil|Location2.Y=2660.246mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C13R" (4377.483mil,1630.005mil) on Bottom Overlay And Text "C7R" (4280.005mil,1640.013mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5268.898mil|Location2.X=5275.453mil|Location1.Y=2638.04mil|Location2.Y=2644.525mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5268.898mil|Location2.X=5275.453mil|Location1.Y=2638.04mil|Location2.Y=2644.525mil|Absolute=True">Silk To Silk Clearance Constraint: (0.79mil &lt; 3mil) Between Text "C13R" (4377.483mil,1630.005mil) on Bottom Overlay And Track (4221.378mil,1640mil)(4268.622mil,1640mil) on Bottom Overlay Silk Text to Silk Clearance [0.79mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5267.122mil|Location2.X=5270.122mil|Location1.Y=2646.413mil|Location2.Y=2649.413mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5267.122mil|Location2.X=5270.122mil|Location1.Y=2646.413mil|Location2.Y=2649.413mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C13R" (4377.483mil,1630.005mil) on Bottom Overlay And Track (4268.622mil,1640mil)(4268.622mil,1647.913mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5983.5mil|Location2.X=5986.5mil|Location1.Y=2110.985mil|Location2.Y=2113.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5983.5mil|Location2.X=5986.5mil|Location1.Y=2110.985mil|Location2.Y=2113.985mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C1C" (4912.512mil,1085.005mil) on Top Overlay And Track (4985mil,2120mil)(4985mil,432mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5976.618mil|Location2.X=5980.868mil|Location1.Y=2022.872mil|Location2.Y=2027.122mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5976.618mil|Location2.X=5980.868mil|Location1.Y=2022.872mil|Location2.Y=2027.122mil|Absolute=True">Silk To Silk Clearance Constraint: (2.513mil &lt; 3mil) Between Text "C4C" (4895.013mil,1000.005mil) on Top Overlay And Track (4985mil,2120mil)(4985mil,432mil) on Top Overlay Silk Text to Silk Clearance [2.513mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5283.5mil|Location2.X=5286.5mil|Location1.Y=2669.878mil|Location2.Y=2672.878mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5283.5mil|Location2.X=5286.5mil|Location1.Y=2669.878mil|Location2.Y=2672.878mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C7R" (4280.005mil,1640.013mil) on Bottom Overlay And Track (4285mil,1671.378mil)(4285mil,1718.622mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5284.878mil|Location2.X=5287.878mil|Location1.Y=2669.878mil|Location2.Y=2672.878mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5284.878mil|Location2.X=5287.878mil|Location1.Y=2669.878mil|Location2.Y=2672.878mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C7R" (4280.005mil,1640.013mil) on Bottom Overlay And Track (4285mil,1671.378mil)(4292.913mil,1671.378mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5291.374mil|Location2.X=5294.374mil|Location1.Y=2717.122mil|Location2.Y=2720.122mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5291.374mil|Location2.X=5294.374mil|Location1.Y=2717.122mil|Location2.Y=2720.122mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "C7R" (4280.005mil,1640.013mil) on Bottom Overlay And Track (4285mil,1718.622mil)(4292.874mil,1718.622mil) on Bottom Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6283.442mil|Location2.X=6286.442mil|Location1.Y=4078.5mil|Location2.Y=4081.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\Actuator\ActuatorMKII\ActuatorMKII.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6283.442mil|Location2.X=6286.442mil|Location1.Y=4078.5mil|Location2.Y=4081.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "Marker
+Droppers" (5095mil,3080mil) on Top Overlay And Track (5100mil,3080mil)(5645mil,3080mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
