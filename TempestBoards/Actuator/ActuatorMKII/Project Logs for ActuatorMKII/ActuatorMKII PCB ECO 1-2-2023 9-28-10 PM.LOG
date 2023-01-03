@@ -1,0 +1,19 @@
+Change Component Comment : Designator=Q1 Old Comment=Comment New Comment=DMP3056L-7
+Change component parameters: Designator = "Q1" ("Q1"); Footprint = "SOT-23-3"; UniqueID = "\COHMDHLE\DRPZRDFZ" ("\COHMDHLE\DRPZRDFZ")
+Change component parameters (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Id"; Value = "-4.3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reviewed By"; Value = "---"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "DMP3056L-7DICT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDSS (Max)"; Value = "-30V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vgss (Max)"; Value = "+-25V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=V+ Pin=Q1-3
+Added Member To Class: ClassName=U_ActuatorMKII_Circuits Member=Component Q1 DMP3056L-7
+Added Room: Name=ActuatorMKII_Connectors
+Added Room: Name=U_ActuatorMKII_Circuits
+Added Room: Name=U_ActuatorMKII_Microcontroller
+Added Room: Name=U_ActuatorMKII_Torpedoes
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
