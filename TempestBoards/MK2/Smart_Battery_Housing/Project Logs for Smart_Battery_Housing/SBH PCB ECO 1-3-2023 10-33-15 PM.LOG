@@ -1,0 +1,84 @@
+Removed Pin From Net: NetName=5V Pin=J1-1
+Change Component Comment : Designator=R3 Old Comment=10k Ohm 5% 1/10W New Comment=4.7 Ohm 5% 1/8W
+Change Component Comment : Designator=R1 Old Comment=10k Ohm 5% 1/10W New Comment=62 Ohm 1% 1/4W
+Change Component Comment : Designator=R2 Old Comment=10k Ohm 5% 1/10W New Comment=62 Ohm 1% 1/4W
+Change Component Comment : Designator=D2 Old Comment=150060GS75000 New Comment=150060YS75000
+Change Component Designator: OldDesignator=J1 NewDesignator=J2
+Change component parameters: Designator = "D2" ("D2"); Footprint = "LED_0603"; UniqueID = "\XQMNVEGU" ("\XQMNVEGU")
+Change component parameters (AddParameter): Name = "Color"; Value = "Yellow"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4981-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RESISTOR_0603"; UniqueID = "\CPDPLDIK" ("\CPDPLDIK")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "541-RCS060362R0FKEACT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "62"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "RESISTOR_0603"; UniqueID = "\ZBEVBVOO" ("\ZBEVBVOO")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "541-RCS060362R0FKEACT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "62"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "RESISTOR_0603"; UniqueID = "\MESCOGNE" ("\MESCOGNE")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD4R7JCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "4.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=J1(FFC_0522710869)
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FFC Type"; Value = "ZIF Locking"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Bottom R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM7939CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=CANH Pin=J1-4
+Added Pin To Net: NetName=CANL Pin=J1-5
+Change Net Name : Old Net Name=3V3 New Net Name=3V3_RP2CAN
+Change Net Name : Old Net Name=GND New Net Name=GND_RP2CAN
+Change Net Name : Old Net Name=SCL New Net Name=DISP_SCL
+Change Net Name : Old Net Name=SDA New Net Name=DISP_SDA
+Added Pin To Net: NetName=BMS_SCL Pin=J1-7
+Added Pin To Net: NetName=BMS_SCL Pin=U1R-9
+Added Net: Name=BMS_SCL
+Added Pin To Net: NetName=BMS_SDA Pin=J1-6
+Added Pin To Net: NetName=BMS_SDA Pin=U1R-8
+Added Net: Name=BMS_SDA
+Added Pin To Net: NetName=BMS_WAKE Pin=J1-8
+Added Pin To Net: NetName=BMS_WAKE Pin=U1R-7
+Added Net: Name=BMS_WAKE
+Added Pin To Net: NetName=VBAT Pin=J1-2
+Added Net: Name=VBAT
+Added Pin To Net: NetName=VPACK Pin=J1-3
+Added Net: Name=VPACK
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component J2 USB_MICRO R/A
+Added Room: Name=SBH_Microcontroller
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN

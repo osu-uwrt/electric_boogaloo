@@ -1,0 +1,10 @@
+Added Component: Designator=DS1(OLED_I2C_128x32)
+Add component (AddParameter): Name = "Display Size"; Value = "128x32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "3.3V, 5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Protocol"; Value = "I2C"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=DS1-1
+Added Pin To Net: NetName=5V Pin=DS1-2
+Added Pin To Net: NetName=SCL Pin=DS1-3
+Added Pin To Net: NetName=SDA Pin=DS1-4
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component DS1 DISP OLED 128x32
