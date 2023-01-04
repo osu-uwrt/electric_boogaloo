@@ -1,0 +1,32 @@
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-1
+Add Pin To Net: Unknown Pin: Pin C4-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Added Pin To Net: NetName=GND_RP2CAN Pin=M1-10
+Added Pin To Net: NetName=GND_RP2CAN Pin=M2-10
+Added Pin To Net: NetName=GND_RP2CAN Pin=M3-10
+Added Pin To Net: NetName=GND_RP2CAN Pin=M4-10
+Change Net Name : Old Net Name=NetJ1_1 New Net Name=ESC1_P1
+Change Net Name : Old Net Name=NetJ1_2 New Net Name=ESC1_P2
+Change Net Name : Old Net Name=NetJ1_3 New Net Name=ESC1_P3
+Change Net Name : Old Net Name=NetJ1_4 New Net Name=ESC2_P1
+Change Net Name : Old Net Name=NetJ1_5 New Net Name=ESC2_P2
+Change Net Name : Old Net Name=NetJ1_6 New Net Name=ESC2_P3
+Change Net Name : Old Net Name=NetJ1_7 New Net Name=ESC3_P1
+Change Net Name : Old Net Name=NetJ1_8 New Net Name=ESC3_P2
+Change Net Name : Old Net Name=NetJ1_9 New Net Name=ESC3_P3
+Change Net Name : Old Net Name=NetJ1_10 New Net Name=ESC4_P1
+Change Net Name : Old Net Name=NetJ1_11 New Net Name=ESC4_P2
+Change Net Name : Old Net Name=NetJ1_12 New Net Name=ESC4_P3
+Add Class Member: Failed to add class member : Component C2 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C3 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C4 Dummy Cap (NO FOOTPRINT)
+Add Class Member: Failed to add class member : Component C5 Dummy Cap (NO FOOTPRINT)
+Added Member To Class: ClassName=ESC Member=Component SB? 0 Ohm Jumper No Fit
+Added Room: Name=ESC
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN

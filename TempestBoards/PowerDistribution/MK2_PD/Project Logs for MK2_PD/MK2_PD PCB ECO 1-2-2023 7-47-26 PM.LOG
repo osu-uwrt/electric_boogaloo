@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=NetQ6_5 Pin=Q8-1
+Removed Pin From Net: NetName=NetQ6_5 Pin=Q8-2
+Removed Pin From Net: NetName=NetQ6_5 Pin=Q8-3
+Removed Pin From Net: NetName=GND Pin=Q8-4
+Removed Pin From Net: NetName=NetQ9_5 Pin=Q11-1
+Removed Pin From Net: NetName=NetQ9_5 Pin=Q11-2
+Removed Pin From Net: NetName=NetQ9_5 Pin=Q11-3
+Removed Pin From Net: NetName=GND Pin=Q11-4
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=Q8
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=Q11
+Change Component Description : Designator=D8 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Added Pin To Net: NetName=NetQ6_5 Pin=J2-1
+Added Pin To Net: NetName=NetQ6_5 Pin=J2-2
+Added Pin To Net: NetName=NetQ9_5 Pin=J3-1
+Added Pin To Net: NetName=NetQ9_5 Pin=J3-2
+Added Pin To Net: NetName=NetQ9_5 Pin=R5-1
+Added Pin To Net: NetName=NetQ6_5 Pin=R6-1
+Added Pin To Net: NetName=NetQ6_5 Pin=R25-1
+Added Pin To Net: NetName=NetQ9_5 Pin=R26-1
+Change Net Name : Old Net Name=3V3 New Net Name=3V3_RP2CAN
+Change Net Name : Old Net Name=GND New Net Name=GND_RP2CAN
+Change Net Name : Old Net Name=NetQ6_5 New Net Name=VPORT
+Change Net Name : Old Net Name=NetQ9_5 New Net Name=VSTBD
+Added Room: Name=PD_MK2_Connectors
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_PD_MK2_Signals
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
