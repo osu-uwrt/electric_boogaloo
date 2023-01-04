@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=NetF1_3 Pin=Q3-3
+Added Component: Designator=R24(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "311-100JRTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-100JRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF1_3 Pin=R24-1
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_3 Pin=R24-2
+Added Net: Name=NetQ3_3
+Added Member To Class: ClassName=SBH_BMS Member=Component J6 XH2.54 VERT
+Added Member To Class: ClassName=SBH_BMS Member=Component R24 100 Ohm 5% 1/16W
+Added Room: Name=SBH_BMS

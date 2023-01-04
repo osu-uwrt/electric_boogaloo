@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=CAN_H Pin=J1-1
+Removed Pin From Net: NetName=CAN_L Pin=J1-2
+Removed Pin From Net: NetName=Pack+ Pin=J1-3
+Removed Pin From Net: NetName=BAT- Pin=J1-4
+Removed Pin From Net: NetName=Detect Pin=J1-5
+Removed Pin From Net: NetName=BAT- Pin=J1-6
+Removed Member From Class: ClassName=SBH_BMS Member=J1
+Added Component: Designator=J?(CONN_MOLEX_MINIFIT JR_6 POS_VERT)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/039290063_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM3822-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CAN_H Pin=J?-1
+Added Pin To Net: NetName=CAN_L Pin=J?-2
+Added Pin To Net: NetName=Pack+ Pin=J?-3
+Added Pin To Net: NetName=BAT- Pin=J?-4
+Added Pin To Net: NetName=Detect Pin=J?-5
+Added Pin To Net: NetName=BAT- Pin=J?-6
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Mini-Fit Jr VERT
+Added Room: Name=SBH_BMS

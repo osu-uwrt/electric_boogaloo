@@ -1,0 +1,56 @@
+Change Component Footprint: Designator=D? Old Footprint=DO-214AB New Footprint=SOD-123
+Change Component Comment : Designator=D? Old Comment=B330-13-F New Comment=MBR0520LT3G
+Change component parameters: Designator = "D?" ("D?"); Footprint = "DO-214AB"; UniqueID = "\TONSXZOT" ("\TONSXZOT")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.onsemi.com/pdf/datasheet/mbr0520lt1-d.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "500mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "0.385V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOD-123"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "MBR0520LT3GOSCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 2.2uF Ceramic 35V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=SBH_BMS Member=Component D? Zener_Diode_16V_500mW
+Added Member To Class: ClassName=SBH_BMS Member=Component D? MBR0520LT3G
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=SBH_BMS Member=Component J? XH2.54 VERT
+Added Member To Class: ClassName=SBH_BMS Member=Component J? XH2.54 VERT
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Mini-Fit Jr R/A
+Added Member To Class: ClassName=SBH_BMS Member=Component J? XH2.54 VERT
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=SBH_BMS Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=SBH_BMS Member=Component Q? MOSFET N-Ch 80V 100A D2PAK
+Added Member To Class: ClassName=SBH_BMS Member=Component Q? MOSFET N-Ch 80V 100A D2PAK
+Added Member To Class: ClassName=SBH_BMS Member=Component Q? MOSFET N-CH 30V 5.8A SOT-23-3
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1M
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1.2k Ohm 5% 1/8W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 100 Ohm 5% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1M
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component R? 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=SBH_BMS Member=Component U? Battery Managment IC
+Added Room: Name=SBH_BMS
