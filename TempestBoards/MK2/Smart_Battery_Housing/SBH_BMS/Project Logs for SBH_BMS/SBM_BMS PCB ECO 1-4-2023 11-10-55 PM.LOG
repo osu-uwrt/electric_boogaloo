@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Pack_in+ Pin=F1-1
+Removed Pin From Net: NetName=NetC1_2 Pin=F1-2
+Removed Pin From Net: NetName=NetC3_1 Pin=U2-q
+Added Pin To Net: NetName=NetC1_2 Pin=F1-1
+Added Pin To Net: NetName=Pack_in+ Pin=F1-2
+Added Room: Name=SBH_BMS
