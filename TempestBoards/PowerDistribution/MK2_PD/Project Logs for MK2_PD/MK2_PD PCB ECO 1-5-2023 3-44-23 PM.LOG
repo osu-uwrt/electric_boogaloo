@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=SDA Pin=U1R-2
+Removed Pin From Net: NetName=SCL Pin=U1R-3
+Removed Pin From Net: NetName=KILL_SWITCH Pin=U1R-4
+Removed Pin From Net: NetName=SOFTWARE_KILL_n Pin=U1R-5
+Removed Pin From Net: NetName=AUX_SWITCH Pin=U1R-6
+Removed Pin From Net: NetName=FAN_SWITCH Pin=U1R-7
+Removed Pin From Net: NetName=FAN_TACH Pin=U1R-8
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-2
+Added Pin To Net: NetName=KILL_SWITCH Pin=U1R-3
+Added Pin To Net: NetName=SOFTWARE_KILL_n Pin=U1R-4
+Added Pin To Net: NetName=SDA Pin=U1R-6
+Added Pin To Net: NetName=SCL Pin=U1R-7
+Added Pin To Net: NetName=FAN_SWITCH Pin=U1R-40
+Added Pin To Net: NetName=FAN_TACH Pin=U1R-41
+Added Pin To Net: NetName=NetU1R_5 Pin=U1R-5
+Added Net: Name=NetU1R_5
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Net: Name=NetU1R_8
