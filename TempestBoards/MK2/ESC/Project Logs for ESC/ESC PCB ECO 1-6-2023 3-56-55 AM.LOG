@@ -1,0 +1,12 @@
+Change Component Comment : Designator=D3 Old Comment=IN-S63AT5G New Comment=150060GS75000
+Change component parameters: Designator = "D3" ("D3"); Footprint = "LED_0603"; UniqueID = "\JZHFXCTL" ("\JZHFXCTL")
+Change component parameters (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "25mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4971-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
