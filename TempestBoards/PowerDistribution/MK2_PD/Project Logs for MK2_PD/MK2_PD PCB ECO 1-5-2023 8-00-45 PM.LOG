@@ -1,0 +1,108 @@
+Change Component Comment : Designator=J4 Old Comment=3 POS VERT New Comment=XH2.54 VERT
+Change Component Comment : Designator=J6 Old Comment=4 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Comment : Designator=J2 Old Comment=4 POS R/A New Comment=PP45 R/A
+Change Component Comment : Designator=J3 Old Comment=4 POS R/A New Comment=PP45 R/A
+Change Component Comment : Designator=J5 Old Comment=6 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Comment : Designator=J1 Old Comment=8 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Description : Designator=D8 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Added Component: Designator=Q2(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q6(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q7(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q9(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q10(MOSFET_7DP-T1-GE3_VIS)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SIR167DP-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=Q2-1
+Added Pin To Net: NetName=V+ Pin=Q2-2
+Added Pin To Net: NetName=V+ Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_4 Pin=Q2-4
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q2-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q2-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q2-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q2-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q2-D
+Added Pin To Net: NetName=V+ Pin=Q3-1
+Added Pin To Net: NetName=V+ Pin=Q3-2
+Added Pin To Net: NetName=V+ Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_4 Pin=Q3-4
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q3-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q3-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q3-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q3-D
+Added Pin To Net: NetName=MOTOR_PWR Pin=Q3-D
+Added Pin To Net: NetName=V+ Pin=Q6-1
+Added Pin To Net: NetName=V+ Pin=Q6-2
+Added Pin To Net: NetName=V+ Pin=Q6-3
+Added Pin To Net: NetName=NetQ6_4 Pin=Q6-4
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=V+ Pin=Q7-1
+Added Pin To Net: NetName=V+ Pin=Q7-2
+Added Pin To Net: NetName=V+ Pin=Q7-3
+Added Pin To Net: NetName=NetQ7_4 Pin=Q7-4
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=V+ Pin=Q9-1
+Added Pin To Net: NetName=V+ Pin=Q9-2
+Added Pin To Net: NetName=V+ Pin=Q9-3
+Added Pin To Net: NetName=NetQ9_4 Pin=Q9-4
+Added Pin To Net: NetName=VSTBD Pin=Q9-D
+Added Pin To Net: NetName=VSTBD Pin=Q9-D
+Added Pin To Net: NetName=VSTBD Pin=Q9-D
+Added Pin To Net: NetName=VSTBD Pin=Q9-D
+Added Pin To Net: NetName=VSTBD Pin=Q9-D
+Added Pin To Net: NetName=V+ Pin=Q10-1
+Added Pin To Net: NetName=V+ Pin=Q10-2
+Added Pin To Net: NetName=V+ Pin=Q10-3
+Added Pin To Net: NetName=NetQ10_4 Pin=Q10-4
+Added Pin To Net: NetName=VSTBD Pin=Q10-D
+Added Pin To Net: NetName=VSTBD Pin=Q10-D
+Added Pin To Net: NetName=VSTBD Pin=Q10-D
+Added Pin To Net: NetName=VSTBD Pin=Q10-D
+Added Pin To Net: NetName=VSTBD Pin=Q10-D
+Added Member To Class: ClassName=U_PD_MK2_Signals Member=Component Q2 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Signals Member=Component Q3 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q6 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q7 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q9 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q10 SIR167DP-T1-GE3
+Added Room: Name=PD_MK2_Connectors
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_PD_MK2_Signals
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
