@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q2-5
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q2-6
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q2-7
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q2-8
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q3-5
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q3-6
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q3-7
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q3-8
+Removed Pin From Net: NetName=VPORT Pin=Q6-5
+Removed Pin From Net: NetName=VPORT Pin=Q6-6
+Removed Pin From Net: NetName=VPORT Pin=Q6-7
+Removed Pin From Net: NetName=VPORT Pin=Q6-8
+Removed Pin From Net: NetName=VPORT Pin=Q7-5
+Removed Pin From Net: NetName=VPORT Pin=Q7-6
+Removed Pin From Net: NetName=VPORT Pin=Q7-7
+Removed Pin From Net: NetName=VPORT Pin=Q7-8
+Removed Pin From Net: NetName=VSTBD Pin=Q9-5
+Removed Pin From Net: NetName=VSTBD Pin=Q9-6
+Removed Pin From Net: NetName=VSTBD Pin=Q9-7
+Removed Pin From Net: NetName=VSTBD Pin=Q9-8
+Removed Pin From Net: NetName=VSTBD Pin=Q10-5
+Removed Pin From Net: NetName=VSTBD Pin=Q10-6
+Removed Pin From Net: NetName=VSTBD Pin=Q10-7
+Removed Pin From Net: NetName=VSTBD Pin=Q10-8
+Change Component Comment : Designator=J4 Old Comment=3 POS VERT New Comment=XH2.54 VERT
+Change Component Comment : Designator=J6 Old Comment=4 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Comment : Designator=J2 Old Comment=4 POS R/A New Comment=PP45 R/A
+Change Component Comment : Designator=J3 Old Comment=4 POS R/A New Comment=PP45 R/A
+Change Component Comment : Designator=J5 Old Comment=6 POS R/A New Comment=Mini-Fit Jr R/A
+Change Component Comment : Designator=J1 Old Comment=8 POS R/A New Comment=Mini-Fit Jr R/A
+Add Pin To Net: Unknown Pin: Pin Q2-D
+Add Pin To Net: Unknown Pin: Pin Q3-D
+Add Pin To Net: Unknown Pin: Pin Q6-D
+Add Pin To Net: Unknown Pin: Pin Q7-D
+Add Pin To Net: Unknown Pin: Pin Q9-D
+Add Pin To Net: Unknown Pin: Pin Q10-D
+Added Room: Name=PD_MK2_Connectors
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_PD_MK2_Signals
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
