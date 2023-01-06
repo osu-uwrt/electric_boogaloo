@@ -86,20 +86,20 @@ DocumentPath=Project Outputs for ESC\Net Status - ESC.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=TeamLead
-Value=Flip
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=MK2 ESC
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
+[Parameter3]
+Name=ProjectTitle
+Value=MK2 ESC
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Flip
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
