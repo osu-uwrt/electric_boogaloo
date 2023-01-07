@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=5V Pin=D2-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=R4-2
+Removed Pin From Net: NetName=5V Pin=U3-1
+Removed Pin From Net: NetName=5V Pin=U3-2
+Removed Pin From Net: NetName=5V Pin=U3-3
+Removed Member From Class: ClassName=CameraCageBB Member=D2
+Removed Member From Class: ClassName=CameraCageBB Member=R4
+Removed Member From Class: ClassName=CameraCageBB Member=U3
+Added Pin To Net: NetName=5V Pin=J6-6
