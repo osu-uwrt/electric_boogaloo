@@ -1,0 +1,32 @@
+Added Pin To Net: NetName=V+ Pin=Q6-1
+Added Pin To Net: NetName=V+ Pin=Q6-2
+Added Pin To Net: NetName=V+ Pin=Q6-3
+Added Pin To Net: NetName=NetQ6_4 Pin=Q6-4
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=VPORT Pin=Q6-D
+Added Pin To Net: NetName=V+ Pin=Q7-1
+Added Pin To Net: NetName=V+ Pin=Q7-2
+Added Pin To Net: NetName=V+ Pin=Q7-3
+Added Pin To Net: NetName=NetQ7_4 Pin=Q7-4
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=VPORT Pin=Q7-D
+Added Pin To Net: NetName=NetQ6_4 Pin=R31-1
+Added Pin To Net: NetName=NetR31_2 Pin=R31-2
+Added Pin To Net: NetName=NetQ7_4 Pin=R32-1
+Added Pin To Net: NetName=NetR31_2 Pin=R32-2
+Added Pin To Net: NetName=VPORT Pin=U3-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=U3-2
+Added Pin To Net: NetName=GND_RP2CAN Pin=U3-3
+Added Pin To Net: NetName=NetR31_2 Pin=U3-5
+Added Pin To Net: NetName=V+ Pin=U3-6
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q6 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component Q7 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R31 27 Ohm 5% 1/8W
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R32 27 Ohm 5% 1/8W
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component U3 LTC4412ES6TRPBF
