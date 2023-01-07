@@ -1,0 +1,770 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mil').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/6/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7:22:12 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc" class="file"><acronym title="C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc">C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="IDMKNHJVJCS2QQGWZG53FW2RHVWJAQYIUUFQUXUZHHIDAWP0P3IJ0F"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1958.976mil|Location2.X=4084.468mil|Location1.Y=2376.532mil|Location2.Y=5122.087mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1958.976mil|Location2.X=4084.468mil|Location1.Y=2376.532mil|Location2.Y=5122.087mil|Absolute=True">15V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3463.977mil|Location2.X=3969.468mil|Location1.Y=2287.441mil|Location2.Y=2353.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3463.977mil|Location2.X=3969.468mil|Location1.Y=2287.441mil|Location2.Y=2353.468mil|Absolute=True">15V_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3845215">384.522mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1785.473mil|Location2.X=2094.528mil|Location1.Y=2548.268mil|Location2.Y=2701.614mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1785.473mil|Location2.X=2094.528mil|Location1.Y=2548.268mil|Location2.Y=2701.614mil|Absolute=True">1v1_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7529177">752.918mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.284mil|Location2.X=4039.468mil|Location1.Y=2078.032mil|Location2.Y=2378.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.284mil|Location2.X=4039.468mil|Location1.Y=2078.032mil|Location2.Y=2378.78mil|Absolute=True">3V3_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.532mil|Location2.X=3959.468mil|Location1.Y=1235.532mil|Location2.Y=4303.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.532mil|Location2.X=3959.468mil|Location1.Y=1235.532mil|Location2.Y=4303.563mil|Absolute=True">3V3_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="108512283">10851.228mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1686.532mil|Location2.X=4214.468mil|Location1.Y=2375.032mil|Location2.Y=5122.087mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1686.532mil|Location2.X=4214.468mil|Location1.Y=2375.032mil|Location2.Y=5122.087mil|Absolute=True">5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1634794">163.479mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.284mil|Location2.X=4159.468mil|Location1.Y=2251.22mil|Location2.Y=2351.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.284mil|Location2.X=4159.468mil|Location1.Y=2251.22mil|Location2.Y=2351.968mil|Absolute=True">5V_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3802704">380.27mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1527.913mil|Location2.X=1859.291mil|Location1.Y=1806.654mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1527.913mil|Location2.X=1859.291mil|Location1.Y=1806.654mil|Location2.Y=2498.858mil|Absolute=True">AUX_SWITCH</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7780549">778.055mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.213mil|Location2.X=2178.189mil|Location1.Y=2731.142mil|Location2.Y=2875.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.213mil|Location2.X=2178.189mil|Location1.Y=2731.142mil|Location2.Y=2875.236mil|Absolute=True">CANCLK_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2178341">217.834mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1628.267mil|Location2.X=3919mil|Location1.Y=2859.095mil|Location2.Y=5730.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1628.267mil|Location2.X=3919mil|Location1.Y=2859.095mil|Location2.Y=5730.968mil|Absolute=True">CANH</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="68175141">6817.514mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1628.268mil|Location2.X=3964mil|Location1.Y=2845.189mil|Location2.Y=5765.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1628.268mil|Location2.X=3964mil|Location1.Y=2845.189mil|Location2.Y=5765.968mil|Absolute=True">CANL</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="68531303">6853.13mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2103.386mil|Location2.X=2664.409mil|Location1.Y=2959.291mil|Location2.Y=3154.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2103.386mil|Location2.X=2664.409mil|Location1.Y=2959.291mil|Location2.Y=3154.961mil|Absolute=True">CANRX_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8456142">845.614mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2117.165mil|Location2.X=2650.63mil|Location1.Y=3097.677mil|Location2.Y=3139.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2117.165mil|Location2.X=2650.63mil|Location1.Y=3097.677mil|Location2.Y=3139.213mil|Absolute=True">CANTX_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4873625">487.363mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2559.484mil|Location2.Y=2758.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2559.484mil|Location2.Y=2758.701mil|Absolute=True">DBG_TX_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8388325">838.833mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=966.142mil|Location2.X=1623.468mil|Location1.Y=4476.532mil|Location2.Y=4953.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=966.142mil|Location2.X=1623.468mil|Location1.Y=4476.532mil|Location2.Y=4953.858mil|Absolute=True">FAN_PWR</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7323276">732.328mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.532mil|Location2.X=1875.039mil|Location1.Y=2731.142mil|Location2.Y=4299mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1299.532mil|Location2.X=1875.039mil|Location1.Y=2731.142mil|Location2.Y=4299mil|Absolute=True">FAN_SWITCH</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2360000">236mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=966.142mil|Location2.X=1859.291mil|Location1.Y=2731.142mil|Location2.Y=4853.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=966.142mil|Location2.X=1859.291mil|Location1.Y=2731.142mil|Location2.Y=4853.858mil|Absolute=True">FAN_TACH</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17067691">1706.769mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=862.284mil|Location2.X=6780.394mil|Location1.Y=1005.433mil|Location2.Y=5543.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=862.284mil|Location2.X=6780.394mil|Location1.Y=1005.433mil|Location2.Y=5543.465mil|Absolute=True">GND_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="62295669">6229.567mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.717mil|Location2.X=2178.189mil|Location1.Y=2731.142mil|Location2.Y=2975.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.717mil|Location2.X=2178.189mil|Location1.Y=2731.142mil|Location2.Y=2975.236mil|Absolute=True">INT_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2971973">297.197mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1527.913mil|Location2.X=4073.09mil|Location1.Y=1234.016mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1527.913mil|Location2.X=4073.09mil|Location1.Y=1234.016mil|Location2.Y=2498.858mil|Absolute=True">KILL_SWITCH</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="38083154">3808.315mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2425.039mil|Location2.Y=2565.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2425.039mil|Location2.Y=2565.787mil|Absolute=True">LEDB_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1681376">168.138mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2362.047mil|Location2.Y=2550.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2362.047mil|Location2.Y=2550.039mil|Absolute=True">LEDG_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2132733">213.273mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2299.055mil|Location2.Y=2534.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2162.441mil|Location1.Y=2299.055mil|Location2.Y=2534.291mil|Absolute=True">LEDR_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2549837">254.984mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2004.961mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=3025.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2004.961mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=3025.236mil|Absolute=True">MISO_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4749639">474.964mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2020.709mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=2975.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2020.709mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=2975.236mil|Absolute=True">MOSI_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4545887">454.589mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3995mil|Location2.X=5264.468mil|Location1.Y=1502.5mil|Location2.Y=1933.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3995mil|Location2.X=5264.468mil|Location1.Y=1502.5mil|Location2.Y=1933.468mil|Absolute=True">MOTOR_EN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="15275168">1527.517mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4265.532mil|Location2.X=7049.567mil|Location1.Y=1005.433mil|Location2.Y=3030.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4265.532mil|Location2.X=7049.567mil|Location1.Y=1005.433mil|Location2.Y=3030.468mil|Absolute=True">MOTOR_PWR</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2954.764mil|Location2.X=3051.22mil|Location1.Y=2556.142mil|Location2.Y=2640.59mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2954.764mil|Location2.X=3051.22mil|Location1.Y=2556.142mil|Location2.Y=2640.59mil|Absolute=True">NetC2C_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1443375">144.338mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2173.191mil|Location2.X=2434.095mil|Location1.Y=2586.732mil|Location2.Y=2659.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2173.191mil|Location2.X=2434.095mil|Location1.Y=2586.732mil|Location2.Y=2659.693mil|Absolute=True">NetC2R_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2633620">263.362mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2272.677mil|Location1.Y=2299.055mil|Location2.Y=2358.11mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2272.677mil|Location1.Y=2299.055mil|Location2.Y=2358.11mil|Absolute=True">NetD1C_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="801440">80.144mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2272.677mil|Location1.Y=2362.047mil|Location2.Y=2395.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2272.677mil|Location1.Y=2362.047mil|Location2.Y=2395.512mil|Absolute=True">NetD1C_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="687286">68.729mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2335.669mil|Location1.Y=2367.953mil|Location2.Y=2458.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2174.252mil|Location2.X=2335.669mil|Location1.Y=2367.953mil|Location2.Y=2458.504mil|Absolute=True">NetD1C_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1584886">158.489mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3795mil|Location2.X=3959.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3795mil|Location2.X=3959.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True">NetD1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4048.334mil|Location2.X=4214.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4048.334mil|Location2.X=4214.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True">NetD2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920mil|Location2.X=4084.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920mil|Location2.X=4084.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True">NetD3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4370.532mil|Location2.X=4536.667mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4370.532mil|Location2.X=4536.667mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True">NetD4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3685.532mil|Location2.X=4105mil|Location1.Y=2737.032mil|Location2.Y=3431.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3685.532mil|Location2.X=4105mil|Location1.Y=2737.032mil|Location2.Y=3431.5mil|Absolute=True">NetD5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.532mil|Location2.X=3854.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.532mil|Location2.X=3854.468mil|Location1.Y=2747.032mil|Location2.Y=2958.468mil|Absolute=True">NetD6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4265.532mil|Location2.X=4430mil|Location1.Y=2752.032mil|Location2.Y=2963.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4265.532mil|Location2.X=4430mil|Location1.Y=2752.032mil|Location2.Y=2963.468mil|Absolute=True">NetD7_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.413mil|Location2.X=3859mil|Location1.Y=4942.658mil|Location2.Y=5496.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.413mil|Location2.X=3859mil|Location1.Y=4942.658mil|Location2.Y=5496.22mil|Absolute=True">NetPOT1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5791469">579.147mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.41mil|Location2.X=3859.564mil|Location1.Y=3922.657mil|Location2.Y=4400.591mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.41mil|Location2.X=3859.564mil|Location1.Y=3922.657mil|Location2.Y=4400.591mil|Absolute=True">NetPOT2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5438003">543.8mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=6029.468mil|Location1.Y=3591.532mil|Location2.Y=4094.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=6029.468mil|Location1.Y=3591.532mil|Location2.Y=4094.992mil|Absolute=True">NetQ10_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5581063">558.106mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5110.532mil|Location2.X=5353.968mil|Location1.Y=1956.532mil|Location2.Y=2104.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5110.532mil|Location2.X=5353.968mil|Location1.Y=1956.532mil|Location2.Y=2104.468mil|Absolute=True">NetQ2_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2460071">246.007mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5215.532mil|Location2.X=5613.968mil|Location1.Y=1956.532mil|Location2.Y=2104.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5215.532mil|Location2.X=5613.968mil|Location1.Y=1956.532mil|Location2.Y=2104.468mil|Absolute=True">NetQ3_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4141873">414.187mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1340mil|Location2.X=1663.468mil|Location1.Y=4323mil|Location2.Y=4824.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1340mil|Location2.X=1663.468mil|Location1.Y=4323mil|Location2.Y=4824.468mil|Absolute=True">NetQ4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7346538">734.654mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=5939.468mil|Location1.Y=2591.532mil|Location2.Y=2783.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=5939.468mil|Location1.Y=2591.532mil|Location2.Y=2783.968mil|Absolute=True">NetQ6_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1852350">185.235mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=6029.468mil|Location1.Y=2591.532mil|Location2.Y=3094.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=6029.468mil|Location1.Y=2591.532mil|Location2.Y=3094.992mil|Absolute=True">NetQ7_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5264789">526.479mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=5939.468mil|Location1.Y=3591.532mil|Location2.Y=3783.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.532mil|Location2.X=5939.468mil|Location1.Y=3591.532mil|Location2.Y=3783.968mil|Absolute=True">NetQ9_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1887207">188.721mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2896.693mil|Location2.X=2988.228mil|Location1.Y=2652.402mil|Location2.Y=2833.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2896.693mil|Location2.X=2988.228mil|Location1.Y=2652.402mil|Location2.Y=2833.504mil|Absolute=True">NetR2C_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1723260">172.326mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5890.532mil|Location2.X=6150.968mil|Location1.Y=2524.532mil|Location2.Y=2568.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5890.532mil|Location2.X=6150.968mil|Location1.Y=2524.532mil|Location2.Y=2568.468mil|Absolute=True">NetR31_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2100000">210mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5890.532mil|Location2.X=6150.968mil|Location1.Y=3524.532mil|Location2.Y=3568.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5890.532mil|Location2.X=6150.968mil|Location1.Y=3524.532mil|Location2.Y=3568.468mil|Absolute=True">NetR33_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2197213">219.721mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.756mil|Location2.X=3109.291mil|Location1.Y=2652.402mil|Location2.Y=2833.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.756mil|Location2.X=3109.291mil|Location1.Y=2652.402mil|Location2.Y=2833.504mil|Absolute=True">NetR3C_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1723260">172.326mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2804.173mil|Location2.X=2926.22mil|Location1.Y=3106.339mil|Location2.Y=3139.803mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2804.173mil|Location2.X=2926.22mil|Location1.Y=3106.339mil|Location2.Y=3139.803mil|Absolute=True">NetR6C_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="787402">78.74mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2849.449mil|Location2.X=2901.614mil|Location1.Y=2427.008mil|Location2.Y=2538.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2849.449mil|Location2.X=2901.614mil|Location1.Y=2427.008mil|Location2.Y=2538.228mil|Absolute=True">NetR6R_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="912676">91.268mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2308.11mil|Location2.X=2495.118mil|Location1.Y=2425.039mil|Location2.Y=2458.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2308.11mil|Location2.X=2495.118mil|Location1.Y=2425.039mil|Location2.Y=2458.504mil|Absolute=True">NetR7R_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1515748">151.575mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.213mil|Location2.X=2001.024mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.213mil|Location2.X=2001.024mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_11</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2004.961mil|Location2.X=2016.772mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2004.961mil|Location2.X=2016.772mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2020.709mil|Location2.X=2032.52mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2020.709mil|Location2.X=2032.52mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2036.457mil|Location2.X=2048.268mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2036.457mil|Location2.X=2048.268mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_14</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2094.528mil|Location1.Y=2506.732mil|Location2.Y=2518.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2094.528mil|Location1.Y=2506.732mil|Location2.Y=2518.543mil|Absolute=True">NetU1R_15</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.968mil|Location2.X=1953.78mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.968mil|Location2.X=1953.78mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True">NetU1R_35</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1926.22mil|Location2.X=1938.032mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1926.22mil|Location2.X=1938.032mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True">NetU1R_36</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.473mil|Location2.X=1922.284mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.473mil|Location2.X=1922.284mil|Location1.Y=2731.142mil|Location2.Y=2769.528mil|Absolute=True">NetU1R_37</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1894.724mil|Location2.X=1906.535mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1894.724mil|Location2.X=1906.535mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.968mil|Location2.X=1953.78mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.968mil|Location2.X=1953.78mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.717mil|Location2.X=1969.528mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.717mil|Location2.X=1969.528mil|Location1.Y=2460.472mil|Location2.Y=2498.858mil|Absolute=True">NetU1R_9</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1894.724mil|Location2.X=3489.468mil|Location1.Y=2716.532mil|Location2.Y=2912.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1894.724mil|Location2.X=3489.468mil|Location1.Y=2716.532mil|Location2.Y=2912.213mil|Absolute=True">PORT_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1604.764mil|Location2.X=1823.858mil|Location1.Y=2569.724mil|Location2.Y=2685.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1604.764mil|Location2.X=1823.858mil|Location1.Y=2569.724mil|Location2.Y=2685.866mil|Absolute=True">QSPI_SCLK_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2865796">286.58mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1654.764mil|Location2.X=1823.858mil|Location1.Y=2553.976mil|Location2.Y=2668.092mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1654.764mil|Location2.X=1823.858mil|Location1.Y=2553.976mil|Location2.Y=2668.092mil|Absolute=True">QSPI_SD0_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1784155">178.416mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1554.764mil|Location2.X=1823.858mil|Location1.Y=2303.919mil|Location2.Y=2534.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1554.764mil|Location2.X=1823.858mil|Location1.Y=2303.919mil|Location2.Y=2534.291mil|Absolute=True">QSPI_SD1_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4273421">427.342mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1604.764mil|Location2.X=1823.858mil|Location1.Y=2317.699mil|Location2.Y=2550.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1604.764mil|Location2.X=1823.858mil|Location1.Y=2317.699mil|Location2.Y=2550.039mil|Absolute=True">QSPI_SD2_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3093623">309.362mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1554.764mil|Location2.X=1823.858mil|Location1.Y=2585.472mil|Location2.Y=2701.614mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1554.764mil|Location2.X=1823.858mil|Location1.Y=2585.472mil|Location2.Y=2701.614mil|Absolute=True">QSPI_SD3_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3391803">339.18mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1504.764mil|Location2.X=2296.299mil|Location1.Y=2288.171mil|Location2.Y=2550.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1504.764mil|Location2.X=2296.299mil|Location1.Y=2288.171mil|Location2.Y=2550.039mil|Absolute=True">QSPI_SS_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11315090">1131.509mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2901.614mil|Location1.Y=2550.039mil|Location2.Y=2891.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2901.614mil|Location1.Y=2550.039mil|Location2.Y=2891.575mil|Absolute=True">RUN_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="13992911">1399.291mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2036.457mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=2925.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2036.457mil|Location2.X=2392.756mil|Location1.Y=2731.142mil|Location2.Y=2925.236mil|Absolute=True">SCK_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4001238">400.124mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1926.22mil|Location2.X=3736.023mil|Location1.Y=1734.532mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1926.22mil|Location2.X=3736.023mil|Location1.Y=1734.532mil|Location2.Y=2498.858mil|Absolute=True">SCL</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="27080409">2708.041mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.473mil|Location2.X=3542.716mil|Location1.Y=1646.063mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.473mil|Location2.X=3542.716mil|Location1.Y=1646.063mil|Location2.Y=2498.858mil|Absolute=True">SDA</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="26678500">2667.85mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1878.976mil|Location2.X=3987.5mil|Location1.Y=1420.5mil|Location2.Y=2498.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1878.976mil|Location2.X=3987.5mil|Location1.Y=1420.5mil|Location2.Y=2498.858mil|Absolute=True">SOFTWARE_KILL_n</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="30266937">3026.694mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1878.976mil|Location2.X=3399.468mil|Location1.Y=2716.532mil|Location2.Y=2912.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1878.976mil|Location2.X=3399.468mil|Location1.Y=2716.532mil|Location2.Y=2912.213mil|Absolute=True">STBD_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2631.39mil|Location2.Y=2688.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2631.39mil|Location2.Y=2688.232mil|Absolute=True">SWCLK_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6068968">606.897mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2664.213mil|Location2.Y=2813.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2672.626mil|Location1.Y=2664.213mil|Location2.Y=2813.232mil|Absolute=True">SWDIO_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7186395">718.64mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.732mil|Location2.X=2963.622mil|Location1.Y=2721.299mil|Location2.Y=2882.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.732mil|Location2.X=2963.622mil|Location1.Y=2721.299mil|Location2.Y=2882.716mil|Absolute=True">TERM_DET_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8479067">847.907mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.441mil|Location2.X=1627.008mil|Location1.Y=2809.359mil|Location2.Y=2856.614mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.441mil|Location2.X=1627.008mil|Location1.Y=2809.359mil|Location2.Y=2856.614mil|Absolute=True">USB_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6434062">643.406mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.441mil|Location2.X=1627.008mil|Location1.Y=2755.748mil|Location2.Y=2831.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.441mil|Location2.X=1627.008mil|Location1.Y=2755.748mil|Location2.Y=2831.024mil|Absolute=True">USB_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6431974">643.197mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1638.819mil|Location2.X=1823.858mil|Location1.Y=2664.213mil|Location2.Y=2855.223mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1638.819mil|Location2.X=1823.858mil|Location1.Y=2664.213mil|Location2.Y=2855.223mil|Absolute=True">USB_RP2040_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2673571">267.357mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1638.819mil|Location2.X=1823.858mil|Location1.Y=2648.465mil|Location2.Y=2801.548mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1638.819mil|Location2.X=1823.858mil|Location1.Y=2648.465mil|Location2.Y=2801.548mil|Absolute=True">USB_RP2040_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2673571">267.357mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1420mil|Location2.X=6150.968mil|Location1.Y=1576.532mil|Location2.Y=5820mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1420mil|Location2.X=6150.968mil|Location1.Y=1576.532mil|Location2.Y=5820mil|Absolute=True">V+</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="76483900">7648.39mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3463.977mil|Location2.X=4114.468mil|Location1.Y=1975.032mil|Location2.Y=2428.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3463.977mil|Location2.X=4114.468mil|Location1.Y=1975.032mil|Location2.Y=2428.78mil|Absolute=True">V+_MEAS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3440.532mil|Location2.X=6469.37mil|Location1.Y=2497.13mil|Location2.Y=3281.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3440.532mil|Location2.X=6469.37mil|Location1.Y=2497.13mil|Location2.Y=3281.024mil|Absolute=True">VPORT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3314395">331.44mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.532mil|Location2.X=6469.37mil|Location1.Y=1556mil|Location2.Y=4281.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.532mil|Location2.X=6469.37mil|Location1.Y=1556mil|Location2.Y=4281.024mil|Absolute=True">VSTBD</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40904737">4090.474mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2434.095mil|Location1.Y=2492.953mil|Location2.Y=2597.284mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2434.095mil|Location1.Y=2492.953mil|Location2.Y=2597.284mil|Absolute=True">XIN_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4431213">443.121mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2161.38mil|Location1.Y=2601.22mil|Location2.Y=2639.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2161.38mil|Location1.Y=2601.22mil|Location2.Y=2639.606mil|Absolute=True">XOUT_RP2040</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="820791">82.079mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2460.669mil|Location1.Y=2711.457mil|Location2.Y=3075.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\OneDrive\Documents\GitHub\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2056.142mil|Location2.X=2460.669mil|Location1.Y=2711.457mil|Location2.Y=3075.236mil|Absolute=True">nCS_RP2CAN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7701826">770.183mils
+			</a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

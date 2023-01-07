@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=V+_MEAS Pin=U1-1
+Removed Pin From Net: NetName=15V_MEAS Pin=U1-3
+Removed Pin From Net: NetName=5V_MEAS Pin=U1-11
+Removed Pin From Net: NetName=3V3_MEAS Pin=U1-13
+Added Pin To Net: NetName=3V3_MEAS Pin=U1-1
+Added Pin To Net: NetName=V+_MEAS Pin=U1-3
+Added Pin To Net: NetName=15V_MEAS Pin=U1-11
+Added Pin To Net: NetName=5V_MEAS Pin=U1-13
+Add Net: Net with name "PORT_STAT" already exists
+Add Net: Net with name "STBD_STAT" already exists
