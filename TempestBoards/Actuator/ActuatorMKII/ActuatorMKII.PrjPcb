@@ -569,10 +569,6 @@ GenerateClassCluster=0
 DocumentUniqueId=YJLRUEPR
 
 [GeneratedDocument1]
-DocumentPath=
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for ActuatorMKII\Design Rule Check - ActuatorMKII.html
 DItemRevisionGUID=
 
@@ -581,20 +577,20 @@ Path=D:\Documents\Academic\OSU\UWRT\Electric Boogaloo\electric_boogaloo\TempestB
 IncludeSubFolders=0
 
 [Parameter1]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=Actuator MK II
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=01/07/2023
 
+[Parameter3]
+Name=ProjectTitle
+Value=Actuator MK II
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
