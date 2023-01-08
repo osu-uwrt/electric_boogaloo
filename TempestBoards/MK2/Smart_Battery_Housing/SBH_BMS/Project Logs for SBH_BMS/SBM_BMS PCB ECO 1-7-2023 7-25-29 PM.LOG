@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=CAN_L_N Pin=J10-5
+Removed Pin From Net: NetName=CAN_H_P Pin=J10-6
+Change Component Description : Designator=F1 Old Description=LittelFuse New Description=LittelFuse  | 45A | 5S | SMD | Self-Control Protector
+Change Component Description : Designator=F2 Old Description=Pansonic New Description=Pansonic | 32V | 1A | 0603 | Fast Blow
+Change Component Description : Designator=F3 Old Description=Pansonic New Description=Pansonic | 32V | 1A | 0603 | Fast Blow
+Change Component Description : Designator=D1 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Change Component Description : Designator=D2 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Added Pin To Net: NetName=CAN_H Pin=J10-6
+Added Net: Name=CAN_H
+Added Pin To Net: NetName=CAN_L Pin=J10-5
+Added Net: Name=CAN_L
+Added Differential Pair: Name=CAN
+Added Class: Name=D120

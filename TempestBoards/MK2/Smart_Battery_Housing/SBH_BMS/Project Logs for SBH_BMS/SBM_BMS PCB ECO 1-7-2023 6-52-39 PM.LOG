@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=CAN_L Pin=J10-5
+Removed Pin From Net: NetName=CAN_H Pin=J10-6
+Added Pin To Net: NetName=CAN_H_P Pin=J10-6
+Added Net: Name=CAN_H_P
+Added Pin To Net: NetName=CAN_L_N Pin=J10-5
+Added Net: Name=CAN_L_N
+Added Room: Name=SBH_BMS
+Added Class: Name=D120
