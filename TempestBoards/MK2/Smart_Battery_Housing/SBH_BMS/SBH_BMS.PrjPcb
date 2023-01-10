@@ -547,20 +547,20 @@ DocumentPath=Project Outputs for SBH_BMS\Design Rule Check - SBM_BMS.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=Smart Battery Housing | BMS
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
+[Parameter3]
+Name=ProjectTitle
+Value=Smart Battery Housing | BMS
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [DiffPairSuffix1]
 Positive=_H
