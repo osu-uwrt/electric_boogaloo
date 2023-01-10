@@ -1,13 +1,19 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\Smart_Battery_Housing\SBH.PcbDoc
-Date     : 1/9/2023
-Time     : 8:36:34 PM
+Date     : 1/10/2023
+Time     : 1:24:36 AM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-Rule Violations :0
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad Free-(4.572mm,4.572mm) on Multi-Layer And Region (0 hole(s)) Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad Free-(49.403mm,4.572mm) on Multi-Layer And Region (0 hole(s)) Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad J1-1(23.7mm,8.6mm) on Multi-Layer And Track (22.65mm,8.555mm)(25.695mm,11.6mm) on Bottom Layer 
+   Violation between Clearance Constraint: (0.069mm < 0.2mm) Between Pad J1-3(25.7mm,8.6mm) on Multi-Layer And Track (23.7mm,7.9mm)(27mm,11.2mm) on Bottom Layer 
+   Violation between Clearance Constraint: (0.05mm < 0.2mm) Between Track (27mm,11.2mm)(49.5mm,11.2mm) on Bottom Layer And Via (30.8mm,10.8mm) from Top Layer to Bottom Layer 
+Rule Violations :5
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
+   Violation between Short-Circuit Constraint: Between Pad J1-1(23.7mm,8.6mm) on Multi-Layer And Track (22.65mm,8.555mm)(25.695mm,11.6mm) on Bottom Layer Location : [X = 45.761mm][Y = 39.397mm]
+Rule Violations :1
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
@@ -28,7 +34,9 @@ Processing Rule : Minimum Annular Ring (Minimum=0.13mm) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
-Rule Violations :0
+   Violation between Acute Angle Constraint: (58.499 < 60.000) Between Pad J1-2(23.7mm,6.6mm) on Multi-Layer And Track (22.65mm,6.95mm)(23.7mm,5.9mm) on Bottom Layer (Angle = 58.499)
+   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Pad J1-1(23.7mm,8.6mm) on Multi-Layer And Track (23.7mm,7.9mm)(27mm,11.2mm) on Bottom Layer (Angle = 45.000)
+Rule Violations :2
 
 Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=6.3mm) (All)
 Rule Violations :0
@@ -56,15 +64,15 @@ Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.168mm < 0.2mm) Between Board Edge And Track (0.244mm,43.285mm)(0.854mm,43.285mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.168mm < 0.2mm) Between Board Edge And Track (0.244mm,50.905mm)(0.244mm,51.515mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.168mm < 0.2mm) Between Board Edge And Track (0.244mm,51.515mm)(0.879mm,51.515mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (21.366mm,-0.466mm)(21.366mm,5.934mm) on Bottom Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (21.366mm,-0.466mm)(32.016mm,-0.466mm) on Bottom Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (32.016mm,-0.466mm)(32.016mm,5.934mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.158mm < 0.2mm) Between Board Edge And Track (21.366mm,0.234mm)(21.366mm,6.634mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.158mm < 0.2mm) Between Board Edge And Track (21.366mm,0.234mm)(32.016mm,0.234mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.158mm < 0.2mm) Between Board Edge And Track (32.016mm,0.234mm)(32.016mm,6.634mm) on Bottom Overlay 
 Rule Violations :7
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 7
+Violations Detected : 15
 Waived Violations : 0
 Time Elapsed        : 00:00:02
