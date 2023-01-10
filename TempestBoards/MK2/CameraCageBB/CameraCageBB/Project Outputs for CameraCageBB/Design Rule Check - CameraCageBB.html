@@ -1,0 +1,811 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/10/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:10:03 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc" class="file"><acronym title="\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc">\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">145</td></tr>
+</table>
+</td>
+</table><a name="ID211FHXDKS5I0FDVSXSWNDAPZJHYHQBRK0MUACXGNJS3WQXZUWS0I"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMGDDPQX3OTWRJAOAIDSRX0KYFG5IQRU5KDW3CMESGZPYBHWOGCMK">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDK0UOQKPXD4OCPX1WLBKZ5PER1CQTGANPNZEN34BTJE1XRGVBOP3I">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYBFCXLQTCAOMBAPKRL5AZECSCOFEOLYEX1C45CDJ5V2A5QKPH2P">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">20</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW02OKM0IOOWTIQQLLY5MNM11ZHXJ5C4W4X3YM5I4BXPL2XIDAQ2I">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1HZBMSP3YLFXFE3ATZIOUGTIOL23PSHBCY3AFSIIG3YDQRVODCHE">Width Constraint (Min=7.874mil) (Max=200mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAFB2BFKX45KWC1U2SVCB0F0LVFCJKQAO5CLVJML3GXETTD2YIV5B">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTNN12VPWKNEPMV3GYAHPKNLFUH1AA5QUBRR5BBDQYGWM5PYF3QSI">Minimum Annular Ring (Minimum=11.811mil) (IsPad)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYF1KLR2Z24J5ENTKK5LDY2TBNJD2OUEHHFJKS0IW53DZMPUCCEBO">Minimum Annular Ring (Minimum=7.874mil) (All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDE5K2PR51PAQUI44OH1CDQTNDAPXJ4OSJPKZ01DLS15NJVBA0FSOE">Acute Angle Constraint (Minimum=60.000) (All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5ZDA23LQX3WWB0ENQB2EGACRDE2NDVZRJ0ZZDUDYS5R35EWX4L0P">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNXL1JVR3CLT1P2ALJNLWQZHNOFB1HS3IFTRWV2MJ3KUJISBEJMGP">Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3QEFA151SHY1I32HTMI3WP5EPONDJWCW51EZMSKNAHNRZMWPKW0C">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2H01XXX4J0OYCLPIUA5WM12BPHTYVR2CIPDZQVLPK1WX3MT5JEPD">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJXETZX1NXFOFN2P51TW0UWJMOCPSIMEHKESXPPMPK4SPNRY1RJ5H">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDL50355TXSOFEMLGJP4RYV2T3JE1IXMYSFX1WE5FEADJNLSKMEP2M">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDI3YPCSO0I1PJLZSNNT2WTWWXHHOPHPGOKKC5VP24PDUC3BMSVUM">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQA45JPZ3WIV3EIXHMFENHOAQ0OR2T1J3H3U320IX5GI5ZA3CCZML">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">69</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0OLOTUXU45QCOKAHSRN4IGAOCCBBWPUH22FI14KYI5EN4KWTA2DK">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">145</td>
+</tr>
+</table><br><a name="IDYBFCXLQTCAOMBAPKRL5AZECSCOFEOLYEX1C45CDJ5V2A5QKPH2P"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3545.498mil|Location2.X=3615.498mil|Location1.Y=6999.502mil|Location2.Y=7029.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3545.498mil|Location2.X=3615.498mil|Location1.Y=6999.502mil|Location2.Y=7029.502mil|Absolute=True">Un-Routed Net Constraint: Track (1680mil,2960mil)(1740mil,2980mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3545.498mil|Location2.X=3615.498mil|Location1.Y=7019.502mil|Location2.Y=7049.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3545.498mil|Location2.X=3615.498mil|Location1.Y=7019.502mil|Location2.Y=7049.502mil|Absolute=True">Un-Routed Net Constraint: Track (1680mil,3000mil)(1740mil,2980mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3605.498mil|Location2.X=3615.498mil|Location1.Y=6669.502mil|Location2.Y=7039.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3605.498mil|Location2.X=3615.498mil|Location1.Y=6669.502mil|Location2.Y=7039.502mil|Absolute=True">Un-Routed Net Constraint: Track (1740mil,2630mil)(1740mil,2990mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.686mil|Location2.X=3867.631mil|Location1.Y=1251.125mil|Location2.Y=1321.144mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.686mil|Location2.X=3867.631mil|Location1.Y=1251.125mil|Location2.Y=1321.144mil|Absolute=True">Un-Routed Net Constraint: Track (1972.188mil,-2728.358mil)(1992.132mil,-2788.377mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3842.575mil|Location2.X=3872.631mil|Location1.Y=6576.144mil|Location2.Y=6646.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3842.575mil|Location2.X=3872.631mil|Location1.Y=6576.144mil|Location2.Y=6646.125mil|Absolute=True">Un-Routed Net Constraint: Track (1977.077mil,2536.642mil)(1997.132mil,2596.623mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3847.631mil|Location2.X=3877.631mil|Location1.Y=1251.116mil|Location2.Y=1261.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3847.631mil|Location2.X=3877.631mil|Location1.Y=1251.116mil|Location2.Y=1261.134mil|Absolute=True">Un-Routed Net Constraint: Track (1982.132mil,-2788.368mil)(2002.132mil,-2788.386mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3852.631mil|Location2.X=3882.631mil|Location1.Y=6636.116mil|Location2.Y=6646.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3852.631mil|Location2.X=3882.631mil|Location1.Y=6636.116mil|Location2.Y=6646.134mil|Absolute=True">Un-Routed Net Constraint: Track (1987.132mil,2596.632mil)(2007.132mil,2596.614mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3857.631mil|Location2.X=3869.763mil|Location1.Y=1251.125mil|Location2.Y=3557.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3857.631mil|Location2.X=3869.763mil|Location1.Y=1251.125mil|Location2.Y=3557.748mil|Absolute=True">Un-Routed Net Constraint: Track (1992.132mil,-2788.377mil)(1994.265mil,-491.754mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3857.631mil|Location2.X=3887.686mil|Location1.Y=1251.125mil|Location2.Y=1321.107mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3857.631mil|Location2.X=3887.686mil|Location1.Y=1251.125mil|Location2.Y=1321.107mil|Absolute=True">Un-Routed Net Constraint: Track (1992.132mil,-2788.377mil)(2012.188mil,-2728.396mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.498mil|Location2.X=3872.631mil|Location1.Y=4339.502mil|Location2.Y=6646.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.498mil|Location2.X=3872.631mil|Location1.Y=4339.502mil|Location2.Y=6646.125mil|Absolute=True">Un-Routed Net Constraint: Track (1995mil,300mil)(1997.132mil,2596.623mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3862.631mil|Location2.X=3892.575mil|Location1.Y=6576.106mil|Location2.Y=6646.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3862.631mil|Location2.X=3892.575mil|Location1.Y=6576.106mil|Location2.Y=6646.125mil|Absolute=True">Un-Routed Net Constraint: Track (1997.132mil,2596.623mil)(2017.077mil,2536.604mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1625.5mil|Location1.Y=6674.502mil|Location2.Y=7039.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1625.5mil|Location1.Y=6674.502mil|Location2.Y=7039.502mil|Absolute=True">Un-Routed Net Constraint: Track (-249.998mil,2635mil)(-249.998mil,2990mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1685.5mil|Location1.Y=6999.502mil|Location2.Y=7029.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1685.5mil|Location1.Y=6999.502mil|Location2.Y=7029.502mil|Absolute=True">Un-Routed Net Constraint: Track (-249.998mil,2980mil)(-189.998mil,2960mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1685.5mil|Location1.Y=7019.502mil|Location2.Y=7049.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=1685.5mil|Location1.Y=7019.502mil|Location2.Y=7049.502mil|Absolute=True">Un-Routed Net Constraint: Track (-249.998mil,2980mil)(-189.998mil,3000mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=2398.561mil|Location1.Y=7019.502mil|Location2.Y=7029.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.5mil|Location2.X=2398.561mil|Location1.Y=7019.502mil|Location2.Y=7029.502mil|Absolute=True">Un-Routed Net Constraint: Track (-249.998mil,2980mil)(523.062mil,2980mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2480.498mil|Location2.X=2869.052mil|Location1.Y=1864.502mil|Location2.Y=2074.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2480.498mil|Location2.X=2869.052mil|Location1.Y=1864.502mil|Location2.Y=2074.502mil|Absolute=True">Un-Routed Net Constraint: Net TACH3 Between Track (460mil,-2080mil)(710mil,-2080mil) on Top Layer And Track (898.554mil,-2070mil)(961.614mil,-2006.94mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2485.498mil|Location2.X=2816.145mil|Location1.Y=1744.502mil|Location2.Y=2027.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2485.498mil|Location2.X=2816.145mil|Location1.Y=1744.502mil|Location2.Y=2027.77mil|Absolute=True">Un-Routed Net Constraint: Net TACH1 Between Track (568.701mil,-2346.299mil)(715mil,-2200mil) on Top Layer And Track (845.646mil,-2116.732mil)(896.363mil,-2116.732mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2505.498mil|Location2.X=2809.622mil|Location1.Y=1729.502mil|Location2.Y=2043.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2505.498mil|Location2.X=2809.622mil|Location1.Y=1729.502mil|Location2.Y=2043.518mil|Absolute=True">Un-Routed Net Constraint: Net TACH2 Between Track (735mil,-2440mil)(735mil,-2215mil) on Top Layer And Track (839.123mil,-2100.984mil)(889.84mil,-2100.984mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2525.498mil|Location2.X=2777.428mil|Location1.Y=1729.502mil|Location2.Y=2102.573mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2525.498mil|Location2.X=2777.428mil|Location1.Y=1729.502mil|Location2.Y=2102.573mil|Absolute=True">Un-Routed Net Constraint: Net TACH4 Between Track (750.748mil,-2219.252mil)(755mil,-2215mil) on Top Layer And Track (806.929mil,-2041.929mil)(904.354mil,-2041.929mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.438mil|Location2.X=3615.498mil|Location1.Y=7019.502mil|Location2.Y=7029.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.438mil|Location2.X=3615.498mil|Location1.Y=7019.502mil|Location2.Y=7029.502mil|Absolute=True">Un-Routed Net Constraint: Track (934.939mil,2980mil)(1740mil,2980mil) on Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTNN12VPWKNEPMV3GYAHPKNLFUH1AA5QUBRR5BBDQYGWM5PYF3QSI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=11.811mil) (IsPad)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3111.33mil|Location2.X=3124.391mil|Location1.Y=5960.097mil|Location2.Y=5973.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3111.33mil|Location2.X=3124.391mil|Location1.Y=5960.097mil|Location2.Y=5973.158mil|Absolute=True">Minimum Annular Ring: (9.841mil &lt; 11.811mil) Pad J13-1(1270mil,1922.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3083.968mil|Location2.X=3097.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3083.968mil|Location2.X=3097.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-2(1220mil,1822.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.968mil|Location2.X=3047.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.968mil|Location2.X=3047.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-3(1170mil,1922.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2983.968mil|Location2.X=2997.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2983.968mil|Location2.X=2997.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-4(1120mil,1822.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.968mil|Location2.X=2947.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.968mil|Location2.X=2947.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-5(1070mil,1922.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2883.968mil|Location2.X=2897.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2883.968mil|Location2.X=2897.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-6(1020mil,1822.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2833.968mil|Location2.X=2847.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2833.968mil|Location2.X=2847.029mil|Location1.Y=5982.735mil|Location2.Y=5995.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-7(970mil,1922.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.968mil|Location2.X=2797.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.968mil|Location2.X=2797.029mil|Location1.Y=5882.735mil|Location2.Y=5895.796mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J13-8(920mil,1822.126mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2167.684mil|Location2.X=2180.745mil|Location1.Y=5167.971mil|Location2.Y=5181.033mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2167.684mil|Location2.X=2180.745mil|Location1.Y=5167.971mil|Location2.Y=5181.033mil|Absolute=True">Minimum Annular Ring: (9.841mil &lt; 11.811mil) Pad J14-1(326.354mil,1130mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=5140.609mil|Location2.Y=5153.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=5140.609mil|Location2.Y=5153.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-2(426.354mil,1080mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=5090.609mil|Location2.Y=5103.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=5090.609mil|Location2.Y=5103.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-3(326.354mil,1030mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=5040.609mil|Location2.Y=5053.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=5040.609mil|Location2.Y=5053.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-4(426.354mil,980mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=4990.609mil|Location2.Y=5003.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=4990.609mil|Location2.Y=5003.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-5(326.354mil,930mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=4940.609mil|Location2.Y=4953.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=4940.609mil|Location2.Y=4953.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-6(426.354mil,880mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=4890.609mil|Location2.Y=4903.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2190.322mil|Location2.X=2203.383mil|Location1.Y=4890.609mil|Location2.Y=4903.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-7(326.354mil,830mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=4840.609mil|Location2.Y=4853.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2290.322mil|Location2.X=2303.383mil|Location1.Y=4840.609mil|Location2.Y=4853.67mil|Absolute=True">Minimum Annular Ring: (9.842mil &lt; 11.811mil) Pad J14-8(426.354mil,780mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYF1KLR2Z24J5ENTKK5LDY2TBNJD2OUEHHFJKS0IW53DZMPUCCEBO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=7.874mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2915.936mil|Location2.X=2925.06mil|Location1.Y=3263.064mil|Location2.Y=3272.188mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2915.936mil|Location2.X=2925.06mil|Location1.Y=3263.064mil|Location2.Y=3272.188mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (1050mil,-788.126mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.936mil|Location2.X=3150.06mil|Location1.Y=3251.19mil|Location2.Y=3260.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.936mil|Location2.X=3150.06mil|Location1.Y=3251.19mil|Location2.Y=3260.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (1275mil,-800mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3160.936mil|Location2.X=3170.06mil|Location1.Y=2956.19mil|Location2.Y=2965.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3160.936mil|Location2.X=3170.06mil|Location1.Y=2956.19mil|Location2.Y=2965.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (1295mil,-1095mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3165.936mil|Location2.X=3175.06mil|Location1.Y=3826.19mil|Location2.Y=3835.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3165.936mil|Location2.X=3175.06mil|Location1.Y=3826.19mil|Location2.Y=3835.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (1300mil,-225mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.936mil|Location2.X=2470.06mil|Location1.Y=4986.19mil|Location2.Y=4995.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.936mil|Location2.X=2470.06mil|Location1.Y=4986.19mil|Location2.Y=4995.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (595mil,935mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2505.936mil|Location2.X=2515.06mil|Location1.Y=5031.19mil|Location2.Y=5040.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2505.936mil|Location2.X=2515.06mil|Location1.Y=5031.19mil|Location2.Y=5040.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (640mil,980mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2535.936mil|Location2.X=2545.06mil|Location1.Y=4901.19mil|Location2.Y=4910.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2535.936mil|Location2.X=2545.06mil|Location1.Y=4901.19mil|Location2.Y=4910.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (670mil,850mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2640.936mil|Location2.X=2650.06mil|Location1.Y=4836.19mil|Location2.Y=4845.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2640.936mil|Location2.X=2650.06mil|Location1.Y=4836.19mil|Location2.Y=4845.314mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (775mil,785mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2839.957mil|Location2.X=2849.081mil|Location1.Y=3369.593mil|Location2.Y=3378.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2839.957mil|Location2.X=2849.081mil|Location1.Y=3369.593mil|Location2.Y=3378.717mil|Absolute=True">Minimum Annular Ring: (7.5mil &lt; 7.874mil) Via (974.021mil,-681.597mil) from Top Layer to Bottom Layer (Annular Ring=7.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDE5K2PR51PAQUI44OH1CDQTNDAPXJ4OSJPKZ01DLS15NJVBA0FSOE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Acute Angle Constraint (Minimum=60.000) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1909.912mil|Location2.X=1929.412mil|Location1.Y=5899.16mil|Location2.Y=5918.66mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1909.912mil|Location2.X=1929.412mil|Location1.Y=5899.16mil|Location2.Y=5918.66mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Track (55mil,1805mil)(55mil,1905.709mil) on Top Layer And Track (-62.362mil,1788.347mil)(55mil,1905.709mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2530.942mil|Location2.X=2550.442mil|Location1.Y=4767.706mil|Location2.Y=4787.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2530.942mil|Location2.X=2550.442mil|Location1.Y=4767.706mil|Location2.Y=4787.206mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Track (661.929mil,720.039mil)(661.929mil,778.928mil) on Top Layer And Track (662.956mil,720.039mil)(766.811mil,823.895mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1750.202mil|Location2.X=1769.702mil|Location1.Y=3264.883mil|Location2.Y=3284.383mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1750.202mil|Location2.X=1769.702mil|Location1.Y=3264.883mil|Location2.Y=3284.383mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Pad J12-9(-150.315mil,-789.803mil) on Top Layer And Track (-124.803mil,-789.803mil)(-80mil,-745mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.269mil|Location2.X=1829.769mil|Location1.Y=3263.055mil|Location2.Y=3282.555mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.269mil|Location2.X=1829.769mil|Location1.Y=3263.055mil|Location2.Y=3282.555mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Pad J12-6(-49.921mil,-817.362mil) on Top Layer And Track (-49.921mil,-817.362mil)(-49.921mil,-775.079mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1755.654mil|Location2.X=1775.154mil|Location1.Y=2914.692mil|Location2.Y=2934.192mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1755.654mil|Location2.X=1775.154mil|Location1.Y=2914.692mil|Location2.Y=2934.192mil|Absolute=True">Acute Angle Constraint: (58.501 &lt; 60.000) Between Track (-150.315mil,-1089.016mil)(-109.331mil,-1130mil) on Top Layer And Via (-85mil,-1130mil) from Top Layer to Bottom Layer (Angle = 58.501)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.998mil|Location2.X=2953.498mil|Location1.Y=2633.86mil|Location2.Y=2653.36mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.998mil|Location2.X=2953.498mil|Location1.Y=2633.86mil|Location2.Y=2653.36mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Pad U4-3(1080mil,-1395mil) on Top Layer And Track (1064.878mil,-1395mil)(1080mil,-1395mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2918.498mil|Location2.X=2937.998mil|Location1.Y=2578.679mil|Location2.Y=2598.179mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2918.498mil|Location2.X=2937.998mil|Location1.Y=2578.679mil|Location2.Y=2598.179mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 60.000) Between Pad U4-1(1042.5mil,-1477mil) on Top Layer And Track (1042.5mil,-1477mil)(1087.689mil,-1431.811mil) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2182.81mil|Location2.X=2202.31mil|Location1.Y=5095.293mil|Location2.Y=5114.793mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2182.81mil|Location2.X=2202.31mil|Location1.Y=5095.293mil|Location2.Y=5114.793mil|Absolute=True">Acute Angle Constraint: (22.846 &lt; 60.000) Between Pad J14-3(326.354mil,1030mil) on Multi-Layer And Track (282.9mil,1064.067mil)(320.933mil,1064.067mil) on Top Layer (Angle = 22.846)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJXETZX1NXFOFN2P51TW0UWJMOCPSIMEHKESXPPMPK4SPNRY1RJ5H"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2053.03mil|Location2.X=2057.967mil|Location1.Y=4647.033mil|Location2.Y=4651.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2053.03mil|Location2.X=2057.967mil|Location1.Y=4647.033mil|Location2.Y=4651.971mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5.906mil) Between Pad J14-S2(196.433mil,649.882mil) on Multi-Layer And Track (155mil,605mil)(185mil,605mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2053.03mil|Location2.X=2057.967mil|Location1.Y=4645.424mil|Location2.Y=4650.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2053.03mil|Location2.X=2057.967mil|Location1.Y=4645.424mil|Location2.Y=4650.361mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5.906mil) Between Pad J14-S2(196.433mil,649.882mil) on Multi-Layer And Track (185mil,575mil)(185mil,605mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2093.459mil|Location2.X=2103.696mil|Location1.Y=2714.153mil|Location2.Y=2721.919mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2093.459mil|Location2.X=2103.696mil|Location1.Y=2714.153mil|Location2.Y=2721.919mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (5.262mil &lt; 5.906mil) Between Pad J3-1(202.402mil,-1270mil) on Multi-Layer And Text "R13" (228.502mil,-1361.502mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [5.262mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2449.532mil|Location2.X=2454.468mil|Location1.Y=5970.522mil|Location2.Y=5975.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2449.532mil|Location2.X=2454.468mil|Location1.Y=5970.522mil|Location2.Y=5975.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5.906mil) Between Pad R7-1(560mil,1930mil) on Top Layer And Text "D4" (581.502mil,1898.498mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDL50355TXSOFEMLGJP4RYV2T3JE1IXMYSFX1WE5FEADJNLSKMEP2M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=3mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2450.5mil|Location2.X=2453.5mil|Location1.Y=5941.502mil|Location2.Y=5944.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2450.5mil|Location2.X=2453.5mil|Location1.Y=5941.502mil|Location2.Y=5944.502mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "D4" (581.502mil,1898.498mil) on Top Overlay And Track (525mil,1898.5mil)(595mil,1898.5mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2463.998mil|Location2.X=2466.998mil|Location1.Y=5941.502mil|Location2.Y=5944.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2463.998mil|Location2.X=2466.998mil|Location1.Y=5941.502mil|Location2.Y=5944.502mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "D4" (581.502mil,1898.498mil) on Top Overlay And Track (595mil,1898.5mil)(595mil,1913.5mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1643.998mil|Location2.X=1646.998mil|Location1.Y=4686.978mil|Location2.Y=4689.978mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1643.998mil|Location2.X=1646.998mil|Location1.Y=4686.978mil|Location2.Y=4689.978mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "J1" (-244.994mil,610.005mil) on Top Overlay And Track (-348.842mil,643.976mil)(139.346mil,643.976mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1633.378mil|Location2.X=1637.628mil|Location1.Y=4219.618mil|Location2.Y=4223.868mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1633.378mil|Location2.X=1637.628mil|Location1.Y=4219.618mil|Location2.Y=4223.868mil|Absolute=True">Silk To Silk Clearance Constraint: (0.528mil &lt; 3mil) Between Text "J5" (-244.992mil,180.005mil) on Top Overlay And Track (-331.969mil,173.976mil)(171.969mil,173.976mil) on Top Overlay Silk Text to Silk Clearance [0.528mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1643.375mil|Location2.X=1647.625mil|Location1.Y=4255.136mil|Location2.Y=4259.386mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1643.375mil|Location2.X=1647.625mil|Location1.Y=4255.136mil|Location2.Y=4259.386mil|Absolute=True">Silk To Silk Clearance Constraint: (0.528mil &lt; 3mil) Between Text "J5" (-244.992mil,180.005mil) on Top Overlay And Track (-331.969mil,216.024mil)(171.969mil,216.024mil) on Top Overlay Silk Text to Silk Clearance [0.528mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3313.211mil|Location2.X=3316.211mil|Location1.Y=4096.349mil|Location2.Y=4099.349mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3313.211mil|Location2.X=3316.211mil|Location1.Y=4096.349mil|Location2.Y=4099.349mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "J9" (1447.502mil,52.498mil) on Top Overlay And Track (1394.213mil,53.346mil)(1444.213mil,53.346mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3313.211mil|Location2.X=3316.211mil|Location1.Y=4096.349mil|Location2.Y=4099.349mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3313.211mil|Location2.X=3316.211mil|Location1.Y=4096.349mil|Location2.Y=4099.349mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "J9" (1447.502mil,52.498mil) on Top Overlay And Track (1444.213mil,43.346mil)(1444.213mil,53.346mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1898.381mil|Location2.X=1902.631mil|Location1.Y=5882.379mil|Location2.Y=5886.629mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1898.381mil|Location2.X=1902.631mil|Location1.Y=5882.379mil|Location2.Y=5886.629mil|Absolute=True">Silk To Silk Clearance Constraint: (1.005mil &lt; 3mil) Between Text "R3" (30.008mil,1843.005mil) on Top Overlay And Track (20mil,1836.5mil)(90mil,1836.5mil) on Top Overlay Silk Text to Silk Clearance [1.005mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.381mil|Location2.X=2937.631mil|Location1.Y=2380.375mil|Location2.Y=2384.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.381mil|Location2.X=2937.631mil|Location1.Y=2380.375mil|Location2.Y=2384.625mil|Absolute=True">Silk To Silk Clearance Constraint: (1.005mil &lt; 3mil) Between Text "R5" (1065.008mil,-1694.995mil) on Top Overlay And Track (1050mil,-1658.5mil)(1120mil,-1658.5mil) on Top Overlay Silk Text to Silk Clearance [1.005mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2985.717mil|Location2.X=2992.374mil|Location1.Y=2378.291mil|Location2.Y=2384.677mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2985.717mil|Location2.X=2992.374mil|Location1.Y=2378.291mil|Location2.Y=2384.677mil|Absolute=True">Silk To Silk Clearance Constraint: (2.709mil &lt; 3mil) Between Text "R5" (1065.008mil,-1694.995mil) on Top Overlay And Track (1120mil,-1658.5mil)(1120mil,-1643.5mil) on Top Overlay Silk Text to Silk Clearance [2.709mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3265.877mil|Location2.X=3270.127mil|Location1.Y=2552.372mil|Location2.Y=2556.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3265.877mil|Location2.X=3270.127mil|Location1.Y=2552.372mil|Location2.Y=2556.622mil|Absolute=True">Silk To Silk Clearance Constraint: (2.008mil &lt; 3mil) Between Text "U9" (1401.008mil,-1519.995mil) on Top Overlay And Track (1393.5mil,-1525.9mil)(1393.5mil,-1485mil) on Top Overlay Silk Text to Silk Clearance [2.008mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDDI3YPCSO0I1PJLZSNNT2WTWWXHHOPHPGOKKC5VP24PDUC3BMSVUM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2573.061mil|Location2.X=2594.336mil|Location1.Y=1957.065mil|Location2.Y=1987.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2573.061mil|Location2.X=2594.336mil|Location1.Y=1957.065mil|Location2.Y=1987.448mil|Absolute=True">Net Antennae: Track (460mil,-2080mil)(710mil,-2080mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2578.061mil|Location2.X=2599.336mil|Location1.Y=1837.065mil|Location2.Y=1867.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2578.061mil|Location2.X=2599.336mil|Location1.Y=1837.065mil|Location2.Y=1867.448mil|Absolute=True">Net Antennae: Track (568.701mil,-2346.299mil)(715mil,-2200mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2598.061mil|Location2.X=2619.336mil|Location1.Y=1822.065mil|Location2.Y=1852.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2598.061mil|Location2.X=2619.336mil|Location1.Y=1822.065mil|Location2.Y=1852.448mil|Absolute=True">Net Antennae: Track (735mil,-2440mil)(735mil,-2215mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2613.809mil|Location2.X=2635.084mil|Location1.Y=1817.813mil|Location2.Y=1848.196mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2613.809mil|Location2.X=2635.084mil|Location1.Y=1817.813mil|Location2.Y=1848.196mil|Absolute=True">Net Antennae: Track (750.748mil,-2446.523mil)(750.748mil,-2219.252mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2669.991mil|Location2.X=2691.265mil|Location1.Y=1995.136mil|Location2.Y=2025.519mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2669.991mil|Location2.X=2691.265mil|Location1.Y=1995.136mil|Location2.Y=2025.519mil|Absolute=True">Net Antennae: Track (806.929mil,-2041.929mil)(904.354mil,-2041.929mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2702.185mil|Location2.X=2723.459mil|Location1.Y=1936.081mil|Location2.Y=1966.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2702.185mil|Location2.X=2723.459mil|Location1.Y=1936.081mil|Location2.Y=1966.464mil|Absolute=True">Net Antennae: Track (839.123mil,-2100.984mil)(889.84mil,-2100.984mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2708.708mil|Location2.X=2729.982mil|Location1.Y=1920.333mil|Location2.Y=1950.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2708.708mil|Location2.X=2729.982mil|Location1.Y=1920.333mil|Location2.Y=1950.716mil|Absolute=True">Net Antennae: Track (845.646mil,-2116.732mil)(896.363mil,-2116.732mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.615mil|Location2.X=2782.89mil|Location1.Y=1967.065mil|Location2.Y=1997.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.615mil|Location2.X=2782.89mil|Location1.Y=1967.065mil|Location2.Y=1997.448mil|Absolute=True">Net Antennae: Track (898.554mil,-2070mil)(961.614mil,-2006.94mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQA45JPZ3WIV3EIXHMFENHOAQ0OR2T1J3H3U320IX5GI5ZA3CCZML"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.374mil|Location2.X=2602.624mil|Location1.Y=7015.377mil|Location2.Y=7021.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.374mil|Location2.X=2602.624mil|Location1.Y=7015.377mil|Location2.Y=7021.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "1990.00" (539.062mil,2944.01mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3868.001mil|Location2.X=3874.25mil|Location1.Y=3939.495mil|Location2.Y=3945.744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3868.001mil|Location2.X=3874.25mil|Location1.Y=3939.495mil|Location2.Y=3945.744mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "5385.002 (mil)" (2030.264mil,-481.787mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.94mil|Location2.X=1625.064mil|Location1.Y=4644.945mil|Location2.Y=4654.069mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.94mil|Location2.X=1625.064mil|Location1.Y=4644.945mil|Location2.Y=4654.069mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.005mil &lt; 7.874mil) Between Board Edge And Text "J1" (-244.994mil,610.005mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.125mil|Location2.X=1622.374mil|Location1.Y=5958.87mil|Location2.Y=5965.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.125mil|Location2.X=1622.374mil|Location1.Y=5958.87mil|Location2.Y=5965.12mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "J10" (-247.498mil,1902.498mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1614.625mil|Location2.X=1620.874mil|Location1.Y=3339.87mil|Location2.Y=3346.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1614.625mil|Location2.X=1620.874mil|Location1.Y=3339.87mil|Location2.Y=3346.12mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "J12" (-250.498mil,-716.502mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.718mil|Location2.X=1557.967mil|Location1.Y=5397.87mil|Location2.Y=5404.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.718mil|Location2.X=1557.967mil|Location1.Y=5397.87mil|Location2.Y=5404.12mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "J14" (-353.144mil,1341.498mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1543.867mil|Location2.X=1550.117mil|Location1.Y=2934.87mil|Location2.Y=2941.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1543.867mil|Location2.X=1550.117mil|Location1.Y=2934.87mil|Location2.Y=2941.12mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "J3" (-348.498mil,-1121.502mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.941mil|Location2.X=1625.065mil|Location1.Y=4214.945mil|Location2.Y=4224.069mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1615.941mil|Location2.X=1625.065mil|Location1.Y=4214.945mil|Location2.Y=4224.069mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.007mil &lt; 7.874mil) Between Board Edge And Text "J5" (-244.992mil,180.005mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1719.867mil|Location2.X=1726.117mil|Location1.Y=6819.87mil|Location2.Y=6826.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1719.867mil|Location2.X=1726.117mil|Location1.Y=6819.87mil|Location2.Y=6826.12mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "J6" (-172.498mil,2763.498mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1706.075mil|Location2.X=1712.324mil|Location1.Y=6718.001mil|Location2.Y=6724.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1706.075mil|Location2.X=1712.324mil|Location1.Y=6718.001mil|Location2.Y=6724.25mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-161.299mil,2213.032mil)(-161.299mil,2725mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.405mil|Location2.X=2066.655mil|Location1.Y=6766.377mil|Location2.Y=6772.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.405mil|Location2.X=2066.655mil|Location1.Y=6766.377mil|Location2.Y=6772.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-161.299mil,2725mil)(547.362mil,2725mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3577.374mil|Location2.X=3583.623mil|Location1.Y=7011.377mil|Location2.Y=7017.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3577.374mil|Location2.X=3583.623mil|Location1.Y=7011.377mil|Location2.Y=7017.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1680mil,2960mil)(1740mil,2980mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3577.374mil|Location2.X=3583.623mil|Location1.Y=7031.377mil|Location2.Y=7037.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3577.374mil|Location2.X=3583.623mil|Location1.Y=7031.377mil|Location2.Y=7037.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1680mil,3000mil)(1740mil,2980mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1695.051mil|Location2.X=1701.3mil|Location1.Y=6761.377mil|Location2.Y=6767.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1695.051mil|Location2.X=1701.3mil|Location1.Y=6761.377mil|Location2.Y=6767.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-172.323mil,2705mil)(-172.323mil,2735mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1710.051mil|Location2.X=1716.3mil|Location1.Y=6776.377mil|Location2.Y=6782.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1710.051mil|Location2.X=1716.3mil|Location1.Y=6776.377mil|Location2.Y=6782.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-172.323mil,2735mil)(-142.323mil,2735mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.374mil|Location2.X=3613.623mil|Location1.Y=6851.584mil|Location2.Y=6857.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.374mil|Location2.X=3613.623mil|Location1.Y=6851.584mil|Location2.Y=6857.833mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1740mil,2630mil)(1740mil,2990mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.534mil|Location2.X=3855.783mil|Location1.Y=1283.01mil|Location2.Y=1289.259mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.534mil|Location2.X=3855.783mil|Location1.Y=1283.01mil|Location2.Y=1289.259mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1972.188mil,-2728.358mil)(1992.132mil,-2788.377mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3854.478mil|Location2.X=3860.727mil|Location1.Y=6608.01mil|Location2.Y=6614.259mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3854.478mil|Location2.X=3860.727mil|Location1.Y=6608.01mil|Location2.Y=6614.259mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1977.077mil,2536.642mil)(1997.132mil,2596.623mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.506mil|Location2.X=3865.755mil|Location1.Y=1253.001mil|Location2.Y=1259.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.506mil|Location2.X=3865.755mil|Location1.Y=1253.001mil|Location2.Y=1259.25mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1982.132mil,-2788.368mil)(2002.132mil,-2788.386mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3864.506mil|Location2.X=3870.755mil|Location1.Y=6638.001mil|Location2.Y=6644.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3864.506mil|Location2.X=3870.755mil|Location1.Y=6638.001mil|Location2.Y=6644.25mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1987.132mil,2596.632mil)(2007.132mil,2596.614mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.572mil|Location2.X=3866.822mil|Location1.Y=2401.312mil|Location2.Y=2407.561mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.572mil|Location2.X=3866.822mil|Location1.Y=2401.312mil|Location2.Y=2407.561mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1992.132mil,-2788.377mil)(1994.265mil,-491.754mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3869.534mil|Location2.X=3875.783mil|Location1.Y=1282.991mil|Location2.Y=1289.24mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3869.534mil|Location2.X=3875.783mil|Location1.Y=1282.991mil|Location2.Y=1289.24mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1992.132mil,-2788.377mil)(2012.188mil,-2728.396mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3863.44mil|Location2.X=3869.689mil|Location1.Y=5489.689mil|Location2.Y=5495.938mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3863.44mil|Location2.X=3869.689mil|Location1.Y=5489.689mil|Location2.Y=5495.938mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1995mil,300mil)(1997.132mil,2596.623mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3874.478mil|Location2.X=3880.727mil|Location1.Y=6607.991mil|Location2.Y=6614.24mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3874.478mil|Location2.X=3880.727mil|Location1.Y=6607.991mil|Location2.Y=6614.24mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1997.132mil,2596.623mil)(2017.077mil,2536.604mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1617.375mil|Location2.X=1623.625mil|Location1.Y=6853.877mil|Location2.Y=6860.127mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1617.375mil|Location2.X=1623.625mil|Location1.Y=6853.877mil|Location2.Y=6860.127mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-249.998mil,2635mil)(-249.998mil,2990mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647.375mil|Location2.X=1653.625mil|Location1.Y=7011.377mil|Location2.Y=7017.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647.375mil|Location2.X=1653.625mil|Location1.Y=7011.377mil|Location2.Y=7017.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-249.998mil,2980mil)(-189.998mil,2960mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647.375mil|Location2.X=1653.625mil|Location1.Y=7031.377mil|Location2.Y=7037.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647.375mil|Location2.X=1653.625mil|Location1.Y=7031.377mil|Location2.Y=7037.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-249.998mil,2980mil)(-189.998mil,3000mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.906mil|Location2.X=2010.155mil|Location1.Y=7021.377mil|Location2.Y=7027.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.906mil|Location2.X=2010.155mil|Location1.Y=7021.377mil|Location2.Y=7027.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-249.998mil,2980mil)(523.062mil,2980mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5336.377mil|Location2.Y=5342.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5336.377mil|Location2.Y=5342.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1295mil)(-20mil,1295mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5626.377mil|Location2.Y=5632.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5626.377mil|Location2.Y=5632.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1295mil)(-250mil,1875mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5401.377mil|Location2.Y=5407.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5401.377mil|Location2.Y=5407.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1360mil)(-230mil,1360mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5426.377mil|Location2.Y=5432.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5426.377mil|Location2.Y=5432.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1360mil)(-250mil,1410mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5451.377mil|Location2.Y=5457.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5451.377mil|Location2.Y=5457.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1410mil)(-230mil,1410mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5801.377mil|Location2.Y=5807.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5801.377mil|Location2.Y=5807.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1760mil)(-230mil,1760mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5826.377mil|Location2.Y=5832.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5826.377mil|Location2.Y=5832.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1760mil)(-250mil,1810mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5851.377mil|Location2.Y=5857.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5851.377mil|Location2.Y=5857.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1810mil)(-230mil,1810mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5916.377mil|Location2.Y=5922.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.021mil|Location2.X=1622.271mil|Location1.Y=5916.377mil|Location2.Y=5922.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-250mil,1875mil)(-20mil,1875mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4215.354mil|Location2.Y=4221.603mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4215.354mil|Location2.Y=4221.603mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,173.976mil)(171.969mil,173.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=3837.401mil|Location2.Y=3843.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=3837.401mil|Location2.Y=3843.65mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,-203.976mil)(171.969mil,-203.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1535.405mil|Location2.X=1541.655mil|Location1.Y=4026.377mil|Location2.Y=4032.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1535.405mil|Location2.X=1541.655mil|Location1.Y=4026.377mil|Location2.Y=4032.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,-203.976mil)(-331.969mil,173.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4257.401mil|Location2.Y=4263.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4257.401mil|Location2.Y=4263.65mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,216.024mil)(171.969mil,216.024mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1535.405mil|Location2.X=1541.655mil|Location1.Y=4446.377mil|Location2.Y=4452.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1535.405mil|Location2.X=1541.655mil|Location1.Y=4446.377mil|Location2.Y=4452.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,216.024mil)(-331.969mil,593.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4635.354mil|Location2.Y=4641.603mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1574.766mil|Location2.X=1581.016mil|Location1.Y=4635.354mil|Location2.Y=4641.603mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-331.969mil,593.976mil)(171.969mil,593.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1572.266mil|Location2.X=1578.516mil|Location1.Y=2877.677mil|Location2.Y=2883.926mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1572.266mil|Location2.X=1578.516mil|Location1.Y=2877.677mil|Location2.Y=2883.926mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-336.969mil,-1163.701mil)(166.969mil,-1163.701mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1572.266mil|Location2.X=1578.516mil|Location1.Y=2665.078mil|Location2.Y=2671.327mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1572.266mil|Location2.X=1578.516mil|Location1.Y=2665.078mil|Location2.Y=2671.327mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-336.969mil,-1376.299mil)(166.969mil,-1376.299mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1530.405mil|Location2.X=1536.655mil|Location1.Y=2771.377mil|Location2.Y=2777.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1530.405mil|Location2.X=1536.655mil|Location1.Y=2771.377mil|Location2.Y=2777.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-336.969mil,-1376.299mil)(-336.969mil,-1163.701mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4211.377mil|Location2.Y=4217.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4211.377mil|Location2.Y=4217.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,155mil)(-345mil,185mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4226.377mil|Location2.Y=4232.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4226.377mil|Location2.Y=4232.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,185mil)(-315mil,185mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4246.377mil|Location2.Y=4252.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4246.377mil|Location2.Y=4252.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,205mil)(-315mil,205mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4261.377mil|Location2.Y=4267.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4261.377mil|Location2.Y=4267.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,205mil)(-345mil,235mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=3826.377mil|Location2.Y=3832.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=3826.377mil|Location2.Y=3832.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,-215mil)(-315mil,-215mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=3841.377mil|Location2.Y=3847.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=3841.377mil|Location2.Y=3847.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,-215mil)(-345mil,-185mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4631.377mil|Location2.Y=4637.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1522.374mil|Location2.X=1528.623mil|Location1.Y=4631.377mil|Location2.Y=4637.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,575mil)(-345mil,605mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4646.377mil|Location2.Y=4652.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1537.374mil|Location2.X=1543.623mil|Location1.Y=4646.377mil|Location2.Y=4652.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-345mil,605mil)(-315mil,605mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.822mil|Location2.X=1572.072mil|Location1.Y=5307.401mil|Location2.Y=5313.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.822mil|Location2.X=1572.072mil|Location1.Y=5307.401mil|Location2.Y=5313.65mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-348.842mil,1266.024mil)(139.346mil,1266.024mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.822mil|Location2.X=1572.072mil|Location1.Y=4685.354mil|Location2.Y=4691.603mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.822mil|Location2.X=1572.072mil|Location1.Y=4685.354mil|Location2.Y=4691.603mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-348.842mil,643.976mil)(139.346mil,643.976mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1518.531mil|Location2.X=1524.781mil|Location1.Y=4996.377mil|Location2.Y=5002.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1518.531mil|Location2.X=1524.781mil|Location1.Y=4996.377mil|Location2.Y=5002.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-348.842mil,643.976mil)(-348.842mil,1266.024mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.374mil|Location2.X=1538.623mil|Location1.Y=2891.377mil|Location2.Y=2897.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.374mil|Location2.X=1538.623mil|Location1.Y=2891.377mil|Location2.Y=2897.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-350mil,-1150mil)(-320mil,-1150mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1517.374mil|Location2.X=1523.623mil|Location1.Y=2876.377mil|Location2.Y=2882.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1517.374mil|Location2.X=1523.623mil|Location1.Y=2876.377mil|Location2.Y=2882.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-350mil,-1180mil)(-350mil,-1150mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.374mil|Location2.X=1538.623mil|Location1.Y=2651.377mil|Location2.Y=2657.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.374mil|Location2.X=1538.623mil|Location1.Y=2651.377mil|Location2.Y=2657.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-350mil,-1390mil)(-320mil,-1390mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1517.374mil|Location2.X=1523.623mil|Location1.Y=2666.377mil|Location2.Y=2672.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1517.374mil|Location2.X=1523.623mil|Location1.Y=2666.377mil|Location2.Y=2672.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (-350mil,-1390mil)(-350mil,-1360mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2410.76mil|Location2.X=2417.009mil|Location1.Y=6776.377mil|Location2.Y=6782.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2410.76mil|Location2.X=2417.009mil|Location1.Y=6776.377mil|Location2.Y=6782.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (528.386mil,2735mil)(558.386mil,2735mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2414.736mil|Location2.X=2420.985mil|Location1.Y=6718.001mil|Location2.Y=6724.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2414.736mil|Location2.X=2420.985mil|Location1.Y=6718.001mil|Location2.Y=6724.25mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (547.362mil,2213.032mil)(547.362mil,2725mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2425.76mil|Location2.X=2432.009mil|Location1.Y=6761.377mil|Location2.Y=6767.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2425.76mil|Location2.X=2432.009mil|Location1.Y=6761.377mil|Location2.Y=6767.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (558.386mil,2705mil)(558.386mil,2735mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2620.936mil|Location2.X=2630.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2620.936mil|Location2.X=2630.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.999mil &lt; 7.874mil) Between Board Edge And Track (755mil,-2740mil)(755mil,-2710mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2620.936mil|Location2.X=2630.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2620.936mil|Location2.X=2630.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.999mil &lt; 7.874mil) Between Board Edge And Track (755mil,-2740mil)(785mil,-2740mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3204.843mil|Location2.X=3211.093mil|Location1.Y=7021.377mil|Location2.Y=7027.627mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3204.843mil|Location2.X=3211.093mil|Location1.Y=7021.377mil|Location2.Y=7027.627mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (934.939mil,2980mil)(1740mil,2980mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2830.936mil|Location2.X=2840.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2830.936mil|Location2.X=2840.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.999mil &lt; 7.874mil) Between Board Edge And Track (965mil,-2740mil)(995mil,-2740mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2860.936mil|Location2.X=2870.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\OSU UWRT Files\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\CameraCageBB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2860.936mil|Location2.X=2870.06mil|Location1.Y=1293.44mil|Location2.Y=1302.564mil|Absolute=True">Board Outline Clearance(Outline Edge): (6.999mil &lt; 7.874mil) Between Board Edge And Track (995mil,-2740mil)(995mil,-2710mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
