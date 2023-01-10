@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : D:\Flip Stuff\UWRT\electric_boogaloo\TempestBoards\MK2\Smart_Battery_Housing\SBH_BMS\SBM_BMS.PcbDoc
+PCB File : C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\TempestBoards\MK2\Smart_Battery_Housing\SBH_BMS\SBM_BMS.PcbDoc
 Date     : 1/9/2023
-Time     : 12:08:50 AM
+Time     : 19:05:03
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -15,40 +15,37 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.2mm) (All)
-Rule Violations :0
-
-Processing Rule : SMD To Corner (Distance=0mm) (All)
-Rule Violations :0
-
-Processing Rule : SMD To Plane Constraint (Distance=0mm) (All)
-Rule Violations :0
-
-Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Processing Rule : Width Constraint (Min=0.2mm) (Max=5.08mm) (Preferred=0.254mm) (All)
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=0.152mm) (All)
+Processing Rule : Minimum Annular Ring (Minimum=0.3mm) (IsPad)
 Rule Violations :0
 
-Processing Rule : Acute Angle Constraint (Minimum=87.500) (All)
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.203mm) (Max=6.223mm) (All)
+Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=60.000) (All)
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=0.508mm) (All),(All)
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (Disabled)(All),(All)
+Processing Rule : Hole Size Constraint (Min=0.5mm) (Max=6.3mm) (IsPad)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=0.152mm) (IsPad),(All)
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0.025mm) (All),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.025mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.076mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
