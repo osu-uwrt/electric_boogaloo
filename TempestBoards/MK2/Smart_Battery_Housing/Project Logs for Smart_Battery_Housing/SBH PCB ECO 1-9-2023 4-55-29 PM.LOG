@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=BMS_WAKE Pin=U1R-7
+Removed Pin From Net: NetName=PWR_CTRL Pin=U1R-11
+Removed Pin From Net: NetName=SWITCH_SIGNAL Pin=U1R-12
+Added Pin To Net: NetName=BMS_WAKE Pin=U1R-11
+Added Pin To Net: NetName=PWR_CTRL Pin=U1R-12
+Added Pin To Net: NetName=SWITCH_SIGNAL Pin=U1R-13
+Added Pin To Net: NetName=NetU1R_7 Pin=U1R-7
+Added Net: Name=NetU1R_7
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R4 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R6 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R7 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R8 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R9 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R10 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R11 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R12 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R13 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component R14 10k Ohm 5% 1/10W

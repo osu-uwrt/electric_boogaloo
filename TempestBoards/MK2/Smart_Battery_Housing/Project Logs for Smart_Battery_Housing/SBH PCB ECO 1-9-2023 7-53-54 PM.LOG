@@ -1,0 +1,28 @@
+Change Component Description : Designator=C2 Old Description=Cap 4.7uF 6.3V +/-10% Ceramic 0603 New Description=Cap 4.7uF 6.3V +/-10%
+Ceramic 0603
+Change Component Description : Designator=C5 Old Description=Cap 22uF 10V +/-20% Ceramic 0805 X5R New Description=Cap 22uF 10V +/-20% X5R
+Ceramic 0805
+Change Component Description : Designator=D1 Old Description=LED Red Vf= 2V If = 0.020A
+IN-S63AT5G New Description=LED Red Vf= 2V If = 0.020A
+150060RS75000
+Change component parameters: Designator = "D1" ("D1"); Footprint = "LED_0603"; UniqueID = "\BTSBWNKF" ("\BTSBWNKF")
+Change component parameters (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4978-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D2" ("D2"); Footprint = "LED_0603"; UniqueID = "\XQMNVEGU" ("\XQMNVEGU")
+Change component parameters (AddParameter): Name = "Color"; Value = "Yellow"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4981-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component C3 10uF Ceramic 25V
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component C4 10uF Ceramic 6.3V
+Added Member To Class: ClassName=SBH_Microcontroller Member=Component C6 22uF Ceramic 10V
