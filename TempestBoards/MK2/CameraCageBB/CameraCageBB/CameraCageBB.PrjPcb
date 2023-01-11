@@ -38,12 +38,6 @@ LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
 IncludeDesignInRelease=0
-CrossRefSheetStyle=1
-CrossRefLocationStyle=1
-CrossRefPorts=3
-CrossRefCrossSheets=1
-CrossRefSheetEntries=0
-CrossRefFollowFromMainSettings=1
 
 [Preferences]
 PrefsVaultGUID=
@@ -67,23 +61,6 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document2]
-DocumentPath=CamerCageBB_Large.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RKHYINIV
-
-[Document3]
 DocumentPath=CameraCageBB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +77,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VKVIVGXI
 
-[Document4]
+[Document3]
 DocumentPath=..\..\..\..\Library\Capacitors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +94,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document4]
 DocumentPath=..\..\..\..\Library\Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +111,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
+[Document5]
 DocumentPath=..\..\..\..\Library\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +128,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KBCGNCQN
 
-[Document7]
+[Document6]
 DocumentPath=..\..\..\..\Library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +145,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BDYVBFSS
 
-[Document8]
+[Document7]
 DocumentPath=..\..\..\..\Library\Converter.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +162,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=..\..\..\..\Library\Converter.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +179,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=..\..\..\..\Library\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +196,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=..\..\..\..\Library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +213,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=..\..\..\..\Library\Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +230,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=..\..\..\..\Library\Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +247,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\..\..\..\Library\Fuses.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +264,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=..\..\..\..\Library\Fuses.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -302,9 +279,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MOYCOWBP
 
-[Document16]
+[Document15]
 DocumentPath=..\..\..\..\Library\Inductors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +298,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=..\..\..\..\Library\Inductors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +315,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +332,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=..\..\..\..\Library\Integrated Circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +349,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=..\..\..\..\Library\Modules.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,7 +366,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document20]
 DocumentPath=..\..\..\..\Library\Modules.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -406,7 +383,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document21]
 DocumentPath=..\..\..\..\Library\Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +400,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LBXKYAFM
 
-[Document23]
+[Document22]
 DocumentPath=..\..\..\..\Library\Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +417,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document23]
 DocumentPath=..\..\..\..\Library\Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +434,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=..\..\..\..\Library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -474,7 +451,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document25]
 DocumentPath=..\..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -491,7 +468,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document26]
 DocumentPath=..\..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -508,7 +485,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document27]
 DocumentPath=..\..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -525,7 +502,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document28]
 DocumentPath=..\..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -542,8 +519,221 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document29]
+DocumentPath=CameraCageBB Order.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\BOM\Bill of Materials-CameraCageBB.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\DRC\CameraCageBB.html
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB.PcbDoc
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB.SchDoc
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\ExportSTEP\CameraCageBB.step
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB Order.OutJob
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Capacitors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Capacitors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Connectors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Connectors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Converter.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Converter.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Crystals.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Crystals.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument29]
 DocumentPath=Project Outputs for CameraCageBB\Design Rule Check - CameraCageBB.html
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Diodes.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Diodes.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Fuses.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Fuses.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Inductors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Inductors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Modules.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Modules.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Resistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Resistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\RP2040.SchDot
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\SBH_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Switches.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Switches.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Transistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Transistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\UWRT.SchLib
 DItemRevisionGUID=
 
 [DeviceSheetFolder1]
@@ -551,20 +741,20 @@ Path=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\TempestBoards\MK2\Camer
 IncludeSubFolders=0
 
 [Parameter1]
-Name=TeamLead
-Value=Robert
-
-[Parameter2]
-Name=ProjectTitle
-Value=CameraCageBB
-
-[Parameter3]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter4]
 Name=BoardRevision
 Value=1.0
+
+[Parameter2]
+Name=DateOfDesignReview
+Value=1/10/2023
+
+[Parameter3]
+Name=ProjectTitle
+Value=Camera Cage BB MK II
+
+[Parameter4]
+Name=TeamLead
+Value=Robert Pafford
 
 [DeviceSheet1]
 DocumentPath=..\..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
@@ -699,7 +889,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon TS6200 series
+TargetPrinter=NPI49FD41 (HP LaserJet M402n)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -775,18 +965,6 @@ OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
 PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType12=Harness Layout Drawing Print
-OutputName12=Harness Layout Drawing Prints
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType13=Harness Wiring Diagram Print
-OutputName13=Harness Wiring Diagram Prints
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -930,12 +1108,6 @@ OutputDocumentPath8=
 OutputVariantName8=[No Variations]
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType9=Project History
-OutputName9=Project History
-OutputDocumentPath9=
-OutputVariantName9=[No Variations]
-OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup7]
 Name=Other Outputs
@@ -1149,11 +1321,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Web ReviewOutputName
-OutputName12=Web Review Data
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1286,7 +1453,6 @@ Type116=1
 Type117=1
 Type118=1
 Type119=1
-Type120=1
 
 [Difference Levels]
 Type1=1
@@ -1478,13 +1644,13 @@ Type116=2
 Type117=3
 Type118=3
 Type119=3
+MultiChannelAlternate=2
 AlternateItemFail=3
 Type122=2
 Type123=1
 Type124=1
 Type125=1
 Type126=1
-Type127=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

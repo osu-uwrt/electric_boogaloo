@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : D:\Flip Stuff\UWRT\electric_boogaloo\TempestBoards\MK2\Smart_Battery_Housing\SBH_BMS\SBM_BMS.PcbDoc
+PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\Smart_Battery_Housing\SBH_BMS\SBM_BMS.PcbDoc
 Date     : 1/10/2023
-Time     : 8:41:01 AM
+Time     : 6:24:12 PM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -30,10 +30,10 @@ Rule Violations :0
 Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=60.000) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.5mm) (Max=6.3mm) (IsPad)
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
+Processing Rule : Hole Size Constraint (Min=0.5mm) (Max=6.3mm) (IsPad)
 Rule Violations :0
 
 Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
@@ -60,4 +60,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01

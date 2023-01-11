@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\PowerDistribution\MK2_PD\MK2_PD.PcbDoc
-Date     : 1/8/2023
-Time     : 8:46:36 PM
+Date     : 1/10/2023
+Time     : 9:47:12 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
 Rule Violations :0
@@ -46,12 +46,19 @@ Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
-Rule Violations :0
+   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "CANH" (1489.182mil,4425.145mil) on Top Overlay And Track (1480mil,4310mil)(1480mil,4535mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "CANL" (1484.31mil,4535mil) on Top Overlay And Track (1335mil,4310mil)(1335mil,4535mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (2.278mil < 3mil) Between Text "GND" (1599.692mil,4530.397mil) on Top Overlay And Track (1480mil,4310mil)(1480mil,4535mil) on Top Overlay Silk Text to Silk Clearance [2.278mil]
+   Violation between Silk To Silk Clearance Constraint: (2.278mil < 3mil) Between Text "GND" (1599.692mil,4530.397mil) on Top Overlay And Track (1590mil,4310mil)(1590mil,4535mil) on Top Overlay Silk Text to Silk Clearance [2.278mil]
+   Violation between Silk To Silk Clearance Constraint: (2.248mil < 3mil) Between Text "GND" (1709.558mil,4530.569mil) on Top Overlay And Track (1590mil,4310mil)(1590mil,4535mil) on Top Overlay Silk Text to Silk Clearance [2.248mil]
+   Violation between Silk To Silk Clearance Constraint: (2.248mil < 3mil) Between Text "GND" (1709.558mil,4530.569mil) on Top Overlay And Track (1700mil,4310mil)(1700mil,4535mil) on Top Overlay Silk Text to Silk Clearance [2.248mil]
+Rule Violations :6
 
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (7.826mil < 7.874mil) Between Board Edge And Text "J11" (12.825mil,2163.824mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (10mil,1110mil)(10mil,1140mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (10mil,1140mil)(40mil,1140mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (10mil,740mil)(10mil,770mil) on Top Overlay 
@@ -70,12 +77,16 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (6990mil,2820mil)(6990mil,3475mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (761.968mil,4960mil)(761.968mil,4990mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (761.968mil,4990mil)(791.968mil,4990mil) on Top Overlay 
-Rule Violations :18
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,1783mil)(32mil,1783mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,1783mil)(8mil,1807mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,2083mil)(8mil,2107mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,2107mil)(33mil,2107mil) on Top Overlay 
+Rule Violations :23
 
 Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 18
+Violations Detected : 29
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01

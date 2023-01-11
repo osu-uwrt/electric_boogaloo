@@ -1,0 +1,45 @@
+Removed Pin From Net: NetName=Pack- Pin=J1-5
+Removed Pin From Net: NetName=BAT- Pin=U2-16
+Change Component Description : Designator=F1 Old Description=LittelFuse New Description=LittelFuse  | 45A | 5S | SMD | Self-Control Protector
+Change Component Description : Designator=F2 Old Description=Pansonic New Description=Pansonic | 32V | 1A | 0603 | Fast Blow
+Change Component Description : Designator=D1 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Change Component Description : Designator=D2 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Change component parameters: Designator = "F1" ("F1"); Footprint = "ITV9550"; UniqueID = "\QXNTBYBW" ("\QXNTBYBW")
+Change component parameters (AddParameter): Name = "Breaking Capacity"; Value = "120A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ITV9550L2045MR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Littelfuse Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Proprietary"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Response Time"; Value = ">1min for 2x45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "650-ITV9550L2045MR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "85V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\PUOJPLLF" ("\PUOJPLLF")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-10884-1-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\SOPBUFEO" ("\SOPBUFEO")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-10884-1-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J4" ("J4"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\BDNBDTDI" ("\BDNBDTDI")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-10884-1-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J5" ("J5"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\HBHOOJXJ" ("\HBHOOJXJ")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-10884-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Side_Detection Pin=J1-5
+Added Pin To Net: NetName=Side_Detection Pin=U2-16
+Added Net: Name=Side_Detection
+Add Differential Pair: Number of nets in differential pair CAN_H is 1 instead of 2

@@ -1,0 +1,11 @@
+Change Component Comment : Designator=D2 Old Comment=IN-S63AT5G New Comment=150060BS75000
+Change component parameters: Designator = "D2" ("D2"); Footprint = "LED_0603"; UniqueID = "\COHMDHLE\XFYFGXDJ" ("\COHMDHLE\XFYFGXDJ")
+Change component parameters (AddParameter): Name = "Color"; Value = "Blue"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4966-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=U_ActuatorMKII_Circuits Member=Component R7 1.2k Ohm 5% 1/2W

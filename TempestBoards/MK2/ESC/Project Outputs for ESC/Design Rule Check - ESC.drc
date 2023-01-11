@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\ESC\ESC.PcbDoc
-Date     : 1/8/2023
-Time     : 9:19:24 PM
+Date     : 1/10/2023
+Time     : 6:21:16 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
 Rule Violations :0
@@ -24,19 +24,16 @@ Rule Violations :0
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
-Rule Violations :0
-
 Processing Rule : Minimum Annular Ring (Minimum=7.874mil) (All)
 Rule Violations :0
 
-Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
 Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
 Rule Violations :0
 
 Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
@@ -63,12 +60,16 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (6990mil,3419.291mil)(6990mil,3449.291mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (761.968mil,4960mil)(761.968mil,4990mil) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (7mil < 7.874mil) Between Board Edge And Track (761.968mil,4990mil)(791.968mil,4990mil) on Top Overlay 
-Rule Violations :8
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,1783mil)(32mil,1783mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,1783mil)(8mil,1807mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,2083mil)(8mil,2107mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (5mil < 7.874mil) Between Board Edge And Track (8mil,2107mil)(33mil,2107mil) on Top Overlay 
+Rule Violations :12
 
 Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 8
+Violations Detected : 12
 Waived Violations : 0
 Time Elapsed        : 00:00:02
