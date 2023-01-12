@@ -1,0 +1,93 @@
+Removed Pin From Net: NetName=NetQ1_3 Pin=Q5-3
+Change Component Comment : Designator=J10 Old Comment=Mili-Grid R/A New Comment=Mini-Fit Jr R/A
+Change Component Description : Designator=F1 Old Description=LittelFuse New Description=LittelFuse  | 45A | 5S | SMD | Self-Control Protector
+Change Component Description : Designator=F2 Old Description=Pansonic New Description=Pansonic | 32V | 1A | 0603 | Fast Blow
+Change Component Description : Designator=F3 Old Description=Pansonic New Description=Pansonic | 32V | 5A | 0603 | Fast Blow
+Change Component Description : Designator=D1 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Change Component Description : Designator=D2 Old Description=Zener Diode New Description=Zener Diode | 16 V | 500 mW | SOD-123
+Change component parameters: Designator = "C10" ("C10"); Footprint = "CAPACITOR_0402"; UniqueID = "\VXGFNPAT" ("\VXGFNPAT")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C11" ("C11"); Footprint = "CAPACITOR_0402"; UniqueID = "\DIRPPGBM" ("\DIRPPGBM")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C12" ("C12"); Footprint = "CAPACITOR_0402"; UniqueID = "\RXKMXZJV" ("\RXKMXZJV")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C13" ("C13"); Footprint = "CAPACITOR_0402"; UniqueID = "\MODJNRHZ" ("\MODJNRHZ")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C14" ("C14"); Footprint = "CAPACITOR_0402"; UniqueID = "\NOFKITFI" ("\NOFKITFI")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C15" ("C15"); Footprint = "CAPACITOR_0402"; UniqueID = "\NNFFONBT" ("\NNFFONBT")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16" ("C16"); Footprint = "CAPACITOR_0402"; UniqueID = "\FFBTCCKJ" ("\FFBTCCKJ")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "F1" ("F1"); Footprint = "ITV9550"; UniqueID = "\QXNTBYBW" ("\QXNTBYBW")
+Change component parameters (AddParameter): Name = "Breaking Capacity"; Value = "120A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ITV9550L2045MR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Littelfuse Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Proprietary"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Response Time"; Value = ">1min for 2x45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "85V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\PUOJPLLF" ("\PUOJPLLF")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\SOPBUFEO" ("\SOPBUFEO")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J4" ("J4"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\BDNBDTDI" ("\BDNBDTDI")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J5" ("J5"); Footprint = "Redcube M4 Term 85A"; UniqueID = "\HBHOOJXJ" ("\HBHOOJXJ")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetQ1_3 Pin=Q5-2
+Added Pin To Net: NetName=NetQ5_3 Pin=Q5-3
+Added Pin To Net: NetName=NetQ5_3 Pin=R26-2
+Added Net: Name=NetQ5_3
+Add Differential Pair: Number of nets in differential pair CAN_H is 1 instead of 2

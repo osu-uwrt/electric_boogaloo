@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=V+ Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=V+ Pin=C10-1
+Removed Pin From Net: NetName=GND Pin=C10-2
+Added Component: Designator=C6(CAPACITOR_1206)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1804-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value (uF)"; Value = "10 uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CAPACITOR_1206)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1804-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value (uF)"; Value = "10 uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=V+ Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C3 100uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C4 0.1uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C5 22uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C6 10uF Ceramic 25V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C7 100uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C8 0.1uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C9 22uF electrolytic 35 V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C10 10uF Ceramic 25V

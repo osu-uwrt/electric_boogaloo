@@ -32,8 +32,8 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-IsVirtualBomDocumentRemoved=0
-OutputPath=
+IsVirtualBomDocumentRemoved=1
+OutputPath=Project Outputs for ESC
 LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
@@ -110,7 +110,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WJVVXHOC
 
 [Document5]
 DocumentPath=..\..\..\Library\Connectors.PcbLib
@@ -144,7 +144,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HVIEDDBW
 
 [Document7]
 DocumentPath=..\..\..\Library\Converter.PcbLib
@@ -178,7 +178,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document9]
 DocumentPath=..\..\..\Library\Crystals.PcbLib
@@ -212,7 +212,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOXQDNOZ
 
 [Document11]
 DocumentPath=..\..\..\Library\Diodes.PcbLib
@@ -280,7 +280,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MOYCOWBP
 
 [Document15]
 DocumentPath=..\..\..\Library\Inductors.PcbLib
@@ -314,7 +314,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document17]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
@@ -348,7 +348,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NBKHQIJD
 
 [Document19]
 DocumentPath=..\..\..\Library\Modules.PcbLib
@@ -416,7 +416,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JKKXLRTC
 
 [Document23]
 DocumentPath=..\..\..\Library\Switches.PcbLib
@@ -450,7 +450,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=RHMHFXDO
 
 [Document25]
 DocumentPath=..\..\..\Library\Transistors.PcbLib
@@ -484,7 +484,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LHXHEGVB
 
 [Document27]
 DocumentPath=..\..\..\Library\UWRT.PcbLib
@@ -518,7 +518,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LAAQHYVE
 
 [Document29]
 DocumentPath=ESC Order.OutJob
@@ -560,29 +560,21 @@ Variation2=Designator=J3|UniqueId=\HXTSEOKX|Kind=1|AlternatePart=
 Variation3=Designator=J12|UniqueId=\OMUQAOGO|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for ESC\Design Rule Check - ESC.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for ESC\Net Status - ESC.html
-DItemRevisionGUID=
-
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=01/08/2023
-
-[Parameter3]
 Name=ProjectTitle
 Value=ESC MK II
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=01/08/2023
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.1
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
@@ -607,6 +599,9 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Project Outputs for ESC
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1161,6 +1156,36 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
+OutputType12=Ansoft Neutral
+OutputName12=Ansoft Neutral (AutoPCB)
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
+OutputType13=HyperLynx
+OutputName13=HyperLynx (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=Orcad v7 Capture Design
+OutputName14=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=P-CAD ASCII
+OutputName15=P-CAD ASCII (AutoPCB)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD V16 Schematic Design
+OutputName16=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=SiSoft
+OutputName17=SiSoft (AutoPCB)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1659,8 +1684,8 @@ ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 ComponentLibIdentifierKind20=Library Name And Type
 ComponentLibraryIdentifier20=Resistors.SchLib
-ComponentDesignItemID20=RESISTOR_4.7K_0805
-ComponentSymbolReference20=RESISTOR_4.7K_0805
+ComponentDesignItemID20=RESISTOR_62_0603
+ComponentSymbolReference20=RESISTOR_62_0603
 ComponentUpdate20=1
 ComponentIsDeviceSheet20=0
 ComponentLibIdentifierKind21=Library Name And Type
@@ -1833,14 +1858,11 @@ ModelType13=PCBLIB
 ModelName13=RESISTOR_0603
 ModelUpdate13=1
 ModelType14=PCBLIB
-ModelName14=RESISTOR_0805
+ModelName14=SOD-123
 ModelUpdate14=1
 ModelType15=PCBLIB
-ModelName15=SOD-123
+ModelName15=SOT-223-4
 ModelUpdate15=1
-ModelType16=PCBLIB
-ModelName16=SOT-223-4
-ModelUpdate16=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

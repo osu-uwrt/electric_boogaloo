@@ -32,8 +32,8 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-IsVirtualBomDocumentRemoved=0
-OutputPath=
+IsVirtualBomDocumentRemoved=1
+OutputPath=Project Outputs for CameraCageBB
 LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
@@ -109,7 +109,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WJVVXHOC
 
 [Document5]
 DocumentPath=..\..\..\..\Library\Connectors.PcbLib
@@ -143,7 +143,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BDYVBFSS
+DocumentUniqueId=HVIEDDBW
 
 [Document7]
 DocumentPath=..\..\..\..\Library\Converter.PcbLib
@@ -177,7 +177,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document9]
 DocumentPath=..\..\..\..\Library\Crystals.PcbLib
@@ -211,7 +211,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOXQDNOZ
 
 [Document11]
 DocumentPath=..\..\..\..\Library\Diodes.PcbLib
@@ -245,7 +245,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LRDBLFBW
 
 [Document13]
 DocumentPath=..\..\..\..\Library\Fuses.PcbLib
@@ -313,7 +313,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document17]
 DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
@@ -347,7 +347,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NBKHQIJD
 
 [Document19]
 DocumentPath=..\..\..\..\Library\Modules.PcbLib
@@ -381,7 +381,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JTOMNKLG
 
 [Document21]
 DocumentPath=..\..\..\..\Library\Resistors.PcbLib
@@ -415,7 +415,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JKKXLRTC
 
 [Document23]
 DocumentPath=..\..\..\..\Library\Switches.PcbLib
@@ -449,7 +449,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=RHMHFXDO
 
 [Document25]
 DocumentPath=..\..\..\..\Library\Transistors.PcbLib
@@ -483,7 +483,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LHXHEGVB
 
 [Document27]
 DocumentPath=..\..\..\..\Library\UWRT.PcbLib
@@ -517,7 +517,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LAAQHYVE
 
 [Document29]
 DocumentPath=CameraCageBB Order.OutJob
@@ -536,225 +536,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\BOM\Bill of Materials-CameraCageBB.xlsx
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\DRC\CameraCageBB.html
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB.PcbDoc
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.REP
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB.SchDoc
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\ExportSTEP\CameraCageBB.step
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\NC Drill\CameraCageBB.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Copper_Signal_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Copper_Signal_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Legend_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Legend_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Paste_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Paste_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Soldermask_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\CameraCageBB_Soldermask_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\CameraCageBB Order.OutJob
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Capacitors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Capacitors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Connectors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Connectors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Converter.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Converter.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Crystals.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Crystals.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=Project Outputs for CameraCageBB\Design Rule Check - CameraCageBB.html
-DItemRevisionGUID=
-
-[GeneratedDocument30]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Diodes.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Diodes.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument32]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Fuses.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument33]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Fuses.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument34]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Inductors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument35]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Inductors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument36]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument37]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument38]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Modules.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument39]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Modules.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument40]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Resistors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument41]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Resistors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument42]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\RP2040.SchDot
-DItemRevisionGUID=
-
-[GeneratedDocument43]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
-DItemRevisionGUID=
-
-[GeneratedDocument44]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\GerberX2\SBH_Profile.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument45]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Switches.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument46]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Switches.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument47]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Transistors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument48]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\Transistors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument49]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\UWRT.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument50]
-DocumentPath=..\..\..\..\..\OutputJobs\MK2\CameraCageBB\Copy Files\OutOfProjectDir\UWRT.SchLib
-DItemRevisionGUID=
-
 [DeviceSheetFolder1]
 Path=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\TempestBoards\MK2\CameraCageBB\CameraCageBB\
 IncludeSubFolders=0
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=1/10/2023
-
-[Parameter3]
 Name=ProjectTitle
 Value=Camera Cage BB MK II
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=1/10/2023
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.1
 
 [DeviceSheet1]
 DocumentPath=..\..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
@@ -779,6 +579,9 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Project Outputs for CameraCageBB
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1321,6 +1124,36 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
+OutputType12=Ansoft Neutral
+OutputName12=Ansoft Neutral (AutoPCB)
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
+OutputType13=HyperLynx
+OutputName13=HyperLynx (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=Orcad v7 Capture Design
+OutputName14=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=P-CAD ASCII
+OutputName15=P-CAD ASCII (AutoPCB)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD V16 Schematic Design
+OutputName16=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=SiSoft
+OutputName17=SiSoft (AutoPCB)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1699,142 +1532,154 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Capacitors.SchLib
-ComponentDesignItemID0=CAPACITOR_10uF_0603
-ComponentSymbolReference0=CAPACITOR_10uF_0603
+ComponentDesignItemID0=CAPACITOR_0.1uF_0603
+ComponentSymbolReference0=CAPACITOR_0.1uF_0603
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=Connectors.SchLib
-ComponentDesignItemID1=CONN_JST_XH254_4POS_VERT
-ComponentSymbolReference1=CONN_JST_XH254_4POS_VERT
+ComponentLibraryIdentifier1=Capacitors.SchLib
+ComponentDesignItemID1=CAPACITOR_10uF_0603
+ComponentSymbolReference1=CAPACITOR_10uF_0603
 ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
 ComponentLibraryIdentifier2=Connectors.SchLib
-ComponentDesignItemID2=CONN_JST_XH254_5POS_VERT
-ComponentSymbolReference2=CONN_JST_XH254_5POS_VERT
+ComponentDesignItemID2=CONN_JST_GH_4POS_VERT
+ComponentSymbolReference2=CONN_JST_GH_4POS_VERT
 ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
 ComponentLibraryIdentifier3=Connectors.SchLib
-ComponentDesignItemID3=CONN_MICROUSB
-ComponentSymbolReference3=CONN_MICROUSB
+ComponentDesignItemID3=CONN_JST_XH254_3POS_VERT
+ComponentSymbolReference3=CONN_JST_XH254_3POS_VERT
 ComponentUpdate3=1
 ComponentIsDeviceSheet3=0
 ComponentLibIdentifierKind4=Library Name And Type
 ComponentLibraryIdentifier4=Connectors.SchLib
-ComponentDesignItemID4=CONN_MOLEX_KK254_3POS_R/A
-ComponentSymbolReference4=CONN_MOLEX_KK254_3POS_R/A
+ComponentDesignItemID4=CONN_JST_XH254_5POS_VERT
+ComponentSymbolReference4=CONN_JST_XH254_5POS_VERT
 ComponentUpdate4=1
 ComponentIsDeviceSheet4=0
 ComponentLibIdentifierKind5=Library Name And Type
 ComponentLibraryIdentifier5=Connectors.SchLib
-ComponentDesignItemID5=CONN_MOLEX_MINIFIT JR_2POS_R/A
-ComponentSymbolReference5=CONN_MOLEX_MINIFIT JR_2POS_R/A
+ComponentDesignItemID5=CONN_MICROUSB
+ComponentSymbolReference5=CONN_MICROUSB
 ComponentUpdate5=1
 ComponentIsDeviceSheet5=0
 ComponentLibIdentifierKind6=Library Name And Type
 ComponentLibraryIdentifier6=Connectors.SchLib
-ComponentDesignItemID6=CONN_MOLEX_MINIFIT JR_4POS_R/A
-ComponentSymbolReference6=CONN_MOLEX_MINIFIT JR_4POS_R/A
+ComponentDesignItemID6=CONN_MOLEX_MINIFIT JR_2POS_R/A
+ComponentSymbolReference6=CONN_MOLEX_MINIFIT JR_2POS_R/A
 ComponentUpdate6=1
 ComponentIsDeviceSheet6=0
 ComponentLibIdentifierKind7=Library Name And Type
 ComponentLibraryIdentifier7=Connectors.SchLib
-ComponentDesignItemID7=CONN_MOLEX_MINIFIT JR_4POS_VERT
-ComponentSymbolReference7=CONN_MOLEX_MINIFIT JR_4POS_VERT
+ComponentDesignItemID7=CONN_MOLEX_MINIFIT JR_4POS_R/A
+ComponentSymbolReference7=CONN_MOLEX_MINIFIT JR_4POS_R/A
 ComponentUpdate7=1
 ComponentIsDeviceSheet7=0
 ComponentLibIdentifierKind8=Library Name And Type
 ComponentLibraryIdentifier8=Connectors.SchLib
-ComponentDesignItemID8=CONN_MOLEX_MINIFIT JR_8POS_R/A
-ComponentSymbolReference8=CONN_MOLEX_MINIFIT JR_8POS_R/A
+ComponentDesignItemID8=CONN_MOLEX_MINIFIT JR_4POS_VERT
+ComponentSymbolReference8=CONN_MOLEX_MINIFIT JR_4POS_VERT
 ComponentUpdate8=1
 ComponentIsDeviceSheet8=0
 ComponentLibIdentifierKind9=Library Name And Type
-ComponentLibraryIdentifier9=Diodes.SchLib
-ComponentDesignItemID9=LED_Green_0603_3V
-ComponentSymbolReference9=LED_Green_0603_3V
+ComponentLibraryIdentifier9=Connectors.SchLib
+ComponentDesignItemID9=CONN_MOLEX_MINIFIT JR_8POS_R/A
+ComponentSymbolReference9=CONN_MOLEX_MINIFIT JR_8POS_R/A
 ComponentUpdate9=1
 ComponentIsDeviceSheet9=0
 ComponentLibIdentifierKind10=Library Name And Type
-ComponentLibraryIdentifier10=Diodes.SchLib
-ComponentDesignItemID10=Zener_Diode_10V_410mW
-ComponentSymbolReference10=Zener_Diode_10V_410mW
+ComponentLibraryIdentifier10=Connectors.SchLib
+ComponentDesignItemID10=HEADER_4PIN_2.54MM
+ComponentSymbolReference10=HEADER_4PIN_2.54MM
 ComponentUpdate10=1
 ComponentIsDeviceSheet10=0
 ComponentLibIdentifierKind11=Library Name And Type
 ComponentLibraryIdentifier11=Diodes.SchLib
-ComponentDesignItemID11=Zener_Diode_3.3V_250mW_1
-ComponentSymbolReference11=Zener_Diode_3.3V_250mW_1
+ComponentDesignItemID11=LED_Green_0603_3V
+ComponentSymbolReference11=LED_Green_0603_3V
 ComponentUpdate11=1
 ComponentIsDeviceSheet11=0
 ComponentLibIdentifierKind12=Library Name And Type
-ComponentLibraryIdentifier12=Integrated Circuits.SchLib
-ComponentDesignItemID12=LM1117IMPX-3.3/NOPB
-ComponentSymbolReference12=LM1117IMPX-3.3/NOPB
+ComponentLibraryIdentifier12=Diodes.SchLib
+ComponentDesignItemID12=Zener_Diode_10V_410mW
+ComponentSymbolReference12=Zener_Diode_10V_410mW
 ComponentUpdate12=1
 ComponentIsDeviceSheet12=0
 ComponentLibIdentifierKind13=Library Name And Type
-ComponentLibraryIdentifier13=Resistors.SchLib
-ComponentDesignItemID13=RESISTOR_100_0603
-ComponentSymbolReference13=RESISTOR_100_0603
+ComponentLibraryIdentifier13=Integrated Circuits.SchLib
+ComponentDesignItemID13=LM1117IMPX-3.3/NOPB
+ComponentSymbolReference13=LM1117IMPX-3.3/NOPB
 ComponentUpdate13=1
 ComponentIsDeviceSheet13=0
 ComponentLibIdentifierKind14=Library Name And Type
-ComponentLibraryIdentifier14=Resistors.SchLib
-ComponentDesignItemID14=RESISTOR_100K_0603
-ComponentSymbolReference14=RESISTOR_100K_0603
+ComponentLibraryIdentifier14=Integrated Circuits.SchLib
+ComponentDesignItemID14=SHT41-AD1B-R2
+ComponentSymbolReference14=SHT41-AD1B-R2
 ComponentUpdate14=1
 ComponentIsDeviceSheet14=0
 ComponentLibIdentifierKind15=Library Name And Type
 ComponentLibraryIdentifier15=Resistors.SchLib
-ComponentDesignItemID15=RESISTOR_10K_0402
-ComponentSymbolReference15=RESISTOR_10K_0402
+ComponentDesignItemID15=RESISTOR_10K_0603
+ComponentSymbolReference15=RESISTOR_10K_0603
 ComponentUpdate15=1
 ComponentIsDeviceSheet15=0
 ComponentLibIdentifierKind16=Library Name And Type
 ComponentLibraryIdentifier16=Resistors.SchLib
-ComponentDesignItemID16=RESISTOR_10K_0603
-ComponentSymbolReference16=RESISTOR_10K_0603
+ComponentDesignItemID16=RESISTOR_1K_0603
+ComponentSymbolReference16=RESISTOR_1K_0603
 ComponentUpdate16=1
 ComponentIsDeviceSheet16=0
 ComponentLibIdentifierKind17=Library Name And Type
 ComponentLibraryIdentifier17=Resistors.SchLib
-ComponentDesignItemID17=RESISTOR_4.7K_0805
-ComponentSymbolReference17=RESISTOR_4.7K_0805
+ComponentDesignItemID17=RESISTOR_2.1K_0603
+ComponentSymbolReference17=RESISTOR_2.1K_0603
 ComponentUpdate17=1
 ComponentIsDeviceSheet17=0
 ComponentLibIdentifierKind18=Library Name And Type
-ComponentLibraryIdentifier18=Transistors.SchLib
-ComponentDesignItemID18=AO3404A
-ComponentSymbolReference18=AO3404A
+ComponentLibraryIdentifier18=Resistors.SchLib
+ComponentDesignItemID18=RESISTOR_4.7K_0603
+ComponentSymbolReference18=RESISTOR_4.7K_0603
 ComponentUpdate18=1
 ComponentIsDeviceSheet18=0
 ComponentLibIdentifierKind19=Library Name And Type
-ComponentLibraryIdentifier19=Transistors.SchLib
-ComponentDesignItemID19=FDD4141
-ComponentSymbolReference19=FDD4141
+ComponentLibraryIdentifier19=Resistors.SchLib
+ComponentDesignItemID19=RESISTOR_62_0603
+ComponentSymbolReference19=RESISTOR_62_0603
 ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 ComponentLibIdentifierKind20=Library Name And Type
 ComponentLibraryIdentifier20=Transistors.SchLib
-ComponentDesignItemID20=SIR167DP-T1-GE3
-ComponentSymbolReference20=SIR167DP-T1-GE3
+ComponentDesignItemID20=AO3404A
+ComponentSymbolReference20=AO3404A
 ComponentUpdate20=1
 ComponentIsDeviceSheet20=0
 ComponentLibIdentifierKind21=Library Name And Type
 ComponentLibraryIdentifier21=Transistors.SchLib
-ComponentDesignItemID21=TSM500P02CX
-ComponentSymbolReference21=TSM500P02CX
+ComponentDesignItemID21=FDD4141
+ComponentSymbolReference21=FDD4141
 ComponentUpdate21=1
 ComponentIsDeviceSheet21=0
-ComponentLibIdentifierKind22=Library Name Only
-ComponentLibraryIdentifier22=Altium Content Vault
-ComponentDesignItemID22=CMP-1502-01702-1
-ComponentSymbolReference22=WE-CN-1P-2F-J8
+ComponentLibIdentifierKind22=Library Name And Type
+ComponentLibraryIdentifier22=Transistors.SchLib
+ComponentDesignItemID22=SIR167DP-T1-GE3
+ComponentSymbolReference22=SIR167DP-T1-GE3
 ComponentUpdate22=1
 ComponentIsDeviceSheet22=0
+ComponentLibIdentifierKind23=Library Name And Type
+ComponentLibraryIdentifier23=Transistors.SchLib
+ComponentDesignItemID23=TSM500P02CX
+ComponentSymbolReference23=TSM500P02CX
+ComponentUpdate23=1
+ComponentIsDeviceSheet23=0
+ComponentLibIdentifierKind24=Library Name Only
+ComponentLibraryIdentifier24=Altium Content Vault
+ComponentDesignItemID24=CMP-1502-01702-1
+ComponentSymbolReference24=WE-CN-1P-2F-J8
+ComponentUpdate24=1
+ComponentIsDeviceSheet24=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1854,57 +1699,57 @@ ParameterName1=Arrow_Electronics-Purchase-URL
 ParameterUpdate1=1
 ParameterName2=Availability
 ParameterUpdate2=1
-ParameterName3=Color
+ParameterName3=Check_prices
 ParameterUpdate3=1
-ParameterName4=Comment
+ParameterName4=Color
 ParameterUpdate4=1
-ParameterName5=Compliance
+ParameterName5=Comment
 ParameterUpdate5=1
-ParameterName6=Component Kind
+ParameterName6=Compliance
 ParameterUpdate6=1
-ParameterName7=ComponentLink1Description
+ParameterName7=Component Kind
 ParameterUpdate7=1
-ParameterName8=ComponentLink1URL
+ParameterName8=ComponentLink1Description
 ParameterUpdate8=1
-ParameterName9=Configuration
+ParameterName9=ComponentLink1URL
 ParameterUpdate9=1
-ParameterName10=Contact Resistance
+ParameterName10=Configuration
 ParameterUpdate10=1
-ParameterName11=Copyright
+ParameterName11=Contact Resistance
 ParameterUpdate11=1
-ParameterName12=Created By
+ParameterName12=Copyright
 ParameterUpdate12=1
-ParameterName13=Current Per Pin
+ParameterName13=Created By
 ParameterUpdate13=1
-ParameterName14=Datasheet URL
+ParameterName14=Current Per Pin
 ParameterUpdate14=1
-ParameterName15=Description
+ParameterName15=Datasheet URL
 ParameterUpdate15=1
-ParameterName16=Digikey Part Numer
+ParameterName16=Description
 ParameterUpdate16=1
-ParameterName17=DigiKey-Purchase-URL
+ParameterName17=Digikey Part Numer
 ParameterUpdate17=1
-ParameterName18=Entrance
+ParameterName18=DigiKey-Purchase-URL
 ParameterUpdate18=1
-ParameterName19=FET Type
+ParameterName19=Entrance
 ParameterUpdate19=1
-ParameterName20=Forward Current
+ParameterName20=FET Type
 ParameterUpdate20=1
-ParameterName21=Forward Voltage
+ParameterName21=Forward Current
 ParameterUpdate21=1
-ParameterName22=Library Reference
+ParameterName22=Forward Voltage
 ParameterUpdate22=1
-ParameterName23=Made By
+ParameterName23=Library Reference
 ParameterUpdate23=1
-ParameterName24=Manufacturer
+ParameterName24=Made By
 ParameterUpdate24=1
-ParameterName25=Manufacturer _Part_Number
+ParameterName25=Manufacturer
 ParameterUpdate25=1
-ParameterName26=Manufacturer URL
+ParameterName26=Manufacturer _Part_Number
 ParameterUpdate26=1
-ParameterName27=Manufacturer_Part_Number
+ParameterName27=Manufacturer URL
 ParameterUpdate27=1
-ParameterName28=Max Current Per Pin
+ParameterName28=Manufacturer_Part_Number
 ParameterUpdate28=1
 ParameterName29=MF
 ParameterUpdate29=1
@@ -1944,69 +1789,71 @@ ParameterName46=Price
 ParameterUpdate46=1
 ParameterName47=Publisher
 ParameterUpdate47=1
-ParameterName48=Rated Current
+ParameterName48=Purchase-URL
 ParameterUpdate48=1
-ParameterName49=Rds (on)
+ParameterName49=Rated Current
 ParameterUpdate49=1
-ParameterName50=RefDes
+ParameterName50=Rds (on)
 ParameterUpdate50=1
-ParameterName51=Series
+ParameterName51=RefDes
 ParameterUpdate51=1
-ParameterName52=SnapEDA_Link
+ParameterName52=Series
 ParameterUpdate52=1
-ParameterName53=SourceLibrary
+ParameterName53=SnapEDA_Link
 ParameterUpdate53=1
-ParameterName54=Supplier
+ParameterName54=SourceLibrary
 ParameterUpdate54=1
-ParameterName55=Supplier 1
+ParameterName55=Supplier
 ParameterUpdate55=1
-ParameterName56=Supplier Part Number 1
+ParameterName56=Supplier 1
 ParameterUpdate56=1
-ParameterName57=Texas_Instruments-Purchase-URL
+ParameterName57=Supplier Part Number 1
 ParameterUpdate57=1
-ParameterName58=Tolerance
+ParameterName58=Texas_Instruments-Purchase-URL
 ParameterUpdate58=1
-ParameterName59=Type
+ParameterName59=Tolerance
 ParameterUpdate59=1
-ParameterName60=Value
+ParameterName60=Type
 ParameterUpdate60=1
-ParameterName61=Value  (Ohms)
+ParameterName61=Value
 ParameterUpdate61=1
-ParameterName62=Value (uF)
+ParameterName62=Value  (Ohms)
 ParameterUpdate62=1
-ParameterName63=Vdss
+ParameterName63=Value (uF)
 ParameterUpdate63=1
-ParameterName64=Vendor
+ParameterName64=Vdss
 ParameterUpdate64=1
-ParameterName65=Verified By
+ParameterName65=Vendor
 ParameterUpdate65=1
-ParameterName66=Vgs (Max)
+ParameterName66=Verified By
 ParameterUpdate66=1
-ParameterName67=Vgs (th)
+ParameterName67=Vgs (Max)
 ParameterUpdate67=1
-ParameterName68=Voltage
+ParameterName68=Vgs (th)
 ParameterUpdate68=1
-ParameterName69=Voltage - Zener
+ParameterName69=Voltage
 ParameterUpdate69=1
-ParameterName70=Wattage
+ParameterName70=Voltage - Zener
 ParameterUpdate70=1
-ParameterName71=Withstanding Voltage
+ParameterName71=Wattage
 ParameterUpdate71=1
-ParameterName72=Working Voltage
+ParameterName72=Withstanding Voltage
 ParameterUpdate72=1
+ParameterName73=Working Voltage
+ParameterUpdate73=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=0022057038
+ModelName0=615008142621
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=615008142621
+ModelName1=CAPACITOR_0603
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=CAPACITOR_0603
+ModelName2=CONN_JST_BM04B-GHS-TBT(LF)(SN)(N)
 ModelUpdate2=1
 ModelType3=PCBLIB
-ModelName3=CONN_JST_XH254_4POS_VERT
+ModelName3=CONN_JST_XH254_3POS_VERT
 ModelUpdate3=1
 ModelType4=PCBLIB
 ModelName4=CONN_JST_XH254_5POS_VERT
@@ -2030,19 +1877,19 @@ ModelType10=PCBLIB
 ModelName10=DPAK_ONS
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=LED_0603
+ModelName11=HEADER_4PIN_2.54MM
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=MOSFET_7DP-T1-GE3_VIS
+ModelName12=HEADER_MIRRORED_4PIN_2.54MM
 ModelUpdate12=1
 ModelType13=PCBLIB
-ModelName13=RESISTOR_0402
+ModelName13=LED_0603
 ModelUpdate13=1
 ModelType14=PCBLIB
-ModelName14=RESISTOR_0603
+ModelName14=MOSFET_7DP-T1-GE3_VIS
 ModelUpdate14=1
 ModelType15=PCBLIB
-ModelName15=RESISTOR_0805
+ModelName15=RESISTOR_0603
 ModelUpdate15=1
 ModelType16=PCBLIB
 ModelName16=SOD-123
@@ -2053,6 +1900,9 @@ ModelUpdate17=1
 ModelType18=PCBLIB
 ModelName18=SOT-23-3
 ModelUpdate18=1
+ModelType19=PCBLIB
+ModelName19=XDCR_SHT41-AD1B-R2
+ModelUpdate19=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

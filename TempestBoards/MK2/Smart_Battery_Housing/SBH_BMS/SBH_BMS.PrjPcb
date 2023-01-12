@@ -32,8 +32,8 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-IsVirtualBomDocumentRemoved=0
-OutputPath=
+IsVirtualBomDocumentRemoved=1
+OutputPath=Project Outputs for SBH_BMS
 LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
@@ -92,7 +92,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WJVVXHOC
 
 [Document4]
 DocumentPath=..\..\..\..\Library\Connectors.PcbLib
@@ -126,7 +126,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BDYVBFSS
+DocumentUniqueId=HVIEDDBW
 
 [Document6]
 DocumentPath=..\..\..\..\Library\Converter.PcbLib
@@ -160,7 +160,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document8]
 DocumentPath=..\..\..\..\Library\Crystals.PcbLib
@@ -194,7 +194,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOXQDNOZ
 
 [Document10]
 DocumentPath=..\..\..\..\Library\Diodes.PcbLib
@@ -228,7 +228,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LRDBLFBW
 
 [Document12]
 DocumentPath=..\..\..\..\Library\Fuses.PcbLib
@@ -296,7 +296,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document16]
 DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
@@ -364,7 +364,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JTOMNKLG
 
 [Document20]
 DocumentPath=..\..\..\..\Library\PCAP_8x5_4-ELECT_NCA.step
@@ -449,7 +449,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=RHMHFXDO
 
 [Document25]
 DocumentPath=..\..\..\..\Library\Transistors.PcbLib
@@ -517,7 +517,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LAAQHYVE
 
 [Document29]
 DocumentPath=SBM_BMS.PcbDoc
@@ -553,97 +553,21 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for SBH_BMS\Design Rule Check - SBM_BMS.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS-RoundHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS-SlotHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GM
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for SBH_BMS\SBM_BMS.REP
-DItemRevisionGUID=
-
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=Smart Battery Housing | BMS
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=1/10/2022
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.1
 
 [DiffPairSuffix1]
 Positive=_H
@@ -658,6 +582,9 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Project Outputs for SBH_BMS
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1220,6 +1147,36 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
+OutputType12=Ansoft Neutral
+OutputName12=Ansoft Neutral (AutoPCB)
+OutputDocumentPath12=
+OutputVariantName12=
+OutputDefault12=0
+OutputType13=HyperLynx
+OutputName13=HyperLynx (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=Orcad v7 Capture Design
+OutputName14=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=P-CAD ASCII
+OutputName15=P-CAD ASCII (AutoPCB)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD V16 Schematic Design
+OutputName16=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=SiSoft
+OutputName17=SiSoft (AutoPCB)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1670,88 +1627,106 @@ ComponentUpdate11=1
 ComponentIsDeviceSheet11=0
 ComponentLibIdentifierKind12=Library Name And Type
 ComponentLibraryIdentifier12=Fuses.SchLib
-ComponentDesignItemID12=ITV9550L2045MR
-ComponentSymbolReference12=ITV9550L2045MR
+ComponentDesignItemID12=ERB-RE5R00V
+ComponentSymbolReference12=ERB-RE5R00V
 ComponentUpdate12=1
 ComponentIsDeviceSheet12=0
 ComponentLibIdentifierKind13=Library Name And Type
-ComponentLibraryIdentifier13=Integrated Circuits.SchLib
-ComponentDesignItemID13=BQ40Z80RSMT
-ComponentSymbolReference13=BQ40Z80RSMT
+ComponentLibraryIdentifier13=Fuses.SchLib
+ComponentDesignItemID13=ITV9550L2045MR
+ComponentSymbolReference13=ITV9550L2045MR
 ComponentUpdate13=1
 ComponentIsDeviceSheet13=0
 ComponentLibIdentifierKind14=Library Name And Type
 ComponentLibraryIdentifier14=Integrated Circuits.SchLib
-ComponentDesignItemID14=MAX4520EUT+T
-ComponentSymbolReference14=MAX4520EUT+T
+ComponentDesignItemID14=BQ40Z80RSMT
+ComponentSymbolReference14=BQ40Z80RSMT
 ComponentUpdate14=1
 ComponentIsDeviceSheet14=0
 ComponentLibIdentifierKind15=Library Name And Type
-ComponentLibraryIdentifier15=Resistors.SchLib
-ComponentDesignItemID15=JUMPER_0_0603
-ComponentSymbolReference15=JUMPER_0_0603
+ComponentLibraryIdentifier15=Integrated Circuits.SchLib
+ComponentDesignItemID15=MAX4520EUT+T
+ComponentSymbolReference15=MAX4520EUT+T
 ComponentUpdate15=1
 ComponentIsDeviceSheet15=0
 ComponentLibIdentifierKind16=Library Name And Type
 ComponentLibraryIdentifier16=Resistors.SchLib
-ComponentDesignItemID16=RESISTOR_100_0402
-ComponentSymbolReference16=RESISTOR_100_0402
+ComponentDesignItemID16=JUMPER_0_0603
+ComponentSymbolReference16=JUMPER_0_0603
 ComponentUpdate16=1
 ComponentIsDeviceSheet16=0
 ComponentLibIdentifierKind17=Library Name And Type
 ComponentLibraryIdentifier17=Resistors.SchLib
-ComponentDesignItemID17=RESISTOR_10K_0402
-ComponentSymbolReference17=RESISTOR_10K_0402
+ComponentDesignItemID17=RESISTOR_100_0402
+ComponentSymbolReference17=RESISTOR_100_0402
 ComponentUpdate17=1
 ComponentIsDeviceSheet17=0
 ComponentLibIdentifierKind18=Library Name And Type
 ComponentLibraryIdentifier18=Resistors.SchLib
-ComponentDesignItemID18=RESISTOR_1K_0402
-ComponentSymbolReference18=RESISTOR_1K_0402
+ComponentDesignItemID18=RESISTOR_10K_0402
+ComponentSymbolReference18=RESISTOR_10K_0402
 ComponentUpdate18=1
 ComponentIsDeviceSheet18=0
 ComponentLibIdentifierKind19=Library Name And Type
 ComponentLibraryIdentifier19=Resistors.SchLib
-ComponentDesignItemID19=RESISTOR_1M_0603
-ComponentSymbolReference19=RESISTOR_1M_0603
+ComponentDesignItemID19=RESISTOR_10K_0603
+ComponentSymbolReference19=RESISTOR_10K_0603
 ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 ComponentLibIdentifierKind20=Library Name And Type
 ComponentLibraryIdentifier20=Resistors.SchLib
-ComponentDesignItemID20=RESISTOR_1m_0805
-ComponentSymbolReference20=RESISTOR_1m_0805
+ComponentDesignItemID20=RESISTOR_1K_0402
+ComponentSymbolReference20=RESISTOR_1K_0402
 ComponentUpdate20=1
 ComponentIsDeviceSheet20=0
 ComponentLibIdentifierKind21=Library Name And Type
 ComponentLibraryIdentifier21=Resistors.SchLib
-ComponentDesignItemID21=RESISTOR_20K_0402
-ComponentSymbolReference21=RESISTOR_20K_0402
+ComponentDesignItemID21=RESISTOR_1M_0603
+ComponentSymbolReference21=RESISTOR_1M_0603
 ComponentUpdate21=1
 ComponentIsDeviceSheet21=0
 ComponentLibIdentifierKind22=Library Name And Type
 ComponentLibraryIdentifier22=Resistors.SchLib
-ComponentDesignItemID22=RESISTOR_2K_0402
-ComponentSymbolReference22=RESISTOR_2K_0402
+ComponentDesignItemID22=RESISTOR_1m_CS
+ComponentSymbolReference22=RESISTOR_1m_CS
 ComponentUpdate22=1
 ComponentIsDeviceSheet22=0
 ComponentLibIdentifierKind23=Library Name And Type
-ComponentLibraryIdentifier23=Transistors.SchLib
-ComponentDesignItemID23=AO3404A
-ComponentSymbolReference23=AO3404A
+ComponentLibraryIdentifier23=Resistors.SchLib
+ComponentDesignItemID23=RESISTOR_20K_0402
+ComponentSymbolReference23=RESISTOR_20K_0402
 ComponentUpdate23=1
 ComponentIsDeviceSheet23=0
 ComponentLibIdentifierKind24=Library Name And Type
-ComponentLibraryIdentifier24=Transistors.SchLib
-ComponentDesignItemID24=MMBT2907A-7-F
-ComponentSymbolReference24=MMBT2907A-7-F
+ComponentLibraryIdentifier24=Resistors.SchLib
+ComponentDesignItemID24=RESISTOR_2K_0402
+ComponentSymbolReference24=RESISTOR_2K_0402
 ComponentUpdate24=1
 ComponentIsDeviceSheet24=0
 ComponentLibIdentifierKind25=Library Name And Type
 ComponentLibraryIdentifier25=Transistors.SchLib
-ComponentDesignItemID25=PSMN4R4-80BS,118
-ComponentSymbolReference25=PSMN4R4-80BS,118
+ComponentDesignItemID25=AO3404A
+ComponentSymbolReference25=AO3404A
 ComponentUpdate25=1
 ComponentIsDeviceSheet25=0
+ComponentLibIdentifierKind26=Library Name And Type
+ComponentLibraryIdentifier26=Transistors.SchLib
+ComponentDesignItemID26=MMBT2907A-7-F
+ComponentSymbolReference26=MMBT2907A-7-F
+ComponentUpdate26=1
+ComponentIsDeviceSheet26=0
+ComponentLibIdentifierKind27=Library Name And Type
+ComponentLibraryIdentifier27=Transistors.SchLib
+ComponentDesignItemID27=PSMN4R4-80BS,118
+ComponentSymbolReference27=PSMN4R4-80BS,118
+ComponentUpdate27=1
+ComponentIsDeviceSheet27=0
+ComponentLibIdentifierKind28=Library Name And Type
+ComponentLibraryIdentifier28=Transistors.SchLib
+ComponentDesignItemID28=TSM500P02CX
+ComponentSymbolReference28=TSM500P02CX
+ComponentUpdate28=1
+ComponentIsDeviceSheet28=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1910,13 +1885,13 @@ ModelType9=PCBLIB
 ModelName9=Redcube M4 Term 85A
 ModelUpdate9=1
 ModelType10=PCBLIB
-ModelName10=RESISTOR_0402
+ModelName10=RES_CSS2H-3920
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=RESISTOR_0603
+ModelName11=RESISTOR_0402
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=RESISTOR_0805
+ModelName12=RESISTOR_0603
 ModelUpdate12=1
 ModelType13=PCBLIB
 ModelName13=SOD-123
