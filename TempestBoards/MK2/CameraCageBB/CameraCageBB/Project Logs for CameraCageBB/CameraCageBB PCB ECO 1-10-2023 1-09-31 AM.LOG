@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=ORIN_PWR Pin=J17-2
-Removed Pin From Net: NetName=GND_RP2CAN Pin=J17-3
-Added Pin To Net: NetName=GND_RP2CAN Pin=J17-2
-Added Pin To Net: NetName=ORIN_PWR Pin=J17-3
-Added Member To Class: ClassName=CameraCageBB Member=Component J17 Mini-Fit Jr R/A

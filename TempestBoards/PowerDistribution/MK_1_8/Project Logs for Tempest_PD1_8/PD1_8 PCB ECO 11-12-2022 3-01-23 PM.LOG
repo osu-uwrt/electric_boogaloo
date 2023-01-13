@@ -1,8 +1,0 @@
-Change Component Designator: OldDesignator=COMPUTER NewDesignator=CPU
-Change Component Designator: OldDesignator=J? NewDesignator=NET
-Added Pin To Net: NetName=+12 Pin=NET-1
-Added Pin To Net: NetName=+5 Pin=NET-2
-Added Pin To Net: NetName=GND Pin=NET-3
-Added Pin To Net: NetName=GND Pin=NET-4
-Added Member To Class: ClassName=PD1_8 Member=Component NET 4 POS R/A
-Added Room: Name=PD1_8

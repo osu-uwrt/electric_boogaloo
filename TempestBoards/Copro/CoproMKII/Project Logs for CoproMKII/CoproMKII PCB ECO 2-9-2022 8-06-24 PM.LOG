@@ -1,7 +1,0 @@
-Removed Pin From Net: NetName=USB_VCC Pin=D6-5
-Removed Pin From Net: NetName=USB_VCC Pin=J3-1
-Added Pin To Net: NetName=Copro_USB_VCC Pin=D6-5
-Added Pin To Net: NetName=Copro_USB_VCC Pin=J3-1
-Added Net: Name=Copro_USB_VCC
-Added Room: Name=CoproMKII_Connectors
-Added Room: Name=CoproMKII_Coprocessor

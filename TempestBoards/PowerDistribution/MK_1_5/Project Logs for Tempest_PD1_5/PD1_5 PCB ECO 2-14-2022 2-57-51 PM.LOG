@@ -1,7 +1,0 @@
-Removed Pin From Net: NetName=Killswitch Pin=J?-1
-Removed Pin From Net: NetName=3V3 Pin=J?-2
-Removed Pin From Net: NetName=GND Pin=J?-4
-Added Pin To Net: NetName=3V3 Pin=J?-1
-Added Pin To Net: NetName=GND Pin=J?-2
-Added Pin To Net: NetName=Killswitch Pin=J?-4
-Added Member To Class: ClassName=PD1_5 Member=Component SB? 0 Ohm Jumper No Fit
