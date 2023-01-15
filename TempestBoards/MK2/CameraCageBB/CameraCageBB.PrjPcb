@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
 IsVirtualBomDocumentRemoved=1
-OutputPath=Project Outputs for CameraCageBB
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
@@ -78,7 +78,7 @@ GenerateClassCluster=0
 DocumentUniqueId=VKVIVGXI
 
 [Document3]
-DocumentPath=..\..\..\..\Library\Capacitors.PcbLib
+DocumentPath=CameraCageBB Order.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -95,7 +95,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document4]
-DocumentPath=..\..\..\..\Library\Capacitors.SchLib
+DocumentPath=..\..\..\Library\Capacitors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -109,10 +109,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WJVVXHOC
+DocumentUniqueId=
 
 [Document5]
-DocumentPath=..\..\..\..\Library\Connectors.PcbLib
+DocumentPath=..\..\..\Library\Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -126,10 +126,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KBCGNCQN
+DocumentUniqueId=
 
 [Document6]
-DocumentPath=..\..\..\..\Library\Connectors.SchLib
+DocumentPath=..\..\..\Library\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -143,10 +143,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HVIEDDBW
+DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\..\..\Library\Converter.PcbLib
+DocumentPath=..\..\..\Library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -163,7 +163,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
-DocumentPath=..\..\..\..\Library\Converter.SchLib
+DocumentPath=..\..\..\Library\Converter.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -177,10 +177,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=PWXGOYMI
+DocumentUniqueId=
 
 [Document9]
-DocumentPath=..\..\..\..\Library\Crystals.PcbLib
+DocumentPath=..\..\..\Library\Converter.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -197,7 +197,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document10]
-DocumentPath=..\..\..\..\Library\Crystals.SchLib
+DocumentPath=..\..\..\Library\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -211,10 +211,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GOXQDNOZ
+DocumentUniqueId=
 
 [Document11]
-DocumentPath=..\..\..\..\Library\Diodes.PcbLib
+DocumentPath=..\..\..\Library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -231,7 +231,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document12]
-DocumentPath=..\..\..\..\Library\Diodes.SchLib
+DocumentPath=..\..\..\Library\Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -245,10 +245,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LRDBLFBW
+DocumentUniqueId=
 
 [Document13]
-DocumentPath=..\..\..\..\Library\Fuses.PcbLib
+DocumentPath=..\..\..\Library\Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -265,7 +265,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document14]
-DocumentPath=..\..\..\..\Library\Fuses.SchLib
+DocumentPath=..\..\..\Library\Fuses.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -279,10 +279,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=MOYCOWBP
+DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\..\..\..\Library\Inductors.PcbLib
+DocumentPath=..\..\..\Library\Fuses.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -299,7 +299,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\..\..\Library\Inductors.SchLib
+DocumentPath=..\..\..\Library\Inductors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -313,10 +313,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JGNOYZNR
+DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
+DocumentPath=..\..\..\Library\Inductors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -333,7 +333,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document18]
-DocumentPath=..\..\..\..\Library\Integrated Circuits.SchLib
+DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -347,10 +347,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NBKHQIJD
+DocumentUniqueId=
 
 [Document19]
-DocumentPath=..\..\..\..\Library\Modules.PcbLib
+DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -367,7 +367,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document20]
-DocumentPath=..\..\..\..\Library\Modules.SchLib
+DocumentPath=..\..\..\Library\Modules.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -381,10 +381,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JTOMNKLG
+DocumentUniqueId=
 
 [Document21]
-DocumentPath=..\..\..\..\Library\Resistors.PcbLib
+DocumentPath=..\..\..\Library\Modules.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -398,10 +398,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LBXKYAFM
+DocumentUniqueId=
 
 [Document22]
-DocumentPath=..\..\..\..\Library\Resistors.SchLib
+DocumentPath=..\..\..\Library\Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -415,10 +415,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JKKXLRTC
+DocumentUniqueId=
 
 [Document23]
-DocumentPath=..\..\..\..\Library\Switches.PcbLib
+DocumentPath=..\..\..\Library\Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -435,7 +435,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document24]
-DocumentPath=..\..\..\..\Library\Switches.SchLib
+DocumentPath=..\..\..\Library\Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -449,10 +449,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=RHMHFXDO
+DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\..\..\..\Library\Transistors.PcbLib
+DocumentPath=..\..\..\Library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -469,7 +469,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document26]
-DocumentPath=..\..\..\..\Library\Transistors.SchLib
+DocumentPath=..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -483,10 +483,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LHXHEGVB
+DocumentUniqueId=
 
 [Document27]
-DocumentPath=..\..\..\..\Library\UWRT.PcbLib
+DocumentPath=..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -503,7 +503,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document28]
-DocumentPath=..\..\..\..\Library\UWRT.SchLib
+DocumentPath=..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -517,10 +517,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LAAQHYVE
+DocumentUniqueId=
 
 [Document29]
-DocumentPath=CameraCageBB Order.OutJob
+DocumentPath=..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -541,32 +541,32 @@ Path=C:\Users\Flipt\Documents\OSU\UWRT\electric_boogaloo\TempestBoards\MK2\Camer
 IncludeSubFolders=0
 
 [Parameter1]
-Name=TeamLead
-Value=Robert Pafford
-
-[Parameter2]
-Name=ProjectTitle
-Value=Camera Cage BB MK II
-
-[Parameter3]
-Name=DateOfDesignReview
-Value=1/10/2023
-
-[Parameter4]
 Name=BoardRevision
 Value=1.1
 
+[Parameter2]
+Name=DateOfDesignReview
+Value=1/10/2023
+
+[Parameter3]
+Name=ProjectTitle
+Value=Camera Cage BB MK II
+
+[Parameter4]
+Name=TeamLead
+Value=Robert Pafford
+
 [DeviceSheet1]
-DocumentPath=..\..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
+DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 GenerateClassCluster=0
 
 [DeviceSheet2]
-DocumentPath=..\..\..\..\Device_Sheets\RP2040.SchDot
+DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 GenerateClassCluster=0
 
@@ -581,7 +581,7 @@ ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
 [Generic_EDE]
-OutputDir=Project Outputs for CameraCageBB
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1124,36 +1124,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
