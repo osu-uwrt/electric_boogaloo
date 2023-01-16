@@ -1,4 +1,4 @@
-# electric_boogaloo
-Electrical Team working environment for Altium files, preferences, templates, and rules. 
+# OSU UWRT Altium Designs Repository
+UWRT Electrical Team working environment for Altium boards and library files
 
 
