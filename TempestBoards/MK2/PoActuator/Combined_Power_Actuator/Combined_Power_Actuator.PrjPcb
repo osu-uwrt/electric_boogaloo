@@ -203,23 +203,6 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document10]
-DocumentPath=Poactuator_Circuits.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ZMEAUWCL
-
-[Document11]
 DocumentPath=ActuatorMKII_Circuits.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GNHLYDKY
 
-[Document12]
+[Document11]
 DocumentPath=ActuatorMKII_Microcontroller.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,6 +235,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJLRUEPR
+
+[Document12]
+DocumentPath=Poactuator_Circuits2.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AKAFEBRQ
 
 [Document13]
 DocumentPath=ActuatorMKII_Connectors.SchDoc
@@ -781,7 +781,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LAAQHYVE
 
 [Document44]
-DocumentPath=Poactuator_Circuits2.SchDoc
+DocumentPath=Poactuator_Power_Circuits.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -795,7 +795,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=AKAFEBRQ
+DocumentUniqueId=NLSQBFLQ
 
 [Parameter1]
 Name=BoardRevision
