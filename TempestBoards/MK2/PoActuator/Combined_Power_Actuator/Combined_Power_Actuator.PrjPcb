@@ -237,23 +237,6 @@ GenerateClassCluster=0
 DocumentUniqueId=GNHLYDKY
 
 [Document12]
-DocumentPath=ActuatorMKII_Connectors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IOMZFQGD
-
-[Document13]
 DocumentPath=ActuatorMKII_Microcontroller.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -269,6 +252,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJLRUEPR
+
+[Document13]
+DocumentPath=ActuatorMKII_Connectors.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IOMZFQGD
 
 [Document14]
 DocumentPath=ActuatorMKII_Torpedoes.SchDoc
@@ -319,7 +319,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WJVVXHOC
 
 [Document17]
 DocumentPath=..\..\..\..\Library\Connectors.PcbLib
@@ -557,7 +557,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NBKHQIJD
 
 [Document31]
 DocumentPath=..\..\..\..\Library\LFXTAL014160REEL.PcbLib
@@ -795,7 +795,24 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LAAQHYVE
+
+[Document45]
+DocumentPath=Poactuator_Circuits2.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AKAFEBRQ
 
 [Parameter1]
 Name=BoardRevision
