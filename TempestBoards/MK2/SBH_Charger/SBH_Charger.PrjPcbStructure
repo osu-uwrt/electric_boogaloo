@@ -1,6 +1,3 @@
-Record=TopLevelDocument|FileName=SBH_Charger_Connectors.SchDoc|SheetNumber=1
-Record=SheetSymbol|SourceDocument=SBH_Charger_Connectors.SchDoc|Designator=Main Schematic|SchDesignator=Main Schematic|FileName=SBH_Charger_Main.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=SBH_Charger_Main.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=SBH_Charger_Main.SchDoc|Designator=U_RP2040_with_CAN|SchDesignator=U_RP2040_with_CAN|FileName=RP2040_with_CAN.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040_with_CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=RP2040_with_CAN.SchDot|Designator=U_RP2040_C|SchDesignator=U_RP2040_C|FileName=RP2040.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=SBH_Charger_Connectors.SchDoc|FileName=SBH_Charger_rp2040.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=SBH_Charger_Connectors.SchDoc|FileName=SBH_Charger_USB_PD.SchDoc|SheetNumber=4
+Record=TopLevelDocument|FileName=SBH_Charger_Main.SchDoc|SheetNumber=2
+Record=SheetSymbol|SourceDocument=SBH_Charger_Main.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=SBH_Charger_USB_PD.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=SBH_Charger_USB_PD.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=SBH_Charger_Main.SchDoc|FileName=SBH_Charger_Connectors.SchDoc|SheetNumber=1
