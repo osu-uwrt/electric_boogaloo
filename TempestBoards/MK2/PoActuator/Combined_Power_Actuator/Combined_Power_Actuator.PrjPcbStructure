@@ -1,9 +1,10 @@
-Record=TopLevelDocument|FileName=ActuatorMKII_Connectors.SchDoc|SheetNumber=5
-Record=SheetSymbol|SourceDocument=ActuatorMKII_Connectors.SchDoc|Designator=U_ActuatorMKII_Circuits|SchDesignator=U_ActuatorMKII_Circuits|FileName=ActuatorMKII_Circuits.SchDoc|SheetNumber=6|SymbolType=Normal|RawFileName=ActuatorMKII_Circuits.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=ActuatorMKII_Connectors.SchDoc|Designator=U_ActuatorMKII_Microcontroller|SchDesignator=U_ActuatorMKII_Microcontroller|FileName=ActuatorMKII_Microcontroller.SchDoc|SheetNumber=7|SymbolType=Normal|RawFileName=ActuatorMKII_Microcontroller.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=PD_MK2_Connectors.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=PD_MK2_Power.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=PD_MK2_Signals.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=Poactuator_Circuits2.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=Poactuator_Microcontroller.SchDoc|SheetNumber=9
-Record=NoMainPathDocument|SourceDocument=ActuatorMKII_Connectors.SchDoc|FileName=Poactuator_Power_Circuits.SchDoc|SheetNumber=8
+Record=TopLevelDocument|FileName=Poactuator_Connectors.SchDoc|SheetNumber=6
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_ActuatorMKII_Circuits|SchDesignator=U_ActuatorMKII_Circuits|FileName=ActuatorMKII_Circuits.SchDoc|SheetNumber=9|SymbolType=Normal|RawFileName=ActuatorMKII_Circuits.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_ActuatorMKII_Microcontroller|SchDesignator=U_ActuatorMKII_Microcontroller|FileName=ActuatorMKII_Microcontroller.SchDoc|SheetNumber=10|SymbolType=Normal|RawFileName=ActuatorMKII_Microcontroller.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_PD_MK2_Power|SchDesignator=U_PD_MK2_Power|FileName=PD_MK2_Power.SchDoc|SheetNumber=8|SymbolType=Normal|RawFileName=PD_MK2_Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_PD_MK2_Signals|SchDesignator=U_PD_MK2_Signals|FileName=PD_MK2_Signals.SchDoc|SheetNumber=7|SymbolType=Normal|RawFileName=PD_MK2_Signals.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=Poactuator_Connectors.SchDoc|FileName=ActuatorMKII_Connectors.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Poactuator_Connectors.SchDoc|FileName=PD_MK2_Connectors.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Poactuator_Connectors.SchDoc|FileName=Poactuator_Circuits2.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Poactuator_Connectors.SchDoc|FileName=Poactuator_Microcontroller.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Poactuator_Connectors.SchDoc|FileName=Poactuator_Power_Circuits.SchDoc|SheetNumber=4
