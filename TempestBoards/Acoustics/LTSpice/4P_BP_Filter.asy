@@ -1,0 +1,14 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 -16 -64 -16
+LINE Normal 128 -16 160 -16
+RECTANGLE Normal 128 32 -32 -64
+ARC Normal 48 -80 -48 16 0 16 48 -32
+ARC Normal 48 -80 144 16 48 -32 96 16
+TEXT -81 -97 Left 2 4 Pole Band Pass Filter
+PIN -64 -16 BOTTOM 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 160 -16 BOTTOM 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
