@@ -1,6 +1,15 @@
 Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TempestBoards\Acoustics\LTSpice\Acoustics System.asc
 
-WARNING: Less than two connections to node n001.  This node is used by r:x2:1.
+v1: Removing PWL point (0.257276,-0.269776)
+v1: Removing PWL point (0.563916,-0.226441)
+v1: Removing PWL point (0.8353,-0.270996)
+v1: Removing PWL point (0.904064,-0.248108)
+v1: Removing PWL point (1.04376,-0.290833)
+v1: Removing PWL point (1.0937,-0.281067)
+v1: Removing PWL point (1.67211,-0.231629)
+v1: Removing PWL point (2.18315,-0.235596)
+v1: Removing PWL point (3.0471,-0.290833)
+v1: Removing PWL point (3.71184,-0.313416)
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -22,21 +31,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Mon Nov 13 19:26:05 2023
-Total elapsed time: 0.067 seconds.
+Date: Mon Nov 20 20:48:47 2023
+Total elapsed time: 173.021 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2433
-traniter = 2084
-tranpoints = 1043
-accept = 1043
-rejected = 0
-matrix size = 11
-fillins = 0
+totiter = 48121106
+traniter = 48120757
+tranpoints = 19768184
+accept = 15030399
+rejected = 4737785
+matrix size = 22
+fillins = 1
 solver = Normal
-Avg thread counts: 2.9/4.8/4.8/2.9
-Matrix Compiler1: 468 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 861 bytes object code size  0.1/0.2/[0.1]
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: 802 bytes object code size  0.3/0.2/[0.2]
+Matrix Compiler2: 1.54 KB object code size  0.2/0.2/[0.2]
 
