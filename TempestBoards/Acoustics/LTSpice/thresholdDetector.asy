@@ -1,0 +1,17 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -24 16 -48 16
+LINE Normal -24 -16 -24 16
+LINE Normal 24 -16 -24 -16
+LINE Normal 24 16 24 -16
+LINE Normal 48 16 24 16
+LINE Normal -64 0 -112 0
+LINE Normal 112 0 64 0
+RECTANGLE Normal 64 -32 -64 32
+TEXT -104 -58 Left 2 Threshold Detector
+PIN -112 0 BOTTOM 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 112 0 BOTTOM 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
