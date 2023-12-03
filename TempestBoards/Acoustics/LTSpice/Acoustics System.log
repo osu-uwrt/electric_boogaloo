@@ -1,9 +1,15 @@
 Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TempestBoards\Acoustics\LTSpice\Acoustics System.asc
 
-v1: Removing PWL point (0.007276,-0.269776)
-v1: Removing PWL point (0.313916,-0.226441)
-v1: Removing PWL point (0.5853,-0.270996)
-v1: Removing PWL point (0.654064,-0.248108)
+v1: Removing PWL point (0.257276,-0.269776)
+v1: Removing PWL point (0.563916,-0.226441)
+v1: Removing PWL point (0.8353,-0.270996)
+v1: Removing PWL point (0.904064,-0.248108)
+v1: Removing PWL point (1.04376,-0.290833)
+v1: Removing PWL point (1.0937,-0.281067)
+v1: Removing PWL point (1.67211,-0.231629)
+v1: Removing PWL point (2.18315,-0.235596)
+v1: Removing PWL point (3.0471,-0.290833)
+v1: Removing PWL point (3.71184,-0.313416)
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -25,21 +31,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sun Dec  3 12:30:29 2023
-Total elapsed time: 12.478 seconds.
+Date: Sun Dec  3 13:01:33 2023
+Total elapsed time: 141.578 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2753131
-traniter = 2752746
-tranpoints = 1041340
-accept = 807170
-rejected = 234170
-matrix size = 29
-fillins = 1
+totiter = 22084975
+traniter = 22084590
+tranpoints = 8184300
+accept = 6347930
+rejected = 1836370
+matrix size = 37
+fillins = 4
 solver = Normal
-Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1: 1.02 KB object code size  0.3/0.2/[0.1]
-Matrix Compiler2: 2.05 KB object code size  0.2/0.3/[0.2]
+Avg thread counts: 2.0/1.0/1.0/1.0
+Matrix Compiler1: 1.46 KB object code size  0.5/0.3/[0.3]
+Matrix Compiler2: 2.84 KB object code size  0.3/0.4/[0.3]
 
