@@ -1,4 +1,3 @@
-Record=TopLevelDocument|FileName=Poactuator_Circuits2.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Poactuator_Circuits2.SchDoc|FileName=Poactuator_Connectors.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Poactuator_Circuits2.SchDoc|FileName=Poactuator_Microcontroller.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Poactuator_Circuits2.SchDoc|FileName=Poactuator_Power_Circuits.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=Poactuator_Connectors.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_PD_MK2_Circuits|SchDesignator=U_PD_MK2_Circuits|FileName=Poactuator_Microcontroller.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=Poactuator_Microcontroller.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Poactuator_Connectors.SchDoc|Designator=U_PD_MK2_Power|SchDesignator=U_PD_MK2_Power|FileName=Poactuator_Power_Circuits.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=Poactuator_Power_Circuits.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
