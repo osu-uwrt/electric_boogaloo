@@ -12,40 +12,44 @@ v1: Removing PWL point (3.0471,-0.290833)
 v1: Removing PWL point (3.71184,-0.313416)
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+Gmin = 107.374
+Gmin = 11.5292
+Gmin = 1.23794
+Gmin = 0.132923
+Gmin = 0.0142725
+Gmin = 0.0015325
+Gmin = 0.00016455
+Gmin = 1.76685e-05
+Gmin = 1.89714e-06
+Gmin = 2.03704e-07
+Gmin = 2.18725e-08
+Gmin = 2.34854e-09
+Gmin = 2.52173e-10
+Gmin = 2.70769e-11
+Gmin = 2.90735e-12
+Gmin = 3.12175e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sun Dec  3 13:01:33 2023
-Total elapsed time: 141.578 seconds.
+Date: Sun Dec  3 13:48:48 2023
+Total elapsed time: 142.847 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 22084975
-traniter = 22084590
-tranpoints = 8184300
-accept = 6347930
-rejected = 1836370
+totiter = 22220474
+traniter = 22219709
+tranpoints = 8247830
+accept = 6381200
+rejected = 1866630
 matrix size = 37
 fillins = 4
 solver = Normal
 Avg thread counts: 2.0/1.0/1.0/1.0
-Matrix Compiler1: 1.46 KB object code size  0.5/0.3/[0.3]
+Matrix Compiler1: 1.46 KB object code size  0.6/0.3/[0.3]
 Matrix Compiler2: 2.84 KB object code size  0.3/0.4/[0.3]
 
