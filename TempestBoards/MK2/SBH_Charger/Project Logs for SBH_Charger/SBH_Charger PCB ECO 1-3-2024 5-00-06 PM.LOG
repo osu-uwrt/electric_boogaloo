@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=SDA Pin=J5-1
+Removed Pin From Net: NetName=SCL Pin=J5-2
+Added Pin To Net: NetName=SCL Pin=J5-1
+Added Pin To Net: NetName=SDA Pin=J5-2
+Add Class: Class already exists: Designator
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component J5 XH2.54 VERT

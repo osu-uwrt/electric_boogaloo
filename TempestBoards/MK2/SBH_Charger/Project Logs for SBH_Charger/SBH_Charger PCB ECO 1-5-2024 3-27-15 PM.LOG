@@ -1,0 +1,61 @@
+Added Pin To Net: NetName=GND Pin=C3R-2
+Added Pin To Net: NetName=GND Pin=C5C-2
+Added Pin To Net: NetName=3V3 Pin=J1R-2
+Added Pin To Net: NetName=RUN_RP2040 Pin=J1R-4
+Added Pin To Net: NetName=GND Pin=J1R-6
+Added Pin To Net: NetName=3V3 Pin=R1C-1
+Added Pin To Net: NetName=3V3 Pin=R4C-1
+Added Pin To Net: NetName=3V3 Pin=R4R-1
+Added Pin To Net: NetName=LEDR_RP2CAN Pin=R5C-1
+Added Pin To Net: NetName=RUN_RP2040 Pin=R6R-2
+Added Pin To Net: NetName=LEDG_RP2CAN Pin=R7C-1
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=R7R-2
+Added Pin To Net: NetName=LEDB_RP2CAN Pin=R8C-1
+Added Pin To Net: NetName=CANL Pin=SW1C-1
+Added Pin To Net: NetName=CANH Pin=SW1C-4
+Added Pin To Net: NetName=INT_RP2CAN Pin=U1C-4
+Added Pin To Net: NetName=CANCLK_RP2CAN Pin=U1C-6
+Added Pin To Net: NetName=TERM_DET_RP2CAN Pin=U1C-9
+Added Pin To Net: NetName=SCK_RP2CAN Pin=U1C-10
+Added Pin To Net: NetName=MOSI_RP2CAN Pin=U1C-11
+Added Pin To Net: NetName=MISO_RP2CAN Pin=U1C-12
+Added Pin To Net: NetName=nCS_RP2CAN Pin=U1C-13
+Added Pin To Net: NetName=XIN_RP2040 Pin=U1R-20
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U1R-56
+Added Pin To Net: NetName=GND Pin=U2R-4
+Added Pin To Net: NetName=CANRX_RP2CAN Pin=U1C-2
+Added Pin To Net: NetName=CANRX_RP2CAN Pin=U2C-4
+Added Net: Name=CANRX_RP2CAN
+Added Pin To Net: NetName=CANTX_RP2CAN Pin=U1C-1
+Added Pin To Net: NetName=CANTX_RP2CAN Pin=U2C-1
+Added Net: Name=CANTX_RP2CAN
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=J1R-5
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=U1R-27
+Added Net: Name=DBG_TX_RP2040
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U1R-52
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U2R-6
+Added Net: Name=QSPI_SCLK_RP2040
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U1R-53
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U2R-5
+Added Net: Name=QSPI_SD0_RP2040
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U1R-55
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U2R-2
+Added Net: Name=QSPI_SD1_RP2040
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U1R-54
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U2R-3
+Added Net: Name=QSPI_SD2_RP2040
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U1R-51
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U2R-7
+Added Net: Name=QSPI_SD3_RP2040
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=J1R-3
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=U1R-24
+Added Net: Name=SWCLK_RP2040
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=J1R-1
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=U1R-25
+Added Net: Name=SWDIO_RP2040
+Added Pin To Net: NetName=XOUT_RP2040 Pin=R1R-1
+Added Pin To Net: NetName=XOUT_RP2040 Pin=U1R-21
+Added Net: Name=XOUT_RP2040
+Add Class: Class already exists: Designator
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component J1 217179-0001
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component J5 XH2.54 VERT

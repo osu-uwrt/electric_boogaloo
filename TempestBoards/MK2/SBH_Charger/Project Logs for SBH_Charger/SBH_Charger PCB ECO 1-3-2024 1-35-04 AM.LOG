@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=VBAT Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-6
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=VBAT Pin=J2-6
+Add Class: Class already exists: Designator
