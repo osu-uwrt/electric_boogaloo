@@ -42,6 +42,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=LED_aluminum.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=0
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KLTQBHTI
+
+[Document2]
 DocumentPath=Pcb_2layer_8x4_Template_NoCenterHoles.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -58,25 +75,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BNBWFUDO
 
-[Document2]
-DocumentPath=..\..\..\Library\Capacitors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BDHHMKOC
-
 [Document3]
-DocumentPath=..\..\..\Library\Capacitors.SchLib
+DocumentPath=..\..\..\..\Library\Capacitors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -90,10 +90,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WJVVXHOC
+DocumentUniqueId=
 
 [Document4]
-DocumentPath=..\..\..\Library\Connectors.PcbLib
+DocumentPath=..\..\..\..\Library\Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -107,10 +107,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KBCGNCQN
+DocumentUniqueId=
 
 [Document5]
-DocumentPath=..\..\..\Library\Connectors.SchLib
+DocumentPath=..\..\..\..\Library\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -124,10 +124,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HVIEDDBW
+DocumentUniqueId=
 
 [Document6]
-DocumentPath=..\..\..\Library\Converter.PcbLib
+DocumentPath=..\..\..\..\Library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -144,7 +144,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\..\Library\Converter.SchLib
+DocumentPath=..\..\..\..\Library\Converter.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -161,7 +161,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
-DocumentPath=..\..\..\Library\Crystals.PcbLib
+DocumentPath=..\..\..\..\Library\Converter.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -178,7 +178,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document9]
-DocumentPath=..\..\..\Library\Crystals.SchLib
+DocumentPath=..\..\..\..\Library\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -195,7 +195,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document10]
-DocumentPath=..\..\..\Library\Diodes.PcbLib
+DocumentPath=..\..\..\..\Library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -209,10 +209,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BCTDTEGH
+DocumentUniqueId=
 
 [Document11]
-DocumentPath=..\..\..\Library\Diodes.SchLib
+DocumentPath=..\..\..\..\Library\Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -226,10 +226,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LRDBLFBW
+DocumentUniqueId=
 
 [Document12]
-DocumentPath=..\..\..\Library\Fuses.PcbLib
+DocumentPath=..\..\..\..\Library\Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -246,7 +246,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document13]
-DocumentPath=..\..\..\Library\Fuses.SchLib
+DocumentPath=..\..\..\..\Library\Fuses.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -263,7 +263,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document14]
-DocumentPath=..\..\..\Library\Inductors.PcbLib
+DocumentPath=..\..\..\..\Library\Fuses.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -277,10 +277,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BOXOROXM
+DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\..\..\Library\Inductors.SchLib
+DocumentPath=..\..\..\..\Library\Inductors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -294,10 +294,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JGNOYZNR
+DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
+DocumentPath=..\..\..\..\Library\Inductors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -314,7 +314,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
+DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -331,7 +331,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document18]
-DocumentPath=..\..\..\Library\LFXTAL014160REEL.PcbLib
+DocumentPath=..\..\..\..\Library\Integrated Circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -348,7 +348,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document19]
-DocumentPath=..\..\..\Library\Modules.PcbLib
+DocumentPath=..\..\..\..\Library\LFXTAL014160REEL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -365,7 +365,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document20]
-DocumentPath=..\..\..\Library\Modules.SchLib
+DocumentPath=..\..\..\..\Library\Modules.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -382,7 +382,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document21]
-DocumentPath=..\..\..\Library\Resistors.PcbLib
+DocumentPath=..\..\..\..\Library\Modules.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -399,7 +399,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document22]
-DocumentPath=..\..\..\Library\Resistors.SchLib
+DocumentPath=..\..\..\..\Library\Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -416,7 +416,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document23]
-DocumentPath=..\..\..\Library\SOT95P280X100-3N.PcbLib
+DocumentPath=..\..\..\..\Library\Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -433,7 +433,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document24]
-DocumentPath=..\..\..\Library\Switches.PcbLib
+DocumentPath=..\..\..\..\Library\SOT95P280X100-3N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -450,7 +450,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\..\..\Library\Switches.SchLib
+DocumentPath=..\..\..\..\Library\Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -467,7 +467,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document26]
-DocumentPath=..\..\..\Library\Transformers.PcbLib
+DocumentPath=..\..\..\..\Library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -484,7 +484,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document27]
-DocumentPath=..\..\..\Library\Transformers.SchLib
+DocumentPath=..\..\..\..\Library\Transformers.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -501,7 +501,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document28]
-DocumentPath=..\..\..\Library\Transistors.PcbLib
+DocumentPath=..\..\..\..\Library\Transformers.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -518,7 +518,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document29]
-DocumentPath=..\..\..\Library\Transistors.SchLib
+DocumentPath=..\..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -535,7 +535,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document30]
-DocumentPath=..\..\..\Library\UWRT.PcbLib
+DocumentPath=..\..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -552,7 +552,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document31]
-DocumentPath=..\..\..\Library\UWRT.SchLib
+DocumentPath=..\..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -566,27 +566,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LAAQHYVE
+DocumentUniqueId=
 
 [Document32]
-DocumentPath=LED_Board_control.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KLTQBHTI
-
-[Document33]
-DocumentPath=LED_Board.BomDoc
+DocumentPath=..\..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -617,20 +600,6 @@ Value=Sample Template Project
 [Parameter4]
 Name=TeamLead
 Value=Sample Team Lead
-
-[DeviceSheet1]
-DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-GenerateClassCluster=0
-
-[DeviceSheet2]
-DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-GenerateClassCluster=0
 
 [Configuration1]
 Name=Sources
@@ -1577,42 +1546,6 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
-ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=Capacitors.SchLib
-ComponentDesignItemID0=CAPACITOR_0.1uF_0603_1
-ComponentSymbolReference0=CAPACITOR_0.1uF_0603_1
-ComponentUpdate0=1
-ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=Capacitors.SchLib
-ComponentDesignItemID1=CAPACITOR_4.7uF_0603
-ComponentSymbolReference1=CAPACITOR_4.7uF_0603
-ComponentUpdate1=1
-ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=Converter.SchLib
-ComponentDesignItemID2=LM1117IMPX-3.3/NOPB
-ComponentSymbolReference2=LM1117IMPX-3.3/NOPB
-ComponentUpdate2=1
-ComponentIsDeviceSheet2=0
-ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=Diodes.SchLib
-ComponentDesignItemID3=LE_RTDUW_S2WM
-ComponentSymbolReference3=LE_RTDUW_S2WM
-ComponentUpdate3=1
-ComponentIsDeviceSheet3=0
-ComponentLibIdentifierKind4=Library Name And Type
-ComponentLibraryIdentifier4=Integrated Circuits.SchLib
-ComponentDesignItemID4=L99LD20Q6TR
-ComponentSymbolReference4=L99LD20Q6TR
-ComponentUpdate4=1
-ComponentIsDeviceSheet4=0
-ComponentLibIdentifierKind5=Library Name And Type
-ComponentLibraryIdentifier5=Resistors.SchLib
-ComponentDesignItemID5=JUMPER_0_0603
-ComponentSymbolReference5=JUMPER_0_0603
-ComponentUpdate5=1
-ComponentIsDeviceSheet5=0
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
