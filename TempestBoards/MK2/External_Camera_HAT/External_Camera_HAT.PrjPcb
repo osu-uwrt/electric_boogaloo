@@ -71,7 +71,7 @@ AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -92,7 +92,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BDHHMKOC
 
 [Document4]
 DocumentPath=..\..\..\Library\Capacitors.SchLib
@@ -109,7 +109,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WJVVXHOC
 
 [Document5]
 DocumentPath=..\..\..\Library\Connectors.PcbLib
@@ -587,23 +587,36 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Parameter1]
-Name=
-Value=
+[Document33]
+DocumentPath=External_Camera_HAT_Regulators.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MOTZIQMH
 
-[Parameter2]
+[Parameter1]
 Name=TeamLead
 Value=Sam Tomlinson
 
-[Parameter3]
+[Parameter2]
 Name=ProjectTitle
 Value=External Camera HAT
 
-[Parameter4]
+[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
-[Parameter5]
+[Parameter4]
 Name=BoardRevision
 Value=1.0
 
@@ -726,7 +739,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=NPI49FD41 (HP LaserJet M402n)
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
