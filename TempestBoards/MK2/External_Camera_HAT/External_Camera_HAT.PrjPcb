@@ -38,6 +38,7 @@ LogFolderPath=
 ManagedProjectGUID=
 Template=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
 IncludeDesignInRelease=0
+CurrentVariant=Default
 
 [Preferences]
 PrefsVaultGUID=
@@ -432,7 +433,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JKKXLRTC
 
 [Document24]
 DocumentPath=..\..\..\Library\SOT95P280X100-3N.PcbLib
@@ -604,21 +605,48 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MOTZIQMH
 
+[Document34]
+DocumentPath=External_Camera_HAT_Peripherals.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=WYTODXPU
+
+[ProjectVariant1]
+UniqueID=A33B2996-FDEC-4C73-B83F-9415330BDFB8
+Description=Default
+AllowFabrication=0
+ParameterCount=0
+VariationCount=2
+Variation1=Designator=R?|UniqueId=\YQLPWWJA|Kind=1|AlternatePart= 
+Variation2=Designator=R?|UniqueId=\RJWQTTCA|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [Parameter1]
-Name=TeamLead
-Value=Sam Tomlinson
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=External Camera HAT
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
+[Parameter3]
+Name=ProjectTitle
+Value=External Camera HAT
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sam Tomlinson
 
 [Configuration1]
 Name=Sources
