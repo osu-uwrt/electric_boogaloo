@@ -599,7 +599,7 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -616,7 +616,7 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -627,26 +627,34 @@ UniqueID=A33B2996-FDEC-4C73-B83F-9415330BDFB8
 Description=Default
 AllowFabrication=0
 ParameterCount=0
-VariationCount=2
+VariationCount=10
 Variation1=Designator=R?|UniqueId=\YQLPWWJA|Kind=1|AlternatePart= 
 Variation2=Designator=R?|UniqueId=\RJWQTTCA|Kind=1|AlternatePart= 
+Variation3=Designator=C?|UniqueId=\SBJARZQZ|Kind=1|AlternatePart= 
+Variation4=Designator=C?|UniqueId=\MZWNIDDJ|Kind=1|AlternatePart= 
+Variation5=Designator=R?|UniqueId=\HITAMIWK|Kind=0|AlternatePart= 
+Variation6=Designator=R?|UniqueId=\CLHSHXLR|Kind=1|AlternatePart= 
+Variation7=Designator=R?|UniqueId=\FQRCHGQE|Kind=1|AlternatePart= 
+Variation8=Designator=R?|UniqueId=\KMVIIHQJ|Kind=1|AlternatePart= 
+Variation9=Designator=R?|UniqueId=\MULIYXCN|Kind=1|AlternatePart= 
+Variation10=Designator=R?|UniqueId=\UJNZCABR|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sam Tomlinson
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=External Camera HAT
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=Sam Tomlinson
+Name=BoardRevision
+Value=1.0
 
 [Configuration1]
 Name=Sources
