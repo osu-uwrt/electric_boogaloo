@@ -586,7 +586,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LEROOREG
 
 [Document33]
-DocumentPath=..\..\..\..\UWRT_Template_Project\Poactuator_Connectors.SchDoc
+DocumentPath=Poactuator_Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -603,23 +603,6 @@ GenerateClassCluster=0
 DocumentUniqueId=RTFFFFSL
 
 [Document34]
-DocumentPath=MK2.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FAJBMQJC
-
-[Document35]
 DocumentPath=..\..\..\..\Device_Sheets\RP2040.SchDot
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -636,7 +619,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IOCZLCQA
 
-[Document36]
+[Document35]
 DocumentPath=..\..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -653,7 +636,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FHPVTAOK
 
-[Document37]
+[Document36]
 DocumentPath=Poactuator_KillSwitch.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -670,7 +653,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
-[Document38]
+[Document37]
 DocumentPath=PoactuatorPCB4.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
