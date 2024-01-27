@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetC8_2 Pin=U2-1
+Removed Pin From Net: NetName=UART_TX Pin=U2-2
+Removed Pin From Net: NetName=GND Pin=U2-3
+Removed Pin From Net: NetName=Din Pin=U2-4
+Removed Pin From Net: NetName=NetC9_2 Pin=U2-5
+Added Component: Designator=U2(SOT-353)
+Add component (AddParameter): Name = "Made By"; Value = "Ethan Rosati"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Voltage"; Value = "3.6 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Voltage"; Value = "1.0 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reviewed By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "FXLP34P5XCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC8_2 Pin=U2-1
+Added Pin To Net: NetName=UART_TX Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U2-3
+Added Pin To Net: NetName=Din Pin=U2-4
+Added Pin To Net: NetName=NetC9_2 Pin=U2-5

@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=3V3 Pin=U1-1
+Removed Pin From Net: NetName=GND Pin=U1-2
+Removed Pin From Net: NetName=3V3 Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=U1-4
+Removed Pin From Net: NetName=1.8V Pin=U1-5
+Added Component: Designator=U1(SOT-353)
+Add component (AddParameter): Name = "Made By"; Value = "Ethan Rosati"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Voltage"; Value = "5.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Voltage"; Value = "2 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "200 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "1.8 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reviewed By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "595-TLV70018DCKR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=3V3 Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=1.8V Pin=U1-5
+Change Net Name : Old Net Name=NetJ1_2 New Net Name=DOUT
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component U4 FXLP34P5X
