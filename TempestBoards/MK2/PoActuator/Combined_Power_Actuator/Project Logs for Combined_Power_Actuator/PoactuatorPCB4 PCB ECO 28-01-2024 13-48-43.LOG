@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=U1R-8
+Removed Pin From Net: NetName=ACT_PWM_3.3V Pin=U1R-9
+Removed Pin From Net: NetName=ACT_CHECK_3.3V Pin=U1R-11
+Added Component: Designator=DEBUG_CONN1(HEADER_2x10PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Tyson Nguyen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Z8747-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=DEBUG_CONN1-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=DEBUG_CONN1-2
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=DEBUG_CONN1-11
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-19
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-20
+Added Pin To Net: NetName=LVL_SHIFT_EN Pin=U1R-37
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=U1R-38
+Added Pin To Net: NetName=ACT_CHECK_3.3V Pin=U1R-39
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Net: Name=NetU1R_8
+Added Pin To Net: NetName=NetU1R_9 Pin=U1R-9
+Added Net: Name=NetU1R_9
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11
+Added Member To Class: ClassName=Poactuator_Connectors Member=Component DEBUG_CONN1 HEADER DUAL VERT 2.54MM

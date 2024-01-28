@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=5V Pin=C20-1
+Removed Pin From Net: NetName=GND Pin=C20-2
+Removed Pin From Net: NetName=5V Pin=LED_CONN1-1
+Removed Pin From Net: NetName=GND Pin=LED_CONN1-3
+Removed Member From Class: ClassName=Poactuator_Connectors Member=C20
+Removed Member From Class: ClassName=Poactuator_Connectors Member=LED_CONN1
+Added Component: Designator=DEBUG_CONN1(HEADER_2x10PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Tyson Nguyen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Z8747-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=DEBUG_CONN1-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=DEBUG_CONN1-2
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=DEBUG_CONN1-11
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-19
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-20
+Added Member To Class: ClassName=Poactuator_Connectors Member=Component DEBUG_CONN1 HEADER DUAL VERT 2.54MM
+Added Room: Name=U_PD_MK2_Killswitch
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
