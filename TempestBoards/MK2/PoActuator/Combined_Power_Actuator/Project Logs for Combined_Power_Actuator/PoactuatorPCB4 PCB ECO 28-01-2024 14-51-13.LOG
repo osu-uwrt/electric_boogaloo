@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=SOFTWARE_KILL Pin=U1R-3
+Removed Pin From Net: NetName=PHYS_KILL Pin=U1R-4
+Removed Pin From Net: NetName=STBD_STAT Pin=U1R-13
+Removed Pin From Net: NetName=PORT_STAT Pin=U1R-14
+Added Pin To Net: NetName=PHYS_KILL Pin=U1R-3
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-4
+Added Pin To Net: NetName=PORT_STAT Pin=U1R-13
+Added Pin To Net: NetName=STBD_STAT Pin=U1R-14
