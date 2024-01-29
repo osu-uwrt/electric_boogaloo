@@ -229,7 +229,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BCTDTEGH
 
 [Document12]
 DocumentPath=..\..\..\Library\Diodes.SchLib
@@ -246,7 +246,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LRDBLFBW
 
 [Document13]
 DocumentPath=..\..\..\Library\Fuses.PcbLib
@@ -622,12 +622,29 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WYTODXPU
 
+[Document35]
+DocumentPath=External_Camera_HAT_LvlShifters.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=3
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KLTQBHTI
+
 [ProjectVariant1]
 UniqueID=A33B2996-FDEC-4C73-B83F-9415330BDFB8
 Description=Default
 AllowFabrication=0
 ParameterCount=0
-VariationCount=10
+VariationCount=17
 Variation1=Designator=R?|UniqueId=\YQLPWWJA|Kind=1|AlternatePart= 
 Variation2=Designator=R?|UniqueId=\RJWQTTCA|Kind=1|AlternatePart= 
 Variation3=Designator=C?|UniqueId=\SBJARZQZ|Kind=1|AlternatePart= 
@@ -638,6 +655,13 @@ Variation7=Designator=R?|UniqueId=\FQRCHGQE|Kind=1|AlternatePart=
 Variation8=Designator=R?|UniqueId=\KMVIIHQJ|Kind=1|AlternatePart= 
 Variation9=Designator=R?|UniqueId=\MULIYXCN|Kind=1|AlternatePart= 
 Variation10=Designator=R?|UniqueId=\UJNZCABR|Kind=1|AlternatePart= 
+Variation11=Designator=R?|UniqueId=\ZZUOIFUQ|Kind=1|AlternatePart= 
+Variation12=Designator=R?|UniqueId=\RGAIPTCX|Kind=1|AlternatePart= 
+Variation13=Designator=R?|UniqueId=\TRYHGNZF|Kind=1|AlternatePart= 
+Variation14=Designator=D?|UniqueId=\RKQKFNUQ|Kind=1|AlternatePart= 
+Variation15=Designator=R?|UniqueId=\BRLYMWWX|Kind=1|AlternatePart= 
+Variation16=Designator=R?|UniqueId=\PGKQQUNA|Kind=1|AlternatePart= 
+Variation17=Designator=D?|UniqueId=\LZFJIRAW|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Parameter1]
