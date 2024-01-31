@@ -99,7 +99,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KBCGNCQN
 
 [Document4]
 DocumentPath=..\..\..\..\Library\Connectors.SchLib
@@ -116,7 +116,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HVIEDDBW
 
 [Document5]
 DocumentPath=..\..\..\..\Library\Converter.PcbLib
@@ -150,7 +150,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document7]
 DocumentPath=..\..\..\..\Library\Crystals.PcbLib
@@ -184,7 +184,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOXQDNOZ
 
 [Document9]
 DocumentPath=..\..\..\..\Library\Diodes.PcbLib
@@ -218,7 +218,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LRDBLFBW
 
 [Document11]
 DocumentPath=..\..\..\..\Library\Fuses.PcbLib
@@ -252,7 +252,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MOYCOWBP
 
 [Document13]
 DocumentPath=..\..\..\..\Library\Inductors.PcbLib
@@ -286,7 +286,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document15]
 DocumentPath=..\..\..\..\Library\Integrated Circuits.PcbLib
@@ -371,7 +371,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JTOMNKLG
 
 [Document20]
 DocumentPath=..\..\..\..\Library\Resistors.PcbLib
@@ -405,7 +405,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JKKXLRTC
 
 [Document22]
 DocumentPath=..\..\..\..\Library\SOT95P280X100-3N.PcbLib
@@ -490,7 +490,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AAOIDODX
 
 [Document27]
 DocumentPath=..\..\..\..\Library\Transistors.PcbLib
@@ -524,7 +524,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LHXHEGVB
 
 [Document29]
 DocumentPath=..\..\..\..\Library\UWRT.PcbLib
@@ -737,194 +737,198 @@ DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy 
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.PcbLib
+DocumentPath=Project Outputs for Combined_Power_Actuator\Design Rule Check - PoactuatorPCB4.html
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Connectors.SchDoc
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_KillSwitch.SchDoc
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Connectors.SchDoc
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Microcontroller.SchDoc
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_KillSwitch.SchDoc
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Power_Circuits.SchDoc
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Microcontroller.SchDoc
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoActuator Order.OutJob
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Power_Circuits.SchDoc
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-RoundHoles.TXT
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoActuator Order.OutJob
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-SlotHoles.TXT
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.DRR
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.EXTREP
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\DRC\PoactuatorPCB4.html
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.LDP
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\DRC\PoactuatorPCB4.html
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoactuatorPCB4.PcbDoc
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.REP
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoactuatorPCB4.PcbDoc
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.RUL
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.REP
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\ExportSTEP\PoactuatorPCB4.step
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\ExportSTEP\PoactuatorPCB4.step
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040.SchDot
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument48]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040.SchDot
 DItemRevisionGUID=
 
 [GeneratedDocument49]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\SBH_Profile.gbr
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\SBH_Profile.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument51]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument52]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument53]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument54]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument55]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument56]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.SchLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument57]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument58]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument59]
 DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\UWRT.SchLib
 DItemRevisionGUID=
 
@@ -1525,41 +1529,11 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
+OutputType12=Web ReviewOutputName
+OutputName12=Web Review Data
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-OutputType18=Web ReviewOutputName
-OutputName18=Web Review Data
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
