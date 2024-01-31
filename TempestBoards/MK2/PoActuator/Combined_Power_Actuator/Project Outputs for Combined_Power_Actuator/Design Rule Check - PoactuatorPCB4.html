@@ -1,0 +1,811 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/31/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:28:49 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc" class="file"><acronym title="C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc">C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">149</td></tr>
+</table>
+</td>
+</table><a name="ID0HPR3N4XVVH0ZGKCDWKG2ITRFDUBCKEP3NYERDBPFUWZZQ1P1JH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHUNQ434YPAIDLKCALUCJQYFAFOEQDPHA2J1EXBOYESORRHZLXUUE">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0OVNDFV03Y4MNJ1UL4AX3B0B3M0YLUEEYYCZFYDT5VBJN5ZDW01M">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID54CCNWZX2K3IOFX3XVFRI4KVOEPMMKT4G301OLV5DNM5XURDNCM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">7</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCE3EW0QO4AVLJ0NN55I0FEPIKBFGAYUHPQF0DKIGPDANB41P50">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4Q1SJQYJDDLJCPXDGKKME0PZFPAGY4KXJSXMMMPLUTHEXMDWSSD">Width Constraint (Min=0.2mm) (Max=5.08mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDN10KEDB1U5C4H10QUEGGTWB53OZ42YJMOIKOMVO3WXLCPJBQAY1F">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0QBRDVWTGMBSBZ1E2QHVEJ3VKF3BMDVRIGYLF0PJZTC3XMHH52XN">Minimum Annular Ring (Minimum=0.3mm) (IsPad)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHTCE0N0QP4XZC0PM2Z5IABXG1K2LIMF1SHWOHYNCQ2IWZMXKNHSG">Minimum Annular Ring (Minimum=0.2mm) (All)</a></td>
+<td class="column2">127</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX4YN2FH1E53BFMZU0LUCJ2IP4KHH10MYNEQ43MK5LENL2ALLZHAL">Acute Angle Constraint (Minimum=60.000) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJXCE4LAWGNIWNHQHE4MUBSYZXM2XUAFG4AZ1BFFPSJQCDGYIP44J">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTFT1DJTAGQHBNFYZ1FXPHENRFSXZ0F01YNXWIPMHXTD2ZT0B2FC">Hole Size Constraint (Min=0.5mm) (Max=6.3mm) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXQO0THM5OXOEFHNVSD2XCRMZBM4EWF30XJ3PBNPXCST5O25IP52E">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZWMP351XBJUYHWK3GRLYVSWRM2D2HGO1YEGU3PEKEPZO2TWYEGJ">Minimum Solder Mask Sliver (Gap=0.025mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL1HTCYOYMOHOJTKCJIFSOYMAYNLA05QLKZT5T0HVCBQJJFPLL4GD">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVMSZHI1H2MTNFOFCYKSMVSK1YO0U50UD5QS3DFHR3OUW50U0OYHL">Silk to Silk (Clearance=0.076mm) (All),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOYU0DDYQTIWIILAUNSQYZNSLDPVT10ESCW0YEVGPFWAJOXDUPX1E">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRHT532FVILB4HIF2YD3XXTWDWEV0UFV34NCSJZLZCKYQDSMP2AF">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZCF4YAQSDTJOFBT11055B124GISLKRH5JHZWULFFANP4E321I0WB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">149</td>
+</tr>
+</table><br><a name="ID54CCNWZX2K3IOFX3XVFRI4KVOEPMMKT4G301OLV5DNM5XURDNCM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1287.056mil|Location2.X=1287.075mil|Location1.Y=5310.005mil|Location2.Y=5310.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1287.056mil|Location2.X=1287.075mil|Location1.Y=5310.005mil|Location2.Y=5310.023mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1296.919mil|Location2.X=1296.944mil|Location1.Y=5309.155mil|Location2.Y=5309.186mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1296.919mil|Location2.X=1296.944mil|Location1.Y=5309.155mil|Location2.Y=5309.186mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1287.025mil|Location2.X=1287.05mil|Location1.Y=5309.954mil|Location2.Y=5309.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1287.025mil|Location2.X=1287.05mil|Location1.Y=5309.954mil|Location2.Y=5309.992mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1275.338mil|Location2.X=1275.35mil|Location1.Y=5313.403mil|Location2.Y=5313.415mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1275.338mil|Location2.X=1275.35mil|Location1.Y=5313.403mil|Location2.Y=5313.415mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.255mil|Location2.X=1278.28mil|Location1.Y=5326.264mil|Location2.Y=5326.289mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.255mil|Location2.X=1278.28mil|Location1.Y=5326.264mil|Location2.Y=5326.289mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.342mil|Location2.X=1278.367mil|Location1.Y=5325.752mil|Location2.Y=5325.783mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1278.342mil|Location2.X=1278.367mil|Location1.Y=5325.752mil|Location2.Y=5325.783mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1277.018mil|Location2.X=1277.055mil|Location1.Y=5312.26mil|Location2.Y=5312.297mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1277.018mil|Location2.X=1277.055mil|Location1.Y=5312.26mil|Location2.Y=5312.297mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) Top Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID0QBRDVWTGMBSBZ1E2QHVEJ3VKF3BMDVRIGYLF0PJZTC3XMHH52XN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.3mm) (IsPad)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7035.989mil|Location2.X=7049.05mil|Location1.Y=5703.47mil|Location2.Y=5716.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7035.989mil|Location2.X=7049.05mil|Location1.Y=5703.47mil|Location2.Y=5716.53mil|Absolute=True">Minimum Annular Ring: (0.25mm &lt; 0.3mm) Pad LID_CONN1-1(159.131mm,123.571mm) on Multi-Layer (Annular Ring=0.25mm) On (Bottom Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7068.47mil|Location2.X=7081.53mil|Location1.Y=5570.595mil|Location2.Y=5583.656mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7068.47mil|Location2.X=7081.53mil|Location1.Y=5570.595mil|Location2.Y=5583.656mil|Absolute=True">Minimum Annular Ring: (0.25mm &lt; 0.3mm) Pad LID_CONN1-2(159.131mm,119.371mm) on Multi-Layer (Annular Ring=0.25mm) On (Bottom Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6851.934mil|Location2.X=6864.995mil|Location1.Y=5735.95mil|Location2.Y=5749.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6851.934mil|Location2.X=6864.995mil|Location1.Y=5735.95mil|Location2.Y=5749.011mil|Absolute=True">Minimum Annular Ring: (0.25mm &lt; 0.3mm) Pad LID_CONN1-3(153.631mm,123.571mm) on Multi-Layer (Annular Ring=0.25mm) On (Bottom Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6851.934mil|Location2.X=6864.995mil|Location1.Y=5570.595mil|Location2.Y=5583.656mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6851.934mil|Location2.X=6864.995mil|Location1.Y=5570.595mil|Location2.Y=5583.656mil|Absolute=True">Minimum Annular Ring: (0.25mm &lt; 0.3mm) Pad LID_CONN1-4(153.631mm,119.371mm) on Multi-Layer (Annular Ring=0.25mm) On (Bottom Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDHTCE0N0QP4XZC0PM2Z5IABXG1K2LIMF1SHWOHYNCQ2IWZMXKNHSG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.438mil|Location2.X=4934.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.438mil|Location2.X=4934.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (104.648mm,88.646mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.438mil|Location2.X=4934.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.438mil|Location2.X=4934.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (104.648mm,89.662mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4935.438mil|Location2.X=4944.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4935.438mil|Location2.X=4944.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (104.902mm,80.772mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4935.438mil|Location2.X=4944.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4935.438mil|Location2.X=4944.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (104.902mm,81.788mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4945.438mil|Location2.X=4954.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4945.438mil|Location2.X=4954.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.156mm,88.011mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4945.438mil|Location2.X=4954.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4945.438mil|Location2.X=4954.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.156mm,89.154mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.438mil|Location2.X=4964.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.438mil|Location2.X=4964.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.41mm,80.137mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.438mil|Location2.X=4964.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.438mil|Location2.X=4964.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.41mm,81.28mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.438mil|Location2.X=4974.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.438mil|Location2.X=4974.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.664mm,88.646mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.438mil|Location2.X=4974.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.438mil|Location2.X=4974.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.664mm,89.662mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4975.438mil|Location2.X=4984.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4975.438mil|Location2.X=4984.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.918mm,80.772mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4975.438mil|Location2.X=4984.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4975.438mil|Location2.X=4984.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (105.918mm,81.788mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4985.438mil|Location2.X=4994.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4985.438mil|Location2.X=4994.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.172mm,88.011mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4985.438mil|Location2.X=4994.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4985.438mil|Location2.X=4994.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.172mm,89.154mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4995.438mil|Location2.X=5004.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4995.438mil|Location2.X=5004.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.426mm,80.137mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4995.438mil|Location2.X=5004.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4995.438mil|Location2.X=5004.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.426mm,81.28mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5005.438mil|Location2.X=5014.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5005.438mil|Location2.X=5014.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.68mm,88.646mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5005.438mil|Location2.X=5014.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5005.438mil|Location2.X=5014.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.68mm,89.662mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.438mil|Location2.X=5024.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.438mil|Location2.X=5024.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.934mm,80.772mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.438mil|Location2.X=5024.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.438mil|Location2.X=5024.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (106.934mm,81.788mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5025.438mil|Location2.X=5034.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5025.438mil|Location2.X=5034.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.188mm,88.011mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5025.438mil|Location2.X=5034.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5025.438mil|Location2.X=5034.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.188mm,89.154mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5035.438mil|Location2.X=5044.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5035.438mil|Location2.X=5044.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.442mm,80.137mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5035.438mil|Location2.X=5044.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5035.438mil|Location2.X=5044.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.442mm,81.28mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5045.438mil|Location2.X=5054.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5045.438mil|Location2.X=5054.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.696mm,88.646mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5045.438mil|Location2.X=5054.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5045.438mil|Location2.X=5054.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.696mm,89.662mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.438mil|Location2.X=5064.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.438mil|Location2.X=5064.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.95mm,80.772mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.438mil|Location2.X=5064.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.438mil|Location2.X=5064.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (107.95mm,81.788mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5065.438mil|Location2.X=5074.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5065.438mil|Location2.X=5074.562mil|Location1.Y=4313.438mil|Location2.Y=4322.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.204mm,88.011mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5065.438mil|Location2.X=5074.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5065.438mil|Location2.X=5074.562mil|Location1.Y=4358.438mil|Location2.Y=4367.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.204mm,89.154mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.438mil|Location2.X=5084.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.438mil|Location2.X=5084.562mil|Location1.Y=4003.438mil|Location2.Y=4012.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.458mm,80.137mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.438mil|Location2.X=5084.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.438mil|Location2.X=5084.562mil|Location1.Y=4048.438mil|Location2.Y=4057.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.458mm,81.28mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.438mil|Location2.X=5094.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.438mil|Location2.X=5094.562mil|Location1.Y=4338.438mil|Location2.Y=4347.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.712mm,88.646mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.438mil|Location2.X=5094.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.438mil|Location2.X=5094.562mil|Location1.Y=4378.438mil|Location2.Y=4387.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.712mm,89.662mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5095.438mil|Location2.X=5104.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5095.438mil|Location2.X=5104.562mil|Location1.Y=4028.438mil|Location2.Y=4037.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.966mm,80.772mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5095.438mil|Location2.X=5104.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5095.438mil|Location2.X=5104.562mil|Location1.Y=4068.438mil|Location2.Y=4077.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (108.966mm,81.788mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3363.438mil|Location2.Y=3372.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3363.438mil|Location2.Y=3372.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (132.842mm,63.881mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3398.438mil|Location2.Y=3407.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3398.438mil|Location2.Y=3407.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (132.842mm,64.77mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3438.438mil|Location2.Y=3447.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.438mil|Location2.X=6044.562mil|Location1.Y=3438.438mil|Location2.Y=3447.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (132.842mm,65.786mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4388.438mil|Location2.Y=4397.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4388.438mil|Location2.Y=4397.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.096mm,89.916mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4418.438mil|Location2.Y=4427.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4418.438mil|Location2.Y=4427.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.096mm,90.678mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.096mm,91.44mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4478.438mil|Location2.Y=4487.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.438mil|Location2.X=6054.562mil|Location1.Y=4478.438mil|Location2.Y=4487.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.096mm,92.202mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3343.438mil|Location2.Y=3352.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3343.438mil|Location2.Y=3352.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.35mm,63.373mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3383.438mil|Location2.Y=3392.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3383.438mil|Location2.Y=3392.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.35mm,64.389mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3418.438mil|Location2.Y=3427.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3418.438mil|Location2.Y=3427.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.35mm,65.278mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3458.438mil|Location2.Y=3467.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6055.438mil|Location2.X=6064.562mil|Location1.Y=3458.438mil|Location2.Y=3467.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.35mm,66.294mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4373.438mil|Location2.Y=4382.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4373.438mil|Location2.Y=4382.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.731mm,89.535mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4403.438mil|Location2.Y=4412.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4403.438mil|Location2.Y=4412.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.731mm,90.297mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4433.438mil|Location2.Y=4442.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4433.438mil|Location2.Y=4442.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.731mm,91.059mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4463.438mil|Location2.Y=4472.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4463.438mil|Location2.Y=4472.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.731mm,91.821mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6070.438mil|Location2.X=6079.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (133.731mm,92.583mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6265.438mil|Location2.X=6274.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6265.438mil|Location2.X=6274.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (138.684mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6265.438mil|Location2.X=6274.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6265.438mil|Location2.X=6274.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (138.684mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.192mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.192mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.192mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6285.438mil|Location2.X=6294.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.192mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6300.438mil|Location2.X=6309.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6300.438mil|Location2.X=6309.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.573mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6300.438mil|Location2.X=6309.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6300.438mil|Location2.X=6309.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.573mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.954mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.954mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.954mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6315.438mil|Location2.X=6324.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (139.954mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6330.438mil|Location2.X=6339.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6330.438mil|Location2.X=6339.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.335mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6330.438mil|Location2.X=6339.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6330.438mil|Location2.X=6339.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.335mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.716mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.716mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.716mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6345.438mil|Location2.X=6354.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (140.716mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6360.438mil|Location2.X=6369.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6360.438mil|Location2.X=6369.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.097mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6360.438mil|Location2.X=6369.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6360.438mil|Location2.X=6369.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.097mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.478mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.478mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.478mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6375.438mil|Location2.X=6384.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.478mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6390.438mil|Location2.X=6399.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6390.438mil|Location2.X=6399.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.859mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6390.438mil|Location2.X=6399.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6390.438mil|Location2.X=6399.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (141.859mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.24mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.24mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.24mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6405.438mil|Location2.X=6414.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.24mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6420.438mil|Location2.X=6429.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6420.438mil|Location2.X=6429.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.621mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6420.438mil|Location2.X=6429.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6420.438mil|Location2.X=6429.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (142.621mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.002mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.002mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.002mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6435.438mil|Location2.X=6444.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.002mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.438mil|Location2.X=6459.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.438mil|Location2.X=6459.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.383mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.438mil|Location2.X=6459.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.438mil|Location2.X=6459.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.383mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5118.438mil|Location2.Y=5127.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.764mm,108.458mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5158.438mil|Location2.Y=5167.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.764mm,109.474mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5613.438mil|Location2.Y=5622.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.764mm,121.031mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6465.438mil|Location2.X=6474.562mil|Location1.Y=5653.438mil|Location2.Y=5662.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (143.764mm,122.047mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6480.438mil|Location2.X=6489.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6480.438mil|Location2.X=6489.562mil|Location1.Y=5138.438mil|Location2.Y=5147.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (144.145mm,108.966mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6480.438mil|Location2.X=6489.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6480.438mil|Location2.X=6489.562mil|Location1.Y=5633.438mil|Location2.Y=5642.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (144.145mm,121.539mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1645.438mil|Location2.X=1654.562mil|Location1.Y=3698.438mil|Location2.Y=3707.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1645.438mil|Location2.X=1654.562mil|Location1.Y=3698.438mil|Location2.Y=3707.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (21.336mm,72.39mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1645.438mil|Location2.X=1654.562mil|Location1.Y=3728.438mil|Location2.Y=3737.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1645.438mil|Location2.X=1654.562mil|Location1.Y=3728.438mil|Location2.Y=3737.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (21.336mm,73.152mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1665.438mil|Location2.X=1674.562mil|Location1.Y=3713.438mil|Location2.Y=3722.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1665.438mil|Location2.X=1674.562mil|Location1.Y=3713.438mil|Location2.Y=3722.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (21.844mm,72.771mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.438mil|Location2.X=3224.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.438mil|Location2.X=3224.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (61.214mm,92.075mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.438mil|Location2.X=3224.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.438mil|Location2.X=3224.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (61.214mm,93.091mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.438mil|Location2.X=3244.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.438mil|Location2.X=3244.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (61.722mm,91.44mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.438mil|Location2.X=3244.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.438mil|Location2.X=3244.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (61.722mm,92.583mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.438mil|Location2.X=3264.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.438mil|Location2.X=3264.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.23mm,92.075mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.438mil|Location2.X=3264.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.438mil|Location2.X=3264.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.23mm,93.091mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.738mm,64.643mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.738mm,65.659mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.738mm,91.44mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.438mil|Location2.X=3284.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (62.738mm,92.583mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=3413.438mil|Location2.Y=3422.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=3413.438mil|Location2.Y=3422.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.246mm,65.151mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=3453.438mil|Location2.Y=3462.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=3453.438mil|Location2.Y=3462.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.246mm,66.167mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.246mm,92.075mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3295.438mil|Location2.X=3304.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.246mm,93.091mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.438mil|Location2.X=3324.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.438mil|Location2.X=3324.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.754mm,91.44mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.438mil|Location2.X=3324.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.438mil|Location2.X=3324.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.754mm,92.583mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3320.438mil|Location2.X=3329.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3320.438mil|Location2.X=3329.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.881mm,64.643mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3320.438mil|Location2.X=3329.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3320.438mil|Location2.X=3329.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (63.881mm,65.659mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3335.438mil|Location2.X=3344.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3335.438mil|Location2.X=3344.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.262mm,92.075mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3335.438mil|Location2.X=3344.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3335.438mil|Location2.X=3344.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.262mm,93.091mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.438mil|Location2.X=3349.562mil|Location1.Y=3413.438mil|Location2.Y=3422.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.438mil|Location2.X=3349.562mil|Location1.Y=3413.438mil|Location2.Y=3422.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.389mm,65.151mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.438mil|Location2.X=3349.562mil|Location1.Y=3453.438mil|Location2.Y=3462.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3340.438mil|Location2.X=3349.562mil|Location1.Y=3453.438mil|Location2.Y=3462.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.389mm,66.167mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3355.438mil|Location2.X=3364.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3355.438mil|Location2.X=3364.562mil|Location1.Y=4448.438mil|Location2.Y=4457.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.77mm,91.44mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3355.438mil|Location2.X=3364.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3355.438mil|Location2.X=3364.562mil|Location1.Y=4493.438mil|Location2.Y=4502.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (64.77mm,92.583mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.438mil|Location2.X=3374.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.438mil|Location2.X=3374.562mil|Location1.Y=3393.438mil|Location2.Y=3402.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (65.024mm,64.643mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.438mil|Location2.X=3374.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3365.438mil|Location2.X=3374.562mil|Location1.Y=3433.438mil|Location2.Y=3442.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (65.024mm,65.659mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.438mil|Location2.X=3384.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.438mil|Location2.X=3384.562mil|Location1.Y=4473.438mil|Location2.Y=4482.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (65.278mm,92.075mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.438mil|Location2.X=3384.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.438mil|Location2.X=3384.562mil|Location1.Y=4513.438mil|Location2.Y=4522.562mil|Absolute=True">Minimum Annular Ring: (0.102mm &lt; 0.2mm) Via (65.278mm,93.091mm) from Top Layer to Bottom Layer (Annular Ring=0.102mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVMSZHI1H2MTNFOFCYKSMVSK1YO0U50UD5QS3DFHR3OUW50U0OYHL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.076mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7187.299mil|Location2.X=7190.299mil|Location1.Y=2072.13mil|Location2.Y=2075.13mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7187.299mil|Location2.X=7190.299mil|Location1.Y=2072.13mil|Location2.Y=2075.13mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Region (872 hole(s)) Top Overlay And Text "P RT BATTERY" (167.187mm,24.003mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2288.5mil|Location2.X=2291.5mil|Location1.Y=5199.458mil|Location2.Y=5202.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2288.5mil|Location2.X=2291.5mil|Location1.Y=5199.458mil|Location2.Y=5202.458mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "CANH" (37.825mm,112.399mm) on Top Overlay And Track (37.592mm,109.474mm)(37.592mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2143.5mil|Location2.X=2146.5mil|Location1.Y=5340.994mil|Location2.Y=5343.994mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2143.5mil|Location2.X=2146.5mil|Location1.Y=5340.994mil|Location2.Y=5343.994mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "CANL" (37.701mm,115.189mm) on Top Overlay And Track (33.909mm,109.474mm)(33.909mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2292.014mil|Location2.X=2296.264mil|Location1.Y=5334.252mil|Location2.Y=5338.502mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2292.014mil|Location2.X=2296.264mil|Location1.Y=5334.252mil|Location2.Y=5338.502mil|Absolute=True">Silk To Silk Clearance Constraint: (0.058mm &lt; 0.076mm) Between Text "GND" (40.632mm,115.072mm) on Top Overlay And Track (37.592mm,109.474mm)(37.592mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0.058mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2393.736mil|Location2.X=2397.986mil|Location1.Y=5311.498mil|Location2.Y=5315.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2393.736mil|Location2.X=2397.986mil|Location1.Y=5311.498mil|Location2.Y=5315.748mil|Absolute=True">Silk To Silk Clearance Constraint: (0.058mm &lt; 0.076mm) Between Text "GND" (40.632mm,115.072mm) on Top Overlay And Track (40.386mm,109.474mm)(40.386mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0.058mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2401.999mil|Location2.X=2406.249mil|Location1.Y=5334.127mil|Location2.Y=5338.377mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2401.999mil|Location2.X=2406.249mil|Location1.Y=5334.127mil|Location2.Y=5338.377mil|Absolute=True">Silk To Silk Clearance Constraint: (0.057mm &lt; 0.076mm) Between Text "GND" (43.423mm,115.076mm) on Top Overlay And Track (40.386mm,109.474mm)(40.386mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0.057mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2503.751mil|Location2.X=2508.001mil|Location1.Y=5311.622mil|Location2.Y=5315.872mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2503.751mil|Location2.X=2508.001mil|Location1.Y=5311.622mil|Location2.Y=5315.872mil|Absolute=True">Silk To Silk Clearance Constraint: (0.057mm &lt; 0.076mm) Between Text "GND" (43.423mm,115.076mm) on Top Overlay And Track (43.18mm,109.474mm)(43.18mm,115.189mm) on Top Overlay Silk Text to Silk Clearance [0.057mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2349.248mil|Location2.X=2353.498mil|Location1.Y=2077.546mil|Location2.Y=2081.796mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2349.248mil|Location2.X=2353.498mil|Location1.Y=2077.546mil|Location2.Y=2081.796mil|Absolute=True">Silk To Silk Clearance Constraint: (0.059mm &lt; 0.076mm) Between Text "R7R" (39.244mm,31.361mm) on Top Overlay And Track (39.045mm,31.17mm)(39.045mm,32.44mm) on Top Overlay Silk Text to Silk Clearance [0.059mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDRHT532FVILB4HIF2YD3XXTWDWEV0UFV34NCSJZLZCKYQDSMP2AF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7058.975mil|Location2.X=7065.224mil|Location1.Y=5871.65mil|Location2.Y=5877.899mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7058.975mil|Location2.X=7065.224mil|Location1.Y=5871.65mil|Location2.Y=5877.899mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Track (158.496mm,128.449mm)(159.131mm,126.925mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7071.875mil|Location2.X=7078.125mil|Location1.Y=5898.922mil|Location2.Y=5905.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7071.875mil|Location2.X=7078.125mil|Location1.Y=5898.922mil|Location2.Y=5905.171mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Track (158.496mm,128.449mm)(159.766mm,128.449mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7084.776mil|Location2.X=7091.025mil|Location1.Y=5871.65mil|Location2.Y=5877.899mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7084.776mil|Location2.X=7091.025mil|Location1.Y=5871.65mil|Location2.Y=5877.899mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Track (159.131mm,126.925mm)(159.766mm,128.449mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
