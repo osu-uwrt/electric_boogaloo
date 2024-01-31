@@ -297,7 +297,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BOXOROXM
 
 [Document16]
 DocumentPath=..\..\..\Library\Inductors.SchLib
@@ -314,7 +314,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document17]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
@@ -365,7 +365,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BDBTLHDS
 
 [Document20]
 DocumentPath=..\..\..\Library\Modules.PcbLib
@@ -681,21 +681,25 @@ Variation16=Designator=R?|UniqueId=\PGKQQUNA|Kind=1|AlternatePart=
 Variation17=Designator=D?|UniqueId=\LZFJIRAW|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for External_Camera_HAT\Design Rule Check - External_Camera_HAT.html
+DItemRevisionGUID=
+
 [Parameter1]
-Name=TeamLead
-Value=Sam Tomlinson
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=External Camera HAT
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
+[Parameter3]
+Name=ProjectTitle
+Value=External Camera HAT
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sam Tomlinson
 
 [Configuration1]
 Name=Sources
