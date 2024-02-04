@@ -1,0 +1,80 @@
+Added Component: Designator=D1(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=D3(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=D4(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=J1(SAMTEC-LS2-105-01-X-D-RA2)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SAMTEC-LS2-105-01-X-D-RA2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "200-LS210501FDRA2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Blue Anode Pin=D1-6
+Added Pin To Net: NetName=Blue Anode Pin=J1-8
+Added Net: Name=Blue Anode
+Added Pin To Net: NetName=Blue D1D2 Pin=D1-5
+Added Pin To Net: NetName=Blue D1D2 Pin=D2-6
+Added Net: Name=Blue D1D2
+Added Pin To Net: NetName=Blue D2D3 Pin=D2-5
+Added Pin To Net: NetName=Blue D2D3 Pin=D3-6
+Added Net: Name=Blue D2D3
+Added Pin To Net: NetName=Blue D3D4 Pin=D3-5
+Added Pin To Net: NetName=Blue D3D4 Pin=D4-6
+Added Net: Name=Blue D3D4
+Added Pin To Net: NetName=GND Pin=D4-1
+Added Pin To Net: NetName=GND Pin=D4-3
+Added Pin To Net: NetName=GND Pin=D4-5
+Added Pin To Net: NetName=GND Pin=D4-7
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J1-7
+Added Pin To Net: NetName=GND Pin=J1-9
+Added Net: Name=GND
+Added Pin To Net: NetName=Green Anode Pin=D1-4
+Added Pin To Net: NetName=Green Anode Pin=J1-2
+Added Net: Name=Green Anode
+Added Pin To Net: NetName=Green D1D2 Pin=D1-3
+Added Pin To Net: NetName=Green D1D2 Pin=D2-4
+Added Net: Name=Green D1D2
+Added Pin To Net: NetName=Green D2D3 Pin=D2-3
+Added Pin To Net: NetName=Green D2D3 Pin=D3-4
+Added Net: Name=Green D2D3
+Added Pin To Net: NetName=Green D3D4 Pin=D3-3
+Added Pin To Net: NetName=Green D3D4 Pin=D4-4
+Added Net: Name=Green D3D4
+Added Pin To Net: NetName=Red Anode Pin=D1-2
+Added Pin To Net: NetName=Red Anode Pin=J1-4
+Added Net: Name=Red Anode
+Added Pin To Net: NetName=Red D1D2 Pin=D1-1
+Added Pin To Net: NetName=Red D1D2 Pin=D2-2
+Added Net: Name=Red D1D2
+Added Pin To Net: NetName=Red D2D3 Pin=D2-1
+Added Pin To Net: NetName=Red D2D3 Pin=D3-2
+Added Net: Name=Red D2D3
+Added Pin To Net: NetName=Red D3D4 Pin=D3-1
+Added Pin To Net: NetName=Red D3D4 Pin=D4-2
+Added Net: Name=Red D3D4
+Added Pin To Net: NetName=White Anode Pin=D1-8
+Added Pin To Net: NetName=White Anode Pin=J1-10
+Added Net: Name=White Anode
+Added Pin To Net: NetName=White D1D2 Pin=D1-7
+Added Pin To Net: NetName=White D1D2 Pin=D2-8
+Added Net: Name=White D1D2
+Added Pin To Net: NetName=White D2D3 Pin=D2-7
+Added Pin To Net: NetName=White D2D3 Pin=D3-8
+Added Net: Name=White D2D3
+Added Pin To Net: NetName=White D3D4 Pin=D3-7
+Added Pin To Net: NetName=White D3D4 Pin=D4-8
+Added Net: Name=White D3D4
+Added Class: Name=LED_aluminum
+Added Room: Name=LED_aluminum
