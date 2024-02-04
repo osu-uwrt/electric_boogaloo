@@ -1,0 +1,473 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/29/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:09:03 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc" class="file"><acronym title="C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc">C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">39</td></tr>
+</table>
+</td>
+</table><a name="IDFTOGIJ4UEIMFZCNJFBFAD1P1M0KUBNAPC2F02DLHDDLD5DOJWRD"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKEY5LWDESGLWHKVTRAZV3KVIZOITZH0ROELCFQMV24HLX1HVWG1D">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1FAGNAYEU2BICABHLPUQGEPY3PKES331LFAFRXGGHJNL4PGOWMVH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4RMGDW2Y2HJXKPK55B0UXT5L1FFIIMPPI0C3TFBVPBNAR5F4TNKJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">27</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3WANC0PIS2DZKAG5YYTLXOAWKPJL05TGF5FNU3CBJ0JYQXY2ZTFK">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKIH2OD4SB2S3BT4RVJFSC4ZKGHLR3DHEOGE5FBQBZA2HGN350O">Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWPNJF021VKFTNA45TSMDESMAXOJOEZBGTLYYKCH4EM2Q2R3NWKK">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUG3CLO40EQUDKYPWROBYKGKK3LJBOR0S555JRDKLLUM2A3DNTIRH">Minimum Annular Ring (Minimum=11.811mil) (IsPad)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2EPCFYDBP0ZVPXCFU5ECXRCVVEWPTZYAPDM5MRL2PBXOOQBOWA0L">Minimum Annular Ring (Minimum=5.118mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ030TZWSIQ1HDHRROCY5D0EYLMJOFLE5ZD3NJ1HLXDLAP500YMHL">Acute Angle Constraint (Minimum=60.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFYAYCPU5DB0OB5XGFJ5ZIZ0XPNARH5DQILTRZ2OZXACCP43UBXTM">Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTFIMI0RTADBCR0DUOPGHCR52FAYKJAKJQQOOOMGKIXXMTNA40HM">Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKOAZJ550DEX4KX5JCSCOIX0JJMM0IYGBRQOYHMXRNDPRDYP0SDN">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOEQPVXSJNITRNBBJKBMOZM3SONFT1XHAFTYBBAJVNYZ52YQYJARE">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA1HFKJDP3FUTF4UYXEMNUPOZINSUS3SF5KSRQJMGTXXBJE22D4TG">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5RGQK3VFKU4XDTDNLNX0P1HAJKCC5IEDICOFGYOZCMFLD1TOPTTG">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLPN5BGIVAIACJD1TTFSUYKPSLOUU4U4VUM4QAROVBMGJOGH0CLWP">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGRVJMFHQ4GFZEIQW3I1ICWURLJWWRU4UD300FHCQMBQF3QM3BU5E">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDM1BE1QWYKQILBB2PFFHTNGT1BJT1JAGSR2LXK5PHY3IBKR5KNOXP">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">39</td>
+</tr>
+</table><br><a name="IDKEY5LWDESGLWHKVTRAZV3KVIZOITZH0ROELCFQMV24HLX1HVWG1D"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=7.874mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=246.875mil|Location2.X=253.125mil|Location1.Y=246.875mil|Location2.Y=253.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=246.875mil|Location2.X=253.125mil|Location1.Y=246.875mil|Location2.Y=253.125mil|Absolute=True">Clearance Constraint: (Collision &lt; 7.874mil) Between Area Fill (0mil,0mil) (455mil,450mil) on Keep-Out Layer And Pad Free-1(250mil,250mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=246.875mil|Location2.X=253.125mil|Location1.Y=3746.875mil|Location2.Y=3753.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=246.875mil|Location2.X=253.125mil|Location1.Y=3746.875mil|Location2.Y=3753.125mil|Absolute=True">Clearance Constraint: (Collision &lt; 7.874mil) Between Area Fill (0mil,3555mil) (455mil,4005mil) on Keep-Out Layer And Pad Free-1(250mil,3750mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1797.438mil|Location2.X=1806.562mil|Location1.Y=1966.938mil|Location2.Y=1976.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1797.438mil|Location2.X=1806.562mil|Location1.Y=1966.938mil|Location2.Y=1976.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L1-1(1744mil,1865mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2063.438mil|Location2.X=2072.562mil|Location1.Y=1966.938mil|Location2.Y=1976.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2063.438mil|Location2.X=2072.562mil|Location1.Y=1966.938mil|Location2.Y=1976.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L1-2(2126mil,1865mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2323.438mil|Location2.X=2332.562mil|Location1.Y=2593.938mil|Location2.Y=2603.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2323.438mil|Location2.X=2332.562mil|Location1.Y=2593.938mil|Location2.Y=2603.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L2-1(2386mil,2705mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2057.438mil|Location2.X=2066.562mil|Location1.Y=2593.938mil|Location2.Y=2603.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2057.438mil|Location2.X=2066.562mil|Location1.Y=2593.938mil|Location2.Y=2603.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L2-2(2004mil,2705mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1658.438mil|Location2.X=1667.562mil|Location1.Y=621.938mil|Location2.Y=631.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1658.438mil|Location2.X=1667.562mil|Location1.Y=621.938mil|Location2.Y=631.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L3-1(1605mil,520mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1924.438mil|Location2.X=1933.562mil|Location1.Y=621.938mil|Location2.Y=631.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1924.438mil|Location2.X=1933.562mil|Location1.Y=621.938mil|Location2.Y=631.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L3-2(1987mil,520mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2218.438mil|Location2.X=2227.562mil|Location1.Y=1203.938mil|Location2.Y=1213.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2218.438mil|Location2.X=2227.562mil|Location1.Y=1203.938mil|Location2.Y=1213.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L4-1(2281mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1952.438mil|Location2.X=1961.562mil|Location1.Y=1203.938mil|Location2.Y=1213.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1952.438mil|Location2.X=1961.562mil|Location1.Y=1203.938mil|Location2.Y=1213.062mil|Absolute=True">Clearance Constraint: (2mil &lt; 7.874mil) Between Pad L4-2(1899mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4RMGDW2Y2HJXKPK55B0UXT5L1FFIIMPPI0C3TFBVPBNAR5F4TNKJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=531.024mil|Location2.X=630.039mil|Location1.Y=1539.908mil|Location2.Y=1588.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=531.024mil|Location2.X=630.039mil|Location1.Y=1539.908mil|Location2.Y=1588.924mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4R-2(544.016mil,1553.688mil) on Top Layer And Pad C11R-2(616.26mil,1575.932mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=602.48mil|Location2.X=693.032mil|Location1.Y=1468.452mil|Location2.Y=1588.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=602.48mil|Location2.X=693.032mil|Location1.Y=1468.452mil|Location2.Y=1588.924mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C11R-2(616.26mil,1575.932mil) on Bottom Layer And Pad C5R-2(679.252mil,1481.444mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1439.041mil|Location2.X=1626.968mil|Location1.Y=2613.032mil|Location2.Y=2862.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1439.041mil|Location2.X=1626.968mil|Location1.Y=2613.032mil|Location2.Y=2862.5mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C13-2(1468.521mil,2835mil) on Top Layer And Pad C1-2(1605mil,2630mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.976mil|Location2.X=720.695mil|Location1.Y=1904.278mil|Location2.Y=1930.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.976mil|Location2.X=720.695mil|Location1.Y=1904.278mil|Location2.Y=1930.263mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C12R-2(647.756mil,1917.271mil) on Bottom Layer And Pad C8R-2(706.915mil,1917.271mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=714.685mil|Location2.X=788.11mil|Location1.Y=1642.271mil|Location2.Y=1715.105mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=714.685mil|Location2.X=788.11mil|Location1.Y=1642.271mil|Location2.Y=1715.105mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Via (730.433mil,1699.357mil) from Top Layer to Bottom Layer And Pad C13R-2(775.118mil,1656.05mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1898.032mil|Location2.X=2026.968mil|Location1.Y=1038.032mil|Location2.Y=1071.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1898.032mil|Location2.X=2026.968mil|Location1.Y=1038.032mil|Location2.Y=1071.968mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C18-2(1920mil,1055mil) on Bottom Layer And Pad C17-1(2005mil,1055mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1974.032mil|Location2.X=2026.968mil|Location1.Y=999.032mil|Location2.Y=1071.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1974.032mil|Location2.X=2026.968mil|Location1.Y=999.032mil|Location2.Y=1071.968mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1990mil,1015mil) from Top Layer to Bottom Layer And Pad C17-1(2005mil,1055mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1528.032mil|Location2.X=1696.496mil|Location1.Y=3508.032mil|Location2.Y=3559.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1528.032mil|Location2.X=1696.496mil|Location1.Y=3508.032mil|Location2.Y=3559.331mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C24-2(1550mil,3525mil) on Bottom Layer And Pad C25-2(1665mil,3529.803mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1431.22mil|Location2.X=1571.968mil|Location1.Y=3491.26mil|Location2.Y=3541.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1431.22mil|Location2.X=1571.968mil|Location1.Y=3491.26mil|Location2.Y=3541.968mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C26-2(1445mil,3504.252mil) on Bottom Layer And Pad C24-2(1550mil,3525mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.331mil|Location2.X=1458.78mil|Location1.Y=3346.575mil|Location2.Y=3517.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.331mil|Location2.X=1458.78mil|Location1.Y=3346.575mil|Location2.Y=3517.244mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad J2-2(1070.354mil,3407.598mil) on Multi-Layer And Pad C26-2(1445mil,3504.252mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1609.535mil|Location2.X=1696.968mil|Location1.Y=778.032mil|Location2.Y=916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1609.535mil|Location2.X=1696.968mil|Location1.Y=778.032mil|Location2.Y=916mil|Absolute=True">Un-Routed Net Constraint: Net NetC27_1 Between Pad U2-17(1614.535mil,899mil) on Top Layer And Pad C27-1(1680mil,800mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1593.032mil|Location2.X=1678.605mil|Location1.Y=778.032mil|Location2.Y=916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1593.032mil|Location2.X=1678.605mil|Location1.Y=778.032mil|Location2.Y=916mil|Absolute=True">Un-Routed Net Constraint: Net NetC27_2 Between Pad C27-2(1610mil,800mil) on Bottom Layer And Pad U2-20(1673.605mil,899mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.032mil|Location2.X=2116.968mil|Location1.Y=2393.032mil|Location2.Y=2426.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.032mil|Location2.X=2116.968mil|Location1.Y=2393.032mil|Location2.Y=2426.968mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4-1(2025mil,2410mil) on Bottom Layer And Pad C5-2(2095mil,2410mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.032mil|Location2.X=2046.968mil|Location1.Y=2370mil|Location2.Y=2426.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2003.032mil|Location2.X=2046.968mil|Location1.Y=2370mil|Location2.Y=2426.968mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4-1(2025mil,2410mil) on Bottom Layer And Pad D2-2(2028.701mil,2385mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=919.606mil|Location2.X=961.339mil|Location1.Y=1610.775mil|Location2.Y=1795.814mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=919.606mil|Location2.X=961.339mil|Location1.Y=1610.775mil|Location2.Y=1795.814mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C7R-2(932.598mil,1624.554mil) on Bottom Layer And Pad C6R-2(948.346mil,1782.034mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=877.972mil|Location2.X=945.591mil|Location1.Y=1455.46mil|Location2.Y=1638.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=877.972mil|Location2.X=945.591mil|Location1.Y=1455.46mil|Location2.Y=1638.334mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Via (893.721mil,1471.208mil) from Top Layer to Bottom Layer And Pad C7R-2(932.598mil,1624.554mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=693.136mil|Location2.X=732.402mil|Location1.Y=1858.806mil|Location2.Y=1930.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=693.136mil|Location2.X=732.402mil|Location1.Y=1858.806mil|Location2.Y=1930.263mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C8R-2(706.915mil,1917.271mil) on Bottom Layer And Pad U1R-19(726.496mil,1877.999mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=535.551mil|Location2.X=659.567mil|Location1.Y=1767.664mil|Location2.Y=1801.719mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=535.551mil|Location2.X=659.567mil|Location1.Y=1767.664mil|Location2.Y=1801.719mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C9R-2(549.331mil,1780.656mil) on Bottom Layer And Via (643.819mil,1785.971mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1882.032mil|Location2.X=2038.701mil|Location1.Y=2262.032mil|Location2.Y=2400mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1882.032mil|Location2.X=2038.701mil|Location1.Y=2262.032mil|Location2.Y=2400mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1895mil,2275mil) from Top Layer to Bottom Layer And Pad D2-2(2028.701mil,2385mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.299mil|Location2.X=1718mil|Location1.Y=815mil|Location2.Y=951.085mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.299mil|Location2.X=1718mil|Location1.Y=815mil|Location2.Y=951.085mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad D3-2(1561.299mil,830mil) on Top Layer And Pad U2-22(1701mil,946.085mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1509.032mil|Location2.X=1571.299mil|Location1.Y=644.032mil|Location2.Y=845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1509.032mil|Location2.X=1571.299mil|Location1.Y=644.032mil|Location2.Y=845mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1525mil,660mil) from Top Layer to Bottom Layer And Pad D3-2(1561.299mil,830mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315mil|Location2.X=1585mil|Location1.Y=2530mil|Location2.Y=2578.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315mil|Location2.X=1585mil|Location1.Y=2530mil|Location2.Y=2578.701mil|Absolute=True">Un-Routed Net Constraint: Net 3V3_RP2CAN Between Track (1360mil,2630mil)(1415mil,2630mil) on Top Layer And Pad R1-1(1485mil,2478.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1510.5mil|Location2.X=1737.974mil|Location1.Y=2284.845mil|Location2.Y=2591.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1510.5mil|Location2.X=1737.974mil|Location1.Y=2284.845mil|Location2.Y=2591.079mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad U1-5(1610.5mil,2384.845mil) on Top Layer And Track (1637.895mil,2491mil)(1637.974mil,2491.079mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1629.225mil|Location2.X=1718mil|Location1.Y=882mil|Location2.Y=1069.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1629.225mil|Location2.X=1718mil|Location1.Y=882mil|Location2.Y=1069.225mil|Absolute=True">Un-Routed Net Constraint: Net V+ Between Pad U2-18(1634.225mil,899mil) on Top Layer And Pad U2-28(1701mil,1064.225mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1668.605mil|Location2.X=1718mil|Location1.Y=1059.225mil|Location2.Y=1148mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1668.605mil|Location2.X=1718mil|Location1.Y=1059.225mil|Location2.Y=1148mil|Absolute=True">Un-Routed Net Constraint: Net V+ Between Pad U2-31(1673.605mil,1131mil) on Top Layer And Pad U2-28(1701mil,1064.225mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1369mil|Location2.X=1596.474mil|Location1.Y=924.845mil|Location2.Y=1231.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1369mil|Location2.X=1596.474mil|Location1.Y=924.845mil|Location2.Y=1231.079mil|Absolute=True">Un-Routed Net Constraint: Net GND_RP2CAN Between Pad U2-5(1469mil,1024.845mil) on Top Layer And Track (1496.395mil,1131mil)(1496.474mil,1131.079mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=578.858mil|Location2.X=708.779mil|Location1.Y=1799.751mil|Location2.Y=1850.932mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=578.858mil|Location2.X=708.779mil|Location1.Y=1799.751mil|Location2.Y=1850.932mil|Absolute=True">Un-Routed Net Constraint: Net 3V3_RP2CAN Between Via (592.638mil,1813.53mil) from Top Layer to Bottom Layer And Via (695mil,1837.152mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUG3CLO40EQUDKYPWROBYKGKK3LJBOR0S555JRDKLLUM2A3DNTIRH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=11.811mil) (IsPad)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.563mil|Location2.X=254.437mil|Location1.Y=245.563mil|Location2.Y=254.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.563mil|Location2.X=254.437mil|Location1.Y=245.563mil|Location2.Y=254.437mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-1(250mil,250mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.563mil|Location2.X=254.437mil|Location1.Y=3745.563mil|Location2.Y=3754.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.563mil|Location2.X=254.437mil|Location1.Y=3745.563mil|Location2.Y=3754.437mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-1(250mil,3750mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

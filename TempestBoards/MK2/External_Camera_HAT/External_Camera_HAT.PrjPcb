@@ -76,7 +76,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KLTQBHTI
+DocumentUniqueId=TIWPPZUU
 
 [Document3]
 DocumentPath=..\..\..\Library\Capacitors.PcbLib
@@ -297,7 +297,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BOXOROXM
 
 [Document16]
 DocumentPath=..\..\..\Library\Inductors.SchLib
@@ -314,7 +314,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document17]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
@@ -365,7 +365,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BDBTLHDS
 
 [Document20]
 DocumentPath=..\..\..\Library\Modules.PcbLib
@@ -633,11 +633,28 @@ AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
+
+[Document36]
+DocumentPath=JLCPCB Vias.PvLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [ProjectVariant1]
 UniqueID=A33B2996-FDEC-4C73-B83F-9415330BDFB8
@@ -663,6 +680,10 @@ Variation15=Designator=R?|UniqueId=\BRLYMWWX|Kind=1|AlternatePart=
 Variation16=Designator=R?|UniqueId=\PGKQQUNA|Kind=1|AlternatePart= 
 Variation17=Designator=D?|UniqueId=\LZFJIRAW|Kind=1|AlternatePart= 
 ParamVariationCount=0
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for External_Camera_HAT\Design Rule Check - External_Camera_HAT.html
+DItemRevisionGUID=
 
 [Parameter1]
 Name=BoardRevision

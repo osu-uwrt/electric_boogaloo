@@ -1,0 +1,696 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/31/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:40:36 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc" class="file"><acronym title="C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc">C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">112</td></tr>
+</table>
+</td>
+</table><a name="IDWGN1NR3OJSKTLTDDSKNFR3JGNDLC43PEVC0B3XHKB2ZVXUGDMW3B"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTUCGWSMX2K2FPUWFECF5ZADDHPRE4O3GRHJQQVLBAYFZAWXYL0JL">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIZWHGXNGFCPRCJ3ACL0KYDJMTMU1MW5RVV4223D2S44U4XLIWJJJ">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFF5BZPU4ZSK1D5CA4RE2UUTPDNON23EWZRNEVNLMEM52DK0RKZH">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO3FTATNMT1K1LZWL15K5CB5JVET00DCUMA0FZHGC5AAKU1A0FV3G">Width Constraint (Min=0.09mm) (Max=5mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ0KNFHWGBGCFLLZCC3HYLECIGJ0ABWHX13WARNI3PNGKQWH3MZRE">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKSREX4XAVSDWIVVJKJWFSUIM2RPYHX1EXOBOJEUQZNANX1HI2RC">Routing Via (Templates Used To Check Via: v50h30m0mx0(Tol13-8), v65h40m0mx0(Tol13-8), v80h50m0mx0(Tol13-8)) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYPLUNP5OJTBFBQTDA4P0HORHLH010533450SWBKEAXV1Z4GIS2MF">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.127mm) (Prefered=0.127mm)  and Width Constraints (Min=0.2mm) (Max=0.2mm) (Prefered=0.2mm) (InDifferentialPairClass('USB 2.0'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUK01L3K2TFPVJQLUUR0HMOCDMB2RNYDIJBY2BGLROL5LXOE3CT3E">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.127mm) (Prefered=0.127mm)  and Width Constraints (Min=0.14mm) (Max=0.14mm) (Prefered=0.14mm) (InDifferentialPairClass('PCIe Gen 2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPWCYJRD1XK4VE0ZIIJMUZNLGJHLAP51KXFJSMBLVDXWAYXV3VMDO">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOZH424H1AIKDPKQY2G05ZY4PPBZKUKDMPPB3NHJQ0EV24XSODDDO">Minimum Annular Ring (Minimum=0.075mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0DW0KTUPXN3BNRXFJVVFTYZ2HHJ0UIO52N4PKOECBQ5CV5RJPH0N">Minimum Annular Ring (Minimum=0.25mm) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZB0LGW4RHO3PO4IRI1KJDR0MCDARLWHTSFRVP5GGWYBVZSD5WP">Minimum Annular Ring (Minimum=0.13mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRBA21PCT14PPOWLVOPYDLZNVYKYR05USJTI2ZZIZXOCEQJCK1LOO">Acute Angle Constraint (Minimum=80.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXHY41A34P1OFIH0ATHFNTIR00K130QP2S4ZULQF2LJGVIALVIG2P">Hole Size Constraint (Min=0.5mm) (Max=6.3mm) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0CVDZSGW45XFDWH1ZRAOGBGYZN0AFNSPS1PBXTOIXNW5JDHP3A5K">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0XOWDJG0T2GAGJF3FG4CJ4VBSHUQGZ1IWWV4QULLX2JP110BD22H">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMIIMCPTUBJACF3NK1FPMKKXX2I5TJSI05LEGKGOZTQRJEJ3GZHU">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIA4BI1K40RMMBGOOKGVCZSBXOM0ZB1WAKXXG3WLXKVVMQRS3HPZF">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">58</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPNEE1JDC5WZXP20K54VWRXKNEGSECF0SDVC4XF20Y2X0OCAJFKN">Silk to Silk (Clearance=0.076mm) (All),(All)</a></td>
+<td class="column2">54</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZACBHBW0EBGVNRIQNGZRSE4TANQTMGFW1PFJA2LEML3VBQGBV2EJ">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">112</td>
+</tr>
+</table><br><a name="IDIA4BI1K40RMMBGOOKGVCZSBXOM0ZB1WAKXXG3WLXKVVMQRS3HPZF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2830.209mil|Location2.X=2835.146mil|Location1.Y=1588.083mil|Location2.Y=1593.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2830.209mil|Location2.X=2835.146mil|Location1.Y=1588.083mil|Location2.Y=1593.02mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Arc (46.55mm,15.125mm) on Top Overlay And Pad C21-2(46.535mm,14.6mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.326mil|Location2.X=2869.263mil|Location1.Y=1873.713mil|Location2.Y=1878.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.326mil|Location2.X=2869.263mil|Location1.Y=1873.713mil|Location2.Y=1878.65mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad C22-1(47.6mm,22.535mm) on Top Layer And Text "R21" (46.228mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2867.515mil|Location2.X=2872.452mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2867.515mil|Location2.X=2872.452mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad C22-2(47.6mm,21.665mm) on Top Layer And Text "R21" (46.228mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2986.52mil|Location2.X=2991.457mil|Location1.Y=1780.406mil|Location2.Y=1785.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2986.52mil|Location2.X=2991.457mil|Location1.Y=1780.406mil|Location2.Y=1785.342mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad C27-1(50.6mm,20.165mm) on Top Layer And Text "R18" (49.632mm,19.253mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3117.532mil|Location2.X=3122.468mil|Location1.Y=3089.532mil|Location2.Y=3094.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3117.532mil|Location2.X=3122.468mil|Location1.Y=3089.532mil|Location2.Y=3094.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad C7-1(54.2mm,53.389mm) on Bottom Layer And Text "R40" (53.848mm,53.137mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3117.532mil|Location2.X=3122.468mil|Location1.Y=3014.461mil|Location2.Y=3019.398mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3117.532mil|Location2.X=3122.468mil|Location1.Y=3014.461mil|Location2.Y=3019.398mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad C7-2(54.2mm,51.611mm) on Bottom Layer And Text "R43" (53.848mm,50.825mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2718.536mil|Location2.X=2723.473mil|Location1.Y=2515.53mil|Location2.Y=2520.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2718.536mil|Location2.X=2723.473mil|Location1.Y=2515.53mil|Location2.Y=2520.467mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad J10-1(43.7mm,38.7mm) on Bottom Layer And Text "J8" (44.094mm,38.43mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2713.538mil|Location2.X=2718.475mil|Location1.Y=2540.522mil|Location2.Y=2545.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2713.538mil|Location2.X=2718.475mil|Location1.Y=2540.522mil|Location2.Y=2545.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad J10-2(43.7mm,39.35mm) on Bottom Layer And Text "J8" (44.094mm,38.43mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3108.118mil|Location2.X=3118.181mil|Location1.Y=3375.832mil|Location2.Y=3383.477mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3108.118mil|Location2.X=3118.181mil|Location1.Y=3375.832mil|Location2.Y=3383.477mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.137mm &lt; 0.15mm) Between Pad J1-29(53.93mm,61.23mm) on Multi-Layer And Text "Q2" (53.721mm,59.563mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.137mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2718.536mil|Location2.X=2723.473mil|Location1.Y=2309.539mil|Location2.Y=2314.476mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2718.536mil|Location2.X=2723.473mil|Location1.Y=2309.539mil|Location2.Y=2314.476mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad J8-1(43.7mm,33.15mm) on Bottom Layer And Text "J9" (44.094mm,32.918mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2713.538mil|Location2.X=2718.475mil|Location1.Y=2323.522mil|Location2.Y=2328.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2713.538mil|Location2.X=2718.475mil|Location1.Y=2323.522mil|Location2.Y=2328.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad J8-2(43.7mm,33.8mm) on Bottom Layer And Text "J9" (44.094mm,32.918mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3203.543mil|Location2.X=3208.48mil|Location1.Y=3251.522mil|Location2.Y=3256.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3203.543mil|Location2.X=3208.48mil|Location1.Y=3251.522mil|Location2.Y=3256.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad Q2-2(55.7mm,57.35mm) on Bottom Layer And Text "Q3" (56.921mm,56.49mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3188.548mil|Location2.X=3193.485mil|Location1.Y=3241.525mil|Location2.Y=3246.462mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3188.548mil|Location2.X=3193.485mil|Location1.Y=3241.525mil|Location2.Y=3246.462mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad Q2-3(55.7mm,56.7mm) on Bottom Layer And Text "Q3" (56.921mm,56.49mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3192.437mil|Location2.X=3199.592mil|Location1.Y=3215.44mil|Location2.Y=3222.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3192.437mil|Location2.X=3199.592mil|Location1.Y=3215.44mil|Location2.Y=3222.595mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.126mm &lt; 0.15mm) Between Pad Q2-4(55.7mm,56.05mm) on Bottom Layer And Text "Q3" (56.921mm,56.49mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.126mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2058.532mil|Location2.X=2063.469mil|Location1.Y=4486.522mil|Location2.Y=4491.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2058.532mil|Location2.X=2063.469mil|Location1.Y=4486.522mil|Location2.Y=4491.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R14-1(26.674mm,89mm) on Top Layer And Text "R15" (25.146mm,87.859mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1999.477mil|Location2.X=2004.414mil|Location1.Y=4486.522mil|Location2.Y=4491.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1999.477mil|Location2.X=2004.414mil|Location1.Y=4486.522mil|Location2.Y=4491.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R14-2(25.724mm,89mm) on Top Layer And Text "R15" (25.146mm,87.859mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3021.532mil|Location2.X=3026.468mil|Location1.Y=1713.523mil|Location2.Y=1718.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3021.532mil|Location2.X=3026.468mil|Location1.Y=1713.523mil|Location2.Y=1718.46mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R18-1(51.075mm,17.9mm) on Top Layer And Text "C24" (51.41mm,17.551mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3010.482mil|Location2.X=3015.419mil|Location1.Y=1687.492mil|Location2.Y=1692.429mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3010.482mil|Location2.X=3015.419mil|Location1.Y=1687.492mil|Location2.Y=1692.429mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R18-1(51.075mm,17.9mm) on Top Layer And Text "C25" (49.962mm,17.12mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2981.783mil|Location2.X=2986.72mil|Location1.Y=1699.265mil|Location2.Y=1704.202mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2981.783mil|Location2.X=2986.72mil|Location1.Y=1699.265mil|Location2.Y=1704.202mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R18-2(50.125mm,17.9mm) on Top Layer And Text "C25" (49.962mm,17.12mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2753.515mil|Location2.X=2758.452mil|Location1.Y=1777.525mil|Location2.Y=1782.462mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2753.515mil|Location2.X=2758.452mil|Location1.Y=1777.525mil|Location2.Y=1782.462mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R19-1(44.425mm,20.2mm) on Top Layer And Text "C26" (43.332mm,19.304mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.506mil|Location2.X=2788.443mil|Location1.Y=1787.522mil|Location2.Y=1792.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.506mil|Location2.X=2788.443mil|Location1.Y=1787.522mil|Location2.Y=1792.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R19-2(45.375mm,20.2mm) on Top Layer And Text "C26" (43.332mm,19.304mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2797.637mil|Location2.X=2802.574mil|Location1.Y=1875.393mil|Location2.Y=1880.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2797.637mil|Location2.X=2802.574mil|Location1.Y=1875.393mil|Location2.Y=1880.33mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R20-1(46.1mm,22.575mm) on Top Layer And Text "R19" (43.942mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2817.532mil|Location2.X=2822.468mil|Location1.Y=1875.484mil|Location2.Y=1880.421mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2817.532mil|Location2.X=2822.468mil|Location1.Y=1875.484mil|Location2.Y=1880.421mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R20-1(46.1mm,22.575mm) on Top Layer And Text "R21" (46.228mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2797.509mil|Location2.X=2802.446mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2797.509mil|Location2.X=2802.446mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R20-2(46.1mm,21.625mm) on Top Layer And Text "R19" (43.942mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2817.532mil|Location2.X=2822.468mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2817.532mil|Location2.X=2822.468mil|Location1.Y=1845.532mil|Location2.Y=1850.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R20-2(46.1mm,21.625mm) on Top Layer And Text "R21" (46.228mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2747.525mil|Location2.X=2752.462mil|Location1.Y=1860.527mil|Location2.Y=1865.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2747.525mil|Location2.X=2752.462mil|Location1.Y=1860.527mil|Location2.Y=1865.464mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R22-1(44.5mm,21.625mm) on Top Layer And Text "R19" (43.942mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2734.736mil|Location2.X=2739.673mil|Location1.Y=1875.522mil|Location2.Y=1880.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2734.736mil|Location2.X=2739.673mil|Location1.Y=1875.522mil|Location2.Y=1880.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R22-2(44.5mm,22.575mm) on Top Layer And Text "R19" (43.942mm,21.539mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2946.09mil|Location2.X=2953.245mil|Location1.Y=1777.918mil|Location2.Y=1785.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2946.09mil|Location2.X=2953.245mil|Location1.Y=1777.918mil|Location2.Y=1785.074mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.093mm &lt; 0.15mm) Between Pad R23-1(49.1mm,20.125mm) on Top Layer And Text "R18" (49.632mm,19.253mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.093mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3119.522mil|Location2.Y=3124.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3119.522mil|Location2.Y=3124.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R38-1(52.4mm,54.175mm) on Bottom Layer And Text "R40" (53.848mm,53.137mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3089.532mil|Location2.Y=3094.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3089.532mil|Location2.Y=3094.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R38-2(52.4mm,53.225mm) on Bottom Layer And Text "R40" (53.848mm,53.137mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3028.522mil|Location2.Y=3033.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=3028.522mil|Location2.Y=3033.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R40-1(52.4mm,51.875mm) on Bottom Layer And Text "R43" (53.848mm,50.825mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=2998.532mil|Location2.Y=3003.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.546mil|Location2.X=3077.483mil|Location1.Y=2998.532mil|Location2.Y=3003.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R40-2(52.4mm,50.925mm) on Bottom Layer And Text "R43" (53.848mm,50.825mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2813.532mil|Location2.X=2818.468mil|Location1.Y=2978.522mil|Location2.Y=2983.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2813.532mil|Location2.X=2818.468mil|Location1.Y=2978.522mil|Location2.Y=2983.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R42-2(46.1mm,50.525mm) on Bottom Layer And Text "D5" (46.126mm,49.555mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3075.287mil|Location2.X=3080.224mil|Location1.Y=2938.522mil|Location2.Y=2943.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3075.287mil|Location2.X=3080.224mil|Location1.Y=2938.522mil|Location2.Y=2943.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R43-1(52.4mm,49.575mm) on Bottom Layer And Text "R39" (53.061mm,48.539mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3066.538mil|Location2.X=3071.475mil|Location1.Y=2923.527mil|Location2.Y=2928.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3066.538mil|Location2.X=3071.475mil|Location1.Y=2923.527mil|Location2.Y=2928.464mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad R43-2(52.4mm,48.625mm) on Bottom Layer And Text "R39" (53.061mm,48.539mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.369mil|Location2.X=3037.524mil|Location1.Y=1779.414mil|Location2.Y=1786.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.369mil|Location2.X=3037.524mil|Location1.Y=1779.414mil|Location2.Y=1786.57mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.126mm &lt; 0.15mm) Between Pad R45-2(52.1mm,20.125mm) on Top Layer And Text "R18" (49.632mm,19.253mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.126mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2325.532mil|Location2.X=2330.468mil|Location1.Y=1906.522mil|Location2.Y=1911.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2325.532mil|Location2.X=2330.468mil|Location1.Y=1906.522mil|Location2.Y=1911.459mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad TP2-TP(34mm,23mm) on Top Layer And Text "L2" (33.731mm,22.327mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.552mil|Location2.X=2917.49mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.552mil|Location2.X=2917.49mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-10(48.6mm,53.1mm) on Bottom Layer And Text "R41" (50.292mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2908.538mil|Location2.X=2913.475mil|Location1.Y=3098.523mil|Location2.Y=3103.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2908.538mil|Location2.X=2913.475mil|Location1.Y=3098.523mil|Location2.Y=3103.46mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-10(48.6mm,53.1mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2895.957mil|Location2.X=2900.894mil|Location1.Y=3091.111mil|Location2.Y=3096.048mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2895.957mil|Location2.X=2900.894mil|Location1.Y=3091.111mil|Location2.Y=3096.048mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-11(48.1mm,53.1mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2869.532mil|Location2.X=2874.468mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2869.532mil|Location2.X=2874.468mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-12(47.6mm,53.1mm) on Bottom Layer And Text "R42" (47.549mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2878.548mil|Location2.X=2883.485mil|Location1.Y=3088.527mil|Location2.Y=3093.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2878.548mil|Location2.X=2883.485mil|Location1.Y=3088.527mil|Location2.Y=3093.464mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-12(47.6mm,53.1mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.788mil|Location2.X=2860.944mil|Location1.Y=3106.62mil|Location2.Y=3113.775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.788mil|Location2.X=2860.944mil|Location1.Y=3106.62mil|Location2.Y=3113.775mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.087mm &lt; 0.15mm) Between Pad U2-13(46.937mm,53.763mm) on Bottom Layer And Text "R42" (47.549mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.087mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.447mil|Location2.X=2859.602mil|Location1.Y=3106.622mil|Location2.Y=3113.778mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.447mil|Location2.X=2859.602mil|Location1.Y=3106.622mil|Location2.Y=3113.778mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.087mm &lt; 0.15mm) Between Pad U2-13(46.937mm,53.763mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.087mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2971.105mil|Location2.X=2978.26mil|Location1.Y=3107.019mil|Location2.Y=3114.175mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2971.105mil|Location2.X=2978.26mil|Location1.Y=3107.019mil|Location2.Y=3114.175mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.108mm &lt; 0.15mm) Between Pad U2-25(48.85mm,55.013mm) on Bottom Layer And Text "C9" (51.308mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.108mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2970.674mil|Location2.X=2977.83mil|Location1.Y=3107.014mil|Location2.Y=3114.169mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2970.674mil|Location2.X=2977.83mil|Location1.Y=3107.014mil|Location2.Y=3114.169mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.107mm &lt; 0.15mm) Between Pad U2-25(48.85mm,55.013mm) on Bottom Layer And Text "R41" (50.292mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.107mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2868.563mil|Location2.X=2875.718mil|Location1.Y=3107.013mil|Location2.Y=3114.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2868.563mil|Location2.X=2875.718mil|Location1.Y=3107.013mil|Location2.Y=3114.168mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.107mm &lt; 0.15mm) Between Pad U2-25(48.85mm,55.013mm) on Bottom Layer And Text "R42" (47.549mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.107mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2927.422mil|Location2.X=2934.578mil|Location1.Y=3107.016mil|Location2.Y=3114.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2927.422mil|Location2.X=2934.578mil|Location1.Y=3107.016mil|Location2.Y=3114.171mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.107mm &lt; 0.15mm) Between Pad U2-25(48.85mm,55.013mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.107mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3004.379mil|Location2.X=3011.534mil|Location1.Y=3106.62mil|Location2.Y=3113.775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3004.379mil|Location2.X=3011.534mil|Location1.Y=3106.62mil|Location2.Y=3113.775mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.087mm &lt; 0.15mm) Between Pad U2-6(50.762mm,53.763mm) on Bottom Layer And Text "C9" (51.308mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.087mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2971.03mil|Location2.X=2975.966mil|Location1.Y=3075.048mil|Location2.Y=3079.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2971.03mil|Location2.X=2975.966mil|Location1.Y=3075.048mil|Location2.Y=3079.985mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-7(50.1mm,53.1mm) on Bottom Layer And Text "C9" (51.308mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.697mil|Location2.X=2979.634mil|Location1.Y=3083.528mil|Location2.Y=3088.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.697mil|Location2.X=2979.634mil|Location1.Y=3083.528mil|Location2.Y=3088.465mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-7(50.1mm,53.1mm) on Bottom Layer And Text "R41" (50.292mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2945.563mil|Location2.X=2950.5mil|Location1.Y=3090.505mil|Location2.Y=3095.442mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2945.563mil|Location2.X=2950.5mil|Location1.Y=3090.505mil|Location2.Y=3095.442mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-8(49.6mm,53.1mm) on Bottom Layer And Text "R41" (50.292mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2932.546mil|Location2.X=2937.483mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2932.546mil|Location2.X=2937.483mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-9(49.1mm,53.1mm) on Bottom Layer And Text "R41" (50.292mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.532mil|Location2.X=2933.468mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.532mil|Location2.X=2933.468mil|Location1.Y=3076.665mil|Location2.Y=3081.602mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U2-9(49.1mm,53.1mm) on Bottom Layer And Text "R44" (49.047mm,52.73mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2824.515mil|Location2.X=2829.452mil|Location1.Y=1623.532mil|Location2.Y=1628.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2824.515mil|Location2.X=2829.452mil|Location1.Y=1623.532mil|Location2.Y=1628.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U3-1(46.55mm,16mm) on Top Layer And Text "C21" (45.136mm,15.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2818.408mil|Location2.X=2825.563mil|Location1.Y=1657.36mil|Location2.Y=1664.516mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2818.408mil|Location2.X=2825.563mil|Location1.Y=1657.36mil|Location2.Y=1664.516mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.124mm &lt; 0.15mm) Between Pad U3-19(46.05mm,16.95mm) on Top Layer And Text "C21" (45.136mm,15.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.124mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2843.988mil|Location2.X=2848.925mil|Location1.Y=1623.532mil|Location2.Y=1628.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2843.988mil|Location2.X=2848.925mil|Location1.Y=1623.532mil|Location2.Y=1628.468mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U3-2(47mm,16mm) on Top Layer And Text "C21" (45.136mm,15.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822.565mil|Location2.X=2827.502mil|Location1.Y=1641.575mil|Location2.Y=1646.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822.565mil|Location2.X=2827.502mil|Location1.Y=1641.575mil|Location2.Y=1646.512mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.15mm) Between Pad U3-20(46.05mm,16.5mm) on Top Layer And Text "C21" (45.136mm,15.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDPNEE1JDC5WZXP20K54VWRXKNEGSECF0SDVC4XF20Y2X0OCAJFKN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.076mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.524mil|Location2.X=3046.524mil|Location1.Y=3210.49mil|Location2.Y=3213.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.524mil|Location2.X=3046.524mil|Location1.Y=3210.49mil|Location2.Y=3213.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Arc (51.675mm,56.233mm) on Bottom Overlay And Text "R38" (53.848mm,55.423mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1852.495mil|Location2.X=1855.495mil|Location1.Y=3013.49mil|Location2.Y=3016.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1852.495mil|Location2.X=1855.495mil|Location1.Y=3013.49mil|Location2.Y=3016.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "1" (22.381mm,51.103mm) on Top Overlay And Text "R9" (21.311mm,50.419mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2805.587mil|Location2.X=2808.587mil|Location1.Y=1624.5mil|Location2.Y=1627.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2805.587mil|Location2.X=2808.587mil|Location1.Y=1624.5mil|Location2.Y=1627.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C21" (45.136mm,15.9mm) on Top Overlay And Track (45.9mm,15.85mm)(45.9mm,16.025mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2805.587mil|Location2.X=2808.587mil|Location1.Y=1622.516mil|Location2.Y=1625.516mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2805.587mil|Location2.X=2808.587mil|Location1.Y=1622.516mil|Location2.Y=1625.516mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C21" (45.136mm,15.9mm) on Top Overlay And Track (45.9mm,15.85mm)(46.075mm,15.85mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2855.479mil|Location2.X=2858.479mil|Location1.Y=1966.49mil|Location2.Y=1969.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2855.479mil|Location2.X=2858.479mil|Location1.Y=1966.49mil|Location2.Y=1969.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C22" (47.041mm,23.825mm) on Top Overlay And Text "R20" (45.517mm,23.825mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2388.5mil|Location2.X=2391.5mil|Location1.Y=1970.498mil|Location2.Y=1973.498mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2388.5mil|Location2.X=2391.5mil|Location1.Y=1970.498mil|Location2.Y=1973.498mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C23" (35.306mm,24.562mm) on Top Overlay And Text "TP2" (33.477mm,24.282mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3025.481mil|Location2.X=3028.481mil|Location1.Y=1702.49mil|Location2.Y=1705.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3025.481mil|Location2.X=3028.481mil|Location1.Y=1702.49mil|Location2.Y=1705.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C24" (51.41mm,17.551mm) on Top Overlay And Text "C25" (49.962mm,17.12mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.626mil|Location2.X=3033.626mil|Location1.Y=1719.49mil|Location2.Y=1722.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.626mil|Location2.X=3033.626mil|Location1.Y=1719.49mil|Location2.Y=1722.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C24" (51.41mm,17.551mm) on Top Overlay And Track (51.616mm,17.265mm)(51.616mm,18.535mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2960.626mil|Location2.X=2963.626mil|Location1.Y=1678.224mil|Location2.Y=1681.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2960.626mil|Location2.X=2963.626mil|Location1.Y=1678.224mil|Location2.Y=1681.224mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C25" (49.962mm,17.12mm) on Top Overlay And Track (49.584mm,17.265mm)(49.838mm,17.265mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3025.481mil|Location2.X=3028.481mil|Location1.Y=1678.224mil|Location2.Y=1681.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3025.481mil|Location2.X=3028.481mil|Location1.Y=1678.224mil|Location2.Y=1681.224mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C25" (49.962mm,17.12mm) on Top Overlay And Track (51.362mm,17.265mm)(51.616mm,17.265mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.626mil|Location2.X=3033.626mil|Location1.Y=1702.49mil|Location2.Y=1705.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3030.626mil|Location2.X=3033.626mil|Location1.Y=1702.49mil|Location2.Y=1705.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C25" (49.962mm,17.12mm) on Top Overlay And Track (51.616mm,17.265mm)(51.616mm,18.535mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726.216mil|Location2.X=2729.216mil|Location1.Y=1783.492mil|Location2.Y=1786.492mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726.216mil|Location2.X=2729.216mil|Location1.Y=1783.492mil|Location2.Y=1786.492mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C26" (43.332mm,19.304mm) on Top Overlay And Track (43.884mm,19.565mm)(43.884mm,20.835mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.652mil|Location2.X=2734.728mil|Location1.Y=1763.34mil|Location2.Y=1769.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.652mil|Location2.X=2734.728mil|Location1.Y=1763.34mil|Location2.Y=1769.524mil|Absolute=True">Silk To Silk Clearance Constraint: (0.001mm &lt; 0.076mm) Between Text "C26" (43.332mm,19.304mm) on Top Overlay And Track (43.884mm,19.565mm)(44.138mm,19.565mm) on Top Overlay Silk Text to Silk Clearance [0.001mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2973.479mil|Location2.X=2976.479mil|Location1.Y=1907.49mil|Location2.Y=1910.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2973.479mil|Location2.X=2976.479mil|Location1.Y=1907.49mil|Location2.Y=1910.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C27" (50.063mm,22.327mm) on Top Overlay And Text "R23" (48.514mm,22.327mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026.5mil|Location2.X=3029.5mil|Location1.Y=1907.49mil|Location2.Y=1910.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026.5mil|Location2.X=3029.5mil|Location1.Y=1907.49mil|Location2.Y=1910.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C27" (50.063mm,22.327mm) on Top Overlay And Text "R45" (51.511mm,22.327mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3183.49mil|Location2.Y=3186.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3183.49mil|Location2.Y=3186.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C7" (54.762mm,54.737mm) on Bottom Overlay And Text "R38" (53.848mm,55.423mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3134.506mil|Location2.X=3137.506mil|Location1.Y=3176.65mil|Location2.Y=3179.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3134.506mil|Location2.X=3137.506mil|Location1.Y=3176.65mil|Location2.Y=3179.65mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C7" (54.762mm,54.737mm) on Bottom Overlay And Track (52.565mm,55.325mm)(55.965mm,55.325mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2978.5mil|Location2.X=2981.5mil|Location1.Y=3074.5mil|Location2.Y=3077.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2978.5mil|Location2.X=2981.5mil|Location1.Y=3074.5mil|Location2.Y=3077.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C9" (51.308mm,52.73mm) on Bottom Overlay And Text "R41" (50.292mm,52.73mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2998.506mil|Location2.X=3001.506mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2998.506mil|Location2.X=3001.506mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C9" (51.308mm,52.73mm) on Bottom Overlay And Track (50.595mm,52.963mm)(50.9mm,52.963mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.437mil|Location2.X=3005.437mil|Location1.Y=3095.646mil|Location2.Y=3098.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.437mil|Location2.X=3005.437mil|Location1.Y=3095.646mil|Location2.Y=3098.646mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "C9" (51.308mm,52.73mm) on Bottom Overlay And Track (50.9mm,52.963mm)(50.9mm,53.268mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.461mil|Location2.X=2791.461mil|Location1.Y=2976.374mil|Location2.Y=2979.374mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.461mil|Location2.X=2791.461mil|Location1.Y=2976.374mil|Location2.Y=2979.374mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "D5" (46.126mm,49.555mm) on Bottom Overlay And Track (45.465mm,49.984mm)(45.465mm,50.238mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.5mil|Location2.X=2817.5mil|Location1.Y=2966.374mil|Location2.Y=2969.374mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.5mil|Location2.X=2817.5mil|Location1.Y=2966.374mil|Location2.Y=2969.374mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "D5" (46.126mm,49.555mm) on Bottom Overlay And Track (45.465mm,49.984mm)(46.735mm,49.984mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3093.506mil|Location2.X=3096.506mil|Location1.Y=3361.689mil|Location2.Y=3364.689mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3093.506mil|Location2.X=3096.506mil|Location1.Y=3361.689mil|Location2.Y=3364.689mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "Q2" (53.721mm,59.563mm) on Bottom Overlay And Track (16.845mm,60.025mm)(68.155mm,60.025mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.973mil|Location2.X=1992.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.973mil|Location2.X=1992.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R15" (25.146mm,87.859mm) on Top Overlay And Track (25.183mm,88.365mm)(25.183mm,89.635mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.973mil|Location2.X=1992.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1989.973mil|Location2.X=1992.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R15" (25.146mm,87.859mm) on Top Overlay And Track (25.183mm,88.365mm)(25.437mm,88.365mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2059.973mil|Location2.X=2062.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2059.973mil|Location2.X=2062.973mil|Location1.Y=4477.43mil|Location2.Y=4480.43mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R15" (25.146mm,87.859mm) on Top Overlay And Track (26.961mm,88.365mm)(27.215mm,88.365mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2065.849mil|Location2.X=2070.099mil|Location1.Y=4486.865mil|Location2.Y=4491.115mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2065.849mil|Location2.X=2070.099mil|Location1.Y=4486.865mil|Location2.Y=4491.115mil|Absolute=True">Silk To Silk Clearance Constraint: (0.025mm &lt; 0.076mm) Between Text "R15" (25.146mm,87.859mm) on Top Overlay And Track (27.215mm,88.365mm)(27.215mm,89.635mm) on Top Overlay Silk Text to Silk Clearance [0.025mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2952.5mil|Location2.X=2955.5mil|Location1.Y=1756.5mil|Location2.Y=1759.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2952.5mil|Location2.X=2955.5mil|Location1.Y=1756.5mil|Location2.Y=1759.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Text "U3" (49.665mm,18.519mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2952.5mil|Location2.X=2955.5mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2952.5mil|Location2.X=2955.5mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (48.465mm,19.584mm)(49.735mm,19.584mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2956.571mil|Location2.X=2959.571mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2956.571mil|Location2.X=2959.571mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (49.735mm,19.584mm)(49.735mm,19.838mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2967.004mil|Location2.X=2970.004mil|Location1.Y=1777.437mil|Location2.Y=1780.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2967.004mil|Location2.X=2970.004mil|Location1.Y=1777.437mil|Location2.Y=1780.437mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (50mm,19.584mm)(50mm,19.785mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.494mil|Location2.X=2975.494mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.494mil|Location2.X=2975.494mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (50mm,19.584mm)(51.2mm,19.584mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3014.248mil|Location2.X=3017.248mil|Location1.Y=1771.495mil|Location2.Y=1774.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3014.248mil|Location2.X=3017.248mil|Location1.Y=1771.495mil|Location2.Y=1774.495mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (51.2mm,19.584mm)(51.2mm,19.784mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.681mil|Location2.X=3027.681mil|Location1.Y=1779.524mil|Location2.Y=1782.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.681mil|Location2.X=3027.681mil|Location1.Y=1779.524mil|Location2.Y=1782.524mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (51.465mm,19.584mm)(51.465mm,19.838mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.681mil|Location2.X=3027.681mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.681mil|Location2.X=3027.681mil|Location1.Y=1769.524mil|Location2.Y=1772.524mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R18" (49.632mm,19.253mm) on Top Overlay And Track (51.465mm,19.584mm)(52.735mm,19.584mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726.448mil|Location2.X=2736.349mil|Location1.Y=1840.19mil|Location2.Y=1846.398mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726.448mil|Location2.X=2736.349mil|Location1.Y=1840.19mil|Location2.Y=1846.398mil|Absolute=True">Silk To Silk Clearance Constraint: (0.076mm &lt; 0.076mm) Between Text "R19" (43.942mm,21.539mm) on Top Overlay And Track (43.865mm,21.084mm)(43.865mm,21.338mm) on Top Overlay Silk Text to Silk Clearance [0.076mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2787.846mil|Location2.X=2792.096mil|Location1.Y=1842.164mil|Location2.Y=1846.414mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2787.846mil|Location2.X=2792.096mil|Location1.Y=1842.164mil|Location2.Y=1846.414mil|Absolute=True">Silk To Silk Clearance Constraint: (0.062mm &lt; 0.076mm) Between Text "R19" (43.942mm,21.539mm) on Top Overlay And Track (45.465mm,21.084mm)(45.465mm,21.338mm) on Top Overlay Silk Text to Silk Clearance [0.062mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2790.5mil|Location2.X=2793.5mil|Location1.Y=1936.5mil|Location2.Y=1939.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2790.5mil|Location2.X=2793.5mil|Location1.Y=1936.5mil|Location2.Y=1939.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R20" (45.517mm,23.825mm) on Top Overlay And Text "R22" (43.917mm,23.825mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2837.853mil|Location2.X=2842.103mil|Location1.Y=1842.164mil|Location2.Y=1846.414mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2837.853mil|Location2.X=2842.103mil|Location1.Y=1842.164mil|Location2.Y=1846.414mil|Absolute=True">Silk To Silk Clearance Constraint: (0.062mm &lt; 0.076mm) Between Text "R21" (46.228mm,21.539mm) on Top Overlay And Track (46.735mm,21.084mm)(46.735mm,21.338mm) on Top Overlay Silk Text to Silk Clearance [0.062mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3067.988mil|Location2.X=3070.988mil|Location1.Y=3180.587mil|Location2.Y=3183.587mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3067.988mil|Location2.X=3070.988mil|Location1.Y=3180.587mil|Location2.Y=3183.587mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R38" (53.848mm,55.423mm) on Bottom Overlay And Track (52.565mm,55.325mm)(52.565mm,55.425mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3176.65mil|Location2.Y=3179.65mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3176.65mil|Location2.Y=3179.65mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R38" (53.848mm,55.423mm) on Bottom Overlay And Track (52.565mm,55.325mm)(55.965mm,55.325mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3086.403mil|Location2.X=3090.653mil|Location1.Y=2905.158mil|Location2.Y=2909.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3086.403mil|Location2.X=3090.653mil|Location1.Y=2905.158mil|Location2.Y=2909.408mil|Absolute=True">Silk To Silk Clearance Constraint: (0.063mm &lt; 0.076mm) Between Text "R39" (53.061mm,48.539mm) on Bottom Overlay And Track (53.035mm,48.084mm)(53.035mm,48.338mm) on Bottom Overlay Silk Text to Silk Clearance [0.063mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3102.358mil|Location2.X=3105.358mil|Location1.Y=3120.49mil|Location2.Y=3123.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3102.358mil|Location2.X=3105.358mil|Location1.Y=3120.49mil|Location2.Y=3123.49mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R40" (53.848mm,53.137mm) on Bottom Overlay And Track (53.438mm,53.643mm)(53.438mm,54.024mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3125.429mil|Location2.Y=3128.429mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3125.429mil|Location2.Y=3128.429mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R40" (53.848mm,53.137mm) on Bottom Overlay And Track (53.438mm,54.024mm)(54.962mm,54.024mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.515mil|Location2.X=2936.515mil|Location1.Y=3074.5mil|Location2.Y=3077.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.515mil|Location2.X=2936.515mil|Location1.Y=3074.5mil|Location2.Y=3077.5mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R41" (50.292mm,52.73mm) on Bottom Overlay And Text "R44" (49.047mm,52.73mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2870.5mil|Location2.X=2873.5mil|Location1.Y=3089.495mil|Location2.Y=3092.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2870.5mil|Location2.X=2873.5mil|Location1.Y=3089.495mil|Location2.Y=3092.495mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R42" (47.549mm,52.73mm) on Bottom Overlay And Text "R44" (49.047mm,52.73mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2841.02mil|Location2.X=2844.02mil|Location1.Y=3089.495mil|Location2.Y=3092.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2841.02mil|Location2.X=2844.02mil|Location1.Y=3089.495mil|Location2.Y=3092.495mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R42" (47.549mm,52.73mm) on Bottom Overlay And Track (46.8mm,52.963mm)(46.8mm,53.268mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2850.506mil|Location2.X=2853.506mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2850.506mil|Location2.X=2853.506mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R42" (47.549mm,52.73mm) on Bottom Overlay And Track (46.8mm,52.963mm)(47.105mm,52.963mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3102.358mil|Location2.X=3105.358mil|Location1.Y=3020.429mil|Location2.Y=3023.429mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3102.358mil|Location2.X=3105.358mil|Location1.Y=3020.429mil|Location2.Y=3023.429mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R43" (53.848mm,50.825mm) on Bottom Overlay And Track (53.438mm,50.976mm)(53.438mm,51.357mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3005.429mil|Location2.Y=3008.429mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3118.5mil|Location2.X=3121.5mil|Location1.Y=3005.429mil|Location2.Y=3008.429mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R43" (53.848mm,50.825mm) on Bottom Overlay And Track (53.438mm,50.976mm)(54.962mm,50.976mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2845.366mil|Location2.X=2849.616mil|Location1.Y=3088.87mil|Location2.Y=3093.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2845.366mil|Location2.X=2849.616mil|Location1.Y=3088.87mil|Location2.Y=3093.12mil|Absolute=True">Silk To Silk Clearance Constraint: (0.053mm &lt; 0.076mm) Between Text "R44" (49.047mm,52.73mm) on Bottom Overlay And Track (46.8mm,52.963mm)(46.8mm,53.268mm) on Bottom Overlay Silk Text to Silk Clearance [0.053mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.028mil|Location2.X=2856.028mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.028mil|Location2.X=2856.028mil|Location1.Y=3083.638mil|Location2.Y=3086.638mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "R44" (49.047mm,52.73mm) on Bottom Overlay And Track (46.8mm,52.963mm)(47.105mm,52.963mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.626mil|Location2.X=2953.626mil|Location1.Y=1728.224mil|Location2.Y=1731.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.626mil|Location2.X=2953.626mil|Location1.Y=1728.224mil|Location2.Y=1731.224mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "U3" (49.665mm,18.519mm) on Top Overlay And Track (49.584mm,17.265mm)(49.584mm,18.535mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.823mil|Location2.X=2956.823mil|Location1.Y=1728.224mil|Location2.Y=1731.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.823mil|Location2.X=2956.823mil|Location1.Y=1728.224mil|Location2.Y=1731.224mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.076mm) Between Text "U3" (49.665mm,18.519mm) on Top Overlay And Track (49.584mm,18.535mm)(49.838mm,18.535mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

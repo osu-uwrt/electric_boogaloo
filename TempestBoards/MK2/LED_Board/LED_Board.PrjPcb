@@ -611,6 +611,27 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document34]
+DocumentPath=LED_Board.SCHLIB
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LMSSRHLO
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for LED_Board\Design Rule Check - Pcb_4layer_8x4_Template_NoCenterHoles.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=BoardRevision
 Value=1.0
