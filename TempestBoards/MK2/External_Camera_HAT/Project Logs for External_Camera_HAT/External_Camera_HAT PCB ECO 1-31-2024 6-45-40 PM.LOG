@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=M2_3V3 Pin=R10-1
+Added Pin To Net: NetName=PI_3V3 Pin=R10-1
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=CANL Pin=SW1-1
+Removed Pin From Net: NetName=CANH Pin=SW1-4
+Change Component Description : Designator=D5 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Added Pin To Net: NetName=CANH Pin=SW1-1
+Added Pin To Net: NetName=CANL Pin=SW1-4
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406

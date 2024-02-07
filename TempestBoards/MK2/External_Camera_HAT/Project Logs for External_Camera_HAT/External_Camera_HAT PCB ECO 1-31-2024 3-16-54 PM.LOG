@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=CAM_TRIGGER1_1V8 Pin=J5-1
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=GND Pin=J5-3
+Removed Pin From Net: NetName=GND Pin=J5-4
+Removed Pin From Net: NetName=CAM_TRIGGER2_1V8 Pin=J6-1
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=J6-3
+Removed Pin From Net: NetName=GND Pin=J6-4
+Change component parameters: Designator = "J1" ("J1"); Footprint = "SAMTEC_ESQ-120-XX-X-D-XX"; UniqueID = "\FDWATAAF" ("\FDWATAAF")
+Change component parameters (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ESQ-120-13-L-D/Samtec+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "ESQ-120-13-L-D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/ESQ-120-13-L-D/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ESQ-120-13-L-D/Samtec+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SAM9318-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(FP-505567-0281-MFG)
+Added Component: Designator=J5(FP-505567-0281-MFG)
+Added Pin To Net: NetName=CAM_TRIGGER1_1V8 Pin=J4-1
+Added Pin To Net: NetName=GND Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-4
+Added Pin To Net: NetName=CAM_TRIGGER2_1V8 Pin=J5-1
+Added Pin To Net: NetName=GND Pin=J5-2
+Added Pin To Net: NetName=GND Pin=J5-3
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J5 505567-0281
