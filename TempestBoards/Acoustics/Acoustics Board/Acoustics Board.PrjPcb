@@ -101,6 +101,23 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document4]
+DocumentPath=Acoustics Board Pg. 2.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XIKTKEKJ
+
+[Document5]
 DocumentPath=Pcb_2layer_8x4_Template_NoCenterHoles.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BNBWFUDO
 
-[Document5]
+[Document6]
 DocumentPath=Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FAJBMQJC
 
-[Document6]
+[Document7]
 DocumentPath=Pcb_2layer_8x4_Template.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document8]
 DocumentPath=Pcb_4layer_8x4_Template.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -167,6 +184,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document9]
+DocumentPath=Acoustics Board Power.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FBEYIUHQ
 
 [Parameter1]
 Name=BoardRevision
