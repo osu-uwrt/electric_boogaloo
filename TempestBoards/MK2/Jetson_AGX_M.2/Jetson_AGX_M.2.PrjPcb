@@ -56,7 +56,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -149,7 +149,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KBCGNCQN
 
 [Document7]
 DocumentPath=..\..\..\Library\Connectors.SchLib
@@ -166,7 +166,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HVIEDDBW
 
 [Document8]
 DocumentPath=..\..\..\Library\Converter.PcbLib
@@ -610,8 +610,29 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document34]
+DocumentPath=m.2 mk3.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KAMRDZOG
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Jetson_AGX_M.2\Design Rule Check - m.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=m.2 mk2 1-30-2024 1-40-53 AM.WAS
 DItemRevisionGUID=
 
 [Configuration1]

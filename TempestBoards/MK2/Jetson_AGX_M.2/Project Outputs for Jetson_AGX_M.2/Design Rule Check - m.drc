@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\rosati.33\UWRT\electric_boogaloo\TempestBoards\MK2\Jetson_AGX_M.2\m.2 mk2.PcbDoc
-Date     : 1/29/2024
-Time     : 8:02:20 PM
+PCB File : C:\Users\rosati.33\UWRT\electric_boogaloo\TempestBoards\MK2\Jetson_AGX_M.2\m.2 mk3.PcbDoc
+Date     : 1/30/2024
+Time     : 9:47:08 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
 Rule Violations :0
@@ -10,9 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (131mil,232mil) from Top Layer to Bottom Layer And Track (467mil,439mil)(497mil,439mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (222mil,1014mil) from Top Layer to Bottom Layer And Via (529mil,407mil) from Top Layer to Bottom Layer 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -26,24 +24,10 @@ Rule Violations :0
 Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (131mil,232mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (143mil,819mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (179mil,345mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (198mil,870mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (222mil,1014mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (288mil,363mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (300mil,869mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (340mil,698mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (422mil,231mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (489mil,368mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (529mil,407mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (566mil,232mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (572.438mil,641.766mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (629mil,281mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (655mil,426mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (4.5mil < 5.118mil) Via (745mil,277mil) from Top Layer to Bottom Layer (Annular Ring=4.5mil) On (Top Layer)
-Rule Violations :16
+Processing Rule : Minimum Annular Ring (Minimum=5.236mil) (All)
+   Violation between Minimum Annular Ring: (No Ring) Via (199.134mil,250.882mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Via (199.134mil,561.118mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)
+Rule Violations :2
 
 Processing Rule : Acute Angle Constraint (Minimum=60.000) (Disabled)(All)
 Rule Violations :0
@@ -78,6 +62,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 20
+Violations Detected : 4
 Waived Violations : 0
 Time Elapsed        : 00:00:01
