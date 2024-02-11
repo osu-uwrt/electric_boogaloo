@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc
-Date     : 1/31/2024
-Time     : 6:00:58 PM
+PCB File : C:\Users\julmp\Documents\electric_boogaloo\TempestBoards\MK2\PoActuator\Combined_Power_Actuator\PoactuatorPCB4.PcbDoc
+Date     : 2/11/2024
+Time     : 12:59:44 PM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -173,18 +173,36 @@ Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0.076mm) (All),(All)
-Rule Violations :0
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.076mm) Between Text "VPORT" (336.378mm,28.845mm) on Top Overlay And Track (329.291mm,32.808mm)(335.641mm,32.808mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.076mm) Between Text "VPORT" (336.378mm,28.845mm) on Top Overlay And Track (335.641mm,12.488mm)(335.641mm,32.808mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+Rule Violations :2
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-Rule Violations :0
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "GND" (335.578mm,12.869mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "GND" (339.553mm,28.845mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "VPORT" (332.403mm,12.869mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "VPORT" (336.378mm,28.845mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (329.291mm,12.488mm)(329.291mm,32.808mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (329.291mm,12.488mm)(335.641mm,12.488mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (329.291mm,32.808mm)(335.641mm,32.808mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (329.418mm,23.156mm)(335.768mm,23.156mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (332.466mm,12.615mm)(332.466mm,32.935mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (333.267mm,28.464mm)(333.267mm,48.784mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (333.267mm,28.464mm)(339.617mm,28.464mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (333.267mm,48.784mm)(339.617mm,48.784mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (333.394mm,39.132mm)(339.744mm,39.132mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (335.641mm,12.488mm)(335.641mm,32.808mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (336.442mm,28.591mm)(336.442mm,48.911mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (339.617mm,28.464mm)(339.617mm,48.784mm) on Top Overlay 
+Rule Violations :16
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 127
+Violations Detected : 145
 Waived Violations : 0
 Time Elapsed        : 00:00:02
