@@ -32,7 +32,6 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
@@ -696,242 +695,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\ActiveBOM.VirtualBOM
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\BOM\Bill of Materials-Combined_Power_Actuator.xlsx
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Capacitors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Capacitors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Connectors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Connectors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Converter.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Converter.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Crystals.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Crystals.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for Combined_Power_Actuator\Design Rule Check - PoactuatorPCB4.html
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Diodes.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Fuses.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Inductors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Modules.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Connectors.SchDoc
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_KillSwitch.SchDoc
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Microcontroller.SchDoc
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\Poactuator_Power_Circuits.SchDoc
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoActuator Order.OutJob
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-RoundHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4-SlotHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument30]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument32]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\DRC\PoactuatorPCB4.html
-DItemRevisionGUID=
-
-[GeneratedDocument33]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\NC Drill\PoactuatorPCB4.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument34]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\PoactuatorPCB4.PcbDoc
-DItemRevisionGUID=
-
-[GeneratedDocument35]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.REP
-DItemRevisionGUID=
-
-[GeneratedDocument36]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument37]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\ExportSTEP\PoactuatorPCB4.step
-DItemRevisionGUID=
-
-[GeneratedDocument38]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument39]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Copper_Signal_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument40]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument41]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Legend_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument42]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument43]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Paste_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument44]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument45]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\PoactuatorPCB4_Soldermask_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument46]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument47]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Resistors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument48]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040.SchDot
-DItemRevisionGUID=
-
-[GeneratedDocument49]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
-DItemRevisionGUID=
-
-[GeneratedDocument50]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\GerberX2\SBH_Profile.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument51]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument52]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument53]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Switches.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument54]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument55]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transformers.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument56]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument57]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\Transistors.SchLib
-DItemRevisionGUID=
-
-[GeneratedDocument58]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\UWRT.PcbLib
-DItemRevisionGUID=
-
-[GeneratedDocument59]
-DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\Combined_Power_Actuator\Copy Files\OutOfProjectDir\UWRT.SchLib
-DItemRevisionGUID=
-
 [Parameter1]
 Name=BoardRevision
 Value=1.0
@@ -1063,12 +826,22 @@ OutputName20=WireList Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
+OutputType21=XSpiceNetlist
+OutputName21=Mixed Sim Netlist
+OutputDocumentPath21=
+OutputVariantName21=
+OutputDefault21=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputType1=AdvSimNetlist
+OutputName1=Mixed Sim
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -1155,18 +928,6 @@ OutputDocumentPath13=
 OutputVariantName13=
 OutputDefault13=0
 PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType14=PCBDrawing
-OutputName14=Draftsman
-OutputDocumentPath14=
-OutputVariantName14=[No Variations]
-OutputDefault14=0
-PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType15=PCBDrawing
-OutputName15=Draftsman
-OutputDocumentPath15=
-OutputVariantName15=[No Variations]
-OutputDefault15=0
-PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -1310,12 +1071,6 @@ OutputDocumentPath8=
 OutputVariantName8=[No Variations]
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType9=Project History
-OutputName9=Project History
-OutputDocumentPath9=
-OutputVariantName9=[No Variations]
-OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup7]
 Name=Other Outputs
@@ -1666,23 +1421,6 @@ Type116=1
 Type117=1
 Type118=1
 Type119=1
-Type120=1
-Type121=1
-Type122=1
-Type123=1
-Type124=1
-Type125=1
-Type126=1
-Type127=1
-Type128=1
-Type129=1
-Type130=1
-Type131=1
-Type132=1
-Type133=1
-Type134=1
-Type135=1
-Type136=1
 
 [Difference Levels]
 Type1=1
@@ -1753,12 +1491,6 @@ Type65=1
 Type66=1
 Type67=1
 Type68=1
-Type69=1
-Type70=1
-Type71=1
-Type72=1
-Type73=1
-Type74=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1880,7 +1612,6 @@ Type116=2
 Type117=3
 Type118=3
 Type119=3
-MultiChannelAlternate=0
 AlternateItemFail=3
 Type122=2
 Type123=1
@@ -1888,30 +1619,6 @@ Type124=1
 Type125=1
 Type126=1
 Type127=1
-Type128=2
-Type129=2
-Type130=2
-Type131=2
-Type132=2
-Type133=2
-Type134=2
-Type135=2
-Type136=2
-Type137=2
-Type138=1
-Type139=1
-Type140=1
-Type141=1
-Type142=1
-Type143=1
-Type144=1
-Type145=1
-Type146=1
-Type147=2
-Type148=2
-Type149=2
-Type150=2
-Type151=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
