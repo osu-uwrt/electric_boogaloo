@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=CANH Pin=J2-2
+Removed Pin From Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=CANH Pin=J2-4
+Add Class: Class already exists: Designator
