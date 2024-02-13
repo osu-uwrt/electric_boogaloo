@@ -1,0 +1,71 @@
+Added Component: Designator=U1R(QFN-56 RP2040)
+Add component (AddParameter): Name = "Available Busses"; Value = "SPI, I2C, PWM, USB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Crystal Frequency"; Value = "12 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of GPIOs"; Value = "29"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-1
+Added Pin To Net: NetName=NetU1R_2 Pin=U1R-2
+Added Pin To Net: NetName=NetU1R_3 Pin=U1R-3
+Added Pin To Net: NetName=NetU1R_4 Pin=U1R-4
+Added Pin To Net: NetName=NetU1R_5 Pin=U1R-5
+Added Pin To Net: NetName=NetU1R_6 Pin=U1R-6
+Added Pin To Net: NetName=NetU1R_7 Pin=U1R-7
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Pin To Net: NetName=NetU1R_9 Pin=U1R-9
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-10
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Pin To Net: NetName=NetU1R_12 Pin=U1R-12
+Added Pin To Net: NetName=NetU1R_13 Pin=U1R-13
+Added Pin To Net: NetName=NetU1R_14 Pin=U1R-14
+Added Pin To Net: NetName=NetU1R_15 Pin=U1R-15
+Added Pin To Net: NetName=NetU1R_16 Pin=U1R-16
+Added Pin To Net: NetName=NetU1R_17 Pin=U1R-17
+Added Pin To Net: NetName=NetU1R_18 Pin=U1R-18
+Added Pin To Net: NetName=GND_RP2CAN Pin=U1R-19
+Added Pin To Net: NetName=XIN_RP2040 Pin=U1R-20
+Added Pin To Net: NetName=XOUT_RP2040 Pin=U1R-21
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-22
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-23
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=U1R-24
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=U1R-25
+Added Pin To Net: NetName=RUN_RP2040 Pin=U1R-26
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=U1R-27
+Added Pin To Net: NetName=NetU1R_28 Pin=U1R-28
+Added Pin To Net: NetName=NetU1R_29 Pin=U1R-29
+Added Pin To Net: NetName=NetU1R_30 Pin=U1R-30
+Added Pin To Net: NetName=NetU1R_31 Pin=U1R-31
+Added Pin To Net: NetName=NetU1R_32 Pin=U1R-32
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-33
+Added Pin To Net: NetName=NetU1R_34 Pin=U1R-34
+Added Pin To Net: NetName=NetU1R_35 Pin=U1R-35
+Added Pin To Net: NetName=NetU1R_36 Pin=U1R-36
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Pin To Net: NetName=NetU1R_39 Pin=U1R-39
+Added Pin To Net: NetName=NetU1R_40 Pin=U1R-40
+Added Pin To Net: NetName=NetU1R_41 Pin=U1R-41
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-42
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-43
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-44
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-45
+Added Pin To Net: NetName=USB_RP2040_N Pin=U1R-46
+Added Pin To Net: NetName=USB_RP2040_P Pin=U1R-47
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-48
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-49
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-50
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U1R-51
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U1R-52
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U1R-53
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U1R-54
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U1R-55
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U1R-56
+Added Pin To Net: NetName=GND_RP2CAN Pin=U1R-57
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
+Added Member To Class: ClassName=RP2040 Member=Component U1R RP2040
+Added Room: Name=Acoustics Board

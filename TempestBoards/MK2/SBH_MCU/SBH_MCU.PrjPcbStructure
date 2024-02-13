@@ -1,1 +1,3 @@
 Record=TopLevelDocument|FileName=SBH_MCU.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=SBH_MCU.SchDoc|Designator=U_RP2040_with_CAN|SchDesignator=U_RP2040_with_CAN|FileName=RP2040_with_CAN.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040_with_CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=RP2040_with_CAN.SchDot|Designator=U_RP2040_C|SchDesignator=U_RP2040_C|FileName=RP2040.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

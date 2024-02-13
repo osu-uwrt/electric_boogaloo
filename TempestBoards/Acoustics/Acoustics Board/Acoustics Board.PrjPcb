@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=3
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -67,7 +67,7 @@ GenerateClassCluster=0
 DocumentUniqueId=GKEWDAJG
 
 [Document2]
-DocumentPath=Acoustics Board.SchDoc
+DocumentPath=Acoustics Board Sheet 1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -117,21 +117,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FBEYIUHQ
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Acoustics Board\Design Rule Check - Acoustics Board.html
+DItemRevisionGUID=
+
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sample Team Lead
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=Sample Template Project
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=Sample Team Lead
+Name=BoardRevision
+Value=1.0
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
