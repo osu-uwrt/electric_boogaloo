@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc
-Date     : 1/29/2024
-Time     : 9:09:03 PM
+Date     : 2/11/2024
+Time     : 3:01:23 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (Collision < 7.874mil) Between Area Fill (0mil,0mil) (455mil,450mil) on Keep-Out Layer And Pad Free-1(250mil,250mil) on Multi-Layer 
@@ -14,40 +14,14 @@ Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L3-2(1987mil,520mil) on Top Layer And Region (0 hole(s)) Top Layer 
    Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L4-1(2281mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer 
    Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L4-2(1899mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer 
-Rule Violations :10
+   Violation between Clearance Constraint: (3mil < 7.874mil) Between Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer 
+Rule Violations :11
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4R-2(544.016mil,1553.688mil) on Top Layer And Pad C11R-2(616.26mil,1575.932mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C11R-2(616.26mil,1575.932mil) on Bottom Layer And Pad C5R-2(679.252mil,1481.444mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C13-2(1468.521mil,2835mil) on Top Layer And Pad C1-2(1605mil,2630mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C12R-2(647.756mil,1917.271mil) on Bottom Layer And Pad C8R-2(706.915mil,1917.271mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Via (730.433mil,1699.357mil) from Top Layer to Bottom Layer And Pad C13R-2(775.118mil,1656.05mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C18-2(1920mil,1055mil) on Bottom Layer And Pad C17-1(2005mil,1055mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1990mil,1015mil) from Top Layer to Bottom Layer And Pad C17-1(2005mil,1055mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C24-2(1550mil,3525mil) on Bottom Layer And Pad C25-2(1665mil,3529.803mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C26-2(1445mil,3504.252mil) on Bottom Layer And Pad C24-2(1550mil,3525mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad J2-2(1070.354mil,3407.598mil) on Multi-Layer And Pad C26-2(1445mil,3504.252mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetC27_1 Between Pad U2-17(1614.535mil,899mil) on Top Layer And Pad C27-1(1680mil,800mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetC27_2 Between Pad C27-2(1610mil,800mil) on Bottom Layer And Pad U2-20(1673.605mil,899mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4-1(2025mil,2410mil) on Bottom Layer And Pad C5-2(2095mil,2410mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C4-1(2025mil,2410mil) on Bottom Layer And Pad D2-2(2028.701mil,2385mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C7R-2(932.598mil,1624.554mil) on Bottom Layer And Pad C6R-2(948.346mil,1782.034mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Via (893.721mil,1471.208mil) from Top Layer to Bottom Layer And Pad C7R-2(932.598mil,1624.554mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C8R-2(706.915mil,1917.271mil) on Bottom Layer And Pad U1R-19(726.496mil,1877.999mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad C9R-2(549.331mil,1780.656mil) on Bottom Layer And Via (643.819mil,1785.971mil) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1895mil,2275mil) from Top Layer to Bottom Layer And Pad D2-2(2028.701mil,2385mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad D3-2(1561.299mil,830mil) on Top Layer And Pad U2-22(1701mil,946.085mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Via (1525mil,660mil) from Top Layer to Bottom Layer And Pad D3-2(1561.299mil,830mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3_RP2CAN Between Track (1360mil,2630mil)(1415mil,2630mil) on Top Layer And Pad R1-1(1485mil,2478.701mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad U1-5(1610.5mil,2384.845mil) on Top Layer And Track (1637.895mil,2491mil)(1637.974mil,2491.079mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net V+ Between Pad U2-18(1634.225mil,899mil) on Top Layer And Pad U2-28(1701mil,1064.225mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net V+ Between Pad U2-31(1673.605mil,1131mil) on Top Layer And Pad U2-28(1701mil,1064.225mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND_RP2CAN Between Pad U2-5(1469mil,1024.845mil) on Top Layer And Track (1496.395mil,1131mil)(1496.474mil,1131.079mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3_RP2CAN Between Via (592.638mil,1813.53mil) from Top Layer to Bottom Layer And Via (695mil,1837.152mil) from Top Layer to Bottom Layer 
-Rule Violations :27
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -97,6 +71,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 39
+Violations Detected : 13
 Waived Violations : 0
 Time Elapsed        : 00:00:02

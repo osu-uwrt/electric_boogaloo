@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rjp5t\Documents\UWRT\electric_boogaloo\TempestBoards\MK2\External_Camera_HAT\External_Camera_HAT.PcbDoc
-Date     : 2/10/2024
-Time     : 3:26:22 PM
+Date     : 2/12/2024
+Time     : 4:58:05 PM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -24,22 +24,22 @@ Rule Violations :0
 Processing Rule : Routing Via (Templates Used To Check Via: v50h30m0mx0(Tol13-8), v65h40m0mx0(Tol13-8), v80h50m0mx0(Tol13-8)) (All)
 Rule Violations :0
 
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.127mm) (Prefered=0.127mm)  and Width Constraints (Min=0.2mm) (Max=0.2mm) (Prefered=0.2mm) (InDifferentialPairClass('USB 2.0'))
-Rule Violations :0
-
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.127mm) (Prefered=0.127mm)  and Width Constraints (Min=0.14mm) (Max=0.14mm) (Prefered=0.14mm) (InDifferentialPairClass('PCIe Gen 2'))
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.127mm) (Prefered=0.127mm)  and Width Constraints (Min=0.2mm) (Max=0.2mm) (Prefered=0.2mm) (InDifferentialPairClass('USB 2.0'))
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=0.075mm) (All)
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=0.25mm) (IsPad)
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=0.13mm) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.075mm) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=80.000) (All)
@@ -57,52 +57,25 @@ Rule Violations :0
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.076mm) (All),(All)
+Rule Violations :0
+
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
-Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (1 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (13 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Region (2 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Text "'.ProjectTitle'" (20.219mm,0.794mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Text "J1" (17.043mm,65.888mm) on Bottom Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.109mm < 0.3mm) Between Board Edge And Text "J5" (10.236mm,59.004mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.3mm) Between Board Edge And Text "The Underwater Robotics Team" (20.219mm,3.969mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (10.3mm,52.025mm)(10.3mm,57.975mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (10.3mm,52.025mm)(10.505mm,52.025mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (10.3mm,57.975mm)(10.505mm,57.975mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.064mm < 0.3mm) Between Board Edge And Track (72.316mm,48.521mm)(74.836mm,48.521mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.064mm < 0.3mm) Between Board Edge And Track (72.316mm,58.921mm)(74.836mm,58.921mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.068mm < 0.3mm) Between Board Edge And Track (74.221mm,27.385mm)(74.856mm,27.385mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.068mm < 0.3mm) Between Board Edge And Track (74.246mm,35.615mm)(74.856mm,35.615mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (74.495mm,18.525mm)(74.7mm,18.525mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (74.495mm,24.475mm)(74.7mm,24.475mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.2mm < 0.3mm) Between Board Edge And Track (74.7mm,18.525mm)(74.7mm,24.475mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.064mm < 0.3mm) Between Board Edge And Track (74.836mm,48.521mm)(74.836mm,58.921mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.068mm < 0.3mm) Between Board Edge And Track (74.856mm,27.385mm)(74.856mm,27.995mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.068mm < 0.3mm) Between Board Edge And Track (74.856mm,35.005mm)(74.856mm,35.615mm) on Top Overlay 
-Rule Violations :36
+Processing Rule : Board Clearance Constraint (Gap=0mm) (Not OnSilkscreen)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) ((Not IsComponentPrimitive) AND OnSilkscreen)
+Rule Violations :0
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 36
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:02
