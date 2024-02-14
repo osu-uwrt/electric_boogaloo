@@ -828,20 +828,20 @@ DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\LED_aluminum\Copy Files\OutOf
 DItemRevisionGUID=
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sam Tomlinson
 
 [Parameter2]
+Name=ProjectTitle
+Value=LED Aluminum 
+
+[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
-[Parameter3]
-Name=ProjectTitle
-Value=Sample Template Project
-
 [Parameter4]
-Name=TeamLead
-Value=Sample Team Lead
+Name=BoardRevision
+Value=1.0
 
 [Configuration1]
 Name=Sources
