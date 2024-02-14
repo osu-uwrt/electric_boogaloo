@@ -150,7 +150,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document7]
 DocumentPath=..\..\..\Library\Crystals.PcbLib
@@ -184,7 +184,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOXQDNOZ
 
 [Document9]
 DocumentPath=..\..\..\Library\Diodes.PcbLib
@@ -252,7 +252,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MOYCOWBP
 
 [Document13]
 DocumentPath=..\..\..\Library\Inductors.PcbLib
@@ -320,7 +320,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NBKHQIJD
 
 [Document17]
 DocumentPath=..\..\..\Library\LFXTAL014160REEL.PcbLib
@@ -371,7 +371,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JTOMNKLG
 
 [Document20]
 DocumentPath=..\..\..\Library\Resistors.PcbLib
@@ -405,7 +405,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JKKXLRTC
 
 [Document22]
 DocumentPath=..\..\..\Library\SOT95P280X100-3N.PcbLib
@@ -456,7 +456,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=RHMHFXDO
 
 [Document25]
 DocumentPath=..\..\..\Library\Transformers.PcbLib
@@ -490,7 +490,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AAOIDODX
 
 [Document27]
 DocumentPath=..\..\..\Library\Transistors.PcbLib
@@ -524,7 +524,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LHXHEGVB
 
 [Document29]
 DocumentPath=..\..\..\Library\UWRT.PcbLib
@@ -612,7 +612,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LMSSRHLO
 
 [Document34]
-DocumentPath=Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc
+DocumentPath=LED_Control.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -628,8 +628,241 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FAJBMQJC
 
+[Document35]
+DocumentPath=LED_Control_Order.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\BOM\Bill of Materials-LED_Board.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument10]
 DocumentPath=Project Outputs for LED_Board\Design Rule Check - Pcb_4layer_8x4_Template_NoCenterHoles.html
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board.BomDoc
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board_control.SchDoc
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\DRC\LED_Control.html
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control.PcbDoc
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.REP
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\ExportSTEP\LED_Control.step
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control_Order.OutJob
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040.SchDot
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\SBH_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.SchLib
 DItemRevisionGUID=
 
 [Parameter1]

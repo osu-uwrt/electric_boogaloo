@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=PoActuator Order.OutJob
+Name=LED_Control_Order.OutJob
 Description=
 TargetOutputMedium=PDF
 VariantName=[No Variations]
@@ -201,7 +201,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\TempALTIUM\Combined_Power_Actuator\
+OutputFilePath3=C:\TempALTIUM\LED_Board\
 ReleaseManaged3=0
 OutputBasePath3=C:\TempALTIUM\
 OutputPathMedia3==ProjectName
@@ -231,7 +231,7 @@ OpenOutput4=1
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\TempALTIUM\Combined_Power_Actuator\Combined_Power_Actuator.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\TempALTIUM\Combined_Power_Actuator\
+RelativeOutputPath3=C:\TempALTIUM\LED_Board\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0

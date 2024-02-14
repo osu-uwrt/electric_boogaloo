@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=PoActuator Order.OutJob
+Name=SBH_Charger_order.OutJob
 Description=
 TargetOutputMedium=PDF
 VariantName=[No Variations]
@@ -117,7 +117,7 @@ OutputDocumentPath6=
 OutputVariantName6=
 OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
-OutputEnabled6_OutputMedium2=2
+OutputEnabled6_OutputMedium2=1
 OutputEnabled6_OutputMedium3=0
 OutputEnabled6_OutputMedium4=0
 OutputDefault6=0
@@ -131,7 +131,7 @@ OutputDocumentPath7=
 OutputVariantName7=
 OutputEnabled7=1
 OutputEnabled7_OutputMedium1=0
-OutputEnabled7_OutputMedium2=1
+OutputEnabled7_OutputMedium2=2
 OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputDefault7=0
@@ -174,7 +174,7 @@ Configuration8_Name1=OutputConfigurationParameter1
 Configuration8_Item1=Count=1|File0=[Project]\*.*|PreserveFolderStructure0=True|Record=NonNativeFiles|DocumentPath=[Project]
 
 [PublishSettings]
-OutputFilePath2=C:\TempALTIUM\Combined_Power_Actuator\Combined_Power_Actuator.PDF
+OutputFilePath2=C:\TempALTIUM\SBH_Charger\SBH_Charger.PDF
 ReleaseManaged2=0
 OutputBasePath2=C:\TempALTIUM\
 OutputPathMedia2==ProjectName
@@ -182,7 +182,7 @@ OutputPathMediaValue2==ProjectName
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=PoActuator Order.PDF
+OutputFileName2=SBH_Charger_order.PDF
 OutputFileNameMulti2=
 UseOutputNameForMulti2=0
 OutputFileNameSpecial2==ProjectName+'.PDF'
@@ -201,7 +201,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\TempALTIUM\Combined_Power_Actuator\
+OutputFilePath3=C:\TempALTIUM\SBH_Charger\
 ReleaseManaged3=0
 OutputBasePath3=C:\TempALTIUM\
 OutputPathMedia3==ProjectName
@@ -229,9 +229,9 @@ OutputFileNameSpecial4=
 OpenOutput4=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\TempALTIUM\Combined_Power_Actuator\Combined_Power_Actuator.PDF
+RelativeOutputPath2=C:\TempALTIUM\SBH_Charger\SBH_Charger.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\TempALTIUM\Combined_Power_Actuator\
+RelativeOutputPath3=C:\TempALTIUM\SBH_Charger\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
