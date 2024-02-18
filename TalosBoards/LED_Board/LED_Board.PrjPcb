@@ -51,516 +51,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\..\..\Library\Capacitors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BDHHMKOC
-
-[Document2]
-DocumentPath=..\..\..\Library\Capacitors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=WJVVXHOC
-
-[Document3]
-DocumentPath=..\..\..\Library\Connectors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KBCGNCQN
-
-[Document4]
-DocumentPath=..\..\..\Library\Connectors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HVIEDDBW
-
-[Document5]
-DocumentPath=..\..\..\Library\Converter.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document6]
-DocumentPath=..\..\..\Library\Converter.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PWXGOYMI
-
-[Document7]
-DocumentPath=..\..\..\Library\Crystals.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
-DocumentPath=..\..\..\Library\Crystals.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=GOXQDNOZ
-
-[Document9]
-DocumentPath=..\..\..\Library\Diodes.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BCTDTEGH
-
-[Document10]
-DocumentPath=..\..\..\Library\Diodes.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LRDBLFBW
-
-[Document11]
-DocumentPath=..\..\..\Library\Fuses.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document12]
-DocumentPath=..\..\..\Library\Fuses.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MOYCOWBP
-
-[Document13]
-DocumentPath=..\..\..\Library\Inductors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BOXOROXM
-
-[Document14]
-DocumentPath=..\..\..\Library\Inductors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JGNOYZNR
-
-[Document15]
-DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document16]
-DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NBKHQIJD
-
-[Document17]
-DocumentPath=..\..\..\Library\LFXTAL014160REEL.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document18]
-DocumentPath=..\..\..\Library\Modules.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document19]
-DocumentPath=..\..\..\Library\Modules.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JTOMNKLG
-
-[Document20]
-DocumentPath=..\..\..\Library\Resistors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document21]
-DocumentPath=..\..\..\Library\Resistors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JKKXLRTC
-
-[Document22]
-DocumentPath=..\..\..\Library\SOT95P280X100-3N.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document23]
-DocumentPath=..\..\..\Library\Switches.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document24]
-DocumentPath=..\..\..\Library\Switches.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RHMHFXDO
-
-[Document25]
-DocumentPath=..\..\..\Library\Transformers.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document26]
-DocumentPath=..\..\..\Library\Transformers.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=AAOIDODX
-
-[Document27]
-DocumentPath=..\..\..\Library\Transistors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document28]
-DocumentPath=..\..\..\Library\Transistors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LHXHEGVB
-
-[Document29]
-DocumentPath=..\..\..\Library\UWRT.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document30]
-DocumentPath=..\..\..\Library\UWRT.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LAAQHYVE
-
-[Document31]
 DocumentPath=LED_Board_control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -577,7 +67,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
-[Document32]
+[Document2]
 DocumentPath=LED_Board.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -594,24 +84,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document33]
-DocumentPath=LED_Board.SCHLIB
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LMSSRHLO
-
-[Document34]
+[Document3]
 DocumentPath=LED_Control.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -628,7 +101,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FAJBMQJC
 
-[Document35]
+[Document4]
 DocumentPath=LED_Control_Order.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -645,40 +118,550 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document5]
+DocumentPath=..\..\Library\Capacitors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document6]
+DocumentPath=..\..\Library\Capacitors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document7]
+DocumentPath=..\..\Library\Connectors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document8]
+DocumentPath=..\..\Library\Connectors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=..\..\Library\Converter.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document10]
+DocumentPath=..\..\Library\Converter.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document11]
+DocumentPath=..\..\Library\Crystals.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=..\..\Library\Crystals.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document13]
+DocumentPath=..\..\Library\Diodes.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document14]
+DocumentPath=..\..\Library\Diodes.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document15]
+DocumentPath=..\..\Library\Fuses.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document16]
+DocumentPath=..\..\Library\Fuses.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document17]
+DocumentPath=..\..\Library\Inductors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document18]
+DocumentPath=..\..\Library\Inductors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document19]
+DocumentPath=..\..\Library\Integrated Circuits.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document20]
+DocumentPath=..\..\Library\Integrated Circuits.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document21]
+DocumentPath=..\..\Library\LFXTAL014160REEL.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document22]
+DocumentPath=..\..\Library\Modules.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document23]
+DocumentPath=..\..\Library\Modules.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document24]
+DocumentPath=..\..\Library\Resistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document25]
+DocumentPath=..\..\Library\Resistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document26]
+DocumentPath=..\..\Library\SOT95P280X100-3N.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document27]
+DocumentPath=..\..\Library\Switches.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document28]
+DocumentPath=..\..\Library\Switches.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document29]
+DocumentPath=..\..\Library\Transformers.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document30]
+DocumentPath=..\..\Library\Transformers.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document31]
+DocumentPath=..\..\Library\Transistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document32]
+DocumentPath=..\..\Library\Transistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document33]
+DocumentPath=..\..\Library\UWRT.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document34]
+DocumentPath=..\..\Library\UWRT.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\BOM\Bill of Materials-LED_Board.xlsx
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\BOM\Bill of Materials-LED_Board.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Capacitors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Connectors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Converter.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Crystals.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument10]
@@ -686,191 +669,191 @@ DocumentPath=Project Outputs for LED_Board\Design Rule Check - Pcb_4layer_8x4_Te
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Diodes.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Fuses.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Inductors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board.BomDoc
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board.BomDoc
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board_control.SchDoc
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Board_control.SchDoc
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.DRR
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.EXTREP
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\DRC\LED_Control.html
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\DRC\LED_Control.html
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.LDP
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control.PcbDoc
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control.PcbDoc
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.REP
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.REP
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.RUL
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\ExportSTEP\LED_Control.step
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\ExportSTEP\LED_Control.step
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.TXT
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\NC Drill\LED_Control.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Plane_1.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Plane_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Plane_2.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Plane_2.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Copper_Signal_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Legend_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control_Order.OutJob
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\LED_Control_Order.OutJob
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Paste_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Bot.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Top.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\LED_Control_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Modules.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Resistors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040.SchDot
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040.SchDot
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\RP2040_with_CAN.SchDot
 DItemRevisionGUID=
 
 [GeneratedDocument48]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\SBH_Profile.gbr
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\GerberX2\SBH_Profile.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument49]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument51]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Switches.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument52]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument53]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transformers.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument54]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument55]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\Transistors.SchLib
 DItemRevisionGUID=
 
 [GeneratedDocument56]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.PcbLib
 DItemRevisionGUID=
 
 [GeneratedDocument57]
-DocumentPath=..\..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.SchLib
+DocumentPath=..\..\..\..\..\..\..\TempALTIUM\LED_Board\Copy Files\OutOfProjectDir\UWRT.SchLib
 DItemRevisionGUID=
 
 [Parameter1]
@@ -888,20 +871,6 @@ Value=Sample Template Project
 [Parameter4]
 Name=TeamLead
 Value=Sample Team Lead
-
-[DeviceSheet1]
-DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-GenerateClassCluster=0
-
-[DeviceSheet2]
-DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-GenerateClassCluster=0
 
 [Configuration1]
 Name=Sources
