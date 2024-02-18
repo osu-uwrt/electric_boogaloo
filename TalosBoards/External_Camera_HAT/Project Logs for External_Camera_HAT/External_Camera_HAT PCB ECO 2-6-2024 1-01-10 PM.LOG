@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=J8 NewDesignator=U10
+Change Component Designator: OldDesignator=J9 NewDesignator=U11
+Change Component Designator: OldDesignator=J10 NewDesignator=U12
+Change Component Description : Designator=D5 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406

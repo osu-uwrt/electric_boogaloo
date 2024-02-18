@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=M2_PWR_EN Pin=R23-1
+Removed Pin From Net: NetName=GND Pin=R23-2
+Removed Member From Class: ClassName=External_Camera_HAT_Regulators Member=R23
+Added Component: Designator=R?(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3434CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "100K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=M2_PWR_EN Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Member To Class: ClassName=External_Camera_HAT_Regulators Member=Component R? 100k Ohm 1% 1/16W

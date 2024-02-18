@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=TR_N Pin=J1-3
+Removed Pin From Net: NetName=TR_P Pin=J1-4
+Removed Pin From Net: NetName=REC_P Pin=J1-5
+Removed Pin From Net: NetName=REC_N Pin=J1-6
+Change Component Footprint: Designator=J1 Old Footprint=FP-5055670681-MFG New Footprint=FP-505567-0781-MFG
+Change Component Comment : Designator=J1 Old Comment=5055670681 New Comment=505567-0781
+Change Managed Component Library Link : Designator=J1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=2755CE22-D2BF-4FF4-A624-08797F80387E New ItemGUID=2B3F5B83-ECC4-44EF-97CF-97A2356C2318 Old RevisionGUID=7221EE9F-8740-4CFF-BA66-AF8B481FF032 New RevisionGUID=85C060B6-58EC-442F-AD7C-4C0230E335EC
+Change component parameters: Designator = "J1" ("J1"); Footprint = "FP-5055670681-MFG"; UniqueID = "\HFMABFHG" ("\HFMABFHG")
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Country of Origin"; Value = "MY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Lifecycle Status"; Value = "ACTIVE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "87166176"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=TR_N Pin=J1-4
+Added Pin To Net: NetName=TR_P Pin=J1-5
+Added Pin To Net: NetName=REC_P Pin=J1-6
+Added Pin To Net: NetName=REC_N Pin=J1-7

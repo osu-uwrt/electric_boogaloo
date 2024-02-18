@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=TEARING Pin=U1R-6
+Removed Pin From Net: NetName=IRQ Pin=U1R-7
+Removed Pin From Net: NetName=OTG/VAP Pin=U1R-36
+Removed Pin From Net: NetName=PROCHOT Pin=U1R-38
+Change Component Description : Designator=F1 Old Description=Pansonic New Description=Pansonic | 32V | 5A | 0603 | Fast Blow
+Added Component: Designator=f(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "5.8 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Dylan T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer _Part_Number"; Value = "AO3404A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT23-3L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.4W (Ta)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "28mOhm @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "ON_Semiconductor_2020-01-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "785-1004-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Alpha & Omega Semiconductor Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "3V @ 5.8A, 10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "3V @ 250µA"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Netf_1 Pin=f-1
+Added Pin To Net: NetName=BKLIGHT Pin=f-2
+Added Pin To Net: NetName=GND Pin=f-3
+Added Pin To Net: NetName=AUDIOIN Pin=U1R-2
+Added Pin To Net: NetName=BCLK Pin=U1R-3
+Added Pin To Net: NetName=LRCLK Pin=U1R-4
+Added Pin To Net: NetName=IRQ Pin=U1R-6
+Added Pin To Net: NetName=TEARING Pin=U1R-7
+Added Pin To Net: NetName=OR_Control Pin=U1R-35
+Added Pin To Net: NetName=PROCHOT Pin=U1R-36
+Added Pin To Net: NetName=OTG/VAP Pin=U1R-38
+Add Class: Class already exists: Designator

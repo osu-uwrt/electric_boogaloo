@@ -1,0 +1,228 @@
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=J1R-5
+Removed Pin From Net: NetName=NetR6R_1 Pin=SW1R_1-A2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=SW1R_1-B1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=SW1R_1-B2
+Removed Pin From Net: NetName=SDA Pin=U1R-4
+Removed Pin From Net: NetName=SCL Pin=U1R-6
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=U1R-7
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=U1R-27
+Added Component: Designator=DEBUG_CONN1(HEADER_2x10PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Tyson Nguyen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Z8747-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C1C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C1C-2
+Added Pin To Net: NetName=XIN_RP2040 Pin=C1R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C1R-2
+Added Pin To Net: NetName=GND_RP2CAN Pin=C2C-1
+Added Pin To Net: NetName=NetC2C_2 Pin=C2C-2
+Added Pin To Net: NetName=NetC2R_1 Pin=C2R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C2R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C3C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C3C-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C3R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C3R-2
+Added Pin To Net: NetName=5V Pin=C4C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C4C-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C4R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C4R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C5C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C5C-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C5R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C5R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C6R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C6R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C7R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C7R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C8R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C8R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C9R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C9R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C10R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C10R-2
+Added Pin To Net: NetName=1v1_RP2040 Pin=C11R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C11R-2
+Added Pin To Net: NetName=1v1_RP2040 Pin=C12R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C12R-2
+Added Pin To Net: NetName=1v1_RP2040 Pin=C13R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C13R-2
+Added Pin To Net: NetName=NetD1C_1 Pin=D1C-1
+Added Pin To Net: NetName=NetD1C_2 Pin=D1C-2
+Added Pin To Net: NetName=NetD1C_3 Pin=D1C-3
+Added Pin To Net: NetName=3V3_RP2CAN Pin=D1C-4
+Added Pin To Net: NetName=5V Pin=DEBUG_CONN1-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=DEBUG_CONN1-2
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=DEBUG_CONN1-11
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-19
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-20
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=J1R-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J1R-2
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=J1R-3
+Added Pin To Net: NetName=RUN_RP2040 Pin=J1R-4
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=J1R-5
+Added Pin To Net: NetName=GND_RP2CAN Pin=J1R-6
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R1C-1
+Added Pin To Net: NetName=TERM_DET_RP2CAN Pin=R1C-2
+Added Pin To Net: NetName=XOUT_RP2040 Pin=R1R-1
+Added Pin To Net: NetName=NetC2R_1 Pin=R1R-2
+Added Pin To Net: NetName=NetR2C_1 Pin=R2C-1
+Added Pin To Net: NetName=NetC2C_2 Pin=R2C-2
+Added Pin To Net: NetName=USB_RP2040_P Pin=R2R-2
+Added Pin To Net: NetName=NetR3C_1 Pin=R3C-1
+Added Pin To Net: NetName=NetC2C_2 Pin=R3C-2
+Added Pin To Net: NetName=USB_RP2040_N Pin=R3R-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R4C-1
+Added Pin To Net: NetName=nCS_RP2CAN Pin=R4C-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R4R-1
+Added Pin To Net: NetName=RUN_RP2040 Pin=R4R-2
+Added Pin To Net: NetName=LEDR_RP2CAN Pin=R5C-1
+Added Pin To Net: NetName=NetD1C_1 Pin=R5C-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R5R-1
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=R5R-2
+Added Pin To Net: NetName=NetR6C_1 Pin=R6C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=R6C-2
+Added Pin To Net: NetName=RUN_RP2040 Pin=R6R-2
+Added Pin To Net: NetName=LEDG_RP2CAN Pin=R7C-1
+Added Pin To Net: NetName=NetD1C_2 Pin=R7C-2
+Added Pin To Net: NetName=NetR7R_1 Pin=R7R-1
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=R7R-2
+Added Pin To Net: NetName=LEDB_RP2CAN Pin=R8C-1
+Added Pin To Net: NetName=NetD1C_3 Pin=R8C-2
+Added Pin To Net: NetName=CANL Pin=SW1C-1
+Added Pin To Net: NetName=NetR2C_1 Pin=SW1C-2
+Added Pin To Net: NetName=TERM_DET_RP2CAN Pin=SW1C-3
+Added Pin To Net: NetName=CANH Pin=SW1C-4
+Added Pin To Net: NetName=NetR3C_1 Pin=SW1C-5
+Added Pin To Net: NetName=GND_RP2CAN Pin=SW1C-6
+Added Pin To Net: NetName=NetR7R_1 Pin=SW2R-A1
+Added Pin To Net: NetName=GND_RP2CAN Pin=SW2R-B1
+Added Pin To Net: NetName=GND_RP2CAN Pin=SW2R-B2
+Added Pin To Net: NetName=CANTX_RP2CAN Pin=U1C-1
+Added Pin To Net: NetName=CANRX_RP2CAN Pin=U1C-2
+Added Pin To Net: NetName=INT_RP2CAN Pin=U1C-4
+Added Pin To Net: NetName=CANCLK_RP2CAN Pin=U1C-6
+Added Pin To Net: NetName=GND_RP2CAN Pin=U1C-7
+Added Pin To Net: NetName=TERM_DET_RP2CAN Pin=U1C-9
+Added Pin To Net: NetName=SCK_RP2CAN Pin=U1C-10
+Added Pin To Net: NetName=MOSI_RP2CAN Pin=U1C-11
+Added Pin To Net: NetName=MISO_RP2CAN Pin=U1C-12
+Added Pin To Net: NetName=nCS_RP2CAN Pin=U1C-13
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1C-14
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-1
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-2
+Added Pin To Net: NetName=PHYS_KILL Pin=U1R-3
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-4
+Added Pin To Net: NetName=NetU1R_5 Pin=U1R-5
+Added Pin To Net: NetName=SDA Pin=U1R-6
+Added Pin To Net: NetName=SCL Pin=U1R-7
+Added Pin To Net: NetName=LVL_SHIFT_EN Pin=U1R-8
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=U1R-9
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-10
+Added Pin To Net: NetName=ACT_CHECK_3.3V Pin=U1R-11
+Added Pin To Net: NetName=NetU1R_12 Pin=U1R-12
+Added Pin To Net: NetName=STBD_STAT Pin=U1R-13
+Added Pin To Net: NetName=NetU1R_15 Pin=U1R-15
+Added Pin To Net: NetName=LEDR_RP2CAN Pin=U1R-16
+Added Pin To Net: NetName=LEDG_RP2CAN Pin=U1R-17
+Added Pin To Net: NetName=LEDB_RP2CAN Pin=U1R-18
+Added Pin To Net: NetName=GND_RP2CAN Pin=U1R-19
+Added Pin To Net: NetName=XIN_RP2040 Pin=U1R-20
+Added Pin To Net: NetName=XOUT_RP2040 Pin=U1R-21
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-22
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-23
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=U1R-24
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=U1R-25
+Added Pin To Net: NetName=RUN_RP2040 Pin=U1R-26
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=U1R-27
+Added Pin To Net: NetName=nCS_RP2CAN Pin=U1R-28
+Added Pin To Net: NetName=SCK_RP2CAN Pin=U1R-29
+Added Pin To Net: NetName=MOSI_RP2CAN Pin=U1R-30
+Added Pin To Net: NetName=MISO_RP2CAN Pin=U1R-31
+Added Pin To Net: NetName=CANCLK_RP2CAN Pin=U1R-32
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-33
+Added Pin To Net: NetName=INT_RP2CAN Pin=U1R-34
+Added Pin To Net: NetName=NetU1R_35 Pin=U1R-35
+Added Pin To Net: NetName=NetU1R_36 Pin=U1R-36
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-42
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-43
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-44
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-45
+Added Pin To Net: NetName=USB_RP2040_N Pin=U1R-46
+Added Pin To Net: NetName=USB_RP2040_P Pin=U1R-47
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-48
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U1R-49
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-50
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U1R-51
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U1R-52
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U1R-53
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U1R-54
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U1R-55
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U1R-56
+Added Pin To Net: NetName=GND_RP2CAN Pin=U1R-57
+Added Pin To Net: NetName=CANTX_RP2CAN Pin=U2C-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=U2C-2
+Added Pin To Net: NetName=5V Pin=U2C-3
+Added Pin To Net: NetName=CANRX_RP2CAN Pin=U2C-4
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U2C-5
+Added Pin To Net: NetName=CANL Pin=U2C-6
+Added Pin To Net: NetName=CANH Pin=U2C-7
+Added Pin To Net: NetName=NetR6C_1 Pin=U2C-8
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U2R-1
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U2R-2
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U2R-3
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U2R-5
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U2R-6
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U2R-7
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U2R-8
+Added Pin To Net: NetName=XIN_RP2040 Pin=Y1R-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=Y1R-2
+Added Pin To Net: NetName=NetC2R_1 Pin=Y1R-3
+Added Pin To Net: NetName=GND_RP2CAN Pin=Y1R-4
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C1C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C1R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C2C 4700pF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C2R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C3C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C3R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C4C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C4R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C5C 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C5R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C6R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C7R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C8R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C9R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C10R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C11R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C12R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C13R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component D1C EAST1616RGBB4
+Added Member To Class: ClassName=Poactuator_Connectors Member=Component DEBUG_CONN1 HEADER DUAL VERT 2.54MM
+Added Member To Class: ClassName=U_RP2040_C Member=Component J1R TagConnect SWD
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R1C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R1R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R2C 60.4 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R2R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R3C 60.4 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R3R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R4C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R4R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R5C 604 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R5R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R6C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R6R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R7C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R7R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R8C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component SW1C Switch DPDT
+Added Member To Class: ClassName=U_RP2040_C Member=Component SW2R 434123025826
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U1C MCP2517FD
+Added Member To Class: ClassName=U_RP2040_C Member=Component U1R RP2040
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U2C CAN Transceiver
+Added Member To Class: ClassName=U_RP2040_C Member=Component U2R W25Q128JVSIQ
+Added Member To Class: ClassName=U_RP2040_C Member=Component Y1R CRYSTAL 12.0000MHZ 18PF SMD
+Added Room: Name=U_PD_MK2_Killswitch
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN

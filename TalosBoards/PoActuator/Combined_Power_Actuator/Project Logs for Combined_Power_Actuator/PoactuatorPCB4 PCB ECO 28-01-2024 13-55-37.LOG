@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=ACT_PWM_3.3V Pin=U1R-38
+Removed Pin From Net: NetName=ACT_CHECK_3.3V Pin=U1R-39
+Added Pin To Net: NetName=ACT_CHECK_3.3V Pin=U1R-38
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=U1R-39

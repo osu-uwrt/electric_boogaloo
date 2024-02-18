@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VBAT Pin=J6-1
+Added Pin To Net: NetName=VBAT Pin=J6-4
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-1
+Added Pin To Net: NetName=NetJ6_1 Pin=R1-1
+Added Net: Name=NetJ6_1
+Add Class: Class already exists: Designator

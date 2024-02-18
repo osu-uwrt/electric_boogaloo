@@ -1,0 +1,22 @@
+Removed Member From Class: ClassName=Designator Member=C4
+Removed Member From Class: ClassName=Designator Member=C11
+Removed Member From Class: ClassName=Designator Member=C16
+Removed Member From Class: ClassName=SBH_Charger_Connectors Member=C19
+Removed Member From Class: ClassName=SBH_Charger_Connectors Member=C26
+Removed Member From Class: ClassName=Designator Member=C34
+Removed Member From Class: ClassName=Designator Member=R17
+Removed Member From Class: ClassName=Designator Member=R18
+Removed Member From Class: ClassName=SBH_Charger_Connectors Member=R19
+Removed Member From Class: ClassName=Designator Member=U1
+Add Class: Class already exists: Designator
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component C1 10nF Ceramic 6.3V
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component C2 10nF Ceramic 6.3V
+Added Member To Class: ClassName=Designator Member=Component C59 22uF electrolytic 35 V
+Added Member To Class: ClassName=Designator Member=Component C60 22uF electrolytic 35 V
+Added Member To Class: ClassName=Designator Member=Component C61 10uF electrolytic 63V
+Added Member To Class: ClassName=Designator Member=Component C62 10uF Ceramic 6.3V
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component J5 XH2.54 VERT
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component R1 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=Designator Member=Component R29 2.2k Ohm 1% 1/16W
+Added Member To Class: ClassName=Designator Member=Component R30 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Designator Member=Component U10 TPS25750DRJKR

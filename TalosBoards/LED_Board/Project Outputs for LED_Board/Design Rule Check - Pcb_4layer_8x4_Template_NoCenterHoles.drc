@@ -1,0 +1,76 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\sammy\Documents\Github\electric_boogaloo\TempestBoards\MK2\LED_aluminum\LED_aluminum\Pcb_4layer_8x4_Template_NoCenterHoles.PcbDoc
+Date     : 2/11/2024
+Time     : 3:01:23 PM
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 7.874mil) Between Area Fill (0mil,0mil) (455mil,450mil) on Keep-Out Layer And Pad Free-1(250mil,250mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 7.874mil) Between Area Fill (0mil,3555mil) (455mil,4005mil) on Keep-Out Layer And Pad Free-1(250mil,3750mil) on Multi-Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L1-1(1744mil,1865mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L1-2(2126mil,1865mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L2-1(2386mil,2705mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L2-2(2004mil,2705mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L3-1(1605mil,520mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L3-2(1987mil,520mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L4-1(2281mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (2mil < 7.874mil) Between Pad L4-2(1899mil,1315mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (3mil < 7.874mil) Between Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer 
+Rule Violations :11
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-1(250mil,250mil) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-1(250mil,3750mil) on Multi-Layer (Annular Ring missing on Top Layer)
+Rule Violations :2
+
+Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 13
+Waived Violations : 0
+Time Elapsed        : 00:00:02

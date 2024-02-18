@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Green D1D2 Pin=R2-1
+Removed Pin From Net: NetName=Green D1D2 Pin=R2-2
+Added Pin To Net: NetName=Red Anode Pin=R2-1
+Added Pin To Net: NetName=Red Anode Pin=R2-2
+Added Member To Class: ClassName=LED_aluminum Member=Component D1 LE_RTDUW_S2WM

@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=Sch_Sheet_Template.SchDoc|SheetNumber=2
+Record=SheetSymbol|SourceDocument=Sch_Sheet_Template.SchDoc|Designator=U_RP2040_with_CAN|SchDesignator=U_RP2040_with_CAN|FileName=RP2040_with_CAN.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040_with_CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=RP2040_with_CAN.SchDot|Designator=U_RP2040_C|SchDesignator=U_RP2040_C|FileName=RP2040.SchDot|SheetNumber= |SymbolType=Device Sheet|RawFileName=RP2040|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=Sch_Sheet_Template.SchDoc|FileName=Hydrophone.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Sch_Sheet_Template.SchDoc|FileName=JUMPER-PAD-3-2OF3_NC_BY_PASTE_2023-04-11 (1).schdoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Sch_Sheet_Template.SchDoc|FileName=TI_DSP.SchDoc|SheetNumber=3

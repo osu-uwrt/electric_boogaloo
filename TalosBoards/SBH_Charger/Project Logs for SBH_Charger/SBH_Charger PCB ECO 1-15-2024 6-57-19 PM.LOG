@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=VBAT Pin=J2-6
+Removed Pin From Net: NetName=GND Pin=J3-2
+Removed Pin From Net: NetName=VBAT Pin=J6-4
+Added Component: Designator=C66(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "80-C0603C103K9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.01uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=F1(3568_KEY)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3568"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=VBAT Pin=F1-1
+Added Pin To Net: NetName=VBAT Pin=F1-2
+Added Pin To Net: NetName=GND Pin=J3-5
+Change Net Name : Old Net Name=VBAT New Net Name=NetC25_1
+Added Pin To Net: NetName=ENCA Pin=C66-1
+Added Pin To Net: NetName=ENCA Pin=J3-3
+Added Pin To Net: NetName=ENCA Pin=U1R-12
+Added Net: Name=ENCA
+Added Pin To Net: NetName=ENCB Pin=C2-1
+Added Pin To Net: NetName=ENCB Pin=J3-4
+Added Pin To Net: NetName=ENCB Pin=U1R-13
+Added Net: Name=ENCB
+Added Pin To Net: NetName=ENCSWITCH Pin=C1-1
+Added Pin To Net: NetName=ENCSWITCH Pin=J3-2
+Added Pin To Net: NetName=ENCSWITCH Pin=U1R-11
+Added Net: Name=ENCSWITCH
+Added Pin To Net: NetName=VBAT Pin=F1-3
+Added Pin To Net: NetName=VBAT Pin=F1-4
+Added Pin To Net: NetName=VBAT Pin=J2-6
+Added Pin To Net: NetName=VBAT Pin=J6-4
+Added Net: Name=VBAT
+Add Class: Class already exists: Designator
+Added Member To Class: ClassName=SBH_Charger_Connectors Member=Component C66 10nF Ceramic 6.3V

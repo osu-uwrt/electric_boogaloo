@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=M2_UART_CTS_3V3 Pin=U10-2
+Removed Pin From Net: NetName=M2_UART_RXD_3V3 Pin=U10-3
+Removed Pin From Net: NetName=M2_UART_RXD_1V8 Pin=U10-12
+Removed Pin From Net: NetName=M2_UART_CTS_1V8 Pin=U10-13
+Added Pin To Net: NetName=M2_UART_RXD_3V3 Pin=U10-2
+Added Pin To Net: NetName=M2_UART_CTS_3V3 Pin=U10-3
+Added Pin To Net: NetName=M2_UART_CTS_1V8 Pin=U10-12
+Added Pin To Net: NetName=M2_UART_RXD_1V8 Pin=U10-13
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406
