@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=15V Pin=J2-1
+Removed Pin From Net: NetName=AMP_OUT Pin=J2-2
+Added Pin To Net: NetName=AMP_OUT Pin=J2-1
+Added Pin To Net: NetName=15V Pin=J2-2
