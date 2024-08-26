@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=Jout-1
+Removed Pin From Net: NetName=VCC Pin=Jout-2
+Removed Pin From Net: NetName=Signal Pin=Jout-3
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J4
+Added Member To Class: ClassName=Water Intrustion Member=Component J1 JST GH VERT
+Added Member To Class: ClassName=Water Intrustion Member=Component J3 JST GH VERT
+Added Member To Class: ClassName=Water Intrustion Member=Component J4 JST GH VERT

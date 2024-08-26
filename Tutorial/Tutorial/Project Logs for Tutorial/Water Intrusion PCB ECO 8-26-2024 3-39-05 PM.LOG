@@ -1,0 +1,17 @@
+Added Component: Designator=Jout(HEADER_4PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S1012E-04-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-S1
+Added Pin To Net: NetName=GND Pin=J1-S2
+Added Pin To Net: NetName=GND Pin=J2-S1
+Added Pin To Net: NetName=GND Pin=J2-S2
+Added Pin To Net: NetName=GND Pin=J3-S1
+Added Pin To Net: NetName=GND Pin=J3-S2
+Added Pin To Net: NetName=GND Pin=J4-S1
+Added Pin To Net: NetName=GND Pin=J4-S2
+Added Pin To Net: NetName=GND Pin=Jout-1
+Added Pin To Net: NetName=VCC Pin=Jout-2
+Added Pin To Net: NetName=Signal Pin=Jout-3
+Added Member To Class: ClassName=Water Intrustion Member=Component J2 JST GH VERT
+Added Member To Class: ClassName=Water Intrustion Member=Component Jout HEADER VERT 2.54MM
