@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=5V Pin=C4C-1
+Removed Pin From Net: NetName=5V Pin=J6-1
+Removed Pin From Net: NetName=5V Pin=U2C-3
+Change Net Name : Old Net Name=5V New Net Name=+5V
+Add Net: Net with name "+5" already exists
+Add Net: Net with name "-5" already exists
+Added Pin To Net: NetName=5V Pin=C4C-1
+Added Pin To Net: NetName=5V Pin=J6-1
+Added Pin To Net: NetName=5V Pin=U2C-3
+Added Net: Name=5V
+Added Room: Name=Sheet 1

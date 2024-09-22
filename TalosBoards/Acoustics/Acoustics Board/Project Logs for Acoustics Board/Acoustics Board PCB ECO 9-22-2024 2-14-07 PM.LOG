@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=+5V Pin=U5-10
+Removed Pin From Net: NetName=+5V Pin=U7-6
+Removed Pin From Net: NetName=+5V Pin=U8-6
+Added Component: Designator=TP9(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP10(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RP2040 L Pin=TP9-TP
+Added Pin To Net: NetName=RP2040 R Pin=TP10-TP
+Added Pin To Net: NetName=+5V Pin=U5-10
+Added Pin To Net: NetName=+5V Pin=U7-6
+Added Pin To Net: NetName=+5V Pin=U8-6
+Added Member To Class: ClassName=Sheet 1 Member=Component TP9 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP10 PCB Test Point
+Added Room: Name=Sheet 1
