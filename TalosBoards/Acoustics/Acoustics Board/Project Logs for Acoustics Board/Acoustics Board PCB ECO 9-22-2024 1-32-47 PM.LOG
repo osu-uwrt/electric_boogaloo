@@ -1,0 +1,160 @@
+Removed Pin From Net: NetName=Point Filter L Pin=TP3-TP
+Removed Pin From Net: NetName=Point Filter R Pin=TP6-TP
+Removed Pin From Net: NetName=RP2040 L Pin=TP10-TP
+Removed Pin From Net: NetName=RP2040 R Pin=TP12-TP
+Removed Pin From Net: NetName=-15V Pin=TP20-TP
+Removed Member From Class: ClassName=Sheet 1 Member=TP3
+Removed Member From Class: ClassName=Sheet 1 Member=TP6
+Removed Member From Class: ClassName=Acoustics Board Pg. 2 Member=TP10
+Removed Member From Class: ClassName=Acoustics Board Pg. 2 Member=TP12
+Removed Member From Class: ClassName=Power Sheet Member=TP20
+Added Component: Designator=R15(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "652-TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R16(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R17(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "652-TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R18(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=U7(ADI-R-8_M)
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-012-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.analog.com/en/index.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.analog.com/media/en/technical-documentation/data-sheets/AD633.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Pin Small Outline Package, Body 4.9 x 3.9 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "06/2006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "AD633"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Slew Rate"; Value = "20 V/us"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Current Max"; Value = "6 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Max"; Value = "70 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Min"; Value = "0 degC"; VariantName = "[No Variations]"
+Added Component: Designator=U8(ADI-R-8_M)
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-012-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.analog.com/en/index.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.analog.com/media/en/technical-documentation/data-sheets/AD633.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Pin Small Outline Package, Body 4.9 x 3.9 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "06/2006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "AD633"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Slew Rate"; Value = "20 V/us"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Current Max"; Value = "6 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Max"; Value = "70 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Min"; Value = "0 degC"; VariantName = "[No Variations]"
+Added Component: Designator=U9(LT-MS10_N)
+Add component (AddParameter): Name = "Channels (#)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.linear.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://cds.linear.com/docs/en/datasheet/1715fa.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://cds.linear.com/docs/en/packaging/MSOP_10_05-08-1661.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Comparator, Separate In/Out Power Supply"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Generic Part Number"; Value = "LT1715"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "10-Pin MSOP, Body 3 x 3 mm, Pitch 0.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "MS10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "LT1715CMS#PBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Prop Delay (us)"; Value = "0.004"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Current (uA) Typical"; Value = "7500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Voltage Range"; Value = "2.7 to 12 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vos (mV) Guaranteed"; Value = "2.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vos (mV) Typical"; Value = "0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vs Max (V)"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vs Min (V)"; Value = "2.7"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=R15-2
+Added Pin To Net: NetName=NetR15_3 Pin=R15-3
+Added Pin To Net: NetName=NetR15_3 Pin=R16-1
+Added Pin To Net: NetName=3V3 Pin=R17-2
+Added Pin To Net: NetName=Local Oscillator Pin=U7-1
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=Point Filter L Pin=U7-5
+Added Pin To Net: NetName=Mixer L Pin=U7-7
+Added Pin To Net: NetName=GND Pin=U7-8
+Added Pin To Net: NetName=Local Oscillator Pin=U8-1
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=Point Filter R Pin=U8-5
+Added Pin To Net: NetName=Mixer R Pin=U8-7
+Added Pin To Net: NetName=GND Pin=U8-8
+Added Pin To Net: NetName=Comparator L Pin=U9-1
+Added Pin To Net: NetName=NetR15_3 Pin=U9-2
+Added Pin To Net: NetName=Comparator R Pin=U9-4
+Added Pin To Net: NetName=GND Pin=U9-6
+Added Pin To Net: NetName=RP2040 R Pin=U9-7
+Added Pin To Net: NetName=RP2040 L Pin=U9-8
+Added Pin To Net: NetName=3V3 Pin=U9-9
+Change Net Name : Old Net Name=Mixer L New Net Name=Mult L
+Change Net Name : Old Net Name=Mixer R New Net Name=Mult R
+Added Pin To Net: NetName=+5 Pin=U7-6
+Added Pin To Net: NetName=+5 Pin=U8-6
+Added Net: Name=+5
+Add Net: Net with name "+5" already exists
+Added Pin To Net: NetName=-5 Pin=U9-5
+Added Net: Name=-5
+Add Net: Net with name "-5" already exists
+Added Pin To Net: NetName=NetR17_3 Pin=R17-3
+Added Pin To Net: NetName=NetR17_3 Pin=R18-1
+Added Pin To Net: NetName=NetR17_3 Pin=U9-3
+Added Net: Name=NetR17_3
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component R15 TC33X-2-203E
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component R16 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component R17 TC33X-2-203E
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component R18 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Sheet 1 Member=Component U7 AD633JRZ
+Added Member To Class: ClassName=Sheet 1 Member=Component U8 AD633JRZ
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component U9 LT1715CMS#PBF
+Added Room: Name=Sheet 1
