@@ -1,4 +1,4 @@
-Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Acoustics\LTSpice\Acoustics System.asc
+Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year Two\Acoustics\LTSpice\Acoustics System.asc
 
 v1: Removing PWL point (0.007276,-0.269776)
 v1: Removing PWL point (0.313916,-0.226441)
@@ -29,21 +29,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sun Sep 29 12:33:51 2024
-Total elapsed time: 14.199 seconds.
+Date: Sun Sep 29 13:25:36 2024
+Total elapsed time: 62.355 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2056203
-traniter = 2055497
-tranpoints = 759609
-accept = 595076
-rejected = 164533
-matrix size = 37
-fillins = 4
+totiter = 5209495
+traniter = 5208658
+tranpoints = 1235461
+accept = 952849
+rejected = 282612
+matrix size = 96
+fillins = 52
 solver = Normal
-Avg thread counts: 2.0/1.0/1.0/1.0
-Matrix Compiler1: 1.43 KB object code size  0.5/0.3/[0.2]
-Matrix Compiler2: 2.85 KB object code size  0.2/0.4/[0.2]
+Avg thread counts: 1.0/3.0/1.0/1.0
+Matrix Compiler1: 5.98 KB object code size  1.1/0.6/[0.4]
+Matrix Compiler2: off  [0.8]/1.1/2.3
 

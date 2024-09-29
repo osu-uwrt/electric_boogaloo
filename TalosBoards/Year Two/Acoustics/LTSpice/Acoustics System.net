@@ -1,16 +1,16 @@
-* C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Acoustics\LTSpice\Acoustics System.asc
-XX1 N002 N003 envelopedetector
-XX2 BV N005 4p_bp_filter
-B1 BV 0 V=(V(LO)*V(AF))/10
+* C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year Two\Acoustics\LTSpice\Acoustics System.asc
+XX1 N002 N004 envelopedetector
+XX2 N006 N007 4p_bp_filter
 V1 IN 0 PWL file=A_trunk.txt
 V2 LO 0 SINE(0 5 72.5k)
-XU1 N005 N001 +15 -15 N002 level1 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+XU1 N007 N001 +15 -15 N002 level1 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 V3 +15 0 15
 V4 -15 0 -15
 R1 N002 N001 6k
 R2 N001 0 1k
-XX3 N003 N004 thresholddetector
-XAFE AF IN afe_bandpass_v3
+XX3 N004 N005 thresholddetector
+XAFE N003 IN afe_bandpass_v3
+XU2 N003 0 LO 0 -15 0 N006 +15 AD633J
 
 * block symbol definitions
 .subckt envelopedetector IN OUT
@@ -59,6 +59,8 @@ V2 -15V 0 -15
 .tran .25
 * Testing Sources
 * (20k max)\nTrimmer\n|\nV
+.options cshunt 1e-15
+.lib C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Acoustics\LTSpice\ad633j.cir
 .lib UniversalOpAmp1.lib
 .lib UniversalOpAmp2.lib
 .backanno
