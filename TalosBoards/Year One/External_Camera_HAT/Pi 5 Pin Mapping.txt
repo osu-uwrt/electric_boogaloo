@@ -1,0 +1,49 @@
+Pi 5 Pinout
+
+Pin # | GPIO# | Pi 5 Pin       | Func | Our Use     | Pi Net             | Level Shift | M.2 Net            | M.2 Assignment     | M.2 Pin #
+======|=======|================|======|=============|====================|=============|====================|====================|===============
+   3  |    2  | I2C SDA        | a3   | Brd / M.2   | I2C1_SDA           |             | I2C1_SDA           | I2C_DATA (3.3V)    | 58
+   5  |    3  | I2C SCL        | a3   | Brd / M.2   | I2C1_SCL           |             | I2C1_SCL           | I2C_CLK (3.3V)     | 60
+   8  |   14  | UART TX        | a4   | Trigger/M.2 | M2_UART_RXD_3V3    | U-p2m       | M2_UART_RXD_1V8    | UART RXD (1.8V)    | 32
+  36  |   16  | UART CTS       | a4   | M.2         | M2_UART_RTS_3V3    | U-m2p       | M2_UART_RTS_1V8    | UART RTS (1.8V)    | 34
+  10  |   15  | UART RX        | a4   | M.2         | M2_UART_TXD_3V3    | U-m2p       | M2_UART_TXD_1V8    | UART TXD (1.8V)    | 22
+  11  |   17  | UART RTS       | a4   | M.2         | M2_UART_CTS_3V3    | U-p2m       | M2_UART_CTS_1V8    | UART CTS (1.8V)    | 36
+  12  |   18  | PCM CLK        | a2   | M.2         | M2_PCM_CLK_3V3     | Bidir       | M2_PCM_CLK_1V8     | PCM_CLK (1.8V)     | 8
+  35  |   19  | PCM FS         | a2   | M.2         | M2_PCM_SYNC_3V3    | Bidir       | M2_PCM_SYNC_1V8    | PCM_SYNC (1.8V)    | 10
+  38  |   20  | PCM DIN        | a2   | M.2         | M2_PCM_OUT_3V3     | U-m2p       | M2_PCM_OUT_1V8     | PCM_OUT (1.8V)     | 12
+  40  |   21  | PCM DOUT       | a2   | M.2         | M2_PCM_IN_3V3      | U-p2m       | M2_PCM_IN_1V8      | PCM_IN (1.8V)      | 14
+  15  |   22  | SDIO CLK       | a0   | M.2         | M2_SDIO_CLK_3V3    | U-p2m       | M2_SDIO_CLK_1V8    | SDIO CLK (1.8V)    | 9
+  16  |   23  | SDIO CMD       | a0   | M.2         | M2_SDIO_CMD_3V3    | Bidir       | M2_SDIO_CMD_1V8    | SDIO CMD (1.8V)    | 11
+  18  |   24  | SDIO DAT0      | a0   | M.2         | M2_SDIO_DATA0_3V3  | Bidir       | M2_SDIO_DATA0_1V8  | SDIO DATA0 (1.8V)  | 13
+  22  |   25  | SDIO DAT1      | a0   | M.2         | M2_SDIO_DATA1_3V3  | Bidir       | M2_SDIO_DATA1_1V8  | SDIO DATA1 (1.8V)  | 15
+  37  |   26  | SDIO DAT2      | a0   | M.2         | M2_SDIO_DATA2_3V3  | Bidir       | M2_SDIO_DATA2_1V8  | SDIO DATA2 (1.8V)  | 17
+  13  |   27  | SDIO DAT3      | a0   | M.2         | M2_SDIO_DATA3_3V3  | Bidir       | M2_SDIO_DATA3_1V8  | SDIO DATA3 (1.8V)  | 19
+  29  |    5  | GPIO 5         | a5   | CAN INT     | CAN_INT
+  19  |   10  | SPI MOSI       | a0   | CAN SPI     | SPI_MOSI
+  21  |    9  | SPI MISO       | a0   | CAN SPI     | SPI_MISO
+  23  |   11  | SPI SCLK       | a0   | CAN SPI     | SPI_CLK
+  24  |    8  | SPI CE0        | a0   | CAN SPI     | SPI_CAN_CS
+  26  |    7  | SPI CE1        | a5   | M.2         | M2_WAKE#           | U-m2p       | M2_SDIO_WAKE#_1V8  | SDIO WAKE# (1.8V)  | 21
+                  \---->       |      | M.2         | M2_WAKE#           |             | M2_UART_WAKE#      | UART WAKE# (3.3V)  | 20
+  27  |    0  | EEPROM SDA     | a3   | ID PROM     | ID_SDA
+  28  |    1  | EEPROM SCL     | a3   | ID PROM     | ID_SCL
+   7  |    4  | GPCLK0         | a0   | M.2         | M2_SUSCLK          |             | M2_SUSCLK          | SUSCLK (3.3V)      | 50
+  31  |    6  | GPIO 6         | a5   | M.2         | M2_I2C_ALERT#      |             | M2_I2C_ALERT#      | I2C ALERT# (3.3V)  | 62
+  32  |   12  | GPIO 12        | a2   | CAM Trigger | CAM_TRIGGER_3V3    | U-p2m       | CAM_TRIGGERx_1V8   |                    |
+  33  |   13  | GPIO 13        | a5   | M.2         | M2_W_DISABLE#      |             | M2_W_DISABLE1#     | W_DISABLE1# (3.3V) | 56
+---PCIe Slot---
+  16  |       | PCIE_RST_B     |      | M.2         | PCIE_RST_B         |             | PCIE_RST_B         | PERST0# 9(3.3V)    | 52
+      |           \---->       |      | M.2         | PCIE_RST_B         | U-p2m       | M2_SDIO_RESET#_1V8 | SDIO RESET# (1.8V) | 23
+  15  |       | PCIE_CLKREQ_N  |      | M.2         | PCIE_CLKREQ_N      |             | PCIE_CLKREQ_N      | CLKREQ0# (3.3V)    | 53
+  14  |       | PCIE_DET_WAKE  |      | M.2         | PCIE_DET_WAKE      |             | PCIE_DET_WAKE      | PEWAKE0# (3.3V)    | 55
+  13  |       | PCIE_PWR_EN    |      | Vreg        | PCIE_PWR_EN
+  11  |       | PCIE_TX_N      |      | M.2         | PCIE_TX_N          |             | PCIE_TX_N          | PERn0              | 37
+  10  |       | PCIE_TX_P      |      | M.2         | PCIE_TX_P          |             | PCIE_TX_P          | PERp0              | 35
+   8  |       | PCIE_RX_N      |      | M.2         | PCIE_RX_N          |             | PCIE_RX_N          | PETn0              | 43
+   7  |       | PCIE_RX_P      |      | M.2         | PCIE_RX_P          |             | PCIE_RX_P          | PETp0              | 41
+   5  |       | PCIE_CLK_N     |      | M.2         | PCIE_CLK_N         |             | PCIE_CLK_N         | REFCLKn0           | 49
+   4  |       | PCIE_CLK_P     |      | M.2         | PCIE_CLK_P         |             | PCIE_CLK_P         | REFCLKp0           | 47
+
+
+USB_D-         -> Micro USB Port
+USB_D+         -> Micro USB Port

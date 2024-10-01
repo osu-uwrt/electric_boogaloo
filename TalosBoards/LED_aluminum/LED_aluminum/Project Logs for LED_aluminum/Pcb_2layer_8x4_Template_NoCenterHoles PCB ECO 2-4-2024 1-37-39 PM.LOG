@@ -1,6 +1,0 @@
-Change Component Footprint: Designator=RTEST Old Footprint=RESC2013X50X30LL20T20 New Footprint=RESC3216X70X50NL05T20
-Change Component Comment : Designator=RTEST Old Comment=CRCW08050000Z0EA New Comment=ERJ-8GEY0R00V
-Change Managed Component Library Link : Designator=RTEST Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=78462138-499A-4A0D-A527-3027AB8F838F New ItemGUID=BA89E7CF-A345-4D65-8C6E-E1E846F657D6 Old RevisionGUID=B8426C4C-D616-46EA-83DD-42D624EF6A27 New RevisionGUID=8414BA08-C193-431B-AE5E-6A9D6DC869D0
-Change component parameters: Designator = "RTEST" ("RTEST"); Footprint = "RESC2013X50X30LL20T20"; UniqueID = "\NBZFGALI" ("\NBZFGALI")
-Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
-Change component parameters (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"

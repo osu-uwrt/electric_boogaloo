@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=encoder Pin=J3-2
+Removed Pin From Net: NetName=GND Pin=J3-5
+Removed Pin From Net: NetName=Disch_LED Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=encoder Pin=J3-5
+Added Pin To Net: NetName=Disch_LED Pin=J6-1
+Change Net Name : Old Net Name=Disch_LED New Net Name=Drain_Out
+Added Pin To Net: NetName=NetJ6_2 Pin=J6-2
+Added Pin To Net: NetName=NetJ6_2 Pin=R1-1
+Added Net: Name=NetJ6_2
+Add Class: Class already exists: Designator

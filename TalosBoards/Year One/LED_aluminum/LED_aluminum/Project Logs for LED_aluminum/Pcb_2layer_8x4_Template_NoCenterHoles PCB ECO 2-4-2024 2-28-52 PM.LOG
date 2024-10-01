@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=Green D1D2 Pin=R2-2
+Removed Pin From Net: NetName=Green D2D3 Pin=R3-2
+Removed Pin From Net: NetName=Green D1D2 Pin=R4-2
+Removed Member From Class: ClassName=LED_aluminum Member=R2
+Removed Member From Class: ClassName=LED_aluminum Member=R3
+Removed Member From Class: ClassName=LED_aluminum Member=R4
+Added Pin To Net: NetName=Red D1D2 Pin=R1-1
+Added Room: Name=LED_aluminum

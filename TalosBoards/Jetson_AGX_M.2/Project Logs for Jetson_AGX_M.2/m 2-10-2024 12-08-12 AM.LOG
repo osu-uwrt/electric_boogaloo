@@ -1,7 +1,0 @@
-Removed Pin From Net: NetName=UART_TX Pin=R3-1
-Removed Pin From Net: NetName=UART_TX Pin=U2-22
-Change Net Name : Old Net Name=UART_TX New Net Name=3V3
-Added Pin To Net: NetName=UART_TX Pin=m.2 bottom-32
-Added Pin To Net: NetName=UART_TX Pin=R3-1
-Added Pin To Net: NetName=UART_TX Pin=U2-22
-Added Net: Name=UART_TX

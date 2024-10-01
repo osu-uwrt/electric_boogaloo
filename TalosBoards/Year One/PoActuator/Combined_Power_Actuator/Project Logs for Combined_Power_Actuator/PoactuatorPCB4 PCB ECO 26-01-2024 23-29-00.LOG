@@ -1,0 +1,49 @@
+Added Component: Designator=DEBUG_CONN1(HEADER_2x10PIN_2.54MM)
+Add component (AddParameter): Name = "Made By"; Value = "Tyson Nguyen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "Z8747-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=DEBUG_CONN1-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=DEBUG_CONN1-2
+Added Pin To Net: NetName=ACT_PWM_3.3V Pin=DEBUG_CONN1-11
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-19
+Added Pin To Net: NetName=GND Pin=DEBUG_CONN1-20
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C1C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C1R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C2R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C3R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C4C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C4R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C5C 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C5R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C6R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C7R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C8R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C9R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C10R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C11R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C12R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C13R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component D1C EAST1616RGBB4
+Added Member To Class: ClassName=Poactuator_Connectors Member=Component DEBUG_CONN1 HEADER DUAL VERT 2.54MM
+Added Member To Class: ClassName=U_RP2040_C Member=Component J1R TagConnect SWD
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R1C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R1R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R2R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R3R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R4C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R4R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R5C 604 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R5R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R7C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R7R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R8C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component SW2R 434123025826
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U1C MCP2517FD
+Added Member To Class: ClassName=U_RP2040_C Member=Component U1R RP2040
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U2C CAN Transceiver
+Added Member To Class: ClassName=U_RP2040_C Member=Component U2R W25Q128JVSIQ
+Added Member To Class: ClassName=U_RP2040_C Member=Component Y1R CRYSTAL 12.0000MHZ 18PF SMD
+Added Room: Name=U_PD_MK2_Killswitch
+Added Room: Name=U_PD_MK2_Power
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN

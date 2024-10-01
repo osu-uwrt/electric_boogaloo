@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=5VREG_AGND Pin=C13-2
+Added Pin To Net: NetName=5VREG_AGND Pin=C14-2
+Added Pin To Net: NetName=5VREG_AGND Pin=C15-2
+Added Member To Class: ClassName=External_Camera_HAT_Regulators Member=Component C12 GRM31CR61A476KE15L
+Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406

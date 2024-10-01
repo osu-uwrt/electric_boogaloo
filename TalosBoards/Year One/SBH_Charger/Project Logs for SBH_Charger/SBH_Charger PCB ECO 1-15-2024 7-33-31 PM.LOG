@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=ENCSWITCH Pin=U1R-11
+Removed Pin From Net: NetName=ENCA Pin=U1R-12
+Removed Pin From Net: NetName=ENCB Pin=U1R-13
+Added Pin To Net: NetName=ENCSWITCH Pin=U1R-12
+Added Pin To Net: NetName=ENCA Pin=U1R-13
+Added Pin To Net: NetName=ENCB Pin=U1R-14
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11
+Add Class: Class already exists: Designator

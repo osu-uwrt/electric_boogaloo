@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PROCHOT Pin=U1R-35
+Removed Pin From Net: NetName=OR_Control Pin=U1R-36
+Removed Pin From Net: NetName=DSWITCH Pin=U1R-39
+Added Pin To Net: NetName=DSWITCH Pin=U1R-35
+Added Pin To Net: NetName=PROCHOT Pin=U1R-36
+Added Pin To Net: NetName=OR_Control Pin=U1R-39
+Add Class: Class already exists: Designator

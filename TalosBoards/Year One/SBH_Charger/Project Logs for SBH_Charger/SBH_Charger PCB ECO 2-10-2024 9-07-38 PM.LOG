@@ -1,0 +1,22 @@
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C13-1
+Added Pin To Net: NetName=VBAT Pin=C43-1
+Added Pin To Net: NetName=NetC47_2 Pin=C43-2
+Added Pin To Net: NetName=3V3_RP2CAN Pin=C64-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-7
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-8
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-9
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-35
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-37
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-40
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-41
+Added Pin To Net: NetName=3V3_RP2CAN Pin=J3-42
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R4-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U2-4
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U2-7
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U2-8
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U4-3
+Added Pin To Net: NetName=3V3_RP2CAN Pin=U10-38
+Change Net Name : Old Net Name=3V3_RP2CAN New Net Name=3V3
+Change Net Name : Old Net Name=NetC47_2 New Net Name=NetC43_2
+Add Class: Class already exists: Designator

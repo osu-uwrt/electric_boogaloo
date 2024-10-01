@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=IRQ Pin=U1R-6
-Removed Pin From Net: NetName=TEARING Pin=U1R-7
-Removed Pin From Net: NetName=NetQ4_1 Pin=U1R-8
-Added Pin To Net: NetName=NetQ4_1 Pin=U1R-5
-Added Pin To Net: NetName=IRQ Pin=U1R-7
-Added Pin To Net: NetName=TEARING Pin=U1R-8
-Added Pin To Net: NetName=NetU1R_6 Pin=U1R-6
-Added Net: Name=NetU1R_6
-Add Class: Class already exists: Designator

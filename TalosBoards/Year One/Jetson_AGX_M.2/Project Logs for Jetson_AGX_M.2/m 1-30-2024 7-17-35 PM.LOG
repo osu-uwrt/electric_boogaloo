@@ -1,0 +1,150 @@
+Removed Pin From Net: NetName=NetC5_1 Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=3V3 Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=1.8V Pin=C7-1
+Removed Pin From Net: NetName=1.8V Pin=C10-2
+Removed Pin From Net: NetName=3V3 Pin=C11-1
+Removed Pin From Net: NetName=DOUT Pin=J1-2
+Removed Pin From Net: NetName=RIN Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=NetC5_1 Pin=U1-3
+Removed Pin From Net: NetName=NetC11_2 Pin=U4-1
+Change Component Footprint: Designator=C3 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C5 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C6 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C7 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C8 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C9 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C10 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C11 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=J1 Old Footprint=CONN_JST_XH254_4POS_VERT New Footprint=0015912035
+Change Component Comment : Designator=C3 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C5 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C6 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C7 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C8 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C9 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C10 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C11 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=J1 Old Comment=XH2.54 VERT New Comment=CONN HEADER SMD R/A 3POS 2.54MM
+Change Component Designator: OldDesignator=C4 NewDesignator=C2
+Change Component Designator: OldDesignator=delete me1 NewDesignator=m.2 top
+Change Component Designator: OldDesignator=delete me2 NewDesignator=m.2 bottom
+Change Component Designator: OldDesignator=U1 NewDesignator=U3
+Change Component Designator: OldDesignator=U2 NewDesignator=U1
+Change Component Designator: OldDesignator=U3 NewDesignator=U2
+Change component parameters: Designator = "C3" ("C3"); Footprint = "CAPACITOR_0603"; UniqueID = "\OTSDEWNE" ("\OTSDEWNE")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "CAPACITOR_0603"; UniqueID = "\ZXKKRHLH" ("\ZXKKRHLH")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "CAPACITOR_0603"; UniqueID = "\PTLJQUQM" ("\PTLJQUQM")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAPACITOR_0603"; UniqueID = "\JMPDAOJL" ("\JMPDAOJL")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "CAPACITOR_0603"; UniqueID = "\DJAEHRLZ" ("\DJAEHRLZ")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "CAPACITOR_0603"; UniqueID = "\EQHOXFOG" ("\EQHOXFOG")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "CAPACITOR_0603"; UniqueID = "\HKDBUIAE" ("\HKDBUIAE")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C11" ("C11"); Footprint = "CAPACITOR_0603"; UniqueID = "\RZOWLPGQ" ("\RZOWLPGQ")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J1" ("J1"); Footprint = "CONN_JST_XH254_4POS_VERT"; UniqueID = "\JDBMVANS" ("\JDBMVANS")
+Change component parameters (AddParameter): Name = "Circuits"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Ethan Rosati"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reviewed By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C4(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=1.8V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=3V3 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=1.8V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=3V3 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=DOUT Pin=J1-1
+Added Pin To Net: NetName=RIN Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=1.8V Pin=U2-1
+Added Pin To Net: NetName=3V3 Pin=U2-5
+Added Pin To Net: NetName=NetC5_1 Pin=U3-4
+Added Pin To Net: NetName=NetC11_2 Pin=U3-7
+Added Pin To Net: NetName=3V3 Pin=U4-1
+Added Pin To Net: NetName=1.8V Pin=U4-5
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=U3-2
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=U3-6
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=U3-5
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=U3-3
+Added Net: Name=NetC8_1
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component C2 1uF Ceramic 16V
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component C4 100nF Ceramic 25V
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component C8 100nF Ceramic 25V
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component m.2 top M.2 (TOP)
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component U2 FXLP34P5X
+Added Member To Class: ClassName=jetson_agx_m.2 Member=Component U3 SN65C3221EPWR

@@ -1,0 +1,65 @@
+* C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Acoustics\LTSpice\Acoustics System.asc
+XX1 N002 N003 envelopedetector
+XX2 BV N005 4p_bp_filter
+B1 BV 0 V=(V(LO)*V(AF))/10
+V1 IN 0 PWL file=A_trunk.txt
+V2 LO 0 SINE(0 5 72.5k)
+XU1 N005 N001 +15 -15 N002 level1 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V3 +15 0 15
+V4 -15 0 -15
+R1 N002 N001 6k
+R2 N001 0 1k
+XX3 N003 N004 thresholddetector
+XAFE AF IN afe_bandpass_v3
+
+* block symbol definitions
+.subckt envelopedetector IN OUT
+D1 IN OUT 1N914
+R1 OUT 0 10k
+C1 OUT 0 10µ
+.ends envelopedetector
+
+.subckt 4p_bp_filter IN OUT
+XU1 N002 N001 +15 -15 N001 level2 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V1 -15 0 -15
+V2 +15 0 15
+R1 N002 IN {R} tol=1 pwr=.25
+C1 N002 0 {C} V=16
+L1 N002 0 {L}
+R2 OUT N001 {R} tol=1 pwr=.25
+C2 OUT 0 {C} V=16
+L2 OUT 0 {L}
+I1 N001 0 30p
+I2 N002 0 30p
+.param R=1450
+.param L=12u C=0.22u
+.ends 4p_bp_filter
+
+.subckt thresholddetector IN OUT
+R1 5V N001 9k
+R2 N001 0 1k
+V1 5V 0 5
+V3 3V3 0 3.3
+XU1 IN N001 3V3 0 OUT level2 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+.ends thresholddetector
+
+.subckt afe_bandpass_v3 OUT IN
+R1 N002 IN 309
+R2 N001 0 1k
+R3 OUT N001 1k
+L1 N002 0 2.2m
+C1 N002 0 13n
+XU1 N002 N001 15V -15V OUT level2 Avol=1Meg GBW=5Meg Slew=12Meg Vos=3m Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V1 15V 0 15
+V2 -15V 0 -15
+.ends afe_bandpass_v3
+
+.model D D
+.lib C:\Users\natha\AppData\Local\LTspice\lib\cmp\standard.dio
+.tran .25
+* Testing Sources
+* (20k max)\nTrimmer\n|\nV
+.lib UniversalOpAmp1.lib
+.lib UniversalOpAmp2.lib
+.backanno
+.end

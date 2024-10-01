@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=M2_WAKE# Pin=J1-26
-Removed Pin From Net: NetName=CAN_INT Pin=J1-29
-Added Pin To Net: NetName=CAN_INT Pin=J1-26
-Added Pin To Net: NetName=M2_WAKE# Pin=J1-29
-Added Member To Class: ClassName=External_Camera_HAT_Connectors Member=Component J4 43045-0406
