@@ -1,0 +1,4 @@
+Added Component: Designator=TP11(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V Pin=TP11-TP
+Added Member To Class: ClassName=Power Sheet Member=Component TP11 PCB Test Point
