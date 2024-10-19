@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=+5V Pin=TP18-TP
+Removed Member From Class: ClassName=Power Sheet Member=TP18
+Added Component: Designator=J1(CONN_MOLEX_MINIFIT JR_6 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/ps/PS-5556-001.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM1353-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=+5V Pin=J1-4
+Added Pin To Net: NetName=CANH Pin=J1-5
+Added Pin To Net: NetName=CANH Pin=J1-6
+Added Net: Name=CANH
+Added Pin To Net: NetName=CANL Pin=J1-2
+Added Pin To Net: NetName=CANL Pin=J1-3
+Added Net: Name=CANL
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component J1 Mini-Fit Jr R/A
+Added Room: Name=Process Sheet
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
