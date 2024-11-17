@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\sammy\Documents\Github\electric_boogaloo\TalosBoards\Year Two\LED_Board\!Simulations\LeakSensor.asc
+Start Time: Thu Nov 14 19:12:12 2024
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.048 seconds.
+
