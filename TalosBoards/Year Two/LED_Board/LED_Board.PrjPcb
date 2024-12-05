@@ -57,7 +57,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -635,7 +635,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -652,7 +652,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -669,7 +669,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -684,20 +684,34 @@ DocumentPath=Project Outputs for LED_Board\Design Rule Check - Pcb_4layer_8x4_Te
 DItemRevisionGUID=
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sample Team Lead
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=Sample Template Project
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=Sample Team Lead
+Name=BoardRevision
+Value=1.0
+
+[DeviceSheet1]
+DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
+
+[DeviceSheet2]
+DocumentPath=..\..\..\Device_Sheets\RP2040.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
 
 [Configuration1]
 Name=Sources
@@ -1586,7 +1600,7 @@ Type55=1
 Type56=2
 Type57=1
 Type58=1
-Type59=2
+Type59=0
 Type60=0
 Type61=0
 Type62=0
