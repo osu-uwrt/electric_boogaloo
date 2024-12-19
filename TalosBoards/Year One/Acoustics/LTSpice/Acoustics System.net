@@ -1,4 +1,4 @@
-* C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Acoustics\LTSpice\Acoustics System.asc
+* C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year One\Acoustics\LTSpice\Acoustics System.asc
 XX1 N002 N003 envelopedetector
 XX2 BV N005 4p_bp_filter
 B1 BV 0 V=(V(LO)*V(AF))/10
