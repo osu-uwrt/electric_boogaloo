@@ -1,0 +1,120 @@
+Added Component: Designator=D1(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LE_RTDUW_S2WM)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "720-LERTDUWS2WMA2120"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESC2512(6432)_L)
+Add component (AddParameter): Name = "Case-EIA"; Value = "2512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "6432"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC2512(6432)_L)
+Add component (AddParameter): Name = "Case-EIA"; Value = "2512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "6432"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESC2512(6432)_L)
+Add component (AddParameter): Name = "Case-EIA"; Value = "2512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "6432"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Component: Designator=U1(NTCS0603_VIS)
+Add component (AddParameter): Name = "Accuracy"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "800µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "800µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "42631939"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "22kO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schedule B"; Value = "8533400080, 8533400080"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.6mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Blue Anode Pin=D1-6
+Added Net: Name=Blue Anode
+Added Pin To Net: NetName=Blue D1D2 Pin=D1-5
+Added Pin To Net: NetName=Blue D1D2 Pin=D2-6
+Added Net: Name=Blue D1D2
+Added Pin To Net: NetName=Blue D2D3 Pin=D2-5
+Added Net: Name=Blue D2D3
+Added Pin To Net: NetName=GND Pin=D1-9
+Added Pin To Net: NetName=GND Pin=D2-9
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Net: Name=GND
+Added Pin To Net: NetName=Green Anode Pin=D1-4
+Added Net: Name=Green Anode
+Added Pin To Net: NetName=Green D1D2 Pin=D2-4
+Added Pin To Net: NetName=Green D1D2 Pin=R2-1
+Added Net: Name=Green D1D2
+Added Pin To Net: NetName=Green D2D3 Pin=R6-1
+Added Net: Name=Green D2D3
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R3-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_3 Pin=D1-3
+Added Pin To Net: NetName=NetD1_3 Pin=R2-2
+Added Net: Name=NetD1_3
+Added Pin To Net: NetName=NetD1_7 Pin=D1-7
+Added Pin To Net: NetName=NetD1_7 Pin=R4-1
+Added Net: Name=NetD1_7
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R5-2
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_3 Pin=D2-3
+Added Pin To Net: NetName=NetD2_3 Pin=R6-2
+Added Net: Name=NetD2_3
+Added Pin To Net: NetName=NetD2_7 Pin=D2-7
+Added Pin To Net: NetName=NetD2_7 Pin=R7-1
+Added Net: Name=NetD2_7
+Added Pin To Net: NetName=Red Anode Pin=D1-2
+Added Net: Name=Red Anode
+Added Pin To Net: NetName=Red D1D2 Pin=D2-2
+Added Pin To Net: NetName=Red D1D2 Pin=R3-1
+Added Net: Name=Red D1D2
+Added Pin To Net: NetName=Red D2D3 Pin=R5-1
+Added Net: Name=Red D2D3
+Added Pin To Net: NetName=Temp Pin=U1-1
+Added Net: Name=Temp
+Added Pin To Net: NetName=White Anode Pin=D1-8
+Added Net: Name=White Anode
+Added Pin To Net: NetName=White D1D2 Pin=D2-8
+Added Pin To Net: NetName=White D1D2 Pin=R4-2
+Added Net: Name=White D1D2
+Added Pin To Net: NetName=White D2D3 Pin=R7-2
+Added Net: Name=White D2D3
+Added Class: Name=LED_aluminum
+Added Room: Name=LED_aluminum
+Added Rule: Name=Schematic Supply Nets
