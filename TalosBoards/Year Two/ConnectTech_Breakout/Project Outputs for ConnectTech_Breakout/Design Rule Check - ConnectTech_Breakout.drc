@@ -1,0 +1,58 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\gwlil\OneDrive\Documents\GitHub\electric_boogaloo\TalosBoards\Year Two\ConnectTech_Breakout\ConnectTech_Breakout.PcbDoc
+Date     : 12/29/2024
+Time     : 1:20:41 PM
+
+Processing Rule : Clearance Constraint (Gap=7.87mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=15mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: (118.11mil > 100mil) Pad J5-(1846.89mil,1481.102mil) on Multi-Layer Actual Hole Size = 118.11mil
+   Violation between Hole Size Constraint: (118.11mil > 100mil) Pad J5-(1846.89mil,449.606mil) on Multi-Layer Actual Hole Size = 118.11mil
+Rule Violations :2
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (5.642mil < 6mil) Between Arc (704.575mil,1231.147mil) on Top Overlay And Pad U3-1(683.071mil,1225mil) on Top Layer [Top Overlay] to [Top Solder] clearance [5.642mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.718mil < 6mil) Between Pad U3-4(757.874mil,1173.819mil) on Top Layer And Track (698.444mil,1157.665mil)(743.749mil,1157.665mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [5.718mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.486mil < 6mil) Between Pad U3-4(757.874mil,1173.819mil) on Top Layer And Track (744.62mil,1189.941mil)(744.62mil,1208.939mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [5.486mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.718mil < 6mil) Between Pad U3-5(757.874mil,1225mil) on Top Layer And Track (698.444mil,1241.153mil)(743.749mil,1241.153mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [5.718mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.426mil < 6mil) Between Pad U3-5(757.874mil,1225mil) on Top Layer And Track (744.62mil,1189.941mil)(744.62mil,1208.939mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [5.426mil]
+Rule Violations :5
+
+Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Room ConnectTech (Bounding Region = (3000mil, 1425mil, 10200mil, 2575mil) (Disabled)(InComponentClass('ConnectTech'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 7
+Waived Violations : 0
+Time Elapsed        : 00:00:01

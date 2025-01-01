@@ -1,6 +1,5 @@
-Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TempestBoards\Acoustics\LTSpice\4P_BP_Filter.asc
+Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year One\Acoustics\LTSpice\4P_BP_Filter.asc
 
-WARNING: Less than two connections to node in.  This node is used by r1.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -22,21 +21,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Mon Nov 27 20:04:29 2023
-Total elapsed time: 0.080 seconds.
+Date: Thu Dec 19 15:52:42 2024
+Total elapsed time: 0.047 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 2431
-traniter = 2082
-tranpoints = 1042
-accept = 1042
+method = trap
+totiter = 349
+traniter = 0
+tranpoints = 0
+accept = 0
 rejected = 0
-matrix size = 9
+matrix size = 10
 fillins = 0
 solver = Normal
-Avg thread counts: 2.9/4.9/4.9/2.9
-Matrix Compiler1: 368 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 715 bytes object code size  0.1/0.1/[0.1]
+Avg thread counts: 9.8/0.0/12.0/2.7
+Matrix Compiler1:      21 opcodes
+Matrix Compiler2: off  [0.1]/0.1/0.3
 
