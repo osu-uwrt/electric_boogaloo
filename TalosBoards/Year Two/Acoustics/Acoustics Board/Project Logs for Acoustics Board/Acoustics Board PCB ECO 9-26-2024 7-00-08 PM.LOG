@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C34-2
+Removed Pin From Net: NetName=15V Pin=C35-1
+Removed Pin From Net: NetName=GND Pin=C35-2
+Removed Pin From Net: NetName=GND Pin=C36-2
+Removed Pin From Net: NetName=3V3 Pin=C37-1
+Removed Pin From Net: NetName=GND Pin=C37-2
+Removed Pin From Net: NetName=GND Pin=L1-2
+Removed Pin From Net: NetName=GND Pin=L2-2
+Removed Pin From Net: NetName=GND Pin=L3-2
+Removed Pin From Net: NetName=GND Pin=L4-2
+Removed Pin From Net: NetName=GND Pin=R5-3
+Removed Pin From Net: NetName=GND Pin=R6-3
+Removed Pin From Net: NetName=3V3 Pin=R7-2
+Removed Pin From Net: NetName=GND Pin=R8-2
+Removed Pin From Net: NetName=GND Pin=R9-2
+Removed Pin From Net: NetName=GND Pin=R10-2
+Removed Pin From Net: NetName=3V3 Pin=R11-2
+Removed Pin From Net: NetName=GND Pin=R12-2
+Removed Pin From Net: NetName=RP2040 L Pin=TP9-TP
+Removed Pin From Net: NetName=RP2040 R Pin=TP10-TP
+Removed Pin From Net: NetName=3V3 Pin=TP19-TP
+Removed Pin From Net: NetName=GND Pin=U5-6
+Removed Pin From Net: NetName=RP2040 R Pin=U5-7
+Removed Pin From Net: NetName=RP2040 L Pin=U5-8
+Removed Pin From Net: NetName=3V3 Pin=U5-9
+Removed Pin From Net: NetName=Local Oscillator Pin=U7-1
+Removed Pin From Net: NetName=GND Pin=U7-2
+Removed Pin From Net: NetName=GND Pin=U7-4
+Removed Pin From Net: NetName=Hydrophone L Pin=U7-7
+Removed Pin From Net: NetName=GND Pin=U7-8
+Removed Pin From Net: NetName=Local Oscillator Pin=U8-1
+Removed Pin From Net: NetName=GND Pin=U8-2
+Removed Pin From Net: NetName=GND Pin=U8-4
+Removed Pin From Net: NetName=Hydrophone R Pin=U8-7
+Removed Pin From Net: NetName=GND Pin=U8-8
+Removed Pin From Net: NetName=GND Pin=U11-1
+Removed Pin From Net: NetName=15V Pin=U11-3
+Removed Pin From Net: NetName=GND Pin=U12-1
+Removed Pin From Net: NetName=3V3 Pin=U12-2
+Removed Pin From Net: NetName=3V3 Pin=U12-4
+Change Net Name : Old Net Name=15V New Net Name=12V
+Change Class Name : Old Net Name=Acoustics Board Pg. 2 New Net Name=[Acoustics] Connections & RP2040

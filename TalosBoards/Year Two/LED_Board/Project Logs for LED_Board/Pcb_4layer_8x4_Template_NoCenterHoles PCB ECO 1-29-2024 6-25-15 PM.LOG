@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=SCK_SPI Pin=U1R-13
+Removed Pin From Net: NetName=MOSI Pin=U1R-14
+Removed Pin From Net: NetName=MISO Pin=U1R-15
+Change Component Designator: OldDesignator=TP7 NewDesignator=TPsck
+Change Component Designator: OldDesignator=TP8 NewDesignator=TPmosi
+Change Component Designator: OldDesignator=TP9 NewDesignator=TPmiso
+Added Pin To Net: NetName=SCK_SPI Pin=U1R-4
+Added Pin To Net: NetName=MOSI Pin=U1R-5
+Added Pin To Net: NetName=MISO Pin=U1R-6
+Added Pin To Net: NetName=NetU1R_13 Pin=U1R-13
+Added Net: Name=NetU1R_13
+Added Pin To Net: NetName=NetU1R_14 Pin=U1R-14
+Added Net: Name=NetU1R_14
+Added Pin To Net: NetName=NetU1R_15 Pin=U1R-15
+Added Net: Name=NetU1R_15

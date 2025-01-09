@@ -1,0 +1,62 @@
+Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year Two\Acoustics\LTSpice\Acoustics System.asc
+
+v1: Removing PWL point (-0.00934,0.0048)
+v1: Removing PWL point (-0.00898,0.0056)
+v1: Removing PWL point (-0.00862,-0.0008)
+v1: Removing PWL point (-0.00856,0.0008)
+v1: Removing PWL point (-0.00762,0.0024)
+v1: Removing PWL point (-0.00712,0.0056)
+v1: Removing PWL point (-0.0065,0.0064)
+v1: Removing PWL point (-0.00584,0.004)
+v1: Removing PWL point (-0.00576,0.004)
+v1: Removing PWL point (-0.00562,0.0024)
+v1: Removing PWL point (-0.00498,0.004)
+v1: Removing PWL point (-0.00476,0.004)
+v1: Removing PWL point (-0.00424,0.0024)
+v1: Removing PWL point (-0.0037,0.0008)
+v1: Removing PWL point (-0.00334,0.0032)
+v1: Removing PWL point (-0.0031,0.004)
+v1: Removing PWL point (-0.00294,0.0024)
+v1: Removing PWL point (-0.00252,0.004)
+v1: Removing PWL point (-0.0023,0.004)
+v1: Removing PWL point (-0.00222,0.004)
+v1: Removing PWL point (-0.00076,0.0032)
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Thu Dec 19 16:32:20 2024
+Total elapsed time: 3.537 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 515052
+traniter = 514643
+tranpoints = 226488
+accept = 152485
+rejected = 74003
+matrix size = 37
+fillins = 4
+solver = Normal
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: 1.46 KB object code size  0.6/0.4/[0.3]
+Matrix Compiler2: 2.84 KB object code size  0.4/0.5/[0.3]
+

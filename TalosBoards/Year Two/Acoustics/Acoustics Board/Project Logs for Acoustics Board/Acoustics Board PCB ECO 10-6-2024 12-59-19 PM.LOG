@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=+5V Pin=C4C-1
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=CANL_RP2CAN Pin=J1-2
+Removed Pin From Net: NetName=12V Pin=J1-3
+Removed Pin From Net: NetName=CANH_RP2CAN Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=CANL_RP2CAN Pin=J2-2
+Removed Pin From Net: NetName=12V Pin=J2-3
+Removed Pin From Net: NetName=CANH_RP2CAN Pin=J2-4
+Removed Pin From Net: NetName=+5V Pin=J6-1
+Removed Pin From Net: NetName=12V Pin=TP16-TP
+Removed Pin From Net: NetName=+5V Pin=U2C-3
+Removed Member From Class: ClassName=[Acoustics] Connections & RP2040 Member=J1
+Removed Member From Class: ClassName=[Acoustics] Connections & RP2040 Member=J2
+Added Pin To Net: NetName=+5V Pin=C4C-1
+Added Pin To Net: NetName=+5V Pin=J6-1
+Added Pin To Net: NetName=+5V Pin=U2C-3

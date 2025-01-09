@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=FSYNC Pin=U1R-37
+Removed Pin From Net: NetName=SCLK Pin=U1R-38
+Removed Pin From Net: NetName=SDATA Pin=U1R-39
+Added Pin To Net: NetName=FSYNC Pin=U1R-7
+Added Pin To Net: NetName=SCLK Pin=U1R-8
+Added Pin To Net: NetName=SDATA Pin=U1R-9
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Net: Name=NetU1R_37
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Net: Name=NetU1R_38
+Added Pin To Net: NetName=NetU1R_39 Pin=U1R-39
+Added Net: Name=NetU1R_39
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4

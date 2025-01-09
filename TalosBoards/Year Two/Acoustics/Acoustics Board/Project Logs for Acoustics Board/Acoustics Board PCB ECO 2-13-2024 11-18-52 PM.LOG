@@ -1,0 +1,80 @@
+Added Component: Designator=TP1(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP2(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP3(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP4(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP5(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP6(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP7(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP8(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP9(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP10(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP11(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP12(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP13(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP14(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP15(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP16(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP17(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP18(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP19(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP20(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Post Filter Amp L Pin=TP1-TP
+Added Pin To Net: NetName=Mixer L Pin=TP2-TP
+Added Pin To Net: NetName=Point Filter L Pin=TP3-TP
+Added Pin To Net: NetName=Post Filter Amp R Pin=TP4-TP
+Added Pin To Net: NetName=Mixer R Pin=TP5-TP
+Added Pin To Net: NetName=Point Filter R Pin=TP6-TP
+Added Pin To Net: NetName=Envelope Detector L Pin=TP7-TP
+Added Pin To Net: NetName=Envelope Detector R Pin=TP8-TP
+Added Pin To Net: NetName=Comparator L Pin=TP9-TP
+Added Pin To Net: NetName=RP2040 L Pin=TP10-TP
+Added Pin To Net: NetName=Comparator R Pin=TP11-TP
+Added Pin To Net: NetName=RP2040 R Pin=TP12-TP
+Added Pin To Net: NetName=Local Oscillator Pin=TP13-TP
+Added Pin To Net: NetName=MCLK Pin=TP14-TP
+Added Pin To Net: NetName=Hydrophone L Pin=TP15-TP
+Added Pin To Net: NetName=15V Pin=TP16-TP
+Added Pin To Net: NetName=Hydrophone R Pin=TP17-TP
+Added Pin To Net: NetName=5V Pin=TP18-TP
+Added Pin To Net: NetName=3V3 Pin=TP19-TP
+Added Pin To Net: NetName=-15V Pin=TP20-TP
+Added Member To Class: ClassName=Sheet 1 Member=Component TP1 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP2 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP3 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP4 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP5 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP6 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP7 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP8 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP9 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP10 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP11 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP12 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP13 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP14 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP15 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP16 PCB Test Point
+Added Member To Class: ClassName=Acoustics Board Pg. 2 Member=Component TP17 PCB Test Point
+Added Member To Class: ClassName=Power Sheet Member=Component TP18 PCB Test Point
+Added Member To Class: ClassName=Power Sheet Member=Component TP19 PCB Test Point
+Added Member To Class: ClassName=Power Sheet Member=Component TP20 PCB Test Point
