@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=FB1_2 Pin=L1_2-1
+Added Pin To Net: NetName=Out1_2 Pin=L1_2-2
+Added Pin To Net: NetName=FB2_2 Pin=L2_2-1
+Added Pin To Net: NetName=Out2_2 Pin=L2_2-2
+Added Member To Class: ClassName=Module2 Member=Component L1_2 (L1) 2200HT-102-V-RC
+Added Member To Class: ClassName=Module2 Member=Component L2_2 (L2) 2200HT-102-V-RC

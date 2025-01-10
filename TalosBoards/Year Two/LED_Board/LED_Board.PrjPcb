@@ -52,7 +52,7 @@ PrefsRevisionGUID=
 
 [Document1]
 DocumentPath=LED_Board_Top.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -235,7 +235,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BOXOROXM
 
 [Document12]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
@@ -473,7 +473,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JGNOYZNR
 
 [Document26]
 DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
@@ -630,7 +630,7 @@ DocumentUniqueId=LAAQHYVE
 
 [Document35]
 DocumentPath=LED_Connectors.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -664,7 +664,7 @@ DocumentUniqueId=HXKHWRRB
 
 [Document37]
 DocumentPath=LED_Micro.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -684,20 +684,20 @@ DocumentPath=Project Outputs for LED_Board\Design Rule Check - Pcb_4layer_8x4_Te
 DItemRevisionGUID=
 
 [Parameter1]
-Name=TeamLead
-Value=Sample Team Lead
+Name=BoardRevision
+Value=1.0
 
 [Parameter2]
-Name=ProjectTitle
-Value=Sample Template Project
-
-[Parameter3]
 Name=DateOfDesignReview
 Value=XX/XX/XXXX
 
+[Parameter3]
+Name=ProjectTitle
+Value=Sample Template Project
+
 [Parameter4]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Sample Team Lead
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
