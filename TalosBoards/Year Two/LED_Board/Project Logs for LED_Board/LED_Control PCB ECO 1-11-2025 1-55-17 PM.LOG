@@ -1,0 +1,60 @@
+Change Component Footprint: Designator=L1_3 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Footprint: Designator=L1_4 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Footprint: Designator=L1_5 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Footprint: Designator=L2_3 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Footprint: Designator=L2_4 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Footprint: Designator=L2_5 Old Footprint=IND_2200HT-V_49_22 New Footprint=IND_BOURNS_SRR1280
+Change Component Comment : Designator=L1_3 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change Component Comment : Designator=L1_4 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change Component Comment : Designator=L1_5 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change Component Comment : Designator=L2_3 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change Component Comment : Designator=L2_4 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change Component Comment : Designator=L2_5 Old Comment=2200HT-102-V-RC New Comment=SRR1280-221K
+Change component parameters: Designator = "L1_3" ("L1"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\3IGDIGODC\UDOICJLP" ("\3IGDIGODC\UDOICJLP")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1_4" ("L1"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\4IGDIGODC\UDOICJLP" ("\4IGDIGODC\UDOICJLP")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1_5" ("L1"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\5IGDIGODC\UDOICJLP" ("\5IGDIGODC\UDOICJLP")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2_3" ("L2"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\3IGDIGODC\CRSSNYBX" ("\3IGDIGODC\CRSSNYBX")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2_4" ("L2"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\4IGDIGODC\CRSSNYBX" ("\4IGDIGODC\CRSSNYBX")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2_5" ("L2"); Footprint = "IND_2200HT-V_49_22"; UniqueID = "\5IGDIGODC\CRSSNYBX" ("\5IGDIGODC\CRSSNYBX")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRR1280-221K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Bourns Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "SRR1280-221KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
