@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=White D1D2 Pin=R5-1
+Removed Pin From Net: NetName=NetD1_7 Pin=R5-2
+Removed Pin From Net: NetName=NetD1_3 Pin=R6-1
+Removed Pin From Net: NetName=Green D1D2 Pin=R6-2
+Removed Member From Class: ClassName=LED_aluminum Member=R5
+Removed Member From Class: ClassName=LED_aluminum Member=R6
+Added Component: Designator=R2(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC3216X70X50NL05T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_7 Pin=R2-1
+Added Pin To Net: NetName=White D1D2 Pin=R2-2
+Added Pin To Net: NetName=Green D1D2 Pin=R3-1
+Added Pin To Net: NetName=NetD1_3 Pin=R3-2
+Added Pin To Net: NetName=NetD1_5 Pin=D1-5
+Added Net: Name=NetD1_5
+Added Member To Class: ClassName=LED_aluminum Member=Component R2 ERJ-8GEY0R00V
+Added Member To Class: ClassName=LED_aluminum Member=Component R3 ERJ-8GEY0R00V
+Added Room: Name=LED_aluminum

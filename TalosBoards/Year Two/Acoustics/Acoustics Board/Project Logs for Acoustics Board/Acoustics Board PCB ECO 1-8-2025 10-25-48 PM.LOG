@@ -1,0 +1,17 @@
+Removed Member From Class: ClassName=STM32 Member=DNP4
+Change Component Footprint: Designator=R23 Old Footprint=FP-RMCF0603-MFG New Footprint=RESISTOR_0603
+Change Component Footprint: Designator=R27 Old Footprint=FP-RMCF0603-MFG New Footprint=RESISTOR_0603
+Change Component Comment : Designator=R23 Old Comment=3K New Comment=1k Ohm 5% 1/8W
+Change Component Comment : Designator=R27 Old Comment=3K New Comment=1k Ohm 5% 1/8W
+Added Pin To Net: NetName=NetDNP1_2 Pin=DNP1-2
+Added Pin To Net: NetName=ADC4_IN5 Pin=R23-1
+Added Pin To Net: NetName=NetR12_2 Pin=R23-2
+Added Pin To Net: NetName=3V3 Pin=R24-2
+Added Pin To Net: NetName=ADC5_IN1 Pin=R27-1
+Added Pin To Net: NetName=NetR26_2 Pin=R27-2
+Added Pin To Net: NetName=3V3 Pin=R28-2
+Added Pin To Net: NetName=GND Pin=U10-4
+Added Pin To Net: NetName=3V3 Pin=U10-7
+Added Pin To Net: NetName=GND Pin=U11-4
+Added Pin To Net: NetName=3V3 Pin=U11-7
+Added Member To Class: ClassName=Power Sheet Member=Component C18 10uF Tantalum 16V
