@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=NetR12_2 Pin=R23-2
+Removed Pin From Net: NetName=3V3_STM32 Pin=R24-2
+Removed Pin From Net: NetName=NetR26_2 Pin=R27-2
+Removed Pin From Net: NetName=3V3_STM32 Pin=R28-2
+Removed Pin From Net: NetName=NetR12_1 Pin=SB4-1
+Removed Pin From Net: NetName=NetR26_1 Pin=SB5-1
+Removed Pin From Net: NetName=NetR12_2 Pin=U10-2
+Removed Pin From Net: NetName=3V3_STM32 Pin=U10-7
+Removed Pin From Net: NetName=NetR26_2 Pin=U11-2
+Removed Pin From Net: NetName=3V3_STM32 Pin=U11-7
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Pin To Net: NetName=ADC5_IN1 Pin=ADC L-TP
+Added Pin To Net: NetName=ADC4_IN5 Pin=ADC R-TP
+Added Pin To Net: NetName=Envelope Detector L Pin=DNP?-1
+Added Pin To Net: NetName=Envelope Detector R Pin=DNP?-1
+Added Pin To Net: NetName=GND Pin=DNP?-1
+Added Pin To Net: NetName=GND Pin=DNP?-1
+Added Pin To Net: NetName=Comparator L Pin=DNP?-2
+Added Pin To Net: NetName=Comparator R Pin=DNP?-2
+Added Pin To Net: NetName=NetR9_1 Pin=DNP?-2
+Added Pin To Net: NetName=NetR10_1 Pin=DNP?-2
+Added Pin To Net: NetName=NetR12_1 Pin=R23-2
+Added Pin To Net: NetName=3V3 Pin=R24-2
+Added Pin To Net: NetName=NetR26_1 Pin=R27-2
+Added Pin To Net: NetName=3V3 Pin=R28-2
+Added Pin To Net: NetName=NetR12_2 Pin=SB4-1
+Added Pin To Net: NetName=NetR26_2 Pin=SB5-1
+Added Pin To Net: NetName=NetDNP1_2 Pin=U1R-12
+Added Pin To Net: NetName=NetR12_1 Pin=U10-2
+Added Pin To Net: NetName=3V3 Pin=U10-7
+Added Pin To Net: NetName=NetR26_1 Pin=U11-2
+Added Pin To Net: NetName=3V3 Pin=U11-7
+Change Net Name : Old Net Name=+5V New Net Name=5V
+Change Net Name : Old Net Name=CANH_STM New Net Name=CANH_RP2CAN
+Change Net Name : Old Net Name=CANL_STM New Net Name=CANL_RP2CAN
+Change Net Name : Old Net Name=NetR9_1 New Net Name=NetDNP?_2
+Change Net Name : Old Net Name=NetR10_1 New Net Name=NetDNP?_2
+Added Differential Pair: Name=USB_RP2040
+Added Differential Pair: Name=USB
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component ADC L PCB Test Point
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component ADC R PCB Test Point
+Added Member To Class: ClassName=Process Sheet Member=Component DNP? DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP? DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP? DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP? DNP
+Added Room: Name=Process Sheet
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
+Added Class: Name=USB 2.0
