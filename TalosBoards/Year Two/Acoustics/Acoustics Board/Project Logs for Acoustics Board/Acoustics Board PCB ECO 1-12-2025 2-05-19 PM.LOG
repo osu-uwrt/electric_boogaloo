@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=Leak_Detect Pin=U1R-6
+Removed Member From Class: ClassName=[Acoustics] Connections & RP2040 Member=DNP4
+Added Component: Designator=J8(CONN_JST_SM02B-GHS-TB(LF)(SN))
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "GH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "455-1564-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=GND Pin=J8-S1
+Added Pin To Net: NetName=GND Pin=J8-S2
+Added Pin To Net: NetName=Leak_Detect Pin=U1R-38
+Added Pin To Net: NetName=NetJ8_1 Pin=J8-1
+Added Pin To Net: NetName=NetJ8_1 Pin=R32-1
+Added Net: Name=NetJ8_1
+Added Pin To Net: NetName=NetU1R_6 Pin=U1R-6
+Added Net: Name=NetU1R_6
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Net: Name=NetU1R_37
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component J8 JST GH VERT
