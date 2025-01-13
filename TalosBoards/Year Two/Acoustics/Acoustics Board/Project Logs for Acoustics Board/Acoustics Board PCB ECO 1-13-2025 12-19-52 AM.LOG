@@ -1,0 +1,24 @@
+Added Component: Designator=J7(STM32_Connector)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "ED10524-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-1
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-2
+Added Pin To Net: NetName=JNTRST Pin=J7-3
+Added Pin To Net: NetName=GND Pin=J7-4
+Added Pin To Net: NetName=JTDI Pin=J7-5
+Added Pin To Net: NetName=GND Pin=J7-6
+Added Pin To Net: NetName=JTMS/SWDIO Pin=J7-7
+Added Pin To Net: NetName=GND Pin=J7-8
+Added Pin To Net: NetName=JTCK/SWCLK Pin=J7-9
+Added Pin To Net: NetName=GND Pin=J7-10
+Added Pin To Net: NetName=NetJ7_11 Pin=J7-11
+Added Pin To Net: NetName=GND Pin=J7-12
+Added Pin To Net: NetName=JTDO/TRACESWO Pin=J7-13
+Added Pin To Net: NetName=GND Pin=J7-14
+Added Pin To Net: NetName=Reset Pin=J7-15
+Added Pin To Net: NetName=GND Pin=J7-16
+Added Pin To Net: NetName=NetJ7_17 Pin=J7-17
+Added Pin To Net: NetName=GND Pin=J7-18
+Added Pin To Net: NetName=NetJ7_19 Pin=J7-19
+Added Pin To Net: NetName=GND Pin=J7-20
+Added Member To Class: ClassName=STM32 Member=Component J7 CONN HEADER VERT 20POS 2.54MM

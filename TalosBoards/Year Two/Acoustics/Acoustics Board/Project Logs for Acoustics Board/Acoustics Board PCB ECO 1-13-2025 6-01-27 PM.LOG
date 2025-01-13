@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=3V3_STM32 Pin=SW2-A1
+Removed Pin From Net: NetName=3V3_STM32 Pin=SW2-A2
+Removed Pin From Net: NetName=NetJ7_1 Pin=SW2-B1
+Removed Pin From Net: NetName=NetJ7_1 Pin=SW2-B2
+Removed Member From Class: ClassName=STM32 Member=SW2
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Class Member: Failed to add class member : Component S1 SS-12D07-VG 4 NS GA PA
+Added Room: Name=Process Sheet

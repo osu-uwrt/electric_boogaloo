@@ -1,0 +1,6 @@
+Added Component: Designator=S?(SS-12D07-VG 4 NS GA PA)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "CKN10397-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ7_1 Pin=S?-2
+Added Pin To Net: NetName=3V3_STM32 Pin=S?-3
+Added Member To Class: ClassName=STM32 Member=Component S? SS-12D07-VG 4 NS GA PA
