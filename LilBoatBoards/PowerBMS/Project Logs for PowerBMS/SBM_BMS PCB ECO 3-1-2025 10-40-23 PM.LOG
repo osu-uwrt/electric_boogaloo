@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND_RP2CAN Pin=C17-1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=C17-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=U2-12
+Removed Member From Class: ClassName=BMS Member=C17
+Added Pin To Net: NetName=BAT- Pin=U2-12

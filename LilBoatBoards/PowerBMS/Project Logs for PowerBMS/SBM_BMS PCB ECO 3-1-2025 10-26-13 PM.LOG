@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=BAT+ Pin=J10-2
+Removed Pin From Net: NetName=BAT- Pin=J10-3
+Removed Pin From Net: NetName=Wake Pin=J10-4
+Removed Pin From Net: NetName=RP2040_SCL Pin=J10-5
+Removed Pin From Net: NetName=RP2040_SDA Pin=J10-6
+Added Pin To Net: NetName=BAT+ Pin=J10-1
+Added Pin To Net: NetName=Wake Pin=J10-3
+Added Pin To Net: NetName=BAT- Pin=J10-4
+Added Pin To Net: NetName=RP2040_SDA Pin=J10-5
+Added Pin To Net: NetName=RP2040_SCL Pin=J10-6
+Change Net Name : Old Net Name=CAN_H New Net Name=CAN_L
+Change Net Name : Old Net Name=CAN_L New Net Name=CAN_H
+Added Pin To Net: NetName=NetJ10_2 Pin=J10-2
+Added Pin To Net: NetName=NetJ10_2 Pin=R25-2
+Added Net: Name=NetJ10_2

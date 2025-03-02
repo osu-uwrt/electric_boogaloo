@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J7-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J7-S1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J7-S2
+Removed Pin From Net: NetName=V+ Pin=Q4-3
+Removed Pin From Net: NetName=V+ Pin=R14-1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=R18-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=R19-2
+Removed Member From Class: ClassName=BMS Member=J7
+Removed Member From Class: ClassName=BMS Member=Q4
+Removed Member From Class: ClassName=BMS Member=R14
+Removed Member From Class: ClassName=BMS Member=R16
+Removed Member From Class: ClassName=BMS Member=R17
+Removed Member From Class: ClassName=BMS Member=R18
+Removed Member From Class: ClassName=BMS Member=R19
+Added Pin To Net: NetName=GND_RP2CAN Pin=C17-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=U2-12

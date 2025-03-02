@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Detect Pin=J1-6
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J1-12
+Added Pin To Net: NetName=GND_RP2CAN Pin=J1-6
+Added Pin To Net: NetName=Detect Pin=J1-12
