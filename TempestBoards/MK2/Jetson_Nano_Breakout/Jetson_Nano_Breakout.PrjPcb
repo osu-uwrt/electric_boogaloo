@@ -68,7 +68,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YYEGYPTF
 
 [Document2]
-DocumentPath=jetson_nano_breakout.SchDoc
+DocumentPath=jetson_nano_breakout_rev1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -525,6 +525,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document29]
+DocumentPath=jetson_nano_breakout_rev1.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MTRTGEAK
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Jetson_Nano_Breakout\Design Rule Check - jetson_nano_breakout.html
