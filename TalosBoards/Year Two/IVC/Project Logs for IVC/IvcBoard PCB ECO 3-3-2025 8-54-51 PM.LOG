@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+5 Pin=Q1-3
+Removed Pin From Net: NetName=+5 Pin=R13-1
+Added Pin To Net: NetName=5V Pin=Q1-3
+Added Pin To Net: NetName=5V Pin=R13-1
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
