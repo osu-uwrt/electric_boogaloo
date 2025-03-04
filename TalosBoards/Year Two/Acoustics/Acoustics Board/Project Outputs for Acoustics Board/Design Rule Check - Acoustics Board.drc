@@ -1,22 +1,14 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Nathan Ayer\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year Two\Acoustics\Acoustics Board\Acoustics Board.PcbDoc
+PCB File : C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\Year Two\Acoustics\Acoustics Board\Acoustics Board.PcbDoc
 Date     : 3/3/2025
-Time     : 10:32:19 PM
+Time     : 11:00:15 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
-   Violation between Clearance Constraint: (1.472mil < 5mil) Between Pad DNP13-2(3155mil,3291.299mil) on Top Layer And Track (2874.066mil,3275mil)(3218.937mil,3275mil) on Top Layer 
    Violation between Clearance Constraint: (Collision < 10mil) Between Hole of Pad Free-1(250mil,250mil) on Multi-Layer And Region (0 hole(s)) Keep-Out Layer 
    Violation between Clearance Constraint: (Collision < 10mil) Between Hole of Pad Free-1(250mil,4750mil) on Multi-Layer And Region (0 hole(s)) Keep-Out Layer 
    Violation between Clearance Constraint: (Collision < 10mil) Between Hole of Pad Free-1(3850mil,240mil) on Multi-Layer And Region (0 hole(s)) Keep-Out Layer 
    Violation between Clearance Constraint: (Collision < 10mil) Between Hole of Pad Free-1(3850mil,4750mil) on Multi-Layer And Region (0 hole(s)) Keep-Out Layer 
-   Violation between Clearance Constraint: (3.021mil < 5mil) Between Pad SW1-A2(2082.308mil,3647.839mil) on Top Layer And Track (2112.11mil,3637.11mil)(2112.667mil,3636.553mil) on Top Layer 
-   Violation between Clearance Constraint: (3.805mil < 5mil) Between Pad SW1-A2(2082.308mil,3647.839mil) on Top Layer And Track (2112.667mil,3636.553mil)(2148.3mil,3636.553mil) on Top Layer 
-   Violation between Clearance Constraint: (4.047mil < 7.874mil) Between Track (3452.953mil,1332.047mil)(3452.953mil,1516.122mil) on Top Layer And Via (3475mil,1360mil) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (3.213mil < 7.874mil) Between Track (3452.953mil,1332.047mil)(3755mil,1030mil) on Top Layer And Via (3675mil,1080mil) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (1.296mil < 7.874mil) Between Track (3590.17mil,1040.704mil)(3729.296mil,1040.704mil) on Bottom Layer And Via (3630mil,1060mil) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (4.063mil < 7.874mil) Between Track (3632.063mil,1057.937mil)(3772.937mil,1057.937mil) on Bottom Layer And Via (3675mil,1080mil) from Top Layer to Bottom Layer 
-   Violation between Clearance Constraint: (7mil < 7.874mil) Between Via (3475mil,1360mil) from Top Layer to Bottom Layer And Via (3510mil,1360mil) from Top Layer to Bottom Layer 
-Rule Violations :12
+Rule Violations :4
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -33,22 +25,21 @@ Rule Violations :0
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
-   Violation between Minimum Annular Ring: (9.841mil < 11.811mil) Pad J8-1(1180.787mil,312.835mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)
-   Violation between Minimum Annular Ring: (9.842mil < 11.811mil) Pad J8-2(1279.213mil,312.835mil) on Multi-Layer (Annular Ring=9.842mil) On (Top Layer)
-Rule Violations :2
-
 Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
 Rule Violations :0
 
-Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
-   Violation between Acute Angle Constraint: (41.901 < 60.000) Between Polygon Region (31 hole(s)) Top Layer And Track (2112.667mil,3636.553mil)(2148.3mil,3636.553mil) on Top Layer (Angle = 41.901)
-Rule Violations :1
+Processing Rule : Minimum Annular Ring (Minimum=11.811mil) (IsPad)
+   Violation between Minimum Annular Ring: (11.282mil < 11.811mil) Pad J8-1(1180.787mil,312.835mil) on Multi-Layer (Annular Ring=11.283mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (11.284mil < 11.811mil) Pad J8-2(1279.213mil,312.835mil) on Multi-Layer (Annular Ring=11.284mil) On (Top Layer)
+Rule Violations :2
 
-Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)
+Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
 Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)
 Rule Violations :0
 
 Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
@@ -107,6 +98,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 49
+Violations Detected : 40
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
