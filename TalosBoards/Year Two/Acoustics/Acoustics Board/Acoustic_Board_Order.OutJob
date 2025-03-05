@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=LED_Al_Order.OutJob
+Name=Acoustic_Board_Order.OutJob
 Description=
-TargetOutputMedium=PDF
+TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Virtual Printer
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -52,7 +52,7 @@ OutputName2=Export STEP
 OutputCategory2=Export
 OutputDocumentPath2=
 OutputVariantName2=
-OutputEnabled2=0
+OutputEnabled2=1
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=0
 OutputEnabled2_OutputMedium3=1
@@ -89,7 +89,7 @@ OutputName4=Gerber X2 Files
 OutputCategory4=Fabrication
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=0
+OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
 OutputEnabled4_OutputMedium3=4
@@ -102,7 +102,7 @@ OutputName5=NC Drill Files
 OutputCategory5=Fabrication
 OutputDocumentPath5=
 OutputVariantName5=
-OutputEnabled5=0
+OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=0
 OutputEnabled5_OutputMedium3=5
@@ -115,7 +115,7 @@ OutputName6=Schematic Prints
 OutputCategory6=Documentation
 OutputDocumentPath6=
 OutputVariantName6=
-OutputEnabled6=1
+OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=2
 OutputEnabled6_OutputMedium3=0
@@ -129,7 +129,7 @@ OutputName7=PCB Prints
 OutputCategory7=Documentation
 OutputDocumentPath7=
 OutputVariantName7=
-OutputEnabled7=1
+OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=1
 OutputEnabled7_OutputMedium3=0
@@ -164,7 +164,7 @@ OutputName8=Copy Files
 OutputCategory8=PostProcess
 OutputDocumentPath8=
 OutputVariantName8=
-OutputEnabled8=0
+OutputEnabled8=1
 OutputEnabled8_OutputMedium1=0
 OutputEnabled8_OutputMedium2=0
 OutputEnabled8_OutputMedium3=6
@@ -174,15 +174,15 @@ Configuration8_Name1=OutputConfigurationParameter1
 Configuration8_Item1=Count=1|File0=[Project]\*.*|PreserveFolderStructure0=True|Record=NonNativeFiles|DocumentPath=[Project]
 
 [PublishSettings]
-OutputFilePath2=C:\TempALTIUM\Combined_Power_Actuator\Combined_Power_Actuator.PDF
+OutputFilePath2=C:\Users\julmp\Documents\Output\Acoustics Board\Acoustics Board.PDF
 ReleaseManaged2=0
-OutputBasePath2=C:\TempALTIUM\
+OutputBasePath2=C:\Users\julmp\Documents\Output\
 OutputPathMedia2==ProjectName
 OutputPathMediaValue2==ProjectName
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=PoActuator Order.PDF
+OutputFileName2=Acoustic_Board_Order.PDF
 OutputFileNameMulti2=
 UseOutputNameForMulti2=0
 OutputFileNameSpecial2==ProjectName+'.PDF'
@@ -201,9 +201,9 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\TempALTIUM\LED_aluminum\
+OutputFilePath3=C:\Users\julmp\Documents\Output\Acoustics Board\
 ReleaseManaged3=0
-OutputBasePath3=C:\TempALTIUM\
+OutputBasePath3=C:\Users\julmp\Documents\Output\
 OutputPathMedia3==ProjectName
 OutputPathMediaValue3==ProjectName
 OutputPathOutputer3=[Output Type]
@@ -229,9 +229,9 @@ OutputFileNameSpecial4=
 OpenOutput4=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\TempALTIUM\Combined_Power_Actuator\Combined_Power_Actuator.PDF
+RelativeOutputPath2=C:\Users\julmp\Documents\Output\Acoustics Board\Acoustics Board.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\TempALTIUM\LED_aluminum\
+RelativeOutputPath3=C:\Users\julmp\Documents\Output\Acoustics Board\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
