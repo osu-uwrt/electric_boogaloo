@@ -1,0 +1,104 @@
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=C18-1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=C18-2
+Removed Pin From Net: NetName=5V Pin=C19-1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=C19-2
+Removed Pin From Net: NetName=V+ Pin=Q10-1
+Removed Pin From Net: NetName=V+ Pin=Q10-2
+Removed Pin From Net: NetName=V+ Pin=Q10-3
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q10-D
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q10-D
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q10-D
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q10-D
+Removed Pin From Net: NetName=MOTOR_PWR Pin=Q10-D
+Removed Pin From Net: NetName=ACT_PWM_5V Pin=R38-1
+Removed Pin From Net: NetName=MOTOR_EN Pin=R43-1
+Removed Pin From Net: NetName=V+ Pin=R43-2
+Removed Pin From Net: NetName=ACT_CHECK_5V Pin=R47-1
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=U1R-37
+Removed Pin From Net: NetName=AcT_CHECK_3.3V Pin=U1R-38
+Removed Pin From Net: NetName=Act_pwM_3.3V Pin=U1R-39
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=U8-1
+Removed Pin From Net: NetName=Act_pwM_3.3V Pin=U8-2
+Removed Pin From Net: NetName=AcT_CHECK_3.3V Pin=U8-3
+Removed Pin From Net: NetName=LVL_SHIFT_EN Pin=U8-4
+Removed Pin From Net: NetName=GND_RP2CAN Pin=U8-5
+Removed Pin From Net: NetName=5V Pin=U8-8
+Removed Pin From Net: NetName=NetQ8_4 Pin=U10-6
+Removed Pin From Net: NetName=NetQ8_4 Pin=U10-7
+Removed Pin From Net: NetName=NetQ9_4 Pin=U11-6
+Removed Pin From Net: NetName=NetQ9_4 Pin=U11-7
+Removed Pin From Net: NetName=V+ Pin=U12-1
+Removed Pin From Net: NetName=NetR45_1 Pin=U12-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=U12-4
+Removed Pin From Net: NetName=GND_RP2CAN Pin=U12-5
+Removed Pin From Net: NetName=V+ Pin=U12-8
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=C18
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=C19
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q10
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R38
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R47
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=U8
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=U12
+Change Component Footprint: Designator=R43 Old Footprint=RES_RC0603_YAG New Footprint=RESISTOR_0603
+Change Component Comment : Designator=R43 Old Comment=47K New Comment=2.1k Ohm 5% 1/8W
+Change Component Comment : Designator=R47 Old Comment=330 Ohm 1% 1/10W New Comment=2.1k Ohm 5% 1/8W
+Change Component Comment : Designator=R38 Old Comment=330 Ohm 1% 1/10W New Comment=100k Ohm 5% 1/8W
+Change component parameters: Designator = "R38" ("R38"); Footprint = "RESISTOR_0603"; UniqueID = "\BPFIFMBS\JYMFSPEI" ("\BPFIFMBS\JYMFSPEI")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "CR0603-JW-104ELFCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "100K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/10W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R43" ("R43"); Footprint = "RES_RC0603_YAG"; UniqueID = "\BPFIFMBS\LGYAXUWX" ("\BPFIFMBS\LGYAXUWX")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG1852CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "2.1K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R47" ("R47"); Footprint = "RESISTOR_0603"; UniqueID = "\BPFIFMBS\WCZQBWSZ" ("\BPFIFMBS\WCZQBWSZ")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG1852CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "2.1K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=R38-1
+Added Pin To Net: NetName=MOTOR_EN Pin=R38-2
+Added Pin To Net: NetName=NetQ8_4 Pin=R43-2
+Added Pin To Net: NetName=NetQ9_4 Pin=R47-2
+Added Pin To Net: NetName=BAT- Pin=U2-16
+Change Net Name : Old Net Name=BAT- New Net Name=Side_Detection
+Added Pin To Net: NetName=NetR43_1 Pin=R43-1
+Added Pin To Net: NetName=NetR43_1 Pin=U10-6
+Added Pin To Net: NetName=NetR43_1 Pin=U10-7
+Added Net: Name=NetR43_1
+Added Pin To Net: NetName=NetR47_1 Pin=R47-1
+Added Pin To Net: NetName=NetR47_1 Pin=U11-6
+Added Pin To Net: NetName=NetR47_1 Pin=U11-7
+Added Net: Name=NetR47_1
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Net: Name=NetU1R_37
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Net: Name=NetU1R_38
+Added Pin To Net: NetName=NetU1R_39 Pin=U1R-39
+Added Net: Name=NetU1R_39
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R38 100k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R47 2.1k Ohm 5% 1/8W
+Added Rule: Name=Schematic Supply Nets_3

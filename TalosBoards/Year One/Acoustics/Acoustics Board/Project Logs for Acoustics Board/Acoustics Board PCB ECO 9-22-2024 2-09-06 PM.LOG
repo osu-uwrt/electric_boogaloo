@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=+5V Pin=U5-10
+Removed Pin From Net: NetName=+5V Pin=U7-6
+Removed Pin From Net: NetName=+5V Pin=U8-6
+Added Component: Designator=TP5(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP6(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Point Filter L Pin=TP5-TP
+Added Pin To Net: NetName=Point Filter R Pin=TP6-TP
+Added Pin To Net: NetName=+5V Pin=U5-10
+Added Pin To Net: NetName=+5V Pin=U7-6
+Added Pin To Net: NetName=+5V Pin=U8-6
+Added Member To Class: ClassName=Sheet 1 Member=Component TP5 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP6 PCB Test Point

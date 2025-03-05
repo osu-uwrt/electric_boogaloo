@@ -1,0 +1,59 @@
+Added Component: Designator=J8(CONN_MOLEX_MINIFIT JR_2 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/026013115_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM1351-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q2(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "4.7 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FET Type"; Value = "P-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TSM500P02CX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-236-3, SC-59, SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.56W (Tc)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "50mOhm @ 3A, 4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "TSM500P02CXRFGCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "20 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Taiwan Semiconductor Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "±10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "800mV @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=R31(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R32(RESC1005X40X25ML05T05)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-2GEJ273X"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=3V3 Pin=Q2-2
+Added Pin To Net: NetName=3V3 Pin=R31-1
+Added Pin To Net: NetName=Leak_Detect Pin=Q2-3
+Added Pin To Net: NetName=Leak_Detect Pin=U1R-6
+Added Net: Name=Leak_Detect
+Added Pin To Net: NetName=Leak Pin=J8-1
+Added Pin To Net: NetName=Leak Pin=R32-1
+Added Net: Name=Leak
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R31-2
+Added Pin To Net: NetName=NetQ2_1 Pin=R32-2
+Added Net: Name=NetQ2_1
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component J8 Mini-Fit Jr R/A
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component Q2 MOSFET P-CHANNEL 20V 4.7A SOT23
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component R31 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component R32 27K

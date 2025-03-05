@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetD3_1 Pin=U2-14
+Removed Pin From Net: NetName=NetD3_1 Pin=U2-15
+Added Class: Name=U_RP2040_C
+Added Class: Name=U_RP2040_with_CAN
+Added Differential Pair: Name=USB_RP2040
+Added Differential Pair: Name=USB
+Added Room: Name=LED_Board_control
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
+Added Class: Name=USB 2.0

@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=Red D1D2 Pin=D1-1
+Removed Pin From Net: NetName=Red Anode Pin=D1-2
+Removed Pin From Net: NetName=Green Anode Pin=D1-4
+Removed Pin From Net: NetName=Blue D1D2 Pin=D1-5
+Removed Pin From Net: NetName=White D1D2 Pin=D1-7
+Removed Pin From Net: NetName=Red D2D3 Pin=D2-1
+Removed Pin From Net: NetName=Blue D2D3 Pin=D2-5
+Removed Pin From Net: NetName=White D2D3 Pin=D2-7
+Removed Pin From Net: NetName=Red D3D4 Pin=D3-1
+Removed Pin From Net: NetName=Blue D3D4 Pin=D3-5
+Removed Pin From Net: NetName=Red D1D2 Pin=R1-2
+Removed Pin From Net: NetName=Red Anode Pin=R2-2
+Removed Pin From Net: NetName=Blue D1D2 Pin=R3-1
+Removed Pin From Net: NetName=White D1D2 Pin=R4-1
+Removed Pin From Net: NetName=Red D2D3 Pin=R5-2
+Removed Pin From Net: NetName=White D2D3 Pin=R6-1
+Removed Pin From Net: NetName=Blue D2D3 Pin=R7-1
+Removed Pin From Net: NetName=Blue D3D4 Pin=R8-1
+Removed Pin From Net: NetName=Red D3D4 Pin=R9-2
+Removed Pin From Net: NetName=Green Anode Pin=R10-2
+Change Component Footprint: Designator=U1 Old Footprint=NTCS0603_VIS New Footprint=NTCS0603_VIS
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R1-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R2-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Pin To Net: NetName=NetD1_4 Pin=R10-2
+Added Net: Name=NetD1_4
+Added Pin To Net: NetName=NetD1_5 Pin=D1-5
+Added Pin To Net: NetName=NetD1_5 Pin=R3-1
+Added Net: Name=NetD1_5
+Added Pin To Net: NetName=NetD1_7 Pin=D1-7
+Added Pin To Net: NetName=NetD1_7 Pin=R4-1
+Added Net: Name=NetD1_7
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R5-2
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_5 Pin=D2-5
+Added Pin To Net: NetName=NetD2_5 Pin=R7-1
+Added Net: Name=NetD2_5
+Added Pin To Net: NetName=NetD2_7 Pin=D2-7
+Added Pin To Net: NetName=NetD2_7 Pin=R6-1
+Added Net: Name=NetD2_7
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R9-2
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD3_5 Pin=D3-5
+Added Pin To Net: NetName=NetD3_5 Pin=R8-1
+Added Net: Name=NetD3_5
+Added Room: Name=LED_aluminum

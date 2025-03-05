@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=HYDRO_IN Pin=TP1-TP
+Removed Pin From Net: NetName=AMP_OUT Pin=TP2-TP
+Removed Member From Class: ClassName=Acoustics_Preamp Member=TP1
+Removed Member From Class: ClassName=Acoustics_Preamp Member=TP2

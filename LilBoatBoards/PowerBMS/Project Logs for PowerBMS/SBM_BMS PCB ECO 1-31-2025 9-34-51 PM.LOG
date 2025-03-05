@@ -1,0 +1,103 @@
+Removed Pin From Net: NetName=CANL Pin=J15-1
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J15-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J15-3
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J15-4
+Removed Pin From Net: NetName=CANH Pin=J15-5
+Removed Pin From Net: NetName=5V Pin=J15-6
+Removed Pin From Net: NetName=15V Pin=J15-7
+Removed Pin From Net: NetName=15V Pin=J15-8
+Removed Pin From Net: NetName=Leak Pin=U1R-8
+Removed Member From Class: ClassName=Poactuator_Connectors Member=J15
+Added Component: Designator=C17(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(SOT-23-3)
+Add component (AddParameter): Name = "Amp Rating"; Value = "600mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BJT Type"; Value = "PNP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MMBT2907A_Rev2016.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "MMBT2907A-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-236-3, SC-59, SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "1.56W (Tc)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds (on)"; Value = "50mOhm @ 3A, 4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "MMBT2907A-FDICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdss"; Value = "20 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (Max)"; Value = "±10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vgs (th)"; Value = "800mV @ 250µA"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-20.0KLRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "20k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R16(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-20.0KLRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "20k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-2KLRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "2K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Leak Pin=C17-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=C17-2
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_2 Pin=Q4-2
+Added Pin To Net: NetName=V+ Pin=Q4-3
+Added Pin To Net: NetName=V+ Pin=R14-1
+Added Pin To Net: NetName=NetQ4_1 Pin=R14-2
+Added Pin To Net: NetName=NetQ4_1 Pin=R16-1
+Added Pin To Net: NetName=NetJ7_1 Pin=R16-2
+Added Pin To Net: NetName=Leak Pin=R17-1
+Added Pin To Net: NetName=NetQ4_2 Pin=R17-2
+Added Pin To Net: NetName=NetQ4_2 Pin=R18-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=R18-2
+Added Pin To Net: NetName=Leak Pin=R19-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=R19-2
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Net: Name=NetU1R_8
+Added Member To Class: ClassName=BMS Member=Component C17 1uF Ceramic 16V
+Added Member To Class: ClassName=BMS Member=Component Q4 PNP 60V 600mA SOT23
+Added Member To Class: ClassName=BMS Member=Component R14 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=BMS Member=Component R16 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=BMS Member=Component R17 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=BMS Member=Component R18 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=BMS Member=Component R19 2k Ohm 1% 1/16W

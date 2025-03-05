@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=GND Pin=J8-S1
+Removed Pin From Net: NetName=GND Pin=J8-S2
+Change Component Footprint: Designator=J8 Old Footprint=CONN_JST_SM02B-GHS-TB(LF)(SN) New Footprint=CONN_JST_XH254_2POS_VERT
+Change Component Comment : Designator=J8 Old Comment=JST GH VERT New Comment=XH2.54 VERT
+Change component parameters: Designator = "J8" ("J8"); Footprint = "CONN_JST_SM02B-GHS-TB(LF)(SN)"; UniqueID = "\EXXHSPPF" ("\EXXHSPPF")
+Change component parameters (AddParameter): Name = "Color"; Value = "White"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Purchase Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.amazon.com/460PCS-XH2-54-Connector-Terminal-Connectors/dp/B09DBGVX5C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "4A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NOTE"; Value = "Do not use JST 2.5mm parts with this footprint. JST does not make 2.54mm pitch pins, rather only clones make this connector!"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "XH 2.54"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"

@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=15V Pin=C35-1
+Removed Pin From Net: NetName=15V Pin=J1-3
+Removed Pin From Net: NetName=15V Pin=J2-3
+Removed Pin From Net: NetName=15V Pin=TP16-TP
+Removed Pin From Net: NetName=15V Pin=U11-3
+Change Net Name : Old Net Name=-15V New Net Name=-5V
+Change Net Name : Old Net Name=3V3 New Net Name=3V3_RP2CAN
+Change Net Name : Old Net Name=5V New Net Name=+5V
+Change Net Name : Old Net Name=15V New Net Name=+5V
+Add Net: Net with name "+5" already exists
+Add Net: Net with name "-5" already exists
+Added Pin To Net: NetName=15V Pin=C35-1
+Added Pin To Net: NetName=15V Pin=J1-3
+Added Pin To Net: NetName=15V Pin=J2-3
+Added Pin To Net: NetName=15V Pin=TP16-TP
+Added Pin To Net: NetName=15V Pin=U11-3
+Added Net: Name=15V

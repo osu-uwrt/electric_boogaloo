@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=RP2040 L Pin=U1R-2
+Removed Pin From Net: NetName=RP2040 R Pin=U1R-3
+Added Pin To Net: NetName=RP2040 L Pin=U1R-35
+Added Pin To Net: NetName=RP2040 R Pin=U1R-36
+Added Pin To Net: NetName=NetU1R_2 Pin=U1R-2
+Added Net: Name=NetU1R_2
+Added Pin To Net: NetName=NetU1R_3 Pin=U1R-3
+Added Net: Name=NetU1R_3
+Added Room: Name=Sheet 1

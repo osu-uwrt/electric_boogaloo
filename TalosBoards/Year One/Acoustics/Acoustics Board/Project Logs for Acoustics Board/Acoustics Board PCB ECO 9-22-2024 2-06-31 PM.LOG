@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+5V Pin=U5-10
+Removed Pin From Net: NetName=+5V Pin=U7-6
+Removed Pin From Net: NetName=+5V Pin=U8-6
+Added Pin To Net: NetName=GND Pin=R8-2
+Added Pin To Net: NetName=GND Pin=R12-2
+Added Pin To Net: NetName=+5V Pin=U5-10
+Added Pin To Net: NetName=+5V Pin=U7-6
+Added Pin To Net: NetName=+5V Pin=U8-6
+Added Member To Class: ClassName=Sheet 1 Member=Component U1 LM356MX/NOPB

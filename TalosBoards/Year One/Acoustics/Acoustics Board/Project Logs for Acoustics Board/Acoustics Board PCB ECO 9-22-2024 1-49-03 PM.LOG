@@ -1,0 +1,186 @@
+Removed Pin From Net: NetName=Comparator L Pin=C27-1
+Removed Pin From Net: NetName=GND Pin=C27-2
+Removed Pin From Net: NetName=Comparator R Pin=C28-1
+Removed Pin From Net: NetName=GND Pin=C28-2
+Removed Pin From Net: NetName=GND Pin=L5-2
+Removed Pin From Net: NetName=GND Pin=L6-2
+Removed Pin From Net: NetName=3V3 Pin=R15-2
+Removed Pin From Net: NetName=3V3 Pin=R17-2
+Removed Pin From Net: NetName=Comparator L Pin=R21-2
+Removed Pin From Net: NetName=GND Pin=R21-3
+Removed Pin From Net: NetName=Comparator R Pin=R22-2
+Removed Pin From Net: NetName=GND Pin=R22-3
+Removed Pin From Net: NetName=Hydrophone L Pin=R23-2
+Removed Pin From Net: NetName=Hydrophone R Pin=R24-2
+Removed Pin From Net: NetName=GND Pin=R25-2
+Removed Pin From Net: NetName=GND Pin=R26-2
+Removed Pin From Net: NetName=Comparator L Pin=TP9-TP
+Removed Pin From Net: NetName=Comparator R Pin=TP11-TP
+Removed Pin From Net: NetName=-5V Pin=U5-4
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=-5V Pin=U6-4
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=+5V Pin=U7-6
+Removed Pin From Net: NetName=+5V Pin=U8-6
+Removed Pin From Net: NetName=Comparator L Pin=U9-1
+Removed Pin From Net: NetName=Comparator R Pin=U9-4
+Removed Pin From Net: NetName=GND Pin=U9-6
+Removed Pin From Net: NetName=RP2040 R Pin=U9-7
+Removed Pin From Net: NetName=RP2040 L Pin=U9-8
+Removed Pin From Net: NetName=3V3 Pin=U9-9
+Removed Pin From Net: NetName=+5V Pin=U9-10
+Change Component Footprint: Designator=U5 Old Footprint=SOIC-8 New Footprint=LT-MS10_N
+Change Component Comment : Designator=C5 Old Comment=22uF Ceramic New Comment=10uF Ceramic 6.3V
+Change Component Comment : Designator=C6 Old Comment=22uF Ceramic New Comment=10uF Ceramic 6.3V
+Change Component Comment : Designator=U5 Old Comment=LM356MX/NOPB New Comment=LT1715CMS#PBF
+Change Managed Component Library Link : Designator=U5 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=DBE9531F-1E1D-435E-9F7A-61E7B3D5DFD8 Old RevisionGUID= New RevisionGUID=C45D6E7D-ADF9-4539-AEB0-415E051E4E4E
+Change component parameters: Designator = "C5" ("C5"); Footprint = "CAPACITOR_0603"; UniqueID = "\TPFWGMJC\KXWOBOBY" ("\TPFWGMJC\KXWOBOBY")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MQ8NNNC/3886777"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1119-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value (uF)"; Value = "10 uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "CAPACITOR_0603"; UniqueID = "\TPFWGMJC\TWQGXOCC" ("\TPFWGMJC\TWQGXOCC")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MQ8NNNC/3886777"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1119-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value (uF)"; Value = "10 uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U5" ("U5"); Footprint = "SOIC-8"; UniqueID = "\TPFWGMJC\LGUUAYBF" ("\TPFWGMJC\LGUUAYBF")
+Change component parameters (AddParameter): Name = "Channels (#)"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.linear.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://cds.linear.com/docs/en/datasheet/1715fa.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://cds.linear.com/docs/en/packaging/MSOP_10_05-08-1661.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "Rev A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Comparator, Separate In/Out Power Supply"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Generic Part Number"; Value = "LT1715"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "10-Pin MSOP, Body 3 x 3 mm, Pitch 0.5 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "MS10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "LT1715CMS#PBF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Prop Delay (us)"; Value = "0.004"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supply Current (uA) Typical"; Value = "7500"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supply Voltage Range"; Value = "2.7 to 12 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vos (mV) Guaranteed"; Value = "2.5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vos (mV) Typical"; Value = "0.4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vs Max (V)"; Value = "12"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vs Min (V)"; Value = "2.7"; VariantName = "[No Variations]"
+Added Component: Designator=R5(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "652-TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R11(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "652-TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R12(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=TP3(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Comparator L Pin=C5-1
+Added Pin To Net: NetName=Comparator R Pin=C6-1
+Added Pin To Net: NetName=Comparator L Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R5-3
+Added Pin To Net: NetName=Comparator R Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R6-3
+Added Pin To Net: NetName=3V3 Pin=R7-2
+Added Pin To Net: NetName=3V3 Pin=R11-2
+Added Pin To Net: NetName=Comparator L Pin=TP2-TP
+Added Pin To Net: NetName=Comparator R Pin=TP3-TP
+Added Pin To Net: NetName=Comparator L Pin=U5-1
+Added Pin To Net: NetName=Comparator R Pin=U5-4
+Added Pin To Net: NetName=-5V Pin=U5-5
+Added Pin To Net: NetName=GND Pin=U5-6
+Added Pin To Net: NetName=RP2040 L Pin=U5-8
+Added Pin To Net: NetName=3V3 Pin=U5-9
+Added Pin To Net: NetName=+5V Pin=U5-10
+Added Pin To Net: NetName=+5V Pin=U7-6
+Added Pin To Net: NetName=Hydrophone L Pin=U7-7
+Added Pin To Net: NetName=+5V Pin=U8-6
+Added Pin To Net: NetName=Hydrophone R Pin=U8-7
+Added Pin To Net: NetName=NetR7_3 Pin=R7-3
+Added Pin To Net: NetName=NetR7_3 Pin=R8-1
+Added Pin To Net: NetName=NetR7_3 Pin=U5-2
+Added Net: Name=NetR7_3
+Added Pin To Net: NetName=NetR11_3 Pin=R11-3
+Added Pin To Net: NetName=NetR11_3 Pin=R12-1
+Added Pin To Net: NetName=NetR11_3 Pin=U5-3
+Added Net: Name=NetR11_3
+Added Pin To Net: NetName=NetU5_7 Pin=U5-7
+Added Net: Name=NetU5_7
+Added Member To Class: ClassName=Sheet 1 Member=Component C5 10uF Ceramic 6.3V
+Added Member To Class: ClassName=Sheet 1 Member=Component C6 10uF Ceramic 6.3V
+Added Member To Class: ClassName=Sheet 1 Member=Component D1 BAR9002ELE6327XTMA1
+Added Member To Class: ClassName=Sheet 1 Member=Component D2 BAR9002ELE6327XTMA1
+Added Member To Class: ClassName=Sheet 1 Member=Component R5 TC33X-2-203E
+Added Member To Class: ClassName=Sheet 1 Member=Component R6 TC33X-2-203E
+Added Member To Class: ClassName=Sheet 1 Member=Component R7 TC33X-2-203E
+Added Member To Class: ClassName=Sheet 1 Member=Component R8 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Sheet 1 Member=Component R11 TC33X-2-203E
+Added Member To Class: ClassName=Sheet 1 Member=Component R12 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Sheet 1 Member=Component TP2 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component TP3 PCB Test Point
+Added Member To Class: ClassName=Sheet 1 Member=Component U5 LT1715CMS#PBF

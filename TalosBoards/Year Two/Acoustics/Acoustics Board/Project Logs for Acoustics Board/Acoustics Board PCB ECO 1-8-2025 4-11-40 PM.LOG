@@ -1,0 +1,143 @@
+Added Component: Designator=DNP0(RESISTOR_0402)
+Added Component: Designator=DNP1(RESISTOR_0402)
+Added Component: Designator=DNP2(RESISTOR_0402)
+Added Component: Designator=DNP5(RESISTOR_0402)
+Added Component: Designator=DNP6(RESISTOR_0402)
+Added Component: Designator=DNP7(RESISTOR_0402)
+Added Component: Designator=DNP8(RESISTOR_0402)
+Added Component: Designator=DNP9(RESISTOR_0402)
+Added Component: Designator=DNP10(RESISTOR_0402)
+Added Component: Designator=DNP11(RESISTOR_0402)
+Added Component: Designator=DNP12(RESISTOR_0402)
+Added Component: Designator=DNP13(RESISTOR_0402)
+Added Component: Designator=DNP14(RESISTOR_0402)
+Added Component: Designator=DNP15(RESISTOR_0402)
+Added Component: Designator=DNP16(RESISTOR_0402)
+Added Component: Designator=SB6(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SB7(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=TP_ADC0(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDNP1_1 Pin=DNP1-1
+Added Pin To Net: NetName=NetDNP1_2 Pin=DNP1-2
+Added Pin To Net: NetName=NetDNP5_1 Pin=DNP5-1
+Added Pin To Net: NetName=NetDNP5_2 Pin=DNP5-2
+Added Pin To Net: NetName=NetDNP6_1 Pin=DNP6-1
+Added Pin To Net: NetName=NetDNP6_2 Pin=DNP6-2
+Added Pin To Net: NetName=NetDNP7_1 Pin=DNP7-1
+Added Pin To Net: NetName=NetDNP7_2 Pin=DNP7-2
+Added Pin To Net: NetName=3V3 Pin=R24-2
+Added Pin To Net: NetName=3V3 Pin=R28-2
+Added Pin To Net: NetName=RP2040 R Pin=SB6-2
+Added Pin To Net: NetName=RP2040 L Pin=SB7-2
+Added Pin To Net: NetName=NetTP_ADC0_TP Pin=TP_ADC0-TP
+Added Pin To Net: NetName=NetDNP5_1 Pin=U9-12
+Added Pin To Net: NetName=NetDNP5_2 Pin=U9-13
+Added Pin To Net: NetName=NetDNP6_1 Pin=U9-19
+Added Pin To Net: NetName=NetDNP6_2 Pin=U9-20
+Added Pin To Net: NetName=NetDNP7_1 Pin=U9-43
+Added Pin To Net: NetName=NetDNP7_2 Pin=U9-44
+Added Pin To Net: NetName=ADC4_IN5 Pin=R27-2
+Added Pin To Net: NetName=ADC4_IN5 Pin=U9-37
+Added Pin To Net: NetName=ADC4_IN5 Pin=U11-6
+Added Net: Name=ADC4_IN5
+Added Pin To Net: NetName=ADC5_IN1 Pin=R23-2
+Added Pin To Net: NetName=ADC5_IN1 Pin=U9-42
+Added Pin To Net: NetName=ADC5_IN1 Pin=U10-6
+Added Net: Name=ADC5_IN1
+Added Pin To Net: NetName=I2C0_SCL Pin=U9-41
+Added Net: Name=I2C0_SCL
+Added Pin To Net: NetName=I2C0_SDA Pin=U9-40
+Added Net: Name=I2C0_SDA
+Added Pin To Net: NetName=NetDNP0_1 Pin=DNP0-1
+Added Net: Name=NetDNP0_1
+Added Pin To Net: NetName=NetDNP0_2 Pin=DNP0-2
+Added Net: Name=NetDNP0_2
+Added Pin To Net: NetName=NetDNP2_1 Pin=DNP2-1
+Added Net: Name=NetDNP2_1
+Added Pin To Net: NetName=NetDNP2_2 Pin=DNP2-2
+Added Net: Name=NetDNP2_2
+Added Pin To Net: NetName=NetDNP8_1 Pin=DNP8-1
+Added Pin To Net: NetName=NetDNP8_1 Pin=U9-45
+Added Net: Name=NetDNP8_1
+Added Pin To Net: NetName=NetDNP8_2 Pin=DNP8-2
+Added Pin To Net: NetName=NetDNP8_2 Pin=U9-46
+Added Net: Name=NetDNP8_2
+Added Pin To Net: NetName=NetDNP9_1 Pin=DNP9-1
+Added Pin To Net: NetName=NetDNP9_1 Pin=U9-24
+Added Net: Name=NetDNP9_1
+Added Pin To Net: NetName=NetDNP9_2 Pin=DNP9-2
+Added Pin To Net: NetName=NetDNP9_2 Pin=U9-25
+Added Net: Name=NetDNP9_2
+Added Pin To Net: NetName=NetDNP10_1 Pin=DNP10-1
+Added Pin To Net: NetName=NetDNP10_1 Pin=U9-58
+Added Net: Name=NetDNP10_1
+Added Pin To Net: NetName=NetDNP10_2 Pin=DNP10-2
+Added Pin To Net: NetName=NetDNP10_2 Pin=U9-59
+Added Net: Name=NetDNP10_2
+Added Pin To Net: NetName=NetDNP11_1 Pin=DNP11-1
+Added Pin To Net: NetName=NetDNP11_1 Pin=SB7-1
+Added Pin To Net: NetName=NetDNP11_1 Pin=U9-17
+Added Net: Name=NetDNP11_1
+Added Pin To Net: NetName=NetDNP11_2 Pin=DNP11-2
+Added Pin To Net: NetName=NetDNP11_2 Pin=SB6-1
+Added Pin To Net: NetName=NetDNP11_2 Pin=U9-18
+Added Net: Name=NetDNP11_2
+Added Pin To Net: NetName=NetDNP12_1 Pin=DNP12-1
+Added Pin To Net: NetName=NetDNP12_1 Pin=U9-9
+Added Net: Name=NetDNP12_1
+Added Pin To Net: NetName=NetDNP12_2 Pin=DNP12-2
+Added Pin To Net: NetName=NetDNP12_2 Pin=U9-8
+Added Net: Name=NetDNP12_2
+Added Pin To Net: NetName=NetDNP13_1 Pin=DNP13-1
+Added Pin To Net: NetName=NetDNP13_1 Pin=U9-11
+Added Net: Name=NetDNP13_1
+Added Pin To Net: NetName=NetDNP13_2 Pin=DNP13-2
+Added Pin To Net: NetName=NetDNP13_2 Pin=U9-10
+Added Net: Name=NetDNP13_2
+Added Pin To Net: NetName=NetDNP14_1 Pin=DNP14-1
+Added Pin To Net: NetName=NetDNP14_1 Pin=U9-23
+Added Net: Name=NetDNP14_1
+Added Pin To Net: NetName=NetDNP14_2 Pin=DNP14-2
+Added Pin To Net: NetName=NetDNP14_2 Pin=U9-22
+Added Net: Name=NetDNP14_2
+Added Pin To Net: NetName=NetDNP15_1 Pin=DNP15-1
+Added Pin To Net: NetName=NetDNP15_1 Pin=U9-39
+Added Net: Name=NetDNP15_1
+Added Pin To Net: NetName=NetDNP15_2 Pin=DNP15-2
+Added Pin To Net: NetName=NetDNP15_2 Pin=U9-38
+Added Net: Name=NetDNP15_2
+Added Pin To Net: NetName=NetDNP16_1 Pin=DNP16-1
+Added Pin To Net: NetName=NetDNP16_1 Pin=U9-53
+Added Net: Name=NetDNP16_1
+Added Pin To Net: NetName=NetDNP16_2 Pin=DNP16-2
+Added Pin To Net: NetName=NetDNP16_2 Pin=U9-52
+Added Net: Name=NetDNP16_2
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component DNP0 DNP
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component DNP1 DNP
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component DNP2 DNP
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component DNP4 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP5 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP6 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP7 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP8 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP9 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP10 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP11 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP12 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP13 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP14 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP15 DNP
+Added Member To Class: ClassName=STM32 Member=Component DNP16 DNP
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component SB6 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component SB7 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=[Acoustics] Connections & RP2040 Member=Component TP_ADC0 PCB Test Point

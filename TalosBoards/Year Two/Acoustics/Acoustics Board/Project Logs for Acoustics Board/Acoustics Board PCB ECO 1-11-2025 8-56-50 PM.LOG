@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP3
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP16
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP17
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP18
+Change Net Name : Old Net Name=NetDNP?_2 New Net Name=NetDNP16_2
+Change Net Name : Old Net Name=NetDNP?_2 New Net Name=NetDNP18_2
+Added Member To Class: ClassName=Process Sheet Member=Component DNP3 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP16 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP18 DNP
+Added Room: Name=Process Sheet

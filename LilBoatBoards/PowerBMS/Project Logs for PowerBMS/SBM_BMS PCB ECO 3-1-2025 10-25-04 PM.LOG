@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=CAN_L Pin=J10-1
+Removed Pin From Net: NetName=CAN_H Pin=J10-2
+Removed Pin From Net: NetName=RP2040_SCL Pin=J10-3
+Removed Pin From Net: NetName=RP2040_SDA Pin=J10-4
+Removed Pin From Net: NetName=Wake Pin=J10-5
+Removed Pin From Net: NetName=BAT- Pin=J10-6
+Removed Pin From Net: NetName=BAT+ Pin=J10-8
+Change Component Footprint: Designator=J10 Old Footprint=Molex_Mili-Grid_2x4PIN_2.00MM_VERT New Footprint=FP-S8B-PHDSS_LF_SN-MFG
+Change Component Comment : Designator=J10 Old Comment=Mini-Fit Jr R/A New Comment=S8B-PHDSS (LF)(SN)
+Change Managed Component Library Link : Designator=J10 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=C9FA6AE7-6895-45B2-B5F3-F35DC80C3FB7 Old RevisionGUID= New RevisionGUID=CD24E1C6-50B0-4AC9-9196-523A8B4383AF
+Change component parameters: Designator = "J10" ("J10"); Footprint = "Molex_Mili-Grid_2x4PIN_2.00MM_VERT"; UniqueID = "\DNIVZZAG\BJYLHFFF" ("\DNIVZZAG\BJYLHFFF")
+Change component parameters (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "Header"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Finish - Mating"; Value = "TIN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Copper Alloy"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Mating Length"; Value = "0.114inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Shape"; Value = "Square"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fastening Type"; Value = "Detent"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Color"; Value = "Natural"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Row Spacing"; Value = "0.079inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "PHD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT+ Pin=J10-2
+Added Pin To Net: NetName=BAT- Pin=J10-3
+Added Pin To Net: NetName=Wake Pin=J10-4
+Added Pin To Net: NetName=RP2040_SCL Pin=J10-5
+Added Pin To Net: NetName=RP2040_SDA Pin=J10-6
+Added Pin To Net: NetName=CAN_L Pin=J10-7
+Added Pin To Net: NetName=CAN_H Pin=J10-8
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-1
+Added Pin To Net: NetName=NetJ10_1 Pin=R25-2
+Added Net: Name=NetJ10_1

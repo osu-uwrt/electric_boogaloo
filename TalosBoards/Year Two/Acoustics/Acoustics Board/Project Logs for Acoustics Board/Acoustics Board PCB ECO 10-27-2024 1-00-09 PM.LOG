@@ -1,0 +1,20 @@
+Change Component Comment : Designator=Q2 Old Comment=MOSFET N-Ch 20V 7.3A TO-236AB New Comment=N-MOS
+Added Pin To Net: NetName=+5V Pin=C7-1
+Added Pin To Net: NetName=+5V Pin=C8-1
+Added Pin To Net: NetName=+5V Pin=C9-1
+Added Pin To Net: NetName=+5V Pin=C14-1
+Added Pin To Net: NetName=-5 Pin=J3-4
+Added Pin To Net: NetName=-5 Pin=J4-4
+Added Pin To Net: NetName=+5V Pin=Q2-3
+Added Pin To Net: NetName=+5V Pin=R15-1
+Added Pin To Net: NetName=+5V Pin=R17-1
+Added Pin To Net: NetName=-5 Pin=U1-4
+Added Pin To Net: NetName=-5 Pin=U2-4
+Added Pin To Net: NetName=-5 Pin=U3-4
+Added Pin To Net: NetName=-5 Pin=U4-4
+Added Pin To Net: NetName=-5 Pin=U5-5
+Added Pin To Net: NetName=+5V Pin=U6-1
+Added Pin To Net: NetName=+5V Pin=U6-16
+Added Pin To Net: NetName=-5 Pin=U7-3
+Added Pin To Net: NetName=-5 Pin=U8-3
+Change Net Name : Old Net Name=-5 New Net Name=-5V

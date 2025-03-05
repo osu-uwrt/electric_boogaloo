@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Conn CHK Pin=J1-6
+Added Pin To Net: NetName=Conn CHK Pin=J1-9
+Added Pin To Net: NetName=NetJ1_6 Pin=J1-6
+Added Pin To Net: NetName=NetJ1_6 Pin=R7-2
+Added Net: Name=NetJ1_6

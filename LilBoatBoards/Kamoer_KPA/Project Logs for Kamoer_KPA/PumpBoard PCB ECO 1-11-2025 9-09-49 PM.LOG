@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NEG_CTRL Pin=U1R-2
+Removed Pin From Net: NetName=POS_CTRL Pin=U1R-3
+Removed Pin From Net: NetName=NetDNP9_2 Pin=U1R-40
+Removed Pin From Net: NetName=NetDNP9_1 Pin=U1R-41
+Removed Member From Class: ClassName=PumpControl Member=DNP8
+Added Pin To Net: NetName=NetDNP9_2 Pin=U1R-2
+Added Pin To Net: NetName=NetDNP9_1 Pin=U1R-3
+Added Pin To Net: NetName=NEG_CTRL Pin=U1R-39
+Added Pin To Net: NetName=POS_CTRL Pin=U1R-40
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Net: Name=NetU1R_38
+Added Pin To Net: NetName=NetU1R_41 Pin=U1R-41
+Added Net: Name=NetU1R_41
+Added Room: Name=PumpControl

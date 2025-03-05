@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=USB_N Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Pin From Net: NetName=+5V Pin=D1-5
+Removed Pin From Net: NetName=USB_P Pin=D1-6
+Removed Member From Class: ClassName=PumpControl Member=D1
+Added Room: Name=PumpControl

@@ -1,0 +1,44 @@
+Added Component: Designator=DNP19(RESISTOR_0402)
+Added Component: Designator=DNP20(RESISTOR_0402)
+Added Component: Designator=DNP21(RESISTOR_0402)
+Added Component: Designator=DNP22(RESISTOR_0402)
+Added Component: Designator=DNP23(RESISTOR_0402)
+Added Component: Designator=DNP24(RESISTOR_0402)
+Added Component: Designator=DNP25(RESISTOR_0402)
+Added Component: Designator=DNP26(RESISTOR_0402)
+Added Component: Designator=DNP27(RESISTOR_0402)
+Added Component: Designator=DNP28(RESISTOR_0402)
+Added Pin To Net: NetName=Point Filter L Pin=DNP19-1
+Added Pin To Net: NetName=GND Pin=DNP19-2
+Added Pin To Net: NetName=NetR3_2 Pin=DNP20-1
+Added Pin To Net: NetName=GND Pin=DNP20-2
+Added Pin To Net: NetName=Post Filter Amp L Pin=DNP21-1
+Added Pin To Net: NetName=GND Pin=DNP21-2
+Added Pin To Net: NetName=Envelope Detector L Pin=DNP22-1
+Added Pin To Net: NetName=GND Pin=DNP22-2
+Added Pin To Net: NetName=Point Filter R Pin=DNP23-1
+Added Pin To Net: NetName=GND Pin=DNP23-2
+Added Pin To Net: NetName=NetR4_2 Pin=DNP24-1
+Added Pin To Net: NetName=GND Pin=DNP24-2
+Added Pin To Net: NetName=Post Filter Amp R Pin=DNP25-1
+Added Pin To Net: NetName=GND Pin=DNP25-2
+Added Pin To Net: NetName=Envelope Detector R Pin=DNP26-1
+Added Pin To Net: NetName=GND Pin=DNP26-2
+Added Pin To Net: NetName=RP2040 L Pin=DNP27-1
+Added Pin To Net: NetName=GND Pin=DNP27-2
+Added Pin To Net: NetName=RP2040 R Pin=DNP28-1
+Added Pin To Net: NetName=GND Pin=DNP28-2
+Change Net Name : Old Net Name=NetR3_2 New Net Name=NetDNP20_1
+Change Net Name : Old Net Name=NetR4_2 New Net Name=NetDNP24_1
+Added Member To Class: ClassName=Process Sheet Member=Component DNP17 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP19 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP20 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP21 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP22 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP23 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP24 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP25 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP26 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP27 DNP
+Added Member To Class: ClassName=Process Sheet Member=Component DNP28 DNP
+Added Room: Name=Process Sheet
