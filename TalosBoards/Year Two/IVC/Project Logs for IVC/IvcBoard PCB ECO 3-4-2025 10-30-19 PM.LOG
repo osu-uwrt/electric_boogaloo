@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=5V Pin=C4C-1
+Removed Pin From Net: NetName=5V Pin=U2C-3
+Added Pin To Net: NetName=NetC4C_1 Pin=C4C-1
+Added Pin To Net: NetName=CANL_RP2CAN Pin=J2-1
+Added Pin To Net: NetName=CANH_RP2CAN Pin=J2-4
+Added Pin To Net: NetName=NetC4C_1 Pin=U2C-3
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
+Added Room: Name=Transmission
