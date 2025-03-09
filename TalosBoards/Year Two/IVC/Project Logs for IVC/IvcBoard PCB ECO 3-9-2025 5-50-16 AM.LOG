@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=OutputSelect Pin=U1R-5
+Removed Pin From Net: NetName=OutputSelect Pin=U10-2
+Removed Pin From Net: NetName=OutputSelect Pin=U11-3
+Change Net Name : Old Net Name=OutputSelect New Net Name=+5
+Added Pin To Net: NetName=OutputSelect Pin=U1R-5
+Added Pin To Net: NetName=OutputSelect Pin=U10-2
+Added Pin To Net: NetName=OutputSelect Pin=U11-3
+Added Net: Name=OutputSelect
+Added Rule: Name=Schematic Supply Nets_8
