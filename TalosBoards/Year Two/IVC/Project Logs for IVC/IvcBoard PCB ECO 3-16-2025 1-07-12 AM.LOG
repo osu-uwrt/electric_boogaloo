@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=Rp2040Sig Pin=R5-1
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=Rp2040Sig Pin=TP3-TP
+Removed Pin From Net: NetName=LPFOut Pin=TP4-TP
+Removed Pin From Net: NetName=LPFOut Pin=U9-3
+Remove Pin from Net: Failed to remove Pin
+Removed Member From Class: ClassName=PowerAndConnections Member=SB6
+Removed Member From Class: ClassName=PowerAndConnections Member=SB7
+Removed Member From Class: ClassName=PowerAndConnections Member=U10
+Removed Member From Class: ClassName=PowerAndConnections Member=U11
+Removed Member From Class: ClassName=PowerAndConnections Member=U12
+Added Pin To Net: NetName=LPFOut Pin=SB7-2
+Added Pin To Net: NetName=Rp2040Sig Pin=TP4-TP
+Added Pin To Net: NetName=Rp2040Sig Pin=U9-3
+Added Pin To Net: NetName=LPFOut Pin=U11-5
+Change Net Name : Old Net Name=Rp2040Sig New Net Name=AudioSig
+Added Pin To Net: NetName=TransmissionIn Pin=R5-1
+Added Pin To Net: NetName=TransmissionIn Pin=TP3-TP
+Added Net: Name=TransmissionIn
+Change Class Name : Old Net Name=Designator New Net Name=U_Transmission
+Added Member To Class: ClassName=U_Transmission Member=Component SB6 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=U_Transmission Member=Component SB7 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=U_Transmission Member=Component U10 SN74LVC1G14DBVR
+Added Member To Class: ClassName=U_Transmission Member=Component U11 Analog Switch SPST-NO
+Added Member To Class: ClassName=U_Transmission Member=Component U12 Analog Switch SPST-NO
+Change Room Name: Old Name=Designator New Name=U_Transmission
+Change Room Scope: Old Scope=InComponentClass('Designator') New Scope=InComponentClass('U_Transmission')

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=Rp2040Sig Pin=R5-1
+Removed Pin From Net: NetName=TransmissionOut Pin=SB7-2
+Removed Pin From Net: NetName=Rp2040Sig Pin=TP3-TP
+Removed Pin From Net: NetName=TransmissionOut Pin=U11-5
+Added Pin To Net: NetName=Rp2040Sig Pin=SB7-2
+Added Pin To Net: NetName=Rp2040Sig Pin=U11-5
+Add Net: Net with name "Rp2040Sig" already exists

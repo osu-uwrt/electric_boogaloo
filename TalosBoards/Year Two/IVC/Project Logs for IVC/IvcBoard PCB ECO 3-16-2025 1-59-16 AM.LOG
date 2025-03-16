@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=3v3 Pin=D7-1
+Removed Pin From Net: NetName=3v3 Pin=U17-23
+Added Component: Designator=SB19(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3v3 Pin=SB19-2
+Add Net: Net with name "3V3" already exists
+Added Member To Class: ClassName=PowerAndConnections Member=Component SB19 0 Ohm Jumper No Fit
+Added Rule: Name=Schematic Supply Nets_7
