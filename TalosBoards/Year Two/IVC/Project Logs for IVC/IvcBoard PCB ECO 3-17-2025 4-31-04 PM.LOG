@@ -1,0 +1,68 @@
+Added Component: Designator=TP14(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP15(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP16(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP17(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP18(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP19(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP20(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP24(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP25(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP26(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP27(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP28(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP29(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP30(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP31(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP32(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AudioSig Pin=TP15-TP
+Added Pin To Net: NetName=OutputSelect Pin=TP16-TP
+Added Pin To Net: NetName=HydrophoneIn Pin=TP17-TP
+Added Pin To Net: NetName=NetR22_2 Pin=TP18-TP
+Added Pin To Net: NetName=NetC36_1 Pin=TP19-TP
+Added Pin To Net: NetName=NetC37_1 Pin=TP20-TP
+Added Pin To Net: NetName=HydrophoneInFiltered Pin=TP24-TP
+Added Pin To Net: NetName=NetC27_2 Pin=TP25-TP
+Added Pin To Net: NetName=NetC28_2 Pin=TP26-TP
+Added Pin To Net: NetName=3V3_BT Pin=TP27-TP
+Added Pin To Net: NetName=NetR37_2 Pin=TP28-TP
+Added Pin To Net: NetName=NetR40_1 Pin=TP29-TP
+Added Pin To Net: NetName=BtP0_0 Pin=TP30-TP
+Added Pin To Net: NetName=BtRx Pin=TP31-TP
+Added Pin To Net: NetName=BtTx Pin=TP32-TP
+Added Pin To Net: NetName=NetTP14_TP Pin=TP14-TP
+Added Pin To Net: NetName=NetTP14_TP Pin=U10-4
+Added Pin To Net: NetName=NetTP14_TP Pin=U12-3
+Added Net: Name=NetTP14_TP
+Added Member To Class: ClassName=PowerAndConnections Member=Component J1 Mini-Fit Jr R/A
+Added Member To Class: ClassName=U_Transmission Member=Component TP14 PCB Test Point
+Added Member To Class: ClassName=U_Transmission Member=Component TP15 PCB Test Point
+Added Member To Class: ClassName=U_Transmission Member=Component TP16 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP17 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP18 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP19 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP20 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP24 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP25 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP26 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP27 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP28 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP29 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP30 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP31 PCB Test Point
+Added Member To Class: ClassName=U_Bluetooth Member=Component TP32 PCB Test Point

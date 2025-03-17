@@ -1,0 +1,10 @@
+Added Component: Designator=C43(CAPACITOR_1808)
+Add component (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Added Component: Designator=C44(CAPACITOR_1808)
+Add component (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC42_1 Pin=C43-1
+Added Pin To Net: NetName=+24 Pin=C43-2
+Added Pin To Net: NetName=-24 Pin=C44-1
+Added Pin To Net: NetName=GND Pin=C44-2
+Added Member To Class: ClassName=PowerAndConnections Member=Component C43 CC1808KKX7REBB681
+Added Member To Class: ClassName=PowerAndConnections Member=Component C44 CC1808KKX7REBB681
