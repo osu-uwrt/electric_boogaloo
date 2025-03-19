@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=Rp2040Sig Pin=R5-1
+Added Pin To Net: NetName=Rp2040Sig Pin=TP3-TP
+Change Net Name : Old Net Name=BtLED1 New Net Name=NetU1R_35
+Change Net Name : Old Net Name=BtLED2 New Net Name=NetU1R_36
+Added Room: Name=U_Transmission

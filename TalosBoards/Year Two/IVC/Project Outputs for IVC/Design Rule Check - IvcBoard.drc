@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\brach\Documents\Stuff\Projects\UWRT\lilboat\electric_boogaloo\TalosBoards\Year Two\IVC\IvcBoard.PcbDoc
-Date     : 3/17/2025
-Time     : 4:48:18 PM
+Date     : 3/19/2025
+Time     : 1:32:07 AM
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
 Rule Violations :0
@@ -24,9 +24,8 @@ Rule Violations :0
 Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
 Rule Violations :0
 
-Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
-   Violation between SMD Entry Constraint: Between Pad C27-2(1867.486mil,2400mil) on Top Layer And Track (1834.594mil,2400.406mil)(1867.08mil,2400.406mil) on Top Layer Track Entry to PAD from not centre of Side
-Rule Violations :1
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
@@ -47,22 +46,10 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=6mil) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (4.51mil < 6mil) Between Pad C24-2(1835mil,2535mil) on Top Layer And Text "TP25" (1747mil,2478mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.51mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 6mil) Between Pad R28-2(2368.5mil,2225mil) on Top Layer And Text "TP19" (2372mil,2203mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "C27" (1840.013mil,2450.005mil) on Top Overlay And Text "TP25" (1747mil,2478mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP15" (1027mil,1868mil) on Top Overlay And Text "U16" (1132.512mil,1865.005mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP18" (2317mil,2708mil) on Top Overlay And Track (2427.323mil,2727.598mil)(2427.323mil,2757.598mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP19" (2372mil,2203mil) on Top Overlay And Track (2400mil,2190mil)(2400mil,2260mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP19" (2372mil,2203mil) on Top Overlay And Track (2427.323mil,2227.598mil)(2427.323mil,2257.598mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP19" (2372mil,2203mil) on Top Overlay And Track (2427.323mil,2227.598mil)(2457.323mil,2227.598mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (2.261mil < 3mil) Between Text "TP19" (2372mil,2203mil) on Top Overlay And Track (2438.346mil,2240.63mil)(2438.346mil,2744.567mil) on Top Overlay Silk Text to Silk Clearance [2.261mil]
-   Violation between Silk To Silk Clearance Constraint: (2.14mil < 3mil) Between Text "TP19" (2372mil,2203mil) on Top Overlay And Track (2438.346mil,2240.63mil)(2816.299mil,2240.63mil) on Top Overlay Silk Text to Silk Clearance [2.14mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP25" (1747mil,2478mil) on Top Overlay And Track (1810mil,2505mil)(1810mil,2565mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 3mil) Between Text "TP25" (1747mil,2478mil) on Top Overlay And Track (1810mil,2505mil)(1825mil,2505mil) on Top Overlay Silk Text to Silk Clearance [0mil]
-Rule Violations :10
+Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
@@ -74,6 +61,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 13
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:01
