@@ -235,7 +235,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BCTDTEGH
 
 [Document12]
 DocumentPath=..\..\Library\Diodes.SchLib
@@ -507,7 +507,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BNNTQKVR
 
 [Document28]
 DocumentPath=..\..\Library\Transformers.SchLib
@@ -678,6 +678,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XNYKGYPU
+
+[Document38]
+DocumentPath=Chrg_Discharge_cntrl.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AWIPXLTJ
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for PowerBMS\Design Rule Check - SBM_BMS.html
