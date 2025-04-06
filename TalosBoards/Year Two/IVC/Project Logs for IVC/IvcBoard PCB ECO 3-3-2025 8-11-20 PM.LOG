@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetC6_1 Pin=R7-1
+Removed Pin From Net: NetName=NetC2_2 Pin=R7-2
+Change Component Footprint: Designator=R7 Old Footprint=RESC1609X50X30LL10T20 New Footprint=CAPACITOR_0603
+Change Managed Component Library Link : Designator=R7 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=B84D6E2D-6E14-4E29-A847-B3D4AD84F0DF New ItemGUID= Old RevisionGUID=5D99A3B4-999B-4FE5-9DB8-EA51BA8DD8E8 New RevisionGUID=
+Change component parameters: Designator = "R7" ("R7"); Footprint = "RESC1609X50X30LL10T20"; UniqueID = "\DMLDJUVI" ("\DMLDJUVI")
+Added Pin To Net: NetName=NetC2_2 Pin=R7-1
+Added Pin To Net: NetName=NetC6_1 Pin=R7-2
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2

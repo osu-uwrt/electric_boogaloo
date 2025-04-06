@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+5 Pin=C19-1
+Removed Pin From Net: NetName=+5 Pin=D6-5
+Removed Pin From Net: NetName=+5 Pin=U7-3
+Added Pin To Net: NetName=5V Pin=C19-1
+Added Pin To Net: NetName=5V Pin=D6-5
+Added Pin To Net: NetName=5V Pin=U7-3
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
+Added Room: Name=Transmission
+Removed Member From Class: ClassName=USB 2.0 Member=USB

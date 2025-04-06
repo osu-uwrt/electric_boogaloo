@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=BtLED2 Pin=SB15-1
+Removed Pin From Net: NetName=BtLED1 Pin=SB17-1
+Removed Member From Class: ClassName=U_Bluetooth Member=SB15
+Removed Member From Class: ClassName=U_Bluetooth Member=SB17
+Added Component: Designator=D8(LED_0603)
+Add component (AddParameter): Name = "Color"; Value = "Yellow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4981-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D9(LED_0603)
+Add component (AddParameter): Name = "Color"; Value = "Yellow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-4981-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD8_1 Pin=D8-1
+Added Pin To Net: NetName=NetD8_1 Pin=D9-1
+Added Pin To Net: NetName=NetD8_1 Pin=U17-24
+Added Net: Name=NetD8_1
+Added Pin To Net: NetName=NetD8_2 Pin=D8-2
+Added Pin To Net: NetName=NetD8_2 Pin=U17-32
+Added Net: Name=NetD8_2
+Added Pin To Net: NetName=NetD9_2 Pin=D9-2
+Added Pin To Net: NetName=NetD9_2 Pin=U17-34
+Added Net: Name=NetD9_2
+Added Member To Class: ClassName=U_Bluetooth Member=Component D8 150060YS75000
+Added Member To Class: ClassName=U_Bluetooth Member=Component D9 150060YS75000
+Added Member To Class: ClassName=U_Transmission Member=Component U10 BU4S584G2-TR
+Added Room: Name=U_Transmission

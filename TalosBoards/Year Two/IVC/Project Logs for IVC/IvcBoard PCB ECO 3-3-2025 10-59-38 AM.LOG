@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=*1 NewDesignator=U9
+Change Net Name : Old Net Name=Net*1_2 New Net Name=NetR2_1
+Add Net: Net with name "RP2040_SIG" already exists
+Add Net: Net with name "TempShtdwnState" already exists
+Add Net: Net with name "TRANSDUCER_OUT" already exists
+Add Class: Class already exists: Designator
