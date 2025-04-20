@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=12V_MEAS Pin=U7-11
+Removed Pin From Net: NetName=5V_MEAS Pin=U7-13
+Added Pin To Net: NetName=5V_MEAS Pin=U7-11
+Added Pin To Net: NetName=12V_MEAS Pin=U7-13
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists

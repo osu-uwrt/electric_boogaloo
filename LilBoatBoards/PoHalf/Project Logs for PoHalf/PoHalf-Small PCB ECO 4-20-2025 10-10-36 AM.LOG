@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=FAN_TACH Pin=J12-1
+Removed Pin From Net: NetName=5V Pin=Q5-2
+Removed Pin From Net: NetName=FAN_SWITCH Pin=Q6-1
+Removed Pin From Net: NetName=GND Pin=Q6-2
+Removed Pin From Net: NetName=5V Pin=R7-1
+Removed Pin From Net: NetName=FAN_SWITCH Pin=R9-1
+Removed Pin From Net: NetName=GND Pin=R9-2
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=R10-1
+Removed Pin From Net: NetName=FAN_TACH Pin=R10-2
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=Q5
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=Q6
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R7
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R9
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R10
+Added Pin To Net: NetName=5V Pin=J12-2
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Rule: Name=Schematic Supply Nets_7

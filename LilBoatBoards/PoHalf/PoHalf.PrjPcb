@@ -167,7 +167,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KBCGNCQN
 
 [Document8]
 DocumentPath=..\..\Library\Connectors.SchLib
@@ -184,7 +184,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HVIEDDBW
 
 [Document9]
 DocumentPath=..\..\Library\Converter.PcbLib
@@ -644,6 +644,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FAJBMQJC
+
+[Document36]
+DocumentPath=PoHalf-Small.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BPVARBEX
 
 [DeviceSheet1]
 DocumentPath=..\..\Device_Sheets\RP2040_with_CAN.SchDot
