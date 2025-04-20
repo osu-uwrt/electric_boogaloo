@@ -1,0 +1,11 @@
+Removed Member From Class: ClassName=Connector Member=J?
+Change Component Designator: OldDesignator=J? NewDesignator=J8
+Change Component Designator: OldDesignator=J? NewDesignator=J9
+Change Component Designator: OldDesignator=J? NewDesignator=J10
+Change Component Designator: OldDesignator=J? NewDesignator=J11
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Member To Class: ClassName=Connector Member=Component J8 JST GH VERT
+Added Member To Class: ClassName=Connector Member=Component J9 JST GH VERT
+Added Member To Class: ClassName=Connector Member=Component J10 JST GH VERT
+Added Member To Class: ClassName=Connector Member=Component J11 XH2.54 VERT

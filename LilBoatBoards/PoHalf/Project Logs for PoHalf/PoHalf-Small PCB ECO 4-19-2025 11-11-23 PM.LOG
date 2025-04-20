@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Orin_PWR Pin=J7-1
+Removed Pin From Net: NetName=GND Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Pin To Net: NetName=Orin_PWR Pin=J7-2
