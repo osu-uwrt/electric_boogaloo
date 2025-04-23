@@ -1,0 +1,23 @@
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q2-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q2-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q2-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q2-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q2-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q3-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q3-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q3-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q3-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=Q3-D
+Added Pin To Net: NetName=DC_MOTOR_1 Pin=R46-1
+Change Net Name : Old Net Name=DC_MOTOR_1 New Net Name=mOTOR_PWR
+Added Pin To Net: NetName=SCL2 Pin=J8-2
+Added Pin To Net: NetName=SCL2 Pin=J9-2
+Added Pin To Net: NetName=SCL2 Pin=J10-2
+Added Pin To Net: NetName=SCL2 Pin=J11-2
+Added Net: Name=SCL2
+Added Pin To Net: NetName=SDA2 Pin=J8-3
+Added Pin To Net: NetName=SDA2 Pin=J9-3
+Added Pin To Net: NetName=SDA2 Pin=J10-3
+Added Pin To Net: NetName=SDA2 Pin=J11-3
+Added Net: Name=SDA2
+Added Rule: Name=Schematic Supply Nets_3
