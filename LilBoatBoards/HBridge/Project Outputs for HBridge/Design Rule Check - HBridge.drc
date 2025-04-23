@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rosati.33\UWRT\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
 Date     : 4/23/2025
-Time     : 1:42:41 AM
+Time     : 3:37:19 AM
 
 ERROR : More than 500 violations detected, DRC was stopped
 
@@ -57,14 +57,7 @@ Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (15989.37mil,729.134mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (15989.37mil,774.409mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (15989.37mil,801.968mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2039.677mil,2390.787mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2039.677mil,2430.157mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2039.677mil,2469.528mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2067.236mil,2390.787mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2067.236mil,2469.528mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2112.512mil,2390.787mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (2112.512mil,2469.528mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-Rule Violations :28
+Rule Violations :21
 
 Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
 Rule Violations :0
@@ -442,10 +435,12 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1107.598mil,6339.945mil)(1168.831mil,6278.713mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1168.831mil,6251.524mil)(1168.831mil,6278.713mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1168.831mil,6251.524mil)(1172.559mil,6247.795mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1393.032mil,6470.236mil)(1539.355mil,6470.236mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1448.15mil,6249.764mil)(1472.165mil,6273.78mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1472.165mil,6273.78mil)(1507.624mil,6273.78mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1478.445mil,6101.358mil)(1478.445mil,6103.651mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1478.445mil,6103.651mil)(1495.394mil,6120.6mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1487.52mil,6588.346mil)(1519.016mil,6556.85mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1488.898mil,6336.378mil)(1488.898mil,6337.165mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1488.898mil,6337.165mil)(1495.984mil,6344.252mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1488.898mil,6395.538mil)(1517.522mil,6395.538mil) on Bottom Layer 
@@ -458,14 +453,19 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1517.522mil,6395.538mil)(1529.437mil,6383.622mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1527.284mil,5957.559mil)(1767.284mil,5957.559mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1529.437mil,6383.622mil)(1534.764mil,6383.622mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1539.355mil,6470.236mil)(1553.134mil,6456.457mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1542.638mil,6348.293mil)(1577.966mil,6383.622mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1550.512mil,6273.386mil)(1558.386mil,6281.26mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1553.134mil,6456.457mil)(1553.81mil,6456.457mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1557.008mil,6164.528mil)(1557.008mil,6237.953mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1557.008mil,6164.528mil)(1589.882mil,6131.654mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1557.008mil,6237.953mil)(1557.697mil,6238.642mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1557.697mil,6238.642mil)(1557.697mil,6273.386mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1577.966mil,6383.622mil)(1715.866mil,6383.622mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1589.882mil,6556.85mil)(1589.882mil,6602.717mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1715.866mil,6304.882mil)(1761.732mil,6304.882mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1715.866mil,6383.622mil)(1715.866mil,6429.488mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1747.362mil,6548.976mil)(1747.362mil,6586.968mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1809.37mil,6367.874mil)(1856.22mil,6367.874mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1856.22mil,6314.134mil)(1856.22mil,6367.874mil) on Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (1856.22mil,6314.134mil)(1895.099mil,6275.256mil) on Bottom Layer 
@@ -554,12 +554,9 @@ Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Via (933.386mil,6596.221mil) from Top Layer to Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Via (944.213mil,6163.15mil) from Top Layer to Bottom Layer 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Via (999.331mil,5919.055mil) from Top Layer to Bottom Layer 
-Rule Violations :472
+Rule Violations :479
 
-Processing Rule : Room U_RP2040_C (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('U_RP2040_C'))
-Rule Violations :0
-
-Processing Rule : Room U_RP2040_with_CAN (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('U_RP2040_with_CAN'))
+Processing Rule : Room HBridge (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('HBridge'))
 Rule Violations :0
 
 Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
