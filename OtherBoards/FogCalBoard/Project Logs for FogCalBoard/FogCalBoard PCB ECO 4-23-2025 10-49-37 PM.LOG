@@ -1,0 +1,7 @@
+Added Component: Designator=U3(SOT-353)
+Added Pin To Net: NetName=THERMISTOR- Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=NetC16_1 Pin=U3-3
+Added Pin To Net: NetName=THERM_OK Pin=U3-4
+Added Pin To Net: NetName=3V3 Pin=U3-5
+Added Member To Class: ClassName=FogCalBoard Member=Component U3 IC COMPARATOR 1 GEN PUR SC70-5

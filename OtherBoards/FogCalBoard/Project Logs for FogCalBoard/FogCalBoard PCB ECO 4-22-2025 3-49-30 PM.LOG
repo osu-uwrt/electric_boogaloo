@@ -1,0 +1,32 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Change Component Designator: OldDesignator=C? NewDesignator=C3
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=CR? NewDesignator=CR1
+Change Component Designator: OldDesignator=CR? NewDesignator=CR2
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=D? NewDesignator=D2
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Change Net Name : Old Net Name=NetD?_1 New Net Name=NetD2_1
+Change Net Name : Old Net Name=NetD?_2 New Net Name=NetD2_2
+Change Net Name : Old Net Name=NetD?_3 New Net Name=NetD2_3
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=CR2-1
+Added Net: Name=NetC4_2
+Added Member To Class: ClassName=FogCalBoard Member=Component C1 22uF electrolytic 35 V
+Added Member To Class: ClassName=FogCalBoard Member=Component C2 100nF Ceramic 25V
+Added Member To Class: ClassName=FogCalBoard Member=Component C4 100n
+Added Member To Class: ClassName=FogCalBoard Member=Component C5 1uF Ceramic 16V
+Added Member To Class: ClassName=FogCalBoard Member=Component CR1 SMAJP4KE18A-TP
+Added Member To Class: ClassName=FogCalBoard Member=Component D1 TVS DIODE 5VWM 25VC SOT23-6
+Added Member To Class: ClassName=FogCalBoard Member=Component R1 604 Ohm 1% 1/16W
+Added Member To Class: ClassName=FogCalBoard Member=Component R3 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=FogCalBoard Member=Component U1 IC REG LIN 3.3V 400MA SOT223-4

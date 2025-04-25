@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP1
+Change Component Designator: OldDesignator=DNP? NewDesignator=DNP2
+Change Net Name : Old Net Name=NetDNP?_1 New Net Name=NetDNP1_1
+Change Net Name : Old Net Name=NetDNP?_2 New Net Name=NetDNP1_2
+Added Pin To Net: NetName=NetDNP2_1 Pin=DNP2-1
+Added Pin To Net: NetName=NetDNP2_1 Pin=U1R-14
+Added Net: Name=NetDNP2_1
+Added Pin To Net: NetName=NetDNP2_2 Pin=DNP2-2
+Added Pin To Net: NetName=NetDNP2_2 Pin=U1R-15
+Added Net: Name=NetDNP2_2
+Added Member To Class: ClassName=FogCalBoard Member=Component DNP2 DNP

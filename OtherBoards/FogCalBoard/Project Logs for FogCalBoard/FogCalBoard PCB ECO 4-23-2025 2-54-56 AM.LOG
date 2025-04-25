@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=MC_IDX Pin=U1R-11
+Removed Pin From Net: NetName=MC_MS1 Pin=U1R-13
+Removed Pin From Net: NetName=MC_MS2 Pin=U1R-14
+Removed Member From Class: ClassName=FogCalBoard Member=DNP1
+Removed Member From Class: ClassName=FogCalBoard Member=DNP2
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Component: Designator=DNP?(RESISTOR_0402)
+Added Pin To Net: NetName=MC_IDX Pin=U1R-35
+Added Pin To Net: NetName=MC_MS1 Pin=U1R-36
+Added Pin To Net: NetName=MC_MS2 Pin=U1R-37
+Added Pin To Net: NetName=NetDNP?_1 Pin=DNP?-1
+Added Pin To Net: NetName=NetDNP?_1 Pin=U1R-11
+Added Net: Name=NetDNP?_1
+Add Net: Net with name "NetDNP?_1" already exists
+Added Pin To Net: NetName=NetDNP?_2 Pin=DNP?-2
+Added Pin To Net: NetName=NetDNP?_2 Pin=U1R-12
+Added Net: Name=NetDNP?_2
+Add Net: Net with name "NetDNP?_2" already exists
+Added Pin To Net: NetName=NetU1R_13 Pin=U1R-13
+Added Net: Name=NetU1R_13
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Net: Name=NetU1R_38
+Added Pin To Net: NetName=NetU1R_39 Pin=U1R-39
+Added Net: Name=NetU1R_39
+Added Member To Class: ClassName=FogCalBoard Member=Component DNP? DNP
+Added Member To Class: ClassName=FogCalBoard Member=Component DNP? DNP

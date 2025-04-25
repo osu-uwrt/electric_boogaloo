@@ -1,0 +1,586 @@
+Change Component Comment : Designator=R? Old Comment=604 Ohm 1% 1/16W New Comment=200 Ohm 1% 1/16W
+Change component parameters: Designator = "R?" ("R?"); Footprint = "RESISTOR_0402"; UniqueID = "\ZYAOGZNF" ("\ZYAOGZNF")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3453CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "200"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=C1R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-5589-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "27pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C2R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-5589-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "27pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C3R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C4R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C5R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C6R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C7R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C8R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C9R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C10R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C11R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C12R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C13R(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7868-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_EEHZC1J100P)
+Add component (AddParameter): Name = "Made by"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Voltage"; Value = "63V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P15466CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAPACITOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-0402YD105KAT4ADKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(PCAP_8x5.4-ELECT_NCA)
+Add component (AddParameter): Name = "Made by"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "PCE3952DKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1006-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=CR?(DO-214AC)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SMAJP4KE18A-TP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "MCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Arrow Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "SMAJP4KE18A-TP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=D?(LED_0606_4SMD)
+Add component (AddParameter): Name = "Blue Forward Current"; Value = "5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Blue Forward Voltage"; Value = "2.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "RGB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://everlightamericas.com/index.php?controller=attachment&id_attachment=3220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Green Forward Current"; Value = "5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Green Forward Voltage"; Value = "2.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "4-SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Red Forward Current"; Value = "5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Red Forward Voltage"; Value = "1.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1080-1552-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D?(SOT 23-6L)
+Add component (AddParameter): Name = "Breakdown Voltage (Min)"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage (Max)"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Standoff Voltage (Typ)"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RCLAMP0504SCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J1R(TC2030-MCP)
+Added Component: Designator=J?(CONN_MINIUSB)
+Add component (AddParameter): Name = "Color"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf?__cf_chl_jschl_tk__=05693735e19256298f6ef6ca2bb2e65c376a4f56-1625503833-0-Abitsb0-ufjOXJYs_S3J3r2iTn-nObalbmXUksF1VvO_h_WEmRdMlUD1I8-hmWSEVWzY1pirKnrPZWfgY3851qyBZe5ZvnNQePLGIzUgdEIQBVUyW36RsbYpDLEWxJ4horD-5gChFgobLYqwmG5aHl0E8lIn_twwPPrOxilK2gP0q9t_CNOs_u5fMqXvXUrlsOv8tIE2NRlu6NVP8qtkL2GjhlkeTUbDMF8WvvpPDTFOgvZ4Y16Ej8F8AhWos88mo5B1HssXozw0XrkJQIqERITUu6rqloz9kf4ZzhBHtDAt-IkiAFY_Ds9SW8FYKKTtINJVpHZQ6Gyu1FFM4Dc9MO0maE8_mmNcwlxqyRoRk_MPWW8VyByXWM5RSp52jteRKw7FeI9WIYvCbPAOy0Eyib-aseIQsnGbglBcUY6_2xp8GYaJM38H3dNvBPsSOfJBPndKedwKHllxjkucXn6xsN0sDXkpGN-cu8_2bDTJ0g-uUucKSCooYX-ApSDNGpkA_p9zv1SOAD8c0zaZVmtiBsN75QpVz2rzq9_BFxOywPvR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "1.8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "10118192"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "609-4613-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R2R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG5278DKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R3R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG5278DKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R4R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3436CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R5R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3436CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R6R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R7R(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-07604RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "604"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0402)
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3453CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=SW1R(SMD_434123025826)
+Add component (AddParameter): Name = "Category"; Value = "Tact Switches"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Circuit"; Value = "SPST-NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/434123025826?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/434123025826?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Stainless Steel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "434123025826"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WS-TASV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operation Force"; Value = "260g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "50mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "16VDC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Material"; Value = "Copper Alloy"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Washable"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "3.2mm"; VariantName = "[No Variations]"
+Added Component: Designator=SW2R(SMD_434123025826)
+Add component (AddParameter): Name = "Category"; Value = "Tact Switches"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Circuit"; Value = "SPST-NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/434123025826?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/434123025826?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Stainless Steel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "434123025826"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WS-TASV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operation Force"; Value = "260g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "50mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "16VDC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Material"; Value = "Copper Alloy"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Washable"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "3.2mm"; VariantName = "[No Variations]"
+Added Component: Designator=U1R(QFN-56 RP2040)
+Add component (AddParameter): Name = "Available Busses"; Value = "SPI, I2C, PWM, USB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Crystal Frequency"; Value = "12 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of GPIOs"; Value = "29"; VariantName = "[No Variations]"
+Added Component: Designator=U2R(SOIC-8 W25QxJV)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size"; Value = "128M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "W25Q128JVSIQ-ND"; VariantName = "[No Variations]"
+Added Component: Designator=U?(SOT-223-4)
+Added Component: Designator=U?(QFN-28)
+Added Component: Designator=Y1R(4-SMD, NO LEAD CRYSTAL 3.2x2.5mm)
+Add component (AddParameter): Name = "ESR"; Value = "100 Ohms"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "12 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Load Capacitance"; Value = "18pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2151-RH100-12.000-18-2030-EXT-TRCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=C?-1
+Added Pin To Net: NetName=+12 Pin=C?-2
+Added Pin To Net: NetName=+12 Pin=CR?-1
+Added Pin To Net: NetName=+12 Pin=U?-1
+Added Net: Name=+12
+Added Pin To Net: NetName=1v1_RP2040 Pin=C11R-1
+Added Pin To Net: NetName=1v1_RP2040 Pin=C12R-1
+Added Pin To Net: NetName=1v1_RP2040 Pin=C13R-1
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-23
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-45
+Added Pin To Net: NetName=1v1_RP2040 Pin=U1R-50
+Added Net: Name=1v1_RP2040
+Added Pin To Net: NetName=3V3 Pin=C1R-2
+Added Pin To Net: NetName=3V3 Pin=C2R-2
+Added Pin To Net: NetName=3V3 Pin=C3R-1
+Added Pin To Net: NetName=3V3 Pin=C3R-2
+Added Pin To Net: NetName=3V3 Pin=C4R-1
+Added Pin To Net: NetName=3V3 Pin=C4R-2
+Added Pin To Net: NetName=3V3 Pin=C5R-1
+Added Pin To Net: NetName=3V3 Pin=C5R-2
+Added Pin To Net: NetName=3V3 Pin=C6R-1
+Added Pin To Net: NetName=3V3 Pin=C6R-2
+Added Pin To Net: NetName=3V3 Pin=C7R-1
+Added Pin To Net: NetName=3V3 Pin=C7R-2
+Added Pin To Net: NetName=3V3 Pin=C8R-1
+Added Pin To Net: NetName=3V3 Pin=C8R-2
+Added Pin To Net: NetName=3V3 Pin=C9R-1
+Added Pin To Net: NetName=3V3 Pin=C9R-2
+Added Pin To Net: NetName=3V3 Pin=C10R-1
+Added Pin To Net: NetName=3V3 Pin=C10R-2
+Added Pin To Net: NetName=3V3 Pin=C11R-2
+Added Pin To Net: NetName=3V3 Pin=C12R-2
+Added Pin To Net: NetName=3V3 Pin=C13R-2
+Added Pin To Net: NetName=3V3 Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=CR?-2
+Added Pin To Net: NetName=3V3 Pin=D?-2
+Added Pin To Net: NetName=3V3 Pin=D?-4
+Added Pin To Net: NetName=3V3 Pin=D?-5
+Added Pin To Net: NetName=3V3 Pin=J1R-2
+Added Pin To Net: NetName=3V3 Pin=J1R-6
+Added Pin To Net: NetName=3V3 Pin=J?-5
+Added Pin To Net: NetName=3V3 Pin=J?-6
+Added Pin To Net: NetName=3V3 Pin=J?-7
+Added Pin To Net: NetName=3V3 Pin=J?-8
+Added Pin To Net: NetName=3V3 Pin=J?-9
+Added Pin To Net: NetName=3V3 Pin=R4R-1
+Added Pin To Net: NetName=3V3 Pin=R5R-1
+Added Pin To Net: NetName=3V3 Pin=SW1R-B1
+Added Pin To Net: NetName=3V3 Pin=SW1R-B2
+Added Pin To Net: NetName=3V3 Pin=SW2R-B1
+Added Pin To Net: NetName=3V3 Pin=SW2R-B2
+Added Pin To Net: NetName=3V3 Pin=U1R-1
+Added Pin To Net: NetName=3V3 Pin=U1R-10
+Added Pin To Net: NetName=3V3 Pin=U1R-19
+Added Pin To Net: NetName=3V3 Pin=U1R-22
+Added Pin To Net: NetName=3V3 Pin=U1R-33
+Added Pin To Net: NetName=3V3 Pin=U1R-42
+Added Pin To Net: NetName=3V3 Pin=U1R-43
+Added Pin To Net: NetName=3V3 Pin=U1R-44
+Added Pin To Net: NetName=3V3 Pin=U1R-48
+Added Pin To Net: NetName=3V3 Pin=U1R-49
+Added Pin To Net: NetName=3V3 Pin=U1R-57
+Added Pin To Net: NetName=3V3 Pin=U2R-4
+Added Pin To Net: NetName=3V3 Pin=U2R-8
+Added Pin To Net: NetName=3V3 Pin=U?-2
+Added Pin To Net: NetName=3V3 Pin=U?-4
+Added Pin To Net: NetName=3V3 Pin=Y1R-2
+Added Pin To Net: NetName=3V3 Pin=Y1R-4
+Added Net: Name=3V3
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=J1R-5
+Added Pin To Net: NetName=DBG_TX_RP2040 Pin=U1R-27
+Added Net: Name=DBG_TX_RP2040
+Added Pin To Net: NetName=LEDB Pin=R?-1
+Added Net: Name=LEDB
+Added Pin To Net: NetName=LEDG Pin=R?-1
+Added Net: Name=LEDG
+Added Pin To Net: NetName=LEDR Pin=R?-1
+Added Net: Name=LEDR
+Added Pin To Net: NetName=NetC2R_1 Pin=C2R-1
+Added Pin To Net: NetName=NetC2R_1 Pin=R1R-2
+Added Pin To Net: NetName=NetC2R_1 Pin=Y1R-3
+Added Net: Name=NetC2R_1
+Added Pin To Net: NetName=NetD?_1 Pin=D?-1
+Added Pin To Net: NetName=NetD?_1 Pin=R?-2
+Added Net: Name=NetD?_1
+Added Pin To Net: NetName=NetD?_2 Pin=D?-2
+Added Pin To Net: NetName=NetD?_2 Pin=R?-2
+Added Net: Name=NetD?_2
+Added Pin To Net: NetName=NetD?_3 Pin=D?-3
+Added Pin To Net: NetName=NetD?_3 Pin=R?-2
+Added Net: Name=NetD?_3
+Added Pin To Net: NetName=NetR6R_1 Pin=R6R-1
+Added Pin To Net: NetName=NetR6R_1 Pin=SW1R-A2
+Added Net: Name=NetR6R_1
+Added Pin To Net: NetName=NetR7R_1 Pin=R7R-1
+Added Pin To Net: NetName=NetR7R_1 Pin=SW2R-A1
+Added Net: Name=NetR7R_1
+Added Pin To Net: NetName=NetU1R_2 Pin=U1R-2
+Added Net: Name=NetU1R_2
+Added Pin To Net: NetName=NetU1R_3 Pin=U1R-3
+Added Net: Name=NetU1R_3
+Added Pin To Net: NetName=NetU1R_4 Pin=U1R-4
+Added Net: Name=NetU1R_4
+Added Pin To Net: NetName=NetU1R_5 Pin=U1R-5
+Added Net: Name=NetU1R_5
+Added Pin To Net: NetName=NetU1R_6 Pin=U1R-6
+Added Net: Name=NetU1R_6
+Added Pin To Net: NetName=NetU1R_7 Pin=U1R-7
+Added Net: Name=NetU1R_7
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Net: Name=NetU1R_8
+Added Pin To Net: NetName=NetU1R_9 Pin=U1R-9
+Added Net: Name=NetU1R_9
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11
+Added Pin To Net: NetName=NetU1R_12 Pin=U1R-12
+Added Net: Name=NetU1R_12
+Added Pin To Net: NetName=NetU1R_13 Pin=U1R-13
+Added Net: Name=NetU1R_13
+Added Pin To Net: NetName=NetU1R_14 Pin=U1R-14
+Added Net: Name=NetU1R_14
+Added Pin To Net: NetName=NetU1R_15 Pin=U1R-15
+Added Net: Name=NetU1R_15
+Added Pin To Net: NetName=NetU1R_16 Pin=U1R-16
+Added Net: Name=NetU1R_16
+Added Pin To Net: NetName=NetU1R_17 Pin=U1R-17
+Added Net: Name=NetU1R_17
+Added Pin To Net: NetName=NetU1R_18 Pin=U1R-18
+Added Net: Name=NetU1R_18
+Added Pin To Net: NetName=NetU1R_28 Pin=U1R-28
+Added Net: Name=NetU1R_28
+Added Pin To Net: NetName=NetU1R_29 Pin=U1R-29
+Added Net: Name=NetU1R_29
+Added Pin To Net: NetName=NetU1R_30 Pin=U1R-30
+Added Net: Name=NetU1R_30
+Added Pin To Net: NetName=NetU1R_31 Pin=U1R-31
+Added Net: Name=NetU1R_31
+Added Pin To Net: NetName=NetU1R_32 Pin=U1R-32
+Added Net: Name=NetU1R_32
+Added Pin To Net: NetName=NetU1R_34 Pin=U1R-34
+Added Net: Name=NetU1R_34
+Added Pin To Net: NetName=NetU1R_35 Pin=U1R-35
+Added Net: Name=NetU1R_35
+Added Pin To Net: NetName=NetU1R_36 Pin=U1R-36
+Added Net: Name=NetU1R_36
+Added Pin To Net: NetName=NetU1R_37 Pin=U1R-37
+Added Net: Name=NetU1R_37
+Added Pin To Net: NetName=NetU1R_38 Pin=U1R-38
+Added Net: Name=NetU1R_38
+Added Pin To Net: NetName=NetU1R_39 Pin=U1R-39
+Added Net: Name=NetU1R_39
+Added Pin To Net: NetName=NetU1R_40 Pin=U1R-40
+Added Net: Name=NetU1R_40
+Added Pin To Net: NetName=NetU1R_41 Pin=U1R-41
+Added Net: Name=NetU1R_41
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U1R-52
+Added Pin To Net: NetName=QSPI_SCLK_RP2040 Pin=U2R-6
+Added Net: Name=QSPI_SCLK_RP2040
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U1R-53
+Added Pin To Net: NetName=QSPI_SD0_RP2040 Pin=U2R-5
+Added Net: Name=QSPI_SD0_RP2040
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U1R-55
+Added Pin To Net: NetName=QSPI_SD1_RP2040 Pin=U2R-2
+Added Net: Name=QSPI_SD1_RP2040
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U1R-54
+Added Pin To Net: NetName=QSPI_SD2_RP2040 Pin=U2R-3
+Added Net: Name=QSPI_SD2_RP2040
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U1R-51
+Added Pin To Net: NetName=QSPI_SD3_RP2040 Pin=U2R-7
+Added Net: Name=QSPI_SD3_RP2040
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=R5R-2
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=R7R-2
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U1R-56
+Added Pin To Net: NetName=QSPI_SS_RP2040 Pin=U2R-1
+Added Net: Name=QSPI_SS_RP2040
+Added Pin To Net: NetName=RUN_RP2040 Pin=J1R-4
+Added Pin To Net: NetName=RUN_RP2040 Pin=R4R-2
+Added Pin To Net: NetName=RUN_RP2040 Pin=R6R-2
+Added Pin To Net: NetName=RUN_RP2040 Pin=U1R-26
+Added Net: Name=RUN_RP2040
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=J1R-3
+Added Pin To Net: NetName=SWCLK_RP2040 Pin=U1R-24
+Added Net: Name=SWCLK_RP2040
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=J1R-1
+Added Pin To Net: NetName=SWDIO_RP2040 Pin=U1R-25
+Added Net: Name=SWDIO_RP2040
+Added Pin To Net: NetName=USB_N Pin=D?-1
+Added Pin To Net: NetName=USB_N Pin=J?-2
+Added Pin To Net: NetName=USB_N Pin=R3R-1
+Added Net: Name=USB_N
+Added Pin To Net: NetName=USB_P Pin=D?-6
+Added Pin To Net: NetName=USB_P Pin=J?-3
+Added Pin To Net: NetName=USB_P Pin=R2R-1
+Added Net: Name=USB_P
+Added Pin To Net: NetName=USB_RP2040_N Pin=R3R-2
+Added Pin To Net: NetName=USB_RP2040_N Pin=U1R-46
+Added Net: Name=USB_RP2040_N
+Added Pin To Net: NetName=USB_RP2040_P Pin=R2R-2
+Added Pin To Net: NetName=USB_RP2040_P Pin=U1R-47
+Added Net: Name=USB_RP2040_P
+Added Pin To Net: NetName=XIN_RP2040 Pin=C1R-1
+Added Pin To Net: NetName=XIN_RP2040 Pin=U1R-20
+Added Pin To Net: NetName=XIN_RP2040 Pin=Y1R-1
+Added Net: Name=XIN_RP2040
+Added Pin To Net: NetName=XOUT_RP2040 Pin=R1R-1
+Added Pin To Net: NetName=XOUT_RP2040 Pin=U1R-21
+Added Net: Name=XOUT_RP2040
+Added Class: Name=U_RP2040_C
+Added Differential Pair: Name=USB_RP2040
+Added Differential Pair: Name=USB
+Added Member To Class: ClassName=FogCalBoard Member=Component C? 10uF electrolytic 63V
+Added Member To Class: ClassName=FogCalBoard Member=Component C? 1uF Ceramic 16V
+Added Member To Class: ClassName=FogCalBoard Member=Component C? 22uF electrolytic 35 V
+Added Member To Class: ClassName=FogCalBoard Member=Component C? 100nF Ceramic 25V
+Added Member To Class: ClassName=FogCalBoard Member=Component CR? SMAJP4KE18A-TP
+Added Member To Class: ClassName=FogCalBoard Member=Component D? EAST1616RGBB4
+Added Member To Class: ClassName=FogCalBoard Member=Component D? TVS DIODE 5VWM 25VC SOT23-6
+Added Member To Class: ClassName=FogCalBoard Member=Component J? USB_MICRO R/A
+Added Member To Class: ClassName=FogCalBoard Member=Component R? 604 Ohm 1% 1/16W
+Added Member To Class: ClassName=FogCalBoard Member=Component R? 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=FogCalBoard Member=Component U? IC REG LIN 3.3V 400MA SOT223-4
+Added Member To Class: ClassName=FogCalBoard Member=Component U? TMC2209-LA-T
+Added Room: Name=U_RP2040_C
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Class: Name=USB 2.0

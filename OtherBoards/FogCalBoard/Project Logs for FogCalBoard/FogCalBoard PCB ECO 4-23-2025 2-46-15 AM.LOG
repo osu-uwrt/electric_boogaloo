@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=MC_ENN Pin=SB1-1
+Removed Pin From Net: NetName=MC_ENN Pin=U1R-32
+Added Pin To Net: NetName=MC_ENN Pin=SB1-2
+Added Pin To Net: NetName=MC_ENN Pin=U2-2
+Added Pin To Net: NetName=RP_ENN Pin=SB1-1
+Added Pin To Net: NetName=RP_ENN Pin=U1R-32
+Added Net: Name=RP_ENN
