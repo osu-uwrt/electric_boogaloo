@@ -1,0 +1,10 @@
+Added Component: Designator=U2(7-PIN TO-263)
+Added Pin To Net: NetName=AmpedSignal Pin=U2-1
+Added Pin To Net: NetName=NetR9_1 Pin=U2-2
+Added Pin To Net: NetName=NetR43_1 Pin=U2-3
+Added Pin To Net: NetName=-24 Pin=U2-4
+Added Pin To Net: NetName=+24 Pin=U2-5
+Added Pin To Net: NetName=TransducerOut Pin=U2-6
+Added Pin To Net: NetName=NetSB3_1 Pin=U2-7
+Added Pin To Net: NetName=TH Pin=U2-8
+Added Member To Class: ClassName=U_Transmission Member=Component U2 OPA548F/500G3

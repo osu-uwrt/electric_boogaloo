@@ -1,0 +1,194 @@
+Removed Pin From Net: NetName=3v3 Pin=C1C-1
+Removed Pin From Net: NetName=GND Pin=C1C-2
+Removed Pin From Net: NetName=GND Pin=C1R-2
+Removed Pin From Net: NetName=GND Pin=C2C-1
+Removed Pin From Net: NetName=GND Pin=C2R-2
+Removed Pin From Net: NetName=3v3 Pin=C3C-1
+Removed Pin From Net: NetName=GND Pin=C3C-2
+Removed Pin From Net: NetName=3v3 Pin=C3R-1
+Removed Pin From Net: NetName=GND Pin=C3R-2
+Removed Pin From Net: NetName=5V Pin=C4C-1
+Removed Pin From Net: NetName=GND Pin=C4C-2
+Removed Pin From Net: NetName=3v3 Pin=C4R-1
+Removed Pin From Net: NetName=GND Pin=C4R-2
+Removed Pin From Net: NetName=3v3 Pin=C5C-1
+Removed Pin From Net: NetName=GND Pin=C5C-2
+Removed Pin From Net: NetName=3v3 Pin=C5R-1
+Removed Pin From Net: NetName=GND Pin=C5R-2
+Removed Pin From Net: NetName=3v3 Pin=C6R-1
+Removed Pin From Net: NetName=GND Pin=C6R-2
+Removed Pin From Net: NetName=3v3 Pin=C7R-1
+Removed Pin From Net: NetName=GND Pin=C7R-2
+Removed Pin From Net: NetName=3v3 Pin=C8R-1
+Removed Pin From Net: NetName=GND Pin=C8R-2
+Removed Pin From Net: NetName=3v3 Pin=C9R-1
+Removed Pin From Net: NetName=GND Pin=C9R-2
+Removed Pin From Net: NetName=3v3 Pin=C10R-1
+Removed Pin From Net: NetName=GND Pin=C10R-2
+Removed Pin From Net: NetName=GND Pin=C11R-2
+Removed Pin From Net: NetName=GND Pin=C12R-2
+Removed Pin From Net: NetName=GND Pin=C13R-2
+Removed Pin From Net: NetName=NetC28_2 Pin=C28-2
+Removed Pin From Net: NetName=+5 Pin=C32-1
+Removed Pin From Net: NetName=GND Pin=C32-2
+Removed Pin From Net: NetName=NetC29_1 Pin=C35-1
+Removed Pin From Net: NetName=-5 Pin=C40-1
+Removed Pin From Net: NetName=GND Pin=C40-2
+Removed Pin From Net: NetName=3v3 Pin=D1C-4
+Removed Pin From Net: NetName=3v3 Pin=J1R-2
+Removed Pin From Net: NetName=GND Pin=J1R-6
+Removed Pin From Net: NetName=3v3 Pin=R1C-1
+Removed Pin From Net: NetName=USB_P Pin=R2R-1
+Removed Pin From Net: NetName=USB_N Pin=R3R-1
+Removed Pin From Net: NetName=3v3 Pin=R4C-1
+Removed Pin From Net: NetName=3v3 Pin=R4R-1
+Removed Pin From Net: NetName=3v3 Pin=R5R-1
+Removed Pin From Net: NetName=GND Pin=R6C-2
+Removed Pin From Net: NetName=NetC34_2 Pin=R26-1
+Removed Pin From Net: NetName=NetC28_2 Pin=R26-2
+Removed Pin From Net: NetName=NetC27_2 Pin=R30-1
+Removed Pin From Net: NetName=-24 Pin=SB2-2
+Removed Pin From Net: NetName=CAN_N Pin=SW1C-1
+Removed Pin From Net: NetName=CAN_P Pin=SW1C-4
+Removed Pin From Net: NetName=GND Pin=SW1C-6
+Removed Pin From Net: NetName=GND Pin=SW1R-B1
+Removed Pin From Net: NetName=GND Pin=SW1R-B2
+Removed Pin From Net: NetName=GND Pin=SW2R-B1
+Removed Pin From Net: NetName=GND Pin=SW2R-B2
+Removed Pin From Net: NetName=HydrophoneInFiltered Pin=TP24-TP
+Removed Pin From Net: NetName=GND Pin=U1C-7
+Removed Pin From Net: NetName=3v3 Pin=U1C-14
+Removed Pin From Net: NetName=3v3 Pin=U1R-1
+Removed Pin From Net: NetName=NetR21_1 Pin=U1R-3
+Removed Pin From Net: NetName=OutputSelect Pin=U1R-5
+Removed Pin From Net: NetName=Rp2040Sig Pin=U1R-9
+Removed Pin From Net: NetName=3v3 Pin=U1R-10
+Removed Pin From Net: NetName=TempShtdwnState Pin=U1R-11
+Removed Pin From Net: NetName=BtRx Pin=U1R-12
+Removed Pin From Net: NetName=BtTx Pin=U1R-13
+Removed Pin From Net: NetName=BtMFB Pin=U1R-14
+Removed Pin From Net: NetName=GND Pin=U1R-19
+Removed Pin From Net: NetName=3v3 Pin=U1R-22
+Removed Pin From Net: NetName=3v3 Pin=U1R-33
+Removed Pin From Net: NetName=NetDNP1_1 Pin=U1R-35
+Removed Pin From Net: NetName=NetDNP1_2 Pin=U1R-36
+Removed Pin From Net: NetName=BtP0_0 Pin=U1R-37
+Removed Pin From Net: NetName=HydrophoneInFiltered Pin=U1R-38
+Removed Pin From Net: NetName=HydrophoneIn Pin=U1R-39
+Removed Pin From Net: NetName=NetDNP2_1 Pin=U1R-40
+Removed Pin From Net: NetName=NetDNP2_2 Pin=U1R-41
+Removed Pin From Net: NetName=3v3 Pin=U1R-42
+Removed Pin From Net: NetName=3v3 Pin=U1R-43
+Removed Pin From Net: NetName=3v3 Pin=U1R-44
+Removed Pin From Net: NetName=3v3 Pin=U1R-48
+Removed Pin From Net: NetName=3v3 Pin=U1R-49
+Removed Pin From Net: NetName=GND Pin=U1R-57
+Removed Pin From Net: NetName=GND Pin=U2C-2
+Removed Pin From Net: NetName=5V Pin=U2C-3
+Removed Pin From Net: NetName=3v3 Pin=U2C-5
+Removed Pin From Net: NetName=CAN_N Pin=U2C-6
+Removed Pin From Net: NetName=CAN_P Pin=U2C-7
+Removed Pin From Net: NetName=GND Pin=U2R-4
+Removed Pin From Net: NetName=3v3 Pin=U2R-8
+Removed Pin From Net: NetName=NetC27_2 Pin=U14-7
+Removed Pin From Net: NetName=GND Pin=U15-5
+Removed Pin From Net: NetName=NetC28_2 Pin=U15-7
+Removed Pin From Net: NetName=GND Pin=U16-3
+Removed Pin From Net: NetName=-5 Pin=U16-4
+Removed Pin From Net: NetName=GND Pin=U16-5
+Removed Pin From Net: NetName=HydrophoneInFiltered Pin=U16-7
+Removed Pin From Net: NetName=+5 Pin=U16-8
+Removed Pin From Net: NetName=GND Pin=Y1R-2
+Removed Pin From Net: NetName=GND Pin=Y1R-4
+Removed Member From Class: ClassName=U_Receiving Member=C35
+Removed Member From Class: ClassName=U_Receiving Member=C40
+Removed Member From Class: ClassName=U_Transmission Member=SB2
+Removed Member From Class: ClassName=U_Receiving Member=TP24
+Removed Member From Class: ClassName=U_Receiving Member=U16
+Change Component Footprint: Designator=C32 Old Footprint=CAPACITOR_0603 New Footprint=FP-0603-L_1_6_0_15-W_0_81-IPC_A
+Change Component Comment : Designator=C32 Old Comment=100nF Ceramic 6.3V New Comment=1n
+Change Component Comment : Designator=R35 Old Comment=CRCW0603453RFKEA New Comment=453
+Change Component Comment : Designator=R25 Old Comment=ERJ-3EKF1073V New Comment=107K
+Change Component Comment : Designator=R27 Old Comment=ERJ-3EKF1073V New Comment=107K
+Change Component Comment : Designator=R31 Old Comment=ERJ-3EKF5362V New Comment=53.6K
+Change Component Comment : Designator=R32 Old Comment=ERJ-3EKF5362V New Comment=53.6K
+Change Component Comment : Designator=R33 Old Comment=ERJ-3EKF7870V New Comment=787
+Change Component Comment : Designator=R34 Old Comment=ERJ-3EKF7870V New Comment=787
+Change Component Comment : Designator=R26 Old Comment=RC0603FR-07255KL New Comment=255K
+Change Component Comment : Designator=R30 Old Comment=RMCF0603FT31K6 New Comment=787
+Change Managed Component Library Link : Designator=C32 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=208F955F-60E5-4621-A2A8-6A1EB957F730 Old RevisionGUID= New RevisionGUID=4C0D725B-B931-4836-A434-2B2B20CA942D
+Change component parameters: Designator = "C32" ("C32"); Footprint = "CAPACITOR_0603"; UniqueID = "\KOIRSODD\WLKKPZJJ" ("\KOIRSODD\WLKKPZJJ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "1nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Imperial)"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Metric)"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "0.81mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.9mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "4000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness"; Value = "0.035inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "7.1E-05oz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "0.032inch"; VariantName = "[No Variations]"
+Added Component: Designator=R43(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG2996CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "160K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=TP33(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP34(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC28_2 Pin=C28-1
+Added Pin To Net: NetName=NetC29_1 Pin=C34-1
+Added Pin To Net: NetName=NetC28_2 Pin=R26-1
+Added Pin To Net: NetName=NetC34_2 Pin=R27-1
+Added Pin To Net: NetName=NetC27_2 Pin=R30-2
+Added Pin To Net: NetName=-24 Pin=R43-2
+Added Pin To Net: NetName=+5 Pin=TP24-TP
+Added Pin To Net: NetName=-5 Pin=TP33-TP
+Added Pin To Net: NetName=HydrophoneInFiltered Pin=TP34-TP
+Added Pin To Net: NetName=NetC27_2 Pin=U14-1
+Added Pin To Net: NetName=NetC28_2 Pin=U14-7
+Added Pin To Net: NetName=HydrophoneInFiltered Pin=U15-1
+Change Net Name : Old Net Name=NetC27_2 New Net Name=Stage1Out
+Change Net Name : Old Net Name=NetC28_2 New Net Name=Stage2Out
+Change Net Name : Old Net Name=NetR22_2 New Net Name=GainOut
+Added Pin To Net: NetName=NetC28_2 Pin=C28-2
+Added Pin To Net: NetName=NetC28_2 Pin=C32-2
+Added Pin To Net: NetName=NetC28_2 Pin=R30-1
+Added Pin To Net: NetName=NetC28_2 Pin=R35-2
+Added Net: Name=NetC28_2
+Added Pin To Net: NetName=NetC32_1 Pin=C32-1
+Added Pin To Net: NetName=NetC32_1 Pin=R26-2
+Added Pin To Net: NetName=NetC32_1 Pin=U14-6
+Added Net: Name=NetC32_1
+Added Pin To Net: NetName=NetR43_1 Pin=R43-1
+Added Pin To Net: NetName=NetR43_1 Pin=U2-3
+Added Net: Name=NetR43_1
+Added Member To Class: ClassName=U_Transmission Member=Component R43 160k Ohm 1% 1/16W
+Added Member To Class: ClassName=PowerAndConnections Member=Component TP24 PCB Test Point
+Added Member To Class: ClassName=PowerAndConnections Member=Component TP33 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP34 PCB Test Point
+Added Room: Name=U_Transmission
