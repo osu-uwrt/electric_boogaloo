@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=SERVO_3V3 Pin=U1R-35
+Removed Pin From Net: NetName=NetSB1_1 Pin=U1R-36
+Change Component Designator: OldDesignator=DRVOFF NewDesignator=TP1
+Change Component Designator: OldDesignator=EN3 NewDesignator=TP7
+Change Component Designator: OldDesignator=EN4 NewDesignator=TP8
+Change Component Designator: OldDesignator=nSlEEP NewDesignator=TP4
+Change Component Designator: OldDesignator=PH3 NewDesignator=TP9
+Change Component Designator: OldDesignator=PH4 NewDesignator=TP10
+Added Pin To Net: NetName=NetSB1_1 Pin=U1R-35
+Added Pin To Net: NetName=SERVO_3V3 Pin=U1R-36
+Added Room: Name=HBridge
