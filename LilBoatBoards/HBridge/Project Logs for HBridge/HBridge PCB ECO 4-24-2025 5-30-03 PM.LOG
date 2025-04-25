@@ -1,0 +1,35 @@
+Change Component Description : Designator=F1 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F2 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F4 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F5 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F3 Old Description=Eaton New Description=Eaton  | 60A | 80V DC | SMD | Fast Blow | 2-SMD
+Change Component Description : Designator=D1 Old Description=Zener Diode New Description=Zener Diode | 10 V | 410 mW | SOD 123
+Added Component: Designator=J4(CONN_MOLEX_MINIFIT JR_12 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/ps/PS-5556-001.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM21356-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J4-1
+Added Pin To Net: NetName=SERVO_5V Pin=J4-2
+Added Pin To Net: NetName=GND_RP2CAN Pin=J4-3
+Added Pin To Net: NetName=12V Pin=J4-4
+Added Pin To Net: NetName=SERVO_5V Pin=J4-5
+Added Pin To Net: NetName=GND_RP2CAN Pin=J4-6
+Added Pin To Net: NetName=12V Pin=J4-7
+Added Pin To Net: NetName=SERVO_5V Pin=J4-8
+Added Pin To Net: NetName=GND_RP2CAN Pin=J4-9
+Added Pin To Net: NetName=12V Pin=J4-10
+Added Pin To Net: NetName=SERVO_5V Pin=J4-11
+Added Pin To Net: NetName=GND_RP2CAN Pin=J4-12
+Added Member To Class: ClassName=HBridge Member=Component J4 Mini-Fit Jr R/A
+Added Member To Class: ClassName=HBridge Member=Component U3 DRV8243HQRXYRQ1
+Added Room: Name=HBridge

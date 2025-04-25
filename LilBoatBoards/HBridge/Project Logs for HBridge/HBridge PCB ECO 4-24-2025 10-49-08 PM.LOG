@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=VCC Pin=F4_3-1
+Removed Pin From Net: NetName=NetC6_2 Pin=F4_3-2
+Removed Pin From Net: NetName=HBRIDGE4_OUT2 Pin=J3-1
+Removed Pin From Net: NetName=HBRIDGE4_OUT1 Pin=J3-2
+Removed Pin From Net: NetName=HBRIDGE3_OUT2 Pin=J3-3
+Removed Pin From Net: NetName=HBRIDGE3_OUT1 Pin=J3-4
+Removed Pin From Net: NetName=HBRIDGE2_OUT2 Pin=J3-5
+Removed Pin From Net: NetName=HBRIDGE2_OUT1 Pin=J3-6
+Removed Pin From Net: NetName=HBRIDGE1_OUT2 Pin=J3-7
+Removed Pin From Net: NetName=HBRIDGE1_OUT1 Pin=J3-8
+Added Component: Designator=F4(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0685H9150-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=F4-1
+Added Pin To Net: NetName=NetC6_2 Pin=F4-2
+Added Pin To Net: NetName=HBRIDGE4_OUT1 Pin=J3-1
+Added Pin To Net: NetName=HBRIDGE4_OUT2 Pin=J3-2
+Added Pin To Net: NetName=HBRIDGE3_OUT1 Pin=J3-3
+Added Pin To Net: NetName=HBRIDGE3_OUT2 Pin=J3-4
+Added Pin To Net: NetName=HBRIDGE2_OUT1 Pin=J3-5
+Added Pin To Net: NetName=HBRIDGE2_OUT2 Pin=J3-6
+Added Pin To Net: NetName=HBRIDGE1_OUT1 Pin=J3-7
+Added Pin To Net: NetName=HBRIDGE1_OUT2 Pin=J3-8
+Added Member To Class: ClassName=HBridge Member=Component C6 100nF Ceramic 50V
+Added Member To Class: ClassName=HBridge Member=Component C8 10uF electrolytic 63V
+Added Member To Class: ClassName=HBridge Member=Component F4 0685H9150-01
+Added Member To Class: ClassName=HBridge Member=Component J3 Mini-Fit Jr R/A
+Added Member To Class: ClassName=HBridge Member=Component Q2 MOSFET P-Ch 30V 60A SO-8
+Added Member To Class: ClassName=HBridge Member=Component R22 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=HBridge Member=Component R24 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=HBridge Member=Component R26 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=HBridge Member=Component R28 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=HBridge Member=Component U3 DRV8243HQRXYRQ1
+Added Room: Name=HBridge

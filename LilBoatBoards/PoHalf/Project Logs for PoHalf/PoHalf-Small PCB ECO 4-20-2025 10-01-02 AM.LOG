@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=R19-1
+Removed Pin From Net: NetName=Solinoid_2_SW Pin=R19-2
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=R28-1
+Removed Pin From Net: NetName=Solinoid_1_SW Pin=R28-2
+Added Pin To Net: NetName=Solinoid_2_SW Pin=R19-1
+Added Pin To Net: NetName=GND Pin=R19-2
+Added Pin To Net: NetName=Solinoid_1_SW Pin=R28-1
+Added Pin To Net: NetName=GND Pin=R28-2
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists

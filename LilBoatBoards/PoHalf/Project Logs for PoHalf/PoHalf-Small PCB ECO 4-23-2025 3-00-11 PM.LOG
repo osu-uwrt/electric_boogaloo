@@ -1,0 +1,66 @@
+Added Component: Designator=DNP1(RESISTOR_0402)
+Added Component: Designator=DNP2(RESISTOR_0402)
+Added Component: Designator=J11(CONN_JST_XH254_3POS_VERT)
+Add component (AddParameter): Name = "Color"; Value = "White"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Purchase Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.amazon.com/460PCS-XH2-54-Connector-Terminal-Connectors/dp/B09DBGVX5C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "4A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NOTE"; Value = "Do not use JST 2.5mm parts with this footprint. JST does not make 2.54mm pitch pins, rather only clones make this connector!"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "XH 2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J12(CONN_JST_XH254_3POS_VERT)
+Add component (AddParameter): Name = "Color"; Value = "White"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Purchase Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.amazon.com/460PCS-XH2-54-Connector-Terminal-Connectors/dp/B09DBGVX5C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "4A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NOTE"; Value = "Do not use JST 2.5mm parts with this footprint. JST does not make 2.54mm pitch pins, rather only clones make this connector!"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "XH 2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R41(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R42(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ADC0 Pin=DNP1-1
+Added Pin To Net: NetName=GND Pin=DNP1-2
+Added Pin To Net: NetName=ADC1 Pin=DNP2-1
+Added Pin To Net: NetName=GND Pin=DNP2-2
+Added Pin To Net: NetName=5V Pin=J11-2
+Added Pin To Net: NetName=GND Pin=J11-3
+Added Pin To Net: NetName=5V Pin=J12-2
+Added Pin To Net: NetName=GND Pin=J12-3
+Added Pin To Net: NetName=ADC0 Pin=R41-2
+Added Pin To Net: NetName=ADC1 Pin=R42-2
+Added Pin To Net: NetName=Sens_0 Pin=J11-1
+Added Pin To Net: NetName=Sens_0 Pin=R41-1
+Added Net: Name=Sens_0
+Added Pin To Net: NetName=Sens_1 Pin=J12-1
+Added Pin To Net: NetName=Sens_1 Pin=R42-1
+Added Net: Name=Sens_1
+Added Member To Class: ClassName=Connector Member=Component DNP1 DNP
+Added Member To Class: ClassName=Connector Member=Component DNP2 DNP
+Added Member To Class: ClassName=Connector Member=Component J11 XH2.54 VERT
+Added Member To Class: ClassName=Connector Member=Component J12 XH2.54 VERT
+Added Member To Class: ClassName=Connector Member=Component R41 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R42 0 Ohm 1% 1/16W
