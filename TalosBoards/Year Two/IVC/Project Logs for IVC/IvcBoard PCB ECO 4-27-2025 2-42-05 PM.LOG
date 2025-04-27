@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=TempShtdwnState Pin=U1R-11
+Added Component: Designator=U16(TSOT-23_S6)
+Add component (AddParameter): Name = "Circuit"; Value = "SPST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.analog.com/media/en/technical-documentation/data-sheets/max4510-max4520.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "On resistance"; Value = "160Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-23-6 Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "MAX4520EUT+TCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "9-36V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TempShtdwnState Pin=U1R-41
+Added Pin To Net: NetName=+24 Pin=U16-1
+Added Pin To Net: NetName=-24 Pin=U16-2
+Added Pin To Net: NetName=-24 Pin=U16-3
+Added Pin To Net: NetName=GND Pin=U16-4
+Added Pin To Net: NetName=NetSB3_1 Pin=U16-6
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11
+Added Pin To Net: NetName=PwrEn Pin=U1R-40
+Added Pin To Net: NetName=PwrEn Pin=U16-5
+Added Net: Name=PwrEn
+Added Member To Class: ClassName=U_Transmission Member=Component U16 Analog Switch SPST-NO
