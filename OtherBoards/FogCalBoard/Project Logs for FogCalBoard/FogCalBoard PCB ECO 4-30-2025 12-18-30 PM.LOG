@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=3V3 Pin=R17-1
+Removed Pin From Net: NetName=GND Pin=R17-3
+Removed Member From Class: ClassName=FogCalBoard Member=R17
+Added Component: Designator=J?(CONN_JST_PH_3POS_VERT)
+Added Pin To Net: NetName=3V3 Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_2 Pin=U1R-38
+Added Net: Name=NetJ?_2
+Added Member To Class: ClassName=FogCalBoard Member=Component J? JST PH 3 Pos Vertical

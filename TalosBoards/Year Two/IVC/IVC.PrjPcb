@@ -1145,6 +1145,10 @@ DItemRevisionGUID=
 Path=C:\Users\brach\Documents\Stuff\Projects\UWRT\lilboat\electric_boogaloo\Device_Sheets\
 IncludeSubFolders=1
 
+[DeviceSheetFolder2]
+Path=C:\Users\brach\Documents\Stuff2\Projects\UWRT\electric_boogaloo\Device_Sheets\
+IncludeSubFolders=1
+
 [Parameter1]
 Name=BoardRevision
 Value=1.0

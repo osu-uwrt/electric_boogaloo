@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=5V Pin=D10-5
+Added Pin To Net: NetName=3V3_BT Pin=D10-5
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
+Added Room: Name=U_Transmission

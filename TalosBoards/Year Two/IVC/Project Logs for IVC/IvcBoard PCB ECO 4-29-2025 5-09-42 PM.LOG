@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=LEAK Pin=U1R-11
+Added Pin To Net: NetName=LEAK Pin=U1R-3
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11

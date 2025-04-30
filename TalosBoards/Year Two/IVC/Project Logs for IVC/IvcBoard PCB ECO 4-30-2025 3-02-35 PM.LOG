@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C48
+Change Component Designator: OldDesignator=C? NewDesignator=C49
+Change Component Designator: OldDesignator=SB? NewDesignator=SB21
+Change Component Designator: OldDesignator=TP? NewDesignator=TP35
+Change Component Designator: OldDesignator=TP? NewDesignator=TP36
+Change Component Designator: OldDesignator=TP? NewDesignator=TP37
+Change Component Designator: OldDesignator=TP? NewDesignator=TP38
+Change Component Designator: OldDesignator=U? NewDesignator=U20
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC48_1
+Added Pin To Net: NetName=NetC49_1 Pin=C49-1
+Added Pin To Net: NetName=NetC49_1 Pin=U20-7
+Added Net: Name=NetC49_1
+Added Member To Class: ClassName=U_Receiving Member=Component C49 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_Receiving Member=Component TP35 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP36 PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP38 PCB Test Point
+Added Room: Name=U_RP2040_C
+Added Room: Name=U_RP2040_with_CAN
+Added Room: Name=U_Transmission

@@ -1,0 +1,64 @@
+Removed Pin From Net: NetName=HydrophoneIn Pin=J1-3
+Removed Pin From Net: NetName=HydrophoneIn Pin=SB2-1
+Added Component: Designator=C?(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-15351-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAPACITOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datsheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-15351-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=SB?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B1JTTD101J/9844701"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TESTPOINT_1.2MM)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Added Component: Designator=U?(SOIC-8)
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=HydrophoneIn Pin=SB?-1
+Added Pin To Net: NetName=AuxIn Pin=TP?-TP
+Added Pin To Net: NetName=AuxOut Pin=TP?-TP
+Added Pin To Net: NetName=HydrophoneInFiltered Pin=TP?-TP
+Added Pin To Net: NetName=HydrophoneIn Pin=U?-2
+Added Pin To Net: NetName=HydrophoneIn Pin=U?-6
+Change Net Name : Old Net Name=HydrophoneIn New Net Name=BufferOut
+Added Pin To Net: NetName=HydrophoneIn Pin=J1-3
+Added Pin To Net: NetName=HydrophoneIn Pin=SB2-1
+Added Pin To Net: NetName=HydrophoneIn Pin=SB?-2
+Added Pin To Net: NetName=HydrophoneIn Pin=TP?-TP
+Added Pin To Net: NetName=HydrophoneIn Pin=U?-3
+Added Net: Name=HydrophoneIn
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=U?-4
+Added Net: Name=NetC?_1
+Add Net: Net with name "NetC?_1" already exists
+Added Member To Class: ClassName=U_Receiving Member=Component C? 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_Receiving Member=Component C? 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_Receiving Member=Component SB? 0 Ohm Jumper No Fit
+Added Member To Class: ClassName=U_Receiving Member=Component TP? PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP? PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP? PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component TP? PCB Test Point
+Added Member To Class: ClassName=U_Receiving Member=Component U? IC OPAMP GP 1 CIRCUIT 8SOIC

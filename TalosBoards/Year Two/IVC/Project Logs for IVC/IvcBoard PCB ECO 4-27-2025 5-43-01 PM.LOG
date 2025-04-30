@@ -1,0 +1,12 @@
+Added Component: Designator=D10(SOT 23-6L)
+Add component (AddParameter): Name = "Breakdown Voltage (Min)"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage (Max)"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Standoff Voltage (Typ)"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RCLAMP0504SCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BM83_USB_N Pin=D10-1
+Added Pin To Net: NetName=GND Pin=D10-2
+Added Pin To Net: NetName=5V Pin=D10-5
+Added Pin To Net: NetName=BM83_USB_P Pin=D10-6
+Added Member To Class: ClassName=U_Bluetooth Member=Component D10 TVS DIODE 5VWM 25VC SOT23-6

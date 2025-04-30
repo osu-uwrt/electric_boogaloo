@@ -1,0 +1,17 @@
+Added Component: Designator=R17(TRIM_TC33X-2-203E)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "TC33X-2-203ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608 Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/TC33X-2-203E/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TC33X-2-203E/Bourns/view-part/312812/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "652-TC33X-2-203E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=R17-1
+Added Pin To Net: NetName=GND Pin=R17-3
+Added Pin To Net: NetName=NetR17_2 Pin=R17-2
+Added Pin To Net: NetName=NetR17_2 Pin=U1R-38
+Added Net: Name=NetR17_2
+Added Member To Class: ClassName=FogCalBoard Member=Component R17 TC33X-2-203E

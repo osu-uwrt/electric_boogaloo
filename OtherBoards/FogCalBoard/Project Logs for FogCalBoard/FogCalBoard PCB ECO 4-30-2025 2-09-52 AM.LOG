@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=HEAT_OUT Pin=Q1-2
+Removed Pin From Net: NetName=+12 Pin=Q1-3
+Removed Pin From Net: NetName=3V3 Pin=R9-2
+Removed Pin From Net: NetName=NetC16_1 Pin=R9-3
+Removed Pin From Net: NetName=NetC16_1 Pin=R17-1
+Removed Pin From Net: NetName=GND Pin=R17-2
+Removed Pin From Net: NetName=THERMISTOR- Pin=U3-1
+Removed Pin From Net: NetName=NetC16_1 Pin=U3-3
+Removed Member From Class: ClassName=FogCalBoard Member=R17
+Added Pin To Net: NetName=+12 Pin=Q1-2
+Added Pin To Net: NetName=HEAT_OUT Pin=Q1-3
+Added Pin To Net: NetName=3V3 Pin=R9-1
+Added Pin To Net: NetName=NetC16_1 Pin=R9-2
+Added Pin To Net: NetName=GND Pin=R9-3
+Added Pin To Net: NetName=NetC16_1 Pin=U3-1
+Added Pin To Net: NetName=THERMISTOR- Pin=U3-3

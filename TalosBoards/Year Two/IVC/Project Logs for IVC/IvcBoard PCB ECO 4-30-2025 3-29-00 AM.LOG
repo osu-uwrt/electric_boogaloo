@@ -1,0 +1,88 @@
+Change Component Footprint: Designator=C35 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C40 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C46 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=C47 Old Footprint=CAPACITOR_0603 New Footprint=CAPACITOR_0402
+Change Component Footprint: Designator=R49 Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0402
+Change Component Footprint: Designator=R52 Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0402
+Change Component Footprint: Designator=R54 Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0402
+Change Component Footprint: Designator=R57 Old Footprint=RESISTOR_0603 New Footprint=RESISTOR_0402
+Change Component Comment : Designator=R52 Old Comment=10k Ohm 0.5% 1/10W New Comment=10k Ohm 1% 1/16W
+Change Component Comment : Designator=R57 Old Comment=10k Ohm 0.5% 1/10W New Comment=10k Ohm 1% 1/16W
+Change Component Comment : Designator=C35 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C40 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C46 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=C47 Old Comment=100nF Ceramic 6.3V New Comment=100nF Ceramic 25V
+Change Component Comment : Designator=R49 Old Comment=RMCF0603FT1K00 New Comment=1k Ohm 1% 1/16W
+Change Component Comment : Designator=R54 Old Comment=RMCF0603FT1K00 New Comment=1k Ohm 1% 1/16W
+Change component parameters: Designator = "C35" ("C35"); Footprint = "CAPACITOR_0603"; UniqueID = "\KOIRSODD\XIZHRABK" ("\KOIRSODD\XIZHRABK")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "7029569"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C40" ("C40"); Footprint = "CAPACITOR_0603"; UniqueID = "\KOIRSODD\WUGSHHNH" ("\KOIRSODD\WUGSHHNH")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "7029569"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C46" ("C46"); Footprint = "CAPACITOR_0603"; UniqueID = "\KOIRSODD\HMXIZWLV" ("\KOIRSODD\HMXIZWLV")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "7029569"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C47" ("C47"); Footprint = "CAPACITOR_0603"; UniqueID = "\KOIRSODD\ORTGVPHQ" ("\KOIRSODD\ORTGVPHQ")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "7029569"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R49" ("R49"); Footprint = "RESISTOR_0603"; UniqueID = "\KOIRSODD\RNQMLXWU" ("\KOIRSODD\RNQMLXWU")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R52" ("R52"); Footprint = "RESISTOR_0603"; UniqueID = "\KOIRSODD\SRNZUPIU" ("\KOIRSODD\SRNZUPIU")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3436CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R54" ("R54"); Footprint = "RESISTOR_0603"; UniqueID = "\KOIRSODD\FOJSFYQG" ("\KOIRSODD\FOJSFYQG")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-131KLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R57" ("R57"); Footprint = "RESISTOR_0603"; UniqueID = "\KOIRSODD\GHOOAXLK" ("\KOIRSODD\GHOOAXLK")
+Change component parameters (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "YAG3436CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"

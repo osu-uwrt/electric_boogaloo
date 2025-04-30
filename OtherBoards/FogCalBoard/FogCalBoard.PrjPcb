@@ -149,7 +149,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IKCEOXKU
 
 [Document7]
 DocumentPath=..\..\Library\Converter.SchLib
@@ -593,25 +593,273 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GKEWDAJG
 
+[Document33]
+DocumentPath=FC_Board_Order.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\ActiveBOM.VirtualBOM
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\BOM\Bill of Materials-FogCalBoard.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Capacitors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Capacitors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Connectors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Connectors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Converter.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Converter.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Crystals.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Crystals.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument11]
 DocumentPath=Project Outputs for FogCalBoard\Design Rule Check - FogCalBoard.html
 DItemRevisionGUID=
 
+[GeneratedDocument12]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Diodes.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Diodes.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\FC_Board_Order.OutJob
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\NC Drill\FogCalBoard.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\DRC\FogCalBoard.html
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\NC Drill\FogCalBoard.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\FogCalBoard.PcbDoc
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard.REP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\FogCalBoard.SchDoc
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\ExportSTEP\FogCalBoard.step
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\NC Drill\FogCalBoard.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Copper_Signal_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Copper_Signal_2.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\FogCalBoard_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Fuses.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Fuses.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Inductors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Inductors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Integrated Circuits.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Integrated Circuits.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\LFXTAL014160REEL.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Modules.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Modules.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Resistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Resistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\RP2040.SchDot
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\GerberX2\SBH_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\SOT95P280X100-3N.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Switches.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Switches.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Transformers.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Transformers.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Transistors.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\Transistors.SchLib
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\UWRT.PcbLib
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=..\..\..\..\..\..\..\..\..\TempALTIUM\FogCalBoard\Copy Files\OutOfProjectDir\UWRT.SchLib
+DItemRevisionGUID=
+
+[DeviceSheetFolder1]
+Path=C:\Users\brach\Documents\Stuff2\Projects\UWRT\electric_boogaloo\Device_Sheets\
+IncludeSubFolders=1
+
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=John Ulm
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
 Name=ProjectTitle
 Value=FOG Calibration Board
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=XX/XX/XXXX
+
 [Parameter4]
-Name=TeamLead
-Value=John Ulm
+Name=BoardRevision
+Value=1.0
+
+[DeviceSheet1]
+DocumentPath=..\..\Device_Sheets\RP2040.SchDot
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+GenerateClassCluster=0
 
 [Configuration1]
 Name=Sources
