@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C16-1
+Removed Pin From Net: NetName=GND Pin=U7-6
+Change Component Footprint: Designator=U6 Old Footprint=FP-RXY0014A-MFG New Footprint=FP-RXY0014A-MFG
+Added Pin To Net: NetName=GND_RP2CAN Pin=C16-1
+Added Pin To Net: NetName=GND_RP2CAN Pin=U7-6
+Added Room: Name=HBridge

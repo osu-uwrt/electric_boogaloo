@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rosati.33\UWRT\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
-Date     : 4/25/2025
-Time     : 3:07:53 AM
+Date     : 4/29/2025
+Time     : 10:30:54 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer And Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer 
@@ -12,7 +12,9 @@ Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,2612.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,2612.212mil) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,3118.472mil) from Top Layer to Bottom Layer And Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,3197.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer 
-Rule Violations :8
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (522.59mil,4320.318mil) from Top Layer to Bottom Layer And Via (542.077mil,4339.806mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (578.268mil,4264.641mil) from Top Layer to Bottom Layer And Via (597.755mil,4284.128mil) from Top Layer to Bottom Layer 
+Rule Violations :10
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -91,6 +93,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 30
+Violations Detected : 32
 Waived Violations : 0
 Time Elapsed        : 00:00:02
