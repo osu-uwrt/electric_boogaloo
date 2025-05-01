@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
-Date     : 4/29/2025
-Time     : 11:45:49 PM
+Date     : 5/1/2025
+Time     : 12:04:02 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer And Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer 
@@ -26,7 +26,7 @@ Rule Violations :1
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)
+Processing Rule : Width Constraint (Min=7.087mil) (Max=196.85mil) (Preferred=9.842mil) (All)
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
@@ -66,7 +66,8 @@ Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3157.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
    Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
-Rule Violations :21
+   Violation between Hole Size Constraint: (10mil < 11.811mil) Via (2767mil,898mil) from Top Layer to Bottom Layer Actual Hole Size = 10mil
+Rule Violations :22
 
 Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
 Rule Violations :0
@@ -75,7 +76,8 @@ Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
-Rule Violations :0
+   Violation between Minimum Solder Mask Sliver Constraint: (2.858mil < 3.937mil) Between Pad C6R-1(2078mil,1402.874mil) on Bottom Layer And Via (2073mil,1373mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [2.858mil]
+Rule Violations :1
 
 Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
 Rule Violations :0
@@ -93,6 +95,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 32
+Violations Detected : 34
 Waived Violations : 0
 Time Elapsed        : 00:00:01
