@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\rosati.33\UWRT\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
+PCB File : C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
 Date     : 4/29/2025
-Time     : 11:29:20 PM
+Time     : 11:45:49 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
    Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer And Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer 
@@ -32,13 +32,13 @@ Rule Violations :0
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=2.953mil) (All)
-Rule Violations :0
-
 Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=9.842mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=2.953mil) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=80.000) (All)
@@ -95,4 +95,4 @@ Rule Violations :0
 
 Violations Detected : 32
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
