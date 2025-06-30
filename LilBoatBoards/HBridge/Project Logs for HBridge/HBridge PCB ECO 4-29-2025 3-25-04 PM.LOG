@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=12V Pin=Q5-1
+Removed Pin From Net: NetName=12V Pin=Q5-2
+Removed Pin From Net: NetName=12V Pin=Q5-3
+Removed Pin From Net: NetName=12V Pin=R38-1
+Added Pin To Net: NetName=VCC Pin=Q5-1
+Added Pin To Net: NetName=VCC Pin=Q5-2
+Added Pin To Net: NetName=VCC Pin=Q5-3
+Added Pin To Net: NetName=VCC Pin=R38-1
+Added Room: Name=HBridge

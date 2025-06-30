@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=SOFTWARE_KILL Pin=U1R-4
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-13
+Change Net Name : Old Net Name=FAN_SWITCH New Net Name=ADC0
+Change Net Name : Old Net Name=FAN_TACH New Net Name=ADC1
+Change Net Name : Old Net Name=NetU1R_35 New Net Name=PHYS_KILL
+Change Net Name : Old Net Name=NetU1R_36 New Net Name=SDA_0_1
+Change Net Name : Old Net Name=NetU1R_37 New Net Name=SCL_0_1
+Change Net Name : Old Net Name=NetU1R_38 New Net Name=SDA_1
+Change Net Name : Old Net Name=NetU1R_39 New Net Name=SCL_1
+Change Net Name : Old Net Name=PHYS_KILL New Net Name=NetU1R_3
+Change Net Name : Old Net Name=SCL New Net Name=SCL_0
+Change Net Name : Old Net Name=SDA New Net Name=SDA_0
+Added Pin To Net: NetName=NetU1R_4 Pin=U1R-4
+Added Net: Name=NetU1R_4

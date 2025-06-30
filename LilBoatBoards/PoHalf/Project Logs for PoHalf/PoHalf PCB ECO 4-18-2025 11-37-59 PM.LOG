@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=GND Pin=J4-N
+Removed Pin From Net: NetName=V+ Pin=J4-P
+Change Component Footprint: Designator=J4 Old Footprint=AMASS_XT90PW-M New Footprint=CONN_ANDERSON_PP45_4 POS_R/A
+Change Component Comment : Designator=J4 Old Comment=XT90-M R/A New Comment=PP45 R/A
+Change component parameters: Designator = "J4" ("J4"); Footprint = "AMASS_XT90PW-M"; UniqueID = "\YPWFYTBZ" ("\YPWFYTBZ")
+Change component parameters (AddParameter): Name = "Color"; Value = "Red/Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Anderson"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "7.9mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "PowerPole 45"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 4"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2243-1337G1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "2243-1336G1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "2243-1327-BK-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 4"; Value = "A102007-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=J4-1
+Added Pin To Net: NetName=V+ Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-4

@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=+24 Pin=C9-1
+Removed Pin From Net: NetName=+24 Pin=C15-2
+Removed Pin From Net: NetName=+24 Pin=C16-1
+Removed Pin From Net: NetName=+24 Pin=C17-1
+Removed Pin From Net: NetName=+24 Pin=D4-1
+Removed Pin From Net: NetName=+24 Pin=SB3-2
+Removed Pin From Net: NetName=+24 Pin=TP11-TP
+Removed Pin From Net: NetName=+24 Pin=U2-5
+Removed Pin From Net: NetName=+24 Pin=U3-2
+Removed Pin From Net: NetName=+24 Pin=U6-3
+Removed Pin From Net: NetName=+24 Pin=U9-7
+Change Net Name : Old Net Name=+24 New Net Name=-24
+Added Pin To Net: NetName=+24 Pin=C9-1
+Added Pin To Net: NetName=+24 Pin=C15-2
+Added Pin To Net: NetName=+24 Pin=C16-1
+Added Pin To Net: NetName=+24 Pin=C17-1
+Added Pin To Net: NetName=+24 Pin=D4-1
+Added Pin To Net: NetName=+24 Pin=SB3-2
+Added Pin To Net: NetName=+24 Pin=TP11-TP
+Added Pin To Net: NetName=+24 Pin=U2-5
+Added Pin To Net: NetName=+24 Pin=U3-2
+Added Pin To Net: NetName=+24 Pin=U6-3
+Added Pin To Net: NetName=+24 Pin=U9-7
+Added Net: Name=+24
+Added Rule: Name=Schematic Supply Nets

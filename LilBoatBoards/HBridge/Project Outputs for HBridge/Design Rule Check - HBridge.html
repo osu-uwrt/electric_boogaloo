@@ -1,0 +1,466 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5/1/2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:04:02 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc" class="file"><acronym title="C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc">C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">34</td></tr>
+</table>
+</td>
+</table><a name="ID5ZB4C5R4I1WPF5BWJ0P4T41QXLJT3JPZ2PIZWRCBL3YKSIU2ZEVJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1K0PR33ATCTULPNZ5GSW5UBMYHJNNB4YE1XFQQGTFH1WHIIHOZHO">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDWYXNMVPDI4GEX204VDXIMZPDDX0Y1JVOBTAXBNE5K3XBXJJJFN">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBSXNLJP1VIUGFTZJZDGA4KELHMWEYRGAJMDGD0PLKK0513JONPNH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0LTPNYIYM4THFCFLSPPDUZGDYIPK4DH4IY2KU0EM55S2TK5AID3">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2XQ5G34O4U35K30AMV5T3CL3LGVTFC0A0ISDCFL20RR4C40ELFEK">Width Constraint (Min=7.087mil) (Max=196.85mil) (Preferred=9.842mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEZH2R21WRDFOI0XVSND2LB3FOGBZ1YPW31IULVNOTYBDJY42I4FF">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5N4H0F23DJMGJLQWJMHNZH3IQBNZ5S2I3LPFD4CQ1PEI14R4EJQN">Minimum Annular Ring (Minimum=5.118mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4YSCGOFAKQCMB5SPGUNLUBACCFXVF4K4LOAON1PROVPWIC5PO4PN">Minimum Annular Ring (Minimum=9.842mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDP5KSWX155GM0L3IRIGKPC3MPBCPBNLRUO45K5BV253PVLM1BLBL">Minimum Annular Ring (Minimum=2.953mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDY32NFLYZ53NDB3WRT0UN3SIDNJ24L2HFEPZ2LKFJTIAT3FWPJVCL">Acute Angle Constraint (Minimum=80.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV1UEFL1STKVHOIFVYOSW5GVVAHRQVSZCXYM5UTKAK1MLV0EBZFMK">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">22</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVGEXBLDYCDGCENSVIIBUIMFPUMTFOGQ3HJZKWDOCZ5E40CURLXAL">Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYFDSXSJY2ITBDLQIPQB4JKHPTFUAMLWMO35VQUHOFUUYBXD1M4IC">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGWLM0ZHYL4OOPHCKOSL3SVJ4IBNMZP55U4NBYWKRDS10RCI5TOMP">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCK1Y3CBJUWORCDOEFT3OX3RS4HBV1SISSEHNP5CFYSL2MSEVW0NM">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUQCZGWFREPF0OVJITMZUILXTXNWNKEDBUSRT2UMWWRAW1TUGSEDO">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDS0E4VNISLXZBDP5BAO1H0CXQ4T3HKYFGSJFQWNXRILMIH0AOARE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWVICA2WIA3J1N0CIIKGX4DVK1G4B32YWDILU5DCP453FAISGZP1G">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCS25M4GLA23APZ3ZDN3FQY5UELG42QAIVYYWMBF0F00CCLHS25E">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">34</td>
+</tr>
+</table><br><a name="ID1K0PR33ATCTULPNZ5GSW5UBMYHJNNB4YE1XFQQGTFH1WHIIHOZHO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=7.874mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1445.343mil|Location2.X=1456.042mil|Location1.Y=3693.122mil|Location2.Y=3703.821mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1445.343mil|Location2.X=1456.042mil|Location1.Y=3693.122mil|Location2.Y=3703.821mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer And Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1445.343mil|Location2.X=1456.042mil|Location1.Y=3771.863mil|Location2.Y=3782.561mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1445.343mil|Location2.X=1456.042mil|Location1.Y=3771.863mil|Location2.Y=3782.561mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1436.913mil,3777.212mil) from Top Layer to Bottom Layer And Via (1464.473mil,3777.212mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.185mil|Location2.X=1456.883mil|Location1.Y=1943.122mil|Location2.Y=1953.821mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.185mil|Location2.X=1456.883mil|Location1.Y=1943.122mil|Location2.Y=1953.821mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.754mil,1948.472mil) from Top Layer to Bottom Layer And Via (1465.313mil,1948.472mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.185mil|Location2.X=1456.883mil|Location1.Y=2021.863mil|Location2.Y=2032.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.185mil|Location2.X=1456.883mil|Location1.Y=2021.863mil|Location2.Y=2032.562mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.754mil,2027.212mil) from Top Layer to Bottom Layer And Via (1465.313mil,2027.212mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=2528.122mil|Location2.Y=2538.821mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=2528.122mil|Location2.Y=2538.821mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.763mil,2533.472mil) from Top Layer to Bottom Layer And Via (1465.322mil,2533.472mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=2606.863mil|Location2.Y=2617.561mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=2606.863mil|Location2.Y=2617.561mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.763mil,2612.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,2612.212mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=3113.122mil|Location2.Y=3123.821mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=3113.122mil|Location2.Y=3123.821mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.763mil,3118.472mil) from Top Layer to Bottom Layer And Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=3191.863mil|Location2.Y=3202.561mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1446.194mil|Location2.X=1456.892mil|Location1.Y=3191.863mil|Location2.Y=3202.561mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (1437.763mil,3197.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=526.984mil|Location2.X=539.136mil|Location1.Y=4323.346mil|Location2.Y=4335.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=526.984mil|Location2.X=539.136mil|Location1.Y=4323.346mil|Location2.Y=4335.411mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (522.59mil,4320.318mil) from Top Layer to Bottom Layer And Via (542.077mil,4339.806mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=582.662mil|Location2.X=594.814mil|Location1.Y=4267.668mil|Location2.Y=4279.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=582.662mil|Location2.X=594.814mil|Location1.Y=4267.668mil|Location2.Y=4279.734mil|Absolute=True">Clearance Constraint: (7.874mil &lt; 9.449mil) Between Via (578.268mil,4264.641mil) from Top Layer to Bottom Layer And Via (597.755mil,4284.128mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBSXNLJP1VIUGFTZJZDGA4KELHMWEYRGAJMDGD0PLKK0513JONPNH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=328.295mil|Location2.X=526.11mil|Location1.Y=883.11mil|Location2.Y=3067.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=328.295mil|Location2.X=526.11mil|Location1.Y=883.11mil|Location2.Y=3067.89mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J6-3(363.295mil,918.11mil) on Multi-Layer And Pad J1-5(491.11mil,3032.89mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDV1UEFL1STKVHOIFVYOSW5GVVAHRQVSZCXYM5UTKAK1MLV0EBZFMK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.076mil|Location2.X=1397.001mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.076mil|Location2.X=1397.001mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1391.638mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.076mil|Location2.X=1397.001mil|Location1.Y=3772.65mil|Location2.Y=3782.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.076mil|Location2.X=1397.001mil|Location1.Y=3772.65mil|Location2.Y=3782.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1391.638mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.917mil|Location2.X=1397.842mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.917mil|Location2.X=1397.842mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1392.479mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.917mil|Location2.X=1397.842mil|Location1.Y=2022.65mil|Location2.Y=2032.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.917mil|Location2.X=1397.842mil|Location1.Y=2022.65mil|Location2.Y=2032.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1392.479mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.926mil|Location2.X=1397.851mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.926mil|Location2.X=1397.851mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1392.488mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.926mil|Location2.X=1397.851mil|Location1.Y=3192.65mil|Location2.Y=3202.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1387.926mil|Location2.X=1397.851mil|Location1.Y=3192.65mil|Location2.Y=3202.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1392.488mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1432.351mil|Location2.X=1442.276mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1432.351mil|Location2.X=1442.276mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1432.351mil|Location2.X=1442.276mil|Location1.Y=3772.65mil|Location2.Y=3782.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1432.351mil|Location2.X=1442.276mil|Location1.Y=3772.65mil|Location2.Y=3782.646mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1436.913mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.192mil|Location2.X=1443.117mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.192mil|Location2.X=1443.117mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1437.754mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.192mil|Location2.X=1443.117mil|Location1.Y=2022.65mil|Location2.Y=2032.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.192mil|Location2.X=1443.117mil|Location1.Y=2022.65mil|Location2.Y=2032.646mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1437.754mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.201mil|Location2.X=1443.126mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.201mil|Location2.X=1443.126mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1437.763mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.201mil|Location2.X=1443.126mil|Location1.Y=3192.65mil|Location2.Y=3202.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.201mil|Location2.X=1443.126mil|Location1.Y=3192.65mil|Location2.Y=3202.646mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1437.763mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3693.91mil|Location2.Y=3703.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3733.28mil|Location2.Y=3743.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3733.28mil|Location2.Y=3743.275mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1464.473mil,3737.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3772.65mil|Location2.Y=3782.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1459.91mil|Location2.X=1469.835mil|Location1.Y=3772.65mil|Location2.Y=3782.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1464.473mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=1943.91mil|Location2.Y=1953.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.313mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=1983.28mil|Location2.Y=1993.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=1983.28mil|Location2.Y=1993.275mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.313mil,1987.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=2022.65mil|Location2.Y=2032.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.752mil|Location2.X=1470.676mil|Location1.Y=2022.65mil|Location2.Y=2032.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.313mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3113.91mil|Location2.Y=3123.905mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3153.28mil|Location2.Y=3163.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3153.28mil|Location2.Y=3163.275mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.322mil,3157.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3192.65mil|Location2.Y=3202.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1460.761mil|Location2.X=1470.685mil|Location1.Y=3192.65mil|Location2.Y=3202.645mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 11.811mil) Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.375mil|Location2.X=2772.625mil|Location1.Y=892.375mil|Location2.Y=903.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2761.375mil|Location2.X=2772.625mil|Location1.Y=892.375mil|Location2.Y=903.625mil|Absolute=True">Hole Size Constraint: (10mil &lt; 11.811mil) Via (2767mil,898mil) from Top Layer to Bottom Layer Actual Hole Size = 10mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGWLM0ZHYL4OOPHCKOSL3SVJ4IBNMZP55U4NBYWKRDS10RCI5TOMP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2070.407mil|Location2.X=2075.593mil|Location1.Y=1386.332mil|Location2.Y=1391.519mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2070.407mil|Location2.X=2075.593mil|Location1.Y=1386.332mil|Location2.Y=1391.519mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.858mil &lt; 3.937mil) Between Pad C6R-1(2078mil,1402.874mil) on Bottom Layer And Via (2073mil,1373mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [2.858mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

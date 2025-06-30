@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GPIO12 Pin=J1-2
+Removed Pin From Net: NetName=+5 Pin=J1-3
+Removed Pin From Net: NetName=NetJ4_2 Pin=U6-4
+Removed Pin From Net: NetName=NetJ4_1 Pin=U6-5
+Added Pin To Net: NetName=+5 Pin=J1-2
+Added Pin To Net: NetName=GPIO12 Pin=J1-3
+Added Pin To Net: NetName=NetJ4_1 Pin=U6-4
+Added Pin To Net: NetName=NetJ4_2 Pin=U6-5
+Added Room: Name=jetson_nano_breakout_rev1

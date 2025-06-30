@@ -1,0 +1,100 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\julmp\Documents\electric_boogaloo\LilBoatBoards\HBridge\HBridge.PcbDoc
+Date     : 5/1/2025
+Time     : 12:04:02 PM
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer And Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1436.913mil,3777.212mil) from Top Layer to Bottom Layer And Via (1464.473mil,3777.212mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.754mil,1948.472mil) from Top Layer to Bottom Layer And Via (1465.313mil,1948.472mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.754mil,2027.212mil) from Top Layer to Bottom Layer And Via (1465.313mil,2027.212mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,2533.472mil) from Top Layer to Bottom Layer And Via (1465.322mil,2533.472mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,2612.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,2612.212mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,3118.472mil) from Top Layer to Bottom Layer And Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (1437.763mil,3197.212mil) from Top Layer to Bottom Layer And Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (522.59mil,4320.318mil) from Top Layer to Bottom Layer And Via (542.077mil,4339.806mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (7.874mil < 9.449mil) Between Via (578.268mil,4264.641mil) from Top Layer to Bottom Layer And Via (597.755mil,4284.128mil) from Top Layer to Bottom Layer 
+Rule Violations :10
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net VIN Between Pad J6-3(363.295mil,918.11mil) on Multi-Layer And Pad J1-5(491.11mil,3032.89mil) on Multi-Layer 
+Rule Violations :1
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=7.087mil) (Max=196.85mil) (Preferred=9.842mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=9.842mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=2.953mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=80.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1391.638mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1391.638mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1392.479mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1392.479mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1392.488mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1392.488mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1436.913mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1436.913mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1437.754mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1437.754mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1437.763mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1437.763mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1464.473mil,3698.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1464.473mil,3737.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1464.473mil,3777.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.313mil,1948.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.313mil,1987.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.313mil,2027.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3118.472mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3157.842mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (1465.322mil,3197.212mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (10mil < 11.811mil) Via (2767mil,898mil) from Top Layer to Bottom Layer Actual Hole Size = 10mil
+Rule Violations :22
+
+Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (2.858mil < 3.937mil) Between Pad C6R-1(2078mil,1402.874mil) on Bottom Layer And Via (2073mil,1373mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [2.858mil]
+Rule Violations :1
+
+Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 34
+Waived Violations : 0
+Time Elapsed        : 00:00:01

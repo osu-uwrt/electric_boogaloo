@@ -1,0 +1,7 @@
+Change Managed Component Library Link : Designator=U1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3ABE2255-6D29-48EF-954C-FE5F5E713536 New ItemGUID= Old RevisionGUID=5EDBBA56-D2B5-4BEA-B54E-912A5A621BD6 New RevisionGUID=
+Change Managed Component Library Link : Designator=U2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3ABE2255-6D29-48EF-954C-FE5F5E713536 New ItemGUID= Old RevisionGUID=5EDBBA56-D2B5-4BEA-B54E-912A5A621BD6 New RevisionGUID=
+Change Managed Component Library Link : Designator=U3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3ABE2255-6D29-48EF-954C-FE5F5E713536 New ItemGUID= Old RevisionGUID=5EDBBA56-D2B5-4BEA-B54E-912A5A621BD6 New RevisionGUID=
+Change Managed Component Library Link : Designator=U4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3ABE2255-6D29-48EF-954C-FE5F5E713536 New ItemGUID= Old RevisionGUID=5EDBBA56-D2B5-4BEA-B54E-912A5A621BD6 New RevisionGUID=
+Change Net Name : Old Net Name=dGND New Net Name=GND_RP2CAN
+Change Room Name: Old Name=U_RP2040_with_CAN New Name=HBridge
+Change Room Scope: Old Scope=InComponentClass('U_RP2040_with_CAN') New Scope=InComponentClass('HBridge')

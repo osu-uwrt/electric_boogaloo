@@ -1,0 +1,11 @@
+Removed Member From Class: ClassName=U_Bluetooth Member=TP14
+Removed Member From Class: ClassName=U_Bluetooth Member=TP15
+Removed Member From Class: ClassName=U_Bluetooth Member=TP16
+Removed Member From Class: ClassName=U_Bluetooth Member=TP17
+Removed Member From Class: ClassName=U_Bluetooth Member=TP18
+Removed Member From Class: ClassName=U_Bluetooth Member=TP19
+Removed Member From Class: ClassName=U_Bluetooth Member=TP20
+Change Net Name : Old Net Name=DM_BM83 New Net Name=BM83_USB_N
+Change Net Name : Old Net Name=DP_BM83 New Net Name=BM83_USB_P
+Added Differential Pair: Name=BM83_USB
+Added Room: Name=Designator

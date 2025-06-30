@@ -1,0 +1,17 @@
+Added Component: Designator=DNP1(RESISTOR_0402)
+Added Component: Designator=DNP2(RESISTOR_0402)
+Added Pin To Net: NetName=NetDNP1_1 Pin=DNP1-1
+Added Pin To Net: NetName=NetDNP1_1 Pin=U1R-35
+Added Net: Name=NetDNP1_1
+Added Pin To Net: NetName=NetDNP1_2 Pin=DNP1-2
+Added Pin To Net: NetName=NetDNP1_2 Pin=U1R-36
+Added Net: Name=NetDNP1_2
+Added Pin To Net: NetName=NetDNP2_1 Pin=DNP2-1
+Added Pin To Net: NetName=NetDNP2_1 Pin=U1R-40
+Added Net: Name=NetDNP2_1
+Added Pin To Net: NetName=NetDNP2_2 Pin=DNP2-2
+Added Pin To Net: NetName=NetDNP2_2 Pin=U1R-41
+Added Net: Name=NetDNP2_2
+Added Member To Class: ClassName=PowerAndConnections Member=Component DNP1 DNP
+Added Member To Class: ClassName=PowerAndConnections Member=Component DNP2 DNP
+Added Room: Name=U_Transmission

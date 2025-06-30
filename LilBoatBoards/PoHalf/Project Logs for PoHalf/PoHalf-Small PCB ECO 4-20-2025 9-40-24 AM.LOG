@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=J11 NewDesignator=J12
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Member To Class: ClassName=Connector Member=Component J12 XH2.54 VERT

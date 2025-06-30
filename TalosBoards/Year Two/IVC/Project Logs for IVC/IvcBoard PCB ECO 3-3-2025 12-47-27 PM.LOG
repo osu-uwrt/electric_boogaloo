@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=NetC14_1 Pin=U3-1
+Removed Pin From Net: NetName=GND Pin=U3-2
+Removed Pin From Net: NetName=GND Pin=U4-1
+Removed Pin From Net: NetName=NetC15_2 Pin=U4-2
+Added Pin To Net: NetName=NetC14_1 Pin=C8-1
+Added Pin To Net: NetName=NetC15_2 Pin=C9-1
+Added Pin To Net: NetName=NetC14_1 Pin=D2-2
+Added Pin To Net: NetName=NetC15_2 Pin=D4-1
+Added Pin To Net: NetName=NetC15_2 Pin=TP11-TP
+Added Pin To Net: NetName=NetC14_1 Pin=TP13-TP
+Added Pin To Net: NetName=NetC15_2 Pin=U6-3
+Added Pin To Net: NetName=NetC14_1 Pin=U6-5
+Added Pin To Net: NetName=NetC14_1 Pin=U9-4
+Added Pin To Net: NetName=NetC15_2 Pin=U9-7
+Change Net Name : Old Net Name=NetC14_1 New Net Name=-24
+Change Net Name : Old Net Name=NetC15_2 New Net Name=+24
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Default
+Add Net: Net with name "RP2040_SIG" already exists
+Add Net: Net with name "TempShtdwnState" already exists
+Add Net: Net with name "TRANSDUCER_OUT" already exists
+Add Class: Class already exists: Designator

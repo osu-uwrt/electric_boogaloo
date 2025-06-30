@@ -1,0 +1,90 @@
+Removed Pin From Net: NetName=+5 Pin=C22-1
+Removed Pin From Net: NetName=+5 Pin=C23-1
+Removed Pin From Net: NetName=-5 Pin=C26-2
+Removed Pin From Net: NetName=-5 Pin=C27-2
+Removed Pin From Net: NetName=-5 Pin=C28-2
+Removed Pin From Net: NetName=-5 Pin=C29-2
+Removed Pin From Net: NetName=-5 Pin=C30-2
+Removed Pin From Net: NetName=GND Pin=C32-1
+Removed Pin From Net: NetName=-5 Pin=C32-2
+Removed Pin From Net: NetName=GND Pin=C33-1
+Removed Pin From Net: NetName=-5 Pin=C33-2
+Removed Pin From Net: NetName=GND Pin=C34-1
+Removed Pin From Net: NetName=-5 Pin=C34-2
+Removed Pin From Net: NetName=GND Pin=C35-1
+Removed Pin From Net: NetName=-5 Pin=C35-2
+Removed Pin From Net: NetName=+5 Pin=J2-5
+Removed Pin From Net: NetName=GND Pin=L1-1
+Removed Pin From Net: NetName=+5 Pin=Q2-1
+Removed Pin From Net: NetName=+5 Pin=Q2-2
+Removed Pin From Net: NetName=+5 Pin=Q2-5
+Removed Pin From Net: NetName=+5 Pin=Q2-6
+Removed Pin From Net: NetName=+5 Pin=Q2-8
+Removed Pin From Net: NetName=+5 Pin=R22-1
+Removed Pin From Net: NetName=-5 Pin=R23-2
+Removed Pin From Net: NetName=-5 Pin=R25-2
+Removed Pin From Net: NetName=GND Pin=R26-1
+Removed Pin From Net: NetName=-5 Pin=R27-1
+Removed Pin From Net: NetName=-5 Pin=R29-2
+Removed Pin From Net: NetName=+5 Pin=U8-1
+Removed Pin From Net: NetName=-5 Pin=U8-6
+Removed Pin From Net: NetName=GND Pin=U8-9
+Removed Pin From Net: NetName=-5 Pin=U8-11
+Removed Pin From Net: NetName=GND Pin=U8-17
+Removed Member From Class: ClassName=PowerAndConnections Member=C24
+Removed Member From Class: ClassName=PowerAndConnections Member=C25
+Removed Member From Class: ClassName=PowerAndConnections Member=C26
+Removed Member From Class: ClassName=PowerAndConnections Member=C27
+Removed Member From Class: ClassName=PowerAndConnections Member=C28
+Removed Member From Class: ClassName=PowerAndConnections Member=C29
+Removed Member From Class: ClassName=PowerAndConnections Member=C30
+Removed Member From Class: ClassName=PowerAndConnections Member=C31
+Removed Member From Class: ClassName=PowerAndConnections Member=C32
+Removed Member From Class: ClassName=PowerAndConnections Member=C33
+Removed Member From Class: ClassName=PowerAndConnections Member=C34
+Removed Member From Class: ClassName=PowerAndConnections Member=C35
+Removed Member From Class: ClassName=PowerAndConnections Member=CR1
+Removed Member From Class: ClassName=PowerAndConnections Member=L1
+Removed Member From Class: ClassName=PowerAndConnections Member=Q2
+Removed Member From Class: ClassName=PowerAndConnections Member=R22
+Removed Member From Class: ClassName=PowerAndConnections Member=R23
+Removed Member From Class: ClassName=PowerAndConnections Member=R24
+Removed Member From Class: ClassName=PowerAndConnections Member=R25
+Removed Member From Class: ClassName=PowerAndConnections Member=R26
+Removed Member From Class: ClassName=PowerAndConnections Member=R27
+Removed Member From Class: ClassName=PowerAndConnections Member=R28
+Removed Member From Class: ClassName=PowerAndConnections Member=R29
+Change Component Footprint: Designator=C21 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0603
+Change Component Footprint: Designator=C22 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0603
+Change Component Footprint: Designator=C23 Old Footprint=CAPACITOR_0402 New Footprint=CAPACITOR_0603
+Change Component Footprint: Designator=U8 Old Footprint=PWP0016A_N New Footprint=AM1DS-0505DH30LPZ
+Change Component Comment : Designator=C22 Old Comment=1uF Ceramic 16V New Comment=4.7uF Ceramic 6.3V
+Change Component Comment : Designator=C21 Old Comment=1uF Ceramic 16V New Comment=CL10X106MO8NRNC
+Change Component Comment : Designator=C23 Old Comment=1uF Ceramic 16V New Comment=CL10X106MO8NRNC
+Change Component Comment : Designator=U8 Old Comment=LM25088MH-1/NOPB New Comment=AM1DS-0505DH30LPZ
+Change Managed Component Library Link : Designator=U8 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=5D3A544C-5484-4B98-9B4A-A3B8069C3924 New ItemGUID= Old RevisionGUID=EAE0CE96-2B92-4B2C-8A58-C46A15E74EA0 New RevisionGUID=
+Change component parameters: Designator = "C21" ("C21"); Footprint = "CAPACITOR_0402"; UniqueID = "\XYIRZXPJ" ("\XYIRZXPJ")
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C22" ("C22"); Footprint = "CAPACITOR_0402"; UniqueID = "\IMAUASEP" ("\IMAUASEP")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-2087-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C23" ("C23"); Footprint = "CAPACITOR_0402"; UniqueID = "\KVUHDRBC" ("\KVUHDRBC")
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U8" ("U8"); Footprint = "PWP0016A_N"; UniqueID = "\EECQYYVG" ("\EECQYYVG")
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=-5 Pin=U8-4
+Added Pin To Net: NetName=GND Pin=U8-5
+Added Pin To Net: NetName=+5 Pin=U8-6
+Added Pin To Net: NetName=5V Pin=C22-1
+Added Pin To Net: NetName=5V Pin=J2-5
+Added Pin To Net: NetName=5V Pin=U8-1
+Added Net: Name=5V
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
+Added Rule: Name=Schematic Supply Nets_2

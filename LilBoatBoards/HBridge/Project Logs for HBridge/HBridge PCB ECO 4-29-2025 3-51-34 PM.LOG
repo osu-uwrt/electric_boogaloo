@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=HBRIDGE4_nFAULT Pin=U7-13
+Removed Pin From Net: NetName=HBRIDGE1_nFAULT Pin=U7-15
+Added Pin To Net: NetName=HBRIDGE1_nFAULT Pin=U7-13
+Added Pin To Net: NetName=HBRIDGE4_nFAULT Pin=U7-15
+Added Room: Name=HBridge

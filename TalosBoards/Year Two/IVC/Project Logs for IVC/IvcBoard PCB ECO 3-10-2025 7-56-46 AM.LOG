@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=BtRx Pin=U1R-12
+Added Pin To Net: NetName=BtTx Pin=U1R-13
+Added Pin To Net: NetName=BtMFB Pin=U1R-14
+Added Pin To Net: NetName=BtP0_0 Pin=U1R-15
+Added Pin To Net: NetName=BtLED1 Pin=U1R-35
+Added Pin To Net: NetName=BtLED2 Pin=U1R-36
+Added Member To Class: ClassName=U_Bluetooth Member=Component J4 USB_MICRO R/A

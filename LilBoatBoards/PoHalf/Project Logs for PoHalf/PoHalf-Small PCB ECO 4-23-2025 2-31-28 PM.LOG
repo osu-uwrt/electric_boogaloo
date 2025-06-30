@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Solinoid_1_SW Pin=U1R-9
+Removed Pin From Net: NetName=Solinoid_2_SW Pin=U1R-11
+Added Pin To Net: NetName=Solinoid_1_SW Pin=U1R-8
+Added Pin To Net: NetName=Solinoid_2_SW Pin=U1R-9
+Added Pin To Net: NetName=NetU1R_11 Pin=U1R-11
+Added Net: Name=NetU1R_11

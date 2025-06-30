@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=TransducerOut Pin=J1-1
+Added Pin To Net: NetName=TransducerOut Pin=R5-1
+Added Pin To Net: NetName=TransducerOut Pin=TP3-TP
+Change Net Name : Old Net Name=TransducerOut New Net Name=Rp2040Sig
+Added Pin To Net: NetName=TransducerOut Pin=J1-1
+Added Net: Name=TransducerOut

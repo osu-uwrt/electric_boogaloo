@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=12V Pin=J4-1
+Removed Pin From Net: NetName=SERVO_5V Pin=J4-2
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J4-3
+Removed Pin From Net: NetName=12V Pin=J4-4
+Removed Pin From Net: NetName=SERVO_5V Pin=J4-5
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J4-6
+Removed Pin From Net: NetName=12V Pin=J4-7
+Removed Pin From Net: NetName=SERVO_5V Pin=J4-8
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J4-9
+Removed Pin From Net: NetName=12V Pin=J4-10
+Removed Pin From Net: NetName=SERVO_5V Pin=J4-11
+Removed Pin From Net: NetName=GND_RP2CAN Pin=J4-12
+Removed Member From Class: ClassName=HBridge Member=J4
+Added Component: Designator=J?(CONN_MOLEX_MINIFIT JR_4 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/026013115_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM13112-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J?(CONN_MOLEX_MICROFIT_2 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM1813-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(CONN_MOLEX_MICROFIT_2 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM1813-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=HBRIDGE5_OUT2 Pin=J?-1
+Added Pin To Net: NetName=HBRIDGE5_OUT1 Pin=J?-2
+Added Pin To Net: NetName=PUMP_PWR Pin=J?-2
+Added Pin To Net: NetName=SERVO_5V Pin=J?-2
+Added Pin To Net: NetName=GND_RP2CAN Pin=J?-3
+Added Pin To Net: NetName=GND_RP2CAN Pin=J?-4
+Added Member To Class: ClassName=HBridge Member=Component J? Mini-Fit Jr R/A
+Added Member To Class: ClassName=HBridge Member=Component J? Microfit R/A
+Added Member To Class: ClassName=HBridge Member=Component J? Microfit R/A
+Added Room: Name=HBridge

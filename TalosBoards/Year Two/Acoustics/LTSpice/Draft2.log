@@ -1,22 +1,11 @@
-Circuit: * C:\Users\natha\Documents\Everything\UWRT\Electrical\GIT\electric_boogaloo\TalosBoards\Year Two\Acoustics\LTSpice\Draft2.asc
-
-Direct Newton iteration for .op point succeeded.
-
-Date: Thu Dec 19 16:18:45 2024
-Total elapsed time: 0.115 seconds.
-
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\Year Two\Acoustics\LTSpice\Draft2.asc
+Start Time: Sun Apr 27 10:18:32 2025
+solver = Normal
+Maximum thread count: 8
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2948
-traniter = 2906
-tranpoints = 1280
-accept = 1139
-rejected = 141
-matrix size = 9
-fillins = 1
-solver = Normal
-Avg thread counts: 2.4/4.1/4.1/2.4
-Matrix Compiler1:      20 opcodes  0.3/[0.1]/0.6
-Matrix Compiler2: off  [0.1]/0.2/0.1
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.073 seconds.
 

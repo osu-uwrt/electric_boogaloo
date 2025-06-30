@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=MP_S2 Pin=U1R-38
+Removed Pin From Net: NetName=MP_S0 Pin=U1R-40
+Added Pin To Net: NetName=MP_S0 Pin=U1R-38
+Added Pin To Net: NetName=MP_S2 Pin=U1R-40
+Added Room: Name=HBridge

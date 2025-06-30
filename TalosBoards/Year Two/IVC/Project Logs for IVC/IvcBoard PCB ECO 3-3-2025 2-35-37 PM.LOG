@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=+24 Pin=SB4-1
+Added Pin To Net: NetName=NetSB3_1 Pin=SB4-1
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2

@@ -1,0 +1,11 @@
+Added Component: Designator=J5(CONN_MOLEX_MICROFIT_2 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM1813-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J5-1
+Added Pin To Net: NetName=PUMP_PWR Pin=J5-2
+Added Member To Class: ClassName=HBridge Member=Component J5 Microfit R/A
