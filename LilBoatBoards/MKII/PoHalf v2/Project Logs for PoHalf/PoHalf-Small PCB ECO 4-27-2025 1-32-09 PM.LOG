@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=GND Pin=J3-1
+Removed Pin From Net: NetName=GND Pin=J3-2
+Removed Pin From Net: NetName=V+ Pin=J3-3
+Removed Pin From Net: NetName=V+ Pin=J3-4
+Change Component Footprint: Designator=J3 Old Footprint=CONN_ANDERSON_PP45_4 POS_R/A New Footprint=Redcube M4 Term 85A
+Change Component Comment : Designator=J3 Old Comment=PP45 R/A New Comment=Redcube M4 Term 85A
+Change component parameters: Designator = "J3" ("J3"); Footprint = "CONN_ANDERSON_PP45_4 POS_R/A"; UniqueID = "\JITSXKXR" ("\JITSXKXR")
+Change component parameters (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Component: Designator=J13(Redcube M4 Term 85A)
+Add component (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=V+ Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Member To Class: ClassName=Connector Member=Component J13 Redcube M4 Term 85A

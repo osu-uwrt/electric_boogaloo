@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=3V3_MEAS Pin=U7-1
+Removed Pin From Net: NetName=Vreg_MEAS Pin=U7-3
+Added Pin To Net: NetName=Vreg_MEAS Pin=U7-1
+Added Pin To Net: NetName=3V3_MEAS Pin=U7-3
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists

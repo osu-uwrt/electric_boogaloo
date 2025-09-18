@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=SCL_0_1 Pin=J8-2
+Removed Pin From Net: NetName=SDA_0_1 Pin=J8-3
+Removed Pin From Net: NetName=SCL_1 Pin=J9-2
+Removed Pin From Net: NetName=SDA_1 Pin=J9-3
+Added Pin To Net: NetName=SCL_1 Pin=J8-2
+Added Pin To Net: NetName=SDA_1 Pin=J8-3
+Added Pin To Net: NetName=SCL_0_1 Pin=J9-2
+Added Pin To Net: NetName=SDA_0_1 Pin=J9-3
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R? 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R? 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R? 4.7k Ohm 5% 1/10W

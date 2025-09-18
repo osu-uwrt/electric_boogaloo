@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=J6 Old Footprint=CONN_MOLEX_MINIFIT JR_4 POS_R/A New Footprint=CONN_MOLEX_MICROFIT_4_POS_R/A
+Change Component Comment : Designator=J6 Old Comment=Mini-Fit Jr R/A New Comment=Microfit+ R/A
+Change component parameters: Designator = "J6" ("J6"); Footprint = "CONN_MOLEX_MINIFIT JR_4 POS_R/A"; UniqueID = "\NVOAXTMP" ("\NVOAXTMP")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280400-ND"; VariantName = "[No Variations]"

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=can1_dout Pin=J6-1
+Removed Pin From Net: NetName=can1_din Pin=J6-2
+Added Pin To Net: NetName=can1_din Pin=J6-1
+Added Pin To Net: NetName=can1_dout Pin=J6-2

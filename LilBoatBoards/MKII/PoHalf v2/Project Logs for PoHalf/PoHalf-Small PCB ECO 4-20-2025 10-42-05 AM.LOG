@@ -1,0 +1,19 @@
+Added Component: Designator=J13(CONN_MOLEX_MINIFIT JR_4 POS_VERT)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Robert P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5566"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM3801-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J13-1
+Added Pin To Net: NetName=5V Pin=J13-2
+Added Pin To Net: NetName=12V Pin=J13-3
+Added Pin To Net: NetName=Vreg Pin=J13-4
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Member To Class: ClassName=Connector Member=Component J13 Mini-Fit Jr VERT
