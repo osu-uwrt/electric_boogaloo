@@ -1,0 +1,156 @@
+Removed Pin From Net: NetName=AUX_SWITCH Pin=U1R-13
+Removed Pin From Net: NetName=SOFTWARE_KILL Pin=U1R-15
+Added Component: Designator=J?(CONN_MOLEX_MINIFIT JR_4 POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/026013115_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Flip B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "13A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "4.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Minifit Jr 5569"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM13112-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FP-SOT23-IPC_A)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Base Voltage (VCBO)"; Value = "60V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Breakdown Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Saturation Voltage"; Value = "300mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Voltage (VCEO)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Continuous Collector Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitter Base Voltage (VEBO)"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gain Bandwidth Product"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "hFE Min"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.05mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Breakdown Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Collector Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "300mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "3000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "350mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Transition Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000282oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.4mm"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(FP-SOT23-IPC_A)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Base Voltage (VCBO)"; Value = "60V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Breakdown Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Saturation Voltage"; Value = "300mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Collector Emitter Voltage (VCEO)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Continuous Collector Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitter Base Voltage (VEBO)"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gain Bandwidth Product"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "hFE Min"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.05mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Breakdown Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Collector Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "300mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "3000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "350mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Transition Frequency"; Value = "300MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000282oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.4mm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD102JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD102JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RESISTOR_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Part Numer"; Value = "CR0603-JW-104ELFTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2019-RK73B1JTTD102JCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/8W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J?-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R?-1
+Added Pin To Net: NetName=3V3_RP2CAN Pin=R?-1
+Added Pin To Net: NetName=5V Pin=R?-1
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-13
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-15
+Added Pin To Net: NetName=dGND Pin=J?-3
+Added Pin To Net: NetName=dGND Pin=J?-4
+Added Net: Name=dGND
+Added Pin To Net: NetName=NetQ?_1 Pin=Q?-1
+Added Pin To Net: NetName=NetQ?_1 Pin=Q?-1
+Added Pin To Net: NetName=NetQ?_1 Pin=R?-2
+Added Net: Name=NetQ?_1
+Added Pin To Net: NetName=SERVO_5V Pin=J?-2
+Added Pin To Net: NetName=SERVO_5V Pin=Q?-2
+Added Pin To Net: NetName=SERVO_5V Pin=Q?-3
+Added Pin To Net: NetName=SERVO_5V Pin=R?-2
+Added Net: Name=SERVO_5V
+Added Pin To Net: NetName=Servo Pin=Q?-2
+Added Pin To Net: NetName=Servo Pin=Q?-3
+Added Pin To Net: NetName=Servo Pin=R?-2
+Added Pin To Net: NetName=Servo Pin=U1R-7
+Added Net: Name=Servo
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component Q? MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component Q? MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Rule: Name=Schematic Supply Nets

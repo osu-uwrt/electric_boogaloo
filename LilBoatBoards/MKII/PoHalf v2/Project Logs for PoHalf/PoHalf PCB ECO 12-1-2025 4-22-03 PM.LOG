@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=J? Old Footprint=CONN_MOLEX_MINIFIT JR_4 POS_R/A New Footprint=CONN_MOLEX_MICROFIT_4_POS_R/A
+Change Component Comment : Designator=J? Old Comment=Mini-Fit Jr R/A New Comment=Microfit+ R/A
+Change component parameters: Designator = "J?" ("J?"); Footprint = "CONN_MOLEX_MINIFIT JR_4 POS_R/A"; UniqueID = "\PSZXPRLX" ("\PSZXPRLX")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280400-ND"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component Q? MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
