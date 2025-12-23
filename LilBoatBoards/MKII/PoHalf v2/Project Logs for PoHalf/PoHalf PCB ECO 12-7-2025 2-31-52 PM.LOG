@@ -1,0 +1,35 @@
+Change Component Designator: OldDesignator=F? NewDesignator=F1
+Change Component Designator: OldDesignator=F? NewDesignator=F2
+Change Component Designator: OldDesignator=F? NewDesignator=F3
+Change Component Designator: OldDesignator=F? NewDesignator=F4
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J5
+Change Component Designator: OldDesignator=J? NewDesignator=J11
+Change Component Designator: OldDesignator=J? NewDesignator=J12
+Change Component Designator: OldDesignator=J? NewDesignator=J13
+Change Component Designator: OldDesignator=Q? NewDesignator=Q1
+Change Component Designator: OldDesignator=Q? NewDesignator=Q2
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Change Net Name : Old Net Name=NetF?_1 New Net Name=NetF1_1
+Change Net Name : Old Net Name=NetF?_2 New Net Name=NetF4_2
+Change Net Name : Old Net Name=NetQ?_1 New Net Name=NetQ1_1
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Pin To Net: NetName=NetF2_2 Pin=J8-1
+Added Net: Name=NetF2_2
+Added Pin To Net: NetName=NetF3_2 Pin=F3-2
+Added Pin To Net: NetName=NetF3_2 Pin=J8-4
+Added Net: Name=NetF3_2
+Added Member To Class: ClassName=Connector Member=Component F2 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F3 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F4 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component J1 Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J3 Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J5 Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J12 PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J13 Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component Q1 MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component R2 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R5 1k Ohm 5% 1/8W

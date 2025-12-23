@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=Solinoid_3_SW Pin=U1R-12
+Removed Pin From Net: NetName=SOFTWARE_KILL Pin=U1R-13
+Removed Pin From Net: NetName=AUX_SWITCH Pin=U1R-15
+Removed Pin From Net: NetName=KILL_FEEDBACK Pin=U1R-35
+Change Component Description : Designator=F1 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F2 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F3 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F4 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Added Pin To Net: NetName=KILL_FEEDBACK Pin=U1R-12
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-13
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-14
+Added Pin To Net: NetName=NetU1R_15 Pin=U1R-15
+Added Net: Name=NetU1R_15
+Added Pin To Net: NetName=NetU1R_35 Pin=U1R-35
+Added Net: Name=NetU1R_35
