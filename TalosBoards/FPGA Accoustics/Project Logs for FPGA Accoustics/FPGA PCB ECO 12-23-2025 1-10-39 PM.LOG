@@ -1,0 +1,26 @@
+Added Component: Designator=J1(HEADER_2x8PIN_2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch (mm)"; Value = "2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Positions"; Value = "16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM8144-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J2(HEADER_2x8PIN_2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch (mm)"; Value = "2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Positions"; Value = "16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM8144-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J3(HEADER_2x6PIN_2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch (mm)"; Value = "2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2057-PH2-12-UA-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J4(HEADER_2x4PIN_2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch (mm)"; Value = "2.54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Positions"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RS (Formerly Allied Electronics)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "PH2-08-UA"; VariantName = "[No Variations]"
+Added Class: Name=Connectors
+Added Room: Name=Connectors

@@ -68,7 +68,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
 [Document2]
-DocumentPath=Pcb_4layer_8x4_Template.PcbDoc
+DocumentPath=FPGA.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -82,7 +82,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FAJBMQJC
 
 [Document3]
 DocumentPath=..\..\Library\Capacitors.PcbLib
@@ -593,6 +593,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Parameter1]
+Name=ProjectTitle
+Value=FPGA Accoustics
 
 [Configuration1]
 Name=Sources

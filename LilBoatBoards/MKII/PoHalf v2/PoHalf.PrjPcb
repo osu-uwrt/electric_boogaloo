@@ -1196,6 +1196,14 @@ DItemRevisionGUID=
 DocumentPath=PoHalf 12-22-2025 3-28-02 PM.WAS
 DItemRevisionGUID=
 
+[Parameter1]
+Name=
+Value=
+
+[Parameter2]
+Name=ProjectTitle
+Value=PoHalf v2
+
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
 ClassGenCCAutoEnabled=1
