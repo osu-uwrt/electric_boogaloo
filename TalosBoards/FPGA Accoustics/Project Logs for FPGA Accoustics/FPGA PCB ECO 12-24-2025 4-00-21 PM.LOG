@@ -1,0 +1,59 @@
+Add Component: Footprint Not Found CONN_MOLEX_MICROFIT_4_POS_R/A
+Add Component: Footprint Not Found CONN_MOLEX_MICROFIT_4_POS_R/A
+Added Component: Designator=J7(CONN_MOLEX_MICROFIT+_2Flat_POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2157601002-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J8(CONN_MOLEX_MICROFIT+_2Flat_POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2157601002-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J9(CONN_MOLEX_MICROFIT+_2Flat_POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2157601002-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J10(CONN_MOLEX_MICROFIT+_2Flat_POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2157601002-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J11(CONN_MOLEX_MICROFIT+_2Flat_POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2157601002-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J7-2
+Added Net: Name=12V
+Added Net: Name=CAN_N
+Added Net: Name=CAN_P
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Net: Name=GND
+Added Differential Pair: Name=CAN
+Add Class Member: Failed to add class member : Component J5 Microfit+ R/A
+Add Class Member: Failed to add class member : Component J6 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J7 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J8 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J9 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J10 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J11 Microfit+ R/A
+Added Room: Name=Connectors
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
