@@ -1,0 +1,26 @@
+Added Component: Designator=J5(CONN_MOLEX_MICROFIT+_4_POS_R/A - duplicate)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280400-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J6(CONN_MOLEX_MICROFIT+_4_POS_R/A - duplicate)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Per Pin"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280400-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CAN_N Pin=J5-1
+Added Pin To Net: NetName=GND Pin=J5-2
+Added Pin To Net: NetName=CAN_P Pin=J5-3
+Added Pin To Net: NetName=12V Pin=J5-4
+Added Pin To Net: NetName=CAN_N Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-2
+Added Pin To Net: NetName=CAN_P Pin=J6-3
+Added Pin To Net: NetName=12V Pin=J6-4
+Added Member To Class: ClassName=Connectors Member=Component J5 Microfit+ R/A
+Added Member To Class: ClassName=Connectors Member=Component J6 Microfit+ R/A
