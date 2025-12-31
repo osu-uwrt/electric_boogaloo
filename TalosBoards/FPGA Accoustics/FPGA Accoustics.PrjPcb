@@ -167,7 +167,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IKCEOXKU
 
 [Document8]
 DocumentPath=..\..\Library\Converter.SchLib
@@ -184,7 +184,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PWXGOYMI
 
 [Document9]
 DocumentPath=..\..\Library\Crystals.PcbLib
@@ -593,6 +593,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for FPGA Accoustics\Design Rule Check - FPGA.html
+DItemRevisionGUID=
 
 [Parameter1]
 Name=ProjectTitle
