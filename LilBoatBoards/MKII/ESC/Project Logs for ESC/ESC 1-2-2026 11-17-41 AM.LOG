@@ -1,0 +1,14 @@
+Added Component: Designator=F6(2-SMD Fuse 0603)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ERB-RE1R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P15124CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=dGND Pin=F6-1
+Added Pin To Net: NetName=GND Pin=F6-2
+Added Member To Class: ClassName=ESC Member=Component F6 Fuse 1A 32V 0603

@@ -1,0 +1,19 @@
+Change Footprint: Footprint Not Found CONN_MOLEX_MICROFIT_6_POS_R/A
+Change Component Comment : Designator=J6 Old Comment=Mini-Fit Jr R/A New Comment=Microfit+ R/A
+Change component parameters: Designator = "J6" ("J6"); Footprint = "CONN_MOLEX_MINIFIT JR_6 POS_R/A"; UniqueID = "\LPBQZDUZ" ("\LPBQZDUZ")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "12.5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280600-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=F3-1
+Added Pin To Net: NetName=NetF3_2 Pin=F3-2
+Added Pin To Net: NetName=VCC Pin=F4-1
+Added Pin To Net: NetName=NetF4_2 Pin=F4-2
+Added Member To Class: ClassName=ESC Member=Component F1 0685H9150-01
+Added Member To Class: ClassName=ESC Member=Component F3 0685H9150-01
+Added Member To Class: ClassName=ESC Member=Component F5 1245HC60-RTR
+Added Member To Class: ClassName=ESC Member=Component M1 APD 80F3[X]
+Added Member To Class: ClassName=ESC Member=Component M4 APD 80F3[X]
