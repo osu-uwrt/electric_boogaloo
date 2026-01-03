@@ -589,20 +589,20 @@ DocumentPath=Project Outputs for ESC\Design Rule Check - ESC.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=ProjectTitle
-Value=ESC Small
-
-[Parameter2]
-Name=TeamLead
-Value=Adam Tirpak
-
-[Parameter3]
 Name=BoardRevision
 Value=1.0
 
-[Parameter4]
+[Parameter2]
 Name=DateOfDesignReview
 Value=1/2/2026
+
+[Parameter3]
+Name=ProjectTitle
+Value=ESC Small
+
+[Parameter4]
+Name=TeamLead
+Value=Adam Tirpak
 
 [DeviceSheet1]
 DocumentPath=..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
