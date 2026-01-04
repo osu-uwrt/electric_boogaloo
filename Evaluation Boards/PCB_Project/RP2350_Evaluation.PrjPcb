@@ -730,20 +730,20 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=John Ulm
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
+Name=ProjectTitle
+Value=RP2350 Dev Board
 
 [Parameter3]
-Name=ProjectTitle
-Value=Sample Template Project
+Name=DateOfDesignReview
+Value=01/01/2026
 
 [Parameter4]
-Name=TeamLead
-Value=Sample Team Lead
+Name=BoardRevision
+Value=1.0
 
 [Configuration1]
 Name=Sources
