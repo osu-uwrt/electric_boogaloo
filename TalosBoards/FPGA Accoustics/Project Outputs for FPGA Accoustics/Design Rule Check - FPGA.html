@@ -1,0 +1,646 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12/29/2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:16:34 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc" class="file"><acronym title="C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc">C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">94</td></tr>
+</table>
+</td>
+</table><a name="ID4PWZXB1WWL3DCP45NKZTYA23MFCB3JPJN2ZGBKNKONR5DJEBDMXH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHOKMJXRUURXHEC14Q40C53ZNYCRH0JPKYSOTDWLOY2N4ZJNW2H1L">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS2MO1NZHP0MRNXXV2MX3Y3DD0JULOEBVF4BM5BJEJQ2C5YSHRFJG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJHF0VVPSRHLZFKJKYFJSBLGQ1CKMQIT03VUOFDCFFFTD5DITVVGD">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">40</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFQGZU5C2DAFJLDXZN34POG31OD2O4U0PSZHUSMGJTUKNUDJ3W35D">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBNLNLYFXA5HMNE0VQJTOHBRGXOD1VBVCE43NSIG0SSGFJLFGZIM">Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0O5D5G4EYS52BY4VBAOWKWPXODZYUHU4FPPPAFINMN1015VUY4JK">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR5KNTWEFZIJ0DL2V3CL5IT00YOYG4GIIVMQBVRPSXDAZPXATLCLL">Minimum Annular Ring (Minimum=5.118mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVAAZAFHEIHGTDLQCJPQFJWVDLHFCKCSJ2UYD0TE1AMNL5IUEFJXL">Minimum Annular Ring (Minimum=9.842mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQVSP4LBORSWWJMFJSE5AOWHT3FBAWFWRG1YQIGM0UTVMQPTRI2IN">Minimum Annular Ring (Minimum=2.953mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLB4XUZQ2S20GMZBXJCWGEW3P1JPETAC4T0EVLFETE2OGKGXIGDFP">Acute Angle Constraint (Minimum=80.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGUF1W3HR3ED5NI22FUD5VTI01PZU25VK4P35C4LHZVMVIJQQ05AP">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHGXVAQNHTZRIWMXTHE4F2SXSKO1FRWDGIFWBYLIGVJZWTZ053MM">Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFR3QYI3SK3PBHLPXPWK2CNVPBGOMPC2KHXOJCKIF4FYQ0IJKCNNO">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKABBIITD2QQXM3HU2WBKMDVUOCDQDRDFKBDOL4O5GYQEWO4NQ3OE">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3W2B2XNKIJMTFL1RX5XBQTOKZBIMLSMHX2SVGRBZ3OFJWUPUPE4K">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ0L3Y1C1JVE5NQRTGKGYWINHKIP2I4ERGWYQJ5DZ0LZ20OZTBOO">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFVMSTS4RCVUWCE30E2XPCHPOBBBHSJP4MXNBEWBGCROWKKLB0OE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4ZZWK15Q4Z2OLTB20KPARREDBMT34SJMVLIYXWOJ4MWMXLYQHMZP">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">48</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID44WDOHNYS2LNOM34FPIGXGG13I5V24WONKOJ0FLGKA1VQK4YYPDO">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">94</td>
+</tr>
+</table><br><a name="IDJHF0VVPSRHLZFKJKYFJSBLGQ1CKMQIT03VUOFDCFFFTD5DITVVGD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=967.126mil|Location2.Y=1017.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=967.126mil|Location2.Y=1017.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C11-2(2480mil,995mil) on Top Layer And Pad D3-1(2700mil,984.37mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=978.504mil|Location2.Y=1076.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=978.504mil|Location2.Y=1076.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R15-2(2201.299mil,1060mil) on Top Layer And Pad C11-2(2480mil,995mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=2167.126mil|Location2.Y=2217.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=2167.126mil|Location2.Y=2217.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-2(2480mil,2195mil) on Top Layer And Pad D1-1(2700mil,2184.37mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=2178.504mil|Location2.Y=2276.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=2178.504mil|Location2.Y=2276.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R1-2(2201.299mil,2260mil) on Top Layer And Pad C1-2(2480mil,2195mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=1367.126mil|Location2.Y=1417.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=1367.126mil|Location2.Y=1417.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C12-2(2480mil,1395mil) on Top Layer And Pad D4-1(2700mil,1384.37mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.394mil|Location2.X=2665.394mil|Location1.Y=2906.693mil|Location2.Y=2998.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.394mil|Location2.X=2665.394mil|Location1.Y=2906.693mil|Location2.Y=2998.307mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad U5-5(2625.433mil,2920mil) on Top Layer And Pad C19-1(2652.874mil,2985mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.606mil|Location2.X=2765.394mil|Location1.Y=2971.693mil|Location2.Y=2998.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.606mil|Location2.X=2765.394mil|Location1.Y=2971.693mil|Location2.Y=2998.307mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C19-2(2687.126mil,2985mil) on Top Layer And Pad C20-2(2752.874mil,2985mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2774.606mil|Location2.X=2870.039mil|Location1.Y=2856.693mil|Location2.Y=2998.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2774.606mil|Location2.X=2870.039mil|Location1.Y=2856.693mil|Location2.Y=2998.307mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Pad C20-1(2787.126mil,2985mil) on Top Layer And Pad U5-3(2840mil,2870mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2740.354mil|Location2.X=2870.039mil|Location1.Y=2806.693mil|Location2.Y=2998.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2740.354mil|Location2.X=2870.039mil|Location1.Y=2806.693mil|Location2.Y=2998.307mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C20-2(2752.874mil,2985mil) on Top Layer And Pad U5-2(2840mil,2820mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5088.504mil|Location2.X=5686.496mil|Location1.Y=1238.504mil|Location2.Y=1851.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5088.504mil|Location2.X=5686.496mil|Location1.Y=1238.504mil|Location2.Y=1851.496mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Pad C2-1(5105mil,1260mil) on Top Layer And Pad PS1-4(5650mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5158.504mil|Location2.X=5381.496mil|Location1.Y=1078.504mil|Location2.Y=1281.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5158.504mil|Location2.X=5381.496mil|Location1.Y=1078.504mil|Location2.Y=1281.496mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2-2(5175mil,1260mil) on Top Layer And Pad C4-1(5365mil,1100mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=5191.496mil|Location1.Y=1208.976mil|Location2.Y=1281.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=5191.496mil|Location1.Y=1208.976mil|Location2.Y=1281.496mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R28-2(2800mil,1221.299mil) on Top Layer And Pad C2-2(5175mil,1260mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5348.504mil|Location2.X=5786.496mil|Location1.Y=1078.504mil|Location2.Y=1851.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5348.504mil|Location2.X=5786.496mil|Location1.Y=1078.504mil|Location2.Y=1851.496mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4-1(5365mil,1100mil) on Top Layer And Pad PS1-5(5750mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5418.504mil|Location2.X=5886.496mil|Location1.Y=1078.504mil|Location2.Y=1851.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5418.504mil|Location2.X=5886.496mil|Location1.Y=1078.504mil|Location2.Y=1851.496mil|Absolute=True">Un-Routed Net Constraint: Net -5V Between Pad C4-2(5435mil,1100mil) on Top Layer And Pad PS1-6(5850mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=5451.496mil|Location1.Y=742mil|Location2.Y=1121.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=5451.496mil|Location1.Y=742mil|Location2.Y=1121.496mil|Absolute=True">Un-Routed Net Constraint: Net -5V Between Via (2050mil,755mil) from Top Layer to Bottom Layer And Pad C4-2(5435mil,1100mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=1767.126mil|Location2.Y=1817.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2458.504mil|Location2.X=2725.512mil|Location1.Y=1767.126mil|Location2.Y=1817.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C7-2(2480mil,1795mil) on Top Layer And Pad D2-1(2700mil,1784.37mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=1778.504mil|Location2.Y=1876.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.976mil|Location2.X=2501.496mil|Location1.Y=1778.504mil|Location2.Y=1876.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R7-2(2201.299mil,1860mil) on Top Layer And Pad C7-2(2480mil,1795mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=2146.378mil|Location2.Y=2217.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=2146.378mil|Location2.Y=2217.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1-1(2700mil,2184.37mil) on Top Layer And Pad R6-2(2800mil,2158.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=1746.378mil|Location2.Y=1817.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=1746.378mil|Location2.Y=1817.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D2-1(2700mil,1784.37mil) on Top Layer And Pad R12-2(2800mil,1758.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=946.378mil|Location2.Y=1017.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=946.378mil|Location2.Y=1017.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D3-1(2700mil,984.37mil) on Top Layer And Pad R26-2(2800mil,958.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=1208.976mil|Location2.Y=1417.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2674.488mil|Location2.X=2816.26mil|Location1.Y=1208.976mil|Location2.Y=1417.362mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D4-1(2700mil,1384.37mil) on Top Layer And Pad R28-2(2800mil,1221.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.228mil|Location2.X=2527.323mil|Location1.Y=2666.614mil|Location2.Y=2786.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.228mil|Location2.X=2527.323mil|Location1.Y=2666.614mil|Location2.Y=2786.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J8-2(2185.787mil,2694.173mil) on Multi-Layer And Pad R29-2(2515mil,2770mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2809.961mil|Location2.X=5686.496mil|Location1.Y=1778.504mil|Location2.Y=2883.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2809.961mil|Location2.X=5686.496mil|Location1.Y=1778.504mil|Location2.Y=2883.307mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Pad U5-3(2840mil,2870mil) on Top Layer And Pad PS1-4(5650mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.299mil|Location2.X=2351.299mil|Location1.Y=2160mil|Location2.Y=2575.351mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.299mil|Location2.X=2351.299mil|Location1.Y=2160mil|Location2.Y=2575.351mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R1-2(2201.299mil,2260mil) on Top Layer And Track (2251.299mil,2475.351mil)(2251.299mil,2518.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1043.74mil|Location2.Y=1168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1043.74mil|Location2.Y=1168mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2010mil,1155mil) from Top Layer to Bottom Layer And Pad R15-2(2201.299mil,1060mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1443.74mil|Location2.Y=1568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1443.74mil|Location2.Y=1568mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2010mil,1555mil) from Top Layer to Bottom Layer And Pad R16-2(2201.299mil,1460mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=808.976mil|Location2.Y=1371.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=808.976mil|Location2.Y=1371.024mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad R20-1(2800mil,821.299mil) on Top Layer And Pad R21-1(2800mil,1358.701mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=1346.378mil|Location2.Y=1633.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=1346.378mil|Location2.Y=1633.622mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad R21-1(2800mil,1358.701mil) on Top Layer And Pad R9-1(2800mil,1621.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=946.378mil|Location2.Y=1233.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=946.378mil|Location2.Y=1233.622mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R26-2(2800mil,958.701mil) on Top Layer And Pad R28-2(2800mil,1221.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2540.079mil|Location2.X=2655.472mil|Location1.Y=2753.74mil|Location2.Y=2786.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2540.079mil|Location2.X=2655.472mil|Location1.Y=2753.74mil|Location2.Y=2786.26mil|Absolute=True">Un-Routed Net Constraint: Net NetR29_1 Between Pad R29-1(2552.402mil,2770mil) on Top Layer And Pad U5-8(2625.433mil,2770mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2502.677mil|Location2.X=2870.039mil|Location1.Y=2753.74mil|Location2.Y=2833.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2502.677mil|Location2.X=2870.039mil|Location1.Y=2753.74mil|Location2.Y=2833.307mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R29-2(2515mil,2770mil) on Top Layer And Pad U5-2(2840mil,2820mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=1608.976mil|Location2.Y=2033.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.74mil|Location2.X=2816.26mil|Location1.Y=1608.976mil|Location2.Y=2033.622mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad R9-1(2800mil,1621.299mil) on Top Layer And Pad R3-1(2800mil,2021.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.394mil|Location2.X=2816.26mil|Location1.Y=2008.976mil|Location2.Y=2933.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.394mil|Location2.X=2816.26mil|Location1.Y=2008.976mil|Location2.Y=2933.307mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad U5-5(2625.433mil,2920mil) on Top Layer And Pad R3-1(2800mil,2021.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1843.74mil|Location2.Y=1968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1997mil|Location2.X=2213.622mil|Location1.Y=1843.74mil|Location2.Y=1968mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2010mil,1955mil) from Top Layer to Bottom Layer And Pad R7-2(2201.299mil,1860mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=1710.709mil|Location2.Y=2139.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=1710.709mil|Location2.Y=2139.291mil|Absolute=True">Un-Routed Net Constraint: Net 5V Between Pad U2-7(2391.22mil,1725mil) on Top Layer And Pad U1-7(2391.22mil,2125mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=1310.709mil|Location2.Y=1739.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=1310.709mil|Location2.Y=1739.291mil|Absolute=True">Un-Routed Net Constraint: Net 5V Between Pad U4-7(2391.22mil,1325mil) on Top Layer And Pad U2-7(2391.22mil,1725mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=910.709mil|Location2.Y=1339.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2357.244mil|Location2.X=2425.197mil|Location1.Y=910.709mil|Location2.Y=1339.291mil|Absolute=True">Un-Routed Net Constraint: Net 5V Between Pad U3-7(2391.22mil,925mil) on Top Layer And Pad U4-7(2391.22mil,1325mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=1142mil|Location2.Y=1568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=1142mil|Location2.Y=1568mil|Absolute=True">Un-Routed Net Constraint: Net -5V Between Via (2050mil,1155mil) from Top Layer to Bottom Layer And Via (2050mil,1555mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=742mil|Location2.Y=1168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=742mil|Location2.Y=1168mil|Absolute=True">Un-Routed Net Constraint: Net -5V Between Via (2050mil,755mil) from Top Layer to Bottom Layer And Via (2050mil,1155mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=1542mil|Location2.Y=1968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037mil|Location2.X=2063mil|Location1.Y=1542mil|Location2.Y=1968mil|Absolute=True">Un-Routed Net Constraint: Net -5V Between Via (2050mil,1555mil) from Top Layer to Bottom Layer And Via (2050mil,1955mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3W2B2XNKIJMTFL1RX5XBQTOKZBIMLSMHX2SVGRBZ3OFJWUPUPE4K"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2942.954mil|Location2.X=2950.661mil|Location1.Y=681.616mil|Location2.Y=691.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2942.954mil|Location2.X=2950.661mil|Location1.Y=681.616mil|Location2.Y=691.646mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.49mil &lt; 5.906mil) Between Pad J12-4(2918mil,700mil) on Multi-Layer And Text "1" (2949mil,659mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.49mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.939mil|Location2.X=2819.094mil|Location1.Y=828.548mil|Location2.Y=835.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.939mil|Location2.X=2819.094mil|Location1.Y=828.548mil|Location2.Y=835.704mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.506mil &lt; 5.906mil) Between Pad R20-1(2800mil,821.299mil) on Top Layer And Text "R20" (2820.019mil,817.507mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.506mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.939mil|Location2.X=2819.094mil|Location1.Y=844.296mil|Location2.Y=851.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2811.939mil|Location2.X=2819.094mil|Location1.Y=844.296mil|Location2.Y=851.452mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.506mil &lt; 5.906mil) Between Pad R20-2(2800mil,858.701mil) on Top Layer And Text "R20" (2820.019mil,817.507mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.506mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJ0L3Y1C1JVE5NQRTGKGYWINHKIP2I4ERGWYQJ5DZ0LZ20OZTBOO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=3mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=63.505mil|Location2.X=66.505mil|Location1.Y=2483.505mil|Location2.Y=2486.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=63.505mil|Location2.X=66.505mil|Location1.Y=2483.505mil|Location2.Y=2486.505mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 3mil) Between Text "J5" (42.512mil,2477.507mil) on Top Overlay And Track (14.059mil,2480mil)(414.059mil,2480mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.592mil|Location2.X=2827.252mil|Location1.Y=811.316mil|Location2.Y=817.735mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.592mil|Location2.X=2827.252mil|Location1.Y=811.316mil|Location2.Y=817.735mil|Absolute=True">Silk To Silk Clearance Constraint: (2.259mil &lt; 3mil) Between Text "R20" (2820.019mil,817.507mil) on Top Overlay And Track (2825mil,800mil)(2825mil,810mil) on Top Overlay Silk Text to Silk Clearance [2.259mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822.875mil|Location2.X=2827.125mil|Location1.Y=864.496mil|Location2.Y=868.746mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822.875mil|Location2.X=2827.125mil|Location1.Y=864.496mil|Location2.Y=868.746mil|Absolute=True">Silk To Silk Clearance Constraint: (0.757mil &lt; 3mil) Between Text "R20" (2820.019mil,817.507mil) on Top Overlay And Track (2825mil,870mil)(2825mil,880mil) on Top Overlay Silk Text to Silk Clearance [0.757mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4ZZWK15Q4Z2OLTB20KPARREDBMT34SJMVLIYXWOJ4MWMXLYQHMZP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5275.563mil|Location2.X=5284.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5275.563mil|Location2.X=5284.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Arc (5280mil,1815mil) on Top Overlay And Board Edge </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5100.563mil|Location2.X=5109.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5100.563mil|Location2.X=5109.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad C2-1(5105mil,1260mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5170.563mil|Location2.X=5179.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5170.563mil|Location2.X=5179.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad C2-2(5175mil,1260mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5360.563mil|Location2.X=5369.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5360.563mil|Location2.X=5369.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad C4-1(5365mil,1100mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5430.563mil|Location2.X=5439.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5430.563mil|Location2.X=5439.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad C4-2(5435mil,1100mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5345.563mil|Location2.X=5354.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5345.563mil|Location2.X=5354.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad PS1-1(5350mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5445.563mil|Location2.X=5454.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5445.563mil|Location2.X=5454.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad PS1-2(5450mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5645.563mil|Location2.X=5654.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5645.563mil|Location2.X=5654.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad PS1-4(5650mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5745.563mil|Location2.X=5754.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5745.563mil|Location2.X=5754.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad PS1-5(5750mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5845.563mil|Location2.X=5854.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5845.563mil|Location2.X=5854.437mil|Location1.Y=1810.563mil|Location2.Y=1819.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Pad PS1-6(5850mil,1815mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5132.547mil|Location2.X=5141.421mil|Location1.Y=1348.553mil|Location2.Y=1357.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5132.547mil|Location2.X=5141.421mil|Location1.Y=1348.553mil|Location2.Y=1357.427mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Text "C2" (5087mil,1323mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5392.047mil|Location2.X=5400.921mil|Location1.Y=1188.053mil|Location2.Y=1196.927mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5392.047mil|Location2.X=5400.921mil|Location1.Y=1188.053mil|Location2.Y=1196.927mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Text "C4" (5346.5mil,1162.5mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.54mil|Location2.X=5309.414mil|Location1.Y=1955.553mil|Location2.Y=1964.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.54mil|Location2.X=5309.414mil|Location1.Y=1955.553mil|Location2.Y=1964.427mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Text "PS1" (5235mil,1930mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1129.331mil,2603.622mil)(1129.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1129.331mil,3056.378mil)(1420.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(14.059mil,2480mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(414.059mil,2200mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2473.47mil|Location2.Y=2486.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2473.47mil|Location2.Y=2486.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2480mil)(414.059mil,2480mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(14.059mil,2840mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(414.059mil,2560mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2833.47mil|Location2.Y=2846.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2833.47mil|Location2.Y=2846.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2840mil)(414.059mil,2840mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1420.669mil,2603.622mil)(1420.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1449.331mil,2603.622mil)(1449.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1449.331mil,3056.378mil)(1740.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1740.669mil,2603.622mil)(1740.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1769.331mil,2603.622mil)(1769.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1769.331mil,3056.378mil)(2060.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2060.669mil,2603.622mil)(2060.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2089.331mil,2603.622mil)(2089.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2089.331mil,3056.378mil)(2380.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2380.669mil,2603.622mil)(2380.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.563mil|Location2.X=5084.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5075.563mil|Location2.X=5084.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5080mil,1230mil)(5080mil,1290mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5083.063mil|Location2.X=5091.937mil|Location1.Y=1225.563mil|Location2.Y=1234.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5083.063mil|Location2.X=5091.937mil|Location1.Y=1225.563mil|Location2.Y=1234.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5080mil,1230mil)(5095mil,1230mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5083.063mil|Location2.X=5091.937mil|Location1.Y=1285.563mil|Location2.Y=1294.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5083.063mil|Location2.X=5091.937mil|Location1.Y=1285.563mil|Location2.Y=1294.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5080mil,1290mil)(5095mil,1290mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5188.063mil|Location2.X=5196.937mil|Location1.Y=1225.563mil|Location2.Y=1234.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5188.063mil|Location2.X=5196.937mil|Location1.Y=1225.563mil|Location2.Y=1234.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5185mil,1230mil)(5200mil,1230mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5188.063mil|Location2.X=5196.937mil|Location1.Y=1285.563mil|Location2.Y=1294.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5188.063mil|Location2.X=5196.937mil|Location1.Y=1285.563mil|Location2.Y=1294.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5185mil,1290mil)(5200mil,1290mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5195.563mil|Location2.X=5204.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5195.563mil|Location2.X=5204.437mil|Location1.Y=1255.563mil|Location2.Y=1264.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5200mil,1230mil)(5200mil,1290mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5235.563mil|Location2.X=5244.437mil|Location1.Y=1730.563mil|Location2.Y=1739.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5235.563mil|Location2.X=5244.437mil|Location1.Y=1730.563mil|Location2.Y=1739.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5240mil,1615mil)(5240mil,1855mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5635.563mil|Location2.X=5644.437mil|Location1.Y=1610.563mil|Location2.Y=1619.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5635.563mil|Location2.X=5644.437mil|Location1.Y=1610.563mil|Location2.Y=1619.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5240mil,1615mil)(6040mil,1615mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5245.563mil|Location2.X=5254.437mil|Location1.Y=1860.563mil|Location2.Y=1869.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5245.563mil|Location2.X=5254.437mil|Location1.Y=1860.563mil|Location2.Y=1869.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5240mil,1855mil)(5260mil,1875mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5645.563mil|Location2.X=5654.437mil|Location1.Y=1870.563mil|Location2.Y=1879.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5645.563mil|Location2.X=5654.437mil|Location1.Y=1870.563mil|Location2.Y=1879.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5260mil,1875mil)(6040mil,1875mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5335.563mil|Location2.X=5344.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5335.563mil|Location2.X=5344.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5340mil,1070mil)(5340mil,1130mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5343.063mil|Location2.X=5351.937mil|Location1.Y=1065.563mil|Location2.Y=1074.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5343.063mil|Location2.X=5351.937mil|Location1.Y=1065.563mil|Location2.Y=1074.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5340mil,1070mil)(5355mil,1070mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5343.063mil|Location2.X=5351.937mil|Location1.Y=1125.563mil|Location2.Y=1134.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5343.063mil|Location2.X=5351.937mil|Location1.Y=1125.563mil|Location2.Y=1134.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5340mil,1130mil)(5355mil,1130mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5448.063mil|Location2.X=5456.937mil|Location1.Y=1065.563mil|Location2.Y=1074.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5448.063mil|Location2.X=5456.937mil|Location1.Y=1065.563mil|Location2.Y=1074.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5445mil,1070mil)(5460mil,1070mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5448.063mil|Location2.X=5456.937mil|Location1.Y=1125.563mil|Location2.Y=1134.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5448.063mil|Location2.X=5456.937mil|Location1.Y=1125.563mil|Location2.Y=1134.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5445mil,1130mil)(5460mil,1130mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5455.563mil|Location2.X=5464.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5455.563mil|Location2.X=5464.437mil|Location1.Y=1095.563mil|Location2.Y=1104.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (5460mil,1070mil)(5460mil,1130mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.563mil|Location2.X=6044.437mil|Location1.Y=1740.563mil|Location2.Y=1749.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6035.563mil|Location2.X=6044.437mil|Location1.Y=1740.563mil|Location2.Y=1749.437mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 11.811mil) Between Board Edge And Track (6040mil,1615mil)(6040mil,1875mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
