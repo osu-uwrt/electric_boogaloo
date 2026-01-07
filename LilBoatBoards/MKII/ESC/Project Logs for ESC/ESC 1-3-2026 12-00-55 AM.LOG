@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=ESC3_PWM Pin=M1-8
+Removed Pin From Net: NetName=ESC3_TELEM Pin=M1-9
+Added Pin To Net: NetName=ESC3_TELEM Pin=M1-8
+Added Pin To Net: NetName=ESC3_PWM Pin=M1-9
