@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc
-Date     : 1/4/2026
-Time     : 8:35:39 PM
+Date     : 1/13/2026
+Time     : 11:25:26 PM
 
 Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
 Rule Violations :0
@@ -10,10 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C22-1(3300mil,1160mil) on Top Layer And Pad R53-2(3341.496mil,1068.701mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net CH2_SDO Between Pad R43-1(3755mil,2142mil) on Top Layer And Pad R40-1(3756.496mil,1472mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net CLK Between Pad R47-1(3755mil,2082mil) on Top Layer And Pad R48-1(3756.496mil,1352mil) on Top Layer 
-Rule Violations :3
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -34,8 +31,7 @@ Processing Rule : Minimum Annular Ring (Minimum=2.953mil) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=80.000) (All)
-   Violation between Acute Angle Constraint: (45.000 < 80.000) Between Track (3601.886mil,1798.114mil)(3875mil,1525mil) on Bottom Layer And Track (3875mil,1525mil)(3875mil,1930mil) on Bottom Layer (Angle = 45.000)
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
 Rule Violations :0
@@ -47,7 +43,8 @@ Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
-Rule Violations :0
+   Violation between Minimum Solder Mask Sliver Constraint: (2.984mil < 3.937mil) Between Via (725mil,804.252mil) from Top Layer to Bottom Layer And Via (725mil,835.748mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.984mil] / [Bottom Solder] Mask Sliver [2.984mil]
+Rule Violations :1
 
 Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
 Rule Violations :0
@@ -83,6 +80,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 22
+Violations Detected : 19
 Waived Violations : 0
 Time Elapsed        : 00:00:01
