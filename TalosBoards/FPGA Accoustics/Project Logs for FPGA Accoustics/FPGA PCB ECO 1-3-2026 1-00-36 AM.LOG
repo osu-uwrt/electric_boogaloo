@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CANRX Pin=J2-12
+Removed Pin From Net: NetName=CANTX Pin=J2-14
+Added Pin To Net: NetName=CANRX Pin=J2-8
+Added Pin To Net: NetName=CANTX Pin=J2-10

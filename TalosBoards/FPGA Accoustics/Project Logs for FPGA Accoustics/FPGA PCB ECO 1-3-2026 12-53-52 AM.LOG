@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=Filter_CH4 Pin=C13-1
+Removed Pin From Net: NetName=+5V Pin=C20-1
+Removed Pin From Net: NetName=Filter_CH4 Pin=D3-2
+Removed Pin From Net: NetName=Filter_CH4 Pin=R20-2
+Removed Pin From Net: NetName=Filter_CH4 Pin=R26-1
+Removed Pin From Net: NetName=+5V Pin=U5-3
+Change Component Description : Designator=D1 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Change Component Description : Designator=D2 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Change Component Description : Designator=D3 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Change Component Description : Designator=D4 Old Description=Zener Diode New Description=Zener Diode | 3.3 V | 250 mW | SOT-23
+Added Pin To Net: NetName=Filter_CH1 Pin=C13-1
+Added Pin To Net: NetName=5V Pin=C20-1
+Added Pin To Net: NetName=Filter_CH1 Pin=D3-2
+Added Pin To Net: NetName=CANTX Pin=J2-10
+Added Pin To Net: NetName=CANRX Pin=J2-12
+Added Pin To Net: NetName=Filter_CH4 Pin=J3-1
+Added Pin To Net: NetName=Filter_CH3 Pin=J3-3
+Added Pin To Net: NetName=Filter_CH2 Pin=J3-5
+Added Pin To Net: NetName=Filter_CH1 Pin=J3-7
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-5
+Added Pin To Net: NetName=5V Pin=J4-7
+Added Pin To Net: NetName=3V3 Pin=J12-4
+Added Pin To Net: NetName=Filter_CH1 Pin=R20-2
+Added Pin To Net: NetName=Filter_CH1 Pin=R26-1
+Added Pin To Net: NetName=5V Pin=U5-3
+Added Room: Name=Connectors

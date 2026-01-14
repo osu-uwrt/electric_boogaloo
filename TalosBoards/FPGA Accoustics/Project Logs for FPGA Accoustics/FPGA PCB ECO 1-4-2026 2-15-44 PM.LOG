@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=+5 Pin=C2-2
+Removed Pin From Net: NetName=+5 Pin=C4-2
+Removed Pin From Net: NetName=+5 Pin=C21-2
+Removed Pin From Net: NetName=+5 Pin=C22-2
+Removed Pin From Net: NetName=+5 Pin=R3-2
+Removed Pin From Net: NetName=+5 Pin=R30-2
+Removed Pin From Net: NetName=+5 Pin=R32-2
+Removed Pin From Net: NetName=+5 Pin=R33-2
+Change Component Footprint: Designator=R32 Old Footprint=RESC1005X40X25NL10T10 New Footprint=RESISTOR_0402
+Change Component Footprint: Designator=R33 Old Footprint=RESC1005X40X25NL10T10 New Footprint=RESISTOR_0402
+Change Component Comment : Designator=R32 Old Comment=100m New Comment=0 Ohm 1% 1/16W
+Change Component Comment : Designator=R33 Old Comment=100m New Comment=0 Ohm 1% 1/16W
+Change Managed Component Library Link : Designator=R32 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3CD2F658-8B4D-4350-A987-F384B2432CE3 New ItemGUID= Old RevisionGUID=C86F6F9F-B027-4C45-935A-F77359982321 New RevisionGUID=
+Change Managed Component Library Link : Designator=R33 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=3CD2F658-8B4D-4350-A987-F384B2432CE3 New ItemGUID= Old RevisionGUID=C86F6F9F-B027-4C45-935A-F77359982321 New RevisionGUID=
+Change component parameters: Designator = "R32" ("R32"); Footprint = "RESC1005X40X25NL10T10"; UniqueID = "\MJKTGXTV" ("\MJKTGXTV")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R33" ("R33"); Footprint = "RESC1005X40X25NL10T10"; UniqueID = "\TLQPUVJF" ("\TLQPUVJF")
+Change component parameters (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R55(RESC1005X40X25NL10T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RL0402JR-070R1L"; VariantName = "[No Variations]"
+Added Component: Designator=R56(RESC1005X40X25NL10T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RL0402JR-070R1L"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR3_1 Pin=R30-1
+Added Pin To Net: NetName=+5 Pin=R32-1
+Added Pin To Net: NetName=NetR3_1 Pin=R32-2
+Added Pin To Net: NetName=+5 Pin=R33-1
+Added Pin To Net: NetName=NetR3_1 Pin=U6-4
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=R30-2
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=R3-2
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC21_2 Pin=C21-2
+Added Pin To Net: NetName=NetC21_2 Pin=R55-2
+Added Net: Name=NetC21_2
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Pin To Net: NetName=NetC22_2 Pin=R56-2
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=NetR33_2 Pin=R33-2
+Added Pin To Net: NetName=NetR33_2 Pin=R55-1
+Added Pin To Net: NetName=NetR33_2 Pin=R56-1
+Added Pin To Net: NetName=NetR33_2 Pin=U7-1
+Added Pin To Net: NetName=NetR33_2 Pin=U7-4
+Added Net: Name=NetR33_2
+Added Member To Class: ClassName=Filters Member=Component R55 100m
+Added Member To Class: ClassName=Filters Member=Component R56 100m
+Added Room: Name=Connectors
