@@ -45,6 +45,7 @@ CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
+CurrentVariant=5V LDO
 
 [Preferences]
 PrefsVaultGUID=
@@ -610,6 +611,53 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SSUWICPG
+
+[ProjectVariant1]
+UniqueId=b8fc25ec-8ac2-4936-8cd9-e8ce2c2002e7
+Description=5V LDO
+OverwriteSchematicSymbol=0
+OverwritePCBFootprint=0
+AllowFabrication=0
+ParameterCount=0
+VariationCount=14
+Variation1=Designator=U10|UniqueId=\SZDKURIW|Kind=1|AlternatePart=
+Variation2=Designator=R65|UniqueId=\CBBKQJRQ|Kind=1|AlternatePart=
+Variation3=Designator=C38|UniqueId=\HRTUFAVU|Kind=1|AlternatePart=
+Variation4=Designator=C37|UniqueId=\ACEYRNYF|Kind=1|AlternatePart=
+Variation5=Designator=L1|UniqueId=\RNPYVRQA|Kind=1|AlternatePart=
+Variation6=Designator=R13|UniqueId=\CMTGBPCS|Kind=1|AlternatePart=
+Variation7=Designator=R14|UniqueId=\KCWRYFFM|Kind=1|AlternatePart=
+Variation8=Designator=R19|UniqueId=\TNWNIRKO|Kind=1|AlternatePart=
+Variation9=Designator=R24|UniqueId=\INCXKWBO|Kind=1|AlternatePart=
+Variation10=Designator=U9|UniqueId=\XPWMSJUY|Kind=1|AlternatePart=
+Variation11=Designator=C35|UniqueId=\DJMQEVHW|Kind=1|AlternatePart=
+Variation12=Designator=C36|UniqueId=\WXCDPJFR|Kind=1|AlternatePart=
+Variation13=Designator=R63|UniqueId=\EIBMMJGH|Kind=1|AlternatePart=
+Variation14=Designator=R62|UniqueId=\HNBFLXEY|Kind=1|AlternatePart=
+ParamVariationCount=0
+
+[ProjectVariant2]
+UniqueId=b57d2ce1-e1c7-4e1d-b270-a20858f6af6c
+Description=5V Switching
+OverwriteSchematicSymbol=0
+OverwritePCBFootprint=0
+AllowFabrication=0
+ParameterCount=0
+VariationCount=13
+Variation1=Designator=C33|UniqueId=\ASFJHLVB|Kind=1|AlternatePart=
+Variation2=Designator=C32|UniqueId=\INUWPCYH|Kind=1|AlternatePart=
+Variation3=Designator=C31|UniqueId=\ZNGPSBPD|Kind=1|AlternatePart=
+Variation4=Designator=C34|UniqueId=\SYBZLCOY|Kind=1|AlternatePart=
+Variation5=Designator=U8|UniqueId=\DKEYXWTA|Kind=1|AlternatePart=
+Variation6=Designator=SB2|UniqueId=\TOPFMFYM|Kind=1|AlternatePart=
+Variation7=Designator=R24|UniqueId=\INCXKWBO|Kind=1|AlternatePart=
+Variation8=Designator=R19|UniqueId=\TNWNIRKO|Kind=1|AlternatePart=
+Variation9=Designator=R14|UniqueId=\KCWRYFFM|Kind=1|AlternatePart=
+Variation10=Designator=R13|UniqueId=\CMTGBPCS|Kind=1|AlternatePart=
+Variation11=Designator=SB1|UniqueId=\KQYTXXFM|Kind=1|AlternatePart=
+Variation12=Designator=R63|UniqueId=\EIBMMJGH|Kind=1|AlternatePart=
+Variation13=Designator=R62|UniqueId=\HNBFLXEY|Kind=1|AlternatePart=
+ParamVariationCount=0
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for FPGA Accoustics\Design Rule Check - FPGA.html
