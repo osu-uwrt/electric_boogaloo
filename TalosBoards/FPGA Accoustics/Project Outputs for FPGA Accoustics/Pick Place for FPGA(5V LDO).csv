@@ -1,0 +1,163 @@
+Altium Designer Pick and Place Locations
+C:\UWRT\Altium\electric_boogaloo\TalosBoards\FPGA Accoustics\Project Outputs for FPGA Accoustics\Pick Place for FPGA(5V LDO).csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       27/01/26
+Time:       13:40
+Revision:   d917a634aa7be0b0754ff28ca8c66df2fe589cf9
+Variant:    5V LDO
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"U8","MC7805BDTRKG","TopLayer","DPAK-2","1506.250","965.158","270","Linear Voltage Regulator IC Positive Fixed 1 Output 1A DPAK"
+"TP6","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2880.000","1650.000","90","PCB Test Point"
+"TP5","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2895.000","1030.000","90","PCB Test Point"
+"TP4","PCB Test Point","TopLayer","TESTPOINT_1.2MM","3030.000","1720.000","90","PCB Test Point"
+"TP3","PCB Test Point","TopLayer","TESTPOINT_1.2MM","3035.000","2390.000","90","PCB Test Point"
+"TP2","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2280.000","710.000","90","PCB Test Point"
+"TP1","PCB Test Point","TopLayer","TESTPOINT_1.2MM","1235.000","805.000","90","PCB Test Point"
+"SB2","JUMPER_0_1206","TopLayer","RESISTOR_1206","1125.000","1055.000","180","JUMPER 0OHM 1206"
+"R64","10k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","1465.000","665.000","0","RES 10k OHM 5% 1/10W 0603"
+"D1","150060GS75000","TopLayer","LED_0603","1460.000","460.000","180","LED Green Vf= 3.2V If = 0.025A
+150060GS75000"
+"C34","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","1470.000","775.000","0","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C33","TAJR334K020RNJ","TopLayer","CAPC2113X120X50NL20T30","1270.000","1005.000","90",""
+"SB1","0 Ohm Jumper No Fit","TopLayer","RESISTOR_0603","2160.000","690.000","180","0 Ohm Jumper No Fit for Solder Bridge"
+"C32","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2155.000","605.000","0","Cap 100nF 6.3V +/-10%
+Ceramic 0603"
+"C31","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2005.000","605.000","0","Cap 100nF 6.3V +/-10%
+Ceramic 0603"
+"U3","OPA2354AIDGKR","TopLayer","DGK0008A_M","2250.000","940.000","0","250 MHz, Rail-to-Rail I/O, CMOS Dual Operational Amplifier, 2.7 to 5.5 V, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
+"U4","OPA2354AIDGKR","TopLayer","DGK0008A_M","2250.000","1340.000","0","250 MHz, Rail-to-Rail I/O, CMOS Dual Operational Amplifier, 2.7 to 5.5 V, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
+"C11","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2310.000","1065.000","180","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C13","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","1930.000","965.000","90","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C14","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","2520.000","995.000","270","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C17","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2180.000","830.000","0","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"R18","100k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2440.000","940.000","90","RES 100k OHM 1% 1/16W 0402"
+"R20","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2075.000","945.000","270","RES 1M OHM 1% 1/16W 0402"
+"R21","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2430.000","1030.000","0","RES 1M OHM 1% 1/16W 0402"
+"R22","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2190.000","1060.000","180","RES 10k OHM 1% 1/16W 0402"
+"R28","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2005.000","945.000","90","RES 1M OHM 1% 1/16W 0402"
+"R57","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2428.701","1100.000","180","RES 1M OHM 1% 1/16W 0402"
+"R58","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2365.000","835.000","0","RES 0 OHM 1% 1/16W 0402"
+"R61","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2365.000","1235.000","0","RES 0 OHM 1% 1/16W 0402"
+"R60","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2428.701","1500.000","180","RES 1M OHM 1% 1/16W 0402"
+"R59","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2005.000","1345.000","90","RES 1M OHM 1% 1/16W 0402"
+"R27","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2190.000","1460.000","180","RES 10k OHM 1% 1/16W 0402"
+"R26","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2430.000","1430.000","0","RES 1M OHM 1% 1/16W 0402"
+"R25","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2075.000","1345.000","270","RES 1M OHM 1% 1/16W 0402"
+"R23","100k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2440.000","1340.000","90","RES 100k OHM 1% 1/16W 0402"
+"C18","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2180.000","1230.000","0","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C16","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","2520.000","1395.000","270","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C15","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","1930.000","1365.000","90","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C12","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2310.000","1465.000","180","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C3","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2310.000","1865.000","180","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C7","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","1930.000","1765.000","90","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C8","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","2520.000","1795.000","270","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C10","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2180.000","1630.000","0","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"R2","100k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2440.000","1740.000","90","RES 100k OHM 1% 1/16W 0402"
+"R6","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2075.000","1745.000","270","RES 1M OHM 1% 1/16W 0402"
+"R7","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2430.000","1830.000","0","RES 1M OHM 1% 1/16W 0402"
+"R9","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2190.000","1860.000","180","RES 10k OHM 1% 1/16W 0402"
+"R12","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2005.000","1745.000","90","RES 1M OHM 1% 1/16W 0402"
+"R15","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2428.701","1900.000","180","RES 1M OHM 1% 1/16W 0402"
+"R17","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2365.000","1635.000","0","RES 0 OHM 1% 1/16W 0402"
+"U2","OPA2354AIDGKR","TopLayer","DGK0008A_M","2250.000","1740.000","0","250 MHz, Rail-to-Rail I/O, CMOS Dual Operational Amplifier, 2.7 to 5.5 V, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
+"U1","OPA2354AIDGKR","TopLayer","DGK0008A_M","2250.000","2140.000","0","250 MHz, Rail-to-Rail I/O, CMOS Dual Operational Amplifier, 2.7 to 5.5 V, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
+"R16","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2365.000","2035.000","0","RES 0 OHM 1% 1/16W 0402"
+"R11","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2428.701","2300.000","180","RES 1M OHM 1% 1/16W 0402"
+"R10","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2005.000","2145.000","90","RES 1M OHM 1% 1/16W 0402"
+"R8","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2190.000","2260.000","180","RES 10k OHM 1% 1/16W 0402"
+"R5","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2430.000","2230.000","0","RES 1M OHM 1% 1/16W 0402"
+"R4","1M Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2075.000","2145.000","270","RES 1M OHM 1% 1/16W 0402"
+"R1","100k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2440.000","2140.000","90","RES 100k OHM 1% 1/16W 0402"
+"C9","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2180.000","2030.000","0","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C6","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","2520.000","2195.000","270","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C5","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","1930.000","2165.000","90","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C1","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","2310.000","2265.000","180","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"R54","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3351.496","1590.000","270","RES 0 OHM 1% 1/16W 0402"
+"R53","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3341.496","1050.000","90","RES 0 OHM 1% 1/16W 0402"
+"R52","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3340.000","2320.000","270","RES 0 OHM 1% 1/16W 0402"
+"R51","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3350.000","1781.299","90","RES 0 OHM 1% 1/16W 0402"
+"C2","CL21B106KOQNNNE","TopLayer","FP-CL21B106KOQNNNE-MFG","3330.000","2210.000","0","CAP CER 10UF 16V X7R 0805"
+"C4","CL21B106KOQNNNE","TopLayer","FP-CL21B106KOQNNNE-MFG","3330.000","1890.000","0","CAP CER 10UF 16V X7R 0805"
+"C23","GRM2195C1H103JA01D","TopLayer","FP-GRM219-0_1-IPC_B","3470.000","2210.000","0","Chip Multilayer Ceramic Capacitors for General Purpose, 0805, 10000pF, C0G, 30ppm/°C, 5%, 50V"
+"C25","GRM2195C1H103JA01D","TopLayer","FP-GRM219-0_1-IPC_B","3470.000","1890.000","0","Chip Multilayer Ceramic Capacitors for General Purpose, 0805, 10000pF, C0G, 30ppm/°C, 5%, 50V"
+"C27","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3620.000","1890.000","180","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C28","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3620.000","2210.000","180","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"R32","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3301.299","2050.000","0","RES 0 OHM 1% 1/16W 0402"
+"R31","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3420.000","2321.457","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R35","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3430.000","1780.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R37","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3510.000","2320.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R39","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3736.299","2202.000","180","RES 0 OHM 1% 1/16W 0402"
+"R41","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3520.000","1780.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R43","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3736.299","2142.000","180","RES 0 OHM 1% 1/16W 0402"
+"R45","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3736.299","1962.000","0","RES 0 OHM 1% 1/16W 0402"
+"R47","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3736.299","2082.000","180","RES 0 OHM 1% 1/16W 0402"
+"R49","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3736.299","2022.000","180","RES 0 OHM 1% 1/16W 0402"
+"U6","ADS7253IRTET","TopLayer","WQFN-16","3500.000","2050.000","0","12 Bit, 1 MSPS, Dual, Simultaneous Sampling Single Ended / Pseudo-Differential SAR ADC 16-WQFN -40 to 125"
+"R30","100m","TopLayer","RESC1005X40X25NL10T10","3370.000","2110.000","90",""
+"R56","100m","TopLayer","RESC1005X40X25NL10T10","3371.496","1260.000","270",""
+"R55","100m","TopLayer","RESC1005X40X25NL10T10","3371.496","1380.000","90",""
+"U7","ADS7253IRTET","TopLayer","WQFN-16","3501.496","1320.000","0","12 Bit, 1 MSPS, Dual, Simultaneous Sampling Single Ended / Pseudo-Differential SAR ADC 16-WQFN -40 to 125"
+"R50","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3737.795","1292.000","180","RES 0 OHM 1% 1/16W 0402"
+"R48","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3737.795","1352.000","180","RES 0 OHM 1% 1/16W 0402"
+"R46","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3737.795","1232.000","0","RES 0 OHM 1% 1/16W 0402"
+"R44","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3737.795","1412.000","180","RES 0 OHM 1% 1/16W 0402"
+"R42","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3511.496","1050.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R40","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3737.795","1472.000","180","RES 0 OHM 1% 1/16W 0402"
+"R38","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3521.496","1590.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R36","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3421.496","1050.000","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R34","RMCF0603FT10R0","TopLayer","FP-RMCF0603-MFG","3431.496","1591.457","90","10O ±1% 0.1W 0603 Thick Film Chip Resistor AEC-Q200 compliant"
+"R33","0 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3302.795","1320.000","0","RES 0 OHM 1% 1/16W 0402"
+"C30","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3621.496","1480.000","180","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C29","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3621.496","1160.000","180","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C26","GRM2195C1H103JA01D","TopLayer","FP-GRM219-0_1-IPC_B","3471.496","1160.000","0","Chip Multilayer Ceramic Capacitors for General Purpose, 0805, 10000pF, C0G, 30ppm/°C, 5%, 50V"
+"C24","GRM2195C1H103JA01D","TopLayer","FP-GRM219-0_1-IPC_B","3471.496","1480.000","0","Chip Multilayer Ceramic Capacitors for General Purpose, 0805, 10000pF, C0G, 30ppm/°C, 5%, 50V"
+"C22","CL21B106KOQNNNE","TopLayer","FP-CL21B106KOQNNNE-MFG","3331.496","1160.000","0","CAP CER 10UF 16V X7R 0805"
+"C21","CL21B106KOQNNNE","TopLayer","FP-CL21B106KOQNNNE-MFG","3331.496","1480.000","0","CAP CER 10UF 16V X7R 0805"
+"J3","HEADER DUAL VERT 2.54MM","BottomLayer","HEADER_2x6PIN_2.54mm","3766.000","751.000","0","CONN HEADER VERT 6POS 2.54MM"
+"U5","CAN Transceiver","TopLayer","SOIC-8","2732.716","2845.000","180","CAN Interface IC High-Speed CAN Transceiver with Standby Mode"
+"R29","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2533.701","2770.000","180","RES 10k OHM 1% 1/16W 0402"
+"J12","HEADER VERT 2.54MM","BottomLayer","HEADER_4PIN_2.54MM","2768.000","700.000","0","CONN HEADER VERT 4POS 2.54MM"
+"C20","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2770.000","2985.000","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C19","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2670.000","2985.000","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"R3","100m","TopLayer","RESC1005X40X25NL10T10","3370.000","1990.000","270",""
+"J6","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT+_4_POS_R/A_-_duplicate","343.702","2340.000","270","Molex Microfit+ 
+212528 4 POS R/A Black"
+"J5","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT+_4_POS_R/A_-_duplicate","343.702","2700.000","270","Molex Microfit+ 
+212528 4 POS R/A Black"
+"J11","S2B-XH-A-GU","TopLayer","FP-S2B-XH-A-GU-MFG","1275.000","2694.173","180","Conn Shrouded Header HDR 2 POS 2.45mm Solder ST Top Entry Thru-Hole"
+"J10","S2B-XH-A-GU","TopLayer","FP-S2B-XH-A-GU-MFG","1595.000","2694.173","180","Conn Shrouded Header HDR 2 POS 2.45mm Solder ST Top Entry Thru-Hole"
+"J9","S2B-XH-A-GU","TopLayer","FP-S2B-XH-A-GU-MFG","1915.000","2694.173","180","Conn Shrouded Header HDR 2 POS 2.45mm Solder ST Top Entry Thru-Hole"
+"J8","S2B-XH-A-GU","TopLayer","FP-S2B-XH-A-GU-MFG","2235.000","2694.173","180","Conn Shrouded Header HDR 2 POS 2.45mm Solder ST Top Entry Thru-Hole"
+"J7","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT+_2Flat_POS_R/A","295.354","979.055","270","Molex Microfit+ 
+2157601002 2POS Right Angle"
+"J2","HEADER DUAL VERT 2.54MM","BottomLayer","HEADER_2x8PIN_2.54mm","2807.000","2552.000","0","CONN HEADER VERT 8POS 2.54MM"
+"J1","HEADER DUAL VERT 2.54MM","BottomLayer","HEADER_2x8PIN_2.54mm","3666.000","2552.000","0","CONN HEADER VERT 8POS 2.54MM"
+"J4","HEADER DUAL VERT 2.54MM","BottomLayer","HEADER_2x4PIN_2.54mm","3168.000","750.000","180","CONN HEADER VERT 4POS 2.54MM"

@@ -1,18 +1,18 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: ESC.PcbDoc_Small.GBR   1/18/2026  3:30:17 PM
+Gerber File Extension Report For: ESC.PcbDoc_Small.GBR   1/28/2026  2:11:26 PM
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
-.GTO                Top Overlay                             
-.GTP                Top Paste                               
-.GTS                Top Solder                              
-.GTL                Top Layer                               
-.GBL                Bottom Layer                            
-.GBS                Bottom Solder                           
-.GBP                Bottom Paste                            
-.GBO                Bottom Overlay                          
-.GM                 Profile                                 
+.gbr                Top Overlay                             
+.gbr                Top Paste                               
+.gbr                Top Solder                              
+.gbr                Top Layer                               
+.gbr                Bottom Layer                            
+.gbr                Bottom Solder                           
+.gbr                Bottom Paste                            
+.gbr                Bottom Overlay                          
+.gbr                Profile                                 
 ------------------------------------------------------------------------------------------

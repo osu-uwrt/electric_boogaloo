@@ -1,0 +1,104 @@
+Altium Designer Pick and Place Locations
+C:\UWRT\Altium\electric_boogaloo\Evaluation Boards\PCB_Project\Project Outputs for RP2350_Evaluation\Pick Place for RP2350_DevBoard.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       27/01/26
+Time:       21:21
+Revision:   bca9fd6daeefd0c515e33902f0ea9d37446c23b0
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"J6","Mini-Fit Jr R/A","TopLayer","CONN_MOLEX_MINIFIT_JR_6_POS_R/A","845.355","544.567","0","Molex Minifit Jr. 5569 
+6 Pos R/A Natural"
+"J2","USB-C TH","TopLayer","USB-C_TH","2838.244","750.724","90","USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Through Hole, Right Angle"
+"C22","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","1910.000","2935.000","90","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"Y1","CRYSTAL 10PF SMD","TopLayer","4-SMD,_NO_LEAD_CRYSTAL_3.2x2.5mm","1070.000","2129.000","180","12 MHz ±30ppm Crystal 10pF 50 Ohms 4-SMD, No Lead"
+"L1","3.3 uH Shielded","TopLayer","INDUCTOR_0806","2241.000","1991.630","90","3.3 µH Shielded Molded Inductor 2.1 A 140mOhm Max 0806 (2016 Metric)"
+"C26","1uF Ceramic 16V","TopLayer","CAPACITOR_0603","1365.000","1700.000","270","Cap 1uF 16V +/-10%
+Ceramic 0603"
+"C25","4700pF Ceramic 25V","TopLayer","CAPACITOR_0402","815.000","3237.874","90","4700 pF +/-10% 25V Ceramic Capacitor X7R 0402"
+"C24","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","1575.000","3255.000","0","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C23","100nF Ceramic 25V","TopLayer","CAPACITOR_0603","1040.000","3355.000","180","Cap 100nF 25V +/-10%
+Ceramic 0603"
+"C21","4.7uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2075.000","1870.000","180","Cap 4.7uF 6.3V +/-10%
+Ceramic 0603"
+"C20","4.7uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2150.000","1995.000","90","Cap 4.7uF 6.3V +/-10%
+Ceramic 0603"
+"C19","4.7uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2053.000","1995.000","270","Cap 4.7uF 6.3V +/-10%
+Ceramic 0603"
+"C18","15pF Ceramic 50V","TopLayer","CAPACITOR_0402","1180.000","2225.000","90","CAP CER 15PF 50V C0G/NP0 0402"
+"C17","15pF Ceramic 50V","TopLayer","CAPACITOR_0402","1065.000","1987.874","270","CAP CER 15PF 50V C0G/NP0 0402"
+"C16","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","1870.000","740.000","270","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C15","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","1760.000","1050.000","90","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C14","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1655.000","2515.000","90","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C13","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2218.000","2146.000","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C12","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2095.000","2387.874","90","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C11","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1905.000","2495.000","90","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C10","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1302.126","2175.000","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C9","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1367.874","2350.000","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C8","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2217.874","2202.000","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C7","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1522.874","1890.000","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C6","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1729.000","1779.874","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C5","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1789.000","1779.874","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C4","4700pF Ceramic 25V","TopLayer","CAPACITOR_0402","1790.000","2497.126","90","4700 pF +/-10% 25V Ceramic Capacitor X7R 0402"
+"C3","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","1170.000","1960.000","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C2","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2745.000","2430.000","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C1","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","2680.000","2427.874","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"TP16","PCB Test Point","TopLayer","TESTPOINT_1.2MM","1020.000","1135.000","0","PCB Test Point"
+"TP15","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2115.000","2905.000","0","PCB Test Point"
+"TP14","PCB Test Point","TopLayer","TESTPOINT_1.2MM","790.000","2755.000","0","PCB Test Point"
+"TP13","PCB Test Point","TopLayer","TESTPOINT_1.2MM","670.000","1115.000","0","PCB Test Point"
+"TP12","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2095.000","3205.000","0","PCB Test Point"
+"TP11","PCB Test Point","TopLayer","TESTPOINT_1.2MM","730.000","1115.000","0","PCB Test Point"
+"TP10","PCB Test Point","TopLayer","TESTPOINT_1.2MM","1655.000","455.000","0","PCB Test Point"
+"TP9","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2425.000","1935.000","0","PCB Test Point"
+"TP5","PCB Test Point","TopLayer","TESTPOINT_1.2MM","1840.000","1095.000","0","PCB Test Point"
+"TP4","PCB Test Point","TopLayer","TESTPOINT_1.2MM","1795.000","565.000","0","PCB Test Point"
+"TP3","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2355.000","1085.000","90","PCB Test Point"
+"TP1","PCB Test Point","TopLayer","TESTPOINT_1.2MM","2425.000","1995.000","0","PCB Test Point"
+"R13","60.4 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","1265.000","2998.701","90","RES 60.4 OHM 1% 1/16W 0402"
+"R12","60.4 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","815.000","3060.000","90","RES 60.4 OHM 1% 1/16W 0402"
+"R11","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","808.701","2845.000","0","RES 10k OHM 1% 1/16W 0402"
+"R10","5.1k Ohm 1% 1/8W","TopLayer","RESISTOR_0805","2846.000","1106.000","0","RES 5.1k OHM 1% 1/8W 0805"
+"R9","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","2260.000","3191.500","270","RES 1k OHM 5% 1/8W 0603"
+"R8","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","1066.299","3205.000","180","RES 10k OHM 1% 1/16W 0402"
+"R7","5.1k Ohm 1% 1/8W","TopLayer","RESISTOR_0805","2574.189","681.000","0","RES 5.1k OHM 1% 1/8W 0805"
+"R6","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","2010.000","3213.500","270","RES 1k OHM 5% 1/8W 0603"
+"R5","AC0402JR-0733RL","TopLayer","FP-AC0402-IPC_C","2199.904","1870.000","180","RES 33O ±5% 0.063W 0402"
+"R4","1k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","1301.299","2105.000","180","RES 1k OHM 1% 1/16W 0402"
+"R3","27 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2426.299","2125.000","0","RES 27 OHM 1% 1/16W 0402"
+"R2","27 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","2426.299","2065.000","0","RES 27 OHM 1% 1/16W 0402"
+"R1","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2240.000","2941.500","90","RES 10k OHM 0.5% 1/10W 0603"
+"VR1","LM1117IMPX-3.3/NOPB","TopLayer","SOT-223-4","2100.000","955.000","0","800-mA 15-V linear voltage regulator 4-SOT-223 -40 to 125"
+"J3","61301611821","TopLayer","61301611821","3000.000","2450.000","90",""
+"J1","Slide Switch 6A 28V DPDT Through Hole","TopLayer","CONN_S3CQE2","1455.079","865.039","0","SWITCH SLIDE DPDT 6A 28V Through Hole"
+"J4","61301611821","TopLayer","61301611821","200.000","2500.000","270",""
+"J5","61300811821","TopLayer","61300811821","200.000","1010.000","270",""
+"D1","EAST1616RGBB4","TopLayer","LED_0606_4SMD","1382.284","1858.504","270","LED RGB CLEAR 4SMD"
+"U4","CAN Transceiver","TopLayer","SOIC-8","1275.000","3280.000","180","CAN Interface IC High-Speed CAN Transceiver with Standby Mode"
+"U3","MCP2517FD","TopLayer","SOIC-14","1620.000","2935.000","270","CANbus Controller CAN 2.0 SPI Interface 14-SOIC"
+"U2","RP2350B","TopLayer","QFN-80","1753.210","2130.120","270",""
+"U1","W25Q128JVSIQ","TopLayer","SOIC-8_W25QxJV","2385.000","2445.000","0","IC FLASH 128MBIT SPI/QUAD 8SOIC"
+"SW3","Switch DPDT","TopLayer","CAS-220TA","1055.000","2915.000","270","GOLD SWITCH FLUSH SLIDE DPDT 100MA 6V"
+"SW2","434123025826","TopLayer","SMD_434123025826","2300.000","3400.000","270","WS-TASV J-Bend SMT Tact Switch, SPST-NO, 16VDC, 50mA, 260g"
+"SW1","434123025826","TopLayer","SMD_434123025826","2050.000","3400.000","270","WS-TASV J-Bend SMT Tact Switch, SPST-NO, 16VDC, 50mA, 260g"

@@ -2,10 +2,8 @@
 FileName = ESC.PcbDoc_Small.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Paste
-      File : ESC.PcbDoc_Small.GBP
-
-    Adding Layer      : Bottom Paste
+Generating : Bottom Layer
+      File : ESC.PcbDoc_Small_Copper_Signal_Bot.gbr
 
     Adding Layer      : Bottom Layer
 
@@ -13,14 +11,38 @@ Generating : Bottom Paste
 
 
 Used DCodes :
+    D10
+    D12
+    D13
+    D17
+    D19
     D36
     D37
+    D98
+    D99
+    D106
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
     D122
+    D123
+    D124
 *************************************************************
 
 *************************************************************
 Generating : Top Paste
-      File : ESC.PcbDoc_Small.GTP
+      File : ESC.PcbDoc_Small_Paste_Top.gbr
 
     Adding Layer      : Top Paste
 
@@ -67,8 +89,31 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Top Overlay
+      File : ESC.PcbDoc_Small_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
 Generating : Bottom Solder
-      File : ESC.PcbDoc_Small.GBS
+      File : ESC.PcbDoc_Small_Soldermask_Bot.gbr
 
     Adding Layer      : Bottom Solder
 
@@ -98,10 +143,8 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Solder
-      File : ESC.PcbDoc_Small.GTS
-
-    Adding Layer      : Top Solder
+Generating : Top Layer
+      File : ESC.PcbDoc_Small_Copper_Signal_Top.gbr
 
     Adding Layer      : Top Layer
 
@@ -109,148 +152,12 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D50
-    D54
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : ESC.PcbDoc_Small.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
     D10
     D11
-    D14
-    D16
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : ESC.PcbDoc_Small.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
     D13
-    D14
-    D15
-    D16
     D17
-    D18
     D19
     D20
-    D21
-    D22
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : ESC.PcbDoc_Small.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D12
-    D13
-    D17
-    D19
-    D36
-    D37
-    D98
-    D99
-    D106
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
-    D117
-    D118
-    D119
-    D120
-    D121
-    D122
-    D123
-    D124
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : ESC.PcbDoc_Small.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D11
-    D13
-    D17
-    D19
-    D21
     D23
     D24
     D25
@@ -311,8 +218,101 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Bottom Paste
+      File : ESC.PcbDoc_Small_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D36
+    D37
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : ESC.PcbDoc_Small_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D14
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : ESC.PcbDoc_Small_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D50
+    D54
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+*************************************************************
+
+*************************************************************
 Generating : Profile
-      File : ESC.PcbDoc_Small.GM
+      File : ESC.PcbDoc_Small_Profile.gbr
 
 
 Used DCodes :

@@ -1,0 +1,182 @@
+Altium Designer Pick and Place Locations
+C:\UWRT\Altium\electric_boogaloo\LilBoatBoards\MKII\PoHalf v2\Project Outputs for PoHalf\Pick Place for PoHalf.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       28/01/26
+Time:       10:49
+Revision:   4b274e222a7070e6ab62f0b3b2d37a059994f0f1
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"TP2","PCB Test Point","TopLayer","TESTPOINT_1.2MM","4320.000","805.000","90","PCB Test Point"
+"TP1","PCB Test Point","TopLayer","TESTPOINT_1.2MM","4230.000","740.000","90","PCB Test Point"
+"J11","61300311121","TopLayer","61300311121","5571.000","233.000","90","THT Vertical Pin Header WR-PHD, Pitch 2.54 mm, Single Row, 3 pins"
+"R29","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","5360.000","230.000","90","RES 1k OHM 5% 1/8W 0603"
+"R30","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","5775.000","460.000","180","RES 1k OHM 5% 1/8W 0603"
+"R31","20k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","5920.000","470.000","270","RES 20k OHM 1% 1/16W 0402"
+"Q8","PNP 60V 600mA SOT23","TopLayer","SOT-23-3","5550.000","500.000","90","PNP 60 V 600mA Surface Mount SOT-23"
+"J12","JST GH VERT","TopLayer","CONN_JST_SM02B-GHS-TB(LF)(SN)","5770.394","312.008","0","JST GH Pitch 2 Pos Vertical"
+"J16","XH2.54 VERT","TopLayer","CONN_JST_XH254_2POS_VERT","6290.657","1558.437","90","JST XH 2.54mm Pitch 2 Pos Vertical"
+"F1","0685H9150-01","TopLayer","0501Series_LTF","5835.657","1780.000","0","Bel Fuse"
+"F4","3413.0330.22","TopLayer","FP-3413_0330_22-MFG","5840.657","833.437","0","FUSE BOARD MNT 15A 32VAC 63VDC"
+"F3","0685H9150-01","TopLayer","0501Series_LTF","5840.657","1153.437","0","Bel Fuse"
+"F2","0685H9150-01","TopLayer","0501Series_LTF","5835.657","1358.437","0","Bel Fuse"
+"R5","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","1195.000","825.000","90","RES 1k OHM 5% 1/8W 0603"
+"R3","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","1100.000","825.000","90","RES 1k OHM 5% 1/8W 0603"
+"R6","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","1310.000","876.500","90","RES 1k OHM 5% 1/8W 0603"
+"Q4","MMBT3904-7-F","TopLayer","FP-SOT23-IPC_A","991.024","1028.453","90","TRANS NPN 40V 0.2A SMD SOT23-3"
+"Q2","MMBT3904-7-F","TopLayer","FP-SOT23-IPC_A","826.024","951.547","270","TRANS NPN 40V 0.2A SMD SOT23-3"
+"J2","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT_4_POS_R/A","339.408","1130.945","270","Molex Microfit+ 
+212528 4 POS R/A Black"
+"J7","Redcube M4 Term 85A","TopLayer","Redcube_M4_Term_85A","3850.000","3000.000","0",""
+"J9","Redcube M4 Term 85A","TopLayer","Redcube_M4_Term_85A","4750.000","2325.000","0",""
+"J6","Redcube M4 Term 85A","TopLayer","Redcube_M4_Term_85A","3850.000","3650.000","0",""
+"J10","Redcube M4 Term 85A","TopLayer","Redcube_M4_Term_85A","5400.000","2325.000","0",""
+"U1","MBRB2545CT","TopLayer","D2PAK_VIS","2491.500","4110.000","90","Diode Array 1 Pair Common Cathode 45 V Surface Mount TO-263-3, D²Pak (2 Leads + Tab), TO-263AB"
+"U7","LM1117IMPX-3.3/NOPB","TopLayer","SOT-223-4","3740.000","915.000","270","800-mA 15-V linear voltage regulator 4-SOT-223 -40 to 125"
+"U2","MCP3428-E/SL","TopLayer","SOIC127P600X175-14N","2466.653","470.000","0","16 Bit Analog to Digital Converter 4 Input 1 Sigma-Delta 14-SOIC"
+"U3","SHT14 SENSOR HUMID/TEMP","TopLayer","XDCR_SHT41-AD1B-R2","2700.000","260.000","0","Digital Relative Humidity Temperature Sensor, Â±1.8 / max 2.5 %RH, Â±0.2 Â°C, Ultra-Low-Power"
+"U5","DG448DV-T1-E3","TopLayer","TSOP6_DG_VIS-M","3250.000","2925.000","180","IC SWITCH SPST-NOX1 25OHM 6TSOP"
+"U6","TC4432EOA713","TopLayer","SOIC8-N_MC_MCH","3405.000","3185.000","90","High-Side or Low-Side Gate Driver IC Non-Inverting 8-SOIC"
+"U4","TC4432EOA713","TopLayer","SOIC8-N_MC_MCH","3130.000","3175.000","90","High-Side or Low-Side Gate Driver IC Non-Inverting 8-SOIC"
+"R7","3.9k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","1650.000","1080.000","180","RES 3.9k OHM 1% 1/10W 0603"
+"R33","RES 8.56K OHM 1% 1/16W 0402","BottomLayer","RESISTOR_0402","2610.000","1320.000","180","8.56 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Metal Film"
+"R34","RT0402BRD071K82L","BottomLayer","FP-RT0402-MFG","1650.315","1320.000","0","RES SMD 1.82K OHM 0.1% 1/16W"
+"R20","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","2970.000","90.000","270","RES 1k OHM 5% 1/8W 0603"
+"R26","4.7k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","3334.000","746.000","270","RES 4.7k OHM 5% 1/10W 0603"
+"R27","4.7k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","3421.000","790.000","270","RES 4.7k OHM 5% 1/10W 0603"
+"R11","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2240.000","480.000","270","RES 10k OHM 0.5% 1/10W 0603"
+"R15","1k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","2670.000","460.000","90","RES 1k OHM 0.5% 1/10W 0603"
+"R14","1k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","2670.000","600.000","90","RES 1k OHM 0.5% 1/10W 0603"
+"R10","1k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","2240.000","623.500","270","RES 1k OHM 0.5% 1/10W 0603"
+"R9","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2160.000","480.000","90","RES 10k OHM 0.5% 1/10W 0603"
+"R17","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2750.000","460.000","270","RES 10k OHM 0.5% 1/10W 0603"
+"R16","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2750.000","600.000","270","RES 10k OHM 0.5% 1/10W 0603"
+"R12","10k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","2276.000","770.000","180","RES 10k OHM 0.5% 1/10W 0603"
+"R2","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","1020.000","2240.000","180","RES 1k OHM 5% 1/8W 0603"
+"R18","100k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","3260.000","2770.000","0","RES 100k OHM 0.5% 1/10W 0603"
+"R21","1k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3080.000","2990.000","180","RES 1k OHM 1% 1/16W 0402"
+"R19","47K","TopLayer","CAPACITOR_0603","2964.000","3082.000","90","47kohm 0603 1/10w"
+"R32","10k Ohm 5% 1/10W","BottomLayer","RESISTOR_0603","6410.657","813.437","0","RES 10k OHM 5% 1/10W 0603"
+"R22","100k Ohm 0.5% 1/10W","TopLayer","RESISTOR_0603","3125.000","130.000","270","RES 100k OHM 0.5% 1/10W 0603"
+"R24","10k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","3270.000","176.500","90","RES 10k OHM 5% 1/10W 0603"
+"R4","10k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","1105.000","1715.000","90","RES 10k OHM 5% 1/10W 0603"
+"R1","4.7k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","821.000","1829.000","0","RES 4.7k OHM 5% 1/10W 0603"
+"R25","3.9k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","3570.000","4020.000","90","RES 3.9k OHM 1% 1/10W 0603"
+"Q6","SIR167DP-T1-GE3","TopLayer","MOSFET_7DP-T1-GE3_VIS","3315.500","3825.000","0","P-Channel 30 V 60A (Tc) 65.8W (Tc) Surface Mount PowerPAK® SO-8"
+"Q7","SIR167DP-T1-GE3","TopLayer","MOSFET_7DP-T1-GE3_VIS","3315.500","3590.000","0","P-Channel 30 V 60A (Tc) 65.8W (Tc) Surface Mount PowerPAK® SO-8"
+"Q5","MOSFET N-CH 30V 5.8A SOT-23-3","TopLayer","SOT-23-3","1180.000","2180.000","270","N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
+"Q3","AO3404A","TopLayer","SOT-23-3","980.000","1790.000","180","N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
+"Q1","SIR167DP-T1-GE3","TopLayer","MOSFET_7DP-T1-GE3_VIS","724.500","1653.000","180","P-Channel 30 V 60A (Tc) 65.8W (Tc) Surface Mount PowerPAK® SO-8"
+"PS2","I6A4W020A033V-001-R","TopLayer","CONV_I6A4W020A033V-001-R","2741.968","1800.000","270","Non-Isolated PoL Module DC DC Converter 1 Output 3.3 ~ 15V 20A 9V - 53V Input"
+"PS1","I6A4W020A033V-001-R","TopLayer","CONV_I6A4W020A033V-001-R","1791.968","1800.000","270","Non-Isolated PoL Module DC DC Converter 1 Output 3.3 ~ 15V 20A 9V - 53V Input"
+"J5","PP45 R/A","TopLayer","CONN_ANDERSON_PP45_4_POS_R/A","2610.512","3394.488","270","Anderson PP45
+4 Pos R/A Red/Black"
+"J15","XH2.54 VERT","TopLayer","CONN_JST_XH254_2POS_VERT","6290.657","1863.437","90","JST XH 2.54mm Pitch 2 Pos Vertical"
+"J8","USB_MICRO R/A","TopLayer","CONN_MINIUSB","3607.038","161.589","0","Amphenol Micro USB-B
+USB2.0 5 Pin Right Angle SMD"
+"J14","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT_6_POS_R/A","6146.955","1153.437","90","Molex Microfit+ 
+212528 6 POS R/A Black"
+"J1","Microfit+ R/A","TopLayer","CONN_MOLEX_MICROFIT_6_POS_R/A","339.408","1586.890","270","Molex Microfit+ 
+212528 6 POS R/A Black"
+"D2","IN-S63AT5G","TopLayer","LED_0603","1500.000","1080.000","180","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"D1","IN-S63AT5G","TopLayer","LED_0603","665.000","1827.000","180","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"D6","150060BS75000","TopLayer","LED_0603","3570.000","4220.000","90","LED Blue Vf= 3.2V If = 0.020A
+150060BS75000"
+"D5","IN-S63AT5G","TopLayer","LED_0603","3450.000","4225.000","90","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"D4","IN-S63AT5G","TopLayer","LED_0603","2505.000","1070.000","180","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"C9","CL05A104KA5NNNC","TopLayer","CAPACITOR_0402","3220.000","1100.000","0","0.1 µF ±10% 25V Ceramic Capacitor X5R 0402 (1005 Metric)"
+"C7","22uF electrolytic 35 V","TopLayer","PCAP_8x5.4-ELECT_NCA","2940.000","960.000","180","22 µF 35 V Aluminum Electrolytic Capacitors Radial, Can - SMD 1000 Hrs"
+"C6","100uF electrolytic 35 V","TopLayer","PCAP_8x5.4-ELECT_NCA","2600.000","2630.000","180","100 µF 35 V Aluminum Electrolytic Capacitors Radial, Can - SMD 1000 Hrs"
+"C3","CL05A104KA5NNNC","TopLayer","CAPACITOR_0402","2228.010","1101.000","0","0.1 µF ±10% 25V Ceramic Capacitor X5R 0402 (1005 Metric)"
+"C2","22uF electrolytic 35 V","TopLayer","PCAP_8x5.4-ELECT_NCA","1950.000","960.000","180","22 µF 35 V Aluminum Electrolytic Capacitors Radial, Can - SMD 1000 Hrs"
+"C1","100uF electrolytic 35 V","TopLayer","PCAP_8x5.4-ELECT_NCA","1950.000","2640.000","180","100 µF 35 V Aluminum Electrolytic Capacitors Radial, Can - SMD 1000 Hrs"
+"C11","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3940.000","985.000","90","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"C10","10uF Ceramic 6.3V","TopLayer","CAPACITOR_0603","3555.000","1015.000","270","Cap 10uF 6.3V +/-20%
+Ceramic 0603"
+"R23","3.9k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","3260.000","4230.000","0","RES 3.9k OHM 1% 1/10W 0603"
+"R13","1k Ohm 5% 1/8W","TopLayer","RESISTOR_0603","2650.000","1070.000","180","RES 1k OHM 5% 1/8W 0603"
+"R8","3.9k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","1900.000","4206.500","90","RES 3.9k OHM 1% 1/10W 0603"
+"R28","4.7k Ohm 5% 1/10W","TopLayer","RESISTOR_0603","4040.000","986.500","270","RES 4.7k OHM 5% 1/10W 0603"
+"J4","JST GH VERT","TopLayer","CONN_JST_BM04B-GHS-TBT(LF)(SN)(N)","229.055","716.181","270","JST GH Pitch 4 Pos Vertical"
+"J13","Mini-Fit Jr R/A","TopLayer","CONN_MOLEX_MINIFIT_JR_2_POS_R/A","5968.689","658.437","90","Molex Minifit Jr. 5569 
+2 Pos R/A Natural"
+"D7","IN-S63AT5G","TopLayer","LED_0603","4180.000","1020.000","0","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"D3","IN-S63AT5G","TopLayer","LED_0603","1900.000","4360.000","90","LED Green Vf= 3V If = 0.005A
+IN-S63AT5G"
+"C4","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2240.000","340.000","270","Cap 100nF 6.3V +/-10%
+Ceramic 0603"
+"C8","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0603","2800.000","280.000","90","Cap 100nF 6.3V +/-10%
+Ceramic 0603"
+"C5","10uF Ceramic 25V","TopLayer","CAPACITOR_1206","3370.000","2680.000","0","Cap 10uF 25V +/-10%
+Ceramic 1206"
+"C3R","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0402","3902.593","559.426","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C5C","1uF Ceramic 16V","TopLayer","CAPACITOR_0402","4739.995","212.969","90","Cap 1uF 16V +/-10%
+Ceramic 0402"
+"U2R","W25Q128JVSIQ","TopLayer","SOIC-8_W25QxJV","3960.467","342.833","90","IC FLASH 128MBIT SPI/QUAD 8SOIC"
+"R4R","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4973.262","724.780","0","RES 10k OHM 1% 1/16W 0402"
+"C4C","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","4897.475","905.883","90","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C3C","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","5193.892","753.127","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C1R","27pF Ceramic 50V","TopLayer","CAPACITOR_0402","4787.239","378.324","90","Cap 27pF 50V +/-5%
+Ceramic 0402"
+"C2R","27pF Ceramic 50V","TopLayer","CAPACITOR_0402","4787.239","472.812","270","Cap 27pF 50V +/-5%
+Ceramic 0402"
+"C4R","1uF Ceramic 16V","TopLayer","CAPACITOR_0402","4117.948","590.922","90","Cap 1uF 16V +/-10%
+Ceramic 0402"
+"C5R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4062.829","472.812","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C6R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4346.294","220.843","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C7R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4188.814","236.591","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C8R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4464.404","445.148","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C9R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4362.042","602.733","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C10R","100nF Ceramic 6.3V","TopLayer","CAPACITOR_0402","4180.940","669.662","180","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C11R","1uF Ceramic 16V","BottomLayer","CAPACITOR_0402","4157.318","535.804","180","Cap 1uF 16V +/-10%
+Ceramic 0402"
+"C12R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4464.404","504.308","0","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"C13R","100nF Ceramic 6.3V","BottomLayer","CAPACITOR_0402","4220.310","394.072","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"R1R","1k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4534.209","472.812","0","RES 1k OHM 1% 1/16W 0402"
+"R2R","27 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3999.837","622.418","0","RES 27 OHM 1% 1/16W 0402"
+"R3R","27 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","3999.837","688.428","0","RES 27 OHM 1% 1/16W 0402"
+"R5R","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4133.695","252.339","180","RES 10k OHM 1% 1/16W 0402"
+"R6R","1k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","5251.806","394.072","90","RES 1k OHM 1% 1/16W 0402"
+"R7R","1k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4669.129","291.709","180","RES 1k OHM 1% 1/16W 0402"
+"SW1R","434123025826","TopLayer","SMD_434123025826","5157.318","249.387","0","WS-TASV J-Bend SMT Tact Switch, SPST-NO, 16VDC, 50mA, 260g"
+"SW2R","434123025826","TopLayer","SMD_434123025826","4921.097","249.387","0","WS-TASV J-Bend SMT Tact Switch, SPST-NO, 16VDC, 50mA, 260g"
+"U1R","RP2040","TopLayer","QFN-56_RP2040","4306.924","464.938","90","Raspberry Pi RP2040"
+"Y1R","CRYSTAL 12.0000MHZ 18PF SMD","TopLayer","4-SMD,_NO_LEAD_CRYSTAL_3.2x2.5mm","4665.625","426.198","90","12 MHz ±20ppm Crystal 18pF 100 Ohms 4-SMD, No Lead (3.2x2.5mm)"
+"U2C","CAN Transceiver","TopLayer","SOIC-8","5094.325","898.009","0","CAN Interface IC High-Speed CAN Transceiver with Standby Mode"
+"U1C","MCP2517FD","TopLayer","SOIC-14","4621.884","811.394","0","CANbus Controller CAN 2.0 SPI Interface 14-SOIC"
+"SW1C","Switch DPDT","TopLayer","CAS-220TA","5369.916","661.788","270","GOLD SWITCH FLUSH SLIDE DPDT 100MA 6V"
+"R8C","200 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4535.270","291.709","0","RES 200 OHM 1% 1/16W 0402"
+"R7C","200 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4535.270","228.717","0","RES 200 OHM 1% 1/16W 0402"
+"R6C","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","5299.050","973.009","0","RES 10k OHM 1% 1/16W 0402"
+"R5C","604 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4535.270","165.725","0","RES 604 OHM 1% 1/16W 0402"
+"R4C","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4810.861","827.143","90","RES 10k OHM 1% 1/16W 0402"
+"R3C","60.4 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","5401.412","496.434","270","RES 60.4 OHM 1% 1/16W 0402"
+"R2C","60.4 Ohm 1% 1/16W","TopLayer","RESISTOR_0402","5338.420","496.434","270","RES 60.4 OHM 1% 1/16W 0402"
+"R1C","10k Ohm 1% 1/16W","TopLayer","RESISTOR_0402","4810.861","730.095","270","RES 10k OHM 1% 1/16W 0402"
+"D1C","EAST1616RGBB4","TopLayer","LED_0606_4SMD","4653.381","212.969","0","LED RGB CLEAR 4SMD"
+"C2C","4700pF Ceramic 25V","TopLayer","CAPACITOR_0402","5369.916","401.946","90","4700 pF +/-10% 25V Ceramic Capacitor X7R 0402"
+"C1C","100nF Ceramic 25V","TopLayer","CAPACITOR_0402","4810.861","945.253","270","Cap 100nF 25V +/-10%
+Ceramic 0402"
+"J3","Mini-Fit Jr R/A","TopLayer","CONN_MOLEX_MINIFIT_JR_4_POS_R/A","519.968","2082.677","270","Molex Minifit Jr. 5569 
+4 Pos R/A Natural"

@@ -1,14 +1,10 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [PoHalf.PrjPcb]
-   Generated File[PoHalf-RoundHoles-Plated.TXT]
-   Generated File[PoHalf-RoundHoles-NonPlated.TXT]
-   Generated File[PoHalf-SlotHoles-Plated.TXT]
-   Generated File[PoHalf.LDP]
-   Generated File[PoHalf.DRR]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [PoHalf.PrjPcb]
+   Generated File[Pick Place for PoHalf.csv]
 
 
-Files Generated   : 5
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 3:38:55 PM On 1/18/2026
+Finished Output Generation At 10:49:02 AM On 1/28/2026
