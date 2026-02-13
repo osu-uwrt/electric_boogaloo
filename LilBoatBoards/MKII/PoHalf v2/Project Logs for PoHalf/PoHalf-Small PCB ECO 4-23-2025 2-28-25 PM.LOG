@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=Orin_SW Pin=U1R-13
+Removed Pin From Net: NetName=AUX_SWITCH Pin=U1R-14
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=C1
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q4
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q5
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q7
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=R3
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=R4
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=R14
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R17
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=R17
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=R30
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=U5
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=U6
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-13
+Added Pin To Net: NetName=Orin_SW Pin=U1R-14
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component C2 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C4 10uF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C9 100uF electrolytic 35 V
+Added Member To Class: ClassName=Connector Member=Component D1 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D3 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D8 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D9 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component J3 PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J5 JST GH VERT
+Added Member To Class: ClassName=Connector Member=Component J9 USB_MICRO R/A
+Added Member To Class: ClassName=Connector Member=Component Q2 AO3404A
+Added Member To Class: ClassName=Connector Member=Component Q8 AO3404A
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component Q9 MOSFET N-CH 30V 5.8A SOT-23-3
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component Q10 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component Q11 SIR167DP-T1-GE3
+Added Member To Class: ClassName=Connector Member=Component R1 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R7 3.9k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R9 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R12 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R15 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R16 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R18 100k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R20 47K
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R22 100k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R24 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R25 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R26 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R27 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R28 1k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R32 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R33 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R34 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R39 RES 1.24K OHM 1% 1/10W 0603
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R40 RES 8.56K OHM 1% 1/16W 0402
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component U3 DG448DV-T1-E3
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component U7 MBRB2545CT

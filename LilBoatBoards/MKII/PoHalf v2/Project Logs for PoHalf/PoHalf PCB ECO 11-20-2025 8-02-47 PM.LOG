@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=CANL Pin=J8-1
+Removed Pin From Net: NetName=Vreg Pin=J8-3
+Removed Pin From Net: NetName=CANH Pin=J8-4
+Removed Pin From Net: NetName=12V Pin=J8-6
+Added Pin To Net: NetName=Vreg Pin=J8-1
+Added Pin To Net: NetName=CANL Pin=J8-3
+Added Pin To Net: NetName=12V Pin=J8-4
+Added Pin To Net: NetName=CANH Pin=J8-6
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A

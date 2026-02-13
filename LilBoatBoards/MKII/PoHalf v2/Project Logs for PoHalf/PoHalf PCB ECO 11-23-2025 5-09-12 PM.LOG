@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=KILL_SWITCH Pin=J2-3
+Removed Pin From Net: NetName=AUX_SWITCH Pin=J2-4
+Added Pin To Net: NetName=AUX_SWITCH Pin=J2-3
+Added Pin To Net: NetName=KILL_SWITCH Pin=J2-4
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A

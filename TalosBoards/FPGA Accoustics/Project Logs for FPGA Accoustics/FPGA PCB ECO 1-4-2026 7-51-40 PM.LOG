@@ -1,0 +1,126 @@
+Added Pin To Net: NetName=+5 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=Audio_CH2 Pin=C7-2
+Added Pin To Net: NetName=Filter_CH2 Pin=C8-1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=+5 Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=+5 Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=NetC13_1 Pin=C13-1
+Added Pin To Net: NetName=Audio_CH4 Pin=C13-2
+Added Pin To Net: NetName=Filter_CH4 Pin=C14-1
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC15_1 Pin=C15-1
+Added Pin To Net: NetName=Audio_CH3 Pin=C15-2
+Added Pin To Net: NetName=Filter_CH3 Pin=C16-1
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C18-2
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetC8_2 Pin=R2-2
+Added Pin To Net: NetName=+5 Pin=R6-1
+Added Pin To Net: NetName=NetC7_1 Pin=R6-2
+Added Pin To Net: NetName=+5 Pin=R7-1
+Added Pin To Net: NetName=Filter_CH2 Pin=R7-2
+Added Pin To Net: NetName=NetR2_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Added Pin To Net: NetName=NetC7_1 Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R12-2
+Added Pin To Net: NetName=Filter_CH2 Pin=R15-1
+Added Pin To Net: NetName=GND Pin=R15-2
+Added Pin To Net: NetName=NetR17_1 Pin=R17-1
+Added Pin To Net: NetName=+2.5 Pin=R17-2
+Added Pin To Net: NetName=NetR18_1 Pin=R18-1
+Added Pin To Net: NetName=NetC14_2 Pin=R18-2
+Added Pin To Net: NetName=+5 Pin=R20-1
+Added Pin To Net: NetName=NetC13_1 Pin=R20-2
+Added Pin To Net: NetName=+5 Pin=R21-1
+Added Pin To Net: NetName=Filter_CH4 Pin=R21-2
+Added Pin To Net: NetName=NetR18_1 Pin=R22-1
+Added Pin To Net: NetName=NetR22_2 Pin=R22-2
+Added Pin To Net: NetName=NetR23_1 Pin=R23-1
+Added Pin To Net: NetName=NetC16_2 Pin=R23-2
+Added Pin To Net: NetName=+5 Pin=R25-1
+Added Pin To Net: NetName=NetC15_1 Pin=R25-2
+Added Pin To Net: NetName=+5 Pin=R26-1
+Added Pin To Net: NetName=Filter_CH3 Pin=R26-2
+Added Pin To Net: NetName=NetR23_1 Pin=R27-1
+Added Pin To Net: NetName=NetR27_2 Pin=R27-2
+Added Pin To Net: NetName=NetC13_1 Pin=R28-1
+Added Pin To Net: NetName=GND Pin=R28-2
+Added Pin To Net: NetName=Filter_CH4 Pin=R57-1
+Added Pin To Net: NetName=GND Pin=R57-2
+Added Pin To Net: NetName=NetR58_1 Pin=R58-1
+Added Pin To Net: NetName=+2.5 Pin=R58-2
+Added Pin To Net: NetName=NetC15_1 Pin=R59-1
+Added Pin To Net: NetName=GND Pin=R59-2
+Added Pin To Net: NetName=Filter_CH3 Pin=R60-1
+Added Pin To Net: NetName=GND Pin=R60-2
+Added Pin To Net: NetName=NetR61_1 Pin=R61-1
+Added Pin To Net: NetName=+2.5 Pin=R61-2
+Added Pin To Net: NetName=NetR9_2 Pin=U2-1
+Added Pin To Net: NetName=NetR9_2 Pin=U2-2
+Added Pin To Net: NetName=NetC7_1 Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=NetR17_1 Pin=U2-5
+Added Pin To Net: NetName=NetR2_1 Pin=U2-6
+Added Pin To Net: NetName=NetC8_2 Pin=U2-7
+Added Pin To Net: NetName=+5 Pin=U2-8
+Added Pin To Net: NetName=NetR22_2 Pin=U3-1
+Added Pin To Net: NetName=NetR22_2 Pin=U3-2
+Added Pin To Net: NetName=NetC13_1 Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-4
+Added Pin To Net: NetName=NetR58_1 Pin=U3-5
+Added Pin To Net: NetName=NetR18_1 Pin=U3-6
+Added Pin To Net: NetName=NetC14_2 Pin=U3-7
+Added Pin To Net: NetName=+5 Pin=U3-8
+Added Pin To Net: NetName=NetR27_2 Pin=U4-1
+Added Pin To Net: NetName=NetR27_2 Pin=U4-2
+Added Pin To Net: NetName=NetC15_1 Pin=U4-3
+Added Pin To Net: NetName=GND Pin=U4-4
+Added Pin To Net: NetName=NetR61_1 Pin=U4-5
+Added Pin To Net: NetName=NetR23_1 Pin=U4-6
+Added Pin To Net: NetName=NetC16_2 Pin=U4-7
+Added Pin To Net: NetName=+5 Pin=U4-8
+Added Member To Class: ClassName=Filters Member=Component C3 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component C7 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C8 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C10 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component C11 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component C12 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component C13 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C14 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C15 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C16 1uF Ceramic 16V
+Added Member To Class: ClassName=Filters Member=Component C17 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component C18 100nF Ceramic 25V
+Added Member To Class: ClassName=Filters Member=Component R2 100k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R6 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R7 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R9 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R12 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R15 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R17 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R18 100k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R20 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R21 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R22 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R23 100k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R25 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R26 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R27 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R28 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R57 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R58 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R59 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R60 1M Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R61 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component U2 OPA2354AIDGKR
+Added Member To Class: ClassName=Filters Member=Component U3 OPA2354AIDGKR
+Added Member To Class: ClassName=Filters Member=Component U4 OPA2354AIDGKR

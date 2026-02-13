@@ -1,0 +1,114 @@
+Added Component: Designator=R51(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R52(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R53(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Component: Designator=R54(RESISTOR_0402)
+Add component (AddParameter): Name = "Made By"; Value = "Robert Pafford"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "13-AC0402FR-070RLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value  (Ohms)"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Verified By"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wattage"; Value = "1/16W"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC23_1 Pin=C23-1
+Added Pin To Net: NetName=NetC23_2 Pin=C23-2
+Added Pin To Net: NetName=NetC25_1 Pin=C25-1
+Added Pin To Net: NetName=NetC25_2 Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=3V3 Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=+5 Pin=C28-2
+Added Pin To Net: NetName=NetR3_1 Pin=R30-1
+Added Pin To Net: NetName=NetC2_2 Pin=R30-2
+Added Pin To Net: NetName=NetC23_1 Pin=R31-1
+Added Pin To Net: NetName=NetR31_2 Pin=R31-2
+Added Pin To Net: NetName=+5 Pin=R32-1
+Added Pin To Net: NetName=NetR3_1 Pin=R32-2
+Added Pin To Net: NetName=NetR35_1 Pin=R35-1
+Added Pin To Net: NetName=NetC25_1 Pin=R35-2
+Added Pin To Net: NetName=NetC23_2 Pin=R37-1
+Added Pin To Net: NetName=Filter_CH2 Pin=R37-2
+Added Pin To Net: NetName=CH2_SDO Pin=R39-1
+Added Pin To Net: NetName=NetR39_2 Pin=R39-2
+Added Pin To Net: NetName=Filter_CH1 Pin=R41-1
+Added Pin To Net: NetName=NetC25_2 Pin=R41-2
+Added Pin To Net: NetName=CH1_SDO Pin=R43-1
+Added Pin To Net: NetName=NetR43_2 Pin=R43-2
+Added Pin To Net: NetName=NetR45_1 Pin=R45-1
+Added Pin To Net: NetName=SDI_1 Pin=R45-2
+Added Pin To Net: NetName=CLK Pin=R47-1
+Added Pin To Net: NetName=NetR47_2 Pin=R47-2
+Added Pin To Net: NetName=CS_1 Pin=R49-1
+Added Pin To Net: NetName=NetR49_2 Pin=R49-2
+Added Pin To Net: NetName=NetR35_1 Pin=R51-1
+Added Pin To Net: NetName=GND Pin=R51-2
+Added Pin To Net: NetName=NetR31_2 Pin=R52-1
+Added Pin To Net: NetName=GND Pin=R52-2
+Added Pin To Net: NetName=NetR36_1 Pin=R53-1
+Added Pin To Net: NetName=GND Pin=R53-2
+Added Pin To Net: NetName=NetR34_2 Pin=R54-1
+Added Pin To Net: NetName=GND Pin=R54-2
+Added Pin To Net: NetName=NetR3_1 Pin=U6-1
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=GND Pin=U6-3
+Added Pin To Net: NetName=NetR3_1 Pin=U6-4
+Added Pin To Net: NetName=NetC25_1 Pin=U6-5
+Added Pin To Net: NetName=NetC25_2 Pin=U6-6
+Added Pin To Net: NetName=3V3 Pin=U6-7
+Added Pin To Net: NetName=NetR45_1 Pin=U6-8
+Added Pin To Net: NetName=NetR49_2 Pin=U6-9
+Added Pin To Net: NetName=NetR47_2 Pin=U6-10
+Added Pin To Net: NetName=NetR43_2 Pin=U6-11
+Added Pin To Net: NetName=NetR39_2 Pin=U6-12
+Added Pin To Net: NetName=GND Pin=U6-13
+Added Pin To Net: NetName=+5 Pin=U6-14
+Added Pin To Net: NetName=NetC23_2 Pin=U6-15
+Added Pin To Net: NetName=NetC23_1 Pin=U6-16
+Added Pin To Net: NetName=GND Pin=U6-17
+Added Member To Class: ClassName=Filters Member=Component C2 CL21B106KOQNNNE
+Added Member To Class: ClassName=Filters Member=Component C4 CL21B106KOQNNNE
+Added Member To Class: ClassName=Filters Member=Component C23 GRM2195C1H103JA01D
+Added Member To Class: ClassName=Filters Member=Component C25 GRM2195C1H103JA01D
+Added Member To Class: ClassName=Filters Member=Component C27 10uF Ceramic 6.3V
+Added Member To Class: ClassName=Filters Member=Component C28 10uF Ceramic 6.3V
+Added Member To Class: ClassName=Filters Member=Component R30 100m
+Added Member To Class: ClassName=Filters Member=Component R32 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R34 RMCF0603FT10R0
+Added Member To Class: ClassName=Filters Member=Component R35 RMCF0603FT10R0
+Added Member To Class: ClassName=Filters Member=Component R37 RMCF0603FT10R0
+Added Member To Class: ClassName=Filters Member=Component R39 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R41 RMCF0603FT10R0
+Added Member To Class: ClassName=Filters Member=Component R43 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R45 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R47 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R49 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R51 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R52 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R53 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component R54 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Filters Member=Component U6 ADS7253IRTET
+Added Room: Name=Connectors

@@ -1,0 +1,78 @@
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Pin From Net: NetName=Vreg Pin=J8-1
+Removed Pin From Net: NetName=12V Pin=J8-4
+Removed Pin From Net: NetName=5V Pin=J8-5
+Removed Pin From Net: NetName=12V Pin=Q1-1
+Removed Pin From Net: NetName=12V Pin=Q1-2
+Removed Pin From Net: NetName=12V Pin=Q1-3
+Removed Pin From Net: NetName=Orin_SW Pin=Q2-1
+Removed Pin From Net: NetName=GND Pin=Q2-2
+Removed Pin From Net: NetName=12V Pin=R2-1
+Removed Pin From Net: NetName=3V3_RP2CAN Pin=R5-1
+Removed Pin From Net: NetName=Orin_SW Pin=R5-2
+Removed Member From Class: ClassName=Connector Member=D1
+Removed Member From Class: ClassName=Connector Member=Q1
+Removed Member From Class: ClassName=Connector Member=Q2
+Removed Member From Class: ClassName=Connector Member=R1
+Removed Member From Class: ClassName=Connector Member=R2
+Removed Member From Class: ClassName=Connector Member=R5
+Added Component: Designator=F?(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0685H9150-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Component: Designator=F?(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0685H9150-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Component: Designator=F?(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0685H9150-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Component: Designator=F?(0501Series_LTF)
+Add component (AddParameter): Name = "Breaking Capacity"; Value = "150A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created By"; Value = "Nathan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0685H9150-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "Fast Blow"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "32V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=F?-1
+Added Pin To Net: NetName=12V Pin=F?-1
+Added Pin To Net: NetName=Vreg Pin=F?-1
+Added Pin To Net: NetName=12V Pin=F?-2
+Added Pin To Net: NetName=NetF?_1 Pin=F?-1
+Added Pin To Net: NetName=NetF?_1 Pin=J4-2
+Added Net: Name=NetF?_1
+Added Pin To Net: NetName=NetF?_2 Pin=F?-2
+Added Pin To Net: NetName=NetF?_2 Pin=J8-5
+Added Net: Name=NetF?_2
+Add Net: Net with name "NetF?_2" already exists
+Add Net: Net with name "NetF?_2" already exists
+Added Member To Class: ClassName=Connector Member=Component F? 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F? 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F? 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F? 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component Q? MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W

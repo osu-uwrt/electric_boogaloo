@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Added Component: Designator=J?(AMASS_XT90PW-M)
+Added Pin To Net: NetName=GND Pin=J?-N
+Added Pin To Net: NetName=V+ Pin=J?-P
+Added Member To Class: ClassName=Connector Member=Component J? XT90-M R/A

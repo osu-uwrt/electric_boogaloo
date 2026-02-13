@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=SDA_0 Pin=U1R-6
+Removed Pin From Net: NetName=SCL_0 Pin=U1R-7
+Removed Pin From Net: NetName=Solinoid_1_SW Pin=U1R-8
+Removed Pin From Net: NetName=Solinoid_2_SW Pin=U1R-9
+Removed Pin From Net: NetName=SDA_0 Pin=U4-1
+Removed Pin From Net: NetName=SCL_0 Pin=U4-2
+Removed Pin From Net: NetName=SDA_0 Pin=U5-7
+Removed Pin From Net: NetName=SCL_0 Pin=U5-8
+Added Pin To Net: NetName=Solinoid_1_SW Pin=U1R-6
+Added Pin To Net: NetName=Solinoid_2_SW Pin=U1R-7
+Added Pin To Net: NetName=Pump_SW Pin=U1R-8
+Added Pin To Net: NetName=NetU1R_9 Pin=U1R-9
+Added Net: Name=NetU1R_9
+Added Pin To Net: NetName=SCL_1_0 Pin=U1R-5
+Added Pin To Net: NetName=SCL_1_0 Pin=U4-2
+Added Pin To Net: NetName=SCL_1_0 Pin=U5-8
+Added Net: Name=SCL_1_0
+Added Pin To Net: NetName=SDA_1_0 Pin=U1R-4
+Added Pin To Net: NetName=SDA_1_0 Pin=U4-1
+Added Pin To Net: NetName=SDA_1_0 Pin=U5-7
+Added Net: Name=SDA_1_0

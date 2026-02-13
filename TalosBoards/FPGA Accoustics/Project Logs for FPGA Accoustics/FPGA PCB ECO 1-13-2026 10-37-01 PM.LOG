@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+8 Pin=C38-1
+Removed Pin From Net: NetName=+8 Pin=L1-1
+Removed Pin From Net: NetName=+8 Pin=R65-1
+Removed Pin From Net: NetName=+8 Pin=U10-6
+Added Pin To Net: NetName=+5 Pin=C38-1
+Added Pin To Net: NetName=+5 Pin=L1-1
+Added Pin To Net: NetName=+5 Pin=R65-1
+Added Pin To Net: NetName=+5 Pin=U10-6
+Change Net Name : Old Net Name=+8 New Net Name=NetC33_2
+Added Room: Name=Connectors

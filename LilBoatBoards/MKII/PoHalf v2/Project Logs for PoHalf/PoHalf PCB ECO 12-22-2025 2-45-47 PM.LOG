@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=Servo Pin=U1R-7
+Removed Pin From Net: NetName=Solinoid_3_SW Pin=U1R-8
+Removed Pin From Net: NetName=KILL_FEEDBACK Pin=U1R-12
+Removed Pin From Net: NetName=AUX_SWITCH Pin=U1R-13
+Removed Pin From Net: NetName=SOFTWARE_KILL Pin=U1R-14
+Added Pin To Net: NetName=Servo Pin=U1R-2
+Added Pin To Net: NetName=Solinoid_3_SW Pin=U1R-3
+Added Pin To Net: NetName=KILL_FEEDBACK Pin=U1R-4
+Added Pin To Net: NetName=AUX_SWITCH Pin=U1R-5
+Added Pin To Net: NetName=SOFTWARE_KILL Pin=U1R-6
+Added Pin To Net: NetName=NetU1R_7 Pin=U1R-7
+Added Net: Name=NetU1R_7
+Added Pin To Net: NetName=NetU1R_8 Pin=U1R-8
+Added Net: Name=NetU1R_8
+Added Pin To Net: NetName=NetU1R_12 Pin=U1R-12
+Added Net: Name=NetU1R_12
+Added Pin To Net: NetName=NetU1R_13 Pin=U1R-13
+Added Net: Name=NetU1R_13
+Added Pin To Net: NetName=NetU1R_14 Pin=U1R-14
+Added Net: Name=NetU1R_14

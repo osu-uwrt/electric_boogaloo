@@ -1,0 +1,20 @@
+Change Component Footprint: Designator=J3 Old Footprint=CONN_MOLEX_MINIFIT JR_8 POS_R/A New Footprint=CONN_MOLEX_MICROFIT+_8POS_R/A
+Change Component Comment : Designator=J3 Old Comment=Mini-Fit Jr R/A New Comment=Microfit+ R/A
+Change component parameters: Designator = "J3" ("J3"); Footprint = "CONN_MOLEX_MINIFIT JR_8 POS_R/A"; UniqueID = "\HMEWNGBY" ("\HMEWNGBY")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "12.5A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280800-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(CONN_MOLEX_MICROFIT+_8POS_R/A)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "12.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280800-ND"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Connector Member=Component J? Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component J? XT90-M R/A

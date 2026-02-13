@@ -1,0 +1,21 @@
+Change Component Footprint: Designator=J8 Old Footprint=CONN_MOLEX_MICROFIT+_2Flat_POS_R/A New Footprint=FP-S2B-XH-A-GU-MFG
+Change Component Footprint: Designator=J9 Old Footprint=CONN_MOLEX_MICROFIT+_2Flat_POS_R/A New Footprint=FP-S2B-XH-A-GU-MFG
+Change Component Footprint: Designator=J10 Old Footprint=CONN_MOLEX_MICROFIT+_2Flat_POS_R/A New Footprint=FP-S2B-XH-A-GU-MFG
+Change Component Footprint: Designator=J11 Old Footprint=CONN_MOLEX_MICROFIT+_2Flat_POS_R/A New Footprint=FP-S2B-XH-A-GU-MFG
+Change Component Comment : Designator=J8 Old Comment=Microfit+ R/A New Comment=S2B-XH-A-GU
+Change Component Comment : Designator=J9 Old Comment=Microfit+ R/A New Comment=S2B-XH-A-GU
+Change Component Comment : Designator=J10 Old Comment=Microfit+ R/A New Comment=S2B-XH-A-GU
+Change Component Comment : Designator=J11 Old Comment=Microfit+ R/A New Comment=S2B-XH-A-GU
+Change Managed Component Library Link : Designator=J8 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=F1552B08-2081-4809-A0EF-86FD4C66D622 Old RevisionGUID= New RevisionGUID=FCDEA4AE-8223-4F26-892B-52388698C1BB
+Change Managed Component Library Link : Designator=J9 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=F1552B08-2081-4809-A0EF-86FD4C66D622 Old RevisionGUID= New RevisionGUID=FCDEA4AE-8223-4F26-892B-52388698C1BB
+Change Managed Component Library Link : Designator=J10 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=F1552B08-2081-4809-A0EF-86FD4C66D622 Old RevisionGUID= New RevisionGUID=FCDEA4AE-8223-4F26-892B-52388698C1BB
+Change Managed Component Library Link : Designator=J11 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=F1552B08-2081-4809-A0EF-86FD4C66D622 Old RevisionGUID= New RevisionGUID=FCDEA4AE-8223-4F26-892B-52388698C1BB
+Change component parameters: Designator = "J8" ("J8"); Footprint = "CONN_MOLEX_MICROFIT+_2Flat_POS_R/A"; UniqueID = "\YKXTDFHZ" ("\YKXTDFHZ")
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J9" ("J9"); Footprint = "CONN_MOLEX_MICROFIT+_2Flat_POS_R/A"; UniqueID = "\YXKZOBGN" ("\YXKZOBGN")
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J10" ("J10"); Footprint = "CONN_MOLEX_MICROFIT+_2Flat_POS_R/A"; UniqueID = "\KRYODYKY" ("\KRYODYKY")
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J11" ("J11"); Footprint = "CONN_MOLEX_MICROFIT+_2Flat_POS_R/A"; UniqueID = "\CBIRRLBH" ("\CBIRRLBH")
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Added Room: Name=Connectors

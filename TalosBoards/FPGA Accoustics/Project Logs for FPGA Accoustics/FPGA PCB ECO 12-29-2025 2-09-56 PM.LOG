@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=Audio_CH1 Pin=J8-2
+Removed Pin From Net: NetName=GND Pin=J9-1
+Removed Pin From Net: NetName=Audio_CH2 Pin=J9-2
+Removed Pin From Net: NetName=GND Pin=J10-1
+Removed Pin From Net: NetName=Audio_CH3 Pin=J10-2
+Removed Pin From Net: NetName=GND Pin=J11-1
+Removed Pin From Net: NetName=Audio_CH4 Pin=J11-2
+Added Pin To Net: NetName=Audio_CH1 Pin=J8-1
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=Audio_CH2 Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J9-2
+Added Pin To Net: NetName=Audio_CH3 Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-2
+Added Pin To Net: NetName=Audio_CH4 Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-2

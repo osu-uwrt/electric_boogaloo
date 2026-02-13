@@ -1,0 +1,413 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/13/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:25:26 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc" class="file"><acronym title="C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc">C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">19</td></tr>
+</table>
+</td>
+</table><a name="IDTQIWC5SDEGK5H4STVXHKBORONJ0N5P0HJ54DEBJM54YAYQP20E1D"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPANEXEI0F1GJBTKBMCTVZB3ULJDYGJ5YIW15YBQI2MSWL2K4JFL">Clearance Constraint (Gap=7.874mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZIVY1TXZ0FAELWAJLYAWBSFUAM3RMYCTV4N4ECCXMMZX2GD5OU1N">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZJ5YEMZJYWQFOQNYU03IX3KG4OKGNOSLG1QD3TOLI11MVWBUG1WH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVK2FAKOM0HKGOPBLYO3DUMZ0UDWTWTDNHRMQUGD30HMEPJC2BZ0K">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5CP2N52NI5X1FLQ03QYWFO55OCGLQ2PSUC0I3YFOU51IBPCXSCUO">Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUZGWKGPUTWTIG2BUGCD2FQSS2BZQIRV55BPNCKESYWQPYYHIYONC">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDI0AT4M4S5QW4JD5ZPZ0RFB5AZ2DEE15TV2MYKML5QFUNJCZD2NC">Minimum Annular Ring (Minimum=5.118mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCISLAD2ANXYDPKQ0TVEZHG03NHRWUV5F3KLMN2DOJDZSFCSIMULK">Minimum Annular Ring (Minimum=9.842mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDE0WXHFLS4DX0ESSGO5I00Q4KTOIGXZ51B1D3P1BYB1RI3JWL15PJ">Minimum Annular Ring (Minimum=2.953mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNTY1B2ZDUJKNG5TSVBJH11Z1YIPVOTU05YJ1UAMO1LOEOVJZRKRN">Acute Angle Constraint (Minimum=80.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDELGW0L5GVSVLBHABVOAZG24ZLL03QWR2N1NDVMLCLMFF4CZEI44H">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIS0LQJXIRKVOMTNTBBUOY1GZHCTAZEPIMHLLFAIXNW5UGDAXKYON">Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY3VOOMZYNLKIJEOMBI3NVE30M0ZF3UPDKLHFLLJB4KC1GP0HIFO">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQS1KMBLNMAQWP4O3CBW40WOEYP4L4GUCCIUPMEENCPL55ZJ2KCHH">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMCSPKHRTWCYUBIDBDHTFYKASENVIFUWE3ARASACDEDX43VYTSXV">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCA10RAOUMFZYNDGG4GKXOAT4UE1MDBD0BCNPBYCG0IPRYAY534YL">Silk to Silk (Clearance=3mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2ZRSEU4WAKPVCY0BO2HFZSCUFE4WFF0JNQEPLMEYJBQV4U03DDWH">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFVS2RDPAICHSBWNQKI3P2YLXTCQE2KX5WVTAXMNDIS10PXT1XKKH">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV1WUWF0I2REJKEIAE3IBW2AXXBLHVCGJMC5Z4MGJX0OLEMJIKTFG">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">19</td>
+</tr>
+</table><br><a name="IDQS1KMBLNMAQWP4O3CBW40WOEYP4L4GUCCIUPMEENCPL55ZJ2KCHH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=722.407mil|Location2.X=727.593mil|Location1.Y=817.406mil|Location2.Y=822.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=722.407mil|Location2.X=727.593mil|Location1.Y=817.406mil|Location2.Y=822.593mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.984mil &lt; 3.937mil) Between Via (725mil,804.252mil) from Top Layer to Bottom Layer And Via (725mil,835.748mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.984mil] / [Bottom Solder] Mask Sliver [2.984mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFVS2RDPAICHSBWNQKI3P2YLXTCQE2KX5WVTAXMNDIS10PXT1XKKH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1129.331mil,2603.622mil)(1129.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1122.8mil|Location2.X=1135.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1129.331mil,3056.378mil)(1420.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(14.059mil,2480mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2193.47mil|Location2.Y=2206.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(414.059mil,2200mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2473.47mil|Location2.Y=2486.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2473.47mil|Location2.Y=2486.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2480mil)(414.059mil,2480mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2823.47mil|Location2.Y=2836.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2823.47mil|Location2.Y=2836.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(14.059mil,2840mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.002mil|Location2.X=12.059mil|Location1.Y=2553.47mil|Location2.Y=2566.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(414.059mil,2560mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.001mil|Location2.X=12.06mil|Location1.Y=2833.47mil|Location2.Y=2846.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-1.001mil|Location2.X=12.06mil|Location1.Y=2833.47mil|Location2.Y=2846.53mil|Absolute=True">Board Outline Clearance(Outline Edge): (11.059mil &lt; 11.811mil) Between Board Edge And Track (14.059mil,2840mil)(414.059mil,2840mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1414.139mil|Location2.X=1427.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1420.669mil,2603.622mil)(1420.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1449.331mil,2603.622mil)(1449.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1442.8mil|Location2.X=1455.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1449.331mil,3056.378mil)(1740.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1734.139mil|Location2.X=1747.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1740.669mil,2603.622mil)(1740.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1769.331mil,2603.622mil)(1769.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1762.8mil|Location2.X=1775.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (1769.331mil,3056.378mil)(2060.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.139mil|Location2.X=2067.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2060.669mil,2603.622mil)(2060.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2089.331mil,2603.622mil)(2089.331mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.8mil|Location2.X=2095.861mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2089.331mil,3056.378mil)(2380.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2374.139mil|Location2.X=2387.2mil|Location1.Y=3058.627mil|Location2.Y=3071.688mil|Absolute=True">Board Outline Clearance(Outline Edge): (9.685mil &lt; 11.811mil) Between Board Edge And Track (2380.669mil,2603.622mil)(2380.669mil,3056.378mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

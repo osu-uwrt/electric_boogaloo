@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=Filter_CH2 Pin=C8-1
+Removed Pin From Net: NetName=Filter_CH2 Pin=D2-2
+Removed Pin From Net: NetName=Filter_CH2 Pin=R9-2
+Removed Pin From Net: NetName=Filter_CH2 Pin=R12-1
+Change Net Name : Old Net Name=Filter_CH2 New Net Name=GND
+Added Pin To Net: NetName=Filter_CH2 Pin=C8-1
+Added Pin To Net: NetName=Filter_CH2 Pin=D2-2
+Added Pin To Net: NetName=Filter_CH2 Pin=R9-2
+Added Pin To Net: NetName=Filter_CH2 Pin=R12-1
+Added Net: Name=Filter_CH2
+Added Room: Name=Connectors
+Added Rule: Name=Schematic Supply Nets_6

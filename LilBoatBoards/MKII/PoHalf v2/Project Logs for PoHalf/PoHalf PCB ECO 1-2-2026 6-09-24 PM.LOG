@@ -1,0 +1,184 @@
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=C10
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=C10
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=J13
+Removed Member From Class: ClassName=U_RP2040_C Member=J14
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q3
+Removed Member From Class: ClassName=Connector Member=Q7
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=Q8
+Removed Member From Class: ClassName=Connector Member=R10
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=R12
+Removed Member From Class: ClassName=U_RP2040_C Member=R12
+Removed Member From Class: ClassName=U_RP2040_C Member=R13
+Removed Member From Class: ClassName=U_RP2040_with_CAN Member=R17
+Removed Member From Class: ClassName=U_RP2040_C Member=R18
+Removed Member From Class: ClassName=Connector Member=R20
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R25
+Removed Member From Class: ClassName=Connector Member=R27
+Removed Member From Class: ClassName=U_RP2040_C Member=R27
+Removed Member From Class: ClassName=U_RP2040_with_CAN Member=R27
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=R29
+Removed Member From Class: ClassName=U_RP2040_with_CAN Member=R34
+Removed Member From Class: ClassName=U_RP2040_C Member=SW1
+Removed Member From Class: ClassName=U_PD_MK2_Killswitch Member=U2
+Removed Member From Class: ClassName=U_PD_MK2_Power Member=U2
+Removed Member From Class: ClassName=U_PD_MK2_Circuits Member=U5
+Change Component Footprint: Designator=F4 Old Footprint=0501Series_LTF New Footprint=FP-3413_0330_22-MFG
+Change Component Comment : Designator=F4 Old Comment=0685H9150-01 New Comment=3413.0330.22
+Change Component Designator: OldDesignator=SW1 NewDesignator=SW1C
+Change Managed Component Library Link : Designator=F4 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=A1838486-0596-4B19-BECB-5CE3185D52F8 Old RevisionGUID= New RevisionGUID=BA75E9F6-EBC5-4EFE-8978-C6FE54FD8F64
+Change component parameters: Designator = "F4" ("F4"); Footprint = "0501Series_LTF"; UniqueID = "\CNQRSLWZ" ("\CNQRSLWZ")
+Change component parameters (AddParameter): Name = "Ambient Temperature Range High"; Value = "+90°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ambient Temperature Range Low"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Fuse"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://us.schurter.com/en/datasheet/typ_UST_1206.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Device Class L1"; Value = "Circuit Protection"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Device Class L2"; Value = "Fuses"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Device Class L3"; Value = "unset"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Description"; Value = "FUSE BOARD MNT 15A 32VAC 63VDC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fuse Blow Speed"; Value = "Slow"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fuse Current"; Value = "15A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fuse I2T"; Value = "65A2Sec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fuse Interrupt Dc Current"; Value = "100A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fuse Voltage Drop"; Value = "57mV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ipc Land Pattern Name"; Value = "CAPC320160X60"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Schurter Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "3413.0330.22"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Fuse Ac Voltage"; Value = "32V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Fuse Dc Voltage"; Value = "63V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Description"; Value = "Surface Mount Fuses UST 1206 FUSE 15A F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Octopart"; Value = "https://octopart.com/3413.0330.22-schurter-8400836"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "3.5mO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3.5mO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "63V"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetC1_1 New Net Name=NetC5_1
+Change Net Name : Old Net Name=NetD2_1 New Net Name=NetD3_1
+Change Net Name : Old Net Name=NetD3_1 New Net Name=NetD7_1
+Change Net Name : Old Net Name=NetD7_1 New Net Name=NetD1_1
+Change Net Name : Old Net Name=NetD11_1 New Net Name=NetD2_1
+Change Net Name : Old Net Name=NetF1_1 New Net Name=NetF4_1
+Change Net Name : Old Net Name=NetF2_2 New Net Name=NetF1_2
+Change Net Name : Old Net Name=NetF3_2 New Net Name=NetF2_2
+Change Net Name : Old Net Name=NetF4_2 New Net Name=NetF3_2
+Change Net Name : Old Net Name=NetJ15_1 New Net Name=NetJ12_1
+Change Net Name : Old Net Name=NetJ16_1 New Net Name=NetJ11_1
+Change Net Name : Old Net Name=NetJ16_2 New Net Name=NetJ11_2
+Change Net Name : Old Net Name=NetJ16_3 New Net Name=NetJ11_3
+Change Net Name : Old Net Name=NetQ1_1 New Net Name=NetQ2_1
+Change Net Name : Old Net Name=NetQ3_4 New Net Name=NetQ1_4
+Change Net Name : Old Net Name=NetQ4_1 New Net Name=NetQ8_1
+Change Net Name : Old Net Name=NetQ10_4 New Net Name=NetQ7_4
+Change Net Name : Old Net Name=NetQ11_4 New Net Name=NetQ6_4
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C1C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C1R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C1 100uF electrolytic 35 V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C2C 4700pF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C2R 27pF Ceramic 50V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C2 22uF electrolytic 35 V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C3C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C3R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C4C 100nF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C4R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component C4 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component C5C 1uF Ceramic 16V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C5R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component C5 10uF Ceramic 25V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C6R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C6 100uF electrolytic 35 V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C7R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C8R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component C8 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C9R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C9 CL05A104KA5NNNC
+Added Member To Class: ClassName=U_RP2040_C Member=Component C10R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C11R 1uF Ceramic 16V
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component C11 10uF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C12R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_C Member=Component C13R 100nF Ceramic 6.3V
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component D1C EAST1616RGBB4
+Added Member To Class: ClassName=Connector Member=Component D1 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D2 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D5 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component D7 IN-S63AT5G
+Added Member To Class: ClassName=Connector Member=Component F2 0685H9150-01
+Added Member To Class: ClassName=Connector Member=Component F4 3413.0330.22
+Added Member To Class: ClassName=U_RP2040_C Member=Component J1R TagConnect SWD
+Added Member To Class: ClassName=Connector Member=Component J1 Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component J2 Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component J3 Mini-Fit Jr R/A
+Added Member To Class: ClassName=Connector Member=Component J4 JST GH VERT
+Added Member To Class: ClassName=Connector Member=Component J5 PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J8 USB_MICRO R/A
+Added Member To Class: ClassName=Connector Member=Component J9 Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J10 Redcube M4 Term 85A
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component J11 61300311121
+Added Member To Class: ClassName=Connector Member=Component J13 Mini-Fit Jr R/A
+Added Member To Class: ClassName=Connector Member=Component J14 Microfit+ R/A
+Added Member To Class: ClassName=Connector Member=Component J15 XH2.54 VERT
+Added Member To Class: ClassName=Connector Member=Component Q1 SIR167DP-T1-GE3
+Added Member To Class: ClassName=Connector Member=Component Q2 MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component Q3 AO3404A
+Added Member To Class: ClassName=Connector Member=Component Q4 MMBT3904-7-F
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component Q5 MOSFET N-CH 30V 5.8A SOT-23-3
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component Q7 SIR167DP-T1-GE3
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R1C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R1R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R1 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R2C 60.4 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R2R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R2 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R3C 60.4 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R3R 27 Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R3 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R4C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R4R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R4 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R5C 604 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R5R 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R5 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R6C 10k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R6R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R6 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R7C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=U_RP2040_C Member=Component R7R 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R7 3.9k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component R8C 200 Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R8 3.9k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R9 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R11 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R13 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R14 1k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R15 1k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R16 10k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R18 100k Ohm 0.5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R19 47K
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R21 1k Ohm 1% 1/16W
+Added Member To Class: ClassName=Connector Member=Component R23 3.9k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R24 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component R26 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R28 4.7k Ohm 5% 1/10W
+Added Member To Class: ClassName=Connector Member=Component R29 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R30 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R31 20k Ohm 1% 1/16W
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component R32 10k Ohm 5% 1/10W
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R33 RES 8.56K OHM 1% 1/16W 0402
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component R34 RT0402BRD071K82L
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component SW1C Switch DPDT
+Added Member To Class: ClassName=U_RP2040_C Member=Component SW1R 434123025826
+Added Member To Class: ClassName=U_RP2040_C Member=Component SW2R 434123025826
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U1C MCP2517FD
+Added Member To Class: ClassName=U_RP2040_C Member=Component U1R RP2040
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component U1 MBRB2545CT
+Added Member To Class: ClassName=U_RP2040_with_CAN Member=Component U2C CAN Transceiver
+Added Member To Class: ClassName=U_RP2040_C Member=Component U2R W25Q128JVSIQ
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component U2 MCP3428-E/SL
+Added Member To Class: ClassName=U_PD_MK2_Circuits Member=Component U3 SHT14 SENSOR HUMID/TEMP
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component U4 TC4432EOA713
+Added Member To Class: ClassName=U_PD_MK2_Killswitch Member=Component U6 TC4432EOA713
+Added Member To Class: ClassName=U_PD_MK2_Power Member=Component U7 LM1117IMPX-3.3/NOPB
+Added Member To Class: ClassName=U_RP2040_C Member=Component Y1R CRYSTAL 12.0000MHZ 18PF SMD

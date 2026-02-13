@@ -1,0 +1,85 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\julmp\Documents\electric_boogaloo\TalosBoards\FPGA Accoustics\FPGA.PcbDoc
+Date     : 1/13/2026
+Time     : 11:25:26 PM
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=3.543mil) (Max=196.85mil) (Preferred=9.842mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=9.842mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=2.953mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=80.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=248.031mil) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (2.984mil < 3.937mil) Between Via (725mil,804.252mil) from Top Layer to Bottom Layer And Via (725mil,835.748mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.984mil] / [Bottom Solder] Mask Sliver [2.984mil]
+Rule Violations :1
+
+Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1129.331mil,2603.622mil)(1129.331mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1129.331mil,3056.378mil)(1420.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(14.059mil,2480mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2200mil)(414.059mil,2200mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2480mil)(414.059mil,2480mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(14.059mil,2840mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2560mil)(414.059mil,2560mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (11.059mil < 11.811mil) Between Board Edge And Track (14.059mil,2840mil)(414.059mil,2840mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1420.669mil,2603.622mil)(1420.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1449.331mil,2603.622mil)(1449.331mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1449.331mil,3056.378mil)(1740.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1740.669mil,2603.622mil)(1740.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1769.331mil,2603.622mil)(1769.331mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (1769.331mil,3056.378mil)(2060.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (2060.669mil,2603.622mil)(2060.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (2089.331mil,2603.622mil)(2089.331mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (2089.331mil,3056.378mil)(2380.669mil,3056.378mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (9.685mil < 11.811mil) Between Board Edge And Track (2380.669mil,2603.622mil)(2380.669mil,3056.378mil) on Top Overlay 
+Rule Violations :18
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 19
+Waived Violations : 0
+Time Elapsed        : 00:00:01

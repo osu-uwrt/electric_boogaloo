@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=J7-4
+Change Component Footprint: Designator=J7 Old Footprint=CONN_MOLEX_MICROFIT+_8POS_R/A New Footprint=CONN_MOLEX_MICROFIT_6_POS_R/A
+Change component parameters: Designator = "J7" ("J7"); Footprint = "CONN_MOLEX_MICROFIT+_8POS_R/A"; UniqueID = "\FDDGIEWB" ("\FDDGIEWB")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Configuration"; Value = "R/A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Per Pin"; Value = "12.5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.0mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "900-2125280600-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J7-4
+Added Pin To Net: NetName=12V Pin=J7-5
+Change Net Name : Old Net Name=Solinoid_3_PWR New Net Name=12V Toggle
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? PP45 R/A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component Q? MMBT3904-7-F
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W
+Added Member To Class: ClassName=Connector Member=Component R? 1k Ohm 5% 1/8W

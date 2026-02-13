@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=R1 Old Footprint=RES_RC0603_YAG New Footprint=CAPACITOR_0603
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Member To Class: ClassName=Connector Member=Component J11 JST GH VERT

@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=ESC1_P3 Pin=J5-1
+Removed Pin From Net: NetName=ESC1_P1 Pin=J5-3
+Removed Pin From Net: NetName=ESC3_P1 Pin=J5-7
+Removed Pin From Net: NetName=ESC3_P3 Pin=J5-9
+Removed Pin From Net: NetName=ESC1_P1 Pin=M1-3
+Removed Pin From Net: NetName=ESC1_P3 Pin=M1-5
+Removed Pin From Net: NetName=ESC1_TELEM Pin=M1-8
+Removed Pin From Net: NetName=ESC1_PWM Pin=M1-9
+Removed Pin From Net: NetName=ESC3_P1 Pin=M3-3
+Removed Pin From Net: NetName=ESC3_P3 Pin=M3-5
+Removed Pin From Net: NetName=ESC3_TELEM Pin=M3-8
+Removed Pin From Net: NetName=ESC3_PWM Pin=M3-9
+Removed Pin From Net: NetName=ESC1_TELEM Pin=U1R-2
+Removed Pin From Net: NetName=ESC1_PWM Pin=U1R-3
+Removed Pin From Net: NetName=ESC3_TELEM Pin=U1R-4
+Removed Pin From Net: NetName=ESC3_PWM Pin=U1R-5
+Change Component Description : Designator=M1 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M2 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M3 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=M4 Old Description=Advanced Power Drives 80F3[X] ESC New Description=Advanced Power Drives 80F3[X] ESC | 15-35V | 80A
+Change Component Description : Designator=F1 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F2 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F3 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F4 Old Description=Bel Fuse New Description=Bel Fuse  | 15A | 32V DC | SMD | Fast Blow | 1206
+Change Component Description : Designator=F5 Old Description=Eaton New Description=Eaton  | 60A | 80V DC | SMD | Fast Blow | 2-SMD
+Change Component Description : Designator=D2 Old Description=Zener Diode New Description=Zener Diode | 10 V | 410 mW | SOD 123
+Added Pin To Net: NetName=ESC3_P1 Pin=J5-1
+Added Pin To Net: NetName=ESC3_P3 Pin=J5-3
+Added Pin To Net: NetName=ESC1_P3 Pin=J5-7
+Added Pin To Net: NetName=ESC1_P1 Pin=J5-9
+Added Pin To Net: NetName=ESC3_P1 Pin=M1-3
+Added Pin To Net: NetName=ESC3_P3 Pin=M1-5
+Added Pin To Net: NetName=ESC3_PWM Pin=M1-8
+Added Pin To Net: NetName=ESC3_TELEM Pin=M1-9
+Added Pin To Net: NetName=ESC1_P1 Pin=M3-3
+Added Pin To Net: NetName=ESC1_P3 Pin=M3-5
+Added Pin To Net: NetName=ESC1_TELEM Pin=M3-8
+Added Pin To Net: NetName=ESC1_PWM Pin=M3-9
+Added Pin To Net: NetName=ESC3_TELEM Pin=U1R-2
+Added Pin To Net: NetName=ESC3_PWM Pin=U1R-3
+Added Pin To Net: NetName=ESC1_TELEM Pin=U1R-4
+Added Pin To Net: NetName=ESC1_PWM Pin=U1R-5
+Change Net Name : Old Net Name=ESC1_P2 New Net Name=ESC3_P2
+Change Net Name : Old Net Name=ESC3_P2 New Net Name=ESC1_P2

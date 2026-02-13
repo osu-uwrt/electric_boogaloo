@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=CH2_SDO Pin=R40-1
+Added Pin To Net: NetName=CH1_SDO Pin=J1-5
+Added Pin To Net: NetName=CH2_SDO Pin=J1-7
+Added Pin To Net: NetName=CLK Pin=J1-9
+Added Pin To Net: NetName=CS_1 Pin=J1-11
+Added Pin To Net: NetName=CH3_SDO Pin=J1-15
+Added Pin To Net: NetName=CS_2 Pin=J1-16
+Added Pin To Net: NetName=CH4_SDO Pin=J1-13
+Added Pin To Net: NetName=CH4_SDO Pin=R40-1
+Added Net: Name=CH4_SDO
+Added Room: Name=Connectors

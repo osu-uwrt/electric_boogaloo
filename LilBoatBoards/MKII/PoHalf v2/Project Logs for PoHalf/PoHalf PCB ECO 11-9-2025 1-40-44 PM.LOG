@@ -1,0 +1,61 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=MOTOR_PWR Pin=J1-5
+Removed Pin From Net: NetName=MOTOR_PWR Pin=J1-6
+Removed Pin From Net: NetName=MOTOR_PWR Pin=J1-7
+Removed Pin From Net: NetName=MOTOR_PWR Pin=J1-8
+Removed Member From Class: ClassName=Connector Member=J1
+Added Component: Designator=J?(Redcube M4 Term 85A)
+Add component (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Component: Designator=J?(Redcube M4 Term 85A)
+Add component (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Component: Designator=J?(Redcube M4 Term 85A)
+Add component (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Component: Designator=J?(Redcube M4 Term 85A)
+Add component (AddParameter): Name = "Created By"; Value = "Nahtan Ayer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "85 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Screw Size"; Value = "M4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Pin To Net: NetName=MOTOR_PWR Pin=J?-1
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A
+Added Member To Class: ClassName=Connector Member=Component J? Redcube M4 Term 85A

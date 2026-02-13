@@ -1,0 +1,32 @@
+Added Component: Designator=J2(USB-C TH)
+Add component (AddParameter): Name = "Created By"; Value = "John Ulm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "USB-C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2073-USB4085-GF-ADKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Through Hole"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VREG_PGND Pin=J2-A1
+Added Pin To Net: NetName=+VUSB Pin=J2-A4
+Added Pin To Net: NetName=NetJ2_A5 Pin=J2-A5
+Added Pin To Net: NetName=USB_D_P Pin=J2-A6
+Added Pin To Net: NetName=USB_D_N Pin=J2-A7
+Added Pin To Net: NetName=+VUSB Pin=J2-A9
+Added Pin To Net: NetName=VREG_PGND Pin=J2-A12
+Added Pin To Net: NetName=VREG_PGND Pin=J2-B1
+Added Pin To Net: NetName=+VUSB Pin=J2-B4
+Added Pin To Net: NetName=NetJ2_B5 Pin=J2-B5
+Added Pin To Net: NetName=USB_D_P Pin=J2-B6
+Added Pin To Net: NetName=USB_D_N Pin=J2-B7
+Added Pin To Net: NetName=+VUSB Pin=J2-B9
+Added Pin To Net: NetName=VREG_PGND Pin=J2-B12
+Added Pin To Net: NetName=VREG_PGND Pin=J2-S1
+Added Pin To Net: NetName=VREG_PGND Pin=J2-S2
+Added Pin To Net: NetName=VREG_PGND Pin=J2-S3
+Added Pin To Net: NetName=VREG_PGND Pin=J2-S4
+Change Net Name : Old Net Name=CANRX New Net Name=CANRX
+Added Member To Class: ClassName=Connectors Member=Component J2 USB-C TH
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
