@@ -1147,20 +1147,20 @@ DocumentPath=Project Outputs for Jetson_Nano_Breakout\Design Rule Check - jetson
 DItemRevisionGUID=
 
 [Parameter1]
-Name=BoardRevision
-Value=1.0
+Name=TeamLead
+Value=Robert Pafford
 
 [Parameter2]
-Name=DateOfDesignReview
-Value=12/22/2022
-
-[Parameter3]
 Name=ProjectTitle
 Value=Jetson AGX Breakout
 
+[Parameter3]
+Name=DateOfDesignReview
+Value=12/22/2022
+
 [Parameter4]
-Name=TeamLead
-Value=Robert Pafford
+Name=BoardRevision
+Value=1.0
 
 [Configuration1]
 Name=Sources
@@ -1976,7 +1976,7 @@ Type55=1
 Type56=2
 Type57=1
 Type58=1
-Type59=2
+Type59=0
 Type60=0
 Type61=0
 Type62=0
