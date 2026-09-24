@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=+5 Pin=Q1-3
+Removed Pin From Net: NetName=imu_pwr_ctrl Pin=Q2-1
+Removed Pin From Net: NetName=GND Pin=Q2-2
+Removed Pin From Net: NetName=+5 Pin=R5-1
+Removed Pin From Net: NetName=imu_pwr_ctrl Pin=R6-1
+Removed Pin From Net: NetName=GND Pin=R6-2
+Removed Member From Class: ClassName=jetson_agx_breakout Member=Q1
+Removed Member From Class: ClassName=jetson_agx_breakout Member=Q2
+Removed Member From Class: ClassName=jetson_agx_breakout Member=R5
+Removed Member From Class: ClassName=jetson_agx_breakout Member=R6
+Added Pin To Net: NetName=+5 Pin=J2-1
+Added Room: Name=jetson_agx_breakout
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
