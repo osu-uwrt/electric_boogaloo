@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GPIO01 Pin=U4-4
+Removed Pin From Net: NetName=GPIO11 Pin=U5-4
+Added Pin To Net: NetName=GPIO11 Pin=U4-4
+Added Pin To Net: NetName=GPIO01 Pin=U5-4
+Change Class Name : Old Net Name=jetson_agx_breakout New Net Name=jetson_nano_breakout
+Change Room Name: Old Name=jetson_agx_breakout New Name=jetson_nano_breakout
+Change Room Scope: Old Scope=InComponentClass('jetson_agx_breakout') New Scope=InComponentClass('jetson_nano_breakout')

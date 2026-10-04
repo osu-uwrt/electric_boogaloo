@@ -25,7 +25,7 @@ NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=1
 AutoCrossReferences=0
-NewIndexingOfSheetSymbols=0
+NewIndexingOfSheetSymbols=1
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
@@ -37,7 +37,7 @@ IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
-Template=C:\Users\chinm\OneDrive - The Ohio State University\osu uwrt\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
+Template=C:\Users\julmp\Documents\Navionics Stuff\electric_boogaloo\UWRT_Template_Project\UWRT_Project_Template.PrjPcb
 IncludeDesignInRelease=0
 CrossRefSheetStyle=1
 CrossRefLocationStyle=1
@@ -45,71 +45,19 @@ CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
-CurrentVariant=Actual Manufacturing
 
 [Preferences]
 PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Poactuator_Power_Circuits.SchDoc
+DocumentPath=Sch_Sheet_Template.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NLSQBFLQ
-
-[Document2]
-DocumentPath=Poactuator_Microcontroller.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LEROOREG
-
-[Document3]
-DocumentPath=Poactuator_Connectors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RTFFFFSL
-
-[Document4]
-DocumentPath=Poactuator_KillSwitch.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=6
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -119,8 +67,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KLTQBHTI
 
-[Document5]
-DocumentPath=PoactuatorPCB4.PcbDoc
+[Document2]
+DocumentPath=PoHalf-Small.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -130,14 +78,65 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GDUGBMXD
+DocumentUniqueId=BPVARBEX
+
+[Document3]
+DocumentPath=..\..\..\Library\Capacitors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document4]
+DocumentPath=..\..\..\Library\Capacitors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document5]
+DocumentPath=..\..\..\Library\Connectors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Document6]
-DocumentPath=PoActuator Order.OutJob
+DocumentPath=..\..\..\Library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -154,74 +153,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\..\Library\Capacitors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
-DocumentPath=..\..\..\Library\Capacitors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document9]
-DocumentPath=..\..\..\Library\Connectors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document10]
-DocumentPath=..\..\..\Library\Connectors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document11]
 DocumentPath=..\..\..\Library\Converter.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -232,13 +163,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document8]
 DocumentPath=..\..\..\Library\Converter.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -249,13 +180,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document9]
 DocumentPath=..\..\..\Library\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -266,13 +197,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document10]
 DocumentPath=..\..\..\Library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -283,13 +214,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document11]
 DocumentPath=..\..\..\Library\Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -300,13 +231,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document12]
 DocumentPath=..\..\..\Library\Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -317,13 +248,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document13]
 DocumentPath=..\..\..\Library\Fuses.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -334,13 +265,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document14]
 DocumentPath=..\..\..\Library\Fuses.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -351,13 +282,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document15]
 DocumentPath=..\..\..\Library\Inductors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -368,13 +299,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document16]
 DocumentPath=..\..\..\Library\Inductors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -385,13 +316,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document17]
 DocumentPath=..\..\..\Library\Integrated Circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -402,13 +333,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document18]
 DocumentPath=..\..\..\Library\Integrated Circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -419,13 +350,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document19]
 DocumentPath=..\..\..\Library\LFXTAL014160REEL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -436,13 +367,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document20]
 DocumentPath=..\..\..\Library\Modules.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -453,13 +384,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document21]
 DocumentPath=..\..\..\Library\Modules.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -470,13 +401,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document22]
 DocumentPath=..\..\..\Library\Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -487,13 +418,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document23]
 DocumentPath=..\..\..\Library\Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -504,13 +435,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document24]
 DocumentPath=..\..\..\Library\SOT95P280X100-3N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -521,13 +452,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document25]
 DocumentPath=..\..\..\Library\Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -538,13 +469,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document30]
+[Document26]
 DocumentPath=..\..\..\Library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -555,13 +486,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document31]
+[Document27]
 DocumentPath=..\..\..\Library\Transformers.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -572,13 +503,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document32]
+[Document28]
 DocumentPath=..\..\..\Library\Transformers.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -589,13 +520,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document33]
+[Document29]
 DocumentPath=..\..\..\Library\Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -606,13 +537,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document34]
+[Document30]
 DocumentPath=..\..\..\Library\Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -623,13 +554,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document31]
 DocumentPath=..\..\..\Library\UWRT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -640,13 +571,13 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document36]
+[Document32]
 DocumentPath=..\..\..\Library\UWRT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -657,14 +588,14 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
-DocumentPath=Combined_Power_Actuator.BomDoc
+[Document33]
+DocumentPath=Job1.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -674,57 +605,32 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[ProjectVariant1]
-UniqueId=3c206b1c-4bcf-4bc5-9ee2-d547b38b2d75
-Description=Actual Manufacturing
-OverwritePCBFootprint=0
-AllowFabrication=0
-ParameterCount=0
-VariationCount=7
-Variation1=Designator=C5|UniqueId=\FTZFRIMV\GLOCNBQA|Kind=1|AlternatePart=
-Variation2=Designator=C6|UniqueId=\FTZFRIMV\BCZQTTFA|Kind=1|AlternatePart=
-Variation3=Designator=R11|UniqueId=\FTZFRIMV\UWYEFCGA|Kind=1|AlternatePart=
-Variation4=Designator=U2|UniqueId=\FTZFRIMV\YFMOGBGB|Kind=1|AlternatePart=
-Variation5=Designator=U12|UniqueId=\BPFIFMBS\SRMQOBSF|Kind=1|AlternatePart=
-Variation6=Designator=Q4|UniqueId=\BPFIFMBS\YWCTUVEB|Kind=1|AlternatePart=
-Variation7=Designator=Q5|UniqueId=\JXFPTJVO\YKSNSTNG|Kind=1|AlternatePart=
-ParamVariationCount=0
-
-[Parameter1]
-Name=BoardRevision
-Value=1.0
-
-[Parameter2]
-Name=DateOfDesignReview
-Value=XX/XX/XXXX
-
-[Parameter3]
-Name=ProjectTitle
-Value=Sample Template Project
-
-[Parameter4]
-Name=TeamLead
-Value=Sample Team Lead
-
-[DeviceSheet1]
-DocumentPath=..\..\..\..\Device_Sheets\RP2040_with_CAN.SchDot
+[Document34]
+DocumentPath=ESC.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
+DItemRevisionGUID=
 GenerateClassCluster=0
+DocumentUniqueId=
 
-[DeviceSheet2]
-DocumentPath=..\..\..\..\Device_Sheets\RP2040.SchDot
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-GenerateClassCluster=0
+[GeneratedDocument1]
+DocumentPath=..\..\..\..\..\Downloads\ExportSTEP\PoHalf-Small.step
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -1090,7 +996,7 @@ OutputName8=BOM Compare
 OutputDocumentPath8=
 OutputVariantName8=[No Variations]
 OutputDefault8=0
-PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 OutputType9=Project History
 OutputName9=Project History
 OutputDocumentPath9=

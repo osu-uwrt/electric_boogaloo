@@ -1,0 +1,132 @@
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=can1_dout Pin=J7-1
+Removed Pin From Net: NetName=can1_din Pin=J7-2
+Change Component Footprint: Designator=J1 Old Footprint=FP-S05B-PASK-2_LF_SN-MFG New Footprint=FP-S3B-XH-A-1_LF_SN-MFG
+Change Component Comment : Designator=J1 Old Comment=Comment New Comment=S3B-XH-A-1(LF)(SN)
+Change Component Comment : Designator=J2 Old Comment=Comment New Comment=S4B-XH-A(LF)(SN)
+Change Managed Component Library Link : Designator=J1 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=39585EA5-FEE6-409A-B24A-FA33661CC418 Old RevisionGUID= New RevisionGUID=2374F5A2-D188-4466-B953-2A69F767E512
+Change Managed Component Library Link : Designator=J2 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=ED06A17E-5633-4B23-84AD-A0CFE1C3F911 Old RevisionGUID= New RevisionGUID=CC1DB407-C97D-41FC-A46B-C9A79C47DF76
+Change component parameters: Designator = "J1" ("J1"); Footprint = "FP-S05B-PASK-2_LF_SN-MFG"; UniqueID = "\GYTVBQGJ" ("\GYTVBQGJ")
+Change component parameters (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "Header"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Finish - Mating"; Value = "TIN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Shape"; Value = "Square"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fastening Type"; Value = "Detent"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Color"; Value = "Natural"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-25°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "0.098inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "XH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Press-Fit"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "JST-S4B-XH-A(LF)(SN)_V"; UniqueID = "\SLUBLEXA" ("\SLUBLEXA")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.jst.com/home2.html"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "May-16"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Male Header, Pitch 2.5 mm, 1 x 4 Position, Height 6.1 mm, Tail Length 3.4 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "S4B-XH-A(LF)(SN)"; VariantName = "[No Variations]"
+Added Component: Designator=J4(JST-S2B-PH-K-S_V)
+Add component (AddParameter): Name = "Capacitance"; Value = "10 uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case\Package"; Value = "Radial"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Dec-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "11 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "S2B-PH-K-S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "50 V"; VariantName = "[No Variations]"
+Added Component: Designator=J5(FP-S5B-XH-A_LF_SN-MFG)
+Add component (AddParameter): Name = "Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish - Mating"; Value = "TIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "10mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Shape"; Value = "Square"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Detent"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Color"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "1GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-25°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "XH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (AC)"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire/Cable Gauge"; Value = "22AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J6(FP-S2B-XH-A-GU-MFG)
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GPIO12 Pin=J1-2
+Added Pin To Net: NetName=+5 Pin=J1-3
+Added Pin To Net: NetName=NetJ4_1 Pin=J4-1
+Added Pin To Net: NetName=NetJ4_2 Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J5-3
+Added Pin To Net: NetName=can1_din Pin=J6-1
+Added Pin To Net: NetName=can1_dout Pin=J6-2
+Added Pin To Net: NetName=NetJ5_1 Pin=J5-1
+Added Pin To Net: NetName=NetJ5_1 Pin=SW2-2
+Added Pin To Net: NetName=NetJ5_1 Pin=U2-6
+Added Net: Name=NetJ5_1
+Added Pin To Net: NetName=NetJ5_2 Pin=J5-2
+Added Pin To Net: NetName=NetJ5_2 Pin=SW2-5
+Added Pin To Net: NetName=NetJ5_2 Pin=U2-7
+Added Net: Name=NetJ5_2
+Added Pin To Net: NetName=NetJ5_4 Pin=J5-4
+Added Pin To Net: NetName=NetJ5_4 Pin=SW1-2
+Added Pin To Net: NetName=NetJ5_4 Pin=U1-6
+Added Net: Name=NetJ5_4
+Added Pin To Net: NetName=NetJ5_5 Pin=J5-5
+Added Pin To Net: NetName=NetJ5_5 Pin=SW1-5
+Added Pin To Net: NetName=NetJ5_5 Pin=U1-7
+Added Net: Name=NetJ5_5
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component J1 S3B-XH-A-1(LF)(SN)
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component J2 S4B-XH-A(LF)(SN)
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component J4 S2B-PH-K-S(LF)(SN)
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component J5 S5B-XH-A(LF)(SN)
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component J6 S2B-XH-A-GU
+Added Member To Class: ClassName=jetson_nano_breakout_rev1 Member=Component U5 MCP2517FD-H/SL
+Added Room: Name=jetson_nano_breakout_rev1
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

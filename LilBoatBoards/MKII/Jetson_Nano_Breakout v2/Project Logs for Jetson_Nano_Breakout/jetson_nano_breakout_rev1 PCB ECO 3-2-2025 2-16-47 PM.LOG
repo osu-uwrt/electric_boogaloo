@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GPIO09 Pin=Q2-1
+Removed Pin From Net: NetName=GPIO09 Pin=R6-1
+Change Component Designator: OldDesignator=C14 NewDesignator=C13
+Added Pin To Net: NetName=GPIO13 Pin=Q2-1
+Added Pin To Net: NetName=GPIO13 Pin=R6-1
