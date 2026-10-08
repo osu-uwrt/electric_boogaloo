@@ -50,23 +50,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=RP2040.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RTFFFFSL
-
-[Document2]
 DocumentPath=RP2024 DB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,8 +66,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YBFIWQDH
 
-[Document3]
-DocumentPath=RP2040 with CAN.SchDoc
+[Document2]
+DocumentPath=Top.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -98,7 +81,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=YZWMLBAF
+DocumentUniqueId=QXNOWDVN
 
 [Configuration1]
 Name=Sources
