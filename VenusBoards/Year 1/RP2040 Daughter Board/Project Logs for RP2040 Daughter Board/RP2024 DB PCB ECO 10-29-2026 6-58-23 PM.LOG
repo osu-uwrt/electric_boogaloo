@@ -1,0 +1,115 @@
+Removed Pin From Net: NetName=USB_P Pin=R2R-1
+Removed Pin From Net: NetName=USB_N Pin=R3R-1
+Removed Member From Class: ClassName=Main Member=J2
+Removed Member From Class: ClassName=Main Member=J3
+Change Component Designator: OldDesignator=P1 NewDesignator=P1_2
+Change Component Designator: OldDesignator=P2 NewDesignator=P2_2
+Added Component: Designator=P1_1(61300311121)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "5.9944mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.94mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P2_1(61300311121)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "5.9944mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.94mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P2_1-3
+Added Pin To Net: NetName=3V3 Pin=P2_1-2
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=P2_1-1
+Added Net: Name=5V
+Added Pin To Net: NetName=CANH Pin=P2_2-8
+Added Pin To Net: NetName=CANH Pin=P2_2-9
+Added Net: Name=CANH
+Added Pin To Net: NetName=GPIO0 Pin=P1_1-1
+Added Net: Name=GPIO0
+Added Pin To Net: NetName=GPIO1 Pin=P1_1-2
+Added Net: Name=GPIO1
+Added Pin To Net: NetName=GPIO2 Pin=P1_1-3
+Added Net: Name=GPIO2
+Added Pin To Net: NetName=GPIO3 Pin=P1_2-1
+Added Net: Name=GPIO3
+Added Pin To Net: NetName=GPIO4 Pin=P1_2-2
+Added Net: Name=GPIO4
+Added Pin To Net: NetName=GPIO5 Pin=P1_2-3
+Added Net: Name=GPIO5
+Added Pin To Net: NetName=GPIO6 Pin=P1_2-4
+Added Net: Name=GPIO6
+Added Pin To Net: NetName=GPIO7 Pin=P1_2-5
+Added Net: Name=GPIO7
+Added Pin To Net: NetName=GPIO8 Pin=P1_2-6
+Added Net: Name=GPIO8
+Added Pin To Net: NetName=GPIO9 Pin=P1_2-7
+Added Net: Name=GPIO9
+Added Pin To Net: NetName=GPIO10 Pin=P1_2-8
+Added Net: Name=GPIO10
+Added Pin To Net: NetName=GPIO11 Pin=P1_2-9
+Added Net: Name=GPIO11
+Added Pin To Net: NetName=GPIO12 Pin=P1_2-10
+Added Net: Name=GPIO12
+Added Pin To Net: NetName=GPIO23 Pin=P2_2-1
+Added Net: Name=GPIO23
+Added Pin To Net: NetName=GPIO24 Pin=P2_2-2
+Added Net: Name=GPIO24
+Added Pin To Net: NetName=GPIO25 Pin=P2_2-3
+Added Net: Name=GPIO25
+Added Pin To Net: NetName=GPIO26 Pin=P2_2-4
+Added Net: Name=GPIO26
+Added Pin To Net: NetName=GPIO27 Pin=P2_2-5
+Added Net: Name=GPIO27
+Added Pin To Net: NetName=GPIO28 Pin=P2_2-6
+Added Net: Name=GPIO28
+Added Pin To Net: NetName=GPIO29 Pin=P2_2-7
+Added Net: Name=GPIO29
+Added Pin To Net: NetName=NetR2R_1 Pin=R2R-1
+Added Net: Name=NetR2R_1
+Added Pin To Net: NetName=NetR3R_1 Pin=R3R-1
+Added Net: Name=NetR3R_1
+Add Differential Pair: Number of nets in differential pair NetR2R_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetR3R_1 is 1 instead of 2
+Added Member To Class: ClassName=Main Member=Component P1_1 61300311121
+Added Member To Class: ClassName=Main Member=Component P2_1 61300311121
+Remove Class Member: Failed to remove class member
