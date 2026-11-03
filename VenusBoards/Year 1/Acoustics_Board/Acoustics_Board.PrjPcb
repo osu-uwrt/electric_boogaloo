@@ -51,7 +51,7 @@ PrefsRevisionGUID=
 
 [Document1]
 DocumentPath=ADC.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -85,7 +85,7 @@ DocumentUniqueId=GJBXOBMX
 
 [Document3]
 DocumentPath=Connectors.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
