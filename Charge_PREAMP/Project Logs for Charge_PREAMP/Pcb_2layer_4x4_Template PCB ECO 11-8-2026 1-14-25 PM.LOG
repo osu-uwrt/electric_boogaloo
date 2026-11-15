@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=C2? NewDesignator=C?
+Add Net: Net with name "NetC?_1" already exists
+Add Net: Net with name "NetC?_2" already exists
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component *? *CL05A104KA5NNNC
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component *? *CL05A104KA5NNNC
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component *? *CL05A104KA5NNNC
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component C? 1uF Ceramic 16V
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component C? 1uF Ceramic 16V
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component R? 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component R? 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component R? 0 Ohm 1% 1/16W
+Added Member To Class: ClassName=Charge_PREAMP_sch Member=Component U? AD8682ARZ-REEL7
