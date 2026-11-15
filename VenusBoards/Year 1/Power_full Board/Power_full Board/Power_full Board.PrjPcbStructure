@@ -1,1 +1,6 @@
-Record=TopLevelDocument|FileName=Power_full.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Connectors.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=Connectors.SchDoc|Designator=U_PD_MK2_Power|SchDesignator=U_PD_MK2_Power|FileName=Power.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Kill_Switch_venus.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Microcontroller_Venus.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=RP2040.SchDot|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=RP2040_with_CAN.SchDot|SheetNumber=1
