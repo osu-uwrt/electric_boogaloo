@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetR40_1 Pin=U4-1
+Removed Pin From Net: NetName=NetR39_1 Pin=U4-2
+Removed Pin From Net: NetName=NetC29_2 Pin=U4-3
+Removed Pin From Net: NetName=NetC35_2 Pin=U4-5
+Removed Pin From Net: NetName=NetR44_1 Pin=U4-6
+Removed Pin From Net: NetName=NetR45_1 Pin=U4-7
+Added Pin To Net: NetName=NetR45_1 Pin=U4-1
+Added Pin To Net: NetName=NetR44_1 Pin=U4-2
+Added Pin To Net: NetName=NetC35_2 Pin=U4-3
+Added Pin To Net: NetName=NetC29_2 Pin=U4-5
+Added Pin To Net: NetName=NetR39_1 Pin=U4-6
+Added Pin To Net: NetName=NetR40_1 Pin=U4-7
+Added Pin To Net: NetName=NetC20_1 Pin=U5-1
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=NetR54_1 Pin=U5-3
+Added Pin To Net: NetName=NetR53_1 Pin=U5-4
+Added Pin To Net: NetName=VIN_PROT Pin=U5-5
+Added Pin To Net: NetName=NetC20_2 Pin=U5-6
+Added Member To Class: ClassName=Power_ACOUSTIC Member=Component U5 TPS560430XFDBVR

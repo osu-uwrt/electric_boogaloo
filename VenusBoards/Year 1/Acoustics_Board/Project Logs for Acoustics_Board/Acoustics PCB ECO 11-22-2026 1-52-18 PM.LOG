@@ -1,0 +1,90 @@
+Removed Pin From Net: NetName=NetR30_1 Pin=U4-1
+Removed Pin From Net: NetName=NetR29_1 Pin=U4-2
+Removed Pin From Net: NetName=NetC17_2 Pin=U4-3
+Removed Pin From Net: NetName=NetC23_2 Pin=U4-5
+Removed Pin From Net: NetName=NetR34_1 Pin=U4-6
+Removed Pin From Net: NetName=NetR35_1 Pin=U4-7
+Removed Pin From Net: NetName=NetR40_1 Pin=U4-8
+Removed Pin From Net: NetName=NetR39_1 Pin=U4-9
+Removed Pin From Net: NetName=NetC29_2 Pin=U4-10
+Removed Pin From Net: NetName=NetC35_2 Pin=U4-12
+Removed Pin From Net: NetName=NetR44_1 Pin=U4-13
+Removed Pin From Net: NetName=NetR45_1 Pin=U4-14
+Added Component: Designator=U5(FP-DBV0006A-IPC_C)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOT-23-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "UVLO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Input Voltage"; Value = "36V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Output Voltage"; Value = "34.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Input Voltage"; Value = "4V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Output Voltage"; Value = "1V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Outputs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Configuration"; Value = "Positive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "600mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "PWM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switching Frequency"; Value = "1.1MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Synchronous Rectifier"; Value = "Yes"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=1-2
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=GND Pin=C39-2
+Added Pin To Net: NetName=GND Pin=C40-2
+Added Pin To Net: NetName=GND Pin=C41-2
+Added Pin To Net: NetName=Filters + ADC Analog 5V Pin=C42-1
+Added Pin To Net: NetName=GND Pin=C42-2
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=GND Pin=C44-1
+Added Pin To Net: NetName=GND Pin=C45-1
+Added Pin To Net: NetName=GND Pin=C46-2
+Added Pin To Net: NetName=Filters 2.5V REF Pin=C47-1
+Added Pin To Net: NetName=GND Pin=C47-2
+Added Pin To Net: NetName=GND Pin=C48-2
+Added Pin To Net: NetName=Filters + ADC Analog 5V Pin=C49-1
+Added Pin To Net: NetName=GND Pin=C49-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=NetC13_1 Pin=J5-1
+Added Pin To Net: NetName=Filters 2.5V REF Pin=J5-2
+Added Pin To Net: NetName=NetC19_1 Pin=J6-1
+Added Pin To Net: NetName=Filters 2.5V REF Pin=J6-2
+Added Pin To Net: NetName=NetC25_1 Pin=J7-1
+Added Pin To Net: NetName=Filters 2.5V REF Pin=J7-2
+Added Pin To Net: NetName=NetC31_1 Pin=J8-1
+Added Pin To Net: NetName=Filters 2.5V REF Pin=J8-2
+Added Pin To Net: NetName=NetR40_1 Pin=U4-1
+Added Pin To Net: NetName=NetR39_1 Pin=U4-2
+Added Pin To Net: NetName=NetC29_2 Pin=U4-3
+Added Pin To Net: NetName=NetC35_2 Pin=U4-5
+Added Pin To Net: NetName=NetR44_1 Pin=U4-6
+Added Pin To Net: NetName=NetR45_1 Pin=U4-7
+Added Pin To Net: NetName=NetR30_1 Pin=U4-8
+Added Pin To Net: NetName=NetR29_1 Pin=U4-9
+Added Pin To Net: NetName=NetC17_2 Pin=U4-10
+Added Pin To Net: NetName=NetC23_2 Pin=U4-12
+Added Pin To Net: NetName=NetR34_1 Pin=U4-13
+Added Pin To Net: NetName=NetR35_1 Pin=U4-14
+Added Pin To Net: NetName=NetR56_1 Pin=U6-5
+Added Pin To Net: NetName=GND Pin=U6-7
+Added Pin To Net: NetName=GND Pin=U6-9
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=Filters + ADC Analog 5V Pin=U7-5
+Added Pin To Net: NetName=Filters + ADC Analog 5V Pin=U9-1
+Added Pin To Net: NetName=GND Pin=U9-3
+Added Member To Class: ClassName=Connectors Member=Component J5 S2B-XH-A-GU
+Added Member To Class: ClassName=Connectors Member=Component J6 S2B-XH-A-GU
+Added Member To Class: ClassName=Connectors Member=Component J7 S2B-XH-A-GU
+Added Member To Class: ClassName=Connectors Member=Component J8 S2B-XH-A-GU
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
